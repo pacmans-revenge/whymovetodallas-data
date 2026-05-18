@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T17:03:59.364Z",
+    "last_updated": "2026-05-18T18:32:46.571Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-17)",
@@ -24,7 +24,7 @@
     "addison": {
       "display_name": "Addison",
       "county": "Dallas",
-      "ntreis_city_id": null,
+      "ntreis_city_id": 32295,
       "tier": 3,
       "lat": 32.9612,
       "lng": -96.8331,
@@ -52,12 +52,12 @@
         "ws_link": "https://www.walkscore.com/score/Addison-TX/lat=32.9612/lng=-96.8331/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 490000,
-        "sfr_days_on_market": 45,
-        "sfr_months_supply": 3.5,
-        "sfr_closed_sales_12mo": 180,
-        "market_condition": "balanced",
-        "condo_median_price": 285000
+        "sfr_median_price": 630000,
+        "sfr_days_on_market": 52,
+        "sfr_months_supply": 7.4,
+        "sfr_closed_sales_12mo": 85,
+        "market_condition": "buyer",
+        "condo_median_price": 320000
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -69,7 +69,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 490000,
+        "sfr_median_price": 630000,
         "overall_isd_grade": 10,
         "academics_isd_grade": 9,
         "pct_households_with_children": 18,
@@ -80,21 +80,45 @@
         "owner_occupied_pct": 29.4,
         "wfh_pct": 18.3
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "B+",
+        "crime": "C+",
+        "housing": "C-",
+        "nightlife": "A+",
+        "families": "A-",
+        "diversity": "A",
+        "jobs": "B-",
+        "weather": "B+",
+        "cost_of_living": "C+",
+        "health_fitness": "A",
+        "outdoor_activities": "B",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": null,
       "scores": {
-        "family_score": 71,
-        "value_score": 73,
+        "family_score": 70,
+        "value_score": 52,
         "sub_scores": {
           "education": 87,
-          "safety": null,
+          "safety": 77,
           "family_community": 27,
           "commute": 77,
-          "market_stability": 100
+          "market_stability": 77
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-18T18:32:46.554Z",
+        "data_completeness": "full"
       }
     },
     "allen": {
@@ -193,7 +217,7 @@
           "commute": 50,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -293,7 +317,7 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -393,7 +417,7 @@
           "commute": 79,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -493,7 +517,7 @@
           "commute": 52,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -593,7 +617,7 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -693,7 +717,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -701,7 +725,7 @@
       "display_name": "Burleson",
       "county": "Johnson",
       "ntreis_city_id": 32372,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.5421,
       "lng": -97.3208,
       "niche_city_slug": "burleson-johnson-tx",
@@ -793,7 +817,7 @@
           "commute": 37,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -893,7 +917,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -993,7 +1017,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1093,7 +1117,7 @@
           "commute": null,
           "market_stability": 82
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -1193,7 +1217,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -1285,7 +1309,7 @@
       "amenities": null,
       "scores": {
         "family_score": 80,
-        "value_score": 22,
+        "value_score": 23,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -1293,7 +1317,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1385,7 +1409,7 @@
       "amenities": null,
       "scores": {
         "family_score": 77,
-        "value_score": 82,
+        "value_score": 83,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -1393,7 +1417,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1493,7 +1517,7 @@
           "commute": 53,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1593,7 +1617,7 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1693,7 +1717,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -1793,7 +1817,7 @@
           "commute": 71,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -1893,7 +1917,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -1901,7 +1925,7 @@
       "display_name": "Fate",
       "county": "Rockwall",
       "ntreis_city_id": 32484,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.9418,
       "lng": -96.3822,
       "niche_city_slug": "fate-rockwall-tx",
@@ -1993,7 +2017,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -2093,7 +2117,7 @@
           "commute": 48,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2101,7 +2125,7 @@
       "display_name": "Forney",
       "county": "Kaufman",
       "ntreis_city_id": 32490,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.7474,
       "lng": -96.4697,
       "niche_city_slug": "forney-kaufman-tx",
@@ -2193,7 +2217,7 @@
           "commute": 32,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2293,7 +2317,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2393,7 +2417,7 @@
           "commute": 51,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2493,7 +2517,7 @@
           "commute": 40,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2593,7 +2617,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -2693,7 +2717,7 @@
           "commute": 48,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -2793,7 +2817,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -2801,7 +2825,7 @@
       "display_name": "Heath",
       "county": "Rockwall",
       "ntreis_city_id": 32539,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.8346,
       "lng": -96.4683,
       "niche_city_slug": "heath-rockwall-tx",
@@ -2885,7 +2909,7 @@
       "amenities": null,
       "scores": {
         "family_score": 65,
-        "value_score": 68,
+        "value_score": 69,
         "sub_scores": {
           "education": 93,
           "safety": 83,
@@ -2893,7 +2917,7 @@
           "commute": null,
           "market_stability": 62
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -2993,7 +3017,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -3093,7 +3117,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -3193,7 +3217,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -3293,7 +3317,7 @@
           "commute": 88,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -3382,7 +3406,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -3482,7 +3506,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -3582,7 +3606,7 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -3682,7 +3706,7 @@
           "commute": null,
           "market_stability": 99
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -3782,7 +3806,7 @@
           "commute": 45,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -3882,7 +3906,7 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -3982,7 +4006,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4082,7 +4106,7 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -4090,7 +4114,7 @@
       "display_name": "Midlothian",
       "county": "Ellis",
       "ntreis_city_id": 32662,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.4824,
       "lng": -97.0058,
       "niche_city_slug": "midlothian-ellis-tx",
@@ -4182,7 +4206,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4274,7 +4298,7 @@
       "amenities": null,
       "scores": {
         "family_score": 84,
-        "value_score": 87,
+        "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -4282,7 +4306,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4382,7 +4406,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4390,7 +4414,7 @@
       "display_name": "Northlake",
       "county": "Denton",
       "ntreis_city_id": 32697,
-      "tier": 3,
+      "tier": 2,
       "lat": 33.1082,
       "lng": -97.2772,
       "niche_city_slug": "northlake-denton-tx",
@@ -4482,7 +4506,7 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4582,7 +4606,7 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -4682,7 +4706,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4782,7 +4806,7 @@
           "commute": null,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -4882,7 +4906,7 @@
           "commute": 55,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -4982,7 +5006,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5082,7 +5106,7 @@
           "commute": 40,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -5182,7 +5206,7 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -5190,7 +5214,7 @@
       "display_name": "Royse City",
       "county": "Rockwall",
       "ntreis_city_id": 32780,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.9754,
       "lng": -96.3322,
       "niche_city_slug": "royse-city-rockwall-tx",
@@ -5282,7 +5306,7 @@
           "commute": null,
           "market_stability": 84
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5290,7 +5314,7 @@
       "display_name": "Sachse",
       "county": "Collin",
       "ntreis_city_id": 32783,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.976,
       "lng": -96.5897,
       "niche_city_slug": "sachse-dallas-tx",
@@ -5382,7 +5406,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5482,7 +5506,7 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     },
@@ -5582,7 +5606,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5682,7 +5706,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5774,7 +5798,7 @@
       "amenities": null,
       "scores": {
         "family_score": 71,
-        "value_score": 61,
+        "value_score": 62,
         "sub_scores": {
           "education": 90,
           "safety": 90,
@@ -5782,7 +5806,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5790,7 +5814,7 @@
       "display_name": "Waxahachie",
       "county": "Ellis",
       "ntreis_city_id": 32865,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.3868,
       "lng": -96.8486,
       "niche_city_slug": "waxahachie-ellis-tx",
@@ -5882,7 +5906,7 @@
           "commute": null,
           "market_stability": 94
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -5890,7 +5914,7 @@
       "display_name": "Westlake",
       "county": "Tarrant",
       "ntreis_city_id": 32869,
-      "tier": 3,
+      "tier": 2,
       "lat": 32.9982,
       "lng": -97.1994,
       "niche_city_slug": "westlake-tarrant-tx",
@@ -5982,7 +6006,7 @@
           "commute": null,
           "market_stability": 4
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "partial"
       }
     },
@@ -6082,7 +6106,7 @@
           "commute": 39,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T17:03:59.339Z",
+        "computed_date": "2026-05-18T18:32:46.554Z",
         "data_completeness": "full"
       }
     }
