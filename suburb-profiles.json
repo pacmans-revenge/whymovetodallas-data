@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T21:47:24.033Z",
+    "last_updated": "2026-05-18T22:03:10.947Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-17)",
@@ -122,7 +122,22 @@
           "commute": 77,
           "market_stability": 77
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 72,
+          "restaurants_count": 189,
+          "shopping_count": 175,
+          "parks_rank": 5,
+          "restaurants_rank": 1,
+          "shopping_rank": 1,
+          "parks_percentile": 93,
+          "restaurants_percentile": 100,
+          "shopping_percentile": 100,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -227,7 +242,22 @@
           "commute": 50,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 127,
+          "restaurants_count": 158,
+          "shopping_count": 522,
+          "parks_rank": 16,
+          "restaurants_rank": 32,
+          "shopping_rank": 9,
+          "parks_percentile": 75,
+          "restaurants_percentile": 48,
+          "shopping_percentile": 87,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -332,7 +362,22 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 15,
+          "restaurants_count": 33,
+          "shopping_count": 22,
+          "parks_rank": 47,
+          "restaurants_rank": 48,
+          "shopping_rank": 54,
+          "parks_percentile": 23,
+          "restaurants_percentile": 22,
+          "shopping_percentile": 12,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -437,7 +482,22 @@
           "commute": 79,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 8,
+          "restaurants_count": 10,
+          "shopping_count": 6,
+          "parks_rank": 13,
+          "restaurants_rank": 30,
+          "shopping_rank": 52,
+          "parks_percentile": 80,
+          "restaurants_percentile": 52,
+          "shopping_percentile": 15,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -542,7 +602,22 @@
           "commute": 52,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 283,
+          "restaurants_count": 562,
+          "shopping_count": 651,
+          "parks_rank": 35,
+          "restaurants_rank": 35,
+          "shopping_rank": 36,
+          "parks_percentile": 43,
+          "restaurants_percentile": 43,
+          "shopping_percentile": 42,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -647,7 +722,22 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 5,
+          "restaurants_count": 3,
+          "shopping_count": 3,
+          "parks_rank": 43,
+          "restaurants_rank": 60,
+          "shopping_rank": 59,
+          "parks_percentile": 30,
+          "restaurants_percentile": 2,
+          "shopping_percentile": 3,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -752,7 +842,22 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 292,
+          "restaurants_count": 288,
+          "shopping_count": 375,
+          "parks_rank": 2,
+          "restaurants_rank": 6,
+          "shopping_rank": 5,
+          "parks_percentile": 98,
+          "restaurants_percentile": 92,
+          "shopping_percentile": 93,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -857,7 +962,22 @@
           "commute": 37,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 35,
+          "restaurants_count": 80,
+          "shopping_count": 86,
+          "parks_rank": 36,
+          "restaurants_rank": 28,
+          "shopping_rank": 34,
+          "parks_percentile": 42,
+          "restaurants_percentile": 55,
+          "shopping_percentile": 45,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -962,7 +1082,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 151,
+          "restaurants_count": 354,
+          "shopping_count": 560,
+          "parks_rank": 20,
+          "restaurants_rank": 13,
+          "shopping_rank": 10,
+          "parks_percentile": 68,
+          "restaurants_percentile": 80,
+          "shopping_percentile": 85,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -1067,7 +1202,22 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 45,
+          "restaurants_count": 81,
+          "shopping_count": 137,
+          "parks_rank": 44,
+          "restaurants_rank": 51,
+          "shopping_rank": 30,
+          "parks_percentile": 28,
+          "restaurants_percentile": 17,
+          "shopping_percentile": 52,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -1172,7 +1322,22 @@
           "commute": null,
           "market_stability": 82
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 24,
+          "restaurants_count": 46,
+          "shopping_count": 44,
+          "parks_rank": 30,
+          "restaurants_rank": 33,
+          "shopping_rank": 44,
+          "parks_percentile": 52,
+          "restaurants_percentile": 47,
+          "shopping_percentile": 28,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -1277,7 +1442,22 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 24,
+          "restaurants_count": 96,
+          "shopping_count": 124,
+          "parks_rank": 31,
+          "restaurants_rank": 9,
+          "shopping_rank": 12,
+          "parks_percentile": 50,
+          "restaurants_percentile": 87,
+          "shopping_percentile": 82,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -1382,7 +1562,22 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 19,
+          "restaurants_count": 17,
+          "shopping_count": 26,
+          "parks_rank": 45,
+          "restaurants_rank": 59,
+          "shopping_rank": 53,
+          "parks_percentile": 27,
+          "restaurants_percentile": 3,
+          "shopping_percentile": 13,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -1487,7 +1682,22 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 35,
+          "restaurants_count": 59,
+          "shopping_count": 114,
+          "parks_rank": 24,
+          "restaurants_rank": 36,
+          "shopping_rank": 19,
+          "parks_percentile": 62,
+          "restaurants_percentile": 42,
+          "shopping_percentile": 70,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -1592,7 +1802,22 @@
           "commute": 53,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 601,
+          "restaurants_count": 2101,
+          "shopping_count": 3648,
+          "parks_rank": 53,
+          "restaurants_rank": 27,
+          "shopping_rank": 18,
+          "parks_percentile": 13,
+          "restaurants_percentile": 57,
+          "shopping_percentile": 72,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -1697,7 +1922,22 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 21,
+          "restaurants_count": 26,
+          "shopping_count": 73,
+          "parks_rank": 40,
+          "restaurants_rank": 55,
+          "shopping_rank": 27,
+          "parks_percentile": 35,
+          "restaurants_percentile": 10,
+          "shopping_percentile": 57,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -1802,7 +2042,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 29,
+          "restaurants_count": 53,
+          "shopping_count": 95,
+          "parks_rank": 29,
+          "restaurants_rank": 37,
+          "shopping_rank": 22,
+          "parks_percentile": 53,
+          "restaurants_percentile": 40,
+          "shopping_percentile": 65,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -1907,7 +2162,22 @@
           "commute": 71,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 21,
+          "restaurants_count": 104,
+          "shopping_count": 112,
+          "parks_rank": 56,
+          "restaurants_rank": 23,
+          "shopping_rank": 29,
+          "parks_percentile": 8,
+          "restaurants_percentile": 63,
+          "shopping_percentile": 53,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2012,7 +2282,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 62,
+          "restaurants_count": 65,
+          "shopping_count": 84,
+          "parks_rank": 1,
+          "restaurants_rank": 4,
+          "shopping_rank": 4,
+          "parks_percentile": 100,
+          "restaurants_percentile": 95,
+          "shopping_percentile": 95,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -2117,7 +2402,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 16,
+          "restaurants_count": 13,
+          "shopping_count": 6,
+          "parks_rank": 33,
+          "restaurants_rank": 58,
+          "shopping_rank": 60,
+          "parks_percentile": 47,
+          "restaurants_percentile": 5,
+          "shopping_percentile": 2,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -2222,7 +2522,22 @@
           "commute": 48,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 95,
+          "restaurants_count": 146,
+          "shopping_count": 200,
+          "parks_rank": 14,
+          "restaurants_rank": 21,
+          "shopping_rank": 20,
+          "parks_percentile": 78,
+          "restaurants_percentile": 67,
+          "shopping_percentile": 68,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2327,7 +2642,22 @@
           "commute": 32,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 14,
+          "restaurants_count": 49,
+          "shopping_count": 33,
+          "parks_rank": 49,
+          "restaurants_rank": 26,
+          "shopping_rank": 50,
+          "parks_percentile": 20,
+          "restaurants_percentile": 58,
+          "shopping_percentile": 18,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2432,7 +2762,22 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 439,
+          "restaurants_count": 1135,
+          "shopping_count": 1157,
+          "parks_rank": 52,
+          "restaurants_rank": 46,
+          "shopping_rank": 49,
+          "parks_percentile": 15,
+          "restaurants_percentile": 25,
+          "shopping_percentile": 20,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2537,7 +2882,22 @@
           "commute": 51,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 227,
+          "restaurants_count": 438,
+          "shopping_count": 524,
+          "parks_rank": 17,
+          "restaurants_rank": 18,
+          "shopping_rank": 23,
+          "parks_percentile": 73,
+          "restaurants_percentile": 72,
+          "shopping_percentile": 63,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2642,7 +3002,22 @@
           "commute": 40,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 103,
+          "restaurants_count": 198,
+          "shopping_count": 375,
+          "parks_rank": 54,
+          "restaurants_rank": 54,
+          "shopping_rank": 39,
+          "parks_percentile": 12,
+          "restaurants_percentile": 12,
+          "shopping_percentile": 37,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2747,7 +3122,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 63,
+          "restaurants_count": 133,
+          "shopping_count": 257,
+          "parks_rank": 58,
+          "restaurants_rank": 57,
+          "shopping_rank": 46,
+          "parks_percentile": 5,
+          "restaurants_percentile": 7,
+          "shopping_percentile": 25,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -2852,7 +3242,22 @@
           "commute": 48,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 35,
+          "restaurants_count": 260,
+          "shopping_count": 306,
+          "parks_rank": 60,
+          "restaurants_rank": 38,
+          "shopping_rank": 38,
+          "parks_percentile": 2,
+          "restaurants_percentile": 38,
+          "shopping_percentile": 38,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -2957,7 +3362,22 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 3,
+          "restaurants_count": 9,
+          "shopping_count": 8,
+          "parks_rank": 59,
+          "restaurants_rank": 56,
+          "shopping_rank": 57,
+          "parks_percentile": 3,
+          "restaurants_percentile": 8,
+          "shopping_percentile": 7,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3062,7 +3482,22 @@
           "commute": null,
           "market_stability": 62
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 19,
+          "restaurants_count": 28,
+          "shopping_count": 43,
+          "parks_rank": 10,
+          "restaurants_rank": 14,
+          "shopping_rank": 16,
+          "parks_percentile": 85,
+          "restaurants_percentile": 78,
+          "shopping_percentile": 75,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3167,7 +3602,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 19,
+          "restaurants_count": 37,
+          "shopping_count": 87,
+          "parks_rank": 15,
+          "restaurants_rank": 15,
+          "shopping_rank": 7,
+          "parks_percentile": 77,
+          "restaurants_percentile": 77,
+          "shopping_percentile": 90,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3272,7 +3722,22 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 29,
+          "restaurants_count": 72,
+          "shopping_count": 144,
+          "parks_rank": 34,
+          "restaurants_rank": 25,
+          "shopping_rank": 15,
+          "parks_percentile": 45,
+          "restaurants_percentile": 60,
+          "shopping_percentile": 77,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3377,7 +3842,22 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 135,
+          "restaurants_count": 309,
+          "shopping_count": 428,
+          "parks_rank": 48,
+          "restaurants_rank": 44,
+          "shopping_rank": 35,
+          "parks_percentile": 22,
+          "restaurants_percentile": 28,
+          "shopping_percentile": 43,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -3482,7 +3962,22 @@
           "commute": 88,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 26,
+          "restaurants_count": 50,
+          "shopping_count": 67,
+          "parks_rank": 46,
+          "restaurants_rank": 50,
+          "shopping_rank": 40,
+          "parks_percentile": 25,
+          "restaurants_percentile": 18,
+          "shopping_percentile": 35,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -3576,7 +4071,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 35,
+          "restaurants_count": 59,
+          "shopping_count": 126,
+          "parks_rank": 6,
+          "restaurants_rank": 7,
+          "shopping_rank": 3,
+          "parks_percentile": 92,
+          "restaurants_percentile": 90,
+          "shopping_percentile": 97,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3681,7 +4191,22 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 82,
+          "restaurants_count": 238,
+          "shopping_count": 457,
+          "parks_rank": 38,
+          "restaurants_rank": 22,
+          "shopping_rank": 17,
+          "parks_percentile": 38,
+          "restaurants_percentile": 65,
+          "shopping_percentile": 73,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -3786,7 +4311,22 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 28,
+          "restaurants_count": 39,
+          "shopping_count": 58,
+          "parks_rank": 42,
+          "restaurants_rank": 53,
+          "shopping_rank": 47,
+          "parks_percentile": 32,
+          "restaurants_percentile": 13,
+          "shopping_percentile": 23,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3891,7 +4431,22 @@
           "commute": null,
           "market_stability": 99
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 13,
+          "restaurants_count": 6,
+          "shopping_count": 5,
+          "parks_rank": 8,
+          "restaurants_rank": 52,
+          "shopping_rank": 56,
+          "parks_percentile": 88,
+          "restaurants_percentile": 15,
+          "shopping_percentile": 8,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -3996,7 +4551,22 @@
           "commute": 45,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 434,
+          "restaurants_count": 450,
+          "shopping_count": 560,
+          "parks_rank": 3,
+          "restaurants_rank": 5,
+          "shopping_rank": 6,
+          "parks_percentile": 97,
+          "restaurants_percentile": 93,
+          "shopping_percentile": 92,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -4101,7 +4671,22 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 161,
+          "restaurants_count": 305,
+          "shopping_count": 351,
+          "parks_rank": 27,
+          "restaurants_rank": 31,
+          "shopping_rank": 31,
+          "parks_percentile": 57,
+          "restaurants_percentile": 50,
+          "shopping_percentile": 50,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -4206,7 +4791,22 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 17,
+          "restaurants_count": 39,
+          "shopping_count": 17,
+          "parks_rank": 21,
+          "restaurants_rank": 16,
+          "shopping_rank": 51,
+          "parks_percentile": 67,
+          "restaurants_percentile": 75,
+          "shopping_percentile": 17,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -4311,7 +4911,22 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 97,
+          "restaurants_count": 233,
+          "shopping_count": 328,
+          "parks_rank": 37,
+          "restaurants_rank": 29,
+          "shopping_rank": 26,
+          "parks_percentile": 40,
+          "restaurants_percentile": 53,
+          "shopping_percentile": 58,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -4416,7 +5031,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 24,
+          "restaurants_count": 38,
+          "shopping_count": 52,
+          "parks_rank": 26,
+          "restaurants_rank": 40,
+          "shopping_rank": 32,
+          "parks_percentile": 58,
+          "restaurants_percentile": 35,
+          "shopping_percentile": 48,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -4521,7 +5151,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 29,
+          "restaurants_count": 79,
+          "shopping_count": 85,
+          "parks_rank": 12,
+          "restaurants_rank": 8,
+          "shopping_rank": 13,
+          "parks_percentile": 82,
+          "restaurants_percentile": 88,
+          "shopping_percentile": 80,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -4626,7 +5271,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 44,
+          "restaurants_count": 86,
+          "shopping_count": 120,
+          "parks_rank": 41,
+          "restaurants_rank": 45,
+          "shopping_rank": 33,
+          "parks_percentile": 33,
+          "restaurants_percentile": 27,
+          "shopping_percentile": 47,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -4731,7 +5391,22 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 23,
+          "restaurants_count": 38,
+          "shopping_count": 68,
+          "parks_rank": 28,
+          "restaurants_rank": 41,
+          "shopping_rank": 24,
+          "parks_percentile": 55,
+          "restaurants_percentile": 33,
+          "shopping_percentile": 62,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -4836,7 +5511,22 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 137,
+          "restaurants_count": 592,
+          "shopping_count": 724,
+          "parks_rank": 50,
+          "restaurants_rank": 19,
+          "shopping_rank": 21,
+          "parks_percentile": 18,
+          "restaurants_percentile": 70,
+          "shopping_percentile": 67,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -4941,7 +5631,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 152,
+          "restaurants_count": 203,
+          "shopping_count": 272,
+          "parks_rank": 4,
+          "restaurants_rank": 3,
+          "shopping_rank": 2,
+          "parks_percentile": 95,
+          "restaurants_percentile": 97,
+          "shopping_percentile": 98,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5046,7 +5751,22 @@
           "commute": null,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 35,
+          "restaurants_count": 57,
+          "shopping_count": 90,
+          "parks_rank": 22,
+          "restaurants_rank": 34,
+          "shopping_rank": 25,
+          "parks_percentile": 65,
+          "restaurants_percentile": 45,
+          "shopping_percentile": 60,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5151,7 +5871,22 @@
           "commute": 55,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 74,
+          "restaurants_count": 303,
+          "shopping_count": 167,
+          "parks_rank": 39,
+          "restaurants_rank": 12,
+          "shopping_rank": 41,
+          "parks_percentile": 37,
+          "restaurants_percentile": 82,
+          "shopping_percentile": 33,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -5256,7 +5991,22 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 24,
+          "restaurants_count": 92,
+          "shopping_count": 39,
+          "parks_rank": 7,
+          "restaurants_rank": 2,
+          "shopping_rank": 11,
+          "parks_percentile": 90,
+          "restaurants_percentile": 98,
+          "shopping_percentile": 83,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5361,7 +6111,22 @@
           "commute": 40,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 41,
+          "restaurants_count": 129,
+          "shopping_count": 183,
+          "parks_rank": 25,
+          "restaurants_rank": 11,
+          "shopping_rank": 14,
+          "parks_percentile": 60,
+          "restaurants_percentile": 83,
+          "shopping_percentile": 78,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -5466,7 +6231,22 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 26,
+          "restaurants_count": 69,
+          "shopping_count": 79,
+          "parks_rank": 55,
+          "restaurants_rank": 49,
+          "shopping_rank": 48,
+          "parks_percentile": 10,
+          "restaurants_percentile": 20,
+          "shopping_percentile": 22,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -5571,7 +6351,22 @@
           "commute": null,
           "market_stability": 84
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 7,
+          "restaurants_count": 26,
+          "shopping_count": 17,
+          "parks_rank": 57,
+          "restaurants_rank": 47,
+          "shopping_rank": 55,
+          "parks_percentile": 7,
+          "restaurants_percentile": 23,
+          "shopping_percentile": 10,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5676,7 +6471,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 14,
+          "restaurants_count": 37,
+          "shopping_count": 17,
+          "parks_rank": 51,
+          "restaurants_rank": 43,
+          "shopping_rank": 58,
+          "parks_percentile": 17,
+          "restaurants_percentile": 30,
+          "shopping_percentile": 5,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5781,7 +6591,22 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 49,
+          "restaurants_count": 35,
+          "shopping_count": 59,
+          "parks_rank": 9,
+          "restaurants_rank": 42,
+          "shopping_rank": 28,
+          "parks_percentile": 87,
+          "restaurants_percentile": 32,
+          "shopping_percentile": 55,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     },
@@ -5886,7 +6711,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 44,
+          "restaurants_count": 85,
+          "shopping_count": 159,
+          "parks_rank": 11,
+          "restaurants_rank": 10,
+          "shopping_rank": 8,
+          "parks_percentile": 83,
+          "restaurants_percentile": 85,
+          "shopping_percentile": 88,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -5991,7 +6831,22 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 45,
+          "restaurants_count": 76,
+          "shopping_count": 58,
+          "parks_rank": 18,
+          "restaurants_rank": 24,
+          "shopping_rank": 43,
+          "parks_percentile": 72,
+          "restaurants_percentile": 62,
+          "shopping_percentile": 30,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -6096,7 +6951,22 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 15,
+          "restaurants_count": 27,
+          "shopping_count": 18,
+          "parks_rank": 19,
+          "restaurants_rank": 20,
+          "shopping_rank": 45,
+          "parks_percentile": 70,
+          "restaurants_percentile": 68,
+          "shopping_percentile": 27,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -6201,7 +7071,22 @@
           "commute": null,
           "market_stability": 94
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 31,
+          "restaurants_count": 82,
+          "shopping_count": 58,
+          "parks_rank": 23,
+          "restaurants_rank": 17,
+          "shopping_rank": 37,
+          "parks_percentile": 63,
+          "restaurants_percentile": 73,
+          "shopping_percentile": 40,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -6306,7 +7191,22 @@
           "commute": null,
           "market_stability": 4
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 34,
+          "restaurants_count": 82,
+          "shopping_count": 66,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "estimate"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "partial"
       }
     },
@@ -6411,7 +7311,22 @@
           "commute": 39,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:47:24.019Z",
+        "amenity_ranks": {
+          "parks_count": 44,
+          "restaurants_count": 77,
+          "shopping_count": 82,
+          "parks_rank": 32,
+          "restaurants_rank": 39,
+          "shopping_rank": 42,
+          "parks_percentile": 48,
+          "restaurants_percentile": 37,
+          "shopping_percentile": 32,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": "census"
+        },
+        "computed_date": "2026-05-18T22:03:10.929Z",
         "data_completeness": "full"
       }
     }
