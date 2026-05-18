@@ -1,0 +1,6114 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-18T03:03:07.901Z",
+    "sources": [
+      "Census ACS 2023",
+      "WalkScore (2026-05-17)",
+      "NTREIS (2026-05-17)",
+      "Niche ISD (2026-05-18)",
+      "Google Places (2026-05-18)",
+      "Niche City (2026-05-18)"
+    ],
+    "suburbs_total": 60,
+    "suburbs_complete": 59,
+    "suburbs_partial": 1,
+    "schema_version": "1.0",
+    "note": "Run build-suburb-profiles.js after any source data refresh.",
+    "niche_city_scraped": "2026-05-18",
+    "places_data_fetched": "2026-05-18",
+    "places_api_radius_miles": 5,
+    "fbi_data_fetched": null,
+    "fbi_data_year": null
+  },
+  "suburbs": {
+    "allen": {
+      "display_name": "Allen",
+      "county": "Collin",
+      "ntreis_city_id": 32299,
+      "tier": 1,
+      "lat": 33.1032,
+      "lng": -96.6706,
+      "niche_city_slug": "allen-collin-tx",
+      "demographics": {
+        "population": 107684,
+        "median_age": 38.5,
+        "median_household_income": 129130,
+        "pct_households_with_children": 42.4,
+        "owner_occupied_pct": 69.8,
+        "median_home_value_census": 429900,
+        "bachelors_plus_pct": 56.1,
+        "wfh_pct": 24.8,
+        "median_commute_min": 30,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 67,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 68,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Allen-TX/lat=33.1032/lng=-96.6706/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 519735.4,
+        "sfr_days_on_market": 33.4,
+        "sfr_months_supply": 3.4,
+        "sfr_closed_sales_12mo": 1008,
+        "market_condition": "balanced",
+        "condo_median_price": 379466.3
+      },
+      "schools": {
+        "isd_name": "Allen ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/allen-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 519735.4,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 42.4,
+        "walk_score": 67,
+        "transit_score": null,
+        "bike_score": 68,
+        "median_household_income": 129130,
+        "owner_occupied_pct": 69.8,
+        "wfh_pct": 24.8
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 80,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 97,
+          "safety": 83,
+          "family_community": 65,
+          "commute": 50,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "anna": {
+      "display_name": "Anna",
+      "county": "Collin",
+      "ntreis_city_id": 32304,
+      "tier": 3,
+      "lat": 33.3526,
+      "lng": -96.5472,
+      "niche_city_slug": "anna-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 31,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 39,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Anna-TX/lat=33.3526/lng=-96.5472/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 358832.4,
+        "sfr_days_on_market": 55.9,
+        "sfr_months_supply": 6,
+        "sfr_closed_sales_12mo": 791,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Anna ISD",
+        "overall_grade": "B-",
+        "academics_grade": "B",
+        "college_prep_grade": "B+",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/anna-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 358832.4,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": null,
+        "walk_score": 31,
+        "transit_score": null,
+        "bike_score": 39,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B-",
+        "families": "B",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 69,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 80,
+          "safety": 80,
+          "family_community": 31,
+          "commute": null,
+          "market_stability": 88
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "argyle": {
+      "display_name": "Argyle",
+      "county": "Denton",
+      "ntreis_city_id": 32309,
+      "tier": 1,
+      "lat": 33.1268,
+      "lng": -97.1836,
+      "niche_city_slug": "argyle-denton-tx",
+      "demographics": {
+        "population": 573,
+        "median_age": 35.8,
+        "median_household_income": 79844,
+        "pct_households_with_children": 20.7,
+        "owner_occupied_pct": 74.9,
+        "median_home_value_census": 212000,
+        "bachelors_plus_pct": 34.7,
+        "wfh_pct": 10.1,
+        "median_commute_min": 21.3,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 20,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 24,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Argyle-TX/lat=33.1226/lng=-97.1792/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 569414.1,
+        "sfr_days_on_market": 52.9,
+        "sfr_months_supply": 4.7,
+        "sfr_closed_sales_12mo": 462,
+        "market_condition": "balanced",
+        "condo_median_price": 402982
+      },
+      "schools": {
+        "isd_name": "Argyle ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/argyle-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 569414.1,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": 20.7,
+        "walk_score": 20,
+        "transit_score": null,
+        "bike_score": 24,
+        "median_household_income": 79844,
+        "owner_occupied_pct": 74.9,
+        "wfh_pct": 10.1
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "C+",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 74,
+        "value_score": 71,
+        "sub_scores": {
+          "education": 97,
+          "safety": 87,
+          "family_community": 10,
+          "commute": 79,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "arlington": {
+      "display_name": "Arlington",
+      "county": "Tarrant",
+      "ntreis_city_id": 32310,
+      "tier": 3,
+      "lat": 32.7357,
+      "lng": -97.1081,
+      "niche_city_slug": "arlington-tarrant-tx",
+      "demographics": {
+        "population": 394769,
+        "median_age": 33.6,
+        "median_household_income": 73519,
+        "pct_households_with_children": 34.6,
+        "owner_occupied_pct": 54.8,
+        "median_home_value_census": 276400,
+        "bachelors_plus_pct": 33.1,
+        "wfh_pct": 11.8,
+        "median_commute_min": 29.4,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 83,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 80,
+        "bike_description": "Very Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Arlington-TX/lat=32.7357/lng=-97.1081/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 333885.4,
+        "sfr_days_on_market": 31.8,
+        "sfr_months_supply": 3.1,
+        "sfr_closed_sales_12mo": 2832,
+        "market_condition": "balanced",
+        "condo_median_price": 145528.7
+      },
+      "schools": {
+        "isd_name": "Arlington ISD",
+        "overall_grade": "B",
+        "academics_grade": "B-",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/arlington-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 333885.4,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 8,
+        "pct_households_with_children": 34.6,
+        "walk_score": 83,
+        "transit_score": null,
+        "bike_score": 80,
+        "median_household_income": 73519,
+        "owner_occupied_pct": 54.8,
+        "wfh_pct": 11.8
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B",
+        "crime": "C",
+        "housing": "C+",
+        "nightlife": "B+",
+        "families": "B+",
+        "diversity": "A+",
+        "jobs": "B-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "C+",
+        "outdoor_activities": "B",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 73,
+        "value_score": 87,
+        "sub_scores": {
+          "education": 83,
+          "safety": 73,
+          "family_community": 59,
+          "commute": 52,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "aubrey": {
+      "display_name": "Aubrey",
+      "county": "Denton",
+      "ntreis_city_id": 32316,
+      "tier": 2,
+      "lat": 33.3029,
+      "lng": -96.9836,
+      "niche_city_slug": "aubrey-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 32,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 41,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3057/lng=-96.9842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 350404.6,
+        "sfr_days_on_market": 47.8,
+        "sfr_months_supply": 6,
+        "sfr_closed_sales_12mo": 927,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Aubrey ISD",
+        "overall_grade": "B",
+        "academics_grade": "B+",
+        "college_prep_grade": "B+",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/aubrey-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 350404.6,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 32,
+        "transit_score": null,
+        "bike_score": 41,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B+",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B-",
+        "families": "B+",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 70,
+        "value_score": 94,
+        "sub_scores": {
+          "education": 83,
+          "safety": 77,
+          "family_community": 32,
+          "commute": null,
+          "market_stability": 88
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "bedford": {
+      "display_name": "Bedford",
+      "county": "Tarrant",
+      "ntreis_city_id": 32332,
+      "tier": 3,
+      "lat": 32.844,
+      "lng": -97.1431,
+      "niche_city_slug": "bedford-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 69,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 48,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Bedford-TX/lat=32.844/lng=-97.1431/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 383158.3,
+        "sfr_days_on_market": 20.5,
+        "sfr_months_supply": 2.4,
+        "sfr_closed_sales_12mo": 469,
+        "market_condition": "seller",
+        "condo_median_price": 255244.5
+      },
+      "schools": {
+        "isd_name": "HEB ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 383158.3,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 69,
+        "transit_score": null,
+        "bike_score": 48,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "C+",
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 85,
+        "value_score": 99,
+        "sub_scores": {
+          "education": 97,
+          "safety": 77,
+          "family_community": 69,
+          "commute": null,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "burleson": {
+      "display_name": "Burleson",
+      "county": "Johnson",
+      "ntreis_city_id": 32372,
+      "tier": 3,
+      "lat": 32.5421,
+      "lng": -97.3208,
+      "niche_city_slug": "burleson-johnson-tx",
+      "demographics": {
+        "population": 50981,
+        "median_age": 34.9,
+        "median_household_income": 94162,
+        "pct_households_with_children": 42.6,
+        "owner_occupied_pct": 71.3,
+        "median_home_value_census": 282900,
+        "bachelors_plus_pct": 30.8,
+        "wfh_pct": 8.5,
+        "median_commute_min": 34,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 75,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 56,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Burleson-TX/lat=32.5421/lng=-97.3208/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 350919.4,
+        "sfr_days_on_market": 43.7,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 954,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Burleson ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B+",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/burleson-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 350919.4,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": 42.6,
+        "walk_score": 75,
+        "transit_score": null,
+        "bike_score": 56,
+        "median_household_income": 94162,
+        "owner_occupied_pct": 71.3,
+        "wfh_pct": 8.5
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B+",
+        "crime": "C+",
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "B+",
+        "diversity": "A-",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 87,
+          "safety": 77,
+          "family_community": 69,
+          "commute": 37,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "carrollton": {
+      "display_name": "Carrollton",
+      "county": "Dallas/Denton",
+      "ntreis_city_id": 32384,
+      "tier": 3,
+      "lat": 32.9537,
+      "lng": -96.8903,
+      "niche_city_slug": "carrollton-dallas-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 82,
+        "walk_description": "Very Walkable",
+        "transit_score": 33,
+        "transit_description": "Some Transit",
+        "bike_score": 61,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Carrollton-TX/lat=32.9537/lng=-96.8903/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 425975,
+        "sfr_days_on_market": 23.9,
+        "sfr_months_supply": 2.9,
+        "sfr_closed_sales_12mo": 1060,
+        "market_condition": "seller",
+        "condo_median_price": 252166.7
+      },
+      "schools": {
+        "isd_name": "Carrollton-Farmers Branch ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 425975,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": null,
+        "walk_score": 82,
+        "transit_score": 33,
+        "bike_score": 61,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "A-",
+        "families": "A",
+        "diversity": "A+",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 85,
+        "value_score": 95,
+        "sub_scores": {
+          "education": 87,
+          "safety": 80,
+          "family_community": 82,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "cedar-hill": {
+      "display_name": "Cedar Hill",
+      "county": "Dallas",
+      "ntreis_city_id": 32388,
+      "tier": 3,
+      "lat": 32.5885,
+      "lng": -96.9561,
+      "niche_city_slug": "cedar-hill-dallas-tx",
+      "demographics": {
+        "population": 77474,
+        "median_age": 37.5,
+        "median_household_income": 123972,
+        "pct_households_with_children": 41.3,
+        "owner_occupied_pct": 67.3,
+        "median_home_value_census": 474800,
+        "bachelors_plus_pct": 55.2,
+        "wfh_pct": 27.8,
+        "median_commute_min": 28.2,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 68,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 52,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Cedar-Hill-TX/lat=32.5885/lng=-96.9561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 346140.6,
+        "sfr_days_on_market": 33.2,
+        "sfr_months_supply": 4.2,
+        "sfr_closed_sales_12mo": 482,
+        "market_condition": "balanced",
+        "condo_median_price": 153125
+      },
+      "schools": {
+        "isd_name": "Cedar Hill ISD",
+        "overall_grade": "C",
+        "academics_grade": "C+",
+        "college_prep_grade": "B",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 346140.6,
+        "overall_isd_grade": 6,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": 41.3,
+        "walk_score": 68,
+        "transit_score": null,
+        "bike_score": 52,
+        "median_household_income": 123972,
+        "owner_occupied_pct": 67.3,
+        "wfh_pct": 27.8
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "C",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 72,
+        "value_score": 94,
+        "sub_scores": {
+          "education": 73,
+          "safety": 77,
+          "family_community": 64,
+          "commute": 56,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "celina": {
+      "display_name": "Celina",
+      "county": "Collin",
+      "ntreis_city_id": 32391,
+      "tier": 2,
+      "lat": 33.3254,
+      "lng": -96.7855,
+      "niche_city_slug": "celina-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 65,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 47,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3237/lng=-96.7847/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 531662.4,
+        "sfr_days_on_market": 69.2,
+        "sfr_months_supply": 6.7,
+        "sfr_closed_sales_12mo": 1627,
+        "market_condition": "buyer",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Celina ISD",
+        "overall_grade": "B+",
+        "academics_grade": "A-",
+        "college_prep_grade": "B+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/celina-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 531662.4,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 65,
+        "transit_score": null,
+        "bike_score": 47,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "A",
+        "nightlife": "C+",
+        "families": "A+",
+        "diversity": "A-",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 87,
+          "safety": 80,
+          "family_community": 65,
+          "commute": null,
+          "market_stability": 82
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "cleburne": {
+      "display_name": "Cleburne",
+      "county": "Johnson",
+      "ntreis_city_id": 32402,
+      "tier": 3,
+      "lat": 32.3499,
+      "lng": -97.3842,
+      "niche_city_slug": "cleburne-johnson-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 60,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 50,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3504/lng=-97.3839/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 288263.8,
+        "sfr_days_on_market": 60.1,
+        "sfr_months_supply": 5.1,
+        "sfr_closed_sales_12mo": 800,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Cleburne ISD",
+        "overall_grade": "B-",
+        "academics_grade": "B-",
+        "college_prep_grade": "B+",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/cleburne-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 288263.8,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 8,
+        "pct_households_with_children": null,
+        "walk_score": 60,
+        "transit_score": null,
+        "bike_score": 50,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B-",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B+",
+        "families": "B",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B+",
+        "health_fitness": "C+",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 76,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 80,
+          "safety": 77,
+          "family_community": 60,
+          "commute": null,
+          "market_stability": 95
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "colleyville": {
+      "display_name": "Colleyville",
+      "county": "Tarrant",
+      "ntreis_city_id": 32409,
+      "tier": 1,
+      "lat": 32.8887,
+      "lng": -97.1503,
+      "niche_city_slug": "colleyville-tarrant-tx",
+      "demographics": {
+        "population": 32966,
+        "median_age": 35,
+        "median_household_income": 66324,
+        "pct_households_with_children": 36.2,
+        "owner_occupied_pct": 58.6,
+        "median_home_value_census": 200900,
+        "bachelors_plus_pct": 18,
+        "wfh_pct": 2.2,
+        "median_commute_min": 28.2,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 64,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 41,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Colleyville-TX/lat=32.8885/lng=-97.1503/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 1002479.2,
+        "sfr_days_on_market": 19.1,
+        "sfr_months_supply": 2.8,
+        "sfr_closed_sales_12mo": 342,
+        "market_condition": "seller",
+        "condo_median_price": 440979.2
+      },
+      "schools": {
+        "isd_name": "Grapevine-Colleyville ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 1002479.2,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": 36.2,
+        "walk_score": 64,
+        "transit_score": null,
+        "bike_score": 41,
+        "median_household_income": 66324,
+        "owner_occupied_pct": 58.6,
+        "wfh_pct": 2.2
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B+",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 80,
+        "value_score": 22,
+        "sub_scores": {
+          "education": 97,
+          "safety": 87,
+          "family_community": 54,
+          "commute": 56,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "coppell": {
+      "display_name": "Coppell",
+      "county": "Dallas",
+      "ntreis_city_id": 32420,
+      "tier": 1,
+      "lat": 32.9543,
+      "lng": -97.015,
+      "niche_city_slug": "coppell-dallas-tx",
+      "demographics": {
+        "population": 42029,
+        "median_age": 40.5,
+        "median_household_income": 139227,
+        "pct_households_with_children": 41.7,
+        "owner_occupied_pct": 69.1,
+        "median_home_value_census": 525300,
+        "bachelors_plus_pct": 68.1,
+        "wfh_pct": 28.4,
+        "median_commute_min": 29.1,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 28,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 34,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Coppell-TX/lat=32.9546/lng=-97.0141/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 625166.7,
+        "sfr_days_on_market": 23.6,
+        "sfr_months_supply": 2.5,
+        "sfr_closed_sales_12mo": 340,
+        "market_condition": "seller",
+        "condo_median_price": 258729.2
+      },
+      "schools": {
+        "isd_name": "Coppell ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/coppell-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 625166.7,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": 41.7,
+        "walk_score": 28,
+        "transit_score": null,
+        "bike_score": 34,
+        "median_household_income": 139227,
+        "owner_occupied_pct": 69.1,
+        "wfh_pct": 28.4
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 77,
+        "value_score": 83,
+        "sub_scores": {
+          "education": 97,
+          "safety": 83,
+          "family_community": 47,
+          "commute": 53,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "dallas": {
+      "display_name": "Dallas",
+      "county": "Dallas",
+      "ntreis_city_id": 32432,
+      "tier": 3,
+      "lat": 32.7767,
+      "lng": -96.797,
+      "niche_city_slug": "dallas-dallas-tx",
+      "demographics": {
+        "population": 1299553,
+        "median_age": 33.4,
+        "median_household_income": 67760,
+        "pct_households_with_children": 28.1,
+        "owner_occupied_pct": 42.4,
+        "median_home_value_census": 295300,
+        "bachelors_plus_pct": 37.4,
+        "wfh_pct": 14,
+        "median_commute_min": 29,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 93,
+        "walk_description": "Walker's Paradise",
+        "transit_score": 84,
+        "transit_description": "Excellent Transit",
+        "bike_score": 74,
+        "bike_description": "Very Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Dallas-TX/lat=32.7767/lng=-96.797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 197301.7,
+        "sfr_days_on_market": 129.7,
+        "sfr_months_supply": 6.3,
+        "sfr_closed_sales_12mo": 20,
+        "market_condition": "buyer",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Dallas ISD",
+        "overall_grade": "B",
+        "academics_grade": "B-",
+        "college_prep_grade": "B+",
+        "good_for_families": "B-",
+        "niche_url": "https://www.niche.com/k12/d/dallas-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 197301.7,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 8,
+        "pct_households_with_children": 28.1,
+        "walk_score": 93,
+        "transit_score": 84,
+        "bike_score": 74,
+        "median_household_income": 67760,
+        "owner_occupied_pct": 42.4,
+        "wfh_pct": 14
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "B",
+        "crime": "C-",
+        "housing": "C",
+        "nightlife": "A-",
+        "families": "B+",
+        "diversity": "A+",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B-",
+        "outdoor_activities": "B+",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C-",
+        "niche_crime_numeric": 70,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 68,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 79,
+          "safety": 70,
+          "family_community": 53,
+          "commute": 53,
+          "market_stability": 86
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "desoto": {
+      "display_name": "DeSoto",
+      "county": "Dallas",
+      "ntreis_city_id": 32449,
+      "tier": 3,
+      "lat": 32.5896,
+      "lng": -96.8572,
+      "niche_city_slug": "desoto-dallas-tx",
+      "demographics": {
+        "population": 33823,
+        "median_age": 37.6,
+        "median_household_income": 95233,
+        "pct_households_with_children": 36.5,
+        "owner_occupied_pct": 78.6,
+        "median_home_value_census": 238900,
+        "bachelors_plus_pct": 25.5,
+        "wfh_pct": 7.6,
+        "median_commute_min": 26,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 71,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 45,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/DeSoto-TX/lat=32.5896/lng=-96.8572/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 356040.8,
+        "sfr_days_on_market": 42.7,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 446,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "DeSoto ISD",
+        "overall_grade": "C",
+        "academics_grade": "C",
+        "college_prep_grade": "B-",
+        "good_for_families": "B-",
+        "niche_url": "https://www.niche.com/k12/d/desoto-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 356040.8,
+        "overall_isd_grade": 6,
+        "academics_isd_grade": 6,
+        "pct_households_with_children": 36.5,
+        "walk_score": 71,
+        "transit_score": null,
+        "bike_score": 45,
+        "median_household_income": 95233,
+        "owner_occupied_pct": 78.6,
+        "wfh_pct": 7.6
+      },
+      "niche_city": {
+        "overall": "B-",
+        "public_schools": "C",
+        "crime": "C",
+        "housing": "C",
+        "nightlife": "B",
+        "families": "B-",
+        "diversity": "A-",
+        "jobs": "C+",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 71,
+        "value_score": 90,
+        "sub_scores": {
+          "education": 73,
+          "safety": 73,
+          "family_community": 57,
+          "commute": 63,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "duncanville": {
+      "display_name": "Duncanville",
+      "county": "Dallas",
+      "ntreis_city_id": 32458,
+      "tier": 3,
+      "lat": 32.6518,
+      "lng": -96.9083,
+      "niche_city_slug": "duncanville-dallas-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 83,
+        "walk_description": "Very Walkable",
+        "transit_score": 0,
+        "transit_description": "No Nearby Transit",
+        "bike_score": 58,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Duncanville-TX/lat=32.6518/lng=-96.9083/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 296625,
+        "sfr_days_on_market": 30.8,
+        "sfr_months_supply": 3.8,
+        "sfr_closed_sales_12mo": 255,
+        "market_condition": "balanced",
+        "condo_median_price": 175211.1
+      },
+      "schools": {
+        "isd_name": "Duncanville ISD",
+        "overall_grade": "B-",
+        "academics_grade": "C+",
+        "college_prep_grade": "A-",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/duncanville-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 296625,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": null,
+        "walk_score": 83,
+        "transit_score": 0,
+        "bike_score": 58,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "C+",
+        "crime": "C",
+        "housing": "C+",
+        "nightlife": "B",
+        "families": "B",
+        "diversity": "A",
+        "jobs": "B-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 81,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 80,
+          "safety": 73,
+          "family_community": 83,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "euless": {
+      "display_name": "Euless",
+      "county": "Tarrant",
+      "ntreis_city_id": 32476,
+      "tier": 3,
+      "lat": 32.8371,
+      "lng": -97.0822,
+      "niche_city_slug": "euless-tarrant-tx",
+      "demographics": {
+        "population": 1167,
+        "median_age": 41.7,
+        "median_household_income": 64000,
+        "pct_households_with_children": 35.6,
+        "owner_occupied_pct": 59.8,
+        "median_home_value_census": 144000,
+        "bachelors_plus_pct": null,
+        "wfh_pct": 4.4,
+        "median_commute_min": 23.8,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 60,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": null,
+        "bike_description": "Unknown",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Euless-TX/lat=32.8368/lng=-97.0819/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 374232.9,
+        "sfr_days_on_market": 21.6,
+        "sfr_months_supply": 2.4,
+        "sfr_closed_sales_12mo": 375,
+        "market_condition": "seller",
+        "condo_median_price": 250816.7
+      },
+      "schools": {
+        "isd_name": "HEB ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 374232.9,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 35.6,
+        "walk_score": 60,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": 64000,
+        "owner_occupied_pct": 59.8,
+        "wfh_pct": 4.4
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A+",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B",
+        "outdoor_activities": "C+",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 82,
+        "sub_scores": {
+          "education": 97,
+          "safety": 77,
+          "family_community": 51,
+          "commute": 71,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "fairview": {
+      "display_name": "Fairview",
+      "county": "Collin",
+      "ntreis_city_id": 32481,
+      "tier": 3,
+      "lat": 33.1626,
+      "lng": -96.6178,
+      "niche_city_slug": "fairview-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 1,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 26,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Fairview-TX/lat=33.1548/lng=-96.6174/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 749450,
+        "sfr_days_on_market": 37.1,
+        "sfr_months_supply": 4.4,
+        "sfr_closed_sales_12mo": 141,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Lovejoy ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/lovejoy-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 749450,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": null,
+        "walk_score": 1,
+        "transit_score": null,
+        "bike_score": 26,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "C+",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B+",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 71,
+        "value_score": 70,
+        "sub_scores": {
+          "education": 97,
+          "safety": 83,
+          "family_community": 1,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "fate": {
+      "display_name": "Fate",
+      "county": "Rockwall",
+      "ntreis_city_id": 32484,
+      "tier": 3,
+      "lat": 32.9418,
+      "lng": -96.3822,
+      "niche_city_slug": "fate-rockwall-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 34,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 41,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Fate-TX/lat=32.9401/lng=-96.386/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 383033.3,
+        "sfr_days_on_market": 57.5,
+        "sfr_months_supply": 4.4,
+        "sfr_closed_sales_12mo": 470,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Rockwall ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 383033.3,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 34,
+        "transit_score": null,
+        "bike_score": 41,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B-",
+        "families": "A",
+        "diversity": "A-",
+        "jobs": "A",
+        "weather": "B",
+        "cost_of_living": "B",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 78,
+        "value_score": 98,
+        "sub_scores": {
+          "education": 93,
+          "safety": 87,
+          "family_community": 34,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "flower-mound": {
+      "display_name": "Flower Mound",
+      "county": "Denton",
+      "ntreis_city_id": 32487,
+      "tier": 1,
+      "lat": 33.0146,
+      "lng": -97.0964,
+      "niche_city_slug": "flower-mound-denton-tx",
+      "demographics": {
+        "population": 77886,
+        "median_age": 43,
+        "median_household_income": 157737,
+        "pct_households_with_children": 40.7,
+        "owner_occupied_pct": 82.3,
+        "median_home_value_census": 514100,
+        "bachelors_plus_pct": 64.3,
+        "wfh_pct": 27.2,
+        "median_commute_min": 30.7,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 5,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 21,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Flower-Mound-TX/lat=33.0145/lng=-97.0966/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 619458.3,
+        "sfr_days_on_market": 23.8,
+        "sfr_months_supply": 2.8,
+        "sfr_closed_sales_12mo": 897,
+        "market_condition": "seller",
+        "condo_median_price": 1524375
+      },
+      "schools": {
+        "isd_name": "Lewisville ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 619458.3,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 40.7,
+        "walk_score": 5,
+        "transit_score": null,
+        "bike_score": 21,
+        "median_household_income": 157737,
+        "owner_occupied_pct": 82.3,
+        "wfh_pct": 27.2
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B+",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 74,
+        "value_score": 86,
+        "sub_scores": {
+          "education": 93,
+          "safety": 87,
+          "family_community": 36,
+          "commute": 48,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "forney": {
+      "display_name": "Forney",
+      "county": "Kaufman",
+      "ntreis_city_id": 32490,
+      "tier": 3,
+      "lat": 32.7474,
+      "lng": -96.4697,
+      "niche_city_slug": "forney-kaufman-tx",
+      "demographics": {
+        "population": 1215,
+        "median_age": 33.6,
+        "median_household_income": 72743,
+        "pct_households_with_children": 35.5,
+        "owner_occupied_pct": 70.2,
+        "median_home_value_census": 206500,
+        "bachelors_plus_pct": null,
+        "wfh_pct": 3.5,
+        "median_commute_min": 35.5,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 49,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 42,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7477/lng=-96.47/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 326291.3,
+        "sfr_days_on_market": 62.3,
+        "sfr_months_supply": 5.4,
+        "sfr_closed_sales_12mo": 1742,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Forney ISD",
+        "overall_grade": "B",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/forney-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 326291.3,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": 35.5,
+        "walk_score": 49,
+        "transit_score": null,
+        "bike_score": 42,
+        "median_household_income": 72743,
+        "owner_occupied_pct": 70.2,
+        "wfh_pct": 3.5
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B+",
+        "crime": "C",
+        "housing": "B-",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 66,
+        "value_score": 88,
+        "sub_scores": {
+          "education": 83,
+          "safety": 73,
+          "family_community": 46,
+          "commute": 32,
+          "market_stability": 93
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "fort-worth": {
+      "display_name": "Fort Worth",
+      "county": "Tarrant",
+      "ntreis_city_id": 32492,
+      "tier": 3,
+      "lat": 32.7555,
+      "lng": -97.3308,
+      "niche_city_slug": "fort-worth-tarrant-tx",
+      "demographics": {
+        "population": 941311,
+        "median_age": 33.4,
+        "median_household_income": 76602,
+        "pct_households_with_children": 36.1,
+        "owner_occupied_pct": 56.7,
+        "median_home_value_census": 277300,
+        "bachelors_plus_pct": 31.7,
+        "wfh_pct": 12.9,
+        "median_commute_min": 29.1,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 87,
+        "walk_description": "Very Walkable",
+        "transit_score": 65,
+        "transit_description": "Good Transit",
+        "bike_score": 82,
+        "bike_description": "Very Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Fort-Worth-TX/lat=32.7555/lng=-97.3308/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 339833.8,
+        "sfr_days_on_market": 36.5,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 10366,
+        "market_condition": "balanced",
+        "condo_median_price": 279596.6
+      },
+      "schools": {
+        "isd_name": "Fort Worth ISD",
+        "overall_grade": "B-",
+        "academics_grade": "C+",
+        "college_prep_grade": "B+",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 339833.8,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": 36.1,
+        "walk_score": 87,
+        "transit_score": 65,
+        "bike_score": 82,
+        "median_household_income": 76602,
+        "owner_occupied_pct": 56.7,
+        "wfh_pct": 12.9
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "C+",
+        "crime": "C",
+        "housing": "C+",
+        "nightlife": "B+",
+        "families": "B",
+        "diversity": "A+",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "C+",
+        "outdoor_activities": "B-",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 72,
+        "value_score": 86,
+        "sub_scores": {
+          "education": 77,
+          "safety": 73,
+          "family_community": 64,
+          "commute": 53,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "frisco": {
+      "display_name": "Frisco",
+      "county": "Collin",
+      "ntreis_city_id": 32494,
+      "tier": 1,
+      "lat": 33.1507,
+      "lng": -96.8236,
+      "niche_city_slug": "frisco-collin-tx",
+      "demographics": {
+        "population": 210238,
+        "median_age": 38.1,
+        "median_household_income": 146158,
+        "pct_households_with_children": 47.3,
+        "owner_occupied_pct": 66.5,
+        "median_home_value_census": 595400,
+        "bachelors_plus_pct": 66,
+        "wfh_pct": 33.7,
+        "median_commute_min": 29.6,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 80,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 53,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Frisco-TX/lat=33.1507/lng=-96.8236/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 680751.9,
+        "sfr_days_on_market": 37.7,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 2151,
+        "market_condition": "balanced",
+        "condo_median_price": 736446.8
+      },
+      "schools": {
+        "isd_name": "Frisco ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/frisco-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 680751.9,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": 47.3,
+        "walk_score": 80,
+        "transit_score": null,
+        "bike_score": 53,
+        "median_household_income": 146158,
+        "owner_occupied_pct": 66.5,
+        "wfh_pct": 33.7
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 83,
+        "value_score": 77,
+        "sub_scores": {
+          "education": 97,
+          "safety": 80,
+          "family_community": 79,
+          "commute": 51,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "garland": {
+      "display_name": "Garland",
+      "county": "Dallas",
+      "ntreis_city_id": 32498,
+      "tier": 3,
+      "lat": 32.9126,
+      "lng": -96.6389,
+      "niche_city_slug": "garland-dallas-tx",
+      "demographics": {
+        "population": 245298,
+        "median_age": 34.7,
+        "median_household_income": 74717,
+        "pct_households_with_children": 37.9,
+        "owner_occupied_pct": 61.6,
+        "median_home_value_census": 248900,
+        "bachelors_plus_pct": 25,
+        "wfh_pct": 11.6,
+        "median_commute_min": 33,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 68,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": 56,
+        "transit_description": "Good Transit",
+        "bike_score": 56,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Garland-TX/lat=32.9126/lng=-96.6389/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 304712.5,
+        "sfr_days_on_market": 32.9,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 1686,
+        "market_condition": "balanced",
+        "condo_median_price": 148152.1
+      },
+      "schools": {
+        "isd_name": "Garland ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 304712.5,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": 37.9,
+        "walk_score": 68,
+        "transit_score": 56,
+        "bike_score": 56,
+        "median_household_income": 74717,
+        "owner_occupied_pct": 61.6,
+        "wfh_pct": 11.6
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B+",
+        "crime": "C",
+        "housing": "B-",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A+",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 73,
+        "value_score": 92,
+        "sub_scores": {
+          "education": 90,
+          "safety": 73,
+          "family_community": 58,
+          "commute": 40,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "grand-prairie": {
+      "display_name": "Grand Prairie",
+      "county": "Dallas/Tarrant",
+      "ntreis_city_id": 32517,
+      "tier": 3,
+      "lat": 32.746,
+      "lng": -96.9978,
+      "niche_city_slug": "grand-prairie-dallas-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 73,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 38,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-97.0191/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 353327.3,
+        "sfr_days_on_market": 30.3,
+        "sfr_months_supply": 3.5,
+        "sfr_closed_sales_12mo": 1110,
+        "market_condition": "balanced",
+        "condo_median_price": 155408.3
+      },
+      "schools": {
+        "isd_name": "Grand Prairie ISD",
+        "overall_grade": "B",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 353327.3,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": null,
+        "walk_score": 73,
+        "transit_score": null,
+        "bike_score": 38,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B",
+        "crime": "C+",
+        "housing": "C+",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A+",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "C+",
+        "outdoor_activities": "B+",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 81,
+        "value_score": 94,
+        "sub_scores": {
+          "education": 83,
+          "safety": 77,
+          "family_community": 73,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "grapevine": {
+      "display_name": "Grapevine",
+      "county": "Tarrant",
+      "ntreis_city_id": 32520,
+      "tier": 2,
+      "lat": 32.9343,
+      "lng": -97.078,
+      "niche_city_slug": "grapevine-tarrant-tx",
+      "demographics": {
+        "population": 198564,
+        "median_age": 33.5,
+        "median_household_income": 78889,
+        "pct_households_with_children": 39.1,
+        "owner_occupied_pct": 57.9,
+        "median_home_value_census": 272200,
+        "bachelors_plus_pct": 29.1,
+        "wfh_pct": 11.2,
+        "median_commute_min": 30.6,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 79,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 50,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Grapevine-TX/lat=32.9343/lng=-97.0781/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 593150.9,
+        "sfr_days_on_market": 20.7,
+        "sfr_months_supply": 2.2,
+        "sfr_closed_sales_12mo": 477,
+        "market_condition": "seller",
+        "condo_median_price": 462083.3
+      },
+      "schools": {
+        "isd_name": "Grapevine-Colleyville ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 593150.9,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": 39.1,
+        "walk_score": 79,
+        "transit_score": null,
+        "bike_score": 50,
+        "median_household_income": 78889,
+        "owner_occupied_pct": 57.9,
+        "wfh_pct": 11.2
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B-",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 67,
+        "sub_scores": {
+          "education": 97,
+          "safety": 80,
+          "family_community": 65,
+          "commute": 48,
+          "market_stability": 93
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "haslet": {
+      "display_name": "Haslet",
+      "county": "Tarrant",
+      "ntreis_city_id": 32533,
+      "tier": 3,
+      "lat": 32.9679,
+      "lng": -97.3467,
+      "niche_city_slug": "haslet-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 27,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 33,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.964/lng=-97.3497/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 506212.9,
+        "sfr_days_on_market": 52.8,
+        "sfr_months_supply": 4.8,
+        "sfr_closed_sales_12mo": 396,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Eagle Mountain-Saginaw ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 506212.9,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 27,
+        "transit_score": null,
+        "bike_score": 33,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "A-",
+        "crime": null,
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "B",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": null,
+        "niche_crime_numeric": null,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 70,
+        "value_score": 96,
+        "sub_scores": {
+          "education": 90,
+          "safety": null,
+          "family_community": 27,
+          "commute": null,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "heath": {
+      "display_name": "Heath",
+      "county": "Rockwall",
+      "ntreis_city_id": 32539,
+      "tier": 3,
+      "lat": 32.8346,
+      "lng": -96.4683,
+      "niche_city_slug": "heath-rockwall-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 3,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 23,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Heath-TX/lat=32.8512/lng=-96.4747/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 751049.4,
+        "sfr_days_on_market": 70.3,
+        "sfr_months_supply": 9.3,
+        "sfr_closed_sales_12mo": 238,
+        "market_condition": "buyer",
+        "condo_median_price": 318626.3
+      },
+      "schools": {
+        "isd_name": "Rockwall ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 751049.4,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 3,
+        "transit_score": null,
+        "bike_score": 23,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "A",
+        "nightlife": "C+",
+        "families": "A+",
+        "diversity": "C",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B+",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 65,
+        "value_score": 68,
+        "sub_scores": {
+          "education": 93,
+          "safety": 83,
+          "family_community": 3,
+          "commute": null,
+          "market_stability": 62
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "highland-village": {
+      "display_name": "Highland Village",
+      "county": "Denton",
+      "ntreis_city_id": 32547,
+      "tier": 2,
+      "lat": 33.0918,
+      "lng": -97.0558,
+      "niche_city_slug": "highland-village-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 1,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 3,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Highland-Village-TX/lat=33.0923/lng=-97.0563/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 618075.5,
+        "sfr_days_on_market": 25.7,
+        "sfr_months_supply": 2.8,
+        "sfr_closed_sales_12mo": 191,
+        "market_condition": "seller",
+        "condo_median_price": 537500
+      },
+      "schools": {
+        "isd_name": "Lewisville ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 618075.5,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 1,
+        "transit_score": null,
+        "bike_score": 3,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B+",
+        "families": "A+",
+        "diversity": "B",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 70,
+        "value_score": 85,
+        "sub_scores": {
+          "education": 93,
+          "safety": 87,
+          "family_community": 1,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "hurst": {
+      "display_name": "Hurst",
+      "county": "Tarrant",
+      "ntreis_city_id": 32560,
+      "tier": 3,
+      "lat": 32.8232,
+      "lng": -97.1883,
+      "niche_city_slug": "hurst-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 76,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 54,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8235/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 360024.8,
+        "sfr_days_on_market": 24.3,
+        "sfr_months_supply": 2.4,
+        "sfr_closed_sales_12mo": 410,
+        "market_condition": "seller",
+        "condo_median_price": 181648.3
+      },
+      "schools": {
+        "isd_name": "HEB ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 360024.8,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 76,
+        "transit_score": null,
+        "bike_score": 54,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 86,
+        "value_score": 99,
+        "sub_scores": {
+          "education": 97,
+          "safety": 77,
+          "family_community": 76,
+          "commute": null,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "irving": {
+      "display_name": "Irving",
+      "county": "Dallas",
+      "ntreis_city_id": 32566,
+      "tier": 3,
+      "lat": 32.814,
+      "lng": -96.9489,
+      "niche_city_slug": "irving-dallas-tx",
+      "demographics": {
+        "population": 255036,
+        "median_age": 32.8,
+        "median_household_income": 79641,
+        "pct_households_with_children": 36.7,
+        "owner_occupied_pct": 38.3,
+        "median_home_value_census": 287300,
+        "bachelors_plus_pct": 41.6,
+        "wfh_pct": 17.3,
+        "median_commute_min": 28.1,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 7,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 28,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-97.0641/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 383095.8,
+        "sfr_days_on_market": 27.4,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 897,
+        "market_condition": "balanced",
+        "condo_median_price": 272821.7
+      },
+      "schools": {
+        "isd_name": "Irving ISD",
+        "overall_grade": "B-",
+        "academics_grade": "C+",
+        "college_prep_grade": "B+",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/irving-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 383095.8,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": 36.7,
+        "walk_score": 7,
+        "transit_score": null,
+        "bike_score": 28,
+        "median_household_income": 79641,
+        "owner_occupied_pct": 38.3,
+        "wfh_pct": 17.3
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "B+",
+        "crime": "C",
+        "housing": "B-",
+        "nightlife": "A-",
+        "families": "A-",
+        "diversity": "A+",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B",
+        "outdoor_activities": "B",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 67,
+        "value_score": 85,
+        "sub_scores": {
+          "education": 80,
+          "safety": 73,
+          "family_community": 30,
+          "commute": 56,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "keller": {
+      "display_name": "Keller",
+      "county": "Tarrant",
+      "ntreis_city_id": 32582,
+      "tier": 2,
+      "lat": 32.9343,
+      "lng": -97.2294,
+      "niche_city_slug": "keller-tarrant-tx",
+      "demographics": {
+        "population": 3101,
+        "median_age": 35.4,
+        "median_household_income": 58601,
+        "pct_households_with_children": 41,
+        "owner_occupied_pct": 66.8,
+        "median_home_value_census": 90400,
+        "bachelors_plus_pct": 12.9,
+        "wfh_pct": 2.5,
+        "median_commute_min": 18.6,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 75,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 60,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Keller-TX/lat=32.9343/lng=-97.2295/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 674079.2,
+        "sfr_days_on_market": 25.4,
+        "sfr_months_supply": 3,
+        "sfr_closed_sales_12mo": 553,
+        "market_condition": "balanced",
+        "condo_median_price": 544762.4
+      },
+      "schools": {
+        "isd_name": "Keller ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/keller-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 674079.2,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 41,
+        "walk_score": 75,
+        "transit_score": null,
+        "bike_score": 60,
+        "median_household_income": 58601,
+        "owner_occupied_pct": 66.8,
+        "wfh_pct": 2.5
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A+",
+        "diversity": "B",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 85,
+        "value_score": 46,
+        "sub_scores": {
+          "education": 93,
+          "safety": 83,
+          "family_community": 66,
+          "commute": 88,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "lantana": {
+      "display_name": "Lantana",
+      "county": "Denton",
+      "ntreis_city_id": 32610,
+      "tier": 2,
+      "lat": 33.0893,
+      "lng": -97.1311,
+      "niche_city_slug": "lantana-denton-tx",
+      "demographics": null,
+      "walkability": {
+        "walk_score": 1,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 20,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Lantana-TX/lat=33.1076/lng=-97.1234/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 650458.3,
+        "sfr_days_on_market": 33.6,
+        "sfr_months_supply": 2.9,
+        "sfr_closed_sales_12mo": 172,
+        "market_condition": "seller",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Northwest ISD",
+        "overall_grade": "A-",
+        "academics_grade": "A-",
+        "college_prep_grade": "A",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 650458.3,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 1,
+        "transit_score": null,
+        "bike_score": 20,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": null,
+        "housing": "A-",
+        "nightlife": "C+",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": null,
+        "niche_crime_numeric": null,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 62,
+        "value_score": 80,
+        "sub_scores": {
+          "education": 90,
+          "safety": null,
+          "family_community": 1,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "lewisville": {
+      "display_name": "Lewisville",
+      "county": "Denton",
+      "ntreis_city_id": 32617,
+      "tier": 2,
+      "lat": 33.0462,
+      "lng": -96.9942,
+      "niche_city_slug": "lewisville-denton-tx",
+      "demographics": {
+        "population": 128313,
+        "median_age": 34.8,
+        "median_household_income": 85002,
+        "pct_households_with_children": 33.1,
+        "owner_occupied_pct": 46.6,
+        "median_home_value_census": 350200,
+        "bachelors_plus_pct": 39.4,
+        "wfh_pct": 16.8,
+        "median_commute_min": 29,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 65,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 46,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Lewisville-TX/lat=33.0462/lng=-97.0028/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 399933.3,
+        "sfr_days_on_market": 27.1,
+        "sfr_months_supply": 3.3,
+        "sfr_closed_sales_12mo": 773,
+        "market_condition": "balanced",
+        "condo_median_price": 340217.2
+      },
+      "schools": {
+        "isd_name": "Lewisville ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 399933.3,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 33.1,
+        "walk_score": 65,
+        "transit_score": null,
+        "bike_score": 46,
+        "median_household_income": 85002,
+        "owner_occupied_pct": 46.6,
+        "wfh_pct": 16.8
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "A-",
+        "families": "A",
+        "diversity": "A+",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B+",
+        "outdoor_activities": "B-",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 89,
+        "sub_scores": {
+          "education": 93,
+          "safety": 77,
+          "family_community": 49,
+          "commute": 53,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "little-elm": {
+      "display_name": "Little Elm",
+      "county": "Denton",
+      "ntreis_city_id": 32623,
+      "tier": 2,
+      "lat": 33.1629,
+      "lng": -96.9375,
+      "niche_city_slug": "little-elm-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 43,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 39,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1626/lng=-96.9369/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 406214.6,
+        "sfr_days_on_market": 53.2,
+        "sfr_months_supply": 5,
+        "sfr_closed_sales_12mo": 1164,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Little Elm ISD",
+        "overall_grade": "B-",
+        "academics_grade": "B-",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/little-elm-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 406214.6,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 8,
+        "pct_households_with_children": null,
+        "walk_score": 43,
+        "transit_score": null,
+        "bike_score": 39,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 73,
+        "value_score": 93,
+        "sub_scores": {
+          "education": 80,
+          "safety": 80,
+          "family_community": 43,
+          "commute": null,
+          "market_stability": 96
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "lucas": {
+      "display_name": "Lucas",
+      "county": "Collin",
+      "ntreis_city_id": 32632,
+      "tier": 3,
+      "lat": 33.1079,
+      "lng": -96.5742,
+      "niche_city_slug": "lucas-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 0,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 16,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Lucas-TX/lat=33.1068/lng=-96.5766/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 1054228.8,
+        "sfr_days_on_market": 67.8,
+        "sfr_months_supply": 4.6,
+        "sfr_closed_sales_12mo": 155,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Lovejoy ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/lovejoy-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 1054228.8,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": null,
+        "walk_score": 0,
+        "transit_score": null,
+        "bike_score": 16,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": null,
+        "housing": "B+",
+        "nightlife": "B-",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": null,
+        "niche_crime_numeric": null,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 65,
+        "value_score": 35,
+        "sub_scores": {
+          "education": 97,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 99
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "mansfield": {
+      "display_name": "Mansfield",
+      "county": "Tarrant",
+      "ntreis_city_id": 32639,
+      "tier": 2,
+      "lat": 32.5632,
+      "lng": -97.1411,
+      "niche_city_slug": "mansfield-tarrant-tx",
+      "demographics": {
+        "population": 75398,
+        "median_age": 36.4,
+        "median_household_income": 116590,
+        "pct_households_with_children": 44.5,
+        "owner_occupied_pct": 72.4,
+        "median_home_value_census": 380000,
+        "bachelors_plus_pct": 43.2,
+        "wfh_pct": 13.9,
+        "median_commute_min": 31.4,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 69,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 38,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1417/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 475644.5,
+        "sfr_days_on_market": 43.9,
+        "sfr_months_supply": 3.8,
+        "sfr_closed_sales_12mo": 1169,
+        "market_condition": "balanced",
+        "condo_median_price": 431376.7
+      },
+      "schools": {
+        "isd_name": "Mansfield ISD",
+        "overall_grade": "A",
+        "academics_grade": "A-",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/mansfield-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 475644.5,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": 44.5,
+        "walk_score": 69,
+        "transit_score": null,
+        "bike_score": 38,
+        "median_household_income": 116590,
+        "owner_occupied_pct": 72.4,
+        "wfh_pct": 13.9
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 92,
+        "sub_scores": {
+          "education": 93,
+          "safety": 80,
+          "family_community": 70,
+          "commute": 45,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "mckinney": {
+      "display_name": "McKinney",
+      "county": "Collin",
+      "ntreis_city_id": 32651,
+      "tier": 1,
+      "lat": 33.1972,
+      "lng": -96.6397,
+      "niche_city_slug": "mckinney-collin-tx",
+      "demographics": {
+        "population": 202314,
+        "median_age": 36.7,
+        "median_household_income": 120273,
+        "pct_households_with_children": 42.8,
+        "owner_occupied_pct": 63.3,
+        "median_home_value_census": 439500,
+        "bachelors_plus_pct": 52.6,
+        "wfh_pct": 21.8,
+        "median_commute_min": 28.9,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 65,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 54,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/McKinney-TX/lat=33.1972/lng=-96.6397/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 496149.7,
+        "sfr_days_on_market": 41.9,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 3460,
+        "market_condition": "balanced",
+        "condo_median_price": 434458.3
+      },
+      "schools": {
+        "isd_name": "McKinney ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/mckinney-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 496149.7,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 42.8,
+        "walk_score": 65,
+        "transit_score": null,
+        "bike_score": 54,
+        "median_household_income": 120273,
+        "owner_occupied_pct": 63.3,
+        "wfh_pct": 21.8
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 92,
+        "sub_scores": {
+          "education": 93,
+          "safety": 80,
+          "family_community": 65,
+          "commute": 54,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "melissa": {
+      "display_name": "Melissa",
+      "county": "Collin",
+      "ntreis_city_id": 32654,
+      "tier": 3,
+      "lat": 33.2843,
+      "lng": -96.57,
+      "niche_city_slug": "melissa-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 33,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 35,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2887/lng=-96.5721/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 456222.8,
+        "sfr_days_on_market": 51.7,
+        "sfr_months_supply": 5.1,
+        "sfr_closed_sales_12mo": 430,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Melissa ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/melissa-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 456222.8,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 33,
+        "transit_score": null,
+        "bike_score": 35,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "A-",
+        "housing": "A-",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "A-",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "C-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "A-",
+        "niche_crime_numeric": 90,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 78,
+        "value_score": 98,
+        "sub_scores": {
+          "education": 93,
+          "safety": 90,
+          "family_community": 33,
+          "commute": null,
+          "market_stability": 95
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "mesquite": {
+      "display_name": "Mesquite",
+      "county": "Dallas",
+      "ntreis_city_id": 32659,
+      "tier": 3,
+      "lat": 32.7668,
+      "lng": -96.5992,
+      "niche_city_slug": "mesquite-dallas-tx",
+      "demographics": {
+        "population": 148848,
+        "median_age": 33.4,
+        "median_household_income": 71843,
+        "pct_households_with_children": 38.7,
+        "owner_occupied_pct": 63.3,
+        "median_home_value_census": 226500,
+        "bachelors_plus_pct": 18.5,
+        "wfh_pct": 8.5,
+        "median_commute_min": 32.9,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 70,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 53,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Mesquite-TX/lat=32.7668/lng=-96.5992/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 289057.5,
+        "sfr_days_on_market": 42,
+        "sfr_months_supply": 4.9,
+        "sfr_closed_sales_12mo": 1411,
+        "market_condition": "balanced",
+        "condo_median_price": 130410.4
+      },
+      "schools": {
+        "isd_name": "Mesquite ISD",
+        "overall_grade": "B",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/mesquite-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 289057.5,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": 38.7,
+        "walk_score": 70,
+        "transit_score": null,
+        "bike_score": 53,
+        "median_household_income": 71843,
+        "owner_occupied_pct": 63.3,
+        "wfh_pct": 8.5
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B",
+        "crime": "C",
+        "housing": "C+",
+        "nightlife": "B+",
+        "families": "B",
+        "diversity": "A+",
+        "jobs": "B-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "C+",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 71,
+        "value_score": 90,
+        "sub_scores": {
+          "education": 83,
+          "safety": 73,
+          "family_community": 61,
+          "commute": 40,
+          "market_stability": 97
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "midlothian": {
+      "display_name": "Midlothian",
+      "county": "Ellis",
+      "ntreis_city_id": 32662,
+      "tier": 3,
+      "lat": 32.4824,
+      "lng": -97.0058,
+      "niche_city_slug": "midlothian-ellis-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 73,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 48,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4818/lng=-96.9944/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 495753.1,
+        "sfr_days_on_market": 72.5,
+        "sfr_months_supply": 4.3,
+        "sfr_closed_sales_12mo": 998,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Midlothian ISD",
+        "overall_grade": "A-",
+        "academics_grade": "A-",
+        "college_prep_grade": "A-",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/midlothian-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 495753.1,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 73,
+        "transit_score": null,
+        "bike_score": 48,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "A-",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "C+",
+        "families": "A-",
+        "diversity": "A-",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 84,
+        "value_score": 96,
+        "sub_scores": {
+          "education": 90,
+          "safety": 80,
+          "family_community": 73,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "murphy": {
+      "display_name": "Murphy",
+      "county": "Collin",
+      "ntreis_city_id": 32680,
+      "tier": 2,
+      "lat": 33.0151,
+      "lng": -96.6111,
+      "niche_city_slug": "murphy-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 57,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 45,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Murphy-TX/lat=33.0151/lng=-96.6119/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 596375,
+        "sfr_days_on_market": 42,
+        "sfr_months_supply": 4.3,
+        "sfr_closed_sales_12mo": 154,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Plano ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/plano-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 596375,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 57,
+        "transit_score": null,
+        "bike_score": 45,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B+",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 84,
+        "value_score": 87,
+        "sub_scores": {
+          "education": 93,
+          "safety": 87,
+          "family_community": 57,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "north-richland-hills": {
+      "display_name": "North Richland Hills",
+      "county": "Tarrant",
+      "ntreis_city_id": 32696,
+      "tier": 3,
+      "lat": 32.8343,
+      "lng": -97.2289,
+      "niche_city_slug": "north-richland-hills-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 36,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 33,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/North-Richland-Hills-TX/lat=32.8343/lng=-97.2289/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 386245.8,
+        "sfr_days_on_market": 26.8,
+        "sfr_months_supply": 3,
+        "sfr_closed_sales_12mo": 749,
+        "market_condition": "balanced",
+        "condo_median_price": 274799.5
+      },
+      "schools": {
+        "isd_name": "Birdville ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B-",
+        "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 386245.8,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 36,
+        "transit_score": null,
+        "bike_score": 33,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "C+",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 74,
+        "value_score": 95,
+        "sub_scores": {
+          "education": 87,
+          "safety": 80,
+          "family_community": 36,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "northlake": {
+      "display_name": "Northlake",
+      "county": "Denton",
+      "ntreis_city_id": 32697,
+      "tier": 3,
+      "lat": 33.1082,
+      "lng": -97.2772,
+      "niche_city_slug": "northlake-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 2,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 25,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Northlake-TX/lat=33.1126/lng=-97.2569/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 556847.1,
+        "sfr_days_on_market": 62.7,
+        "sfr_months_supply": 5,
+        "sfr_closed_sales_12mo": 416,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Northwest ISD",
+        "overall_grade": "A-",
+        "academics_grade": "A-",
+        "college_prep_grade": "A",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 556847.1,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 2,
+        "transit_score": null,
+        "bike_score": 25,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B",
+        "housing": "B",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A-",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "C-",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 68,
+        "value_score": 91,
+        "sub_scores": {
+          "education": 90,
+          "safety": 83,
+          "family_community": 2,
+          "commute": null,
+          "market_stability": 96
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "plano": {
+      "display_name": "Plano",
+      "county": "Collin",
+      "ntreis_city_id": 32729,
+      "tier": 1,
+      "lat": 33.0198,
+      "lng": -96.6989,
+      "niche_city_slug": "plano-collin-tx",
+      "demographics": {
+        "population": 287339,
+        "median_age": 39.3,
+        "median_household_income": 108649,
+        "pct_households_with_children": 32.8,
+        "owner_occupied_pct": 56.6,
+        "median_home_value_census": 440600,
+        "bachelors_plus_pct": 59.2,
+        "wfh_pct": 25.3,
+        "median_commute_min": 28.9,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 92,
+        "walk_description": "Walker's Paradise",
+        "transit_score": 54,
+        "transit_description": "Good Transit",
+        "bike_score": 73,
+        "bike_description": "Very Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Plano-TX/lat=33.0198/lng=-96.6989/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 525231.3,
+        "sfr_days_on_market": 30.1,
+        "sfr_months_supply": 3.4,
+        "sfr_closed_sales_12mo": 2230,
+        "market_condition": "balanced",
+        "condo_median_price": 343902.1
+      },
+      "schools": {
+        "isd_name": "Plano ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/plano-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 525231.3,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 32.8,
+        "walk_score": 92,
+        "transit_score": 54,
+        "bike_score": 73,
+        "median_household_income": 108649,
+        "owner_occupied_pct": 56.6,
+        "wfh_pct": 25.3
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 78,
+        "value_score": 87,
+        "sub_scores": {
+          "education": 93,
+          "safety": 80,
+          "family_community": 60,
+          "commute": 54,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "princeton": {
+      "display_name": "Princeton",
+      "county": "Collin",
+      "ntreis_city_id": 32742,
+      "tier": 3,
+      "lat": 33.1818,
+      "lng": -96.4997,
+      "niche_city_slug": "princeton-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 46,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 38,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1807/lng=-96.4919/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 301724.4,
+        "sfr_days_on_market": 36.8,
+        "sfr_months_supply": 3.7,
+        "sfr_closed_sales_12mo": 2206,
+        "market_condition": "balanced",
+        "condo_median_price": 288666.7
+      },
+      "schools": {
+        "isd_name": "Princeton ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B+",
+        "college_prep_grade": "A-",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/princeton-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 301724.4,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 46,
+        "transit_score": null,
+        "bike_score": 38,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B+",
+        "crime": "C",
+        "housing": "B-",
+        "nightlife": "C+",
+        "families": "B",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "C",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 95,
+        "sub_scores": {
+          "education": 87,
+          "safety": 73,
+          "family_community": 46,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "prosper": {
+      "display_name": "Prosper",
+      "county": "Collin",
+      "ntreis_city_id": 32744,
+      "tier": 1,
+      "lat": 33.2362,
+      "lng": -96.8012,
+      "niche_city_slug": "prosper-collin-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 40,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 27,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8005/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 845429.2,
+        "sfr_days_on_market": 58.1,
+        "sfr_months_supply": 5.4,
+        "sfr_closed_sales_12mo": 796,
+        "market_condition": "balanced",
+        "condo_median_price": 524000
+      },
+      "schools": {
+        "isd_name": "Prosper ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/prosper-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 845429.2,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 40,
+        "transit_score": null,
+        "bike_score": 27,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "A-",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B+",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 79,
+        "value_score": 56,
+        "sub_scores": {
+          "education": 93,
+          "safety": 87,
+          "family_community": 40,
+          "commute": null,
+          "market_stability": 93
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "richardson": {
+      "display_name": "Richardson",
+      "county": "Dallas/Collin",
+      "ntreis_city_id": 32759,
+      "tier": 3,
+      "lat": 32.9483,
+      "lng": -96.7299,
+      "niche_city_slug": "richardson-dallas-tx",
+      "demographics": {
+        "population": 118269,
+        "median_age": 34,
+        "median_household_income": 96257,
+        "pct_households_with_children": 28.3,
+        "owner_occupied_pct": 50.8,
+        "median_home_value_census": 405600,
+        "bachelors_plus_pct": 56.2,
+        "wfh_pct": 23.2,
+        "median_commute_min": 28.6,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 77,
+        "walk_description": "Very Walkable",
+        "transit_score": 47,
+        "transit_description": "Some Transit",
+        "bike_score": 73,
+        "bike_description": "Very Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Richardson-TX/lat=32.9483/lng=-96.7299/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 463825,
+        "sfr_days_on_market": 27.4,
+        "sfr_months_supply": 3,
+        "sfr_closed_sales_12mo": 955,
+        "market_condition": "balanced",
+        "condo_median_price": 209214.8
+      },
+      "schools": {
+        "isd_name": "Richardson ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/richardson-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 463825,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": 28.3,
+        "walk_score": 77,
+        "transit_score": 47,
+        "bike_score": 73,
+        "median_household_income": 96257,
+        "owner_occupied_pct": 50.8,
+        "wfh_pct": 23.2
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "B-",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "B",
+        "commute": "A-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 87,
+        "sub_scores": {
+          "education": 90,
+          "safety": 80,
+          "family_community": 47,
+          "commute": 55,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "roanoke": {
+      "display_name": "Roanoke",
+      "county": "Denton",
+      "ntreis_city_id": 32767,
+      "tier": 2,
+      "lat": 33.0032,
+      "lng": -97.2272,
+      "niche_city_slug": "roanoke-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 66,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 41,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Roanoke-TX/lat=33.004/lng=-97.2228/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 593280.1,
+        "sfr_days_on_market": 47.1,
+        "sfr_months_supply": 4.8,
+        "sfr_closed_sales_12mo": 126,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Northwest ISD",
+        "overall_grade": "A-",
+        "academics_grade": "A-",
+        "college_prep_grade": "A",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 593280.1,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 66,
+        "transit_score": null,
+        "bike_score": 41,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B-",
+        "nightlife": "A-",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 83,
+        "value_score": 87,
+        "sub_scores": {
+          "education": 90,
+          "safety": 83,
+          "family_community": 66,
+          "commute": null,
+          "market_stability": 98
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "rockwall": {
+      "display_name": "Rockwall",
+      "county": "Rockwall",
+      "ntreis_city_id": 32772,
+      "tier": 2,
+      "lat": 32.929,
+      "lng": -96.4597,
+      "niche_city_slug": "rockwall-rockwall-tx",
+      "demographics": {
+        "population": 1596,
+        "median_age": 50.6,
+        "median_household_income": 77443,
+        "pct_households_with_children": 25.3,
+        "owner_occupied_pct": 64,
+        "median_home_value_census": 216600,
+        "bachelors_plus_pct": null,
+        "wfh_pct": 13.2,
+        "median_commute_min": 33.1,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 79,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 43,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.9293/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 556882.4,
+        "sfr_days_on_market": 59.8,
+        "sfr_months_supply": 6.3,
+        "sfr_closed_sales_12mo": 881,
+        "market_condition": "buyer",
+        "condo_median_price": 241847.9
+      },
+      "schools": {
+        "isd_name": "Rockwall ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 556882.4,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 25.3,
+        "walk_score": 79,
+        "transit_score": null,
+        "bike_score": 43,
+        "median_household_income": 77443,
+        "owner_occupied_pct": 64,
+        "wfh_pct": 13.2
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A-",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "B",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 71,
+        "value_score": 71,
+        "sub_scores": {
+          "education": 93,
+          "safety": 80,
+          "family_community": 43,
+          "commute": 40,
+          "market_stability": 86
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "rowlett": {
+      "display_name": "Rowlett",
+      "county": "Dallas/Rockwall",
+      "ntreis_city_id": 32778,
+      "tier": 3,
+      "lat": 32.9029,
+      "lng": -96.5636,
+      "niche_city_slug": "rowlett-dallas-tx",
+      "demographics": {
+        "population": 64139,
+        "median_age": 37.9,
+        "median_household_income": 113600,
+        "pct_households_with_children": 37.8,
+        "owner_occupied_pct": 75.9,
+        "median_home_value_census": 342400,
+        "bachelors_plus_pct": 38.2,
+        "wfh_pct": 15.4,
+        "median_commute_min": 33,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 58,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": 42,
+        "transit_description": "Some Transit",
+        "bike_score": 42,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5639/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 379787.5,
+        "sfr_days_on_market": 44.7,
+        "sfr_months_supply": 4.9,
+        "sfr_closed_sales_12mo": 762,
+        "market_condition": "balanced",
+        "condo_median_price": 316666.7
+      },
+      "schools": {
+        "isd_name": "Garland ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 379787.5,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": 37.8,
+        "walk_score": 58,
+        "transit_score": 42,
+        "bike_score": 42,
+        "median_household_income": 113600,
+        "owner_occupied_pct": 75.9,
+        "wfh_pct": 15.4
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "B+",
+        "crime": "B-",
+        "housing": "B",
+        "nightlife": "B",
+        "families": "A-",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 74,
+        "value_score": 96,
+        "sub_scores": {
+          "education": 90,
+          "safety": 80,
+          "family_community": 54,
+          "commute": 40,
+          "market_stability": 97
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "royse-city": {
+      "display_name": "Royse City",
+      "county": "Rockwall",
+      "ntreis_city_id": 32780,
+      "tier": 3,
+      "lat": 32.9754,
+      "lng": -96.3322,
+      "niche_city_slug": "royse-city-rockwall-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 62,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 48,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9751/lng=-96.3327/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 329865.6,
+        "sfr_days_on_market": 74.3,
+        "sfr_months_supply": 6.5,
+        "sfr_closed_sales_12mo": 830,
+        "market_condition": "buyer",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Royse City ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B+",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/royse-city-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 329865.6,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 62,
+        "transit_score": null,
+        "bike_score": 48,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "B+",
+        "crime": "C+",
+        "housing": "B+",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A-",
+        "jobs": "A+",
+        "weather": "B",
+        "cost_of_living": "B",
+        "health_fitness": "B-",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 78,
+        "value_score": 95,
+        "sub_scores": {
+          "education": 87,
+          "safety": 77,
+          "family_community": 62,
+          "commute": null,
+          "market_stability": 84
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "sachse": {
+      "display_name": "Sachse",
+      "county": "Collin",
+      "ntreis_city_id": 32783,
+      "tier": 3,
+      "lat": 32.976,
+      "lng": -96.5897,
+      "niche_city_slug": "sachse-dallas-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 30,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 29,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Sachse-TX/lat=32.9707/lng=-96.5883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 441256.1,
+        "sfr_days_on_market": 38.3,
+        "sfr_months_supply": 4.3,
+        "sfr_closed_sales_12mo": 246,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Garland ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 441256.1,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 30,
+        "transit_score": null,
+        "bike_score": 29,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "B+",
+        "crime": "B",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 96,
+        "sub_scores": {
+          "education": 90,
+          "safety": 83,
+          "family_community": 30,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "saginaw": {
+      "display_name": "Saginaw",
+      "county": "Tarrant",
+      "ntreis_city_id": 32785,
+      "tier": 3,
+      "lat": 32.8596,
+      "lng": -97.3636,
+      "niche_city_slug": "saginaw-tarrant-tx",
+      "demographics": {
+        "population": 4209,
+        "median_age": 30.8,
+        "median_household_income": 40786,
+        "pct_households_with_children": 44.9,
+        "owner_occupied_pct": 74.8,
+        "median_home_value_census": 76600,
+        "bachelors_plus_pct": null,
+        "wfh_pct": 21.5,
+        "median_commute_min": 26,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 48,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 42,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Saginaw-TX/lat=32.8593/lng=-97.3636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 308986.7,
+        "sfr_days_on_market": 32.3,
+        "sfr_months_supply": 3.2,
+        "sfr_closed_sales_12mo": 266,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Eagle Mountain-Saginaw ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 308986.7,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": 44.9,
+        "walk_score": 48,
+        "transit_score": null,
+        "bike_score": 42,
+        "median_household_income": 40786,
+        "owner_occupied_pct": 74.8,
+        "wfh_pct": 21.5
+      },
+      "niche_city": {
+        "overall": "B+",
+        "public_schools": "A-",
+        "crime": "C+",
+        "housing": "B",
+        "nightlife": "B",
+        "families": "B+",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B",
+        "outdoor_activities": "C",
+        "commute": "B",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 78,
+        "value_score": 71,
+        "sub_scores": {
+          "education": 90,
+          "safety": 77,
+          "family_community": 61,
+          "commute": 63,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "southlake": {
+      "display_name": "Southlake",
+      "county": "Tarrant",
+      "ntreis_city_id": 32810,
+      "tier": 1,
+      "lat": 32.944,
+      "lng": -97.1344,
+      "niche_city_slug": "southlake-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 74,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 47,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Southlake-TX/lat=32.9412/lng=-97.1334/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 1352687.5,
+        "sfr_days_on_market": 23.2,
+        "sfr_months_supply": 4.2,
+        "sfr_closed_sales_12mo": 398,
+        "market_condition": "balanced",
+        "condo_median_price": 666567.8
+      },
+      "schools": {
+        "isd_name": "Carroll ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/carroll-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 1352687.5,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": null,
+        "walk_score": 74,
+        "transit_score": null,
+        "bike_score": 47,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B+",
+        "nightlife": "B",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "C+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 88,
+        "value_score": 35,
+        "sub_scores": {
+          "education": 97,
+          "safety": 83,
+          "family_community": 74,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "the-colony": {
+      "display_name": "The Colony",
+      "county": "Denton",
+      "ntreis_city_id": 32837,
+      "tier": 2,
+      "lat": 33.0918,
+      "lng": -96.8883,
+      "niche_city_slug": "the-colony-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 31,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 39,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0895/lng=-96.8891/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 429265.8,
+        "sfr_days_on_market": 36.2,
+        "sfr_months_supply": 3.5,
+        "sfr_closed_sales_12mo": 486,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Lewisville ISD",
+        "overall_grade": "A",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 429265.8,
+        "overall_isd_grade": 12,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": null,
+        "walk_score": 31,
+        "transit_score": null,
+        "bike_score": 39,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B-",
+        "housing": "B+",
+        "nightlife": "A-",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 75,
+        "value_score": 98,
+        "sub_scores": {
+          "education": 93,
+          "safety": 80,
+          "family_community": 31,
+          "commute": null,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "trophy-club": {
+      "display_name": "Trophy Club",
+      "county": "Denton/Tarrant",
+      "ntreis_city_id": 32848,
+      "tier": 2,
+      "lat": 33.0032,
+      "lng": -97.1797,
+      "niche_city_slug": "trophy-club-denton-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 7,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 26,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Trophy-Club-TX/lat=32.9977/lng=-97.1791/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 797287.5,
+        "sfr_days_on_market": 23.2,
+        "sfr_months_supply": 2.3,
+        "sfr_closed_sales_12mo": 212,
+        "market_condition": "seller",
+        "condo_median_price": 650000
+      },
+      "schools": {
+        "isd_name": "Northwest ISD",
+        "overall_grade": "A-",
+        "academics_grade": "A-",
+        "college_prep_grade": "A",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 797287.5,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 11,
+        "pct_households_with_children": null,
+        "walk_score": 7,
+        "transit_score": null,
+        "bike_score": 26,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "A-",
+        "housing": "A-",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "A-",
+        "niche_crime_numeric": 90,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 71,
+        "value_score": 61,
+        "sub_scores": {
+          "education": 90,
+          "safety": 90,
+          "family_community": 7,
+          "commute": null,
+          "market_stability": 95
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "waxahachie": {
+      "display_name": "Waxahachie",
+      "county": "Ellis",
+      "ntreis_city_id": 32865,
+      "tier": 3,
+      "lat": 32.3868,
+      "lng": -96.8486,
+      "niche_city_slug": "waxahachie-ellis-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 77,
+        "walk_description": "Very Walkable",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 46,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Waxahachie-TX/lat=32.3868/lng=-96.8486/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 417371.4,
+        "sfr_days_on_market": 46.3,
+        "sfr_months_supply": 5.2,
+        "sfr_closed_sales_12mo": 1112,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Waxahachie ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "A-",
+        "niche_url": "https://www.niche.com/k12/d/waxahachie-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 417371.4,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
+        "pct_households_with_children": null,
+        "walk_score": 77,
+        "transit_score": null,
+        "bike_score": 46,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "A-",
+        "crime": "B-",
+        "housing": "B-",
+        "nightlife": "B+",
+        "families": "A-",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "C+",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 84,
+        "value_score": 96,
+        "sub_scores": {
+          "education": 90,
+          "safety": 80,
+          "family_community": 77,
+          "commute": null,
+          "market_stability": 94
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "westlake": {
+      "display_name": "Westlake",
+      "county": "Tarrant",
+      "ntreis_city_id": 32869,
+      "tier": 3,
+      "lat": 32.9982,
+      "lng": -97.1994,
+      "niche_city_slug": "westlake-tarrant-tx",
+      "demographics": {
+        "population": null,
+        "median_age": null,
+        "median_household_income": null,
+        "pct_households_with_children": null,
+        "owner_occupied_pct": null,
+        "median_home_value_census": null,
+        "bachelors_plus_pct": null,
+        "wfh_pct": null,
+        "median_commute_min": null,
+        "acs_vintage": null
+      },
+      "walkability": {
+        "walk_score": 2,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 22,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Westlake-TX/lat=32.9988/lng=-97.1659/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 4892752.3,
+        "sfr_days_on_market": 96.1,
+        "sfr_months_supply": 16.5,
+        "sfr_closed_sales_12mo": 24,
+        "market_condition": "buyer",
+        "condo_median_price": null
+      },
+      "schools": {
+        "isd_name": "Carroll ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/carroll-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 4892752.3,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
+        "pct_households_with_children": null,
+        "walk_score": 2,
+        "transit_score": null,
+        "bike_score": 22,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": null,
+        "housing": "C+",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "B-",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": null,
+        "niche_crime_numeric": null,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 50,
+        "value_score": 35,
+        "sub_scores": {
+          "education": 97,
+          "safety": null,
+          "family_community": 2,
+          "commute": null,
+          "market_stability": 4
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "partial"
+      }
+    },
+    "wylie": {
+      "display_name": "Wylie",
+      "county": "Collin",
+      "ntreis_city_id": 32895,
+      "tier": 2,
+      "lat": 33.0151,
+      "lng": -96.5388,
+      "niche_city_slug": "wylie-collin-tx",
+      "demographics": {
+        "population": 58991,
+        "median_age": 34.8,
+        "median_household_income": 113661,
+        "pct_households_with_children": 51.6,
+        "owner_occupied_pct": 76.2,
+        "median_home_value_census": 350100,
+        "bachelors_plus_pct": 40.6,
+        "wfh_pct": 18,
+        "median_commute_min": 33.2,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 3,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 26,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Wylie-TX/lat=33.1151/lng=-96.5388/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
+      "market": {
+        "sfr_median_price": 437256.5,
+        "sfr_days_on_market": 47.1,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 689,
+        "market_condition": "balanced",
+        "condo_median_price": 269500
+      },
+      "schools": {
+        "isd_name": "Wylie ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 437256.5,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
+        "pct_households_with_children": 51.6,
+        "walk_score": 3,
+        "transit_score": null,
+        "bike_score": 26,
+        "median_household_income": 113661,
+        "owner_occupied_pct": 76.2,
+        "wfh_pct": 18
+      },
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A",
+        "crime": "B-",
+        "housing": "B+",
+        "nightlife": "B+",
+        "families": "A",
+        "diversity": "A",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "B+",
+        "outdoor_activities": "B",
+        "commute": "B-",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "B-",
+        "niche_crime_numeric": 80,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 76,
+        "value_score": 94,
+        "sub_scores": {
+          "education": 97,
+          "safety": 80,
+          "family_community": 53,
+          "commute": 39,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T03:03:07.864Z",
+        "data_completeness": "full"
+      }
+    },
+    "addison": {
+      "display_name": "Addison",
+      "county": "Dallas",
+      "ntreis_city_id": null,
+      "tier": 3,
+      "lat": 32.9618,
+      "lng": -96.8333,
+      "niche_city_slug": "addison-dallas-tx",
+      "demographics": {
+        "population": 17290,
+        "median_age": 35,
+        "median_household_income": 73854,
+        "pct_households_with_children": 18,
+        "owner_occupied_pct": 35.2,
+        "median_home_value_census": 418000,
+        "bachelors_plus_pct": 67.1,
+        "wfh_pct": 28.4,
+        "median_commute_min": 22,
+        "acs_vintage": "2023"
+      },
+      "walkability": {
+        "walk_score": 67,
+        "walk_description": "Somewhat Walkable",
+        "transit_score": 35,
+        "transit_description": "Some Transit",
+        "bike_score": 52,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/addison-tx"
+      },
+      "market": {
+        "sfr_median_price": 455000,
+        "sfr_days_on_market": 52,
+        "sfr_months_supply": 3.5,
+        "sfr_closed_sales_12mo": 420,
+        "market_condition": "balanced",
+        "condo_median_price": 285000
+      },
+      "schools": {
+        "isd_name": "Carrollton-Farmers Branch ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
+        "split_isd": true
+      },
+      "quiz": {
+        "sfr_median_price": 455000,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": 18,
+        "walk_score": 67,
+        "transit_score": 35,
+        "bike_score": 52,
+        "median_household_income": 73854,
+        "owner_occupied_pct": 35.2,
+        "wfh_pct": 28.4
+      },
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "B+",
+        "crime": "C+",
+        "housing": "C-",
+        "nightlife": "A+",
+        "families": "A-",
+        "diversity": "A",
+        "jobs": "B-",
+        "weather": "B+",
+        "cost_of_living": "C+",
+        "health_fitness": "A",
+        "outdoor_activities": "B",
+        "commute": "B+",
+        "scraped_date": "2026-05-18"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 73,
+        "value_score": 79,
+        "sub_scores": {
+          "education": 87,
+          "safety": 77,
+          "family_community": 29,
+          "commute": 77,
+          "market_stability": 100
+        },
+        "computed_date": "2026-05-18T12:00:00.000Z",
+        "data_completeness": "full"
+      }
+    }
+  }
+}
