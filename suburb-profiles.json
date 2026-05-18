@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T18:32:46.571Z",
+    "last_updated": "2026-05-18T21:35:12.314Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-17)",
@@ -106,18 +106,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 72,
+        "restaurants": 189,
+        "shopping": 175,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 70,
+        "family_score": 77,
         "value_score": 52,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 27,
+          "family_community": 63,
           "commute": 77,
           "market_stability": 77
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -206,18 +211,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 127,
+        "restaurants": 158,
+        "shopping": 522,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 80,
+        "family_score": 82,
         "value_score": 93,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 65,
+          "family_community": 71,
           "commute": 50,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -306,18 +316,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 15,
+        "restaurants": 33,
+        "shopping": 22,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 69,
+        "family_score": 64,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 31,
+          "family_community": 7,
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -406,7 +421,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 8,
+        "restaurants": 10,
+        "shopping": 6,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 87,
         "value_score": 71,
@@ -417,7 +437,7 @@
           "commute": 79,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -506,18 +526,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 283,
+        "restaurants": 562,
+        "shopping": 651,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 73,
+        "family_score": 72,
         "value_score": 87,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 59,
+          "family_community": 54,
           "commute": 52,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -606,18 +631,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 5,
+        "restaurants": 3,
+        "shopping": 3,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 70,
+        "family_score": 64,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 77,
-          "family_community": 32,
+          "family_community": 7,
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -706,18 +736,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 292,
+        "restaurants": 288,
+        "shopping": 375,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 85,
+        "family_score": 72,
         "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 69,
+          "family_community": 15,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -806,18 +841,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 35,
+        "restaurants": 80,
+        "shopping": 86,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 75,
+        "family_score": 74,
         "value_score": 93,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 69,
+          "family_community": 63,
           "commute": 37,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -906,18 +946,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 151,
+        "restaurants": 354,
+        "shopping": 560,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 85,
+        "family_score": 70,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 82,
+          "family_community": 18,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -1006,18 +1051,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 45,
+        "restaurants": 81,
+        "shopping": 137,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 72,
+        "family_score": 69,
         "value_score": 94,
         "sub_scores": {
           "education": 73,
           "safety": 77,
-          "family_community": 64,
+          "family_community": 47,
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1106,18 +1156,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 24,
+        "restaurants": 46,
+        "shopping": 44,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 79,
+        "family_score": 67,
         "value_score": 93,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 65,
+          "family_community": 14,
           "commute": null,
           "market_stability": 82
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -1206,18 +1261,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 24,
+        "restaurants": 96,
+        "shopping": 124,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 76,
+        "family_score": 65,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 77,
-          "family_community": 60,
+          "family_community": 13,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -1306,18 +1366,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 19,
+        "restaurants": 17,
+        "shopping": 26,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 80,
+        "family_score": 76,
         "value_score": 23,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 54,
+          "family_community": 33,
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1406,18 +1471,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 35,
+        "restaurants": 59,
+        "shopping": 114,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 77,
+        "family_score": 80,
         "value_score": 83,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 47,
+          "family_community": 59,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1506,18 +1576,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 601,
+        "restaurants": 2101,
+        "shopping": 3648,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 68,
+        "family_score": 67,
         "value_score": 93,
         "sub_scores": {
           "education": 79,
           "safety": 70,
-          "family_community": 53,
+          "family_community": 47,
           "commute": 53,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1606,18 +1681,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 21,
+        "restaurants": 26,
+        "shopping": 73,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 71,
+        "family_score": 68,
         "value_score": 90,
         "sub_scores": {
           "education": 73,
           "safety": 73,
-          "family_community": 57,
+          "family_community": 43,
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1706,18 +1786,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 29,
+        "restaurants": 53,
+        "shopping": 95,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 81,
+        "family_score": 66,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 83,
+          "family_community": 18,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -1806,7 +1891,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 21,
+        "restaurants": 104,
+        "shopping": 112,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 85,
         "value_score": 82,
@@ -1817,7 +1907,7 @@
           "commute": 71,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -1906,18 +1996,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 62,
+        "restaurants": 65,
+        "shopping": 84,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 71,
+        "family_score": 70,
         "value_score": 70,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 1,
+          "family_community": 0,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -2006,18 +2101,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 16,
+        "restaurants": 13,
+        "shopping": 6,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 78,
+        "family_score": 72,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 34,
+          "family_community": 7,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -2106,18 +2206,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 95,
+        "restaurants": 146,
+        "shopping": 200,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 74,
+        "family_score": 80,
         "value_score": 86,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 36,
+          "family_community": 64,
           "commute": 48,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2206,7 +2311,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 14,
+        "restaurants": 49,
+        "shopping": 33,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 71,
         "value_score": 88,
@@ -2217,7 +2327,7 @@
           "commute": 32,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2306,18 +2416,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 439,
+        "restaurants": 1135,
+        "shopping": 1157,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 72,
+        "family_score": 67,
         "value_score": 86,
         "sub_scores": {
           "education": 77,
           "safety": 73,
-          "family_community": 64,
+          "family_community": 38,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2406,18 +2521,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 227,
+        "restaurants": 438,
+        "shopping": 524,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 83,
         "value_score": 77,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 79,
+          "family_community": 80,
           "commute": 51,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2506,18 +2626,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 103,
+        "restaurants": 198,
+        "shopping": 375,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 73,
+        "family_score": 68,
         "value_score": 92,
         "sub_scores": {
           "education": 90,
           "safety": 73,
-          "family_community": 58,
+          "family_community": 34,
           "commute": 40,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2606,18 +2731,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 63,
+        "restaurants": 133,
+        "shopping": 257,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 81,
+        "family_score": 67,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 77,
-          "family_community": 73,
+          "family_community": 16,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -2706,18 +2836,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 35,
+        "restaurants": 260,
+        "shopping": 306,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 79,
+        "family_score": 74,
         "value_score": 67,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 65,
+          "family_community": 40,
           "commute": 48,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -2806,18 +2941,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 3,
+        "restaurants": 9,
+        "shopping": 8,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 70,
+        "family_score": 63,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": null,
-          "family_community": 27,
+          "family_community": 6,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -2906,18 +3046,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 19,
+        "restaurants": 28,
+        "shopping": 43,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 65,
         "value_score": 69,
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 3,
+          "family_community": 1,
           "commute": null,
           "market_stability": 62
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3006,18 +3151,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 19,
+        "restaurants": 37,
+        "shopping": 87,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 70,
         "value_score": 85,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 1,
+          "family_community": 0,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3106,18 +3256,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 29,
+        "restaurants": 72,
+        "shopping": 144,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 86,
+        "family_score": 72,
         "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 76,
+          "family_community": 16,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3206,18 +3361,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 135,
+        "restaurants": 309,
+        "shopping": 428,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 67,
         "value_score": 85,
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 30,
+          "family_community": 33,
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -3306,7 +3466,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 26,
+        "restaurants": 50,
+        "shopping": 67,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 90,
         "value_score": 46,
@@ -3317,7 +3482,7 @@
           "commute": 88,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -3395,18 +3560,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 35,
+        "restaurants": 59,
+        "shopping": 126,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 62,
         "value_score": 80,
         "sub_scores": {
           "education": 90,
           "safety": null,
-          "family_community": 1,
+          "family_community": 0,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3495,18 +3665,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 82,
+        "restaurants": 238,
+        "shopping": 457,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 75,
+        "family_score": 77,
         "value_score": 89,
         "sub_scores": {
           "education": 93,
           "safety": 77,
-          "family_community": 49,
+          "family_community": 57,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -3595,18 +3770,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 28,
+        "restaurants": 39,
+        "shopping": 58,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 73,
+        "family_score": 65,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 43,
+          "family_community": 9,
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3695,7 +3875,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 13,
+        "restaurants": 6,
+        "shopping": 5,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 65,
         "value_score": 35,
@@ -3706,7 +3891,7 @@
           "commute": null,
           "market_stability": 99
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -3795,18 +3980,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 434,
+        "restaurants": 450,
+        "shopping": 560,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 79,
+        "family_score": 82,
         "value_score": 92,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 70,
+          "family_community": 85,
           "commute": 45,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -3895,18 +4085,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 161,
+        "restaurants": 305,
+        "shopping": 351,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 79,
         "value_score": 92,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 65,
+          "family_community": 64,
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -3995,18 +4190,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 17,
+        "restaurants": 39,
+        "shopping": 17,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 78,
+        "family_score": 72,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 90,
-          "family_community": 33,
+          "family_community": 7,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4095,18 +4295,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 97,
+        "restaurants": 233,
+        "shopping": 328,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 71,
         "value_score": 90,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 61,
+          "family_community": 59,
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -4195,18 +4400,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 24,
+        "restaurants": 38,
+        "shopping": 52,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 84,
+        "family_score": 71,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 73,
+          "family_community": 16,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4295,18 +4505,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 29,
+        "restaurants": 79,
+        "shopping": 85,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 84,
+        "family_score": 73,
         "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 57,
+          "family_community": 12,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4395,18 +4610,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 44,
+        "restaurants": 86,
+        "shopping": 120,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 74,
+        "family_score": 68,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 36,
+          "family_community": 8,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4495,18 +4715,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 23,
+        "restaurants": 38,
+        "shopping": 68,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 68,
+        "family_score": 67,
         "value_score": 91,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 2,
+          "family_community": 0,
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4595,18 +4820,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 137,
+        "restaurants": 592,
+        "shopping": 724,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 78,
+        "family_score": 77,
         "value_score": 87,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 60,
+          "family_community": 55,
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -4695,18 +4925,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 152,
+        "restaurants": 203,
+        "shopping": 272,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 75,
+        "family_score": 66,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 73,
-          "family_community": 46,
+          "family_community": 10,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4795,18 +5030,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 35,
+        "restaurants": 57,
+        "shopping": 90,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 79,
+        "family_score": 71,
         "value_score": 56,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 40,
+          "family_community": 9,
           "commute": null,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -4895,18 +5135,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 74,
+        "restaurants": 303,
+        "shopping": 167,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 75,
         "value_score": 87,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 47,
+          "family_community": 51,
           "commute": 55,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -4995,18 +5240,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 24,
+        "restaurants": 92,
+        "shopping": 39,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 83,
+        "family_score": 71,
         "value_score": 87,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 66,
+          "family_community": 14,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5095,7 +5345,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 41,
+        "restaurants": 129,
+        "shopping": 183,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 80,
         "value_score": 71,
@@ -5106,7 +5361,7 @@
           "commute": 40,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -5195,18 +5450,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 26,
+        "restaurants": 69,
+        "shopping": 79,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 74,
+        "family_score": 69,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 54,
+          "family_community": 32,
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -5295,18 +5555,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 7,
+        "restaurants": 26,
+        "shopping": 17,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 78,
+        "family_score": 66,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 62,
+          "family_community": 13,
           "commute": null,
           "market_stability": 84
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5395,18 +5660,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 14,
+        "restaurants": 37,
+        "shopping": 17,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 75,
+        "family_score": 69,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 30,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5495,7 +5765,12 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 49,
+        "restaurants": 35,
+        "shopping": 59,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 80,
         "value_score": 71,
@@ -5506,7 +5781,7 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     },
@@ -5595,18 +5870,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 44,
+        "restaurants": 85,
+        "shopping": 159,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 88,
+        "family_score": 74,
         "value_score": 35,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 74,
+          "family_community": 16,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5695,18 +5975,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 45,
+        "restaurants": 76,
+        "shopping": 58,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 75,
+        "family_score": 70,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 31,
+          "family_community": 7,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5795,18 +6080,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 15,
+        "restaurants": 27,
+        "shopping": 18,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 71,
+        "family_score": 70,
         "value_score": 62,
         "sub_scores": {
           "education": 90,
           "safety": 90,
-          "family_community": 7,
+          "family_community": 2,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5895,18 +6185,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 31,
+        "restaurants": 82,
+        "shopping": 58,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 84,
+        "family_score": 70,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 77,
+          "family_community": 17,
           "commute": null,
           "market_stability": 94
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -5995,18 +6290,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 34,
+        "restaurants": 82,
+        "shopping": 66,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
-        "family_score": 50,
+        "family_score": 49,
         "value_score": 35,
         "sub_scores": {
           "education": 97,
           "safety": null,
-          "family_community": 2,
+          "family_community": 0,
           "commute": null,
           "market_stability": 4
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "partial"
       }
     },
@@ -6095,18 +6395,23 @@
         "fbi_reporting": null,
         "fbi_data_year": null
       },
-      "amenities": null,
+      "amenities": {
+        "parks": 44,
+        "restaurants": 77,
+        "shopping": 82,
+        "osm_fetch_date": "2026-05-18"
+      },
       "scores": {
         "family_score": 76,
         "value_score": 94,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 53,
+          "family_community": 54,
           "commute": 39,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T18:32:46.554Z",
+        "computed_date": "2026-05-18T21:35:12.287Z",
         "data_completeness": "full"
       }
     }
