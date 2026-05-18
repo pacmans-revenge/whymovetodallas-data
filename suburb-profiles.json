@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T21:35:12.314Z",
+    "last_updated": "2026-05-18T21:47:24.033Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-17)",
@@ -118,11 +118,11 @@
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 63,
+          "family_community": 62,
           "commute": 77,
           "market_stability": 77
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -223,11 +223,11 @@
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 71,
+          "family_community": 73,
           "commute": 50,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -323,16 +323,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 64,
+        "family_score": 63,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 7,
+          "family_community": 2,
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -437,7 +437,7 @@
           "commute": 79,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -533,16 +533,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 71,
         "value_score": 87,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 54,
+          "family_community": 49,
           "commute": 52,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -638,16 +638,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 64,
+        "family_score": 63,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 77,
-          "family_community": 7,
+          "family_community": 2,
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -743,16 +743,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 70,
         "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 15,
+          "family_community": 5,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -848,16 +848,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 74,
+        "family_score": 73,
         "value_score": 93,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 63,
+          "family_community": 60,
           "commute": 37,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -953,16 +953,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 67,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 18,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -1067,7 +1067,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -1163,16 +1163,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 65,
         "value_score": 93,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 14,
+          "family_community": 5,
           "commute": null,
           "market_stability": 82
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -1268,16 +1268,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 65,
+        "family_score": 63,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 77,
-          "family_community": 13,
+          "family_community": 5,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -1373,16 +1373,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 75,
         "value_score": 23,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 33,
+          "family_community": 30,
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -1478,16 +1478,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 81,
         "value_score": 83,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 59,
+          "family_community": 65,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -1588,11 +1588,11 @@
         "sub_scores": {
           "education": 79,
           "safety": 70,
-          "family_community": 47,
+          "family_community": 44,
           "commute": 53,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -1693,11 +1693,11 @@
         "sub_scores": {
           "education": 73,
           "safety": 73,
-          "family_community": 43,
+          "family_community": 44,
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -1793,16 +1793,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 66,
+        "family_score": 63,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 18,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -1907,7 +1907,7 @@
           "commute": 71,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2012,7 +2012,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -2108,16 +2108,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 71,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 7,
+          "family_community": 3,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -2213,16 +2213,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 81,
         "value_score": 86,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 64,
+          "family_community": 70,
           "commute": 48,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2327,7 +2327,7 @@
           "commute": 32,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2423,16 +2423,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 66,
         "value_score": 86,
         "sub_scores": {
           "education": 77,
           "safety": 73,
-          "family_community": 38,
+          "family_community": 32,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2528,16 +2528,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 83,
+        "family_score": 82,
         "value_score": 77,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 80,
+          "family_community": 78,
           "commute": 51,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2638,11 +2638,11 @@
         "sub_scores": {
           "education": 90,
           "safety": 73,
-          "family_community": 34,
+          "family_community": 32,
           "commute": 40,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2738,16 +2738,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 65,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 77,
-          "family_community": 16,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -2843,16 +2843,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 74,
+        "family_score": 73,
         "value_score": 67,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 40,
+          "family_community": 36,
           "commute": 48,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -2948,16 +2948,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 63,
+        "family_score": 62,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": null,
-          "family_community": 6,
+          "family_community": 2,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3058,11 +3058,11 @@
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 1,
+          "family_community": 0,
           "commute": null,
           "market_stability": 62
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3167,7 +3167,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3263,16 +3263,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 70,
         "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 16,
+          "family_community": 6,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3368,16 +3368,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 68,
         "value_score": 85,
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 33,
+          "family_community": 37,
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -3482,7 +3482,7 @@
           "commute": 88,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -3576,7 +3576,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3677,11 +3677,11 @@
         "sub_scores": {
           "education": 93,
           "safety": 77,
-          "family_community": 57,
+          "family_community": 58,
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -3777,16 +3777,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 65,
+        "family_score": 64,
         "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 9,
+          "family_community": 3,
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3891,7 +3891,7 @@
           "commute": null,
           "market_stability": 99
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -3992,11 +3992,11 @@
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 85,
+          "family_community": 87,
           "commute": 45,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -4097,11 +4097,11 @@
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 64,
+          "family_community": 63,
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -4197,16 +4197,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 71,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 90,
-          "family_community": 7,
+          "family_community": 3,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -4302,16 +4302,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 70,
         "value_score": 90,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 59,
+          "family_community": 58,
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -4407,16 +4407,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 68,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 16,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -4512,16 +4512,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 71,
         "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 12,
+          "family_community": 4,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -4617,16 +4617,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 68,
+        "family_score": 67,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 8,
+          "family_community": 3,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -4731,7 +4731,7 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -4827,16 +4827,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 76,
         "value_score": 87,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 55,
+          "family_community": 50,
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -4932,16 +4932,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 66,
+        "family_score": 65,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 73,
-          "family_community": 10,
+          "family_community": 4,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5037,16 +5037,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 70,
         "value_score": 56,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 9,
+          "family_community": 3,
           "commute": null,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5142,16 +5142,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 75,
+        "family_score": 74,
         "value_score": 87,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 51,
+          "family_community": 42,
           "commute": 55,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -5247,16 +5247,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 69,
         "value_score": 87,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 14,
+          "family_community": 5,
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5361,7 +5361,7 @@
           "commute": 40,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -5462,11 +5462,11 @@
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 32,
+          "family_community": 29,
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -5562,16 +5562,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 66,
+        "family_score": 64,
         "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 13,
+          "family_community": 5,
           "commute": null,
           "market_stability": 84
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5667,16 +5667,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 68,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 6,
+          "family_community": 2,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5781,7 +5781,7 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     },
@@ -5877,16 +5877,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 74,
+        "family_score": 72,
         "value_score": 35,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 16,
+          "family_community": 6,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -5982,16 +5982,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 69,
         "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 7,
+          "family_community": 2,
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -6092,11 +6092,11 @@
         "sub_scores": {
           "education": 90,
           "safety": 90,
-          "family_community": 2,
+          "family_community": 1,
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -6192,16 +6192,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 68,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 17,
+          "family_community": 6,
           "commute": null,
           "market_stability": 94
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -6306,7 +6306,7 @@
           "commute": null,
           "market_stability": 4
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "partial"
       }
     },
@@ -6402,16 +6402,16 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 77,
         "value_score": 94,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 54,
+          "family_community": 58,
           "commute": 39,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T21:35:12.287Z",
+        "computed_date": "2026-05-18T21:47:24.019Z",
         "data_completeness": "full"
       }
     }
