@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T03:03:07.901Z",
+    "last_updated": "2026-05-18T15:09:46.865Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-17)",
@@ -117,7 +117,7 @@
           "commute": 50,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -217,7 +217,7 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -308,16 +308,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 74,
+        "family_score": 87,
         "value_score": 71,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 10,
+          "family_community": 74,
           "commute": 79,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -417,7 +417,7 @@
           "commute": 52,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -517,7 +517,7 @@
           "commute": null,
           "market_stability": 88
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -617,7 +617,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -717,7 +717,7 @@
           "commute": 37,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -817,7 +817,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -917,7 +917,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1017,7 +1017,7 @@
           "commute": null,
           "market_stability": 82
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -1117,7 +1117,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -1217,7 +1217,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1317,7 +1317,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1417,7 +1417,7 @@
           "commute": 53,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1517,7 +1517,7 @@
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1617,7 +1617,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -1708,16 +1708,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 79,
+        "family_score": 85,
         "value_score": 82,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 51,
+          "family_community": 81,
           "commute": 71,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -1817,7 +1817,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -1917,7 +1917,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -2017,7 +2017,7 @@
           "commute": 48,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2108,16 +2108,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 66,
+        "family_score": 71,
         "value_score": 88,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 46,
+          "family_community": 69,
           "commute": 32,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2217,7 +2217,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2317,7 +2317,7 @@
           "commute": 51,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2417,7 +2417,7 @@
           "commute": 40,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2517,7 +2517,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -2617,7 +2617,7 @@
           "commute": 48,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -2717,7 +2717,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -2817,7 +2817,7 @@
           "commute": null,
           "market_stability": 62
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -2917,7 +2917,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -3017,7 +3017,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -3117,7 +3117,7 @@
           "commute": 56,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -3208,16 +3208,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 85,
+        "family_score": 90,
         "value_score": 46,
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 66,
+          "family_community": 90,
           "commute": 88,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -3306,7 +3306,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -3406,7 +3406,7 @@
           "commute": 53,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -3506,7 +3506,7 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -3606,7 +3606,7 @@
           "commute": null,
           "market_stability": 99
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -3706,7 +3706,7 @@
           "commute": 45,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -3806,7 +3806,7 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -3906,7 +3906,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4006,7 +4006,7 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -4106,7 +4106,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4206,7 +4206,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4306,7 +4306,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4406,7 +4406,7 @@
           "commute": null,
           "market_stability": 96
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4506,7 +4506,7 @@
           "commute": 54,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -4606,7 +4606,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4706,7 +4706,7 @@
           "commute": null,
           "market_stability": 93
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4806,7 +4806,7 @@
           "commute": 55,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -4906,7 +4906,7 @@
           "commute": null,
           "market_stability": 98
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -4997,16 +4997,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 71,
+        "family_score": 80,
         "value_score": 71,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 43,
+          "family_community": 87,
           "commute": 40,
           "market_stability": 86
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -5106,7 +5106,7 @@
           "commute": 40,
           "market_stability": 97
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -5206,7 +5206,7 @@
           "commute": null,
           "market_stability": 84
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5306,7 +5306,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5397,16 +5397,16 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 78,
+        "family_score": 80,
         "value_score": 71,
         "sub_scores": {
           "education": 90,
           "safety": 77,
-          "family_community": 61,
+          "family_community": 69,
           "commute": 63,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     },
@@ -5506,7 +5506,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5606,7 +5606,7 @@
           "commute": null,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5706,7 +5706,7 @@
           "commute": null,
           "market_stability": 95
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5806,7 +5806,7 @@
           "commute": null,
           "market_stability": 94
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -5906,7 +5906,7 @@
           "commute": null,
           "market_stability": 4
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "partial"
       }
     },
@@ -6006,107 +6006,7 @@
           "commute": 39,
           "market_stability": 100
         },
-        "computed_date": "2026-05-18T03:03:07.864Z",
-        "data_completeness": "full"
-      }
-    },
-    "addison": {
-      "display_name": "Addison",
-      "county": "Dallas",
-      "ntreis_city_id": null,
-      "tier": 3,
-      "lat": 32.9618,
-      "lng": -96.8333,
-      "niche_city_slug": "addison-dallas-tx",
-      "demographics": {
-        "population": 17290,
-        "median_age": 35,
-        "median_household_income": 73854,
-        "pct_households_with_children": 18,
-        "owner_occupied_pct": 35.2,
-        "median_home_value_census": 418000,
-        "bachelors_plus_pct": 67.1,
-        "wfh_pct": 28.4,
-        "median_commute_min": 22,
-        "acs_vintage": "2023"
-      },
-      "walkability": {
-        "walk_score": 67,
-        "walk_description": "Somewhat Walkable",
-        "transit_score": 35,
-        "transit_description": "Some Transit",
-        "bike_score": 52,
-        "bike_description": "Bikeable",
-        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/addison-tx"
-      },
-      "market": {
-        "sfr_median_price": 455000,
-        "sfr_days_on_market": 52,
-        "sfr_months_supply": 3.5,
-        "sfr_closed_sales_12mo": 420,
-        "market_condition": "balanced",
-        "condo_median_price": 285000
-      },
-      "schools": {
-        "isd_name": "Carrollton-Farmers Branch ISD",
-        "overall_grade": "B+",
-        "academics_grade": "B",
-        "college_prep_grade": "A",
-        "good_for_families": "A",
-        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": true
-      },
-      "quiz": {
-        "sfr_median_price": 455000,
-        "overall_isd_grade": 10,
-        "academics_isd_grade": 9,
-        "pct_households_with_children": 18,
-        "walk_score": 67,
-        "transit_score": 35,
-        "bike_score": 52,
-        "median_household_income": 73854,
-        "owner_occupied_pct": 35.2,
-        "wfh_pct": 28.4
-      },
-      "niche_city": {
-        "overall": "A-",
-        "public_schools": "B+",
-        "crime": "C+",
-        "housing": "C-",
-        "nightlife": "A+",
-        "families": "A-",
-        "diversity": "A",
-        "jobs": "B-",
-        "weather": "B+",
-        "cost_of_living": "C+",
-        "health_fitness": "A",
-        "outdoor_activities": "B",
-        "commute": "B+",
-        "scraped_date": "2026-05-18"
-      },
-      "crime": {
-        "niche_crime_grade": "C+",
-        "niche_crime_numeric": 77,
-        "fbi_violent_per_100k": null,
-        "fbi_property_per_100k": null,
-        "fbi_agency_ori": null,
-        "fbi_data_available": false,
-        "fbi_reporting": null,
-        "fbi_data_year": null
-      },
-      "amenities": null,
-      "scores": {
-        "family_score": 73,
-        "value_score": 79,
-        "sub_scores": {
-          "education": 87,
-          "safety": 77,
-          "family_community": 29,
-          "commute": 77,
-          "market_stability": 100
-        },
-        "computed_date": "2026-05-18T12:00:00.000Z",
+        "computed_date": "2026-05-18T15:09:46.848Z",
         "data_completeness": "full"
       }
     }
