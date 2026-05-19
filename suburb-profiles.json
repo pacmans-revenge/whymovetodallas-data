@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "last_updated": "2026-05-19T02:12:19.347Z",
+    "last_updated": "2026-05-19T02:29:37.268Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
       "NTREIS (2026-05-19)",
       "Niche ISD (2026-05-18)",
-      "Google Places (2026-05-18)",
+      "Google Places (2026-05-19)",
       "Niche City (2026-05-18)"
     ],
     "suburbs_total": 61,
@@ -15,7 +15,7 @@
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
     "niche_city_scraped": "2026-05-18",
-    "places_data_fetched": "2026-05-18",
+    "places_data_fetched": "2026-05-19",
     "places_api_radius_miles": 5,
     "fbi_data_fetched": null,
     "fbi_data_year": null
@@ -112,7 +112,7 @@
         "parks": 72,
         "restaurants": 189,
         "shopping": 175,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 76,
@@ -139,7 +139,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -234,7 +234,7 @@
         "parks": 127,
         "restaurants": 158,
         "shopping": 522,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -261,7 +261,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -356,7 +356,7 @@
         "parks": 15,
         "restaurants": 33,
         "shopping": 22,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 69,
@@ -383,7 +383,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -475,10 +475,10 @@
         "fbi_data_year": null
       },
       "amenities": {
-        "parks": 8,
+        "parks": 10,
         "restaurants": 10,
         "shopping": 6,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 72,
@@ -491,13 +491,13 @@
           "market_stability": 98
         },
         "amenity_ranks": {
-          "parks_count": 8,
+          "parks_count": 10,
           "restaurants_count": 10,
           "shopping_count": 6,
-          "parks_rank": 14,
+          "parks_rank": 12,
           "restaurants_rank": 36,
           "shopping_rank": 55,
-          "parks_percentile": 78,
+          "parks_percentile": 82,
           "restaurants_percentile": 42,
           "shopping_percentile": 10,
           "parks_total_suburbs": 60,
@@ -505,7 +505,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "partial"
       }
     },
@@ -600,7 +600,7 @@
         "parks": 283,
         "restaurants": 562,
         "shopping": 651,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 70,
@@ -627,7 +627,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -722,7 +722,7 @@
         "parks": 5,
         "restaurants": 3,
         "shopping": 3,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 69,
@@ -749,7 +749,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -844,7 +844,7 @@
         "parks": 292,
         "restaurants": 288,
         "shopping": 375,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 80,
@@ -871,7 +871,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -966,7 +966,7 @@
         "parks": 35,
         "restaurants": 80,
         "shopping": 86,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 71,
@@ -993,7 +993,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1088,7 +1088,7 @@
         "parks": 151,
         "restaurants": 354,
         "shopping": 560,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 76,
@@ -1115,7 +1115,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1210,7 +1210,7 @@
         "parks": 45,
         "restaurants": 81,
         "shopping": 137,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 70,
@@ -1237,7 +1237,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1332,7 +1332,7 @@
         "parks": 24,
         "restaurants": 46,
         "shopping": 44,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -1359,7 +1359,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1454,7 +1454,7 @@
         "parks": 24,
         "restaurants": 96,
         "shopping": 124,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 73,
@@ -1481,7 +1481,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1576,7 +1576,7 @@
         "parks": 19,
         "restaurants": 17,
         "shopping": 26,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 76,
@@ -1603,7 +1603,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1698,7 +1698,7 @@
         "parks": 35,
         "restaurants": 59,
         "shopping": 114,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 79,
@@ -1725,7 +1725,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1820,7 +1820,7 @@
         "parks": 601,
         "restaurants": 2101,
         "shopping": 3648,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 65,
@@ -1847,7 +1847,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -1942,7 +1942,7 @@
         "parks": 21,
         "restaurants": 26,
         "shopping": 73,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 61,
@@ -1969,7 +1969,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2064,7 +2064,7 @@
         "parks": 29,
         "restaurants": 53,
         "shopping": 95,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 70,
@@ -2091,7 +2091,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2186,7 +2186,7 @@
         "parks": 21,
         "restaurants": 104,
         "shopping": 112,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 74,
@@ -2213,7 +2213,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2308,7 +2308,7 @@
         "parks": 62,
         "restaurants": 65,
         "shopping": 84,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 78,
@@ -2335,7 +2335,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2430,7 +2430,7 @@
         "parks": 16,
         "restaurants": 13,
         "shopping": 6,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -2457,7 +2457,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2552,7 +2552,7 @@
         "parks": 95,
         "restaurants": 146,
         "shopping": 200,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 79,
@@ -2579,7 +2579,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2674,7 +2674,7 @@
         "parks": 14,
         "restaurants": 49,
         "shopping": 33,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 68,
@@ -2701,7 +2701,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2793,10 +2793,10 @@
         "fbi_data_year": null
       },
       "amenities": {
-        "parks": 439,
-        "restaurants": 1135,
+        "parks": 443,
+        "restaurants": 1136,
         "shopping": 1157,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 66,
@@ -2809,8 +2809,8 @@
           "market_stability": 100
         },
         "amenity_ranks": {
-          "parks_count": 439,
-          "restaurants_count": 1135,
+          "parks_count": 443,
+          "restaurants_count": 1136,
           "shopping_count": 1157,
           "parks_rank": 52,
           "restaurants_rank": 48,
@@ -2823,7 +2823,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -2918,7 +2918,7 @@
         "parks": 227,
         "restaurants": 438,
         "shopping": 524,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -2945,7 +2945,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3040,7 +3040,7 @@
         "parks": 103,
         "restaurants": 198,
         "shopping": 375,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 68,
@@ -3067,7 +3067,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3162,7 +3162,7 @@
         "parks": 63,
         "restaurants": 133,
         "shopping": 257,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 67,
@@ -3189,7 +3189,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3284,7 +3284,7 @@
         "parks": 35,
         "restaurants": 260,
         "shopping": 306,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 78,
@@ -3311,7 +3311,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3406,7 +3406,7 @@
         "parks": 3,
         "restaurants": 9,
         "shopping": 8,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -3433,7 +3433,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "partial"
       }
     },
@@ -3528,7 +3528,7 @@
         "parks": 19,
         "restaurants": 28,
         "shopping": 43,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 77,
@@ -3555,7 +3555,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3650,7 +3650,7 @@
         "parks": 19,
         "restaurants": 37,
         "shopping": 87,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -3677,7 +3677,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3772,7 +3772,7 @@
         "parks": 29,
         "restaurants": 72,
         "shopping": 144,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 76,
@@ -3799,7 +3799,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -3891,10 +3891,10 @@
         "fbi_data_year": null
       },
       "amenities": {
-        "parks": 135,
+        "parks": 136,
         "restaurants": 309,
         "shopping": 428,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 68,
@@ -3907,7 +3907,7 @@
           "market_stability": 100
         },
         "amenity_ranks": {
-          "parks_count": 135,
+          "parks_count": 136,
           "restaurants_count": 309,
           "shopping_count": 428,
           "parks_rank": 48,
@@ -3921,7 +3921,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4016,7 +4016,7 @@
         "parks": 26,
         "restaurants": 50,
         "shopping": 67,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 73,
@@ -4043,7 +4043,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4125,7 +4125,7 @@
         "parks": 35,
         "restaurants": 59,
         "shopping": 126,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 62,
@@ -4152,7 +4152,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "partial"
       }
     },
@@ -4247,7 +4247,7 @@
         "parks": 82,
         "restaurants": 238,
         "shopping": 457,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -4274,7 +4274,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4369,7 +4369,7 @@
         "parks": 28,
         "restaurants": 39,
         "shopping": 58,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 70,
@@ -4396,7 +4396,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4491,7 +4491,7 @@
         "parks": 13,
         "restaurants": 6,
         "shopping": 5,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 72,
@@ -4518,7 +4518,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "partial"
       }
     },
@@ -4613,7 +4613,7 @@
         "parks": 434,
         "restaurants": 450,
         "shopping": 560,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -4640,7 +4640,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4735,7 +4735,7 @@
         "parks": 161,
         "restaurants": 305,
         "shopping": 351,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 77,
@@ -4762,7 +4762,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4857,7 +4857,7 @@
         "parks": 17,
         "restaurants": 39,
         "shopping": 17,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 80,
@@ -4884,7 +4884,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -4979,7 +4979,7 @@
         "parks": 97,
         "restaurants": 233,
         "shopping": 328,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 68,
@@ -5006,7 +5006,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5101,7 +5101,7 @@
         "parks": 24,
         "restaurants": 38,
         "shopping": 52,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 72,
@@ -5128,7 +5128,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5223,7 +5223,7 @@
         "parks": 29,
         "restaurants": 79,
         "shopping": 85,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 83,
@@ -5239,10 +5239,10 @@
           "parks_count": 29,
           "restaurants_count": 79,
           "shopping_count": 85,
-          "parks_rank": 13,
+          "parks_rank": 14,
           "restaurants_rank": 10,
           "shopping_rank": 14,
-          "parks_percentile": 80,
+          "parks_percentile": 78,
           "restaurants_percentile": 85,
           "shopping_percentile": 78,
           "parks_total_suburbs": 60,
@@ -5250,7 +5250,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5345,7 +5345,7 @@
         "parks": 44,
         "restaurants": 86,
         "shopping": 120,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 70,
@@ -5372,7 +5372,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5467,7 +5467,7 @@
         "parks": 23,
         "restaurants": 38,
         "shopping": 68,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 82,
@@ -5494,7 +5494,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5589,7 +5589,7 @@
         "parks": 137,
         "restaurants": 592,
         "shopping": 724,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -5616,7 +5616,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5711,7 +5711,7 @@
         "parks": 152,
         "restaurants": 203,
         "shopping": 272,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 80,
@@ -5738,7 +5738,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5833,7 +5833,7 @@
         "parks": 35,
         "restaurants": 57,
         "shopping": 90,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -5860,7 +5860,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -5955,7 +5955,7 @@
         "parks": 74,
         "restaurants": 303,
         "shopping": 167,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 73,
@@ -5982,7 +5982,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6077,7 +6077,7 @@
         "parks": 24,
         "restaurants": 92,
         "shopping": 39,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 81,
@@ -6104,7 +6104,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6199,7 +6199,7 @@
         "parks": 41,
         "restaurants": 129,
         "shopping": 183,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 78,
@@ -6226,7 +6226,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6321,7 +6321,7 @@
         "parks": 26,
         "restaurants": 69,
         "shopping": 79,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 69,
@@ -6348,7 +6348,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6443,7 +6443,7 @@
         "parks": 7,
         "restaurants": 26,
         "shopping": 17,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 68,
@@ -6470,7 +6470,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6565,7 +6565,7 @@
         "parks": 14,
         "restaurants": 37,
         "shopping": 17,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 71,
@@ -6592,7 +6592,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6687,7 +6687,7 @@
         "parks": 49,
         "restaurants": 35,
         "shopping": 59,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -6714,7 +6714,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6809,7 +6809,7 @@
         "parks": 44,
         "restaurants": 85,
         "shopping": 159,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 83,
@@ -6825,10 +6825,10 @@
           "parks_count": 44,
           "restaurants_count": 85,
           "shopping_count": 159,
-          "parks_rank": 12,
+          "parks_rank": 13,
           "restaurants_rank": 13,
           "shopping_rank": 10,
-          "parks_percentile": 82,
+          "parks_percentile": 80,
           "restaurants_percentile": 80,
           "shopping_percentile": 85,
           "parks_total_suburbs": 60,
@@ -6836,7 +6836,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -6931,7 +6931,7 @@
         "parks": 45,
         "restaurants": 76,
         "shopping": 58,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 73,
@@ -6958,7 +6958,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -7053,7 +7053,7 @@
         "parks": 15,
         "restaurants": 27,
         "shopping": 18,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 79,
@@ -7080,7 +7080,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -7175,7 +7175,7 @@
         "parks": 31,
         "restaurants": 82,
         "shopping": 58,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 75,
@@ -7202,7 +7202,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     },
@@ -7297,7 +7297,7 @@
         "parks": 34,
         "restaurants": 82,
         "shopping": 66,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 71,
@@ -7324,7 +7324,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "partial"
       }
     },
@@ -7419,7 +7419,7 @@
         "parks": 44,
         "restaurants": 77,
         "shopping": 82,
-        "osm_fetch_date": "2026-05-18"
+        "osm_fetch_date": "2026-05-19"
       },
       "scores": {
         "family_score": 77,
@@ -7446,7 +7446,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T02:12:19.322Z",
+        "computed_date": "2026-05-19T02:29:37.224Z",
         "data_completeness": "full"
       }
     }
