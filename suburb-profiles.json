@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-19T14:55:39.709Z",
+    "last_updated": "2026-05-19T15:24:46.016Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -14,7 +14,7 @@
     "suburbs_partial": 1,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
-    "niche_city_scraped": "2026-05-18",
+    "niche_city_scraped": "2026-05-19",
     "places_data_fetched": "2026-05-19",
     "places_api_radius_miles": 5,
     "fbi_data_fetched": null,
@@ -96,7 +96,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B",
         "commute": "B+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -218,7 +218,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -312,7 +312,8 @@
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/anna-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B"
       },
       "quiz": {
         "sfr_median_price": 358832.4,
@@ -340,7 +341,7 @@
         "health_fitness": "B",
         "outdoor_activities": "B-",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -462,7 +463,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C+",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -556,7 +557,8 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/arlington-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B"
       },
       "quiz": {
         "sfr_median_price": 333885.4,
@@ -584,7 +586,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -706,7 +708,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -800,7 +802,8 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A"
       },
       "quiz": {
         "sfr_median_price": 383158.3,
@@ -828,7 +831,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -950,7 +953,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -1044,7 +1047,8 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A+"
       },
       "quiz": {
         "sfr_median_price": 425975,
@@ -1072,7 +1076,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "B+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -1166,7 +1170,8 @@
         "college_prep_grade": "B",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "C"
       },
       "quiz": {
         "sfr_median_price": 346140.6,
@@ -1194,7 +1199,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -1316,7 +1321,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -1410,7 +1415,8 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/cleburne-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B-"
       },
       "quiz": {
         "sfr_median_price": 288263.8,
@@ -1438,7 +1444,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -1560,7 +1566,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -1682,7 +1688,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -1804,7 +1810,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B+",
         "commute": "B+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C-",
@@ -1898,7 +1904,8 @@
         "college_prep_grade": "B-",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/desoto-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "C"
       },
       "quiz": {
         "sfr_median_price": 356040.8,
@@ -1926,7 +1933,7 @@
         "health_fitness": "B",
         "outdoor_activities": "B-",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -2020,7 +2027,8 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/duncanville-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "C+"
       },
       "quiz": {
         "sfr_median_price": 296625,
@@ -2048,7 +2056,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -2142,7 +2150,8 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A+"
       },
       "quiz": {
         "sfr_median_price": 374232.9,
@@ -2170,7 +2179,7 @@
         "health_fitness": "B",
         "outdoor_activities": "C+",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -2292,7 +2301,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -2414,7 +2423,7 @@
         "health_fitness": "B",
         "outdoor_activities": "B-",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -2536,7 +2545,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -2658,7 +2667,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -2780,7 +2789,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B-",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -2902,7 +2911,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -2996,7 +3005,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B+"
       },
       "quiz": {
         "sfr_median_price": 304712.5,
@@ -3024,7 +3034,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -3118,7 +3128,8 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B"
       },
       "quiz": {
         "sfr_median_price": 353327.3,
@@ -3146,7 +3157,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B+",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -3268,7 +3279,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C+",
         "commute": "B+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -3362,7 +3373,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "niche_city_schools_grade": "A-"
       },
       "quiz": {
         "sfr_median_price": 506212.9,
@@ -3390,7 +3402,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": null,
@@ -3512,7 +3524,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -3634,7 +3646,7 @@
         "health_fitness": "A",
         "outdoor_activities": "C+",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -3728,7 +3740,8 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A"
       },
       "quiz": {
         "sfr_median_price": 360024.8,
@@ -3756,7 +3769,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -3850,7 +3863,8 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/irving-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B+"
       },
       "quiz": {
         "sfr_median_price": 383095.8,
@@ -3878,7 +3892,7 @@
         "health_fitness": "B",
         "outdoor_activities": "B",
         "commute": "B+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -4000,7 +4014,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -4109,7 +4123,7 @@
         "health_fitness": "A",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": null,
@@ -4231,7 +4245,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "B-",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -4353,7 +4367,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -4475,7 +4489,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": null,
@@ -4597,7 +4611,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -4719,7 +4733,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -4813,7 +4827,8 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/melissa-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A+"
       },
       "quiz": {
         "sfr_median_price": 456222.8,
@@ -4841,7 +4856,7 @@
         "health_fitness": "B",
         "outdoor_activities": "B-",
         "commute": "C-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "A-",
@@ -4935,7 +4950,8 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/mesquite-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B"
       },
       "quiz": {
         "sfr_median_price": 289057.5,
@@ -4963,7 +4979,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -5085,7 +5101,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -5207,7 +5223,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -5301,7 +5317,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A"
       },
       "quiz": {
         "sfr_median_price": 386245.8,
@@ -5329,7 +5346,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "C+",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -5451,7 +5468,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C-",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -5573,7 +5590,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -5667,7 +5684,8 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/princeton-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B+"
       },
       "quiz": {
         "sfr_median_price": 301724.4,
@@ -5695,7 +5713,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "C",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C",
@@ -5817,7 +5835,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C+",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B+",
@@ -5911,7 +5929,8 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/richardson-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A"
       },
       "quiz": {
         "sfr_median_price": 463825,
@@ -5939,7 +5958,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B",
         "commute": "A-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -6061,7 +6080,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C+",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -6183,7 +6202,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "B",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -6277,7 +6296,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "B+"
       },
       "quiz": {
         "sfr_median_price": 379787.5,
@@ -6305,7 +6325,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -6427,7 +6447,7 @@
         "health_fitness": "B-",
         "outdoor_activities": "C+",
         "commute": "C",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -6521,7 +6541,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "niche_city_schools_grade": "B+"
       },
       "quiz": {
         "sfr_median_price": 441256.1,
@@ -6549,7 +6570,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -6643,7 +6664,8 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": false,
+        "niche_city_schools_grade": "A-"
       },
       "quiz": {
         "sfr_median_price": 308986.7,
@@ -6671,7 +6693,7 @@
         "health_fitness": "B",
         "outdoor_activities": "C",
         "commute": "B",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "C+",
@@ -6793,7 +6815,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "C+",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B",
@@ -6915,7 +6937,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -7037,7 +7059,7 @@
         "health_fitness": "A-",
         "outdoor_activities": "C+",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "A-",
@@ -7159,7 +7181,7 @@
         "health_fitness": "C+",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
@@ -7281,7 +7303,7 @@
         "health_fitness": "A",
         "outdoor_activities": "B-",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": null,
@@ -7403,7 +7425,7 @@
         "health_fitness": "B+",
         "outdoor_activities": "B",
         "commute": "B-",
-        "scraped_date": "2026-05-18"
+        "scraped_date": "2026-05-19"
       },
       "crime": {
         "niche_crime_grade": "B-",
