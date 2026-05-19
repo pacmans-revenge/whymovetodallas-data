@@ -1,17 +1,17 @@
 {
   "_meta": {
-    "last_updated": "2026-05-19T15:24:46.016Z",
+    "last_updated": "2026-05-19T16:23:42.462Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
       "NTREIS (2026-05-19)",
-      "Niche ISD (2026-05-18)",
+      "Niche ISD (2026-05-19)",
       "Google Places (2026-05-19)",
-      "Niche City (2026-05-18)"
+      "Niche City (2026-05-19)"
     ],
-    "suburbs_total": 61,
+    "suburbs_total": 67,
     "suburbs_complete": 60,
-    "suburbs_partial": 1,
+    "suburbs_partial": 7,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
     "niche_city_scraped": "2026-05-19",
@@ -116,7 +116,7 @@
       },
       "scores": {
         "family_score": 76,
-        "value_score": 67,
+        "value_score": 68,
         "sub_scores": {
           "education": 87,
           "safety": 77,
@@ -139,7 +139,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -261,7 +261,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -312,8 +312,7 @@
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/anna-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 358832.4,
@@ -384,7 +383,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -483,7 +482,7 @@
       },
       "scores": {
         "family_score": 72,
-        "value_score": 92,
+        "value_score": 96,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -506,7 +505,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "partial"
       }
     },
@@ -557,8 +556,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/arlington-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 333885.4,
@@ -629,7 +627,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -751,8 +749,76 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
+      }
+    },
+    "azle": {
+      "display_name": "Azle",
+      "county": "Tarrant/Parker",
+      "ntreis_city_id": 32322,
+      "tier": 3,
+      "lat": 32.8957,
+      "lng": -97.5447,
+      "niche_city_slug": "azle-tarrant-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 337551.6,
+        "sfr_days_on_market": 43.8,
+        "sfr_months_supply": 4.7,
+        "sfr_closed_sales_12mo": 579,
+        "market_condition": "balanced",
+        "condo_median_price": 312000
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 337551.6,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 5,
+        "restaurants": 7,
+        "shopping": 3,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 98
+        },
+        "amenity_ranks": {
+          "parks_count": 5,
+          "restaurants_count": 7,
+          "shopping_count": 3,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
       }
     },
     "bedford": {
@@ -802,8 +868,7 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 383158.3,
@@ -874,7 +939,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -996,7 +1061,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1047,8 +1112,7 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 425975,
@@ -1119,7 +1183,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1170,8 +1234,7 @@
         "college_prep_grade": "B",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 346140.6,
@@ -1242,7 +1305,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1341,7 +1404,7 @@
       },
       "scores": {
         "family_score": 75,
-        "value_score": 94,
+        "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 80,
@@ -1364,7 +1427,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1415,8 +1478,7 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/cleburne-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B-"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 288263.8,
@@ -1487,7 +1549,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1586,7 +1648,7 @@
       },
       "scores": {
         "family_score": 76,
-        "value_score": 53,
+        "value_score": 56,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -1609,7 +1671,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -1708,7 +1770,7 @@
       },
       "scores": {
         "family_score": 79,
-        "value_score": 83,
+        "value_score": 85,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -1731,14 +1793,150 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
+      }
+    },
+    "corinth": {
+      "display_name": "Corinth",
+      "county": "Denton",
+      "ntreis_city_id": 32423,
+      "tier": 2,
+      "lat": 33.1454,
+      "lng": -97.0641,
+      "niche_city_slug": "corinth-denton-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 451927.4,
+        "sfr_days_on_market": 50.7,
+        "sfr_months_supply": 3.4,
+        "sfr_closed_sales_12mo": 394,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 451927.4,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 36,
+        "restaurants": 33,
+        "shopping": 60,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": 36,
+          "restaurants_count": 33,
+          "shopping_count": 60,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
+      }
+    },
+    "crandall": {
+      "display_name": "Crandall",
+      "county": "Kaufman",
+      "ntreis_city_id": 32428,
+      "tier": 3,
+      "lat": 32.6335,
+      "lng": -96.4633,
+      "niche_city_slug": "crandall-kaufman-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 262220.5,
+        "sfr_days_on_market": 34.5,
+        "sfr_months_supply": 3.4,
+        "sfr_closed_sales_12mo": 824,
+        "market_condition": "balanced",
+        "condo_median_price": null
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 262220.5,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 2,
+        "restaurants": 7,
+        "shopping": 5,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": 2,
+          "restaurants_count": 7,
+          "shopping_count": 5,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
       }
     },
     "dallas": {
       "display_name": "Dallas",
       "county": "Dallas",
-      "ntreis_city_id": 32432,
+      "ntreis_city_id": 32437,
       "tier": 3,
       "lat": 32.7767,
       "lng": -96.797,
@@ -1768,12 +1966,12 @@
         "ws_link": "https://www.walkscore.com/score/Dallas-TX/lat=32.7767/lng=-96.797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 197301.7,
-        "sfr_days_on_market": 129.7,
-        "sfr_months_supply": 6.3,
-        "sfr_closed_sales_12mo": 20,
-        "market_condition": "buyer",
-        "condo_median_price": null
+        "sfr_median_price": 492384.3,
+        "sfr_days_on_market": 31.3,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 7813,
+        "market_condition": "balanced",
+        "condo_median_price": 268594
       },
       "schools": {
         "isd_name": "Dallas ISD",
@@ -1785,7 +1983,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 197301.7,
+        "sfr_median_price": 492384.3,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 28.1,
@@ -1829,14 +2027,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 65,
-        "value_score": 93,
+        "family_score": 66,
+        "value_score": 71,
         "sub_scores": {
           "education": 79,
           "safety": 70,
           "family_community": 36,
           "commute": 53,
-          "market_stability": 86
+          "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 601,
@@ -1853,8 +2051,76 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
+      }
+    },
+    "denton": {
+      "display_name": "Denton",
+      "county": "Denton",
+      "ntreis_city_id": 32446,
+      "tier": 3,
+      "lat": 33.2148,
+      "lng": -97.1331,
+      "niche_city_slug": "denton-denton-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 370073.4,
+        "sfr_days_on_market": 46.4,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 1768,
+        "market_condition": "balanced",
+        "condo_median_price": 230656.3
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 370073.4,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 118,
+        "restaurants": 355,
+        "shopping": 318,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": 118,
+          "restaurants_count": 355,
+          "shopping_count": 318,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
       }
     },
     "desoto": {
@@ -1904,8 +2170,7 @@
         "college_prep_grade": "B-",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/desoto-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 356040.8,
@@ -1976,7 +2241,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2027,8 +2292,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/duncanville-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 296625,
@@ -2099,7 +2363,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2150,8 +2414,7 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 374232.9,
@@ -2222,7 +2485,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2321,7 +2584,7 @@
       },
       "scores": {
         "family_score": 78,
-        "value_score": 59,
+        "value_score": 61,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -2344,7 +2607,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2466,7 +2729,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2565,7 +2828,7 @@
       },
       "scores": {
         "family_score": 79,
-        "value_score": 86,
+        "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -2588,7 +2851,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2710,7 +2973,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2832,7 +3095,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -2931,7 +3194,7 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 77,
+        "value_score": 80,
         "sub_scores": {
           "education": 97,
           "safety": 80,
@@ -2954,7 +3217,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3005,8 +3268,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 304712.5,
@@ -3077,7 +3339,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3128,8 +3390,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 353327.3,
@@ -3200,7 +3461,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3299,7 +3560,7 @@
       },
       "scores": {
         "family_score": 78,
-        "value_score": 80,
+        "value_score": 82,
         "sub_scores": {
           "education": 97,
           "safety": 80,
@@ -3322,7 +3583,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3373,8 +3634,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "A-"
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 506212.9,
@@ -3445,7 +3705,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "partial"
       }
     },
@@ -3544,7 +3804,7 @@
       },
       "scores": {
         "family_score": 77,
-        "value_score": 79,
+        "value_score": 81,
         "sub_scores": {
           "education": 93,
           "safety": 83,
@@ -3567,8 +3827,76 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
+      }
+    },
+    "highland-park": {
+      "display_name": "Highland Park",
+      "county": "Dallas",
+      "ntreis_city_id": 32546,
+      "tier": 1,
+      "lat": 32.837,
+      "lng": -96.7988,
+      "niche_city_slug": "highland-park-dallas-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 3712327.6,
+        "sfr_days_on_market": 49.9,
+        "sfr_months_supply": 3.7,
+        "sfr_closed_sales_12mo": 75,
+        "market_condition": "balanced",
+        "condo_median_price": 1221164.8
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 3712327.6,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 109,
+        "restaurants": 95,
+        "shopping": 223,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": 109,
+          "restaurants_count": 95,
+          "shopping_count": 223,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
       }
     },
     "highland-village": {
@@ -3666,7 +3994,7 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 87,
+        "value_score": 89,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -3689,7 +4017,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3740,8 +4068,7 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 360024.8,
@@ -3812,7 +4139,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -3863,8 +4190,7 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/irving-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 383095.8,
@@ -3935,7 +4261,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4034,7 +4360,7 @@
       },
       "scores": {
         "family_score": 73,
-        "value_score": 81,
+        "value_score": 84,
         "sub_scores": {
           "education": 93,
           "safety": 83,
@@ -4057,7 +4383,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4143,7 +4469,7 @@
       },
       "scores": {
         "family_score": 62,
-        "value_score": 80,
+        "value_score": 84,
         "sub_scores": {
           "education": 90,
           "safety": null,
@@ -4166,7 +4492,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "partial"
       }
     },
@@ -4288,7 +4614,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4410,7 +4736,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4509,7 +4835,7 @@
       },
       "scores": {
         "family_score": 72,
-        "value_score": 44,
+        "value_score": 46,
         "sub_scores": {
           "education": 97,
           "safety": null,
@@ -4532,7 +4858,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "partial"
       }
     },
@@ -4654,7 +4980,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4776,7 +5102,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4827,8 +5153,7 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/melissa-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 456222.8,
@@ -4899,7 +5224,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -4950,8 +5275,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/mesquite-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 289057.5,
@@ -5022,7 +5346,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5144,7 +5468,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5243,7 +5567,7 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 89,
+        "value_score": 91,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -5266,7 +5590,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5317,8 +5641,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 386245.8,
@@ -5389,7 +5712,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5488,7 +5811,7 @@
       },
       "scores": {
         "family_score": 82,
-        "value_score": 85,
+        "value_score": 87,
         "sub_scores": {
           "education": 90,
           "safety": 83,
@@ -5511,7 +5834,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5610,7 +5933,7 @@
       },
       "scores": {
         "family_score": 75,
-        "value_score": 87,
+        "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 80,
@@ -5633,7 +5956,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5684,8 +6007,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/princeton-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 301724.4,
@@ -5756,7 +6078,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5855,7 +6177,7 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 65,
+        "value_score": 68,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -5878,7 +6200,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -5929,8 +6251,7 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/richardson-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 463825,
@@ -6001,7 +6322,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6100,7 +6421,7 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 75,
+        "value_score": 77,
         "sub_scores": {
           "education": 90,
           "safety": 83,
@@ -6123,7 +6444,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6222,7 +6543,7 @@
       },
       "scores": {
         "family_score": 78,
-        "value_score": 85,
+        "value_score": 87,
         "sub_scores": {
           "education": 93,
           "safety": 80,
@@ -6245,7 +6566,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6296,8 +6617,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 379787.5,
@@ -6368,7 +6688,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6490,7 +6810,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6541,8 +6861,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "B+"
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 441256.1,
@@ -6613,7 +6932,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6664,8 +6983,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A-"
+        "split_isd": false
       },
       "quiz": {
         "sfr_median_price": 308986.7,
@@ -6736,7 +7054,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6858,7 +7176,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -6980,7 +7298,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -7079,7 +7397,7 @@
       },
       "scores": {
         "family_score": 79,
-        "value_score": 71,
+        "value_score": 73,
         "sub_scores": {
           "education": 90,
           "safety": 90,
@@ -7102,8 +7420,76 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
+      }
+    },
+    "university-park": {
+      "display_name": "University Park",
+      "county": "Dallas",
+      "ntreis_city_id": 32854,
+      "tier": 1,
+      "lat": 32.851,
+      "lng": -96.7952,
+      "niche_city_slug": "university-park-dallas-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 2760227.1,
+        "sfr_days_on_market": 36.4,
+        "sfr_months_supply": 2.6,
+        "sfr_closed_sales_12mo": 179,
+        "market_condition": "seller",
+        "condo_median_price": 663200
+      },
+      "schools": null,
+      "quiz": {
+        "sfr_median_price": 2760227.1,
+        "overall_isd_grade": null,
+        "academics_isd_grade": null,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": null,
+      "crime": null,
+      "amenities": {
+        "parks": 29,
+        "restaurants": 30,
+        "shopping": 74,
+        "osm_fetch_date": "2026-05-19"
+      },
+      "scores": {
+        "family_score": 33,
+        "value_score": null,
+        "sub_scores": {
+          "education": null,
+          "safety": null,
+          "family_community": 0,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": 29,
+          "restaurants_count": 30,
+          "shopping_count": 74,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 60,
+          "restaurants_total_suburbs": 60,
+          "shopping_total_suburbs": 60,
+          "population_source": null
+        },
+        "computed_date": "2026-05-19T16:23:42.424Z",
+        "data_completeness": "partial"
       }
     },
     "waxahachie": {
@@ -7224,7 +7610,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     },
@@ -7346,7 +7732,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "partial"
       }
     },
@@ -7468,7 +7854,7 @@
           "shopping_total_suburbs": 60,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T14:55:39.687Z",
+        "computed_date": "2026-05-19T16:23:42.424Z",
         "data_completeness": "full"
       }
     }
