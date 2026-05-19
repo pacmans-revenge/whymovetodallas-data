@@ -1,17 +1,17 @@
 {
   "_meta": {
-    "last_updated": "2026-05-18T22:38:40.217Z",
+    "last_updated": "2026-05-19T02:05:48.390Z",
     "sources": [
       "Census ACS 2023",
-      "WalkScore (2026-05-17)",
-      "NTREIS (2026-05-17)",
+      "WalkScore (2026-05-19)",
+      "NTREIS (2026-05-19)",
       "Niche ISD (2026-05-18)",
       "Google Places (2026-05-18)",
       "Niche City (2026-05-18)"
     ],
     "suburbs_total": 61,
-    "suburbs_complete": 60,
-    "suburbs_partial": 1,
+    "suburbs_complete": 4,
+    "suburbs_partial": 57,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
     "niche_city_scraped": "2026-05-18",
@@ -30,34 +30,36 @@
       "lng": -96.8331,
       "niche_city_slug": "addison-dallas-tx",
       "demographics": {
-        "population": 17290,
-        "median_age": 34.2,
-        "median_household_income": 68400,
-        "pct_households_with_children": 18,
-        "owner_occupied_pct": 29.4,
-        "median_home_value_census": 385000,
-        "bachelors_plus_pct": 58.2,
-        "wfh_pct": 18.3,
-        "median_commute_min": 22,
+        "population": 17128,
+        "median_age": 35.6,
+        "land_area_sqmi": null,
+        "pop_density": null,
+        "median_household_income": 82858,
+        "pct_households_with_children": 12.2,
+        "owner_occupied_pct": 17.9,
+        "median_home_value_census": 466000,
+        "bachelors_plus_pct": 61.5,
+        "wfh_pct": 20.8,
+        "median_commute_min": 27.8,
         "acs_vintage": "2023"
       },
       "walkability": {
-        "walk_score": 62,
-        "walk_description": "Somewhat Walkable",
-        "transit_score": 32,
-        "transit_description": "Some Transit",
-        "bike_score": 42,
+        "walk_score": 38,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 56,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Addison-TX/lat=32.9612/lng=-96.8331/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 630000,
-        "sfr_days_on_market": 52,
-        "sfr_months_supply": 7.4,
-        "sfr_closed_sales_12mo": 85,
-        "market_condition": "buyer",
-        "condo_median_price": 320000
+        "sfr_median_price": 599354.2,
+        "sfr_days_on_market": 32.8,
+        "sfr_months_supply": 4.3,
+        "sfr_closed_sales_12mo": 61,
+        "market_condition": "balanced",
+        "condo_median_price": 300312.5
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -69,16 +71,16 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 630000,
+        "sfr_median_price": 599354.2,
         "overall_isd_grade": 10,
         "academics_isd_grade": 9,
-        "pct_households_with_children": 18,
-        "walk_score": 62,
-        "transit_score": 32,
-        "bike_score": 42,
-        "median_household_income": 68400,
-        "owner_occupied_pct": 29.4,
-        "wfh_pct": 18.3
+        "pct_households_with_children": 12.2,
+        "walk_score": 38,
+        "transit_score": null,
+        "bike_score": 56,
+        "median_household_income": 82858,
+        "owner_occupied_pct": 17.9,
+        "wfh_pct": 20.8
       },
       "niche_city": {
         "overall": "A",
@@ -113,31 +115,31 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 52,
+        "family_score": 76,
+        "value_score": 67,
         "sub_scores": {
           "education": 87,
           "safety": 77,
           "family_community": 62,
-          "commute": 77,
-          "market_stability": 77
+          "commute": 57,
+          "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 72,
           "restaurants_count": 189,
           "shopping_count": 175,
-          "parks_rank": 5,
+          "parks_rank": 4,
           "restaurants_rank": 1,
           "shopping_rank": 1,
-          "parks_percentile": 93,
+          "parks_percentile": 92,
           "restaurants_percentile": 100,
           "shopping_percentile": 100,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "census"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "full"
       }
     },
@@ -152,6 +154,8 @@
       "demographics": {
         "population": 107684,
         "median_age": 38.5,
+        "land_area_sqmi": null,
+        "pop_density": null,
         "median_household_income": 129130,
         "pct_households_with_children": 42.4,
         "owner_occupied_pct": 69.8,
@@ -233,12 +237,12 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 82,
+        "family_score": 81,
         "value_score": 93,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 74,
+          "family_community": 67,
           "commute": 50,
           "market_stability": 100
         },
@@ -246,18 +250,18 @@
           "parks_count": 127,
           "restaurants_count": 158,
           "shopping_count": 522,
-          "parks_rank": 16,
-          "restaurants_rank": 32,
-          "shopping_rank": 9,
-          "parks_percentile": 75,
-          "restaurants_percentile": 48,
-          "shopping_percentile": 87,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 14,
+          "restaurants_rank": 23,
+          "shopping_rank": 8,
+          "parks_percentile": 67,
+          "restaurants_percentile": 44,
+          "shopping_percentile": 82,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "census"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "full"
       }
     },
@@ -270,16 +274,18 @@
       "lng": -96.5472,
       "niche_city_slug": "anna-collin-tx",
       "demographics": {
-        "population": 24330,
-        "median_age": 32.1,
-        "median_household_income": 105593,
-        "pct_households_with_children": 51.1,
-        "owner_occupied_pct": 76,
-        "median_home_value_census": 351700,
-        "bachelors_plus_pct": 31.5,
-        "wfh_pct": null,
-        "median_commute_min": 30.7,
-        "acs_vintage": "2024"
+        "population": 20975,
+        "median_age": 32.4,
+        "land_area_sqmi": null,
+        "pop_density": null,
+        "median_household_income": 99375,
+        "pct_households_with_children": 49.5,
+        "owner_occupied_pct": 77.2,
+        "median_home_value_census": 312700,
+        "bachelors_plus_pct": 35.2,
+        "wfh_pct": 17.3,
+        "median_commute_min": 32.5,
+        "acs_vintage": "2023"
       },
       "walkability": {
         "walk_score": 31,
@@ -312,13 +318,13 @@
         "sfr_median_price": 358832.4,
         "overall_isd_grade": 8,
         "academics_isd_grade": 9,
-        "pct_households_with_children": 51.1,
+        "pct_households_with_children": 49.5,
         "walk_score": 31,
         "transit_score": null,
         "bike_score": 39,
-        "median_household_income": 105593,
-        "owner_occupied_pct": 76,
-        "wfh_pct": null
+        "median_household_income": 99375,
+        "owner_occupied_pct": 77.2,
+        "wfh_pct": 17.3
       },
       "niche_city": {
         "overall": "B",
@@ -353,31 +359,31 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 70,
-        "value_score": 93,
+        "family_score": 71,
+        "value_score": 92,
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 51,
-          "commute": 48,
+          "family_community": 59,
+          "commute": 42,
           "market_stability": 88
         },
         "amenity_ranks": {
           "parks_count": 15,
           "restaurants_count": 33,
           "shopping_count": 22,
-          "parks_rank": 42,
-          "restaurants_rank": 38,
-          "shopping_rank": 53,
-          "parks_percentile": 32,
-          "restaurants_percentile": 38,
-          "shopping_percentile": 13,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 30,
+          "restaurants_rank": 21,
+          "shopping_rank": 31,
+          "parks_percentile": 26,
+          "restaurants_percentile": 49,
+          "shopping_percentile": 23,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "census"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "full"
       }
     },
@@ -389,27 +395,16 @@
       "lat": 33.1268,
       "lng": -97.1836,
       "niche_city_slug": "argyle-denton-tx",
-      "demographics": {
-        "population": 573,
-        "median_age": 35.8,
-        "median_household_income": 79844,
-        "pct_households_with_children": 20.7,
-        "owner_occupied_pct": 74.9,
-        "median_home_value_census": 212000,
-        "bachelors_plus_pct": 34.7,
-        "wfh_pct": 10.1,
-        "median_commute_min": 21.3,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 20,
+        "walk_score": 26,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 24,
+        "bike_score": 33,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Argyle-TX/lat=33.1226/lng=-97.1792/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Argyle-TX/lat=33.1268/lng=-97.1836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 569414.1,
@@ -432,13 +427,13 @@
         "sfr_median_price": 569414.1,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": 20.7,
-        "walk_score": 20,
+        "pct_households_with_children": null,
+        "walk_score": 26,
         "transit_score": null,
-        "bike_score": 24,
-        "median_household_income": 79844,
-        "owner_occupied_pct": 74.9,
-        "wfh_pct": 10.1
+        "bike_score": 33,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -473,32 +468,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 87,
-        "value_score": 71,
+        "family_score": 72,
+        "value_score": 92,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 74,
-          "commute": 79,
+          "family_community": 2,
+          "commute": null,
           "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 8,
           "restaurants_count": 10,
           "shopping_count": 6,
-          "parks_rank": 13,
-          "restaurants_rank": 30,
-          "shopping_rank": 52,
-          "parks_percentile": 80,
-          "restaurants_percentile": 52,
-          "shopping_percentile": 15,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 12,
+          "restaurants_rank": 22,
+          "shopping_rank": 33,
+          "parks_percentile": 72,
+          "restaurants_percentile": 46,
+          "shopping_percentile": 18,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "arlington": {
@@ -509,18 +504,7 @@
       "lat": 32.7357,
       "lng": -97.1081,
       "niche_city_slug": "arlington-tarrant-tx",
-      "demographics": {
-        "population": 394769,
-        "median_age": 33.6,
-        "median_household_income": 73519,
-        "pct_households_with_children": 34.6,
-        "owner_occupied_pct": 54.8,
-        "median_home_value_census": 276400,
-        "bachelors_plus_pct": 33.1,
-        "wfh_pct": 11.8,
-        "median_commute_min": 29.4,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 83,
         "walk_description": "Very Walkable",
@@ -552,13 +536,13 @@
         "sfr_median_price": 333885.4,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
-        "pct_households_with_children": 34.6,
+        "pct_households_with_children": null,
         "walk_score": 83,
         "transit_score": null,
         "bike_score": 80,
-        "median_household_income": 73519,
-        "owner_occupied_pct": 54.8,
-        "wfh_pct": 11.8
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -593,32 +577,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
-        "value_score": 87,
+        "family_score": 64,
+        "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 51,
-          "commute": 52,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 283,
           "restaurants_count": 562,
           "shopping_count": 651,
-          "parks_rank": 35,
-          "restaurants_rank": 35,
-          "shopping_rank": 36,
-          "parks_percentile": 43,
-          "restaurants_percentile": 43,
-          "shopping_percentile": 42,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "aubrey": {
@@ -630,26 +614,28 @@
       "lng": -96.9836,
       "niche_city_slug": "aubrey-denton-tx",
       "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
+        "population": 6637,
+        "median_age": 33.9,
+        "land_area_sqmi": null,
+        "pop_density": null,
+        "median_household_income": 100596,
+        "pct_households_with_children": 39.3,
+        "owner_occupied_pct": 75.9,
+        "median_home_value_census": 338900,
+        "bachelors_plus_pct": 36,
+        "wfh_pct": 21.4,
+        "median_commute_min": 27.4,
+        "acs_vintage": "2023"
       },
       "walkability": {
-        "walk_score": 32,
+        "walk_score": 41,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 41,
+        "bike_score": 42,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3057/lng=-96.9842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3029/lng=-96.9836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 350404.6,
@@ -672,13 +658,13 @@
         "sfr_median_price": 350404.6,
         "overall_isd_grade": 9,
         "academics_isd_grade": 10,
-        "pct_households_with_children": null,
-        "walk_score": 32,
+        "pct_households_with_children": 39.3,
+        "walk_score": 41,
         "transit_score": null,
-        "bike_score": 41,
-        "median_household_income": null,
-        "owner_occupied_pct": null,
-        "wfh_pct": null
+        "bike_score": 42,
+        "median_household_income": 100596,
+        "owner_occupied_pct": 75.9,
+        "wfh_pct": 21.4
       },
       "niche_city": {
         "overall": "B+",
@@ -713,32 +699,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 63,
+        "family_score": 70,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 77,
-          "family_community": 2,
-          "commute": null,
+          "family_community": 43,
+          "commute": 59,
           "market_stability": 88
         },
         "amenity_ranks": {
           "parks_count": 5,
           "restaurants_count": 3,
           "shopping_count": 3,
-          "parks_rank": 44,
-          "restaurants_rank": 60,
-          "shopping_rank": 59,
-          "parks_percentile": 28,
-          "restaurants_percentile": 2,
-          "shopping_percentile": 3,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "estimate"
+          "parks_rank": 25,
+          "restaurants_rank": 39,
+          "shopping_rank": 38,
+          "parks_percentile": 38,
+          "restaurants_percentile": 3,
+          "shopping_percentile": 5,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": "census"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "full"
       }
     },
     "bedford": {
@@ -749,18 +735,7 @@
       "lat": 32.844,
       "lng": -97.1431,
       "niche_city_slug": "bedford-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 69,
         "walk_description": "Somewhat Walkable",
@@ -847,17 +822,17 @@
           "restaurants_count": 288,
           "shopping_count": 375,
           "parks_rank": 2,
-          "restaurants_rank": 6,
+          "restaurants_rank": 5,
           "shopping_rank": 5,
-          "parks_percentile": 98,
-          "restaurants_percentile": 92,
-          "shopping_percentile": 93,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_percentile": 97,
+          "restaurants_percentile": 90,
+          "shopping_percentile": 90,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -869,18 +844,7 @@
       "lat": 32.5421,
       "lng": -97.3208,
       "niche_city_slug": "burleson-johnson-tx",
-      "demographics": {
-        "population": 50981,
-        "median_age": 34.9,
-        "median_household_income": 94162,
-        "pct_households_with_children": 42.6,
-        "owner_occupied_pct": 71.3,
-        "median_home_value_census": 282900,
-        "bachelors_plus_pct": 30.8,
-        "wfh_pct": 8.5,
-        "median_commute_min": 34,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 75,
         "walk_description": "Very Walkable",
@@ -912,13 +876,13 @@
         "sfr_median_price": 350919.4,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
-        "pct_households_with_children": 42.6,
+        "pct_households_with_children": null,
         "walk_score": 75,
         "transit_score": null,
         "bike_score": 56,
-        "median_household_income": 94162,
-        "owner_occupied_pct": 71.3,
-        "wfh_pct": 8.5
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -953,32 +917,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 73,
-        "value_score": 93,
+        "family_score": 67,
+        "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 77,
-          "family_community": 61,
-          "commute": 37,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 35,
           "restaurants_count": 80,
           "shopping_count": 86,
-          "parks_rank": 36,
-          "restaurants_rank": 28,
-          "shopping_rank": 34,
-          "parks_percentile": 42,
-          "restaurants_percentile": 55,
-          "shopping_percentile": 45,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "carrollton": {
@@ -989,18 +953,7 @@
       "lat": 32.9537,
       "lng": -96.8903,
       "niche_city_slug": "carrollton-dallas-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 82,
         "walk_description": "Very Walkable",
@@ -1086,18 +1039,18 @@
           "parks_count": 151,
           "restaurants_count": 354,
           "shopping_count": 560,
-          "parks_rank": 20,
-          "restaurants_rank": 13,
-          "shopping_rank": 10,
-          "parks_percentile": 68,
-          "restaurants_percentile": 80,
-          "shopping_percentile": 85,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 17,
+          "restaurants_rank": 11,
+          "shopping_rank": 9,
+          "parks_percentile": 59,
+          "restaurants_percentile": 74,
+          "shopping_percentile": 79,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -1109,18 +1062,7 @@
       "lat": 32.5885,
       "lng": -96.9561,
       "niche_city_slug": "cedar-hill-dallas-tx",
-      "demographics": {
-        "population": 77474,
-        "median_age": 37.5,
-        "median_household_income": 123972,
-        "pct_households_with_children": 41.3,
-        "owner_occupied_pct": 67.3,
-        "median_home_value_census": 474800,
-        "bachelors_plus_pct": 55.2,
-        "wfh_pct": 27.8,
-        "median_commute_min": 28.2,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 68,
         "walk_description": "Somewhat Walkable",
@@ -1152,13 +1094,13 @@
         "sfr_median_price": 346140.6,
         "overall_isd_grade": 6,
         "academics_isd_grade": 7,
-        "pct_households_with_children": 41.3,
+        "pct_households_with_children": null,
         "walk_score": 68,
         "transit_score": null,
         "bike_score": 52,
-        "median_household_income": 123972,
-        "owner_occupied_pct": 67.3,
-        "wfh_pct": 27.8
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -1193,32 +1135,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 69,
-        "value_score": 94,
+        "family_score": 61,
+        "value_score": 90,
         "sub_scores": {
           "education": 73,
           "safety": 77,
-          "family_community": 48,
-          "commute": 56,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 45,
           "restaurants_count": 81,
           "shopping_count": 137,
-          "parks_rank": 45,
-          "restaurants_rank": 51,
-          "shopping_rank": 30,
-          "parks_percentile": 27,
-          "restaurants_percentile": 17,
-          "shopping_percentile": 52,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "celina": {
@@ -1229,18 +1171,7 @@
       "lat": 33.3254,
       "lng": -96.7855,
       "niche_city_slug": "celina-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 65,
         "walk_description": "Somewhat Walkable",
@@ -1249,7 +1180,7 @@
         "bike_score": 47,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3237/lng=-96.7847/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3254/lng=-96.7855/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 531662.4,
@@ -1326,18 +1257,18 @@
           "parks_count": 24,
           "restaurants_count": 46,
           "shopping_count": 44,
-          "parks_rank": 30,
-          "restaurants_rank": 33,
-          "shopping_rank": 44,
-          "parks_percentile": 52,
-          "restaurants_percentile": 47,
-          "shopping_percentile": 28,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 26,
+          "restaurants_rank": 24,
+          "shopping_rank": 26,
+          "parks_percentile": 36,
+          "restaurants_percentile": 41,
+          "shopping_percentile": 36,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -1349,18 +1280,7 @@
       "lat": 32.3499,
       "lng": -97.3842,
       "niche_city_slug": "cleburne-johnson-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 60,
         "walk_description": "Somewhat Walkable",
@@ -1369,7 +1289,7 @@
         "bike_score": 50,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3504/lng=-97.3839/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3499/lng=-97.3842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 288263.8,
@@ -1446,18 +1366,18 @@
           "parks_count": 24,
           "restaurants_count": 96,
           "shopping_count": 124,
-          "parks_rank": 31,
-          "restaurants_rank": 9,
-          "shopping_rank": 12,
-          "parks_percentile": 50,
-          "restaurants_percentile": 87,
-          "shopping_percentile": 82,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 27,
+          "restaurants_rank": 8,
+          "shopping_rank": 11,
+          "parks_percentile": 33,
+          "restaurants_percentile": 82,
+          "shopping_percentile": 74,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -1469,18 +1389,7 @@
       "lat": 32.8887,
       "lng": -97.1503,
       "niche_city_slug": "colleyville-tarrant-tx",
-      "demographics": {
-        "population": 32966,
-        "median_age": 35,
-        "median_household_income": 66324,
-        "pct_households_with_children": 36.2,
-        "owner_occupied_pct": 58.6,
-        "median_home_value_census": 200900,
-        "bachelors_plus_pct": 18,
-        "wfh_pct": 2.2,
-        "median_commute_min": 28.2,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 64,
         "walk_description": "Somewhat Walkable",
@@ -1489,7 +1398,7 @@
         "bike_score": 41,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Colleyville-TX/lat=32.8885/lng=-97.1503/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Colleyville-TX/lat=32.8887/lng=-97.1503/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 1002479.2,
@@ -1512,13 +1421,13 @@
         "sfr_median_price": 1002479.2,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": 36.2,
+        "pct_households_with_children": null,
         "walk_score": 64,
         "transit_score": null,
         "bike_score": 41,
-        "median_household_income": 66324,
-        "owner_occupied_pct": 58.6,
-        "wfh_pct": 2.2
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -1553,32 +1462,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 75,
-        "value_score": 23,
+        "family_score": 73,
+        "value_score": 39,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 29,
-          "commute": 56,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 19,
           "restaurants_count": 17,
           "shopping_count": 26,
-          "parks_rank": 46,
-          "restaurants_rank": 59,
-          "shopping_rank": 54,
-          "parks_percentile": 25,
-          "restaurants_percentile": 3,
-          "shopping_percentile": 12,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "coppell": {
@@ -1589,27 +1498,16 @@
       "lat": 32.9543,
       "lng": -97.015,
       "niche_city_slug": "coppell-dallas-tx",
-      "demographics": {
-        "population": 42029,
-        "median_age": 40.5,
-        "median_household_income": 139227,
-        "pct_households_with_children": 41.7,
-        "owner_occupied_pct": 69.1,
-        "median_home_value_census": 525300,
-        "bachelors_plus_pct": 68.1,
-        "wfh_pct": 28.4,
-        "median_commute_min": 29.1,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 28,
+        "walk_score": 23,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 34,
+        "bike_score": 33,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Coppell-TX/lat=32.9546/lng=-97.0141/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Coppell-TX/lat=32.9543/lng=-97.015/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 625166.7,
@@ -1632,13 +1530,13 @@
         "sfr_median_price": 625166.7,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": 41.7,
-        "walk_score": 28,
+        "pct_households_with_children": null,
+        "walk_score": 23,
         "transit_score": null,
-        "bike_score": 34,
-        "median_household_income": 139227,
-        "owner_occupied_pct": 69.1,
-        "wfh_pct": 28.4
+        "bike_score": 33,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -1673,32 +1571,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 83,
+        "family_score": 71,
+        "value_score": 86,
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 66,
-          "commute": 53,
+          "family_community": 2,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 35,
           "restaurants_count": 59,
           "shopping_count": 114,
-          "parks_rank": 24,
-          "restaurants_rank": 36,
-          "shopping_rank": 19,
-          "parks_percentile": 62,
-          "restaurants_percentile": 42,
-          "shopping_percentile": 70,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "dallas": {
@@ -1709,18 +1607,7 @@
       "lat": 32.7767,
       "lng": -96.797,
       "niche_city_slug": "dallas-dallas-tx",
-      "demographics": {
-        "population": 1299553,
-        "median_age": 33.4,
-        "median_household_income": 67760,
-        "pct_households_with_children": 28.1,
-        "owner_occupied_pct": 42.4,
-        "median_home_value_census": 295300,
-        "bachelors_plus_pct": 37.4,
-        "wfh_pct": 14,
-        "median_commute_min": 29,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 93,
         "walk_description": "Walker's Paradise",
@@ -1752,13 +1639,13 @@
         "sfr_median_price": 197301.7,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
-        "pct_households_with_children": 28.1,
+        "pct_households_with_children": null,
         "walk_score": 93,
         "transit_score": 84,
         "bike_score": 74,
-        "median_household_income": 67760,
-        "owner_occupied_pct": 42.4,
-        "wfh_pct": 14
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A-",
@@ -1793,32 +1680,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 67,
-        "value_score": 93,
+        "family_score": 60,
+        "value_score": 89,
         "sub_scores": {
           "education": 79,
           "safety": 70,
-          "family_community": 44,
-          "commute": 53,
+          "family_community": 7,
+          "commute": null,
           "market_stability": 86
         },
         "amenity_ranks": {
           "parks_count": 601,
           "restaurants_count": 2101,
           "shopping_count": 3648,
-          "parks_rank": 53,
-          "restaurants_rank": 27,
-          "shopping_rank": 18,
-          "parks_percentile": 13,
-          "restaurants_percentile": 57,
-          "shopping_percentile": 72,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "desoto": {
@@ -1829,18 +1716,7 @@
       "lat": 32.5896,
       "lng": -96.8572,
       "niche_city_slug": "desoto-dallas-tx",
-      "demographics": {
-        "population": 33823,
-        "median_age": 37.6,
-        "median_household_income": 95233,
-        "pct_households_with_children": 36.5,
-        "owner_occupied_pct": 78.6,
-        "median_home_value_census": 238900,
-        "bachelors_plus_pct": 25.5,
-        "wfh_pct": 7.6,
-        "median_commute_min": 26,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 71,
         "walk_description": "Very Walkable",
@@ -1872,13 +1748,13 @@
         "sfr_median_price": 356040.8,
         "overall_isd_grade": 6,
         "academics_isd_grade": 6,
-        "pct_households_with_children": 36.5,
+        "pct_households_with_children": null,
         "walk_score": 71,
         "transit_score": null,
         "bike_score": 45,
-        "median_household_income": 95233,
-        "owner_occupied_pct": 78.6,
-        "wfh_pct": 7.6
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B-",
@@ -1913,32 +1789,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 68,
+        "family_score": 60,
         "value_score": 90,
         "sub_scores": {
           "education": 73,
           "safety": 73,
-          "family_community": 44,
-          "commute": 63,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 21,
           "restaurants_count": 26,
           "shopping_count": 73,
-          "parks_rank": 40,
-          "restaurants_rank": 55,
-          "shopping_rank": 27,
-          "parks_percentile": 35,
-          "restaurants_percentile": 10,
-          "shopping_percentile": 57,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "duncanville": {
@@ -1949,18 +1825,7 @@
       "lat": 32.6518,
       "lng": -96.9083,
       "niche_city_slug": "duncanville-dallas-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 83,
         "walk_description": "Very Walkable",
@@ -2046,18 +1911,18 @@
           "parks_count": 29,
           "restaurants_count": 53,
           "shopping_count": 95,
-          "parks_rank": 29,
-          "restaurants_rank": 37,
-          "shopping_rank": 22,
-          "parks_percentile": 53,
-          "restaurants_percentile": 40,
-          "shopping_percentile": 65,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 24,
+          "restaurants_rank": 26,
+          "shopping_rank": 16,
+          "parks_percentile": 41,
+          "restaurants_percentile": 36,
+          "shopping_percentile": 62,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -2069,27 +1934,16 @@
       "lat": 32.8371,
       "lng": -97.0822,
       "niche_city_slug": "euless-tarrant-tx",
-      "demographics": {
-        "population": 1167,
-        "median_age": 41.7,
-        "median_household_income": 64000,
-        "pct_households_with_children": 35.6,
-        "owner_occupied_pct": 59.8,
-        "median_home_value_census": 144000,
-        "bachelors_plus_pct": null,
-        "wfh_pct": 4.4,
-        "median_commute_min": 23.8,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 60,
         "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": null,
-        "bike_description": "Unknown",
+        "bike_score": 45,
+        "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Euless-TX/lat=32.8368/lng=-97.0819/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Euless-TX/lat=32.8371/lng=-97.0822/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 374232.9,
@@ -2112,13 +1966,13 @@
         "sfr_median_price": 374232.9,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 35.6,
+        "pct_households_with_children": null,
         "walk_score": 60,
         "transit_score": null,
-        "bike_score": null,
-        "median_household_income": 64000,
-        "owner_occupied_pct": 59.8,
-        "wfh_pct": 4.4
+        "bike_score": 45,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -2153,32 +2007,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 85,
-        "value_score": 82,
+        "family_score": 70,
+        "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 81,
-          "commute": 71,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 21,
           "restaurants_count": 104,
           "shopping_count": 112,
-          "parks_rank": 56,
-          "restaurants_rank": 23,
-          "shopping_rank": 29,
-          "parks_percentile": 8,
-          "restaurants_percentile": 63,
-          "shopping_percentile": 53,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 36,
+          "restaurants_rank": 17,
+          "shopping_rank": 20,
+          "parks_percentile": 10,
+          "restaurants_percentile": 59,
+          "shopping_percentile": 51,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "fairview": {
@@ -2189,27 +2043,16 @@
       "lat": 33.1626,
       "lng": -96.6178,
       "niche_city_slug": "fairview-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 1,
+        "walk_score": 2,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 26,
+        "bike_score": 15,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Fairview-TX/lat=33.1548/lng=-96.6174/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Fairview-TX/lat=33.1626/lng=-96.6178/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 749450,
@@ -2233,9 +2076,9 @@
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": null,
-        "walk_score": 1,
+        "walk_score": 2,
         "transit_score": null,
-        "bike_score": 26,
+        "bike_score": 15,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -2290,14 +2133,14 @@
           "restaurants_rank": 4,
           "shopping_rank": 4,
           "parks_percentile": 100,
-          "restaurants_percentile": 95,
-          "shopping_percentile": 95,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "restaurants_percentile": 92,
+          "shopping_percentile": 92,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -2309,27 +2152,16 @@
       "lat": 32.9418,
       "lng": -96.3822,
       "niche_city_slug": "fate-rockwall-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 34,
+        "walk_score": 39,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 41,
+        "bike_score": 40,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Fate-TX/lat=32.9401/lng=-96.386/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Fate-TX/lat=32.9418/lng=-96.3822/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 383033.3,
@@ -2353,9 +2185,9 @@
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": null,
-        "walk_score": 34,
+        "walk_score": 39,
         "transit_score": null,
-        "bike_score": 41,
+        "bike_score": 40,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -2406,18 +2238,18 @@
           "parks_count": 16,
           "restaurants_count": 13,
           "shopping_count": 6,
-          "parks_rank": 33,
-          "restaurants_rank": 58,
-          "shopping_rank": 60,
-          "parks_percentile": 47,
+          "parks_rank": 28,
+          "restaurants_rank": 38,
+          "shopping_rank": 39,
+          "parks_percentile": 31,
           "restaurants_percentile": 5,
-          "shopping_percentile": 2,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_percentile": 3,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -2429,18 +2261,7 @@
       "lat": 33.0146,
       "lng": -97.0964,
       "niche_city_slug": "flower-mound-denton-tx",
-      "demographics": {
-        "population": 77886,
-        "median_age": 43,
-        "median_household_income": 157737,
-        "pct_households_with_children": 40.7,
-        "owner_occupied_pct": 82.3,
-        "median_home_value_census": 514100,
-        "bachelors_plus_pct": 64.3,
-        "wfh_pct": 27.2,
-        "median_commute_min": 30.7,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 5,
         "walk_description": "Car-Dependent",
@@ -2449,7 +2270,7 @@
         "bike_score": 21,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Flower-Mound-TX/lat=33.0145/lng=-97.0966/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Flower-Mound-TX/lat=33.0146/lng=-97.0964/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 619458.3,
@@ -2472,13 +2293,13 @@
         "sfr_median_price": 619458.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 40.7,
+        "pct_households_with_children": null,
         "walk_score": 5,
         "transit_score": null,
         "bike_score": 21,
-        "median_household_income": 157737,
-        "owner_occupied_pct": 82.3,
-        "wfh_pct": 27.2
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -2513,32 +2334,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 86,
+        "family_score": 70,
+        "value_score": 85,
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 71,
-          "commute": 48,
+          "family_community": 0,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 95,
           "restaurants_count": 146,
           "shopping_count": 200,
-          "parks_rank": 14,
-          "restaurants_rank": 21,
-          "shopping_rank": 20,
-          "parks_percentile": 78,
-          "restaurants_percentile": 67,
-          "shopping_percentile": 68,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "forney": {
@@ -2549,18 +2370,7 @@
       "lat": 32.7474,
       "lng": -96.4697,
       "niche_city_slug": "forney-kaufman-tx",
-      "demographics": {
-        "population": 1215,
-        "median_age": 33.6,
-        "median_household_income": 72743,
-        "pct_households_with_children": 35.5,
-        "owner_occupied_pct": 70.2,
-        "median_home_value_census": 206500,
-        "bachelors_plus_pct": null,
-        "wfh_pct": 3.5,
-        "median_commute_min": 35.5,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 49,
         "walk_description": "Car-Dependent",
@@ -2569,7 +2379,7 @@
         "bike_score": 42,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7477/lng=-96.47/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7474/lng=-96.4697/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 326291.3,
@@ -2592,13 +2402,13 @@
         "sfr_median_price": 326291.3,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
-        "pct_households_with_children": 35.5,
+        "pct_households_with_children": null,
         "walk_score": 49,
         "transit_score": null,
         "bike_score": 42,
-        "median_household_income": 72743,
-        "owner_occupied_pct": 70.2,
-        "wfh_pct": 3.5
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -2633,32 +2443,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
-        "value_score": 88,
+        "family_score": 63,
+        "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 69,
-          "commute": 32,
+          "family_community": 4,
+          "commute": null,
           "market_stability": 93
         },
         "amenity_ranks": {
           "parks_count": 14,
           "restaurants_count": 49,
           "shopping_count": 33,
-          "parks_rank": 49,
-          "restaurants_rank": 26,
-          "shopping_rank": 50,
-          "parks_percentile": 20,
-          "restaurants_percentile": 58,
-          "shopping_percentile": 18,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 34,
+          "restaurants_rank": 20,
+          "shopping_rank": 30,
+          "parks_percentile": 15,
+          "restaurants_percentile": 51,
+          "shopping_percentile": 26,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "fort-worth": {
@@ -2669,18 +2479,7 @@
       "lat": 32.7555,
       "lng": -97.3308,
       "niche_city_slug": "fort-worth-tarrant-tx",
-      "demographics": {
-        "population": 941311,
-        "median_age": 33.4,
-        "median_household_income": 76602,
-        "pct_households_with_children": 36.1,
-        "owner_occupied_pct": 56.7,
-        "median_home_value_census": 277300,
-        "bachelors_plus_pct": 31.7,
-        "wfh_pct": 12.9,
-        "median_commute_min": 29.1,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 87,
         "walk_description": "Very Walkable",
@@ -2712,13 +2511,13 @@
         "sfr_median_price": 339833.8,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
-        "pct_households_with_children": 36.1,
+        "pct_households_with_children": null,
         "walk_score": 87,
         "transit_score": 65,
         "bike_score": 82,
-        "median_household_income": 76602,
-        "owner_occupied_pct": 56.7,
-        "wfh_pct": 12.9
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -2753,32 +2552,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 66,
-        "value_score": 86,
+        "family_score": 62,
+        "value_score": 90,
         "sub_scores": {
           "education": 77,
           "safety": 73,
-          "family_community": 32,
-          "commute": 53,
+          "family_community": 7,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 439,
           "restaurants_count": 1135,
           "shopping_count": 1157,
-          "parks_rank": 52,
-          "restaurants_rank": 47,
-          "shopping_rank": 49,
-          "parks_percentile": 15,
-          "restaurants_percentile": 23,
-          "shopping_percentile": 20,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "frisco": {
@@ -2789,18 +2588,7 @@
       "lat": 33.1507,
       "lng": -96.8236,
       "niche_city_slug": "frisco-collin-tx",
-      "demographics": {
-        "population": 210238,
-        "median_age": 38.1,
-        "median_household_income": 146158,
-        "pct_households_with_children": 47.3,
-        "owner_occupied_pct": 66.5,
-        "median_home_value_census": 595400,
-        "bachelors_plus_pct": 66,
-        "wfh_pct": 33.7,
-        "median_commute_min": 29.6,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 80,
         "walk_description": "Very Walkable",
@@ -2832,13 +2620,13 @@
         "sfr_median_price": 680751.9,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": 47.3,
+        "pct_households_with_children": null,
         "walk_score": 80,
         "transit_score": null,
         "bike_score": 53,
-        "median_household_income": 146158,
-        "owner_occupied_pct": 66.5,
-        "wfh_pct": 33.7
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -2873,32 +2661,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 83,
-        "value_score": 77,
+        "family_score": 71,
+        "value_score": 78,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 79,
-          "commute": 51,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 227,
           "restaurants_count": 438,
           "shopping_count": 524,
-          "parks_rank": 17,
-          "restaurants_rank": 18,
-          "shopping_rank": 23,
-          "parks_percentile": 73,
-          "restaurants_percentile": 72,
-          "shopping_percentile": 63,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "garland": {
@@ -2909,18 +2697,7 @@
       "lat": 32.9126,
       "lng": -96.6389,
       "niche_city_slug": "garland-dallas-tx",
-      "demographics": {
-        "population": 245298,
-        "median_age": 34.7,
-        "median_household_income": 74717,
-        "pct_households_with_children": 37.9,
-        "owner_occupied_pct": 61.6,
-        "median_home_value_census": 248900,
-        "bachelors_plus_pct": 25,
-        "wfh_pct": 11.6,
-        "median_commute_min": 33,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 68,
         "walk_description": "Somewhat Walkable",
@@ -2952,13 +2729,13 @@
         "sfr_median_price": 304712.5,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
-        "pct_households_with_children": 37.9,
+        "pct_households_with_children": null,
         "walk_score": 68,
         "transit_score": 56,
         "bike_score": 56,
-        "median_household_income": 74717,
-        "owner_occupied_pct": 61.6,
-        "wfh_pct": 11.6
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -2993,32 +2770,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 68,
-        "value_score": 92,
+        "family_score": 66,
+        "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 73,
-          "family_community": 32,
-          "commute": 40,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 103,
           "restaurants_count": 198,
           "shopping_count": 375,
-          "parks_rank": 54,
-          "restaurants_rank": 54,
-          "shopping_rank": 39,
-          "parks_percentile": 12,
-          "restaurants_percentile": 12,
-          "shopping_percentile": 37,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "grand-prairie": {
@@ -3029,27 +2806,16 @@
       "lat": 32.746,
       "lng": -96.9978,
       "niche_city_slug": "grand-prairie-dallas-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 73,
         "walk_description": "Very Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 38,
-        "bike_description": "Somewhat Bikeable",
+        "bike_score": 50,
+        "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-97.0191/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-96.9978/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 353327.3,
@@ -3075,7 +2841,7 @@
         "pct_households_with_children": null,
         "walk_score": 73,
         "transit_score": null,
-        "bike_score": 38,
+        "bike_score": 50,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -3126,18 +2892,18 @@
           "parks_count": 63,
           "restaurants_count": 133,
           "shopping_count": 257,
-          "parks_rank": 58,
-          "restaurants_rank": 57,
-          "shopping_rank": 46,
+          "parks_rank": 38,
+          "restaurants_rank": 37,
+          "shopping_rank": 28,
           "parks_percentile": 5,
-          "restaurants_percentile": 7,
-          "shopping_percentile": 25,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "restaurants_percentile": 8,
+          "shopping_percentile": 31,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -3149,18 +2915,7 @@
       "lat": 32.9343,
       "lng": -97.078,
       "niche_city_slug": "grapevine-tarrant-tx",
-      "demographics": {
-        "population": 198564,
-        "median_age": 33.5,
-        "median_household_income": 78889,
-        "pct_households_with_children": 39.1,
-        "owner_occupied_pct": 57.9,
-        "median_home_value_census": 272200,
-        "bachelors_plus_pct": 29.1,
-        "wfh_pct": 11.2,
-        "median_commute_min": 30.6,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 79,
         "walk_description": "Very Walkable",
@@ -3169,13 +2924,13 @@
         "bike_score": 50,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Grapevine-TX/lat=32.9343/lng=-97.0781/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Grapevine-TX/lat=32.9343/lng=-97.078/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 593150.9,
-        "sfr_days_on_market": 20.7,
+        "sfr_median_price": 593567.6,
+        "sfr_days_on_market": 20.6,
         "sfr_months_supply": 2.2,
-        "sfr_closed_sales_12mo": 477,
+        "sfr_closed_sales_12mo": 478,
         "market_condition": "seller",
         "condo_median_price": 462083.3
       },
@@ -3189,16 +2944,16 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 593150.9,
+        "sfr_median_price": 593567.6,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": 39.1,
+        "pct_households_with_children": null,
         "walk_score": 79,
         "transit_score": null,
         "bike_score": 50,
-        "median_household_income": 78889,
-        "owner_occupied_pct": 57.9,
-        "wfh_pct": 11.2
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -3233,32 +2988,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 73,
-        "value_score": 67,
+        "family_score": 70,
+        "value_score": 89,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 36,
-          "commute": 48,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 93
         },
         "amenity_ranks": {
           "parks_count": 35,
           "restaurants_count": 260,
           "shopping_count": 306,
-          "parks_rank": 60,
-          "restaurants_rank": 39,
-          "shopping_rank": 38,
-          "parks_percentile": 2,
-          "restaurants_percentile": 37,
-          "shopping_percentile": 38,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "haslet": {
@@ -3269,27 +3024,16 @@
       "lat": 32.9679,
       "lng": -97.3467,
       "niche_city_slug": "haslet-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 27,
+        "walk_score": 23,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
         "bike_score": 33,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.964/lng=-97.3497/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.9679/lng=-97.3467/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 506212.9,
@@ -3313,7 +3057,7 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": null,
-        "walk_score": 27,
+        "walk_score": 23,
         "transit_score": null,
         "bike_score": 33,
         "median_household_income": null,
@@ -3366,18 +3110,18 @@
           "parks_count": 3,
           "restaurants_count": 9,
           "shopping_count": 8,
-          "parks_rank": 59,
-          "restaurants_rank": 56,
-          "shopping_rank": 57,
+          "parks_rank": 39,
+          "restaurants_rank": 36,
+          "shopping_rank": 36,
           "parks_percentile": 3,
-          "restaurants_percentile": 8,
-          "shopping_percentile": 7,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "restaurants_percentile": 10,
+          "shopping_percentile": 10,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -3389,27 +3133,16 @@
       "lat": 32.8346,
       "lng": -96.4683,
       "niche_city_slug": "heath-rockwall-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 3,
+        "walk_score": 16,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 23,
+        "bike_score": 29,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Heath-TX/lat=32.8512/lng=-96.4747/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Heath-TX/lat=32.8346/lng=-96.4683/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 751049.4,
@@ -3433,9 +3166,9 @@
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": null,
-        "walk_score": 3,
+        "walk_score": 16,
         "transit_score": null,
-        "bike_score": 23,
+        "bike_score": 29,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -3478,7 +3211,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 0,
+          "family_community": 1,
           "commute": null,
           "market_stability": 62
         },
@@ -3486,18 +3219,18 @@
           "parks_count": 19,
           "restaurants_count": 28,
           "shopping_count": 43,
-          "parks_rank": 10,
-          "restaurants_rank": 14,
-          "shopping_rank": 16,
-          "parks_percentile": 85,
-          "restaurants_percentile": 78,
-          "shopping_percentile": 75,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 9,
+          "restaurants_rank": 12,
+          "shopping_rank": 15,
+          "parks_percentile": 79,
+          "restaurants_percentile": 72,
+          "shopping_percentile": 64,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -3509,18 +3242,7 @@
       "lat": 33.0918,
       "lng": -97.0558,
       "niche_city_slug": "highland-village-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 1,
         "walk_description": "Car-Dependent",
@@ -3529,7 +3251,7 @@
         "bike_score": 3,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Highland-Village-TX/lat=33.0923/lng=-97.0563/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Highland-Village-TX/lat=33.0918/lng=-97.0558/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 618075.5,
@@ -3606,18 +3328,18 @@
           "parks_count": 19,
           "restaurants_count": 37,
           "shopping_count": 87,
-          "parks_rank": 15,
-          "restaurants_rank": 15,
-          "shopping_rank": 7,
-          "parks_percentile": 77,
-          "restaurants_percentile": 77,
-          "shopping_percentile": 90,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 13,
+          "restaurants_rank": 13,
+          "shopping_rank": 6,
+          "parks_percentile": 69,
+          "restaurants_percentile": 69,
+          "shopping_percentile": 87,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -3629,18 +3351,7 @@
       "lat": 32.8232,
       "lng": -97.1883,
       "niche_city_slug": "hurst-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 76,
         "walk_description": "Very Walkable",
@@ -3649,7 +3360,7 @@
         "bike_score": 54,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8235/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8232/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 360024.8,
@@ -3726,18 +3437,18 @@
           "parks_count": 29,
           "restaurants_count": 72,
           "shopping_count": 144,
-          "parks_rank": 34,
-          "restaurants_rank": 25,
-          "shopping_rank": 15,
-          "parks_percentile": 45,
-          "restaurants_percentile": 60,
-          "shopping_percentile": 77,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 29,
+          "restaurants_rank": 19,
+          "shopping_rank": 14,
+          "parks_percentile": 28,
+          "restaurants_percentile": 54,
+          "shopping_percentile": 67,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -3749,27 +3460,16 @@
       "lat": 32.814,
       "lng": -96.9489,
       "niche_city_slug": "irving-dallas-tx",
-      "demographics": {
-        "population": 255036,
-        "median_age": 32.8,
-        "median_household_income": 79641,
-        "pct_households_with_children": 36.7,
-        "owner_occupied_pct": 38.3,
-        "median_home_value_census": 287300,
-        "bachelors_plus_pct": 41.6,
-        "wfh_pct": 17.3,
-        "median_commute_min": 28.1,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 7,
-        "walk_description": "Car-Dependent",
-        "transit_score": null,
-        "transit_description": "Unknown",
-        "bike_score": 28,
-        "bike_description": "Somewhat Bikeable",
+        "walk_score": 80,
+        "walk_description": "Very Walkable",
+        "transit_score": 51,
+        "transit_description": "Good Transit",
+        "bike_score": 59,
+        "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-97.0641/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-96.9489/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 383095.8,
@@ -3792,13 +3492,13 @@
         "sfr_median_price": 383095.8,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
-        "pct_households_with_children": 36.7,
-        "walk_score": 7,
-        "transit_score": null,
-        "bike_score": 28,
-        "median_household_income": 79641,
-        "owner_occupied_pct": 38.3,
-        "wfh_pct": 17.3
+        "pct_households_with_children": null,
+        "walk_score": 80,
+        "transit_score": 51,
+        "bike_score": 59,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A-",
@@ -3833,32 +3533,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 68,
-        "value_score": 85,
+        "family_score": 63,
+        "value_score": 93,
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 37,
-          "commute": 56,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 135,
           "restaurants_count": 309,
           "shopping_count": 428,
-          "parks_rank": 48,
-          "restaurants_rank": 45,
-          "shopping_rank": 35,
-          "parks_percentile": 22,
-          "restaurants_percentile": 27,
-          "shopping_percentile": 43,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "keller": {
@@ -3869,18 +3569,7 @@
       "lat": 32.9343,
       "lng": -97.2294,
       "niche_city_slug": "keller-tarrant-tx",
-      "demographics": {
-        "population": 3101,
-        "median_age": 35.4,
-        "median_household_income": 58601,
-        "pct_households_with_children": 41,
-        "owner_occupied_pct": 66.8,
-        "median_home_value_census": 90400,
-        "bachelors_plus_pct": 12.9,
-        "wfh_pct": 2.5,
-        "median_commute_min": 18.6,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 75,
         "walk_description": "Very Walkable",
@@ -3889,7 +3578,7 @@
         "bike_score": 60,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Keller-TX/lat=32.9343/lng=-97.2295/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Keller-TX/lat=32.9343/lng=-97.2294/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 674079.2,
@@ -3912,13 +3601,13 @@
         "sfr_median_price": 674079.2,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 41,
+        "pct_households_with_children": null,
         "walk_score": 75,
         "transit_score": null,
         "bike_score": 60,
-        "median_household_income": 58601,
-        "owner_occupied_pct": 66.8,
-        "wfh_pct": 2.5
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -3953,32 +3642,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 90,
-        "value_score": 46,
+        "family_score": 70,
+        "value_score": 77,
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 90,
-          "commute": 88,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 26,
           "restaurants_count": 50,
           "shopping_count": 67,
-          "parks_rank": 47,
-          "restaurants_rank": 50,
-          "shopping_rank": 40,
-          "parks_percentile": 23,
+          "parks_rank": 33,
+          "restaurants_rank": 33,
+          "shopping_rank": 24,
+          "parks_percentile": 18,
           "restaurants_percentile": 18,
-          "shopping_percentile": 35,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_percentile": 41,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "lantana": {
@@ -3991,14 +3680,14 @@
       "niche_city_slug": "lantana-denton-tx",
       "demographics": null,
       "walkability": {
-        "walk_score": 1,
+        "walk_score": 28,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 20,
+        "bike_score": 32,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Lantana-TX/lat=33.1076/lng=-97.1234/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Lantana-TX/lat=33.0893/lng=-97.1311/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 650458.3,
@@ -4022,9 +3711,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": null,
-        "walk_score": 1,
+        "walk_score": 28,
         "transit_score": null,
-        "bike_score": 20,
+        "bike_score": 32,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -4067,7 +3756,7 @@
         "sub_scores": {
           "education": 90,
           "safety": null,
-          "family_community": 0,
+          "family_community": 2,
           "commute": null,
           "market_stability": 100
         },
@@ -4075,18 +3764,18 @@
           "parks_count": 35,
           "restaurants_count": 59,
           "shopping_count": 126,
-          "parks_rank": 6,
-          "restaurants_rank": 7,
+          "parks_rank": 5,
+          "restaurants_rank": 6,
           "shopping_rank": 3,
-          "parks_percentile": 92,
-          "restaurants_percentile": 90,
-          "shopping_percentile": 97,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_percentile": 90,
+          "restaurants_percentile": 87,
+          "shopping_percentile": 95,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -4098,27 +3787,16 @@
       "lat": 33.0462,
       "lng": -96.9942,
       "niche_city_slug": "lewisville-denton-tx",
-      "demographics": {
-        "population": 128313,
-        "median_age": 34.8,
-        "median_household_income": 85002,
-        "pct_households_with_children": 33.1,
-        "owner_occupied_pct": 46.6,
-        "median_home_value_census": 350200,
-        "bachelors_plus_pct": 39.4,
-        "wfh_pct": 16.8,
-        "median_commute_min": 29,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 65,
+        "walk_score": 69,
         "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
         "bike_score": 46,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Lewisville-TX/lat=33.0462/lng=-97.0028/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Lewisville-TX/lat=33.0462/lng=-96.9942/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 399933.3,
@@ -4141,13 +3819,13 @@
         "sfr_median_price": 399933.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 33.1,
-        "walk_score": 65,
+        "pct_households_with_children": null,
+        "walk_score": 69,
         "transit_score": null,
         "bike_score": 46,
-        "median_household_income": 85002,
-        "owner_occupied_pct": 46.6,
-        "wfh_pct": 16.8
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -4182,32 +3860,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 89,
+        "family_score": 68,
+        "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 77,
-          "family_community": 59,
-          "commute": 53,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 82,
           "restaurants_count": 238,
           "shopping_count": 457,
-          "parks_rank": 38,
-          "restaurants_rank": 22,
-          "shopping_rank": 17,
-          "parks_percentile": 38,
-          "restaurants_percentile": 65,
-          "shopping_percentile": 73,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "little-elm": {
@@ -4218,27 +3896,16 @@
       "lat": 33.1629,
       "lng": -96.9375,
       "niche_city_slug": "little-elm-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 43,
+        "walk_score": 45,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 39,
+        "bike_score": 38,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1626/lng=-96.9369/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1629/lng=-96.9375/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 406214.6,
@@ -4262,9 +3929,9 @@
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": null,
-        "walk_score": 43,
+        "walk_score": 45,
         "transit_score": null,
-        "bike_score": 39,
+        "bike_score": 38,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -4315,18 +3982,18 @@
           "parks_count": 28,
           "restaurants_count": 39,
           "shopping_count": 58,
-          "parks_rank": 43,
-          "restaurants_rank": 53,
-          "shopping_rank": 47,
-          "parks_percentile": 30,
+          "parks_rank": 32,
+          "restaurants_rank": 35,
+          "shopping_rank": 29,
+          "parks_percentile": 21,
           "restaurants_percentile": 13,
-          "shopping_percentile": 23,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_percentile": 28,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -4338,27 +4005,16 @@
       "lat": 33.1079,
       "lng": -96.5742,
       "niche_city_slug": "lucas-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 0,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 16,
+        "bike_score": 13,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Lucas-TX/lat=33.1068/lng=-96.5766/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Lucas-TX/lat=33.1079/lng=-96.5742/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 1054228.8,
@@ -4384,7 +4040,7 @@
         "pct_households_with_children": null,
         "walk_score": 0,
         "transit_score": null,
-        "bike_score": 16,
+        "bike_score": 13,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -4435,18 +4091,18 @@
           "parks_count": 13,
           "restaurants_count": 6,
           "shopping_count": 5,
-          "parks_rank": 8,
-          "restaurants_rank": 52,
-          "shopping_rank": 56,
-          "parks_percentile": 88,
+          "parks_rank": 7,
+          "restaurants_rank": 34,
+          "shopping_rank": 35,
+          "parks_percentile": 85,
           "restaurants_percentile": 15,
-          "shopping_percentile": 8,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_percentile": 13,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -4458,18 +4114,7 @@
       "lat": 32.5632,
       "lng": -97.1411,
       "niche_city_slug": "mansfield-tarrant-tx",
-      "demographics": {
-        "population": 75398,
-        "median_age": 36.4,
-        "median_household_income": 116590,
-        "pct_households_with_children": 44.5,
-        "owner_occupied_pct": 72.4,
-        "median_home_value_census": 380000,
-        "bachelors_plus_pct": 43.2,
-        "wfh_pct": 13.9,
-        "median_commute_min": 31.4,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 69,
         "walk_description": "Somewhat Walkable",
@@ -4478,7 +4123,7 @@
         "bike_score": 38,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1417/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1411/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 475644.5,
@@ -4501,13 +4146,13 @@
         "sfr_median_price": 475644.5,
         "overall_isd_grade": 12,
         "academics_isd_grade": 11,
-        "pct_households_with_children": 44.5,
+        "pct_households_with_children": null,
         "walk_score": 69,
         "transit_score": null,
         "bike_score": 38,
-        "median_household_income": 116590,
-        "owner_occupied_pct": 72.4,
-        "wfh_pct": 13.9
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -4542,32 +4187,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 92,
+        "family_score": 69,
+        "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 87,
-          "commute": 45,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 434,
           "restaurants_count": 450,
           "shopping_count": 560,
-          "parks_rank": 3,
-          "restaurants_rank": 5,
-          "shopping_rank": 6,
-          "parks_percentile": 97,
-          "restaurants_percentile": 93,
-          "shopping_percentile": 92,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "mckinney": {
@@ -4578,18 +4223,7 @@
       "lat": 33.1972,
       "lng": -96.6397,
       "niche_city_slug": "mckinney-collin-tx",
-      "demographics": {
-        "population": 202314,
-        "median_age": 36.7,
-        "median_household_income": 120273,
-        "pct_households_with_children": 42.8,
-        "owner_occupied_pct": 63.3,
-        "median_home_value_census": 439500,
-        "bachelors_plus_pct": 52.6,
-        "wfh_pct": 21.8,
-        "median_commute_min": 28.9,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 65,
         "walk_description": "Somewhat Walkable",
@@ -4604,7 +4238,7 @@
         "sfr_median_price": 496149.7,
         "sfr_days_on_market": 41.9,
         "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 3460,
+        "sfr_closed_sales_12mo": 3462,
         "market_condition": "balanced",
         "condo_median_price": 434458.3
       },
@@ -4621,13 +4255,13 @@
         "sfr_median_price": 496149.7,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 42.8,
+        "pct_households_with_children": null,
         "walk_score": 65,
         "transit_score": null,
         "bike_score": 54,
-        "median_household_income": 120273,
-        "owner_occupied_pct": 63.3,
-        "wfh_pct": 21.8
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -4662,32 +4296,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 79,
-        "value_score": 92,
+        "family_score": 69,
+        "value_score": 98,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 64,
-          "commute": 54,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 161,
           "restaurants_count": 305,
           "shopping_count": 351,
-          "parks_rank": 27,
-          "restaurants_rank": 31,
-          "shopping_rank": 31,
-          "parks_percentile": 57,
-          "restaurants_percentile": 50,
-          "shopping_percentile": 50,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "melissa": {
@@ -4698,27 +4332,16 @@
       "lat": 33.2843,
       "lng": -96.57,
       "niche_city_slug": "melissa-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 33,
+        "walk_score": 32,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
         "bike_score": 35,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2887/lng=-96.5721/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2843/lng=-96.57/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 456222.8,
@@ -4742,7 +4365,7 @@
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": null,
-        "walk_score": 33,
+        "walk_score": 32,
         "transit_score": null,
         "bike_score": 35,
         "median_household_income": null,
@@ -4787,7 +4410,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 90,
-          "family_community": 3,
+          "family_community": 2,
           "commute": null,
           "market_stability": 95
         },
@@ -4795,18 +4418,18 @@
           "parks_count": 17,
           "restaurants_count": 39,
           "shopping_count": 17,
-          "parks_rank": 21,
-          "restaurants_rank": 16,
-          "shopping_rank": 51,
-          "parks_percentile": 67,
-          "restaurants_percentile": 75,
-          "shopping_percentile": 17,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 18,
+          "restaurants_rank": 14,
+          "shopping_rank": 32,
+          "parks_percentile": 56,
+          "restaurants_percentile": 67,
+          "shopping_percentile": 21,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -4818,18 +4441,7 @@
       "lat": 32.7668,
       "lng": -96.5992,
       "niche_city_slug": "mesquite-dallas-tx",
-      "demographics": {
-        "population": 148848,
-        "median_age": 33.4,
-        "median_household_income": 71843,
-        "pct_households_with_children": 38.7,
-        "owner_occupied_pct": 63.3,
-        "median_home_value_census": 226500,
-        "bachelors_plus_pct": 18.5,
-        "wfh_pct": 8.5,
-        "median_commute_min": 32.9,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 70,
         "walk_description": "Very Walkable",
@@ -4861,13 +4473,13 @@
         "sfr_median_price": 289057.5,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
-        "pct_households_with_children": 38.7,
+        "pct_households_with_children": null,
         "walk_score": 70,
         "transit_score": null,
         "bike_score": 53,
-        "median_household_income": 71843,
-        "owner_occupied_pct": 63.3,
-        "wfh_pct": 8.5
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B",
@@ -4902,32 +4514,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 71,
-        "value_score": 90,
+        "family_score": 63,
+        "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 73,
-          "family_community": 59,
-          "commute": 40,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 97
         },
         "amenity_ranks": {
           "parks_count": 97,
           "restaurants_count": 233,
           "shopping_count": 328,
-          "parks_rank": 37,
-          "restaurants_rank": 29,
-          "shopping_rank": 26,
-          "parks_percentile": 40,
-          "restaurants_percentile": 53,
-          "shopping_percentile": 58,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "midlothian": {
@@ -4938,27 +4550,16 @@
       "lat": 32.4824,
       "lng": -97.0058,
       "niche_city_slug": "midlothian-ellis-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 73,
-        "walk_description": "Very Walkable",
+        "walk_score": 50,
+        "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 48,
+        "bike_score": 34,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4818/lng=-96.9944/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4824/lng=-97.0058/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 495753.1,
@@ -4982,9 +4583,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": null,
-        "walk_score": 73,
+        "walk_score": 50,
         "transit_score": null,
-        "bike_score": 48,
+        "bike_score": 34,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5027,7 +4628,7 @@
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 6,
+          "family_community": 4,
           "commute": null,
           "market_stability": 100
         },
@@ -5035,18 +4636,18 @@
           "parks_count": 24,
           "restaurants_count": 38,
           "shopping_count": 52,
-          "parks_rank": 26,
-          "restaurants_rank": 41,
-          "shopping_rank": 32,
-          "parks_percentile": 58,
+          "parks_rank": 22,
+          "restaurants_rank": 27,
+          "shopping_rank": 21,
+          "parks_percentile": 46,
           "restaurants_percentile": 33,
-          "shopping_percentile": 48,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_percentile": 49,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5058,27 +4659,16 @@
       "lat": 33.0151,
       "lng": -96.6111,
       "niche_city_slug": "murphy-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 57,
-        "walk_description": "Somewhat Walkable",
+        "walk_score": 48,
+        "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 45,
+        "bike_score": 41,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Murphy-TX/lat=33.0151/lng=-96.6119/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Murphy-TX/lat=33.0151/lng=-96.6111/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 596375,
@@ -5102,9 +4692,9 @@
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": null,
-        "walk_score": 57,
+        "walk_score": 48,
         "transit_score": null,
-        "bike_score": 45,
+        "bike_score": 41,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5143,7 +4733,7 @@
       },
       "scores": {
         "family_score": 71,
-        "value_score": 88,
+        "value_score": 87,
         "sub_scores": {
           "education": 93,
           "safety": 87,
@@ -5155,18 +4745,18 @@
           "parks_count": 29,
           "restaurants_count": 79,
           "shopping_count": 85,
-          "parks_rank": 12,
-          "restaurants_rank": 8,
-          "shopping_rank": 13,
-          "parks_percentile": 82,
-          "restaurants_percentile": 88,
-          "shopping_percentile": 80,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 11,
+          "restaurants_rank": 7,
+          "shopping_rank": 12,
+          "parks_percentile": 74,
+          "restaurants_percentile": 85,
+          "shopping_percentile": 72,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5178,18 +4768,7 @@
       "lat": 32.8343,
       "lng": -97.2289,
       "niche_city_slug": "north-richland-hills-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 36,
         "walk_description": "Car-Dependent",
@@ -5275,18 +4854,18 @@
           "parks_count": 44,
           "restaurants_count": 86,
           "shopping_count": 120,
-          "parks_rank": 41,
-          "restaurants_rank": 46,
-          "shopping_rank": 33,
-          "parks_percentile": 33,
-          "restaurants_percentile": 25,
-          "shopping_percentile": 47,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 31,
+          "restaurants_rank": 31,
+          "shopping_rank": 22,
+          "parks_percentile": 23,
+          "restaurants_percentile": 23,
+          "shopping_percentile": 46,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5298,27 +4877,16 @@
       "lat": 33.1082,
       "lng": -97.2772,
       "niche_city_slug": "northlake-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 2,
+        "walk_score": 0,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 25,
+        "bike_score": 15,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Northlake-TX/lat=33.1126/lng=-97.2569/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Northlake-TX/lat=33.1082/lng=-97.2772/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 556847.1,
@@ -5342,9 +4910,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": null,
-        "walk_score": 2,
+        "walk_score": 0,
         "transit_score": null,
-        "bike_score": 25,
+        "bike_score": 15,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5395,18 +4963,18 @@
           "parks_count": 23,
           "restaurants_count": 38,
           "shopping_count": 68,
-          "parks_rank": 28,
-          "restaurants_rank": 42,
-          "shopping_rank": 24,
-          "parks_percentile": 55,
-          "restaurants_percentile": 32,
-          "shopping_percentile": 62,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 23,
+          "restaurants_rank": 28,
+          "shopping_rank": 17,
+          "parks_percentile": 44,
+          "restaurants_percentile": 31,
+          "shopping_percentile": 59,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5418,18 +4986,7 @@
       "lat": 33.0198,
       "lng": -96.6989,
       "niche_city_slug": "plano-collin-tx",
-      "demographics": {
-        "population": 287339,
-        "median_age": 39.3,
-        "median_household_income": 108649,
-        "pct_households_with_children": 32.8,
-        "owner_occupied_pct": 56.6,
-        "median_home_value_census": 440600,
-        "bachelors_plus_pct": 59.2,
-        "wfh_pct": 25.3,
-        "median_commute_min": 28.9,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 92,
         "walk_description": "Walker's Paradise",
@@ -5461,13 +5018,13 @@
         "sfr_median_price": 525231.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 32.8,
+        "pct_households_with_children": null,
         "walk_score": 92,
         "transit_score": 54,
         "bike_score": 73,
-        "median_household_income": 108649,
-        "owner_occupied_pct": 56.6,
-        "wfh_pct": 25.3
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -5502,32 +5059,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 76,
-        "value_score": 87,
+        "family_score": 70,
+        "value_score": 96,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 50,
-          "commute": 54,
+          "family_community": 7,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 137,
           "restaurants_count": 592,
           "shopping_count": 724,
-          "parks_rank": 50,
-          "restaurants_rank": 19,
-          "shopping_rank": 21,
-          "parks_percentile": 18,
-          "restaurants_percentile": 70,
-          "shopping_percentile": 67,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "princeton": {
@@ -5538,33 +5095,22 @@
       "lat": 33.1818,
       "lng": -96.4997,
       "niche_city_slug": "princeton-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 46,
-        "walk_description": "Car-Dependent",
+        "walk_score": 61,
+        "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 38,
+        "bike_score": 49,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1807/lng=-96.4919/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1818/lng=-96.4997/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 301724.4,
         "sfr_days_on_market": 36.8,
         "sfr_months_supply": 3.7,
-        "sfr_closed_sales_12mo": 2206,
+        "sfr_closed_sales_12mo": 2207,
         "market_condition": "balanced",
         "condo_median_price": 288666.7
       },
@@ -5582,9 +5128,9 @@
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": null,
-        "walk_score": 46,
+        "walk_score": 61,
         "transit_score": null,
-        "bike_score": 38,
+        "bike_score": 49,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5627,7 +5173,7 @@
         "sub_scores": {
           "education": 87,
           "safety": 73,
-          "family_community": 4,
+          "family_community": 5,
           "commute": null,
           "market_stability": 100
         },
@@ -5635,18 +5181,18 @@
           "parks_count": 152,
           "restaurants_count": 203,
           "shopping_count": 272,
-          "parks_rank": 4,
+          "parks_rank": 3,
           "restaurants_rank": 3,
           "shopping_rank": 2,
           "parks_percentile": 95,
-          "restaurants_percentile": 97,
-          "shopping_percentile": 98,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "restaurants_percentile": 95,
+          "shopping_percentile": 97,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5658,18 +5204,7 @@
       "lat": 33.2362,
       "lng": -96.8012,
       "niche_city_slug": "prosper-collin-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 40,
         "walk_description": "Car-Dependent",
@@ -5678,7 +5213,7 @@
         "bike_score": 27,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8005/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8012/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 845429.2,
@@ -5755,18 +5290,18 @@
           "parks_count": 35,
           "restaurants_count": 57,
           "shopping_count": 90,
-          "parks_rank": 22,
-          "restaurants_rank": 34,
-          "shopping_rank": 25,
-          "parks_percentile": 65,
-          "restaurants_percentile": 45,
-          "shopping_percentile": 60,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 19,
+          "restaurants_rank": 25,
+          "shopping_rank": 18,
+          "parks_percentile": 54,
+          "restaurants_percentile": 38,
+          "shopping_percentile": 56,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -5778,18 +5313,7 @@
       "lat": 32.9483,
       "lng": -96.7299,
       "niche_city_slug": "richardson-dallas-tx",
-      "demographics": {
-        "population": 118269,
-        "median_age": 34,
-        "median_household_income": 96257,
-        "pct_households_with_children": 28.3,
-        "owner_occupied_pct": 50.8,
-        "median_home_value_census": 405600,
-        "bachelors_plus_pct": 56.2,
-        "wfh_pct": 23.2,
-        "median_commute_min": 28.6,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 77,
         "walk_description": "Very Walkable",
@@ -5821,13 +5345,13 @@
         "sfr_median_price": 463825,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
-        "pct_households_with_children": 28.3,
+        "pct_households_with_children": null,
         "walk_score": 77,
         "transit_score": 47,
         "bike_score": 73,
-        "median_household_income": 96257,
-        "owner_occupied_pct": 50.8,
-        "wfh_pct": 23.2
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A+",
@@ -5862,32 +5386,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 74,
-        "value_score": 87,
+        "family_score": 68,
+        "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 43,
-          "commute": 55,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 74,
           "restaurants_count": 303,
           "shopping_count": 167,
-          "parks_rank": 39,
-          "restaurants_rank": 12,
-          "shopping_rank": 41,
-          "parks_percentile": 37,
-          "restaurants_percentile": 82,
-          "shopping_percentile": 33,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "roanoke": {
@@ -5898,27 +5422,16 @@
       "lat": 33.0032,
       "lng": -97.2272,
       "niche_city_slug": "roanoke-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 66,
+        "walk_score": 70,
         "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 41,
+        "bike_score": 44,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Roanoke-TX/lat=33.004/lng=-97.2228/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Roanoke-TX/lat=33.0032/lng=-97.2272/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 593280.1,
@@ -5942,9 +5455,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": null,
-        "walk_score": 66,
+        "walk_score": 70,
         "transit_score": null,
-        "bike_score": 41,
+        "bike_score": 44,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5995,18 +5508,18 @@
           "parks_count": 24,
           "restaurants_count": 92,
           "shopping_count": 39,
-          "parks_rank": 7,
+          "parks_rank": 6,
           "restaurants_rank": 2,
-          "shopping_rank": 11,
-          "parks_percentile": 90,
-          "restaurants_percentile": 98,
-          "shopping_percentile": 83,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "shopping_rank": 10,
+          "parks_percentile": 87,
+          "restaurants_percentile": 97,
+          "shopping_percentile": 77,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6018,18 +5531,7 @@
       "lat": 32.929,
       "lng": -96.4597,
       "niche_city_slug": "rockwall-rockwall-tx",
-      "demographics": {
-        "population": 1596,
-        "median_age": 50.6,
-        "median_household_income": 77443,
-        "pct_households_with_children": 25.3,
-        "owner_occupied_pct": 64,
-        "median_home_value_census": 216600,
-        "bachelors_plus_pct": null,
-        "wfh_pct": 13.2,
-        "median_commute_min": 33.1,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 79,
         "walk_description": "Very Walkable",
@@ -6038,7 +5540,7 @@
         "bike_score": 43,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.9293/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.929/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 556882.4,
@@ -6061,13 +5563,13 @@
         "sfr_median_price": 556882.4,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 25.3,
+        "pct_households_with_children": null,
         "walk_score": 79,
         "transit_score": null,
         "bike_score": 43,
-        "median_household_income": 77443,
-        "owner_occupied_pct": 64,
-        "wfh_pct": 13.2
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -6102,32 +5604,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 71,
+        "family_score": 68,
+        "value_score": 93,
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 87,
-          "commute": 40,
+          "family_community": 6,
+          "commute": null,
           "market_stability": 86
         },
         "amenity_ranks": {
           "parks_count": 41,
           "restaurants_count": 129,
           "shopping_count": 183,
-          "parks_rank": 25,
-          "restaurants_rank": 11,
-          "shopping_rank": 14,
-          "parks_percentile": 60,
-          "restaurants_percentile": 83,
-          "shopping_percentile": 78,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 21,
+          "restaurants_rank": 10,
+          "shopping_rank": 13,
+          "parks_percentile": 49,
+          "restaurants_percentile": 77,
+          "shopping_percentile": 69,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "rowlett": {
@@ -6138,18 +5640,7 @@
       "lat": 32.9029,
       "lng": -96.5636,
       "niche_city_slug": "rowlett-dallas-tx",
-      "demographics": {
-        "population": 64139,
-        "median_age": 37.9,
-        "median_household_income": 113600,
-        "pct_households_with_children": 37.8,
-        "owner_occupied_pct": 75.9,
-        "median_home_value_census": 342400,
-        "bachelors_plus_pct": 38.2,
-        "wfh_pct": 15.4,
-        "median_commute_min": 33,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 58,
         "walk_description": "Somewhat Walkable",
@@ -6158,7 +5649,7 @@
         "bike_score": 42,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5639/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 379787.5,
@@ -6181,13 +5672,13 @@
         "sfr_median_price": 379787.5,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
-        "pct_households_with_children": 37.8,
+        "pct_households_with_children": null,
         "walk_score": 58,
         "transit_score": 42,
         "bike_score": 42,
-        "median_household_income": 113600,
-        "owner_occupied_pct": 75.9,
-        "wfh_pct": 15.4
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A-",
@@ -6222,32 +5713,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 68,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 29,
-          "commute": 40,
+          "family_community": 4,
+          "commute": null,
           "market_stability": 97
         },
         "amenity_ranks": {
           "parks_count": 26,
           "restaurants_count": 69,
           "shopping_count": 79,
-          "parks_rank": 55,
-          "restaurants_rank": 49,
-          "shopping_rank": 48,
-          "parks_percentile": 10,
-          "restaurants_percentile": 20,
-          "shopping_percentile": 22,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "royse-city": {
@@ -6258,27 +5749,16 @@
       "lat": 32.9754,
       "lng": -96.3322,
       "niche_city_slug": "royse-city-rockwall-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 62,
+        "walk_score": 63,
         "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
         "bike_score": 48,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9751/lng=-96.3327/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9754/lng=-96.3322/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 329865.6,
@@ -6302,7 +5782,7 @@
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": null,
-        "walk_score": 62,
+        "walk_score": 63,
         "transit_score": null,
         "bike_score": 48,
         "median_household_income": null,
@@ -6355,18 +5835,18 @@
           "parks_count": 7,
           "restaurants_count": 26,
           "shopping_count": 17,
-          "parks_rank": 57,
-          "restaurants_rank": 48,
-          "shopping_rank": 55,
-          "parks_percentile": 7,
-          "restaurants_percentile": 22,
-          "shopping_percentile": 10,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 37,
+          "restaurants_rank": 32,
+          "shopping_rank": 34,
+          "parks_percentile": 8,
+          "restaurants_percentile": 21,
+          "shopping_percentile": 15,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6378,27 +5858,16 @@
       "lat": 32.976,
       "lng": -96.5897,
       "niche_city_slug": "sachse-dallas-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 30,
-        "walk_description": "Car-Dependent",
+        "walk_score": 51,
+        "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 29,
+        "bike_score": 38,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Sachse-TX/lat=32.9707/lng=-96.5883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Sachse-TX/lat=32.976/lng=-96.5897/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 441256.1,
@@ -6422,9 +5891,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": null,
-        "walk_score": 30,
+        "walk_score": 51,
         "transit_score": null,
-        "bike_score": 29,
+        "bike_score": 38,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -6462,12 +5931,12 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 68,
+        "family_score": 69,
         "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 2,
+          "family_community": 4,
           "commute": null,
           "market_stability": 100
         },
@@ -6475,18 +5944,18 @@
           "parks_count": 14,
           "restaurants_count": 37,
           "shopping_count": 17,
-          "parks_rank": 51,
-          "restaurants_rank": 44,
-          "shopping_rank": 58,
-          "parks_percentile": 17,
-          "restaurants_percentile": 28,
-          "shopping_percentile": 5,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 35,
+          "restaurants_rank": 30,
+          "shopping_rank": 37,
+          "parks_percentile": 13,
+          "restaurants_percentile": 26,
+          "shopping_percentile": 8,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6498,18 +5967,7 @@
       "lat": 32.8596,
       "lng": -97.3636,
       "niche_city_slug": "saginaw-tarrant-tx",
-      "demographics": {
-        "population": 4209,
-        "median_age": 30.8,
-        "median_household_income": 40786,
-        "pct_households_with_children": 44.9,
-        "owner_occupied_pct": 74.8,
-        "median_home_value_census": 76600,
-        "bachelors_plus_pct": null,
-        "wfh_pct": 21.5,
-        "median_commute_min": 26,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 48,
         "walk_description": "Car-Dependent",
@@ -6518,7 +5976,7 @@
         "bike_score": 42,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Saginaw-TX/lat=32.8593/lng=-97.3636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Saginaw-TX/lat=32.8596/lng=-97.3636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 308986.7,
@@ -6541,13 +5999,13 @@
         "sfr_median_price": 308986.7,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
-        "pct_households_with_children": 44.9,
+        "pct_households_with_children": null,
         "walk_score": 48,
         "transit_score": null,
         "bike_score": 42,
-        "median_household_income": 40786,
-        "owner_occupied_pct": 74.8,
-        "wfh_pct": 21.5
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "B+",
@@ -6582,32 +6040,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 71,
+        "family_score": 67,
+        "value_score": 96,
         "sub_scores": {
           "education": 90,
           "safety": 77,
-          "family_community": 69,
-          "commute": 63,
+          "family_community": 4,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 49,
           "restaurants_count": 35,
           "shopping_count": 59,
-          "parks_rank": 9,
-          "restaurants_rank": 43,
-          "shopping_rank": 28,
-          "parks_percentile": 87,
-          "restaurants_percentile": 30,
-          "shopping_percentile": 55,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 8,
+          "restaurants_rank": 29,
+          "shopping_rank": 19,
+          "parks_percentile": 82,
+          "restaurants_percentile": 28,
+          "shopping_percentile": 54,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     },
     "southlake": {
@@ -6618,27 +6076,16 @@
       "lat": 32.944,
       "lng": -97.1344,
       "niche_city_slug": "southlake-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 74,
-        "walk_description": "Very Walkable",
+        "walk_score": 69,
+        "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 47,
-        "bike_description": "Somewhat Bikeable",
+        "bike_score": 50,
+        "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Southlake-TX/lat=32.9412/lng=-97.1334/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Southlake-TX/lat=32.944/lng=-97.1344/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 1352687.5,
@@ -6662,9 +6109,9 @@
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": null,
-        "walk_score": 74,
+        "walk_score": 69,
         "transit_score": null,
-        "bike_score": 47,
+        "bike_score": 50,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -6707,7 +6154,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 6,
+          "family_community": 5,
           "commute": null,
           "market_stability": 100
         },
@@ -6715,18 +6162,18 @@
           "parks_count": 44,
           "restaurants_count": 85,
           "shopping_count": 159,
-          "parks_rank": 11,
-          "restaurants_rank": 10,
-          "shopping_rank": 8,
-          "parks_percentile": 83,
-          "restaurants_percentile": 85,
-          "shopping_percentile": 88,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 10,
+          "restaurants_rank": 9,
+          "shopping_rank": 7,
+          "parks_percentile": 77,
+          "restaurants_percentile": 79,
+          "shopping_percentile": 85,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6738,27 +6185,16 @@
       "lat": 33.0918,
       "lng": -96.8883,
       "niche_city_slug": "the-colony-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 31,
+        "walk_score": 41,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 39,
+        "bike_score": 42,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0895/lng=-96.8891/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0918/lng=-96.8883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 429265.8,
@@ -6782,9 +6218,9 @@
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": null,
-        "walk_score": 31,
+        "walk_score": 41,
         "transit_score": null,
-        "bike_score": 39,
+        "bike_score": 42,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -6827,7 +6263,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 2,
+          "family_community": 3,
           "commute": null,
           "market_stability": 100
         },
@@ -6835,18 +6271,18 @@
           "parks_count": 45,
           "restaurants_count": 76,
           "shopping_count": 58,
-          "parks_rank": 18,
-          "restaurants_rank": 24,
-          "shopping_rank": 43,
-          "parks_percentile": 72,
-          "restaurants_percentile": 62,
-          "shopping_percentile": 30,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 15,
+          "restaurants_rank": 18,
+          "shopping_rank": 25,
+          "parks_percentile": 64,
+          "restaurants_percentile": 56,
+          "shopping_percentile": 38,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6858,27 +6294,16 @@
       "lat": 33.0032,
       "lng": -97.1797,
       "niche_city_slug": "trophy-club-denton-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 7,
+        "walk_score": 1,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 26,
+        "bike_score": 21,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Trophy-Club-TX/lat=32.9977/lng=-97.1791/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Trophy-Club-TX/lat=33.0032/lng=-97.1797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 797287.5,
@@ -6902,9 +6327,9 @@
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": null,
-        "walk_score": 7,
+        "walk_score": 1,
         "transit_score": null,
-        "bike_score": 26,
+        "bike_score": 21,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -6942,12 +6367,12 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 69,
         "value_score": 62,
         "sub_scores": {
           "education": 90,
           "safety": 90,
-          "family_community": 1,
+          "family_community": 0,
           "commute": null,
           "market_stability": 95
         },
@@ -6955,18 +6380,18 @@
           "parks_count": 15,
           "restaurants_count": 27,
           "shopping_count": 18,
-          "parks_rank": 19,
-          "restaurants_rank": 20,
-          "shopping_rank": 45,
-          "parks_percentile": 70,
-          "restaurants_percentile": 68,
-          "shopping_percentile": 27,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 16,
+          "restaurants_rank": 16,
+          "shopping_rank": 27,
+          "parks_percentile": 62,
+          "restaurants_percentile": 62,
+          "shopping_percentile": 33,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -6978,18 +6403,7 @@
       "lat": 32.3868,
       "lng": -96.8486,
       "niche_city_slug": "waxahachie-ellis-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
         "walk_score": 77,
         "walk_description": "Very Walkable",
@@ -7075,18 +6489,18 @@
           "parks_count": 31,
           "restaurants_count": 82,
           "shopping_count": 58,
-          "parks_rank": 23,
-          "restaurants_rank": 17,
-          "shopping_rank": 37,
-          "parks_percentile": 63,
-          "restaurants_percentile": 73,
-          "shopping_percentile": 40,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_rank": 20,
+          "restaurants_rank": 15,
+          "shopping_rank": 23,
+          "parks_percentile": 51,
+          "restaurants_percentile": 64,
+          "shopping_percentile": 44,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -7098,27 +6512,16 @@
       "lat": 32.9982,
       "lng": -97.1994,
       "niche_city_slug": "westlake-tarrant-tx",
-      "demographics": {
-        "population": null,
-        "median_age": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 2,
+        "walk_score": 49,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 22,
+        "bike_score": 36,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Westlake-TX/lat=32.9988/lng=-97.1659/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Westlake-TX/lat=32.9982/lng=-97.1994/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 4892752.3,
@@ -7142,9 +6545,9 @@
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": null,
-        "walk_score": 2,
+        "walk_score": 49,
         "transit_score": null,
-        "bike_score": 22,
+        "bike_score": 36,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -7182,12 +6585,12 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 49,
+        "family_score": 51,
         "value_score": 35,
         "sub_scores": {
           "education": 97,
           "safety": null,
-          "family_community": 0,
+          "family_community": 4,
           "commute": null,
           "market_stability": 4
         },
@@ -7201,12 +6604,12 @@
           "parks_percentile": null,
           "restaurants_percentile": null,
           "shopping_percentile": null,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
+        "computed_date": "2026-05-19T02:05:48.377Z",
         "data_completeness": "partial"
       }
     },
@@ -7218,27 +6621,16 @@
       "lat": 33.0151,
       "lng": -96.5388,
       "niche_city_slug": "wylie-collin-tx",
-      "demographics": {
-        "population": 58991,
-        "median_age": 34.8,
-        "median_household_income": 113661,
-        "pct_households_with_children": 51.6,
-        "owner_occupied_pct": 76.2,
-        "median_home_value_census": 350100,
-        "bachelors_plus_pct": 40.6,
-        "wfh_pct": 18,
-        "median_commute_min": 33.2,
-        "acs_vintage": "2023"
-      },
+      "demographics": null,
       "walkability": {
-        "walk_score": 3,
-        "walk_description": "Car-Dependent",
+        "walk_score": 59,
+        "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 26,
+        "bike_score": 49,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
-        "ws_link": "https://www.walkscore.com/score/Wylie-TX/lat=33.1151/lng=-96.5388/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+        "ws_link": "https://www.walkscore.com/score/Wylie-TX/lat=33.0151/lng=-96.5388/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
         "sfr_median_price": 437256.5,
@@ -7261,13 +6653,13 @@
         "sfr_median_price": 437256.5,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
-        "pct_households_with_children": 51.6,
-        "walk_score": 3,
+        "pct_households_with_children": null,
+        "walk_score": 59,
         "transit_score": null,
-        "bike_score": 26,
-        "median_household_income": 113661,
-        "owner_occupied_pct": 76.2,
-        "wfh_pct": 18
+        "bike_score": 49,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
       },
       "niche_city": {
         "overall": "A",
@@ -7302,32 +6694,32 @@
         "osm_fetch_date": "2026-05-18"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 94,
+        "family_score": 71,
+        "value_score": 99,
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 59,
-          "commute": 39,
+          "family_community": 5,
+          "commute": null,
           "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 44,
           "restaurants_count": 77,
           "shopping_count": 82,
-          "parks_rank": 32,
-          "restaurants_rank": 40,
-          "shopping_rank": 42,
-          "parks_percentile": 48,
-          "restaurants_percentile": 35,
-          "shopping_percentile": 32,
-          "parks_total_suburbs": 60,
-          "restaurants_total_suburbs": 60,
-          "shopping_total_suburbs": 60,
-          "population_source": "census"
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 39,
+          "restaurants_total_suburbs": 39,
+          "shopping_total_suburbs": 39,
+          "population_source": null
         },
-        "computed_date": "2026-05-18T22:38:40.195Z",
-        "data_completeness": "full"
+        "computed_date": "2026-05-19T02:05:48.377Z",
+        "data_completeness": "partial"
       }
     }
   }
