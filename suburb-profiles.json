@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-19T16:41:10.456Z",
+    "last_updated": "2026-05-19T17:23:30.080Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -10,8 +10,8 @@
       "Niche City (2026-05-19)"
     ],
     "suburbs_total": 67,
-    "suburbs_complete": 60,
-    "suburbs_partial": 7,
+    "suburbs_complete": 67,
+    "suburbs_partial": 0,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
     "niche_city_scraped": "2026-05-19",
@@ -139,7 +139,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -242,7 +242,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 67,
+          "family_community": 66,
           "commute": 50,
           "market_stability": 100
         },
@@ -250,18 +250,18 @@
           "parks_count": 127,
           "restaurants_count": 158,
           "shopping_count": 522,
-          "parks_rank": 19,
-          "restaurants_rank": 41,
+          "parks_rank": 18,
+          "restaurants_rank": 40,
           "shopping_rank": 12,
-          "parks_percentile": 72,
-          "restaurants_percentile": 38,
+          "parks_percentile": 74,
+          "restaurants_percentile": 40,
           "shopping_percentile": 83,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -364,7 +364,7 @@
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 51,
+          "family_community": 50,
           "commute": 42,
           "market_stability": 88
         },
@@ -372,10 +372,10 @@
           "parks_count": 15,
           "restaurants_count": 33,
           "shopping_count": 22,
-          "parks_rank": 41,
+          "parks_rank": 40,
           "restaurants_rank": 35,
           "shopping_rank": 55,
-          "parks_percentile": 38,
+          "parks_percentile": 40,
           "restaurants_percentile": 48,
           "shopping_percentile": 17,
           "parks_total_suburbs": 65,
@@ -383,7 +383,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -396,18 +396,18 @@
       "lng": -97.1836,
       "niche_city_slug": "argyle-denton-tx",
       "demographics": {
-        "population": null,
-        "median_age": null,
+        "population": 4970,
+        "median_age": 46.8,
         "land_area_sqmi": null,
         "pop_density": null,
-        "median_household_income": null,
-        "pct_households_with_children": null,
-        "owner_occupied_pct": null,
-        "median_home_value_census": null,
-        "bachelors_plus_pct": null,
-        "wfh_pct": null,
-        "median_commute_min": null,
-        "acs_vintage": null
+        "median_household_income": 172604,
+        "pct_households_with_children": 39,
+        "owner_occupied_pct": 91.2,
+        "median_home_value_census": 624200,
+        "bachelors_plus_pct": 63.6,
+        "wfh_pct": 22,
+        "median_commute_min": 28.6,
+        "acs_vintage": "2023"
       },
       "walkability": {
         "walk_score": 26,
@@ -440,13 +440,13 @@
         "sfr_median_price": 569414.1,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
-        "pct_households_with_children": null,
+        "pct_households_with_children": 39,
         "walk_score": 26,
         "transit_score": null,
         "bike_score": 33,
-        "median_household_income": null,
-        "owner_occupied_pct": null,
-        "wfh_pct": null
+        "median_household_income": 172604,
+        "owner_occupied_pct": 91.2,
+        "wfh_pct": 22
       },
       "niche_city": {
         "overall": "A",
@@ -481,32 +481,32 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 84,
         "value_score": 96,
         "sub_scores": {
           "education": 97,
           "safety": 87,
-          "family_community": 2,
-          "commute": null,
+          "family_community": 76,
+          "commute": 55,
           "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 10,
           "restaurants_count": 10,
           "shopping_count": 6,
-          "parks_rank": 14,
-          "restaurants_rank": 38,
-          "shopping_rank": 59,
-          "parks_percentile": 80,
-          "restaurants_percentile": 43,
-          "shopping_percentile": 11,
+          "parks_rank": 62,
+          "restaurants_rank": 65,
+          "shopping_rank": 65,
+          "parks_percentile": 6,
+          "restaurants_percentile": 2,
+          "shopping_percentile": 2,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "arlington": {
@@ -616,18 +616,18 @@
           "parks_count": 283,
           "restaurants_count": 562,
           "shopping_count": 651,
-          "parks_rank": 40,
-          "restaurants_rank": 44,
+          "parks_rank": 39,
+          "restaurants_rank": 43,
           "shopping_rank": 39,
-          "parks_percentile": 40,
-          "restaurants_percentile": 34,
+          "parks_percentile": 42,
+          "restaurants_percentile": 35,
           "shopping_percentile": 42,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -738,18 +738,18 @@
           "parks_count": 5,
           "restaurants_count": 3,
           "shopping_count": 3,
-          "parks_rank": 34,
-          "restaurants_rank": 65,
-          "shopping_rank": 63,
-          "parks_percentile": 49,
-          "restaurants_percentile": 2,
-          "shopping_percentile": 5,
+          "parks_rank": 33,
+          "restaurants_rank": 64,
+          "shopping_rank": 62,
+          "parks_percentile": 51,
+          "restaurants_percentile": 3,
+          "shopping_percentile": 6,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -793,11 +793,19 @@
         "market_condition": "balanced",
         "condo_median_price": 312000
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Azle ISD",
+        "overall_grade": "B",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
+        "good_for_families": "B",
+        "niche_url": "https://www.niche.com/k12/d/azle-independent-school-district-tx/",
+        "split_isd": false
+      },
       "quiz": {
         "sfr_median_price": 337551.6,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 37.3,
         "walk_score": 52,
         "transit_score": null,
@@ -806,8 +814,32 @@
         "owner_occupied_pct": 71.1,
         "wfh_pct": 16.3
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "B-",
+        "public_schools": "B",
+        "crime": "C+",
+        "housing": "C+",
+        "nightlife": "C+",
+        "families": "B",
+        "diversity": "A-",
+        "jobs": "B",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "C+",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 5,
         "restaurants": 7,
@@ -815,11 +847,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 48,
+        "family_score": 66,
         "value_score": 89,
         "sub_scores": {
-          "education": null,
-          "safety": null,
+          "education": 83,
+          "safety": 77,
           "family_community": 22,
           "commute": 48,
           "market_stability": 98
@@ -828,19 +860,19 @@
           "parks_count": 5,
           "restaurants_count": 7,
           "shopping_count": 3,
-          "parks_rank": 62,
-          "restaurants_rank": 63,
-          "shopping_rank": 65,
-          "parks_percentile": 6,
-          "restaurants_percentile": 5,
-          "shopping_percentile": 2,
+          "parks_rank": 61,
+          "restaurants_rank": 62,
+          "shopping_rank": 64,
+          "parks_percentile": 8,
+          "restaurants_percentile": 6,
+          "shopping_percentile": 3,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "bedford": {
@@ -961,7 +993,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1072,10 +1104,10 @@
           "parks_count": 35,
           "restaurants_count": 80,
           "shopping_count": 86,
-          "parks_rank": 44,
+          "parks_rank": 43,
           "restaurants_rank": 36,
           "shopping_rank": 37,
-          "parks_percentile": 34,
+          "parks_percentile": 35,
           "restaurants_percentile": 46,
           "shopping_percentile": 45,
           "parks_total_suburbs": 65,
@@ -1083,7 +1115,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1194,10 +1226,10 @@
           "parks_count": 151,
           "restaurants_count": 354,
           "shopping_count": 560,
-          "parks_rank": 21,
+          "parks_rank": 20,
           "restaurants_rank": 15,
           "shopping_rank": 13,
-          "parks_percentile": 69,
+          "parks_percentile": 71,
           "restaurants_percentile": 78,
           "shopping_percentile": 82,
           "parks_total_suburbs": 65,
@@ -1205,7 +1237,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1303,12 +1335,12 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 69,
         "value_score": 89,
         "sub_scores": {
           "education": 73,
           "safety": 77,
-          "family_community": 58,
+          "family_community": 57,
           "commute": 45,
           "market_stability": 100
         },
@@ -1316,10 +1348,10 @@
           "parks_count": 45,
           "restaurants_count": 81,
           "shopping_count": 137,
-          "parks_rank": 27,
+          "parks_rank": 26,
           "restaurants_rank": 32,
           "shopping_rank": 22,
-          "parks_percentile": 60,
+          "parks_percentile": 62,
           "restaurants_percentile": 52,
           "shopping_percentile": 68,
           "parks_total_suburbs": 65,
@@ -1327,7 +1359,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1438,10 +1470,10 @@
           "parks_count": 24,
           "restaurants_count": 46,
           "shopping_count": 44,
-          "parks_rank": 28,
+          "parks_rank": 27,
           "restaurants_rank": 30,
           "shopping_rank": 40,
-          "parks_percentile": 58,
+          "parks_percentile": 60,
           "restaurants_percentile": 55,
           "shopping_percentile": 40,
           "parks_total_suburbs": 65,
@@ -1449,7 +1481,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1560,10 +1592,10 @@
           "parks_count": 24,
           "restaurants_count": 96,
           "shopping_count": 124,
-          "parks_rank": 37,
+          "parks_rank": 36,
           "restaurants_rank": 12,
           "shopping_rank": 17,
-          "parks_percentile": 45,
+          "parks_percentile": 46,
           "restaurants_percentile": 83,
           "shopping_percentile": 75,
           "parks_total_suburbs": 65,
@@ -1571,7 +1603,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1682,18 +1714,18 @@
           "parks_count": 19,
           "restaurants_count": 17,
           "shopping_count": 26,
-          "parks_rank": 36,
-          "restaurants_rank": 61,
+          "parks_rank": 35,
+          "restaurants_rank": 60,
           "shopping_rank": 56,
-          "parks_percentile": 46,
-          "restaurants_percentile": 8,
+          "parks_percentile": 48,
+          "restaurants_percentile": 9,
           "shopping_percentile": 15,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1804,18 +1836,18 @@
           "parks_count": 35,
           "restaurants_count": 59,
           "shopping_count": 114,
-          "parks_rank": 29,
-          "restaurants_rank": 45,
+          "parks_rank": 28,
+          "restaurants_rank": 44,
           "shopping_rank": 24,
-          "parks_percentile": 57,
-          "restaurants_percentile": 32,
+          "parks_percentile": 58,
+          "restaurants_percentile": 34,
           "shopping_percentile": 65,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -1859,11 +1891,19 @@
         "market_condition": "balanced",
         "condo_median_price": null
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Lake Dallas ISD",
+        "overall_grade": "B",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/lake-dallas-independent-school-district-tx/",
+        "split_isd": true
+      },
       "quiz": {
         "sfr_median_price": 451927.4,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 37,
         "walk_score": 14,
         "transit_score": null,
@@ -1872,8 +1912,32 @@
         "owner_occupied_pct": 75.1,
         "wfh_pct": 14.4
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A-",
+        "crime": "B",
+        "housing": "B",
+        "nightlife": "B",
+        "families": "A",
+        "diversity": "A-",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "A-",
+        "outdoor_activities": "C+",
+        "commute": "B",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 36,
         "restaurants": 33,
@@ -1881,11 +1945,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 62,
-        "value_score": 93,
+        "family_score": 74,
+        "value_score": 92,
         "sub_scores": {
-          "education": null,
-          "safety": null,
+          "education": 83,
+          "safety": 83,
           "family_community": 56,
           "commute": 46,
           "market_stability": 100
@@ -1895,18 +1959,18 @@
           "restaurants_count": 33,
           "shopping_count": 60,
           "parks_rank": 13,
-          "restaurants_rank": 42,
+          "restaurants_rank": 41,
           "shopping_rank": 25,
           "parks_percentile": 82,
-          "restaurants_percentile": 37,
+          "restaurants_percentile": 38,
           "shopping_percentile": 63,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "crandall": {
@@ -1949,11 +2013,19 @@
         "market_condition": "balanced",
         "condo_median_price": null
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Crandall ISD",
+        "overall_grade": "C+",
+        "academics_grade": "B-",
+        "college_prep_grade": "B+",
+        "good_for_families": "C+",
+        "niche_url": "https://www.niche.com/k12/d/crandall-independent-school-district-tx/",
+        "split_isd": false
+      },
       "quiz": {
         "sfr_median_price": 262220.5,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 7,
+        "academics_isd_grade": 8,
         "pct_households_with_children": 41.3,
         "walk_score": 23,
         "transit_score": null,
@@ -1962,8 +2034,32 @@
         "owner_occupied_pct": 91.4,
         "wfh_pct": 19.3
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "B-",
+        "public_schools": "C+",
+        "crime": "C+",
+        "housing": "B-",
+        "nightlife": "B",
+        "families": "C+",
+        "diversity": "B+",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B",
+        "health_fitness": "C+",
+        "outdoor_activities": "C+",
+        "commute": "C",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "C+",
+        "niche_crime_numeric": 77,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 2,
         "restaurants": 7,
@@ -1971,12 +2067,12 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 47,
-        "value_score": 100,
+        "family_score": 69,
+        "value_score": 95,
         "sub_scores": {
-          "education": null,
-          "safety": null,
-          "family_community": 23,
+          "education": 77,
+          "safety": 77,
+          "family_community": 47,
           "commute": 45,
           "market_stability": 100
         },
@@ -1995,8 +2091,8 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "dallas": {
@@ -2106,10 +2202,10 @@
           "parks_count": 601,
           "restaurants_count": 2101,
           "shopping_count": 3648,
-          "parks_rank": 57,
+          "parks_rank": 56,
           "restaurants_rank": 34,
           "shopping_rank": 23,
-          "parks_percentile": 14,
+          "parks_percentile": 15,
           "restaurants_percentile": 49,
           "shopping_percentile": 66,
           "parks_total_suburbs": 65,
@@ -2117,7 +2213,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2161,11 +2257,19 @@
         "market_condition": "balanced",
         "condo_median_price": 230656.3
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Denton ISD",
+        "overall_grade": "A-",
+        "academics_grade": "B+",
+        "college_prep_grade": "A",
+        "good_for_families": "B+",
+        "niche_url": "https://www.niche.com/k12/d/denton-independent-school-district-tx/",
+        "split_isd": false
+      },
       "quiz": {
         "sfr_median_price": 370073.4,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 11,
+        "academics_isd_grade": 10,
         "pct_households_with_children": 27.5,
         "walk_score": 85,
         "transit_score": 49,
@@ -2174,8 +2278,32 @@
         "owner_occupied_pct": 49.2,
         "wfh_pct": 12.2
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A-",
+        "public_schools": "B+",
+        "crime": "C",
+        "housing": "C+",
+        "nightlife": "A-",
+        "families": "B+",
+        "diversity": "A",
+        "jobs": "B+",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "A-",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "C",
+        "niche_crime_numeric": 73,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 118,
         "restaurants": 355,
@@ -2183,12 +2311,12 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 64,
-        "value_score": 82,
+        "family_score": 74,
+        "value_score": 86,
         "sub_scores": {
-          "education": null,
-          "safety": null,
-          "family_community": 47,
+          "education": 90,
+          "safety": 73,
+          "family_community": 46,
           "commute": 64,
           "market_stability": 100
         },
@@ -2196,10 +2324,10 @@
           "parks_count": 118,
           "restaurants_count": 355,
           "shopping_count": 318,
-          "parks_rank": 31,
+          "parks_rank": 30,
           "restaurants_rank": 18,
           "shopping_rank": 33,
-          "parks_percentile": 54,
+          "parks_percentile": 55,
           "restaurants_percentile": 74,
           "shopping_percentile": 51,
           "parks_total_suburbs": 65,
@@ -2207,8 +2335,8 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "desoto": {
@@ -2318,18 +2446,18 @@
           "parks_count": 21,
           "restaurants_count": 26,
           "shopping_count": 73,
-          "parks_rank": 61,
-          "restaurants_rank": 64,
+          "parks_rank": 60,
+          "restaurants_rank": 63,
           "shopping_rank": 48,
-          "parks_percentile": 8,
-          "restaurants_percentile": 3,
+          "parks_percentile": 9,
+          "restaurants_percentile": 5,
           "shopping_percentile": 28,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2432,7 +2560,7 @@
         "sub_scores": {
           "education": 80,
           "safety": 73,
-          "family_community": 47,
+          "family_community": 46,
           "commute": 55,
           "market_stability": 100
         },
@@ -2440,18 +2568,18 @@
           "parks_count": 29,
           "restaurants_count": 53,
           "shopping_count": 95,
-          "parks_rank": 38,
-          "restaurants_rank": 46,
+          "parks_rank": 37,
+          "restaurants_rank": 45,
           "shopping_rank": 31,
-          "parks_percentile": 43,
-          "restaurants_percentile": 31,
+          "parks_percentile": 45,
+          "restaurants_percentile": 32,
           "shopping_percentile": 54,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2573,7 +2701,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2676,7 +2804,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 61,
+          "family_community": 60,
           "commute": 38,
           "market_stability": 100
         },
@@ -2695,7 +2823,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2806,18 +2934,18 @@
           "parks_count": 16,
           "restaurants_count": 13,
           "shopping_count": 6,
-          "parks_rank": 33,
-          "restaurants_rank": 62,
-          "shopping_rank": 64,
-          "parks_percentile": 51,
-          "restaurants_percentile": 6,
-          "shopping_percentile": 3,
+          "parks_rank": 32,
+          "restaurants_rank": 61,
+          "shopping_rank": 63,
+          "parks_percentile": 52,
+          "restaurants_percentile": 8,
+          "shopping_percentile": 5,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -2920,7 +3048,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 62,
+          "family_community": 61,
           "commute": 48,
           "market_stability": 100
         },
@@ -2928,10 +3056,10 @@
           "parks_count": 95,
           "restaurants_count": 146,
           "shopping_count": 200,
-          "parks_rank": 17,
+          "parks_rank": 16,
           "restaurants_rank": 25,
           "shopping_rank": 27,
-          "parks_percentile": 75,
+          "parks_percentile": 77,
           "restaurants_percentile": 63,
           "shopping_percentile": 60,
           "parks_total_suburbs": 65,
@@ -2939,7 +3067,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3050,10 +3178,10 @@
           "parks_count": 14,
           "restaurants_count": 49,
           "shopping_count": 33,
-          "parks_rank": 53,
+          "parks_rank": 52,
           "restaurants_rank": 28,
           "shopping_rank": 53,
-          "parks_percentile": 20,
+          "parks_percentile": 22,
           "restaurants_percentile": 58,
           "shopping_percentile": 20,
           "parks_total_suburbs": 65,
@@ -3061,7 +3189,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3172,18 +3300,18 @@
           "parks_count": 443,
           "restaurants_count": 1136,
           "shopping_count": 1157,
-          "parks_rank": 56,
-          "restaurants_rank": 51,
+          "parks_rank": 55,
+          "restaurants_rank": 50,
           "shopping_rank": 52,
-          "parks_percentile": 15,
-          "restaurants_percentile": 23,
+          "parks_percentile": 17,
+          "restaurants_percentile": 25,
           "shopping_percentile": 22,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3286,7 +3414,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 70,
+          "family_community": 69,
           "commute": 51,
           "market_stability": 100
         },
@@ -3294,10 +3422,10 @@
           "parks_count": 227,
           "restaurants_count": 438,
           "shopping_count": 524,
-          "parks_rank": 23,
+          "parks_rank": 22,
           "restaurants_rank": 21,
           "shopping_rank": 29,
-          "parks_percentile": 66,
+          "parks_percentile": 68,
           "restaurants_percentile": 69,
           "shopping_percentile": 57,
           "parks_total_suburbs": 65,
@@ -3305,7 +3433,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3416,18 +3544,18 @@
           "parks_count": 103,
           "restaurants_count": 198,
           "shopping_count": 375,
-          "parks_rank": 58,
-          "restaurants_rank": 56,
+          "parks_rank": 57,
+          "restaurants_rank": 55,
           "shopping_rank": 41,
-          "parks_percentile": 12,
-          "restaurants_percentile": 15,
+          "parks_percentile": 14,
+          "restaurants_percentile": 17,
           "shopping_percentile": 38,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3539,17 +3667,17 @@
           "restaurants_count": 133,
           "shopping_count": 257,
           "parks_rank": 64,
-          "restaurants_rank": 60,
+          "restaurants_rank": 59,
           "shopping_rank": 49,
           "parks_percentile": 3,
-          "restaurants_percentile": 9,
+          "restaurants_percentile": 11,
           "shopping_percentile": 26,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3652,7 +3780,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 80,
-          "family_community": 52,
+          "family_community": 51,
           "commute": 61,
           "market_stability": 93
         },
@@ -3660,10 +3788,10 @@
           "parks_count": 35,
           "restaurants_count": 260,
           "shopping_count": 306,
-          "parks_rank": 43,
+          "parks_rank": 42,
           "restaurants_rank": 9,
           "shopping_rank": 9,
-          "parks_percentile": 35,
+          "parks_percentile": 37,
           "restaurants_percentile": 88,
           "shopping_percentile": 88,
           "parks_total_suburbs": 65,
@@ -3671,7 +3799,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3783,17 +3911,17 @@
           "restaurants_count": 9,
           "shopping_count": 8,
           "parks_rank": 65,
-          "restaurants_rank": 58,
-          "shopping_rank": 60,
+          "restaurants_rank": 57,
+          "shopping_rank": 59,
           "parks_percentile": 2,
-          "restaurants_percentile": 12,
-          "shopping_percentile": 9,
+          "restaurants_percentile": 14,
+          "shopping_percentile": 11,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "partial"
       }
     },
@@ -3896,7 +4024,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 83,
-          "family_community": 72,
+          "family_community": 71,
           "commute": 50,
           "market_stability": 62
         },
@@ -3915,7 +4043,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -3959,11 +4087,19 @@
         "market_condition": "balanced",
         "condo_median_price": 1221164.8
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Highland Park ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/highland-park-independent-school-district-tx/",
+        "split_isd": false
+      },
       "quiz": {
         "sfr_median_price": 3712327.6,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 36.5,
         "walk_score": 43,
         "transit_score": null,
@@ -3972,8 +4108,32 @@
         "owner_occupied_pct": 87.6,
         "wfh_pct": 21.4
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B-",
+        "nightlife": "A",
+        "families": "A+",
+        "diversity": "C",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A+",
+        "outdoor_activities": "B+",
+        "commute": "B",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 109,
         "restaurants": 95,
@@ -3981,11 +4141,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 36,
+        "family_score": 86,
+        "value_score": 44,
         "sub_scores": {
-          "education": null,
-          "safety": null,
+          "education": 97,
+          "safety": 83,
           "family_community": 78,
           "commute": 72,
           "market_stability": 100
@@ -4005,8 +4165,8 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "highland-village": {
@@ -4108,7 +4268,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 71,
+          "family_community": 70,
           "commute": 47,
           "market_stability": 100
         },
@@ -4116,10 +4276,10 @@
           "parks_count": 19,
           "restaurants_count": 37,
           "shopping_count": 87,
-          "parks_rank": 18,
+          "parks_rank": 17,
           "restaurants_rank": 19,
           "shopping_rank": 10,
-          "parks_percentile": 74,
+          "parks_percentile": 75,
           "restaurants_percentile": 72,
           "shopping_percentile": 86,
           "parks_total_suburbs": 65,
@@ -4127,7 +4287,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4230,7 +4390,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 77,
-          "family_community": 49,
+          "family_community": 48,
           "commute": 53,
           "market_stability": 98
         },
@@ -4238,10 +4398,10 @@
           "parks_count": 29,
           "restaurants_count": 72,
           "shopping_count": 144,
-          "parks_rank": 39,
+          "parks_rank": 38,
           "restaurants_rank": 27,
           "shopping_rank": 19,
-          "parks_percentile": 42,
+          "parks_percentile": 43,
           "restaurants_percentile": 60,
           "shopping_percentile": 72,
           "parks_total_suburbs": 65,
@@ -4249,7 +4409,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4360,18 +4520,18 @@
           "parks_count": 136,
           "restaurants_count": 309,
           "shopping_count": 428,
-          "parks_rank": 52,
-          "restaurants_rank": 50,
+          "parks_rank": 51,
+          "restaurants_rank": 49,
           "shopping_rank": 38,
-          "parks_percentile": 22,
-          "restaurants_percentile": 25,
+          "parks_percentile": 23,
+          "restaurants_percentile": 26,
           "shopping_percentile": 43,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4482,18 +4642,18 @@
           "parks_count": 26,
           "restaurants_count": 50,
           "shopping_count": 67,
-          "parks_rank": 50,
-          "restaurants_rank": 53,
+          "parks_rank": 49,
+          "restaurants_rank": 52,
           "shopping_rank": 42,
-          "parks_percentile": 25,
-          "restaurants_percentile": 20,
+          "parks_percentile": 26,
+          "restaurants_percentile": 22,
           "shopping_percentile": 37,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4505,7 +4665,20 @@
       "lat": 33.0893,
       "lng": -97.1311,
       "niche_city_slug": "lantana-denton-tx",
-      "demographics": null,
+      "demographics": {
+        "population": 12583,
+        "median_age": 40.2,
+        "land_area_sqmi": null,
+        "pop_density": null,
+        "median_household_income": 200147,
+        "pct_households_with_children": 55.3,
+        "owner_occupied_pct": 93.2,
+        "median_home_value_census": 542200,
+        "bachelors_plus_pct": 72.8,
+        "wfh_pct": 26.2,
+        "median_commute_min": 32.5,
+        "acs_vintage": "2023"
+      },
       "walkability": {
         "walk_score": 28,
         "walk_description": "Car-Dependent",
@@ -4537,13 +4710,13 @@
         "sfr_median_price": 650458.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
-        "pct_households_with_children": null,
+        "pct_households_with_children": 55.3,
         "walk_score": 28,
         "transit_score": null,
         "bike_score": 32,
-        "median_household_income": null,
-        "owner_occupied_pct": null,
-        "wfh_pct": null
+        "median_household_income": 200147,
+        "owner_occupied_pct": 93.2,
+        "wfh_pct": 26.2
       },
       "niche_city": {
         "overall": "A",
@@ -4578,13 +4751,13 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 62,
-        "value_score": 84,
+        "family_score": 82,
+        "value_score": 89,
         "sub_scores": {
           "education": 90,
           "safety": null,
-          "family_community": 2,
-          "commute": null,
+          "family_community": 91,
+          "commute": 42,
           "market_stability": 100
         },
         "amenity_ranks": {
@@ -4600,9 +4773,9 @@
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
-          "population_source": "estimate"
+          "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "partial"
       }
     },
@@ -4713,10 +4886,10 @@
           "parks_count": 82,
           "restaurants_count": 238,
           "shopping_count": 457,
-          "parks_rank": 47,
+          "parks_rank": 46,
           "restaurants_rank": 26,
           "shopping_rank": 20,
-          "parks_percentile": 29,
+          "parks_percentile": 31,
           "restaurants_percentile": 62,
           "shopping_percentile": 71,
           "parks_total_suburbs": 65,
@@ -4724,7 +4897,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4827,7 +5000,7 @@
         "sub_scores": {
           "education": 80,
           "safety": 80,
-          "family_community": 45,
+          "family_community": 44,
           "commute": 48,
           "market_stability": 96
         },
@@ -4835,18 +5008,18 @@
           "parks_count": 28,
           "restaurants_count": 39,
           "shopping_count": 58,
-          "parks_rank": 51,
-          "restaurants_rank": 57,
+          "parks_rank": 50,
+          "restaurants_rank": 56,
           "shopping_rank": 54,
-          "parks_percentile": 23,
-          "restaurants_percentile": 14,
+          "parks_percentile": 25,
+          "restaurants_percentile": 15,
           "shopping_percentile": 18,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -4958,17 +5131,17 @@
           "restaurants_count": 6,
           "shopping_count": 5,
           "parks_rank": 12,
-          "restaurants_rank": 59,
-          "shopping_rank": 61,
+          "restaurants_rank": 58,
+          "shopping_rank": 60,
           "parks_percentile": 83,
-          "restaurants_percentile": 11,
-          "shopping_percentile": 8,
+          "restaurants_percentile": 12,
+          "shopping_percentile": 9,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "partial"
       }
     },
@@ -5090,7 +5263,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5193,7 +5366,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 55,
+          "family_community": 54,
           "commute": 54,
           "market_stability": 100
         },
@@ -5201,18 +5374,18 @@
           "parks_count": 161,
           "restaurants_count": 305,
           "shopping_count": 351,
-          "parks_rank": 32,
-          "restaurants_rank": 39,
+          "parks_rank": 31,
+          "restaurants_rank": 38,
           "shopping_rank": 35,
-          "parks_percentile": 52,
-          "restaurants_percentile": 42,
+          "parks_percentile": 54,
+          "restaurants_percentile": 43,
           "shopping_percentile": 48,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5323,10 +5496,10 @@
           "parks_count": 17,
           "restaurants_count": 39,
           "shopping_count": 17,
-          "parks_rank": 26,
+          "parks_rank": 25,
           "restaurants_rank": 20,
           "shopping_rank": 58,
-          "parks_percentile": 62,
+          "parks_percentile": 63,
           "restaurants_percentile": 71,
           "shopping_percentile": 12,
           "parks_total_suburbs": 65,
@@ -5334,7 +5507,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5445,10 +5618,10 @@
           "parks_count": 97,
           "restaurants_count": 233,
           "shopping_count": 328,
-          "parks_rank": 45,
+          "parks_rank": 44,
           "restaurants_rank": 37,
           "shopping_rank": 32,
-          "parks_percentile": 32,
+          "parks_percentile": 34,
           "restaurants_percentile": 45,
           "shopping_percentile": 52,
           "parks_total_suburbs": 65,
@@ -5456,7 +5629,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5567,18 +5740,18 @@
           "parks_count": 24,
           "restaurants_count": 38,
           "shopping_count": 52,
-          "parks_rank": 46,
-          "restaurants_rank": 55,
+          "parks_rank": 45,
+          "restaurants_rank": 54,
           "shopping_rank": 44,
-          "parks_percentile": 31,
-          "restaurants_percentile": 17,
+          "parks_percentile": 32,
+          "restaurants_percentile": 18,
           "shopping_percentile": 34,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5681,7 +5854,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 87,
-          "family_community": 86,
+          "family_community": 85,
           "commute": 42,
           "market_stability": 100
         },
@@ -5689,10 +5862,10 @@
           "parks_count": 29,
           "restaurants_count": 79,
           "shopping_count": 85,
-          "parks_rank": 16,
+          "parks_rank": 15,
           "restaurants_rank": 11,
           "shopping_rank": 15,
-          "parks_percentile": 77,
+          "parks_percentile": 78,
           "restaurants_percentile": 85,
           "shopping_percentile": 78,
           "parks_total_suburbs": 65,
@@ -5700,7 +5873,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5803,7 +5976,7 @@
         "sub_scores": {
           "education": 87,
           "safety": 80,
-          "family_community": 32,
+          "family_community": 31,
           "commute": 50,
           "market_stability": 100
         },
@@ -5811,18 +5984,18 @@
           "parks_count": 44,
           "restaurants_count": 86,
           "shopping_count": 120,
-          "parks_rank": 49,
-          "restaurants_rank": 49,
+          "parks_rank": 48,
+          "restaurants_rank": 48,
           "shopping_rank": 36,
-          "parks_percentile": 26,
-          "restaurants_percentile": 26,
+          "parks_percentile": 28,
+          "restaurants_percentile": 28,
           "shopping_percentile": 46,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -5944,7 +6117,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6055,10 +6228,10 @@
           "parks_count": 137,
           "restaurants_count": 592,
           "shopping_count": 724,
-          "parks_rank": 55,
+          "parks_rank": 54,
           "restaurants_rank": 22,
           "shopping_rank": 28,
-          "parks_percentile": 17,
+          "parks_percentile": 18,
           "restaurants_percentile": 68,
           "shopping_percentile": 58,
           "parks_total_suburbs": 65,
@@ -6066,7 +6239,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6188,7 +6361,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6299,10 +6472,10 @@
           "parks_count": 35,
           "restaurants_count": 57,
           "shopping_count": 90,
-          "parks_rank": 24,
+          "parks_rank": 23,
           "restaurants_rank": 33,
           "shopping_rank": 26,
-          "parks_percentile": 65,
+          "parks_percentile": 66,
           "restaurants_percentile": 51,
           "shopping_percentile": 62,
           "parks_total_suburbs": 65,
@@ -6310,7 +6483,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6421,10 +6594,10 @@
           "parks_count": 74,
           "restaurants_count": 303,
           "shopping_count": 167,
-          "parks_rank": 48,
+          "parks_rank": 47,
           "restaurants_rank": 17,
           "shopping_rank": 43,
-          "parks_percentile": 28,
+          "parks_percentile": 29,
           "restaurants_percentile": 75,
           "shopping_percentile": 35,
           "parks_total_suburbs": 65,
@@ -6432,7 +6605,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6535,7 +6708,7 @@
         "sub_scores": {
           "education": 90,
           "safety": 83,
-          "family_community": 80,
+          "family_community": 79,
           "commute": 52,
           "market_stability": 98
         },
@@ -6554,7 +6727,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6665,10 +6838,10 @@
           "parks_count": 41,
           "restaurants_count": 129,
           "shopping_count": 183,
-          "parks_rank": 30,
+          "parks_rank": 29,
           "restaurants_rank": 16,
           "shopping_rank": 18,
-          "parks_percentile": 55,
+          "parks_percentile": 57,
           "restaurants_percentile": 77,
           "shopping_percentile": 74,
           "parks_total_suburbs": 65,
@@ -6676,7 +6849,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6787,18 +6960,18 @@
           "parks_count": 26,
           "restaurants_count": 69,
           "shopping_count": 79,
-          "parks_rank": 59,
-          "restaurants_rank": 54,
+          "parks_rank": 58,
+          "restaurants_rank": 53,
           "shopping_rank": 51,
-          "parks_percentile": 11,
-          "restaurants_percentile": 18,
+          "parks_percentile": 12,
+          "restaurants_percentile": 20,
           "shopping_percentile": 23,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -6909,18 +7082,18 @@
           "parks_count": 7,
           "restaurants_count": 26,
           "shopping_count": 17,
-          "parks_rank": 60,
-          "restaurants_rank": 40,
+          "parks_rank": 59,
+          "restaurants_rank": 39,
           "shopping_rank": 57,
-          "parks_percentile": 9,
-          "restaurants_percentile": 40,
+          "parks_percentile": 11,
+          "restaurants_percentile": 42,
           "shopping_percentile": 14,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7031,18 +7204,18 @@
           "parks_count": 14,
           "restaurants_count": 37,
           "shopping_count": 17,
-          "parks_rank": 54,
-          "restaurants_rank": 48,
-          "shopping_rank": 62,
-          "parks_percentile": 18,
-          "restaurants_percentile": 28,
-          "shopping_percentile": 6,
+          "parks_rank": 53,
+          "restaurants_rank": 47,
+          "shopping_rank": 61,
+          "parks_percentile": 20,
+          "restaurants_percentile": 29,
+          "shopping_percentile": 8,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7145,7 +7318,7 @@
         "sub_scores": {
           "education": 90,
           "safety": 77,
-          "family_community": 58,
+          "family_community": 57,
           "commute": 49,
           "market_stability": 100
         },
@@ -7154,17 +7327,17 @@
           "restaurants_count": 35,
           "shopping_count": 59,
           "parks_rank": 10,
-          "restaurants_rank": 43,
+          "restaurants_rank": 42,
           "shopping_rank": 30,
           "parks_percentile": 86,
-          "restaurants_percentile": 35,
+          "restaurants_percentile": 37,
           "shopping_percentile": 55,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7267,7 +7440,7 @@
         "sub_scores": {
           "education": 97,
           "safety": 83,
-          "family_community": 83,
+          "family_community": 82,
           "commute": 45,
           "market_stability": 100
         },
@@ -7275,10 +7448,10 @@
           "parks_count": 44,
           "restaurants_count": 85,
           "shopping_count": 159,
-          "parks_rank": 15,
+          "parks_rank": 14,
           "restaurants_rank": 14,
           "shopping_rank": 11,
-          "parks_percentile": 78,
+          "parks_percentile": 80,
           "restaurants_percentile": 80,
           "shopping_percentile": 85,
           "parks_total_suburbs": 65,
@@ -7286,7 +7459,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7389,7 +7562,7 @@
         "sub_scores": {
           "education": 93,
           "safety": 80,
-          "family_community": 41,
+          "family_community": 40,
           "commute": 46,
           "market_stability": 100
         },
@@ -7397,10 +7570,10 @@
           "parks_count": 45,
           "restaurants_count": 76,
           "shopping_count": 58,
-          "parks_rank": 25,
+          "parks_rank": 24,
           "restaurants_rank": 31,
           "shopping_rank": 50,
-          "parks_percentile": 63,
+          "parks_percentile": 65,
           "restaurants_percentile": 54,
           "shopping_percentile": 25,
           "parks_total_suburbs": 65,
@@ -7408,7 +7581,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7511,7 +7684,7 @@
         "sub_scores": {
           "education": 90,
           "safety": 90,
-          "family_community": 56,
+          "family_community": 55,
           "commute": 55,
           "market_stability": 95
         },
@@ -7519,10 +7692,10 @@
           "parks_count": 15,
           "restaurants_count": 27,
           "shopping_count": 18,
-          "parks_rank": 22,
+          "parks_rank": 21,
           "restaurants_rank": 23,
           "shopping_rank": 46,
-          "parks_percentile": 68,
+          "parks_percentile": 69,
           "restaurants_percentile": 66,
           "shopping_percentile": 31,
           "parks_total_suburbs": 65,
@@ -7530,7 +7703,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7574,11 +7747,19 @@
         "market_condition": "seller",
         "condo_median_price": 663200
       },
-      "schools": null,
+      "schools": {
+        "isd_name": "Highland Park ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/highland-park-independent-school-district-tx/",
+        "split_isd": false
+      },
       "quiz": {
         "sfr_median_price": 2760227.1,
-        "overall_isd_grade": null,
-        "academics_isd_grade": null,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 49.4,
         "walk_score": 61,
         "transit_score": 28,
@@ -7587,8 +7768,32 @@
         "owner_occupied_pct": 85,
         "wfh_pct": 21.4
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A+",
+        "public_schools": "A+",
+        "crime": "B",
+        "housing": "B-",
+        "nightlife": "A",
+        "families": "A+",
+        "diversity": "C+",
+        "jobs": "A-",
+        "weather": "B+",
+        "cost_of_living": "B-",
+        "health_fitness": "A+",
+        "outdoor_activities": "B",
+        "commute": "A",
+        "scraped_date": "2026-05-19"
+      },
+      "crime": {
+        "niche_crime_grade": "B",
+        "niche_crime_numeric": 83,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": {
         "parks": 29,
         "restaurants": 30,
@@ -7596,12 +7801,12 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 36,
+        "family_score": 84,
+        "value_score": 44,
         "sub_scores": {
-          "education": null,
-          "safety": null,
-          "family_community": 68,
+          "education": 97,
+          "safety": 83,
+          "family_community": 67,
           "commute": 74,
           "market_stability": 100
         },
@@ -7609,19 +7814,19 @@
           "parks_count": 29,
           "restaurants_count": 30,
           "shopping_count": 74,
-          "parks_rank": 20,
-          "restaurants_rank": 52,
+          "parks_rank": 19,
+          "restaurants_rank": 51,
           "shopping_rank": 21,
-          "parks_percentile": 71,
-          "restaurants_percentile": 22,
+          "parks_percentile": 72,
+          "restaurants_percentile": 23,
           "shopping_percentile": 69,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
-        "data_completeness": "partial"
+        "computed_date": "2026-05-19T17:23:30.059Z",
+        "data_completeness": "full"
       }
     },
     "waxahachie": {
@@ -7723,7 +7928,7 @@
         "sub_scores": {
           "education": 90,
           "safety": 80,
-          "family_community": 47,
+          "family_community": 46,
           "commute": 61,
           "market_stability": 94
         },
@@ -7731,10 +7936,10 @@
           "parks_count": 31,
           "restaurants_count": 82,
           "shopping_count": 58,
-          "parks_rank": 42,
+          "parks_rank": 41,
           "restaurants_rank": 24,
           "shopping_rank": 47,
-          "parks_percentile": 37,
+          "parks_percentile": 38,
           "restaurants_percentile": 65,
           "shopping_percentile": 29,
           "parks_total_suburbs": 65,
@@ -7742,7 +7947,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     },
@@ -7864,7 +8069,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "partial"
       }
     },
@@ -7975,18 +8180,18 @@
           "parks_count": 44,
           "restaurants_count": 77,
           "shopping_count": 82,
-          "parks_rank": 35,
-          "restaurants_rank": 47,
+          "parks_rank": 34,
+          "restaurants_rank": 46,
           "shopping_rank": 45,
-          "parks_percentile": 48,
-          "restaurants_percentile": 29,
+          "parks_percentile": 49,
+          "restaurants_percentile": 31,
           "shopping_percentile": 32,
           "parks_total_suburbs": 65,
           "restaurants_total_suburbs": 65,
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T16:41:10.433Z",
+        "computed_date": "2026-05-19T17:23:30.059Z",
         "data_completeness": "full"
       }
     }
