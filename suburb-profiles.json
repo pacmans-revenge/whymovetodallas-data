@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-19T17:23:30.080Z",
+    "last_updated": "2026-05-20T02:25:20.815Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -59,7 +59,10 @@
         "sfr_months_supply": 4.3,
         "sfr_closed_sales_12mo": 61,
         "market_condition": "balanced",
-        "condo_median_price": 300312.5
+        "condo_median_price": 300312.5,
+        "condo_closed_sales_12mo": 25,
+        "condo_days_on_market": 61.8,
+        "condo_months_supply": 4.9
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -139,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -181,7 +184,10 @@
         "sfr_months_supply": 3.4,
         "sfr_closed_sales_12mo": 1008,
         "market_condition": "balanced",
-        "condo_median_price": 379466.3
+        "condo_median_price": 379466.3,
+        "condo_closed_sales_12mo": 17,
+        "condo_days_on_market": 124,
+        "condo_months_supply": 5.9
       },
       "schools": {
         "isd_name": "Allen ISD",
@@ -261,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -303,7 +309,10 @@
         "sfr_months_supply": 6,
         "sfr_closed_sales_12mo": 791,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Anna ISD",
@@ -383,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -425,7 +434,10 @@
         "sfr_months_supply": 4.7,
         "sfr_closed_sales_12mo": 462,
         "market_condition": "balanced",
-        "condo_median_price": 402982
+        "condo_median_price": 402982,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 36,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Argyle ISD",
@@ -505,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -547,7 +559,10 @@
         "sfr_months_supply": 3.1,
         "sfr_closed_sales_12mo": 2832,
         "market_condition": "balanced",
-        "condo_median_price": 145528.7
+        "condo_median_price": 145528.7,
+        "condo_closed_sales_12mo": 112,
+        "condo_days_on_market": 75.8,
+        "condo_months_supply": 8.8
       },
       "schools": {
         "isd_name": "Arlington ISD",
@@ -627,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -669,7 +684,10 @@
         "sfr_months_supply": 6,
         "sfr_closed_sales_12mo": 927,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Aubrey ISD",
@@ -749,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -791,7 +809,10 @@
         "sfr_months_supply": 4.7,
         "sfr_closed_sales_12mo": 579,
         "market_condition": "balanced",
-        "condo_median_price": 312000
+        "condo_median_price": 312000,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 6,
+        "condo_months_supply": 0.8
       },
       "schools": {
         "isd_name": "Azle ISD",
@@ -871,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -913,7 +934,10 @@
         "sfr_months_supply": 2.4,
         "sfr_closed_sales_12mo": 469,
         "market_condition": "seller",
-        "condo_median_price": 255244.5
+        "condo_median_price": 255244.5,
+        "condo_closed_sales_12mo": 8,
+        "condo_days_on_market": 43.9,
+        "condo_months_supply": 1.8
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -993,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1035,7 +1059,10 @@
         "sfr_months_supply": 3.9,
         "sfr_closed_sales_12mo": 954,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Burleson ISD",
@@ -1115,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1157,7 +1184,10 @@
         "sfr_months_supply": 2.9,
         "sfr_closed_sales_12mo": 1060,
         "market_condition": "seller",
-        "condo_median_price": 252166.7
+        "condo_median_price": 252166.7,
+        "condo_closed_sales_12mo": 41,
+        "condo_days_on_market": 62.5,
+        "condo_months_supply": 9.8
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -1237,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1279,7 +1309,10 @@
         "sfr_months_supply": 4.2,
         "sfr_closed_sales_12mo": 482,
         "market_condition": "balanced",
-        "condo_median_price": 153125
+        "condo_median_price": 153125,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 11,
+        "condo_months_supply": 0.9
       },
       "schools": {
         "isd_name": "Cedar Hill ISD",
@@ -1359,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1401,7 +1434,10 @@
         "sfr_months_supply": 6.7,
         "sfr_closed_sales_12mo": 1627,
         "market_condition": "buyer",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Celina ISD",
@@ -1481,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1523,7 +1559,10 @@
         "sfr_months_supply": 5.1,
         "sfr_closed_sales_12mo": 800,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Cleburne ISD",
@@ -1603,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1645,7 +1684,10 @@
         "sfr_months_supply": 2.8,
         "sfr_closed_sales_12mo": 342,
         "market_condition": "seller",
-        "condo_median_price": 440979.2
+        "condo_median_price": 440979.2,
+        "condo_closed_sales_12mo": 10,
+        "condo_days_on_market": 55,
+        "condo_months_supply": 3.5
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -1725,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1767,7 +1809,10 @@
         "sfr_months_supply": 2.5,
         "sfr_closed_sales_12mo": 340,
         "market_condition": "seller",
-        "condo_median_price": 258729.2
+        "condo_median_price": 258729.2,
+        "condo_closed_sales_12mo": 6,
+        "condo_days_on_market": 29.5,
+        "condo_months_supply": 1.2
       },
       "schools": {
         "isd_name": "Coppell ISD",
@@ -1847,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -1889,7 +1934,10 @@
         "sfr_months_supply": 3.4,
         "sfr_closed_sales_12mo": 394,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Lake Dallas ISD",
@@ -1969,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2011,7 +2059,10 @@
         "sfr_months_supply": 3.4,
         "sfr_closed_sales_12mo": 824,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Crandall ISD",
@@ -2091,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2133,7 +2184,10 @@
         "sfr_months_supply": 4.5,
         "sfr_closed_sales_12mo": 7813,
         "market_condition": "balanced",
-        "condo_median_price": 268594
+        "condo_median_price": 268594,
+        "condo_closed_sales_12mo": 1506,
+        "condo_days_on_market": 53.3,
+        "condo_months_supply": 8.7
       },
       "schools": {
         "isd_name": "Dallas ISD",
@@ -2213,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2255,7 +2309,10 @@
         "sfr_months_supply": 4.5,
         "sfr_closed_sales_12mo": 1768,
         "market_condition": "balanced",
-        "condo_median_price": 230656.3
+        "condo_median_price": 230656.3,
+        "condo_closed_sales_12mo": 8,
+        "condo_days_on_market": 84.8,
+        "condo_months_supply": 5.5
       },
       "schools": {
         "isd_name": "Denton ISD",
@@ -2335,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2377,7 +2434,10 @@
         "sfr_months_supply": 4.5,
         "sfr_closed_sales_12mo": 446,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "DeSoto ISD",
@@ -2457,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2499,7 +2559,10 @@
         "sfr_months_supply": 3.8,
         "sfr_closed_sales_12mo": 255,
         "market_condition": "balanced",
-        "condo_median_price": 175211.1
+        "condo_median_price": 175211.1,
+        "condo_closed_sales_12mo": 2,
+        "condo_days_on_market": 84.2,
+        "condo_months_supply": 2.4
       },
       "schools": {
         "isd_name": "Duncanville ISD",
@@ -2579,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2621,7 +2684,10 @@
         "sfr_months_supply": 2.4,
         "sfr_closed_sales_12mo": 375,
         "market_condition": "seller",
-        "condo_median_price": 250816.7
+        "condo_median_price": 250816.7,
+        "condo_closed_sales_12mo": 1,
+        "condo_days_on_market": 39.7,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -2701,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2743,7 +2809,10 @@
         "sfr_months_supply": 4.4,
         "sfr_closed_sales_12mo": 141,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Lovejoy ISD",
@@ -2823,7 +2892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2865,7 +2934,10 @@
         "sfr_months_supply": 4.4,
         "sfr_closed_sales_12mo": 470,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -2945,7 +3017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -2987,7 +3059,10 @@
         "sfr_months_supply": 2.8,
         "sfr_closed_sales_12mo": 897,
         "market_condition": "seller",
-        "condo_median_price": 1524375
+        "condo_median_price": 1524375,
+        "condo_closed_sales_12mo": 1,
+        "condo_days_on_market": 81.8,
+        "condo_months_supply": 4.3
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -3067,7 +3142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3109,7 +3184,10 @@
         "sfr_months_supply": 5.4,
         "sfr_closed_sales_12mo": 1742,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Forney ISD",
@@ -3189,7 +3267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3231,7 +3309,10 @@
         "sfr_months_supply": 3.9,
         "sfr_closed_sales_12mo": 10366,
         "market_condition": "balanced",
-        "condo_median_price": 279596.6
+        "condo_median_price": 279596.6,
+        "condo_closed_sales_12mo": 209,
+        "condo_days_on_market": 57.8,
+        "condo_months_supply": 8.4
       },
       "schools": {
         "isd_name": "Fort Worth ISD",
@@ -3311,7 +3392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3353,7 +3434,10 @@
         "sfr_months_supply": 4.5,
         "sfr_closed_sales_12mo": 2151,
         "market_condition": "balanced",
-        "condo_median_price": 736446.8
+        "condo_median_price": 736446.8,
+        "condo_closed_sales_12mo": 3,
+        "condo_days_on_market": 164,
+        "condo_months_supply": 3.5
       },
       "schools": {
         "isd_name": "Frisco ISD",
@@ -3433,7 +3517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3475,7 +3559,10 @@
         "sfr_months_supply": 3.9,
         "sfr_closed_sales_12mo": 1686,
         "market_condition": "balanced",
-        "condo_median_price": 148152.1
+        "condo_median_price": 148152.1,
+        "condo_closed_sales_12mo": 31,
+        "condo_days_on_market": 83.8,
+        "condo_months_supply": 12.2
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -3555,7 +3642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3597,7 +3684,10 @@
         "sfr_months_supply": 3.5,
         "sfr_closed_sales_12mo": 1110,
         "market_condition": "balanced",
-        "condo_median_price": 155408.3
+        "condo_median_price": 155408.3,
+        "condo_closed_sales_12mo": 7,
+        "condo_days_on_market": 120,
+        "condo_months_supply": 5.4
       },
       "schools": {
         "isd_name": "Grand Prairie ISD",
@@ -3677,7 +3767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3719,7 +3809,10 @@
         "sfr_months_supply": 2.2,
         "sfr_closed_sales_12mo": 478,
         "market_condition": "seller",
-        "condo_median_price": 462083.3
+        "condo_median_price": 462083.3,
+        "condo_closed_sales_12mo": 5,
+        "condo_days_on_market": 57.6,
+        "condo_months_supply": 6.2
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -3799,7 +3892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -3841,7 +3934,10 @@
         "sfr_months_supply": 4.8,
         "sfr_closed_sales_12mo": 396,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Eagle Mountain-Saginaw ISD",
@@ -3921,7 +4017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "partial"
       }
     },
@@ -3963,7 +4059,10 @@
         "sfr_months_supply": 9.3,
         "sfr_closed_sales_12mo": 238,
         "market_condition": "buyer",
-        "condo_median_price": 318626.3
+        "condo_median_price": 318626.3,
+        "condo_closed_sales_12mo": 2,
+        "condo_days_on_market": 57,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -4043,7 +4142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4085,7 +4184,10 @@
         "sfr_months_supply": 3.7,
         "sfr_closed_sales_12mo": 75,
         "market_condition": "balanced",
-        "condo_median_price": 1221164.8
+        "condo_median_price": 1221164.8,
+        "condo_closed_sales_12mo": 10,
+        "condo_days_on_market": 33.3,
+        "condo_months_supply": 2.7
       },
       "schools": {
         "isd_name": "Highland Park ISD",
@@ -4165,7 +4267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4207,7 +4309,10 @@
         "sfr_months_supply": 2.8,
         "sfr_closed_sales_12mo": 191,
         "market_condition": "seller",
-        "condo_median_price": 537500
+        "condo_median_price": 537500,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 28,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -4287,7 +4392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4329,7 +4434,10 @@
         "sfr_months_supply": 2.4,
         "sfr_closed_sales_12mo": 410,
         "market_condition": "seller",
-        "condo_median_price": 181648.3
+        "condo_median_price": 181648.3,
+        "condo_closed_sales_12mo": 7,
+        "condo_days_on_market": 50,
+        "condo_months_supply": 2.9
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -4409,7 +4517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4451,7 +4559,10 @@
         "sfr_months_supply": 3.9,
         "sfr_closed_sales_12mo": 897,
         "market_condition": "balanced",
-        "condo_median_price": 272821.7
+        "condo_median_price": 272821.7,
+        "condo_closed_sales_12mo": 108,
+        "condo_days_on_market": 53.3,
+        "condo_months_supply": 8.4
       },
       "schools": {
         "isd_name": "Irving ISD",
@@ -4531,7 +4642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4573,7 +4684,10 @@
         "sfr_months_supply": 3,
         "sfr_closed_sales_12mo": 553,
         "market_condition": "balanced",
-        "condo_median_price": 544762.4
+        "condo_median_price": 544762.4,
+        "condo_closed_sales_12mo": 2,
+        "condo_days_on_market": 24.1,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Keller ISD",
@@ -4653,7 +4767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4695,7 +4809,10 @@
         "sfr_months_supply": 2.9,
         "sfr_closed_sales_12mo": 172,
         "market_condition": "seller",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -4775,7 +4892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "partial"
       }
     },
@@ -4817,7 +4934,10 @@
         "sfr_months_supply": 3.3,
         "sfr_closed_sales_12mo": 773,
         "market_condition": "balanced",
-        "condo_median_price": 340217.2
+        "condo_median_price": 340217.2,
+        "condo_closed_sales_12mo": 15,
+        "condo_days_on_market": 61.7,
+        "condo_months_supply": 3.6
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -4897,7 +5017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -4939,7 +5059,10 @@
         "sfr_months_supply": 5,
         "sfr_closed_sales_12mo": 1164,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Little Elm ISD",
@@ -5019,7 +5142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5061,7 +5184,10 @@
         "sfr_months_supply": 4.6,
         "sfr_closed_sales_12mo": 155,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Lovejoy ISD",
@@ -5141,7 +5267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "partial"
       }
     },
@@ -5183,7 +5309,10 @@
         "sfr_months_supply": 3.8,
         "sfr_closed_sales_12mo": 1169,
         "market_condition": "balanced",
-        "condo_median_price": 431376.7
+        "condo_median_price": 431376.7,
+        "condo_closed_sales_12mo": 9,
+        "condo_days_on_market": 86.2,
+        "condo_months_supply": 3.4
       },
       "schools": {
         "isd_name": "Mansfield ISD",
@@ -5263,7 +5392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5305,7 +5434,10 @@
         "sfr_months_supply": 3.9,
         "sfr_closed_sales_12mo": 3462,
         "market_condition": "balanced",
-        "condo_median_price": 434458.3
+        "condo_median_price": 434458.3,
+        "condo_closed_sales_12mo": 36,
+        "condo_days_on_market": 70,
+        "condo_months_supply": 4.6
       },
       "schools": {
         "isd_name": "McKinney ISD",
@@ -5385,7 +5517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5427,7 +5559,10 @@
         "sfr_months_supply": 5.1,
         "sfr_closed_sales_12mo": 430,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Melissa ISD",
@@ -5507,7 +5642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5549,7 +5684,10 @@
         "sfr_months_supply": 4.9,
         "sfr_closed_sales_12mo": 1411,
         "market_condition": "balanced",
-        "condo_median_price": 130410.4
+        "condo_median_price": 130410.4,
+        "condo_closed_sales_12mo": 3,
+        "condo_days_on_market": 41.5,
+        "condo_months_supply": 1.7
       },
       "schools": {
         "isd_name": "Mesquite ISD",
@@ -5629,7 +5767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5671,7 +5809,10 @@
         "sfr_months_supply": 4.3,
         "sfr_closed_sales_12mo": 998,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Midlothian ISD",
@@ -5751,7 +5892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5793,7 +5934,10 @@
         "sfr_months_supply": 4.3,
         "sfr_closed_sales_12mo": 154,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -5873,7 +6017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -5915,7 +6059,10 @@
         "sfr_months_supply": 3,
         "sfr_closed_sales_12mo": 749,
         "market_condition": "balanced",
-        "condo_median_price": 274799.5
+        "condo_median_price": 274799.5,
+        "condo_closed_sales_12mo": 1,
+        "condo_days_on_market": 105.5,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Birdville ISD",
@@ -5995,7 +6142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6037,7 +6184,10 @@
         "sfr_months_supply": 5,
         "sfr_closed_sales_12mo": 416,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -6117,7 +6267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6159,7 +6309,10 @@
         "sfr_months_supply": 3.4,
         "sfr_closed_sales_12mo": 2230,
         "market_condition": "balanced",
-        "condo_median_price": 343902.1
+        "condo_median_price": 343902.1,
+        "condo_closed_sales_12mo": 62,
+        "condo_days_on_market": 41.4,
+        "condo_months_supply": 6.2
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -6239,7 +6392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6281,7 +6434,10 @@
         "sfr_months_supply": 3.7,
         "sfr_closed_sales_12mo": 2207,
         "market_condition": "balanced",
-        "condo_median_price": 288666.7
+        "condo_median_price": 288666.7,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 348,
+        "condo_months_supply": 0.9
       },
       "schools": {
         "isd_name": "Princeton ISD",
@@ -6361,7 +6517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6403,7 +6559,10 @@
         "sfr_months_supply": 5.4,
         "sfr_closed_sales_12mo": 796,
         "market_condition": "balanced",
-        "condo_median_price": 524000
+        "condo_median_price": 524000,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 76,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Prosper ISD",
@@ -6483,7 +6642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6525,7 +6684,10 @@
         "sfr_months_supply": 3,
         "sfr_closed_sales_12mo": 955,
         "market_condition": "balanced",
-        "condo_median_price": 209214.8
+        "condo_median_price": 209214.8,
+        "condo_closed_sales_12mo": 35,
+        "condo_days_on_market": 85,
+        "condo_months_supply": 8.8
       },
       "schools": {
         "isd_name": "Richardson ISD",
@@ -6605,7 +6767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6647,7 +6809,10 @@
         "sfr_months_supply": 4.8,
         "sfr_closed_sales_12mo": 126,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -6727,7 +6892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6769,7 +6934,10 @@
         "sfr_months_supply": 6.3,
         "sfr_closed_sales_12mo": 881,
         "market_condition": "buyer",
-        "condo_median_price": 241847.9
+        "condo_median_price": 241847.9,
+        "condo_closed_sales_12mo": 37,
+        "condo_days_on_market": 49.1,
+        "condo_months_supply": 7.4
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -6849,7 +7017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -6891,7 +7059,10 @@
         "sfr_months_supply": 4.9,
         "sfr_closed_sales_12mo": 762,
         "market_condition": "balanced",
-        "condo_median_price": 316666.7
+        "condo_median_price": 316666.7,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 60.3,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -6971,7 +7142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7013,7 +7184,10 @@
         "sfr_months_supply": 6.5,
         "sfr_closed_sales_12mo": 830,
         "market_condition": "buyer",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Royse City ISD",
@@ -7093,7 +7267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7135,7 +7309,10 @@
         "sfr_months_supply": 4.3,
         "sfr_closed_sales_12mo": 246,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -7215,7 +7392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7257,7 +7434,10 @@
         "sfr_months_supply": 3.2,
         "sfr_closed_sales_12mo": 266,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Eagle Mountain-Saginaw ISD",
@@ -7337,7 +7517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7379,7 +7559,10 @@
         "sfr_months_supply": 4.2,
         "sfr_closed_sales_12mo": 398,
         "market_condition": "balanced",
-        "condo_median_price": 666567.8
+        "condo_median_price": 666567.8,
+        "condo_closed_sales_12mo": 13,
+        "condo_days_on_market": 85.8,
+        "condo_months_supply": 3.2
       },
       "schools": {
         "isd_name": "Carroll ISD",
@@ -7459,7 +7642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7501,7 +7684,10 @@
         "sfr_months_supply": 3.5,
         "sfr_closed_sales_12mo": 486,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -7581,7 +7767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7623,7 +7809,10 @@
         "sfr_months_supply": 2.3,
         "sfr_closed_sales_12mo": 212,
         "market_condition": "seller",
-        "condo_median_price": 650000
+        "condo_median_price": 650000,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 60,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -7703,7 +7892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7745,7 +7934,10 @@
         "sfr_months_supply": 2.6,
         "sfr_closed_sales_12mo": 179,
         "market_condition": "seller",
-        "condo_median_price": 663200
+        "condo_median_price": 663200,
+        "condo_closed_sales_12mo": 21,
+        "condo_days_on_market": 37.4,
+        "condo_months_supply": 3.7
       },
       "schools": {
         "isd_name": "Highland Park ISD",
@@ -7825,7 +8017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7867,7 +8059,10 @@
         "sfr_months_supply": 5.2,
         "sfr_closed_sales_12mo": 1112,
         "market_condition": "balanced",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Waxahachie ISD",
@@ -7947,7 +8142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     },
@@ -7989,7 +8184,10 @@
         "sfr_months_supply": 16.5,
         "sfr_closed_sales_12mo": 24,
         "market_condition": "buyer",
-        "condo_median_price": null
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
       },
       "schools": {
         "isd_name": "Carroll ISD",
@@ -8069,7 +8267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "partial"
       }
     },
@@ -8111,7 +8309,10 @@
         "sfr_months_supply": 4.5,
         "sfr_closed_sales_12mo": 689,
         "market_condition": "balanced",
-        "condo_median_price": 269500
+        "condo_median_price": 269500,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": 28,
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Wylie ISD",
@@ -8191,7 +8392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-19T17:23:30.059Z",
+        "computed_date": "2026-05-20T02:25:20.796Z",
         "data_completeness": "full"
       }
     }
