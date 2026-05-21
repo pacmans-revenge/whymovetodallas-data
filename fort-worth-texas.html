@@ -7,6 +7,7 @@
 <meta name="description" content="Everything relocating families need to know about Fort Worth, Texas — Fort Worth ISD vs Keller ISD vs Aledo ISD, best neighborhoods, property taxes, cost of living vs California, TEXRail transit, and homes. From DFW relocation specialist Kristen Carpentier.">
 <link rel="canonical" href="https://whymovetodallas.com/fort-worth-texas" />
 <link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -362,192 +363,8 @@
 <!-- NOTE: Add fort-worth-hero.webp to scripts/image-manifest.json with Squarespace CDN URL,
      then replace background-color fallback in .kc-hero with background-image URL below. -->
 
-<style>
-/* ─── TOKENS ─────────────────────────────────────────────────────────────── */
-:root {
-  --navy:   #1F2D3D;
-  --gold:   #B08D57;
-  --ivory:  #F7F4EE;
-  --stone:  #C8C1B6;
-  --charcoal: #232323;
-  --white:  #fff;
-}
 
-/* ─── RESET / BASE ───────────────────────────────────────────────────────── */
-.kc-wrap *, .kc-wrap *::before, .kc-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
-.kc-wrap { font-family: 'Jost', 'Helvetica Neue', Arial, sans-serif; color: var(--charcoal); background: var(--ivory); }
-.kc-wrap a { color: var(--navy); }
-.kc-wrap h1,h2,h3,h4 { font-family: 'Cormorant Garamond', Georgia, serif; color: var(--navy); }
-.kc-wrap p { line-height: 1.7; }
-
-/* ─── LAYOUT ─────────────────────────────────────────────────────────────── */
-.kc-section  { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-.kc-section--wide { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
-.kc-grid--2  { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-.kc-grid--3  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.kc-grid--4  { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-@media (max-width: 768px) {
-  .kc-grid--2, .kc-grid--3, .kc-grid--4 { grid-template-columns: 1fr; }
-}
-@media (min-width: 480px) and (max-width: 768px) {
-  .kc-grid--4 { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* ─── HERO ───────────────────────────────────────────────────────────────── */
-.kc-hero {
-  /* Replace background-color with background-image once fort-worth-hero.webp is in manifest:
-     background-image: url('/images/fort-worth-hero.webp'); */
-  background-color: var(--navy);
-  background-size: cover; background-position: center;
-  min-height: 480px; display: flex; align-items: flex-end;
-  position: relative;
-}
-.kc-hero::after { content:''; position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.18) 60%, transparent 100%); }
-.kc-hero-inner { position: relative; z-index: 2; padding: 2.5rem 1.5rem; max-width: 900px; margin: 0 auto; width: 100%; }
-.kc-hero-loc  { font-size: 0.8rem; color: rgba(255,255,255,0.75); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.5rem; }
-.kc-hero h1   { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem,5vw,3.25rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 1rem; }
-.kc-hero-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-
-/* ─── BUTTONS ────────────────────────────────────────────────────────────── */
-.kc-btn { display: inline-block; padding: 0.7rem 1.4rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; text-align: center; cursor: pointer; border: none; font-family: 'Jost', sans-serif; }
-.kc-btn--gold  { background: var(--gold);  color: #fff; }
-.kc-btn--navy  { background: var(--navy);  color: #fff; }
-.kc-btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.6); }
-.kc-btn--gold:hover  { background: #9a7a48; }
-.kc-btn--navy:hover  { background: #162330; }
-
-/* ─── STATS BAR ──────────────────────────────────────────────────────────── */
-.kc-stats-bar { background: var(--navy); color: #fff; }
-.kc-stats-inner { max-width: 900px; margin: 0 auto; padding: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1rem; }
-.kc-stat { text-align: center; min-width: 110px; }
-.kc-stat-num { font-size: 1.5rem; font-weight: 700; font-family: 'Cormorant Garamond', Georgia, serif; }
-.kc-stat-label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; margin-top: 0.2rem; }
-
-/* ─── JUMP NAV ───────────────────────────────────────────────────────────── */
-.kc-jumpnav { background: var(--white); border-bottom: 1px solid #e0ddd6; position: sticky; top: 0; z-index: 100; }
-.kc-jumpnav-inner { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; display: flex; overflow-x: auto; gap: 0; }
-.kc-jumpnav-inner::-webkit-scrollbar { display: none; }
-.kc-jumpnav a { display: block; padding: 0.85rem 0.9rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #888; text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
-.kc-jumpnav a:hover { color: var(--navy); border-bottom-color: var(--gold); }
-
-/* ─── TYPOGRAPHY ─────────────────────────────────────────────────────────── */
-.kc-eyebrow { display: block; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; font-weight: 600; }
-.kc-section h2 { font-size: clamp(1.5rem,3vw,2rem); margin-bottom: 1rem; }
-.kc-section h3 { font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--navy); font-family: 'Cormorant Garamond', serif; }
-.kc-divider { border: none; border-top: 1px solid #e0ddd6; margin: 0; }
-
-/* ─── CARDS ──────────────────────────────────────────────────────────────── */
-.kc-card { background: var(--white); border: 1px solid #e0ddd6; border-radius: 8px; padding: 1.5rem; }
-.kc-card--gold { background: var(--white); border-top: 3px solid var(--gold); border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-.kc-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-.kc-card p  { font-size: 0.88rem; color: #555; margin-bottom: 0.75rem; }
-.kc-card-icon { display: block; width: 32px; height: 32px; margin-bottom: 0.6rem; }
-.kc-card-meta { font-size: 0.78rem; color: var(--gold); font-weight: 600; }
-.kc-tag { display: inline-block; background: var(--ivory); border: 1px solid var(--stone); border-radius: 20px; padding: 0.25rem 0.7rem; font-size: 0.75rem; font-weight: 500; color: var(--navy); margin: 0.2rem; }
-
-/* ─── CALLOUT ────────────────────────────────────────────────────────────── */
-.kc-callout { background: var(--ivory); border-left: 3px solid var(--gold); border-radius: 0 6px 6px 0; padding: 1.1rem 1.25rem; margin-top: 1.5rem; font-size: 0.88rem; }
-.kc-callout strong { color: var(--navy); }
-
-/* ─── DATA TOP STRIP ─────────────────────────────────────────────────────── */
-.kc-data-top { background: var(--ivory); border-top: 1px solid #e0ddd6; border-bottom: 1px solid #e0ddd6; }
-.kc-data-top-inner { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; justify-content: space-between; }
-.kc-score-meter { text-align: center; min-width: 120px; }
-.kc-score-num  { font-size: 2.25rem; font-weight: 700; font-family: 'Cormorant Garamond', serif; color: var(--navy); line-height: 1; }
-.kc-score-label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-top: 0.3rem; }
-.kc-score-bar  { width: 100px; height: 6px; background: #e8e4dd; border-radius: 3px; margin: 0.4rem auto 0; }
-.kc-score-bar-fill { height: 100%; background: var(--gold); border-radius: 3px; }
-.kc-grade-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
-.kc-grade-chip { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--white); border: 1px solid #e0ddd6; border-radius: 6px; padding: 0.35rem 0.65rem; font-size: 0.78rem; }
-.kc-grade-chip strong { font-weight: 700; color: var(--navy); }
-
-/* ─── TABLE ──────────────────────────────────────────────────────────────── */
-.kc-table-wrap { overflow-x: auto; margin-top: 1rem; }
-.kc-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-.kc-table th { background: var(--navy); color: #fff; padding: 0.65rem 0.75rem; text-align: left; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.05em; }
-.kc-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #eee; vertical-align: top; }
-.kc-table tr:last-child td { border-bottom: none; }
-.kc-table tr:nth-child(even) td { background: var(--ivory); }
-.kc-yes  { color: #2a7a2a; font-weight: 600; }
-.kc-no   { color: #b84444; font-weight: 600; }
-.kc-partial { color: #a06a00; font-weight: 600; }
-
-/* ─── COMMUTE CARDS ──────────────────────────────────────────────────────── */
-.kc-commute-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
-.kc-commute-card { background: var(--white); border: 1px solid #e0ddd6; border-radius: 8px; padding: 1rem; text-align: center; }
-.kc-commute-time { font-size: 1.5rem; font-weight: 700; color: var(--navy); font-family: 'Cormorant Garamond', serif; }
-.kc-commute-dest { font-size: 0.75rem; color: #666; margin-top: 0.2rem; }
-@media (max-width: 768px) { .kc-commute-grid { grid-template-columns: repeat(2,1fr); } }
-
-/* ─── VIDEO ──────────────────────────────────────────────────────────────── */
-.kc-video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; cursor: pointer; background: #000; }
-.kc-video-thumb { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
-.kc-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 72px; height: 72px; background: rgba(255,0,0,0.88); border-radius: 50%; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-.kc-play-btn svg { fill: #fff; width: 28px; height: 28px; margin-left: 4px; }
-
-/* ─── SCHOOL TABLE ───────────────────────────────────────────────────────── */
-.kc-school-table th:first-child { width: 40%; }
-
-/* ─── INTRO / CONTACT ────────────────────────────────────────────────────── */
-.kc-intro-wrap { display: flex; gap: 2rem; align-items: flex-start; }
-.kc-intro-photo { flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gold); }
-.kc-intro-bio h3 { font-size: 1rem; margin-bottom: 0.4rem; }
-.kc-intro-bio p  { font-size: 0.875rem; color: #555; margin-bottom: 0.75rem; }
-.kc-intro-bio a  { font-size: 0.85rem; font-weight: 600; color: var(--navy); text-decoration: none; }
-@media (max-width: 600px) { .kc-intro-wrap { flex-direction: column; } }
-
-/* ─── CONTACT CTA ────────────────────────────────────────────────────────── */
-.kc-contact-cta { background: var(--navy); color: #fff; border-radius: 10px; padding: 2.5rem; text-align: center; }
-.kc-contact-cta h2 { color: #fff; margin-bottom: 1rem; }
-.kc-contact-cta p  { opacity: 0.85; margin-bottom: 1.5rem; max-width: 520px; margin-left: auto; margin-right: auto; }
-.kc-contact-meta { font-size: 0.78rem; opacity: 0.6; margin-top: 1.5rem; line-height: 1.7; }
-
-/* ─── LEAD MAGNET ────────────────────────────────────────────────────────── */
-.kc-leadmagnet { background: var(--white); border: 1px solid var(--stone); border-radius: 10px; padding: 2.5rem; text-align: center; }
-.kc-leadmagnet h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
-.kc-leadmagnet p { font-size: 0.9rem; color: #555; margin-bottom: 1.5rem; max-width: 520px; margin-left: auto; margin-right: auto; }
-
-/* ─── PROS/CONS ──────────────────────────────────────────────────────────── */
-.kc-proscons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.kc-proscons-col h3 { font-size: 1rem; font-family: 'Jost', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
-.kc-proscons-col ul { list-style: none; }
-.kc-proscons-col li { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.6rem; font-size: 0.875rem; line-height: 1.5; }
-.kc-pro-icon { color: #2a7a2a; font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
-.kc-con-icon { color: #b84444; font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
-@media (max-width: 600px) { .kc-proscons { grid-template-columns: 1fr; } }
-
-/* ─── FAQ ────────────────────────────────────────────────────────────────── */
-.kc-faq-item { border-bottom: 1px solid #e0ddd6; }
-.kc-faq-q { width: 100%; background: none; border: none; text-align: left; padding: 1.1rem 0; font-size: 0.95rem; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: 'Jost', sans-serif; }
-.kc-faq-q:hover { color: var(--gold); }
-.kc-faq-icon { font-size: 1.2rem; flex-shrink: 0; transition: transform 0.2s; color: var(--gold); }
-.kc-faq-q.open .kc-faq-icon { transform: rotate(45deg); }
-.kc-faq-a { display: none; padding: 0 0 1.25rem; font-size: 0.9rem; color: #444; line-height: 1.7; }
-.kc-faq-a.open { display: block; }
-
-/* ─── NICHE / RATINGS ────────────────────────────────────────────────────── */
-.kc-niche-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
-.kc-niche-badge { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--navy); color: #fff; border-radius: 6px; padding: 0.3rem 0.65rem; font-size: 0.78rem; font-weight: 600; }
-.kc-niche-badge span { opacity: 0.75; font-weight: 400; }
-
-/* ─── SCHOOL RATING CARDS ────────────────────────────────────────────────── */
-.kc-school-rating { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: var(--navy); color: #fff; border-radius: 6px; font-size: 0.85rem; font-weight: 700; flex-shrink: 0; }
-
-/* ─── MOBILE FIXES ───────────────────────────────────────────────────────── */
-@media (max-width: 640px) {
-  .kc-grade-grid { justify-content: center; }
-  .kc-grade-chip { font-size: 0.72rem; }
-  .kc-niche-grid { justify-content: center; }
-  .kc-school-rating { width: 34px; height: 34px; font-size: 0.78rem; }
-  .kc-data-top-inner { flex-direction: column !important; align-items: center !important; }
-  .kc-hero-btns { flex-direction: column; align-items: center; }
-  .kc-stats-inner { justify-content: center; }
-  .kc-tag { font-size: 0.7rem; }
-  .kc-stat-label { font-size: 0.62rem; }
-}
-</style>
-
-<div class="kc-wrap">
+<div class="kc-suburb">
 
 <!-- ── SECTION 1: BREADCRUMB ─────────────────────────────────────────────── -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
@@ -565,40 +382,40 @@
 <!-- ── SECTION 2: HERO ────────────────────────────────────────────────────── -->
 <div class="kc-hero">
   <div class="kc-hero-inner">
-    <p class="kc-hero-loc">Tarrant County · DFW Metroplex</p>
+    <p class="kc-hero-location">Tarrant County · DFW Metroplex</p>
     <h1>Living in Fort Worth, Texas</h1>
     <div class="kc-hero-btns">
       <a href="#kc-contact" class="kc-btn kc-btn--gold">Talk to Kristen</a>
-      <a href="#kc-neighborhoods" class="kc-btn kc-btn--ghost">Explore Neighborhoods</a>
+      <a href="#kc-neighborhoods" class="kc-btn kc-btn--outline">Explore Neighborhoods</a>
     </div>
   </div>
 </div>
 
 <!-- ── SECTION 3: STATS BAR ───────────────────────────────────────────────── -->
-<div class="kc-stats-bar">
-  <div class="kc-stats-inner">
+<div class="kc-stats">
+  <div class="kc-stats-grid">
     <div class="kc-stat">
-      <div class="kc-stat-num">~941K</div>
+      <div class="kc-stat-val">~941K</div>
       <div class="kc-stat-label">Population</div>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-num" id="kc-stat-price">~$340K</div>
+      <div class="kc-stat-val" id="kc-stat-price">~$340K</div>
       <div class="kc-stat-label">Median SFR Price</div>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-num">B-/A</div>
+      <div class="kc-stat-val">B-/A</div>
       <div class="kc-stat-label">School Rating</div>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-num">15–20 min</div>
+      <div class="kc-stat-val">15–20 min</div>
       <div class="kc-stat-label">To DFW Airport</div>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-num">~$2.22/$100</div>
+      <div class="kc-stat-val">~$2.22/$100</div>
       <div class="kc-stat-label">Approx Tax Rate</div>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-num">Niche C</div>
+      <div class="kc-stat-val">Niche C</div>
       <div class="kc-stat-label">Safety</div>
     </div>
   </div>
@@ -656,9 +473,9 @@
   <div class="kc-section">
     <span class="kc-eyebrow">Your Guide to Fort Worth</span>
     <h2>What Kristen Says About Fort Worth</h2>
-    <div class="kc-intro-wrap">
-      <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Realtor" class="kc-intro-photo" loading="lazy">
-      <div class="kc-intro-bio">
+    <div class="kc-intro-box">
+      <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Realtor" class="kc-intro-avatar" loading="lazy">
+      <div class="kc-intro-text">
         <h3>Kristen Carpentier · Licensed Texas Realtor® · TREC #760457</h3>
         <p>"Fort Worth is DFW's most underrated family city — and I mean that. It's more affordable than Dallas, has a genuine cultural identity that no suburb can replicate, and the employer base is completely different: aerospace, aviation, logistics, and healthcare anchor the economy here. The thing that surprises most of my relocation clients is the school flexibility — if you're strategic about which neighborhood you pick, you can end up in Keller ISD or Aledo ISD while still living in Fort Worth proper. That changes the whole calculus. I always tell families: do your neighborhood homework first, because where you land in Fort Worth determines everything from your school district to your commute."</p>
         <a href="tel:6024054115">(602) 405-4115</a> &nbsp;·&nbsp;
@@ -677,7 +494,7 @@
     <p style="margin-bottom:1.5rem;color:#555;">Watch Kristen's candid take on Fort Worth — what makes it genuinely different from the DFW suburbs, and what families need to know before relocating.</p>
     <div class="kc-video-wrap" onclick="kcPlayVideo('le7FHHYANEM', this)">
       <img class="kc-video-thumb" src="https://img.youtube.com/vi/le7FHHYANEM/maxresdefault.jpg" alt="Fort Worth Texas tour video — is it a good place to live?" loading="lazy">
-      <div class="kc-play-btn">
+      <div class="kc-video-play">
         <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
       </div>
     </div>
@@ -738,7 +555,7 @@
 
     <h3 style="margin-top:1.75rem;">Top Campuses Near Fort Worth</h3>
     <div class="kc-table-wrap">
-      <table class="kc-table kc-school-table">
+      <table class="kc-table">
         <thead>
           <tr><th>Campus</th><th>District</th><th>Rating</th><th>Notes</th></tr>
         </thead>
@@ -1467,7 +1284,7 @@
   </p>
 </section>
 
-</div><!-- /.kc-wrap -->
+</div><!-- /.kc-suburb -->
 
 <script>
 /* ─── VIDEO LITE EMBED ─────────────────────────────────────────────────────── */

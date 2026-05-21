@@ -104,15 +104,6 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   fill: currentColor;
 }
 
-/* Topbar divider before gold bar */
-.kc-topbar-div {
-  display: block;
-  width: 0.5px;
-  height: 14px;
-  background: rgba(255,255,255,0.2);
-  margin: 0 4px;
-}
-
 /* ── Main nav bar ── */
 .kc-nav {
   height: var(--header-nav-h);
