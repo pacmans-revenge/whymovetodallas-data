@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -284,12 +285,18 @@
   <!-- Main navigation bar -->
   <div class="kc-nav">
 
-    <a href="/" class="kc-nav-logo" aria-label="Why Move to Dallas — home">
-      <img src="/images/logo-white.webp"
-           alt="Why Move to Dallas | DFW Family Relocation"
-           width="73" height="40"
+    <a href="/" class="kc-nav-logo" aria-label="Carpentier Group Real Estate — home">
+      <img src="/images/logo-white.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-full"
+           width="1426" height="200"
            loading="eager"
            fetchpriority="high">
+      <img src="/images/logo-icon.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-icon"
+           width="240" height="231"
+           loading="eager">
     </a>
 
     <nav class="kc-nav-links" aria-label="Main navigation">
@@ -513,6 +520,7 @@
     <li><a href="#kc-safety">Safety</a></li>
     <li><a href="#kc-market">Real Estate</a></li>
     <li><a href="#kc-proscons">Pros &amp; Cons</a></li>
+    <li><a href="#kc-compare">Compare</a></li>
     <li><a href="#kc-faq">FAQ</a></li>
     <li><a href="#kc-contact">Contact</a></li>
   </ul>
@@ -615,27 +623,27 @@
     <div class="kc-commute-card">
       <div class="kc-commute-dest">DFW Airport</div>
       <span class="kc-commute-time">~25 min</span>
-      <div class="kc-commute-note">Via I-35E or LBJ/Hwy 114 · no traffic</div>
+      <div class="kc-commute-note">~22 miles · Via I-35E or LBJ/Hwy 114 · no traffic</div>
     </div>
     <div class="kc-commute-card">
       <div class="kc-commute-dest">Las Colinas / Irving</div>
       <span class="kc-commute-time">~20 min</span>
-      <div class="kc-commute-note">Via I-635 or I-183</div>
+      <div class="kc-commute-note">~15 miles · Via I-635 or I-183</div>
     </div>
     <div class="kc-commute-card">
       <div class="kc-commute-dest">Plano / Legacy West</div>
       <span class="kc-commute-time">~25 min</span>
-      <div class="kc-commute-note">Via DNT or US-75 · DART Orange Line option</div>
+      <div class="kc-commute-note">~20 miles · Via DNT or US-75 · DART Orange Line option</div>
     </div>
     <div class="kc-commute-card">
       <div class="kc-commute-dest">Fort Worth</div>
       <span class="kc-commute-time">~35 min</span>
-      <div class="kc-commute-note">Via I-30 · Trinity Railway Express available</div>
+      <div class="kc-commute-note">~30 miles · Via I-30 · Trinity Railway Express available</div>
     </div>
     <div class="kc-commute-card">
       <div class="kc-commute-dest">Frisco / Allen</div>
       <span class="kc-commute-time">35–40 min</span>
-      <div class="kc-commute-note">Via DNT or US-75 · tolls apply on DNT</div>
+      <div class="kc-commute-note">~35 miles · Via DNT or US-75 · tolls apply on DNT</div>
     </div>
   </div>
 
@@ -1344,7 +1352,20 @@
 </section>
 <hr class="kc-divider">
 
-<!-- ── SECTION 17: FAQ ────────────────────────────────────────────────────────── -->
+<!-- ── SECTION 17: COMPARE ───────────────────────────────────────────────────── -->
+<section id="kc-compare" class="kc-section">
+  <div class="kc-section-header">
+    <span class="kc-eyebrow">Compare</span>
+    <h2>Dallas vs. Nearby Suburbs</h2>
+  </div>
+  <div class="kc-compare-wrap">
+    <div id="kc-compare-table"><!-- populated by JS --></div>
+  </div>
+  <p style="font-size:0.75rem;color:#aaa;margin-top:0.75rem;">Scores computed from Niche, NTREIS, WalkScore, and Census ACS &middot; Updated <span id="kc-compare-date">2026</span> &middot; <a href="/dallas-fort-worth-suburbs" style="color:var(--gold);">Compare all DFW suburbs &rarr;</a></p>
+</section>
+<hr class="kc-divider">
+
+<!-- ── SECTION 18: FAQ ────────────────────────────────────────────────────────── -->
 <section id="kc-faq" class="kc-section">
   <div class="kc-section-header">
     <span class="kc-eyebrow">FAQ</span>
@@ -1492,6 +1513,7 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 (function kcLoadSuburbData() {
   var DATA_URL    = 'https://raw.githubusercontent.com/pacmans-revenge/whymovetodallas-data/main/suburb-profiles.json';
   var SUBURB_KEY  = 'dallas';
+  var COMPARE_SUBURBS = ['fort-worth','frisco','plano','arlington'];
   var SUBURB_NAME = 'Dallas';
 
   function fmtPrice(val) {
@@ -1672,6 +1694,49 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
           if (fpText) { fpEl.textContent = fpText; fpEl.style.display = 'block'; }
         }
       }
+
+      // ── Score bars ──────────────────────────────────────────────────────────
+      var sc = suburb.scores || {};
+      if (sc.family_score != null) {
+        setText('kc-family-score', sc.family_score);
+        var ff = document.getElementById('kc-family-score-fill');
+        if (ff) ff.style.width = sc.family_score + '%';
+      }
+      if (sc.value_score != null) {
+        setText('kc-value-score', sc.value_score);
+        var vf = document.getElementById('kc-value-score-fill');
+        if (vf) vf.style.width = sc.value_score + '%';
+      }
+
+      // ── Comparison table ─────────────────────────────────────────────────
+      var cmpEl = document.getElementById('kc-compare-table');
+      if (cmpEl && data.suburbs) {
+        var cmpKeys = [SUBURB_KEY];
+        COMPARE_SUBURBS.forEach(function(k) { if (k !== SUBURB_KEY) cmpKeys.push(k); });
+        var tbl = '<table class="kc-compare-tbl"><thead><tr>';
+        tbl += '<th>Suburb</th><th>Family Score</th><th>Affordability Score</th><th>Schools</th><th>Crime</th><th>Families</th><th>Median Price</th>';
+        tbl += '</tr></thead><tbody>';
+        cmpKeys.forEach(function(k) {
+          var s = data.suburbs[k]; if (!s) return;
+          var isCur = k === SUBURB_KEY;
+          tbl += '<tr' + (isCur ? ' class="kc-compare-current"' : '') + '>';
+          tbl += '<td>' + (s.display_name || k) + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.family_score != null ? s.scores.family_score : '—') + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.value_score  != null ? s.scores.value_score  : '—') + '</td>';
+          tbl += '<td>' + (s.schools  && (s.schools.overall_grade  || s.schools.niche_city_schools_grade) || '—') + '</td>';
+          tbl += '<td>' + (s.crime    && s.crime.niche_crime_grade  || '—') + '</td>';
+          tbl += '<td>' + (s.niche_city && s.niche_city.families   || '—') + '</td>';
+          tbl += '<td>' + (s.market   && s.market.sfr_median_price ? fmtPrice(s.market.sfr_median_price) : '—') + '</td>';
+          tbl += '</tr>';
+        });
+        tbl += '</tbody></table>';
+        cmpEl.innerHTML = tbl;
+      }
+      if (document.getElementById('kc-compare-date')) {
+        var cmpDateEl = document.getElementById('kc-compare-date');
+        if (cmpDateEl && updated) cmpDateEl.textContent = updated;
+      }
+
     })
     .catch(function() {});
 }());
@@ -1693,14 +1758,13 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 
       <!-- Column 1: Brand + tagline + socials -->
       <div class="kc-footer-brand">
-        <a href="/" aria-label="Why Move to Dallas — home">
-          <img src="/images/logo-white.webp"
-               alt="Why Move to Dallas | DFW Family Relocation"
+        <a href="/" aria-label="Carpentier Group Real Estate — home">
+          <img src="/images/logo-white.png"
+               alt="Carpentier Group Real Estate"
                class="kc-footer-logo"
-               width="73" height="40"
+               width="1426" height="200"
                loading="lazy">
         </a>
-        <span class="kc-footer-gold-line" aria-hidden="true"></span>
         <p class="kc-footer-tagline">Helping families find the right suburb, the right schools, and the right home in Dallas–Fort Worth. From a mom who made the same move.</p>
 
         <nav class="kc-footer-socials" aria-label="Social media">

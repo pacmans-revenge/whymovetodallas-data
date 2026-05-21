@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -284,12 +285,18 @@
   <!-- Main navigation bar -->
   <div class="kc-nav">
 
-    <a href="/" class="kc-nav-logo" aria-label="Why Move to Dallas — home">
-      <img src="/images/logo-white.webp"
-           alt="Why Move to Dallas | DFW Family Relocation"
-           width="73" height="40"
+    <a href="/" class="kc-nav-logo" aria-label="Carpentier Group Real Estate — home">
+      <img src="/images/logo-white.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-full"
+           width="1426" height="200"
            loading="eager"
            fetchpriority="high">
+      <img src="/images/logo-icon.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-icon"
+           width="240" height="231"
+           loading="eager">
     </a>
 
     <nav class="kc-nav-links" aria-label="Main navigation">
@@ -364,6 +371,9 @@
      then replace background-color fallback in .kc-hero with background-image URL below. -->
 
 
+<!-- ── STYLES — DO NOT EDIT — identical across all suburb pages ─────────── -->
+<style>.kc-hero{background:linear-gradient(135deg,rgba(31,45,61,.52) 0%,rgba(31,45,61,.36) 50%,rgba(31,45,61,.48) 100%) center/cover no-repeat;}</style>
+
 <div class="kc-suburb">
 
 <!-- ── SECTION 1: BREADCRUMB ─────────────────────────────────────────────── -->
@@ -391,81 +401,119 @@
   </div>
 </div>
 
-<!-- ── SECTION 3: STATS BAR ───────────────────────────────────────────────── -->
-<div class="kc-stats">
+<!-- ── SECTION 3: STATS BAR ─────────────────────────────────────────────────── -->
+<div class="kc-stats" aria-label="Fort Worth at a glance">
   <div class="kc-stats-grid">
     <div class="kc-stat">
-      <div class="kc-stat-val">~941K</div>
-      <div class="kc-stat-label">Population</div>
+      <span class="kc-stat-val" id="kc-stat-pop">941K</span>
+      <span class="kc-stat-label">Population</span>
+      <span class="kc-stat-note" id="kc-stat-pop-note">5th largest city in Texas · Tarrant County</span>
+    </div>
+    <div class="kc-stat" style="cursor:pointer;" onclick="window.open('https://kristencarpentier.expportal.com/fort-worth-listings','_blank')">
+      <span class="kc-stat-val" id="kc-stat-price">~$340K</span>
+      <span class="kc-stat-label">Median Home Price</span>
+      <span class="kc-stat-note" id="kc-stat-price-note">See live listings ↗ · NTREIS</span>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-val" id="kc-stat-price">~$340K</div>
-      <div class="kc-stat-label">Median SFR Price</div>
+      <span class="kc-stat-val">B- / A</span>
+      <span class="kc-stat-label">School Rating</span>
+      <span class="kc-stat-note">FWISD B- · Keller ISD A · Aledo ISD A</span>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-val">B-/A</div>
-      <div class="kc-stat-label">School Rating</div>
+      <span class="kc-stat-val">15–20 min</span>
+      <span class="kc-stat-label">To DFW Airport</span>
+      <span class="kc-stat-note">TEXRail direct or ~18 miles via Hwy 183</span>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-val">15–20 min</div>
-      <div class="kc-stat-label">To DFW Airport</div>
+      <span class="kc-stat-val">~$2.22/$100</span>
+      <span class="kc-stat-label">Base Tax Rate</span>
+      <span class="kc-stat-note">Tarrant County combined · homestead exemptions apply</span>
     </div>
     <div class="kc-stat">
-      <div class="kc-stat-val">~$2.22/$100</div>
-      <div class="kc-stat-label">Approx Tax Rate</div>
-    </div>
-    <div class="kc-stat">
-      <div class="kc-stat-val">Niche C</div>
-      <div class="kc-stat-label">Safety</div>
+      <span class="kc-stat-val">Niche C</span>
+      <span class="kc-stat-label">Safety Rating</span>
+      <span class="kc-stat-note">Citywide avg · varies greatly by neighborhood</span>
     </div>
   </div>
 </div>
 
-<!-- ── DATA STRIP: Scores + Niche ─────────────────────────────────────────── -->
-<div class="kc-data-top">
-  <div class="kc-data-top-inner">
-    <div class="kc-score-meter">
-      <div class="kc-score-num" id="kc-family-score">66</div>
-      <div class="kc-score-bar"><div id="kc-family-score-fill" class="kc-score-bar-fill" style="width:66%;"></div></div>
-      <div class="kc-score-label">Family Score</div>
-    </div>
-    <div class="kc-score-meter">
-      <div class="kc-score-num" id="kc-value-score">86</div>
-      <div class="kc-score-bar"><div id="kc-value-score-fill" class="kc-score-bar-fill" style="width:86%;"></div></div>
-      <div class="kc-score-label">Value Score</div>
-    </div>
-    <div>
-      <div class="kc-grade-grid" id="kc-grade-chips">
-        <div class="kc-grade-chip"><strong>B+</strong> <span>Overall</span></div>
-        <div class="kc-grade-chip"><strong>C+</strong> <span>Schools</span></div>
-        <div class="kc-grade-chip"><strong>C</strong> <span>Crime</span></div>
-        <div class="kc-grade-chip"><strong>A+</strong> <span>Diversity</span></div>
-        <div class="kc-grade-chip"><strong>B</strong> <span>Families</span></div>
-        <div class="kc-grade-chip"><strong>B-</strong> <span>Cost of Living</span></div>
+<!-- ── SECTION 4: DATA STRIP ────────────────────────────────────────────────── -->
+<div id="kc-data-strip" style="background:var(--ivory);border-bottom:1px solid #e0ddd6;">
+  <div style="max-width:1100px;margin:0 auto;padding:1.5rem 1.5rem 1rem;">
+    <div class="kc-data-top-inner" style="display:flex;gap:2.5rem;align-items:flex-start;flex-wrap:wrap;">
+      <div style="text-align:center;min-width:140px;">
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.45rem;">Family Score</div>
+        <span id="kc-family-score" style="font-size:2.5rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;line-height:1;">66</span>
+        <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">out of 100</div>
+        <div class="kc-score-bar" style="width:100px;height:6px;background:#e8e4dd;border-radius:3px;margin:0.4rem auto 0;"><div id="kc-family-score-fill" class="kc-score-bar-fill" style="height:100%;background:var(--gold);border-radius:3px;width:66%;"></div></div>
       </div>
-      <p style="font-size:0.7rem;color:#aaa;margin-top:0.5rem;">Source: Niche.com · 2025</p>
+      <div class="kc-data-divider" style="width:1px;background:#e0ddd6;align-self:stretch;"></div>
+      <div style="text-align:center;min-width:140px;">
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.45rem;">Value Score</div>
+        <span id="kc-value-score" style="font-size:2.5rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;line-height:1;">86</span>
+        <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">out of 100</div>
+        <div class="kc-score-bar" style="width:100px;height:6px;background:#e8e4dd;border-radius:3px;margin:0.4rem auto 0;"><div id="kc-value-score-fill" style="height:100%;background:var(--navy);border-radius:3px;width:86%;"></div></div>
+      </div>
+      <div class="kc-data-divider" style="width:1px;background:#e0ddd6;align-self:stretch;"></div>
+      <div style="flex:1;min-width:280px;">
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.45rem;">Niche.com City Grades &middot; <span id="kc-grades-date">May 2026</span></div>
+        <div id="kc-grade-chips" style="display:flex;flex-wrap:wrap;gap:0.35rem;">
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4e8f8;color:#2d7abf;">Overall B+</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#fce8d8;color:#b87333;">Schools C+</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#fce8d8;color:#b87333;">Crime C</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4f4e2;color:#1a6b3a;">Diversity A+</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4e8f8;color:#2d7abf;">Families B</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4e8f8;color:#2d7abf;">Nightlife B+</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4e8f8;color:#2d7abf;">Jobs B</span>
+          <span style="font-size:0.75rem;padding:0.18rem 0.6rem;border-radius:4px;font-weight:700;background:#d4e8f8;color:#2d7abf;">Cost of Living B-</span>
+        </div>
+      </div>
+    </div>
+    <div id="kc-data-subscores" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.65rem 1.25rem;padding-top:1rem;border-top:1px solid #e5e2db;margin-top:1rem;">
+      <div style="text-align:center;">
+        <div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">77</div>
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Education</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">73</div>
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Safety</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">31</div>
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Family Community</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">53</div>
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Commute</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">100</div>
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Market Stability</div>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- ── SECTION 4: JUMP NAV ────────────────────────────────────────────────── -->
 <nav class="kc-jumpnav" aria-label="Page sections">
-  <div class="kc-jumpnav-inner">
-    <a href="#kc-intro">About</a>
-    <a href="#kc-video">Video Tour</a>
-    <a href="#kc-location">Location</a>
-    <a href="#kc-schools">Schools</a>
-    <a href="#kc-neighborhoods">Neighborhoods</a>
-    <a href="#kc-cost">Cost of Living</a>
-    <a href="#kc-employers">Employers</a>
-    <a href="#kc-lifestyle">Lifestyle</a>
-    <a href="#kc-recreation">Recreation</a>
-    <a href="#kc-safety">Safety</a>
-    <a href="#kc-market">Market</a>
-    <a href="#kc-proscons">Pros &amp; Cons</a>
-    <a href="#kc-faq">FAQ</a>
-    <a href="#kc-contact">Contact</a>
-  </div>
+  <ul class="kc-jumpnav-list">
+    <li><a href="#kc-intro">About</a></li>
+    <li><a href="#kc-video">Video Tour</a></li>
+    <li><a href="#kc-location">Location</a></li>
+    <li><a href="#kc-schools">Schools</a></li>
+    <li><a href="#kc-neighborhoods">Neighborhoods</a></li>
+    <li><a href="#kc-cost">Cost of Living</a></li>
+    <li><a href="#kc-employers">Employers</a></li>
+    <li><a href="#kc-lifestyle">Lifestyle</a></li>
+    <li><a href="#kc-recreation">Recreation</a></li>
+    <li><a href="#kc-safety">Safety</a></li>
+    <li><a href="#kc-market">Real Estate</a></li>
+    <li><a href="#kc-proscons">Pros &amp; Cons</a></li>
+    <li><a href="#kc-compare">Compare</a></li>
+    <li><a href="#kc-faq">FAQ</a></li>
+    <li><a href="#kc-contact">Contact</a></li>
+  
+  </ul>
 </nav>
 
 <!-- ── SECTION 5: KRISTEN INTRO ───────────────────────────────────────────── -->
@@ -511,32 +559,44 @@
     <span class="kc-eyebrow">Location &amp; Commute</span>
     <h2>Where Fort Worth Sits in DFW</h2>
     <p>Fort Worth is the western anchor of the DFW Metroplex — 30 miles west of downtown Dallas, sitting in Tarrant County. It is the second-largest city in DFW and the fifth-largest in Texas, with a population of approximately 941,000. Fort Worth straddles I-30 and I-35W, giving it strong access to DFW International Airport (15–20 minutes) and to the Alliance industrial corridor to the north. TEXRail light rail connects Fort Worth Intermodal Transportation Center to DFW Airport and Grapevine — a meaningful advantage for American Airlines and airport-adjacent employees. Direct rail to downtown Dallas does not exist yet; a future TEXRail extension to Union Station in Dallas is planned but not built.</p>
-    <div class="kc-commute-grid" style="margin-top:1.5rem;">
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">15–20</div>
-        <div class="kc-commute-dest">DFW Airport (via Hwy 183 or TEXRail)</div>
-      </div>
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">10–15</div>
-        <div class="kc-commute-dest">Downtown Fort Worth (from residential areas)</div>
-      </div>
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">20–25</div>
-        <div class="kc-commute-dest">Alliance Corridor / North Fort Worth</div>
-      </div>
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">20–30</div>
-        <div class="kc-commute-dest">Las Colinas / Irving (via SH 183)</div>
-      </div>
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">35–45</div>
-        <div class="kc-commute-dest">Downtown Dallas (I-30 E, no traffic)</div>
-      </div>
-      <div class="kc-commute-card">
-        <div class="kc-commute-time">45–55</div>
-        <div class="kc-commute-dest">Plano / Legacy West (via I-30 / DNT)</div>
-      </div>
+    <div class="kc-commute-grid">
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">DFW International Airport</span>
+      <span class="kc-commute-time">15–20 min</span>
+      <span class="kc-commute-note">~18 miles · Via Hwy 183 or TEXRail from downtown</span>
     </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Downtown Fort Worth</span>
+      <span class="kc-commute-time">10–15 min</span>
+      <span class="kc-commute-note">~5 miles avg · From most residential areas; easy surface road access</span>
+    </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Alliance / North Fort Worth</span>
+      <span class="kc-commute-time">20–25 min</span>
+      <span class="kc-commute-note">~14 miles · Via I-35W N — Amazon, FedEx, BNSF rail hub, Alcon HQ</span>
+    </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Las Colinas / Irving</span>
+      <span class="kc-commute-time">20–30 min</span>
+      <span class="kc-commute-note">~18 miles · Via SH-183 — ExxonMobil, Celanese, Nokia, Fluor corridor</span>
+    </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Downtown Dallas</span>
+      <span class="kc-commute-time">35–45 min</span>
+      <span class="kc-commute-note">~30 miles · Via I-30 E · Trinity Railway Express also available</span>
+    </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Plano / Legacy West</span>
+      <span class="kc-commute-time">45–55 min</span>
+      <span class="kc-commute-note">~48 miles · Via I-30 E to DNT — Toyota, JPMorgan, Liberty Mutual</span>
+    </div>
+    <div class="kc-commute-card">
+      <span class="kc-commute-dest">Frisco / The Star</span>
+      <span class="kc-commute-time">55–65 min</span>
+      <span class="kc-commute-note">~52 miles · Via I-30 E to DNT — T-Mobile HQ, The Star, growing north DFW corridor</span>
+    </div>
+  </div>
+
     <div class="kc-callout" style="margin-top:1.5rem;">
       <strong>TEXRail note:</strong> Fort Worth's TEXRail connects downtown FW → DFW Airport → Grapevine. It is a separate system from Dallas's DART — there is no direct rail between Fort Worth and downtown Dallas. Budget 35–45 minutes by car (longer in rush hour) for any east-of-Dallas commute. This is the most common pain point for families who commute to the DFW northern corridor.
     </div>
@@ -622,7 +682,7 @@
     <span class="kc-eyebrow">Where to Live</span>
     <h2>Best Neighborhoods for Families in Fort Worth</h2>
     <p style="margin-bottom:1.5rem;">Fort Worth's neighborhoods range from urban walkable enclaves to master-planned Western suburbs. School district placement is the primary variable — identify your target ISD first, then narrow by neighborhood.</p>
-    <div class="kc-grid--2">
+    <div class="kc-grid kc-grid--2">
 
       <div class="kc-card--gold">
         <span class="kc-card-icon">
@@ -776,7 +836,7 @@
   <div class="kc-section">
     <span class="kc-eyebrow">Employment</span>
     <h2>Who Employs Fort Worth</h2>
-    <div class="kc-grid--2">
+    <div class="kc-grid kc-grid--2">
       <div>
         <h3>In Fort Worth</h3>
         <ul style="list-style:none;padding:0;">
@@ -813,11 +873,11 @@
   <div class="kc-section">
     <span class="kc-eyebrow">Family Life</span>
     <h2>What Life Actually Looks Like in Fort Worth</h2>
-    <div class="kc-grid--3">
+    <div class="kc-grid kc-grid--3">
 
       <div class="kc-card">
         <span class="kc-card-icon">
-          <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="10" r="5"/><path d="M4 26c0-5.523 4.477-10 10-10s10 4.477 10 10"/><path d="M18 15l4 4M10 15l-4 4"/></svg>
+          <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="11"/><path d="M7 4.5c2.5 3 2.5 6.5 0 9"/><path d="M21 4.5c-2.5 3-2.5 6.5 0 9"/><line x1="3" y1="14" x2="25" y2="14"/></svg>
         </span>
         <h3>Youth Sports &amp; Athletics</h3>
         <p>Fort Worth has a strong youth athletics infrastructure — YMCA leagues, Fort Worth Junior Lacrosse, Fort Worth Youth Soccer Association, and North Texas youth football circuits. The Keller and Alliance corridor areas have particularly active sports communities with newer facilities. TCU youth sports camps operate year-round.</p>
@@ -825,7 +885,7 @@
 
       <div class="kc-card">
         <span class="kc-card-icon">
-          <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c3-6 6-9 10-9s7 3 10 9"/><path d="M14 11V4"/><path d="M10 6l4-4 4 4"/></svg>
+          <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18c2-4 4-6 6-6s4 4 6 4 4-2 8-4"/><path d="M4 22h20"/><circle cx="8" cy="10" r="2.5"/></svg>
         </span>
         <h3>Outdoor Recreation &amp; Lakes</h3>
         <p>Trinity Trails is Fort Worth's defining outdoor asset — over 100 miles of paved trails along the Trinity River, connecting parks, neighborhoods, and cultural sites. Eagle Mountain Lake (north FW) and Benbrook Lake (southwest) offer boating, fishing, and waterfront living. Benbrook Lake's Mustang Park is one of the best family campsite destinations in DFW.</p>
@@ -880,7 +940,7 @@
     <p>Fort Worth is a car-dependent city for most daily tasks outside the downtown core and Near Southside. There is no direct DART rail connection to Dallas — TEXRail connects Fort Worth downtown to DFW Airport and Grapevine, but does not extend east into the Dallas rail network. Fort Worth compensates with one of the best trail systems in Texas (Trinity Trails), two lakes within city limits, and outdoor recreation infrastructure that outperforms its Walk Score in practice.</p>
 
     <h3 style="margin-top:1.75rem;">Walkability &amp; Transportation Scores</h3>
-    <div class="kc-grid--3" id="kc-walk-scores">
+    <div class="kc-grid kc-grid--3" id="kc-walk-scores">
       <div style="text-align:center;background:var(--white);border:1px solid #e0ddd6;border-radius:8px;padding:1.25rem;">
         <div style="font-size:2.5rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;" id="kc-walk-num">87</div>
         <div style="font-weight:700;margin:0.3rem 0;font-size:0.9rem;">Walk Score</div>
@@ -901,7 +961,7 @@
 
     <h3 style="margin-top:2rem;">Parks, Trails &amp; Green Space</h3>
     <p style="margin-bottom:1rem;">Fort Worth operates 443 parks across the city. The Trinity Trails system is the crown jewel — 100+ miles of paved trail along the Trinity River, with direct connections between neighborhoods, parks, and the downtown Cultural District. Two lakes within or adjacent to city limits (Eagle Mountain Lake, Benbrook Lake) add water recreation that no DFW suburb can match in proximity.</p>
-    <div class="kc-grid--2">
+    <div class="kc-grid kc-grid--2">
       <div class="kc-card">
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c3-6 6-9 10-9s7 3 10 9"/><path d="M14 11V4M10 6l4-4 4 4"/></svg>
@@ -988,7 +1048,7 @@
     <span class="kc-eyebrow">Safety &amp; Crime</span>
     <h2>Is Fort Worth Safe for Families?</h2>
     <p style="margin-bottom:1.5rem;">Fort Worth's Niche safety grade of C reflects citywide data across a city of nearly a million people and 350+ square miles. As with any large city, the number varies dramatically by neighborhood. The TCU/Tanglewood area, Westover Hills, Alliance/Heritage Trace corridor, and Walsh Ranch community have crime rates comparable to the most family-safe DFW suburbs. East and southeast Fort Worth — particularly areas bordering East Arlington — have higher rates. Never rely on the citywide statistic alone when evaluating Fort Worth neighborhoods.</p>
-    <div class="kc-grid--3">
+    <div class="kc-grid kc-grid--3">
       <div style="text-align:center;background:var(--ivory);border:1px solid #e0ddd6;border-radius:8px;padding:1.25rem;">
         <div style="font-size:2rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">C</div>
         <div style="font-weight:600;margin:0.3rem 0;font-size:0.85rem;">Niche Safety Grade</div>
@@ -1015,7 +1075,7 @@
   <div class="kc-section">
     <span class="kc-eyebrow">Real Estate Market</span>
     <h2>Fort Worth Housing Market</h2>
-    <div class="kc-grid--4">
+    <div class="kc-grid kc-grid--4">
       <div style="background:var(--white);border:1px solid #e0ddd6;border-radius:8px;padding:1.25rem;text-align:center;">
         <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#888;margin-bottom:0.4rem;">Median SFR Price</div>
         <div id="kc-mkt-price" style="font-size:1.75rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">$339,834</div>
@@ -1044,7 +1104,7 @@
     <div id="kc-condo-section" style="margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid #e0ddd6;">
       <h3>Condo &amp; Townhome Market</h3>
       <p style="font-size:0.88rem;color:#555;margin-bottom:0.75rem;">Fort Worth's condo and townhome market is smaller but active, concentrated around downtown, Near Southside, and TCU corridors.</p>
-      <div class="kc-grid--3">
+      <div class="kc-grid kc-grid--3">
         <div style="background:var(--ivory);border-radius:6px;padding:0.9rem;text-align:center;">
           <div style="font-size:1.3rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">$279,597</div>
           <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">Median Condo Price</div>
@@ -1178,6 +1238,20 @@
     </div>
   </div>
 </div>
+<hr class="kc-divider">
+
+<!-- ── SECTION 17: COMPARE ─────────────────────────────────────────────────── -->
+<section id="kc-compare" class="kc-section">
+  <div class="kc-section-inner">
+    <p class="kc-eyebrow">Side-by-Side</p>
+    <h2>How Fort Worth Compares to Nearby Cities</h2>
+    <p class="kc-section-intro">Fort Worth offers DFW's best combination of affordability, cultural depth, and employment diversity. Here's how it stacks up against nearby alternatives.</p>
+    <div class="kc-compare-wrap">
+    <div id="kc-compare-table"><!-- populated by JS --></div>
+    </div>
+  </div>
+</section>
+
 <hr class="kc-divider">
 
 <!-- ── SECTION 17: FAQ ────────────────────────────────────────────────────── -->
@@ -1314,6 +1388,7 @@ function kcFaq(btn) {
 
 /* ─── SUBURB DATA FETCH ────────────────────────────────────────────────────── */
 var SUBURB_KEY  = 'fort-worth';
+  var COMPARE_SUBURBS = ['dallas','arlington','keller','mansfield'];
 var SUBURB_NAME = 'Fort Worth';
 
 function kcFmt(n, prefix, suffix) {
@@ -1389,6 +1464,32 @@ function kcLoadSuburbData() {
         var mo = d.toLocaleString('en-US',{month:'long',year:'numeric'});
         kcSet('kc-mkt-updated', mo);
       }
+      /* comparison table */
+      var cmpEl = document.getElementById('kc-compare-table');
+      if (cmpEl && data.suburbs) {
+        var cmpKeys = [SUBURB_KEY];
+        COMPARE_SUBURBS.forEach(function(k) { if (k !== SUBURB_KEY) cmpKeys.push(k); });
+        function fmtP(p) { return p ? '$' + Math.round(p / 1000) + 'K' : '—'; }
+        var tbl = '<table class="kc-compare-tbl"><thead><tr>';
+        tbl += '<th>Suburb</th><th>Family Score</th><th>Affordability Score</th><th>Schools</th><th>Crime</th><th>Families</th><th>Median Price</th>';
+        tbl += '</tr></thead><tbody>';
+        cmpKeys.forEach(function(k) {
+          var s = data.suburbs[k]; if (!s) return;
+          var isCur = k === SUBURB_KEY;
+          tbl += '<tr' + (isCur ? ' class="kc-compare-current"' : '') + '>';
+          tbl += '<td>' + (s.display_name || k) + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.family_score != null ? s.scores.family_score : '—') + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.value_score  != null ? s.scores.value_score  : '—') + '</td>';
+          tbl += '<td>' + (s.schools  && (s.schools.overall_grade  || s.schools.niche_city_schools_grade) || '—') + '</td>';
+          tbl += '<td>' + (s.crime    && s.crime.niche_crime_grade  || '—') + '</td>';
+          tbl += '<td>' + (s.niche_city && s.niche_city.families   || '—') + '</td>';
+          tbl += '<td>' + fmtP(s.market && s.market.sfr_median_price) + '</td>';
+          tbl += '</tr>';
+        });
+        tbl += '</tbody></table>';
+        cmpEl.innerHTML = tbl;
+      }
+
     })
     .catch(function() { /* fallback values already in DOM */ });
 }
@@ -1412,14 +1513,13 @@ document.addEventListener('DOMContentLoaded', kcLoadSuburbData);
 
       <!-- Column 1: Brand + tagline + socials -->
       <div class="kc-footer-brand">
-        <a href="/" aria-label="Why Move to Dallas — home">
-          <img src="/images/logo-white.webp"
-               alt="Why Move to Dallas | DFW Family Relocation"
+        <a href="/" aria-label="Carpentier Group Real Estate — home">
+          <img src="/images/logo-white.png"
+               alt="Carpentier Group Real Estate"
                class="kc-footer-logo"
-               width="73" height="40"
+               width="1426" height="200"
                loading="lazy">
         </a>
-        <span class="kc-footer-gold-line" aria-hidden="true"></span>
         <p class="kc-footer-tagline">Helping families find the right suburb, the right schools, and the right home in Dallas–Fort Worth. From a mom who made the same move.</p>
 
         <nav class="kc-footer-socials" aria-label="Social media">

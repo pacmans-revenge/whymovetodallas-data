@@ -62,7 +62,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   justify-content: flex-end;
   gap: 6px;
   padding: 0 24px;
-  background: transparent;
+  background: rgba(10, 18, 28, 0.97);
   transition: background 0.25s ease;
 }
 
@@ -111,7 +111,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
-  background: transparent;
+  background: var(--navy);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   transition: background 0.25s ease;
 }
 
@@ -134,10 +135,13 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-logo img {
-  height: 42px;
+  height: 52px;
   width: auto;
   display: block;
 }
+
+/* Mobile: hide full wordmark, show icon monogram */
+.kc-nav-logo .kc-logo-icon { display: none; }
 
 /* Nav links */
 .kc-nav-links {
@@ -174,8 +178,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #fff;
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
+  background: var(--gold);
+  border: 1px solid var(--gold);
   padding: 8px 18px;
   border-radius: 4px;
   cursor: pointer;
@@ -188,8 +192,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-cta:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.75);
+  background: #c9a46a;
+  border-color: #c9a46a;
 }
 
 /* Hamburger (mobile) */
@@ -325,7 +329,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 
 .kc-footer-logo {
   display: block;
-  height: 40px;
+  height: 36px;
   width: auto;
   margin-bottom: 10px;
 }
@@ -494,4 +498,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   .kc-topbar { padding: 0 16px; }
   .kc-nav    { padding: 0 16px; }
   #kc-site-footer { padding: 36px 16px 20px; }
+
+  /* Swap to monogram icon on small phones */
+  .kc-nav-logo .kc-logo-full { display: none; }
+  .kc-nav-logo .kc-logo-icon { display: block; height: 44px; width: auto; }
 }

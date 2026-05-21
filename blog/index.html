@@ -1,0 +1,350 @@
+<!-- Schema: pages/blog/index-schema.html → Page Header Code Injection -->
+<style>
+.kc-blog-hero {
+  background: var(--navy);
+  padding: 4.5rem 1.5rem 3.5rem;
+  text-align: center;
+}
+.kc-blog-hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+.kc-blog-hero h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.kc-blog-hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.72);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.kc-blog-body {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+.kc-blog-intro {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.kc-blog-intro p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+/* Category filter tabs */
+.kc-blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.kc-blog-filter-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: 1.5px solid var(--stone);
+  background: var(--white);
+  color: #555;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.kc-blog-filter-btn:hover,
+.kc-blog-filter-btn.active {
+  border-color: var(--navy);
+  background: var(--navy);
+  color: #fff;
+}
+/* Post grid */
+.kc-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.kc-blog-card {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid rgba(200,193,182,0.5);
+  border-top: 3px solid var(--stone);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.kc-blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(31,45,61,0.1);
+  border-top-color: var(--gold);
+}
+.kc-blog-card-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.kc-blog-card h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.3;
+  margin: 0;
+}
+.kc-blog-card-excerpt {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.kc-blog-card-meta {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+/* Lead magnet strip */
+.kc-blog-leadmagnet {
+  background: var(--navy);
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.kc-blog-leadmagnet-text h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+.kc-blog-leadmagnet-text p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.kc-blog-leadmagnet a {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform 0.15s;
+}
+.kc-blog-leadmagnet a:hover { transform: translateY(-2px); }
+/* No results state */
+.kc-blog-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+  font-size: 1rem;
+  display: none;
+}
+@media (max-width: 600px) {
+  .kc-blog-grid { grid-template-columns: 1fr; }
+  .kc-blog-leadmagnet { flex-direction: column; text-align: center; }
+  .kc-blog-leadmagnet a { width: 100%; text-align: center; }
+}
+</style>
+
+<!-- ── Hero ─────────────────────────────────────────────────────────── -->
+<section class="kc-blog-hero">
+  <p class="kc-blog-hero-eyebrow">DFW Family Relocation</p>
+  <h1>The Blog</h1>
+  <p class="kc-blog-hero-sub">Suburbs, schools, cost of living, and everything else families need to know before moving to Dallas–Fort Worth.</p>
+</section>
+
+<!-- ── Posts ─────────────────────────────────────────────────────────── -->
+<div class="kc-blog-body">
+
+  <div class="kc-blog-intro">
+    <p>Straight talk from a DFW mom and licensed Realtor® who's helped hundreds of relocating families find the right suburb, the right schools, and the right home.</p>
+  </div>
+
+  <!-- Filter tabs -->
+  <div class="kc-blog-filters" id="kc-blog-filters" role="group" aria-label="Filter posts by category">
+    <button class="kc-blog-filter-btn active" data-filter="all">All Posts</button>
+    <button class="kc-blog-filter-btn" data-filter="suburb-guides">Suburb Guides</button>
+    <button class="kc-blog-filter-btn" data-filter="schools">Schools</button>
+    <button class="kc-blog-filter-btn" data-filter="cost-living">Cost of Living</button>
+    <button class="kc-blog-filter-btn" data-filter="relocation">Moving to DFW</button>
+    <button class="kc-blog-filter-btn" data-filter="market">Real Estate</button>
+  </div>
+
+  <!-- Post grid — populated by JS from posts manifest -->
+  <div class="kc-blog-grid" id="kc-blog-grid" role="list" aria-live="polite"></div>
+  <p class="kc-blog-empty" id="kc-blog-empty">No posts in this category yet.</p>
+
+  <!-- Lead magnet -->
+  <div class="kc-blog-leadmagnet">
+    <div class="kc-blog-leadmagnet-text">
+      <h3>Free DFW Family Relocation Guide</h3>
+      <p>Everything you need — suburbs, schools, property taxes, and the buying process.</p>
+    </div>
+    <a href="/dfw-family-relocation-guide">Get the Free Guide →</a>
+  </div>
+
+</div>
+
+<script>
+// ── Blog post manifest ────────────────────────────────────────────────────────
+// Generated by tools/migrate-blog.js and kept in sync manually.
+// Format: { slug, title, excerpt, date (YYYY-MM-DD), category }
+// Categories: suburb-guides | schools | cost-living | relocation | market
+//
+// TO UPDATE: After running migrate-blog.js, update this array with new posts.
+// Sort newest first.
+var POSTS = [
+  // ── Suburb Guides ────────────────────────────────────────────────────────
+  { slug: '10-best-suburbs-of-dallas-for-families', title: '10 Best Suburbs of Dallas for Families', excerpt: 'The definitive guide to the top family-friendly suburbs around Dallas–Fort Worth — schools, commutes, prices, and community feel compared.', date: '2023-01-01', cat: 'suburb-guides' },
+  { slug: 'top-6-suburbs-north-dallas-texas', title: 'Top 6 Suburbs in North Dallas, Texas', excerpt: 'A deep look at the best suburbs north of Dallas for families relocating to the area.', date: '2022-09-01', cat: 'suburb-guides' },
+  { slug: 'top-10-family-friendly-suburbs-around-dallas', title: 'Top 10 Family-Friendly Suburbs Around Dallas', excerpt: 'Ranked and compared: the best DFW suburbs for families with school-age kids.', date: '2023-06-01', cat: 'suburb-guides' },
+  { slug: 'dallas-texas-suburbs-you-may-want-to-consider-in-2025-', title: 'Dallas Texas Suburbs You May Want to Consider', excerpt: 'Updated suburb recommendations for families thinking about the DFW move.', date: '2025-01-01', cat: 'suburb-guides' },
+  { slug: 'affordable-places-to-live-in-dallas-texas', title: 'Affordable Places to Live in Dallas, Texas', excerpt: 'Where to find value in the DFW metro — suburbs that deliver quality of life without the Frisco price tag.', date: '2023-03-01', cat: 'suburb-guides' },
+  { slug: 'frisco-vs-plano-which-dallas-texas-suburb-fits-you-best', title: 'Frisco vs Plano: Which Dallas Suburb Fits You Best?', excerpt: 'Two of DFW\'s most popular suburbs go head-to-head. Schools, cost, commute, and family vibe compared.', date: '2024-01-01', cat: 'suburb-guides' },
+  { slug: 'frisco-vs-prosper-texas-which-suburb-is-better-for-you', title: 'Frisco vs Prosper Texas: Which Suburb Is Better for You?', excerpt: 'Frisco is established and polished. Prosper is newer and more affordable. Here\'s how to decide.', date: '2024-06-01', cat: 'suburb-guides' },
+  { slug: 'flower-mound-texas-the-good-and-the-bad', title: 'Flower Mound Texas: The Good and the Bad', excerpt: 'An honest look at what it\'s really like to live in Flower Mound — from someone who actually lives here.', date: '2023-08-01', cat: 'suburb-guides' },
+  { slug: 'exploring-bridlewood-community-in-flower-mound-texas', title: 'Exploring Bridlewood Community in Flower Mound, Texas', excerpt: 'Inside one of Flower Mound\'s most established master-planned communities — what you need to know.', date: '2023-10-01', cat: 'suburb-guides' },
+  { slug: 'wellington-in-flower-mound-texas-explained', title: 'Wellington in Flower Mound, Texas Explained', excerpt: 'A detailed look at the Wellington master-planned community in Flower Mound.', date: '2024-03-01', cat: 'suburb-guides' },
+  { slug: 'living-in-little-elm-texas-lake-life-dallas-texas', title: 'Living in Little Elm, Texas: Lake Life Near Dallas', excerpt: 'Little Elm offers lakefront access, newer construction, and strong schools at a lower price point.', date: '2023-05-01', cat: 'suburb-guides' },
+  { slug: 'living-in-forney-texas', title: 'Living in Forney, Texas', excerpt: 'Discover affordable living east of Dallas — Forney\'s growth story, schools, and community life.', date: '2023-05-01', cat: 'suburb-guides' },
+  { slug: 'northlake-texas-top-family-communities-explained', title: 'Northlake Texas: Top Family Communities Explained', excerpt: 'Northlake is one of the fastest-growing areas in DFW — here\'s what families need to know.', date: '2024-04-01', cat: 'suburb-guides' },
+  { slug: 'is-denton-texas-the-perfect-place-for-you-and-your-family-to-call-home', title: 'Is Denton, Texas the Perfect Place for Your Family?', excerpt: 'Denton has universities, a historic square, and a surprisingly affordable housing market. Here\'s the full picture.', date: '2023-07-01', cat: 'suburb-guides' },
+  { slug: 'places-to-live-in-dallas-texas-with-a-family-west-of-dallas', title: 'Places to Live in Dallas Texas with a Family (West of Dallas)', excerpt: 'West DFW suburbs — Keller, Southlake, Colleyville, Fort Worth — for families coming from California or the Pacific Northwest.', date: '2023-04-01', cat: 'suburb-guides' },
+  { slug: 'wealthiest-cities-dallas-texas', title: 'Wealthiest Cities in Dallas, Texas', excerpt: 'Where DFW\'s wealthiest zip codes are, and what the top suburbs offer in terms of schools and quality of life.', date: '2024-07-01', cat: 'suburb-guides' },
+  { slug: 'luxury-living-in-dallas-tx-explained', title: 'Luxury Living in Dallas TX Explained', excerpt: 'From Highland Park to Southlake — the landscape of luxury real estate and high-end communities in DFW.', date: '2023-11-01', cat: 'suburb-guides' },
+  { slug: 'best-shopping-and-dining-suburbs-in-dallas-fort-worth', title: 'Best Shopping and Dining Suburbs in Dallas Fort Worth', excerpt: 'Where to eat, shop, and actually enjoy your weekends — the DFW suburbs with the best lifestyle amenities.', date: '2024-06-01', cat: 'suburb-guides' },
+
+  // ── Moving to DFW ─────────────────────────────────────────────────────────
+  { slug: 'pros-and-cons-of-dallas-2022', title: 'Pros and Cons of Moving to Dallas', excerpt: 'An honest assessment of what\'s great — and what\'s not — about making the move to Dallas, Texas.', date: '2022-11-01', cat: 'relocation' },
+  { slug: 'top-10-reasons-not-to-move-to-dallas-texas', title: 'Top 10 Reasons NOT To Move To Dallas Texas', excerpt: 'Texas isn\'t for everyone. Here are 10 things to honestly consider before making the DFW move.', date: '2022-11-01', cat: 'relocation' },
+  { slug: 'top-8-reasons-to-move-to-dallas-texas-', title: 'Top 8 Reasons to Move to Dallas, Texas', excerpt: 'No state income tax is just the beginning. Eight compelling reasons families choose DFW.', date: '2022-10-01', cat: 'relocation' },
+  { slug: 'avoid-moving-to-dallas-texas-unless-you-can-handle-these-12-facts', title: 'Avoid Moving to Dallas Texas Unless You Can Handle These 12 Facts', excerpt: 'Heat, traffic, sprawl, and no mountains — the real deal about Dallas before you commit.', date: '2022-08-01', cat: 'relocation' },
+  { slug: 'moving-to-dallas-texas-can-be-bad-if-you-do-it-wrong', title: 'Moving to Dallas Texas Can Be Bad If You Do It Wrong', excerpt: 'The mistakes families make when relocating to DFW — and how to avoid every one of them.', date: '2023-09-01', cat: 'relocation' },
+  { slug: 'avoid-these-mistakes-when-moving-to-texas', title: 'Avoid These Mistakes When Moving to Texas', excerpt: 'What people get wrong about the Texas move — from school enrollment timing to property tax shock.', date: '2023-02-01', cat: 'relocation' },
+  { slug: 'the-ultimate-guide-to-moving-to-dallas-texas', title: 'The Ultimate Guide to Moving to Dallas, Texas', excerpt: 'A comprehensive resource for families planning a DFW relocation — neighborhood selection, timing, budget, and more.', date: '2024-02-01', cat: 'relocation' },
+  { slug: 'top-questions-answered-about-moving-to-dallas', title: 'Top Questions Answered About Moving to Dallas', excerpt: 'The questions every relocating family asks — answered with specifics, not marketing copy.', date: '2023-05-01', cat: 'relocation' },
+  { slug: 'scariest-things-about-moving-to-dallas-', title: 'Scariest Things About Moving to Dallas', excerpt: 'What actually surprises families about DFW after arrival — from property taxes to summer heat.', date: '2022-12-01', cat: 'relocation' },
+  { slug: 'six-mistakes-people-make-moving-to-dallas-and-how-you-can-avoid-them', title: '6 Mistakes People Make Moving to Dallas (and How to Avoid Them)', excerpt: 'Rushing suburb selection, ignoring property taxes, buying before visiting — the most common DFW relocation mistakes.', date: '2023-06-01', cat: 'relocation' },
+  { slug: 'which-lifestyle-in-dallas-is-for-you', title: 'Which Lifestyle in Dallas Is for You?', excerpt: 'Urban core, lakefront suburb, new-construction community, or established neighborhood? DFW has all of them.', date: '2022-07-01', cat: 'relocation' },
+  { slug: 'should-you-avoid-living-in-dallas-texas', title: 'Should You Avoid Living in Dallas, Texas?', excerpt: 'Weighing the pros and cons for families — an honest guide to whether DFW is the right move.', date: '2024-05-01', cat: 'relocation' },
+  { slug: 'moving-to-texas-is-dallas-or-houston-right-for-you', title: 'Moving to Texas: Is Dallas or Houston Right for You?', excerpt: 'The two biggest Texas metros compared for families — schools, cost, job markets, and lifestyle.', date: '2023-09-01', cat: 'relocation' },
+  { slug: 'dont-california-my-texas-do-texans-have-valid-concerns', title: 'Don\'t California My Texas: Do Texans Have Valid Concerns?', excerpt: 'A nuanced look at the California-to-Texas migration and the cultural conversation around it.', date: '2022-08-01', cat: 'relocation' },
+  { slug: 'dallas-texas-is-changing-what-does-it-mean-for-you', title: 'Dallas, Texas Is Changing — What Does It Mean for You?', excerpt: 'How DFW is evolving and what that means for families thinking about moving here now.', date: '2024-05-01', cat: 'relocation' },
+  { slug: 'is-dallas-fort-worth-a-good-place-to-live', title: 'Is Dallas–Fort Worth a Good Place to Live?', excerpt: 'A thorough, unsponsored assessment of DFW as a place to raise a family in 2024.', date: '2023-12-01', cat: 'relocation' },
+  { slug: 'top-10-things-to-do-in-dallas-for-new-residents', title: 'Top 10 Things to Do in Dallas for New Residents', excerpt: 'From the Dallas Arboretum to Klyde Warren Park — what to do first when you arrive.', date: '2024-01-01', cat: 'relocation' },
+  { slug: 'top-areas-around-dallas-to-buy', title: 'Top Areas Around Dallas to Buy a Home', excerpt: 'Where smart families are buying right now — a neighborhood-by-neighborhood breakdown.', date: '2022-09-01', cat: 'relocation' },
+
+  // ── Cost of Living ────────────────────────────────────────────────────────
+  { slug: 'what-does-it-cost-to-live-in-dallas-texas', title: 'What Does It Cost to Live in Dallas, Texas?', excerpt: 'Monthly budget breakdown for DFW families — housing, utilities, groceries, childcare, and taxes.', date: '2022-10-01', cat: 'cost-living' },
+  { slug: 'cost-living-dallas-texas-2024', title: 'Cost of Living in Dallas, Texas (2024)', excerpt: 'Updated 2024 cost-of-living data for DFW — what families from California and the Northeast actually spend.', date: '2024-03-01', cat: 'cost-living' },
+  { slug: 'california-vs-texas-why-are-so-many-californians-moving-to-texas', title: 'California vs Texas: Why Are So Many Californians Moving?', excerpt: 'The numbers behind the California exodus — housing, taxes, and why DFW is the top destination.', date: '2024-08-01', cat: 'cost-living' },
+  { slug: 'living-in-dallas-fort-worth-on-a-budget-affordable-neighborhoods-and-cost-saving-tips', title: 'Living in DFW on a Budget: Affordable Neighborhoods and Tips', excerpt: 'How families stretch their dollar in DFW — lower-cost suburbs, property tax strategies, and budgeting advice.', date: '2024-09-01', cat: 'cost-living' },
+
+  // ── Jobs / Employers ──────────────────────────────────────────────────────
+  { slug: 'finding-high-paying-jobs-in-the-dallas-texas', title: 'Finding High-Paying Jobs in Dallas, Texas', excerpt: 'The top industries and employers in DFW — where to look if you\'re relocating for work or job-searching on arrival.', date: '2022-06-01', cat: 'relocation' },
+  { slug: 'high-paying-jobs-in-dallas-texas-top-10-employers', title: 'High-Paying Jobs in Dallas Texas: Top 10 Employers', excerpt: 'Toyota, American Airlines, JPMorgan, AT&T and more — the major DFW employers and what they pay.', date: '2023-10-01', cat: 'relocation' },
+
+  // ── Comparisons ───────────────────────────────────────────────────────────
+  { slug: 'dallas-vs-austin-choosing-the-right-city-in-texas', title: 'Dallas vs Austin: Choosing the Right City in Texas', excerpt: 'Two Texas giants compared for families — cost, schools, employers, and the lifestyle differences that matter.', date: '2023-04-01', cat: 'relocation' },
+  { slug: 'dallas-vs-houston-which-texas-city-is-right-for-you', title: 'Dallas vs Houston: Which Texas City Is Right for You?', excerpt: 'The two biggest Texas metros go head-to-head for families weighing the Texas move.', date: '2023-07-01', cat: 'relocation' },
+  { slug: 'dallas-vs-phoenix-which-city-is-better-to-live-in', title: 'Dallas vs Phoenix: Which City Is Better to Live In?', excerpt: 'Two Sun Belt cities compared on cost, schools, job market, and quality of life.', date: '2024-04-01', cat: 'relocation' },
+
+  // ── Real Estate / Market ──────────────────────────────────────────────────
+  { slug: 'so-how-bad-is-the-dallas-housing-market', title: 'So, How Bad Is the Dallas Housing Market?', excerpt: 'An honest look at DFW real estate conditions for buyers — inventory, prices, and what to expect.', date: '2024-06-01', cat: 'market' },
+  { slug: 'is-it-the-worst-time-to-buy-in-dallas', title: 'Is It the Worst Time to Buy in Dallas?', excerpt: 'Interest rates are high. So are prices. Here\'s how to think about buying in DFW right now.', date: '2023-11-01', cat: 'market' },
+  { slug: 'should-you-buy-or-rent-in-dallas', title: 'Should You Buy or Rent in Dallas?', excerpt: 'The buy vs rent math in DFW for relocating families — what makes sense at different budget levels.', date: '2024-02-01', cat: 'market' },
+  { slug: 'dallas-biggest-home-builders-dr-horton', title: 'Dallas\'s Biggest Home Builders: DR Horton and Others', excerpt: 'New construction vs resale in DFW — the major builders, their communities, and what to watch for.', date: '2024-05-01', cat: 'market' },
+  { slug: 'top-tips-for-buying-a-home-in-dallas-texas', title: 'Top Tips for Buying a Home in Dallas, Texas', excerpt: 'What every relocating family needs to know before making an offer in the DFW market.', date: '2024-03-01', cat: 'market' },
+  { slug: 'what-is-the-process-of-buying-a-home-in-dallas', title: 'What Is the Process of Buying a Home in Dallas?', excerpt: 'A step-by-step guide to the Texas home-buying process for families relocating from another state.', date: '2024-01-01', cat: 'market' },
+  { slug: 'multiple-home-offers', title: 'Navigating Multiple Offers on a Home in DFW', excerpt: 'How to compete — and win — in a multiple-offer situation in the Dallas–Fort Worth market.', date: '2023-03-01', cat: 'market' },
+  { slug: 'the-dos-and-donts-for-investing-in-real-estate', title: 'The Dos and Don\'ts for Investing in Real Estate', excerpt: 'For families considering investment property in DFW alongside their primary home purchase.', date: '2023-02-01', cat: 'market' },
+  { slug: 'living-in-dallas-texas-all-of-dallas-explained', title: 'Living in Dallas, Texas: All of Dallas Explained', excerpt: 'A comprehensive guide to Dallas proper — neighborhoods, lifestyle, commutes, and what to know before you move.', date: '2022-07-01', cat: 'relocation' },
+
+  // ── Home Tours / Communities ──────────────────────────────────────────────
+  { slug: 'southlake-tx-custom-home-tour-metairie-community', title: '$2.6M New Construction Home Tour — Southlake Texas', excerpt: 'Inside the Metairie community in Southlake — what $2.6 million buys in one of DFW\'s premier suburbs.', date: '2023-11-01', cat: 'suburb-guides' },
+  { slug: 'dallas-lake-life-custom-home-tour-3-million-dollar-home', title: 'Dallas Lake Life: $3.4M Custom Home Tour', excerpt: 'A stunning lakefront custom home near Dallas — inside DFW\'s luxury lake life communities.', date: '2024-01-01', cat: 'suburb-guides' },
+  { slug: 'why-texas-is-a-desirable-place-to-settle-down-exploring-the-allure-of-the-lone-star-state', title: 'Why Texas Is a Desirable Place to Settle Down', excerpt: 'No income tax, strong job market, affordable (relative to coasts) — the full case for Texas.', date: '2024-10-01', cat: 'relocation' },
+];
+
+// ── Render posts ──────────────────────────────────────────────────────────────
+(function () {
+  var grid    = document.getElementById('kc-blog-grid');
+  var empty   = document.getElementById('kc-blog-empty');
+  var filters = document.querySelectorAll('.kc-blog-filter-btn');
+  var active  = 'all';
+
+  var CATEGORY_LABELS = {
+    'suburb-guides': 'Suburb Guide',
+    'schools':       'Schools',
+    'cost-living':   'Cost of Living',
+    'relocation':    'Moving to DFW',
+    'market':        'Real Estate',
+  };
+
+  function render(filter) {
+    var shown = POSTS.filter(function (p) { return filter === 'all' || p.cat === filter; });
+    if (shown.length === 0) {
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+    grid.innerHTML = shown.map(function (p) {
+      var label = CATEGORY_LABELS[p.cat] || p.cat;
+      return '<a class="kc-blog-card" href="/blog/' + p.slug + '" role="listitem">'
+        + '<span class="kc-blog-card-tag">' + label + '</span>'
+        + '<h2>' + p.title + '</h2>'
+        + '<p class="kc-blog-card-excerpt">' + (p.excerpt || '') + '</p>'
+        + '<span class="kc-blog-card-meta">' + formatDate(p.date) + '</span>'
+        + '</a>';
+    }).join('');
+  }
+
+  function formatDate(d) {
+    try {
+      return new Date(d + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    } catch { return d; }
+  }
+
+  filters.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      active = btn.dataset.filter;
+      filters.forEach(function (b) { b.classList.toggle('active', b === btn); });
+      render(active);
+    });
+  });
+
+  render('all');
+}());
+</script>
