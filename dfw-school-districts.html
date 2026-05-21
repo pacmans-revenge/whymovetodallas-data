@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title + meta description are set via Squarespace Page Settings → SEO tab — do not add here -->
+<style>
+  :root {
+    --ivory: #F7F4EE;
+    --navy: #1F2D3D;
+    --gold: #B08D57;
+    --stone: #C8C1B6;
+    --charcoal: #232323;
+    --white: #ffffff;
+    --light-gray: #f0ede7;
+    --border: #ddd8d0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Jost', 'Segoe UI', Arial, sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  h1 { font-size: 2.6rem; margin-bottom: 1.2rem; }
+  h2 { font-size: 1.95rem; margin-bottom: 0.9rem; margin-top: 2.5rem; }
+  h3 { font-size: 1.45rem; margin-bottom: 0.6rem; margin-top: 1.8rem; }
+  h4 { font-size: 1.15rem; margin-bottom: 0.4rem; margin-top: 1.2rem; }
+  p { margin-bottom: 1rem; }
+  a { color: var(--navy); text-decoration: underline; }
+  a:hover { color: var(--gold); }
+
+  .page-wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+  /* Hero */
+  .hero {
+    background:
+      linear-gradient(135deg, rgba(31,45,61,0.52) 0%, rgba(31,45,61,0.36) 50%, rgba(31,45,61,0.48) 100%),
+      url('/images/flower-mound-high-school.webp?content-type=image%2Fwebp') center / cover no-repeat;
+    color: var(--white);
+    padding: clamp(4rem, 10vw, 7rem) 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero h1 { color: var(--white); font-size: 2.4rem; max-width: 820px; margin: 0 auto 1rem; text-shadow: 0 2px 12px rgba(0,0,0,0.45); }
+  .hero p { color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 680px; margin: 0 auto; text-shadow: 0 1px 6px rgba(0,0,0,0.35); }
+  .hero .badge {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 16px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.6);
+  }
+
+  /* Jump Nav — matches kc-jumpnav on suburb pages */
+  .kc-jumpnav {
+    background: var(--white);
+    border-bottom: 1px solid var(--stone);
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .kc-jumpnav::-webkit-scrollbar { display: none; }
+  .kc-jumpnav-list {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  .kc-jumpnav-list a {
+    display: block;
+    padding: 0.85rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: var(--navy);
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .kc-jumpnav-list a:hover { border-bottom-color: var(--gold); color: var(--gold); }
+  .kc-jumpnav-list a.active { border-bottom-color: var(--gold); color: var(--gold); }
+
+  /* Kristen bio card */
+  .kc-intro-box {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    box-shadow: 0 2px 16px rgba(31,45,61,0.08);
+    border-left: 4px solid var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .kc-intro-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,45,61,0.15);
+    flex-shrink: 0;
+  }
+  .kc-intro-text { font-size: 0.88rem; color: #555; line-height: 1.55; }
+  .kc-intro-text strong {
+    display: block;
+    color: var(--navy);
+    font-size: 1.05rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+  .kc-intro-title {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .kc-intro-contact { margin-top: 0.5rem; }
+  .kc-intro-contact a { color: var(--navy); font-weight: 600; text-decoration: none; }
+  .kc-intro-contact a:hover { color: var(--gold); }
+  @media(max-width: 480px) {
+    .kc-intro-box { flex-direction: column; align-items: flex-start; }
+    .kc-intro-avatar { width: 72px; height: 72px; }
+  }
+
+  /* Sections */
+  .section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+
+  /* Callout box */
+  .callout {
+    background: var(--light-gray);
+    border-left: 4px solid var(--gold);
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p { margin-bottom: 0.5rem; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* Rating badge inline */
+  .rating-badge {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.25rem;
+  }
+  .ra { background:#1a6b3a; color:#fff; }
+  .rb { background:#2d7abf; color:#fff; }
+  .rc { background:#e07b1a; color:#fff; }
+  .rd { background:#c0392b; color:#fff; }
+
+  /* Table wrapper */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    background: var(--white);
+  }
+  thead tr { background: var(--navy); color: var(--white); }
+  thead th {
+    padding: 0.85rem 0.75rem;
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+  }
+  thead th:hover { background: #2a3d52; }
+  thead th.sorted-asc::after { content: ' ▲'; font-size: 0.65rem; }
+  thead th.sorted-desc::after { content: ' ▼'; font-size: 0.65rem; }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+  tbody tr:hover { background: var(--ivory); }
+  tbody tr:last-child { border-bottom: none; }
+  td {
+    padding: 0.75rem 0.75rem;
+    vertical-align: top;
+  }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  td a { color: var(--navy); font-size: 0.82rem; }
+  .isd-link { color: var(--navy); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--gold); }
+  .isd-link:hover { color: var(--gold); }
+  .ext-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--navy);
+    text-decoration: none;
+    border: 1px solid var(--stone);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin: 1px 1px;
+    transition: all 0.15s;
+  }
+  .ext-link:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    background: var(--light-gray);
+    color: var(--charcoal);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin: 1px 1px;
+    white-space: nowrap;
+  }
+  .tea-a { color:#1a6b3a; font-weight:700; }
+  .tea-b { color:#2d7abf; font-weight:700; }
+  .tea-c { color:#b87333; font-weight:700; }
+  .niche-a { color:#1a6b3a; font-weight:700; }
+  .niche-b { color:#2d7abf; font-weight:700; }
+  .niche-c { color:#b87333; font-weight:700; }
+
+  /* GreatSchools descriptor badges */
+  .gs-above { color:#1a6b3a; font-weight:600; }
+  .gs-avg   { color:#555;    font-weight:600; }
+  .gs-below { color:#b87333; font-weight:600; }
+
+  /* Composite score mini bar */
+  .comp-score { font-weight:700; font-size:0.92rem; color:var(--navy); display:block; }
+  .comp-bar-wrap { height:5px; background:#e8e4dc; border-radius:3px; width:80px; margin-top:2px; }
+  .comp-bar  { height:5px; background:var(--gold); border-radius:3px; }
+
+  /* Composite methodology callout */
+  .method-box {
+    background:#f0ede7;
+    border-left:4px solid var(--gold);
+    border-radius:6px;
+    padding:1rem 1.25rem;
+    margin:1.25rem 0;
+    font-size:0.88rem;
+    color:var(--charcoal);
+  }
+  .method-box h4 { margin:0 0 0.5rem; color:var(--navy); font-size:0.95rem; }
+  .method-box ul { margin:0.35rem 0 0; padding-left:1.25rem; }
+  .method-box li { margin-bottom:0.2rem; }
+
+  /* Search/filter */
+  .table-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    align-items: center;
+  }
+  .table-controls input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--stone);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background: var(--white);
+    color: var(--charcoal);
+  }
+  .table-controls select {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--stone);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background: var(--white);
+    color: var(--charcoal);
+    cursor: pointer;
+  }
+  .table-note {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+
+  /* ISD Spotlights */
+  .isd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+  @media(max-width: 760px) { .isd-grid { grid-template-columns: 1fr; } }
+  .isd-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.3rem 1.4rem;
+  }
+  .isd-card h3 { margin-top: 0; font-size: 1.2rem; }
+  .isd-card .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.5rem 0 0.75rem;
+  }
+  .isd-card p { font-size: 0.92rem; line-height: 1.65; margin-bottom: 0.6rem; }
+  .isd-card p:last-child { margin-bottom: 0; }
+  .isd-card .suburb-links { margin-top: 0.5rem; font-size: 0.82rem; }
+  .region-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem;
+  }
+
+  /* FAQ */
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+  .faq-q {
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .faq-q .arrow { font-size: 1rem; flex-shrink: 0; transition: transform 0.2s; }
+  .faq-q.open .arrow { transform: rotate(180deg); }
+  .faq-a { display: none; padding-top: 0.75rem; font-size: 0.95rem; line-height: 1.7; color: var(--charcoal); }
+  .faq-a.open { display: block; }
+
+  /* CTA */
+  .cta-box {
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .cta-box h2 { color: var(--white); margin-top: 0; }
+  .cta-box p { color: var(--stone); max-width: 560px; margin: 0 auto 1.5rem; }
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    padding: 0.85rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .cta-btn:hover { opacity: 0.88; color: var(--white); }
+
+  /* Compliance footer */
+  .compliance {
+    font-size: 0.78rem;
+    color: #888;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    line-height: 1.6;
+  }
+
+  /* Special considerations */
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
+  .spec-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.3rem;
+  }
+  .spec-card h4 { margin-top: 0; color: var(--gold); font-size: 1rem; }
+  .spec-card p { font-size: 0.88rem; margin-bottom: 0; line-height: 1.6; }
+
+  @media(max-width: 640px) {
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.55rem; }
+    .hero { padding: 3rem 1rem 2.5rem; }
+    .page-wrap { padding: 1.5rem 1rem 3rem; }
+    .cta-box { padding: 2rem 1.25rem; }
+    .kc-jumpnav { padding: 0 0.5rem; }
+    .kc-jumpnav-list a { padding: 0.75rem 0.7rem; font-size: 0.75rem; }
+  }
+</style>
+
+<!-- Schema: paste into Squarespace Page Settings → Advanced → Page Header Code Injection
+     See: pages/dfw-school-districts-schema.html
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Best School Districts in DFW | Ratings, Rankings & Guide",
+  "description": "Compare all 36 Dallas-Fort Worth school districts by TEA rating, Niche grade, enrollment, and tax rate. Honest spotlights for families relocating to DFW.",
+  "url": "https://www.whymovetodallas.com/dfw-school-districts",
+  "inLanguage": "en-US",
+  "dateModified": "2026-05-16",
+  "publisher": {
+    "@type": "Person",
+    "name": "Kristen Carpentier",
+    "jobTitle": "DFW Family Relocation Specialist",
+    "url": "https://www.whymovetodallas.com",
+    "telephone": "+16024054115",
+    "email": "Kristen@whymovetodallas.com",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "license",
+      "name": "Texas Real Estate License",
+      "identifier": "TREC #760457"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.whymovetodallas.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Best School Districts in DFW",
+        "item": "https://www.whymovetodallas.com/dfw-school-districts"
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which DFW ISD is best for gifted students?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no single answer — the right district depends on your child's specific gifts and learning style. Frisco ISD and Plano ISD have the largest and most differentiated GT programs at scale, with multiple magnet pathways. Lovejoy ISD and Carroll ISD consistently produce exceptional college outcomes in small-district settings where gifted students receive more individual attention. Coppell ISD's IB program from elementary through diploma level is one of the strongest structured accelerated pathways in DFW. Argyle ISD is often cited by GT parents who want the academic ceiling without the size and intensity of a mega-district."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which districts have the strongest special education programs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lewisville ISD and Keller ISD are consistently named by SpEd advocates and parents of children with IEPs as the most robust in North Texas — both in terms of staffing levels and district culture around inclusion. Plano ISD and Frisco ISD have the scale to provide extensive specialist services. Texas has an IEP portability law, meaning your child's IEP from another state is legally recognized in Texas, though the specific services may be renegotiated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose my school district when buying a home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — your school district is determined entirely by your home's address. A relocation-focused agent can filter home searches specifically by ISD boundary before you ever look at listings. The TEA School District Locator (tea.texas.gov) and most county appraisal district websites let you look up any address and see its ISD assignment within seconds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify which ISD a specific address is zoned to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three reliable methods: (1) The TEA School District Locator at tea.texas.gov — plug in any Texas address and it tells you the ISD. (2) Your county appraisal district's parcel search — CCAD (Collin), DCAD (Dallas), DCAD/Denton (Denton), TCAD (Tarrant). Every parcel record lists the taxing jurisdictions including the ISD. (3) Never assume that a city name equals the same-named ISD — this is the number one school-district mistake out-of-state buyers make."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are private schools better than public in DFW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. The top DFW public ISDs — Carroll, Highland Park, Lovejoy, Coppell, Argyle, Frisco — produce college outcomes and AP/IB programming that rival the best private schools in the region. The main reasons families choose DFW private schools are faith-based education, smaller class sizes, specialized learning environments, or dissatisfaction with the specific ISDs serving their address. If you're buying in a top-tier ISD, the public school is almost always the right financial decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do property taxes relate to school district choice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your school district M&O and I&S tax rates are applied to your home's assessed value and represent the largest component of your annual Texas property tax bill. Two homes with identical purchase prices but in different ISDs can have property tax bills that differ by $3,000–$6,000 per year based solely on the tax rate. For example, a $600,000 home in Carroll ISD generates roughly $5,770 in school taxes annually, while the same home in Prosper ISD generates roughly $7,531 — a difference of about $1,761 per year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which ISDs are growing fastest and building new schools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fastest-growing ISDs in terms of enrollment and new campus construction are Frisco ISD, Prosper ISD, Celina ISD, Melissa ISD, Anna ISD, Little Elm ISD, and Eagle Mountain-Saginaw ISD. Fast-growing districts have real trade-offs: brand-new facilities, but also first-year campus cultures, potential boundary redraws as new campuses open, and occasionally long travel times while permanent campuses are being built."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I transfer my child into a different ISD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Transfer policies vary significantly by district. The top-performing districts — Carroll ISD, Highland Park ISD, Lovejoy ISD, Coppell ISD — generally do not accept open-enrollment transfers; you must live within the district to attend. Dallas ISD operates a robust magnet school system that accepts applications from anywhere in the city, regardless of home address. Most mid-tier ISDs do accept transfers, but with waitlists and conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which DFW districts offer IB programs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IB (International Baccalaureate) programs in DFW public ISDs include: Frisco ISD (multiple IB World Schools), Allen ISD (IB Diploma), Plano ISD (IB at multiple levels), Coppell ISD (IB from elementary through Diploma — one of the most complete public IB programs in the region), Carroll ISD (IB Diploma at Carroll Senior HS), McKinney ISD (IB Diploma), and Grapevine-Colleyville ISD. IB placement typically requires a separate application and is not automatic based on home address — even within the district."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between TEA ratings and Niche grades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TEA ratings (A–F) are assigned by the Texas state government based on three objective domains: Student Achievement (test scores and graduation rates), School Progress (growth over time), and Closing the Gaps (performance gaps between student groups). Niche grades combine test scores with survey data — parent and student reviews, teacher quality ratings, college prep metrics, and community vibe. When TEA and Niche diverge, TEA reflects what the data says and Niche reflects how the community feels about it. Both are worth understanding — together they paint a fuller picture than either alone."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="badge">DFW Family Relocation Guide</div>
+  <h1>Best School Districts in Dallas–Fort Worth</h1>
+  <p>Ratings, rankings, tax rates & honest spotlights on 36 ISDs — so you can choose the right suburb with confidence.</p>
+</div>
+
+<!-- JUMP NAV -->
+<nav class="kc-jumpnav" aria-label="Page sections">
+  <ul class="kc-jumpnav-list">
+    <li><a href="#intro">About</a></li>
+    <li><a href="#how-texas-isds-work">How ISDs Work</a></li>
+    <li><a href="#comparison-table">Compare All ISDs</a></li>
+    <li><a href="#isd-spotlights">ISD Spotlights</a></li>
+    <li><a href="#special-considerations">Special Programs</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact-kristen">Talk to Kristen</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+<!-- SECTION 1: INTRO -->
+<section class="section" id="intro">
+  <h2>A Note from Kristen</h2>
+
+  <div class="kc-intro-box">
+    <img
+      src="data:image/webp;base64,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"
+      alt="Kristen Carpentier, DFW Family Relocation Specialist and licensed Texas Realtor"
+      class="kc-intro-avatar"
+      loading="lazy" width="100" height="100"
+      onerror="this.style.display='none'"
+    >
+    <div class="kc-intro-text">
+      <strong>Kristen Carpentier</strong>
+      <span class="kc-intro-title">DFW Family Relocation Specialist</span>
+      Licensed Texas Realtor® (TREC #760457), brokered by eXp Realty. Mom of four, Flower Mound resident, and the person hundreds of families call before they ever look at a listing.
+      <div class="kc-intro-contact">
+        <a href="tel:6024054115">(602) 405-4115</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:Kristen@whymovetodallas.com">Kristen@whymovetodallas.com</a>
+      </div>
+    </div>
+  </div>
+
+  <p>When my husband and I chose Flower Mound as our home, school district was the deciding factor — full stop. Not the house. Not the commute. The district. I'm a mom of four, and I know exactly how much weight that choice carries. So when families call me from California or New York and ask, "which suburb has the best schools?" I never give them a one-word answer. Because in Dallas–Fort Worth, that question is far more complicated — and far more important — than it sounds.</p>
+  <p>DFW has 112 independent school districts. You're not choosing a "Dallas" school. You're choosing a specific ISD that covers a specific set of streets — and that ISD choice will determine your kids' teachers, their programs, their classmates, and yes, your property tax bill for as long as you own that home. Two houses on the same street can sit in different ISDs. Some cities are split across three or four districts.</p>
+  <p>I built this page because no one had put all of this in one place for relocating parents. Below you'll find TEA accountability ratings, Niche grades, GreatSchools profiles, tax rates, enrollment data, and honest parent-to-parent spotlights on 36 ISDs — every district that meaningfully serves families relocating to North Texas. This is the research I walk every client through before we ever look at a single listing.</p>
+
+  <div class="callout">
+    <p><strong>Quick reminder on data sources:</strong> TEA A–F ratings are the official Texas accountability benchmark — government data, fully public. Niche and GreatSchools ratings reflect survey data, test scores, and community reviews. We reference all three because each tells a different part of the story. Tax rates come from the Texas Comptroller's 2024 certified levies — the official source.</p>
+    <p>Niche and GreatSchools ratings are referenced and linked — not reproduced wholesale. Always check their sites for the most current data.</p>
+  </div>
+</section>
+
+<!-- SECTION 2: HOW TEXAS ISDs WORK -->
+<section class="section" id="how-texas-isds-work">
+  <h2>How Texas School Districts Work — A Primer for Out-of-State Families</h2>
+  <p>If you're moving from California, New York, or Illinois, the Texas school district system works differently than what you're used to. Here's what every relocating parent needs to understand before house-hunting.</p>
+
+  <h3>ISD = Independent School District</h3>
+  <p>An ISD is its own government entity — independently governed by an elected school board, with its own budget, curriculum decisions, and tax rate. ISDs do not report to the city or county. The City of Frisco has no authority over Frisco ISD. They are entirely separate institutions that happen to share a name.</p>
+
+  <h3>District Boundaries Don't Follow City Lines</h3>
+  <p>This is the single most important thing to understand. A home in Frisco might be zoned to Frisco ISD, Prosper ISD, McKinney ISD, or even Little Elm ISD — depending entirely on which street it's on. A home in Plano's north side is almost certainly zoned to Frisco ISD, not Plano ISD. A home in Flower Mound could be Lewisville ISD or Argyle ISD. You must verify by address, every time, before making an offer.</p>
+  <p><strong>How to verify:</strong> Use the <a href="https://tea.texas.gov/texas-schools/general-information/school-district-locator" target="_blank" rel="noopener">TEA School District Locator</a> or search your county appraisal district's parcel search tool. Your county's CAD (DCAD for Dallas, CCAD for Collin, DCAD for Denton, TCAD for Tarrant) will list the school district on every property record.</p>
+
+  <h3>TEA A–F Ratings: The Official Benchmark</h3>
+  <p>Every year (starting again in 2022 after a legal dispute delayed releases), the Texas Education Agency assigns every school district and campus a letter grade of A through F based on three domains: Student Achievement, School Progress, and Closing the Gaps. An A means 90–100 points. B is 80–89. C is 70–79. These ratings are objective, government-calculated, and the most apples-to-apples comparison available for Texas ISDs.</p>
+
+  <h3>Niche and GreatSchools: Community-Weighted Data</h3>
+  <p>Niche.com aggregates test scores, college readiness, teacher quality data, student-to-teacher ratios, and community surveys into letter grades (A+ through F). GreatSchools.org uses a 1–10 scale based on similar metrics with additional emphasis on equity and student progress. Neither is "official" — but both are widely referenced by families in the research phase and reflect real community perceptions. We reference both throughout this page with direct links to each ISD's profile. Always use these alongside TEA data, not instead of it.</p>
+
+  <h3>The Tax Rate Connection</h3>
+  <p>Your school district determines a significant portion of your annual property tax bill. Texas has no state income tax, and school districts are funded heavily through local property taxes. The M&amp;O (Maintenance &amp; Operations) rate funds daily operations; the I&amp;S (Interest &amp; Sinking) rate covers bond debt — typically school construction. Fast-growing outer-ring districts like Prosper, Celina, and Anna often carry higher I&amp;S rates because they're building new campuses to keep up with explosive enrollment growth. Established, wealthier districts like Highland Park and Carroll ISD have lower total rates because high property values generate more revenue at lower rates.</p>
+
+  <h3>Transfer Policies: Most Top Districts Don't Accept Them</h3>
+  <p>Carroll ISD (Southlake), Highland Park ISD, Lovejoy ISD, and Coppell ISD generally do not accept open-enrollment transfers — you must own or rent within the district to attend. Dallas ISD is the notable exception with its magnet school system, which accepts applications from across the city. Charter schools (KIPP, Uplift, Harmony, etc.) accept students regardless of home address and operate independently of ISDs entirely.</p>
+
+  <h3>Robin Hood: Why Highland Park's Tax Rate Is Lower</h3>
+  <p>Texas operates a "recapture" system (informally called Robin Hood) where property-wealthy districts that generate more than their allotted state funding must send a portion back to the state for redistribution. Highland Park ISD and Carroll ISD are both recapture districts — meaning despite setting lower tax rates, their extremely high property values generate enough revenue to fund their schools AND contribute to state coffers. This is why you'll see their total rates below $1.00/$100, while outer-ring districts with lower home values and high construction debt carry rates above $1.25/$100.</p>
+</section>
+
+<!-- SECTION 3: COMPARISON TABLE -->
+<section class="section" id="comparison-table">
+  <h2>DFW School District Comparison Table</h2>
+  <p>All 36 ISDs that meaningfully serve families relocating to Dallas–Fort Worth. Ranked by composite score — click any column header to re-sort. Tax rates are 2024 certified rates per $100 of assessed value (Texas Comptroller).</p>
+
+  <div class="method-box">
+    <h4>⭐ How the Composite Score Works</h4>
+    <p>Each district is ranked using a weighted composite of three independent data sources — giving you one number to compare apples to apples:</p>
+    <ul>
+      <li><strong>TEA Rating (40%)</strong> — Texas Education Agency A–F accountability score (official government benchmark, 0–100 scale). Highest weight because it's objective and Texas-specific.</li>
+      <li><strong>Niche Grade (35%)</strong> — Aggregates test scores, college readiness, teacher quality, and community reviews. A+=97, A=93, A-=90, B+=87, B=83, B-=80, C=73.</li>
+      <li><strong>GreatSchools (25%)</strong> — Community ratings emphasizing equity and student progress. "Above average" districts score 85; "Average" score 70; "Below average" score 55.</li>
+    </ul>
+    <p style="margin-top:0.5rem;font-size:0.82rem;color:#666;">Niche and GreatSchools data are referenced for informational purposes. Always visit their sites for the most current grades. TEA source: <a href="https://txschools.gov" target="_blank" rel="noopener">txschools.gov</a>.</p>
+  </div>
+
+  <div class="table-controls">
+    <input type="text" id="tableSearch" placeholder="🔍  Search by ISD or suburb..." oninput="filterTable()" aria-label="Filter school districts">
+    <select id="ratingFilter" onchange="filterTable()" aria-label="Filter by TEA rating">
+      <option value="">All TEA Ratings</option>
+      <option value="A">TEA A</option>
+      <option value="B">TEA B</option>
+      <option value="C">TEA C</option>
+    </select>
+    <select id="countyFilter" onchange="filterTable()" aria-label="Filter by county">
+      <option value="">All Counties</option>
+      <option value="Collin">Collin County</option>
+      <option value="Denton">Denton County</option>
+      <option value="Tarrant">Tarrant County</option>
+      <option value="Dallas">Dallas County</option>
+      <option value="Rockwall">Rockwall County</option>
+      <option value="Ellis">Ellis County</option>
+      <option value="Johnson">Johnson County</option>
+      <option value="Kaufman">Kaufman County</option>
+    </select>
+  </div>
+
+  <div class="table-wrap">
+    <table id="isdTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)" title="Sort by ISD name">ISD Name</th>
+          <th onclick="sortTable(1)" title="Sort by composite score" style="background:#2a3d52;">⭐ Composite<br><small style="font-weight:300;font-size:0.7rem">TEA+Niche+GS</small></th>
+          <th onclick="sortTable(2)" title="Sort by TEA rating">TEA Rating<br><small style="font-weight:300;font-size:0.7rem">(2024–25)</small></th>
+          <th onclick="sortTable(3)" title="Sort by Niche grade">Niche Grade</th>
+          <th>GreatSchools Summary</th>
+          <th onclick="sortTable(5)" title="Sort by enrollment">Enrollment</th>
+          <th onclick="sortTable(6)" title="Sort by campuses">Campuses</th>
+          <th onclick="sortTable(7)" title="Sort by tax rate">Tax Rate<br><small style="font-weight:300;font-size:0.7rem">per $100</small></th>
+          <th>Notable Programs</th>
+          <th>County</th>
+          <th>Key Suburbs</th>
+        </tr>
+      </thead>
+      <tbody id="isdTableBody">
+
+        <!-- COLLIN COUNTY -->
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#frisco-isd">Frisco ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(90)</small></td>
+          <td><a href="https://www.niche.com/k12/d/frisco-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/frisco/frisco-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~66,700</td>
+          <td>77</td>
+          <td>$1.03</td>
+          <td><span class="tag">IB</span><span class="tag">STEM</span><span class="tag">Fine Arts</span><span class="tag">GT</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Frisco, N. Plano, parts of Prosper, McKinney, Little Elm</td>
+        </tr>
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#allen-isd">Allen ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(91)</small></td>
+          <td><a href="https://www.niche.com/k12/d/allen-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/allen/allen-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~22,000</td>
+          <td>26</td>
+          <td>$1.13</td>
+          <td><span class="tag">IB</span><span class="tag">Fine Arts</span><span class="tag">STEM</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Allen</td>
+        </tr>
+        <tr data-county="Collin" data-tea="B">
+          <td><a class="isd-link" href="#mckinney-isd">McKinney ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(88)</small></td>
+          <td><a href="https://www.niche.com/k12/d/mckinney-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/mckinney/mckinney-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~24,000</td>
+          <td>34</td>
+          <td>$1.13</td>
+          <td><span class="tag">IB</span><span class="tag">STEM</span><span class="tag">GT</span><span class="tag">Fine Arts</span></td>
+          <td>Collin</td>
+          <td>McKinney</td>
+        </tr>
+        <tr data-county="Collin" data-tea="B">
+          <td><a class="isd-link" href="#plano-isd">Plano ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(82)</small></td>
+          <td><a href="https://www.niche.com/k12/d/plano-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/plano/plano-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~49,000</td>
+          <td>72</td>
+          <td>$1.04</td>
+          <td><span class="tag">IB</span><span class="tag">Dual Language</span><span class="tag">GT</span><span class="tag">STEM</span><span class="tag">Magnet</span></td>
+          <td>Collin</td>
+          <td>Plano (south/central), Murphy</td>
+        </tr>
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#prosper-isd">Prosper ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(91)</small></td>
+          <td><a href="https://www.niche.com/k12/d/prosper-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/prosper/prosper-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~27,000</td>
+          <td>35</td>
+          <td>$1.26</td>
+          <td><span class="tag">STEM</span><span class="tag">Fine Arts</span><span class="tag">CTE</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Prosper, E. Frisco, S. Celina</td>
+        </tr>
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#lovejoy-isd">Lovejoy ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(94)</small></td>
+          <td><a href="https://www.niche.com/k12/d/lovejoy-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/allen/lovejoy-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~5,500</td>
+          <td>8</td>
+          <td>$1.26</td>
+          <td><span class="tag">GT</span><span class="tag">AP</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Fairview, Lucas</td>
+        </tr>
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#wylie-isd">Wylie ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(92)</small></td>
+          <td><a href="https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/wylie/wylie-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~17,400</td>
+          <td>23</td>
+          <td>$1.21</td>
+          <td><span class="tag">GT</span><span class="tag">Fine Arts</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Wylie, Murphy (east), Sachse</td>
+        </tr>
+        <tr data-county="Collin" data-tea="A">
+          <td><a class="isd-link" href="#melissa-isd">Melissa ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(~90)</small></td>
+          <td><a href="https://www.niche.com/k12/d/melissa-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/melissa/melissa-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~6,700</td>
+          <td>8</td>
+          <td>$1.26</td>
+          <td><span class="tag">STEM</span><span class="tag">Dual Credit</span><span class="tag">CTE</span></td>
+          <td>Collin</td>
+          <td>Melissa</td>
+        </tr>
+        <tr data-county="Collin" data-tea="C">
+          <td><a class="isd-link" href="#anna-isd">Anna ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(~75)</small></td>
+          <td><a href="https://www.niche.com/k12/d/anna-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
+          <td><a href="https://www.greatschools.org/texas/anna/anna-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~6,000</td>
+          <td>8</td>
+          <td>$1.26</td>
+          <td><span class="tag">Dual Credit</span><span class="tag">Robotics</span></td>
+          <td>Collin</td>
+          <td>Anna</td>
+        </tr>
+        <tr data-county="Collin" data-tea="B">
+          <td><a class="isd-link" href="#celina-isd">Celina ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(87)</small></td>
+          <td><a href="https://www.niche.com/k12/d/celina-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
+          <td><a href="https://www.greatschools.org/texas/celina/celina-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~8,000</td>
+          <td>10</td>
+          <td>$1.24</td>
+          <td><span class="tag">Athletics</span><span class="tag">STEM</span><span class="tag">Dual Credit</span></td>
+          <td>Collin</td>
+          <td>Celina, S. Prosper, E. Anna</td>
+        </tr>
+        <tr data-county="Collin" data-tea="B">
+          <td><a class="isd-link" href="#aubrey-isd">Aubrey ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(87)</small></td>
+          <td><a href="https://www.niche.com/k12/d/aubrey-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B</a></td>
+          <td><a href="https://www.greatschools.org/texas/aubrey/aubrey-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~5,500</td>
+          <td>8</td>
+          <td>$1.26</td>
+          <td><span class="tag">Small Classes</span><span class="tag">Dual Credit</span></td>
+          <td>Denton</td>
+          <td>Aubrey</td>
+        </tr>
+
+        <!-- DENTON COUNTY -->
+        <tr data-county="Denton" data-tea="B">
+          <td><a class="isd-link" href="#lewisville-isd">Lewisville ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(81)</small></td>
+          <td><a href="https://www.niche.com/k12/d/lewisville-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/lewisville/lewisville-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~47,000</td>
+          <td>60</td>
+          <td>$1.12</td>
+          <td><span class="tag">GT</span><span class="tag">IB</span><span class="tag">Fine Arts</span><span class="tag">SpEd</span><span class="tag">Dual Language</span></td>
+          <td>Denton</td>
+          <td>Flower Mound, Highland Village, The Colony, Lewisville</td>
+        </tr>
+        <tr data-county="Denton" data-tea="A">
+          <td><a class="isd-link" href="#argyle-isd">Argyle ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(92)</small></td>
+          <td><a href="https://www.niche.com/k12/d/argyle-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/argyle/argyle-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~8,000</td>
+          <td>10</td>
+          <td>$1.21</td>
+          <td><span class="tag">GT</span><span class="tag">Fine Arts</span><span class="tag">STEM</span><span class="tag">Athletics</span></td>
+          <td>Denton</td>
+          <td>Argyle, Lantana, W. Flower Mound, N. Northlake</td>
+        </tr>
+        <tr data-county="Denton" data-tea="B">
+          <td><a class="isd-link" href="#northwest-isd">Northwest ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(81)</small></td>
+          <td><a href="https://www.niche.com/k12/d/northwest-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/fort-worth/northwest-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~32,000</td>
+          <td>42</td>
+          <td>$1.09</td>
+          <td><span class="tag">Fine Arts</span><span class="tag">STEM</span><span class="tag">CTE</span><span class="tag">Dual Credit</span></td>
+          <td>Denton/Tarrant</td>
+          <td>Trophy Club, Roanoke, N. Northlake, Haslet</td>
+        </tr>
+        <tr data-county="Denton" data-tea="B">
+          <td><a class="isd-link" href="#denton-isd">Denton ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(80)</small></td>
+          <td><a href="https://www.niche.com/k12/d/denton-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/denton/denton-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~32,900</td>
+          <td>45</td>
+          <td>$1.16</td>
+          <td><span class="tag">Fine Arts</span><span class="tag">Dual Language</span><span class="tag">GT</span><span class="tag">Athletics</span></td>
+          <td>Denton</td>
+          <td>Denton, Corinth, Hickory Creek</td>
+        </tr>
+        <tr data-county="Denton" data-tea="B">
+          <td><a class="isd-link" href="#lake-dallas-isd">Lake Dallas ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(~83)</small></td>
+          <td><a href="https://www.niche.com/k12/d/lake-dallas-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B</a></td>
+          <td><a href="https://www.greatschools.org/texas/lake-dallas/lake-dallas-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~3,900</td>
+          <td>5</td>
+          <td>$1.26</td>
+          <td><span class="tag">GT</span><span class="tag">Dual Credit</span></td>
+          <td>Denton</td>
+          <td>Lake Dallas, Corinth, Shady Shores</td>
+        </tr>
+        <tr data-county="Denton" data-tea="C">
+          <td><a class="isd-link" href="#little-elm-isd">Little Elm ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(79)</small></td>
+          <td><a href="https://www.niche.com/k12/d/little-elm-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
+          <td><a href="https://www.greatschools.org/texas/little-elm/little-elm-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~11,000</td>
+          <td>13</td>
+          <td>$1.23</td>
+          <td><span class="tag">CTE</span><span class="tag">Dual Credit</span></td>
+          <td>Denton</td>
+          <td>Little Elm (parts; east side is Frisco ISD)</td>
+        </tr>
+
+        <!-- TARRANT COUNTY -->
+        <tr data-county="Tarrant" data-tea="C">
+          <td><a class="isd-link" href="#fort-worth-isd">Fort Worth ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(72)</small></td>
+          <td><a href="https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-c">C+</a></td>
+          <td><a href="https://www.greatschools.org/texas/fort-worth/fort-worth-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~73,000</td>
+          <td>140+</td>
+          <td>$1.06</td>
+          <td><span class="tag">Magnet Schools</span><span class="tag">IB</span><span class="tag">Fine Arts</span><span class="tag">CTE</span></td>
+          <td>Tarrant</td>
+          <td>City of Fort Worth</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="A">
+          <td><a class="isd-link" href="#carroll-isd">Carroll ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(95)</small></td>
+          <td><a href="https://www.niche.com/k12/d/carroll-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/southlake/carroll-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~8,500</td>
+          <td>11</td>
+          <td>$0.96</td>
+          <td><span class="tag">IB</span><span class="tag">GT</span><span class="tag">AP</span><span class="tag">Fine Arts</span><span class="tag">Athletics</span></td>
+          <td>Tarrant</td>
+          <td>Southlake, Westlake (part)</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#gcisd">Grapevine-Colleyville ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(86)</small></td>
+          <td><a href="https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/grapevine/grapevine-colleyville-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~13,500</td>
+          <td>26</td>
+          <td>$0.92</td>
+          <td><span class="tag">IB</span><span class="tag">Dual Language</span><span class="tag">Fine Arts</span><span class="tag">GT</span></td>
+          <td>Tarrant/Dallas</td>
+          <td>Colleyville, Grapevine</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#keller-isd">Keller ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(~85)</small></td>
+          <td><a href="https://www.niche.com/k12/d/keller-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/keller/keller-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~33,000</td>
+          <td>42</td>
+          <td>$1.09</td>
+          <td><span class="tag">SpEd</span><span class="tag">GT</span><span class="tag">Fine Arts</span><span class="tag">STEM</span></td>
+          <td>Tarrant</td>
+          <td>Keller, Trophy Club (part), NW Colleyville</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#mansfield-isd">Mansfield ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(~88)</small></td>
+          <td><a href="https://www.niche.com/k12/d/mansfield-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/mansfield/mansfield-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~34,000</td>
+          <td>45</td>
+          <td>$1.15</td>
+          <td><span class="tag">STEAM</span><span class="tag">Fine Arts</span><span class="tag">Dual Language</span><span class="tag">CTE</span></td>
+          <td>Tarrant</td>
+          <td>Mansfield, S. Arlington</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#ems-isd">Eagle Mountain-Saginaw ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(87)</small></td>
+          <td><a href="https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/fort-worth/eagle-mountain-saginaw-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~23,500</td>
+          <td>28</td>
+          <td>$1.25</td>
+          <td><span class="tag">AP</span><span class="tag">Dual Credit</span><span class="tag">CTE</span><span class="tag">Athletics</span></td>
+          <td>Tarrant</td>
+          <td>Saginaw, NW Fort Worth, Lake Worth</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#birdville-isd">Birdville ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(~83)</small></td>
+          <td><a href="https://www.niche.com/k12/d/birdville-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
+          <td><a href="https://www.greatschools.org/texas/north-richland-hills/birdville-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~22,000</td>
+          <td>30</td>
+          <td>$1.20</td>
+          <td><span class="tag">Fine Arts</span><span class="tag">CTE</span><span class="tag">Dual Credit</span></td>
+          <td>Tarrant</td>
+          <td>N. Richland Hills, Haltom City, Richland Hills, Watauga</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="B">
+          <td><a class="isd-link" href="#heb-isd">Hurst-Euless-Bedford ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(88)</small></td>
+          <td><a href="https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/bedford/hurst-euless-bedford-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~21,000</td>
+          <td>31</td>
+          <td>$0.97</td>
+          <td><span class="tag">GT</span><span class="tag">Fine Arts</span><span class="tag">Dual Credit</span><span class="tag">JROTC</span></td>
+          <td>Tarrant</td>
+          <td>Hurst, Euless, Bedford</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="C">
+          <td><a class="isd-link" href="#crowley-isd">Crowley ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(~75)</small></td>
+          <td><a href="https://www.niche.com/k12/d/crowley-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
+          <td><a href="https://www.greatschools.org/texas/fort-worth/crowley-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~17,000</td>
+          <td>24</td>
+          <td>$1.26</td>
+          <td><span class="tag">Athletics</span><span class="tag">Dual Credit</span><span class="tag">JROTC</span></td>
+          <td>Tarrant</td>
+          <td>Crowley, S. Fort Worth, Kennedale</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="C">
+          <td><a class="isd-link" href="#azle-isd">Azle ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(78)</small></td>
+          <td><a href="https://www.niche.com/k12/d/azle-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B</a></td>
+          <td><a href="https://www.greatschools.org/texas/azle/azle-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~7,200</td>
+          <td>11</td>
+          <td>$1.10</td>
+          <td><span class="tag">GT</span><span class="tag">Athletics</span><span class="tag">Dual Credit</span></td>
+          <td>Tarrant/Parker</td>
+          <td>Azle, Pelican Bay, Reno</td>
+        </tr>
+        <tr data-county="Tarrant" data-tea="C">
+          <td><a class="isd-link" href="#white-settlement-isd">White Settlement ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(73)</small></td>
+          <td><a href="https://www.niche.com/k12/d/white-settlement-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-c">C</a></td>
+          <td><a href="https://www.greatschools.org/texas/white-settlement/white-settlement-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~6,900</td>
+          <td>8</td>
+          <td>$1.21</td>
+          <td><span class="tag">Fine Arts (Tannahill)</span><span class="tag">CTE</span></td>
+          <td>Tarrant</td>
+          <td>White Settlement, W. Fort Worth, Lake Worth</td>
+        </tr>
+
+        <!-- DALLAS COUNTY -->
+        <tr data-county="Dallas" data-tea="C">
+          <td><a class="isd-link" href="#dallas-isd">Dallas ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(75)</small></td>
+          <td><a href="https://www.niche.com/k12/d/dallas-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
+          <td><a href="https://www.greatschools.org/texas/dallas/dallas-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~140,000</td>
+          <td>230+</td>
+          <td>$1.10</td>
+          <td><span class="tag">Magnet Schools</span><span class="tag">IB</span><span class="tag">STEM</span><span class="tag">Fine Arts</span></td>
+          <td>Dallas</td>
+          <td>City of Dallas</td>
+        </tr>
+        <tr data-county="Dallas" data-tea="A">
+          <td><a class="isd-link" href="#coppell-isd">Coppell ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(93)</small></td>
+          <td><a href="https://www.niche.com/k12/d/coppell-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/coppell/coppell-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~10,500</td>
+          <td>16</td>
+          <td>$1.00</td>
+          <td><span class="tag">IB</span><span class="tag">Dual Language</span><span class="tag">GT</span><span class="tag">STEM</span></td>
+          <td>Dallas</td>
+          <td>Coppell</td>
+        </tr>
+        <tr data-county="Dallas" data-tea="A">
+          <td><a class="isd-link" href="#highland-park-isd">Highland Park ISD</a></td>
+          <td><span class="tea-a">A</span> <small>(96)</small></td>
+          <td><a href="https://www.niche.com/k12/d/highland-park-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A+</a></td>
+          <td><a href="https://www.greatschools.org/texas/dallas/highland-park-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~7,000</td>
+          <td>8</td>
+          <td>$0.87</td>
+          <td><span class="tag">AP</span><span class="tag">IB</span><span class="tag">Fine Arts</span><span class="tag">GT</span><span class="tag">Athletics</span></td>
+          <td>Dallas</td>
+          <td>Highland Park, University Park</td>
+        </tr>
+
+        <!-- ROCKWALL COUNTY -->
+        <tr data-county="Rockwall" data-tea="B">
+          <td><a class="isd-link" href="#rockwall-isd">Rockwall ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(89)</small></td>
+          <td><a href="https://www.niche.com/k12/d/rockwall-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
+          <td><a href="https://www.greatschools.org/texas/rockwall/rockwall-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~25,000</td>
+          <td>28</td>
+          <td>$1.03</td>
+          <td><span class="tag">Athletics</span><span class="tag">Fine Arts</span><span class="tag">GT</span><span class="tag">Dual Credit</span></td>
+          <td>Rockwall</td>
+          <td>Rockwall, Heath, Fate, Royse City (part)</td>
+        </tr>
+        <tr data-county="Rockwall" data-tea="C">
+          <td><a class="isd-link" href="#royse-city-isd">Royse City ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(77)</small></td>
+          <td><a href="https://www.niche.com/k12/d/royse-city-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
+          <td><a href="https://www.greatschools.org/texas/royse-city/royse-city-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~12,000</td>
+          <td>15</td>
+          <td>$1.26</td>
+          <td><span class="tag">Athletics</span><span class="tag">Dual Credit</span><span class="tag">CTE</span></td>
+          <td>Rockwall/Collin</td>
+          <td>Royse City</td>
+        </tr>
+
+        <!-- KAUFMAN COUNTY -->
+        <tr data-county="Kaufman" data-tea="C">
+          <td><a class="isd-link" href="#forney-isd">Forney ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(79)</small></td>
+          <td><a href="https://www.niche.com/k12/d/forney-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B</a></td>
+          <td><a href="https://www.greatschools.org/texas/forney/forney-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~20,000</td>
+          <td>26</td>
+          <td>$1.29</td>
+          <td><span class="tag">Athletics</span><span class="tag">Dual Credit</span><span class="tag">CTE</span></td>
+          <td>Kaufman</td>
+          <td>Forney</td>
+        </tr>
+
+        <!-- ELLIS COUNTY -->
+        <tr data-county="Ellis" data-tea="C">
+          <td><a class="isd-link" href="#waxahachie-isd">Waxahachie ISD</a></td>
+          <td><span class="tea-c">C</span> <small>(76)</small></td>
+          <td><a href="https://www.niche.com/k12/d/waxahachie-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/waxahachie/waxahachie-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~12,000</td>
+          <td>17</td>
+          <td>$1.17</td>
+          <td><span class="tag">Fine Arts</span><span class="tag">Athletics</span><span class="tag">GT</span><span class="tag">Dual Credit</span></td>
+          <td>Ellis</td>
+          <td>Waxahachie</td>
+        </tr>
+        <tr data-county="Ellis" data-tea="B">
+          <td><a class="isd-link" href="#midlothian-isd">Midlothian ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(85)</small></td>
+          <td><a href="https://www.niche.com/k12/d/midlothian-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/midlothian/midlothian-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~9,000</td>
+          <td>13</td>
+          <td>$1.08</td>
+          <td><span class="tag">STEM</span><span class="tag">Athletics</span><span class="tag">Dual Credit</span><span class="tag">CTE</span></td>
+          <td>Ellis</td>
+          <td>Midlothian</td>
+        </tr>
+
+        <!-- JOHNSON COUNTY -->
+        <tr data-county="Johnson" data-tea="B">
+          <td><a class="isd-link" href="#burleson-isd">Burleson ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(~82)</small></td>
+          <td><a href="https://www.niche.com/k12/d/burleson-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
+          <td><a href="https://www.greatschools.org/texas/burleson/burleson-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~14,000</td>
+          <td>20</td>
+          <td>$1.26</td>
+          <td><span class="tag">Athletics</span><span class="tag">CTE</span><span class="tag">Dual Credit</span></td>
+          <td>Johnson/Tarrant</td>
+          <td>Burleson</td>
+        </tr>
+        <tr data-county="Johnson" data-tea="B">
+          <td><a class="isd-link" href="#joshua-isd">Joshua ISD</a></td>
+          <td><span class="tea-b">B</span> <small>(86)</small></td>
+          <td><a href="https://www.niche.com/k12/d/joshua-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
+          <td><a href="https://www.greatschools.org/texas/joshua/joshua-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
+          <td>~6,000</td>
+          <td>12</td>
+          <td>$1.26</td>
+          <td><span class="tag">Athletics</span><span class="tag">Dual Credit</span><span class="tag">Hill College Partnership</span></td>
+          <td>Johnson</td>
+          <td>Joshua, S. Burleson, N. Cleburne</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <p class="table-note">
+    <strong>Sources:</strong> TEA A–F ratings from <a href="https://tea.texas.gov" target="_blank" rel="noopener">tea.texas.gov</a> (2024–25 school year, released August 2025). Niche grades from <a href="https://www.niche.com" target="_blank" rel="noopener">niche.com</a> (captured May 2026 — visit for subcategory breakdowns). GreatSchools profiles at <a href="https://www.greatschools.org" target="_blank" rel="noopener">greatschools.org</a>. Tax rates from the <a href="https://comptroller.texas.gov/taxes/property-tax/rates/" target="_blank" rel="noopener">Texas Comptroller 2024 School District Rates &amp; Levies</a>. Enrollment and campus counts are approximate, sourced from TEA and NCES 2024–25 data. GreatSchools and Niche ratings are referenced for informational purposes — visit their sites for full breakdowns. Some fast-growing districts have data ranges that vary by source; spot-check at <a href="https://txschools.gov" target="_blank" rel="noopener">txschools.gov</a> for the most current official data.
+  </p>
+</section>
+
+</div><!-- end page-wrap - table section -->
+
+<div class="page-wrap">
+
+<!-- SECTION 4: ISD SPOTLIGHTS -->
+<section class="section" id="isd-spotlights">
+  <h2>ISD Spotlights — Honest, Parent-to-Parent</h2>
+  <p>About 150 words on every district: what makes it stand out, who it's best for, and the honest caveats families should know before they buy. These are not press releases. They're the conversations I have with every relocation client.</p>
+
+  <div class="region-header">📍 Collin County ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="frisco-isd">
+      <h3>Frisco ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (90)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~66,700 students</span>
+        <span class="tag">$1.03/$100</span>
+      </div>
+      <p>Frisco ISD is the largest A-rated school district in Texas, which tells you something remarkable: maintaining quality at that scale is hard, and they've done it. IB programs, top-tier fine arts, championship athletics, and deep STEM pathways make this district competitive without being exclusionary. Academically motivated kids thrive here — and so do kids with wide-ranging interests, because the breadth of programming is genuinely impressive.</p>
+      <p>The honest caveat: 77 campuses means the experience varies. A school on the west side of Frisco may feel very different from one on the north. At 66,000+ students, some families find it impersonal compared to smaller districts. And because "Frisco" in the address doesn't guarantee Frisco ISD — parts of Plano, McKinney, Prosper, and Little Elm also fall within FISD boundaries — you must verify by address.</p>
+      <p class="suburb-links">Serves: <a href="/frisco-texas">Frisco</a>, North Plano, parts of Prosper, McKinney, Little Elm.</p>
+    </div>
+
+    <div class="isd-card" id="allen-isd">
+      <h3>Allen ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (91)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~22,000 students</span>
+        <span class="tag">$1.13/$100</span>
+      </div>
+      <p>Allen ISD earns some of the highest Niche subcategory scores in DFW — A+ for academics, clubs &amp; activities, and food (yes, the cafeterias genuinely stand out). Allen Eagle Escondido is one of the finest high school facilities in the country, and the fine arts programs consistently compete at the national level. For families who want a smaller feel than Frisco but the same academic ceiling, Allen is often the answer.</p>
+      <p>Allen ISD serves Allen and almost nothing else — which is both a strength (tight community identity) and a limitation (very little of the surrounding region bleeds in). Home prices in Allen reflect the district quality. Families priced out of Frisco and Southlake often land here — and don't feel like they compromised.</p>
+      <p class="suburb-links">Serves: <a href="/allen-texas">Allen</a>.</p>
+    </div>
+
+    <div class="isd-card" id="mckinney-isd">
+      <h3>McKinney ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (88)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~24,000 students</span>
+        <span class="tag">$1.13/$100</span>
+      </div>
+      <p>McKinney ISD is a solid, consistent performer — not flashy, but dependable. The district has earned a TEA B for four consecutive years, which tells you this isn't a district in decline; it's a stable system that delivers. IB programming, solid STEM pathways, and a strong fine arts tradition (McKinney Boyd HS in particular) make it a genuinely good choice for most families.</p>
+      <p>Where McKinney ISD falls short relative to peers is teacher quality and food scores on Niche, and the TEA score reflects a gap between its stronger campuses and its weaker ones. Rapid growth has put pressure on newer campuses. Families who are deeply academics-focused often prefer Frisco ISD (which covers parts of McKinney's west side) — so always verify your address before assuming which district you're in.</p>
+      <p class="suburb-links">Serves: <a href="/mckinney-texas">McKinney</a>.</p>
+    </div>
+
+    <div class="isd-card" id="plano-isd">
+      <h3>Plano ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (82)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~49,000 students</span>
+        <span class="tag">$1.04/$100</span>
+      </div>
+      <p>Plano ISD was the district DFW families talked about for thirty years — and it remains one of the most academically programmed districts in the state. IB schools, STEM academies, dual language (Spanish and Mandarin), magnet programs, and a nationally recognized gifted and talented track make this a district that rewards engaged families who seek out the right campus. Legacy Drive ISD (as it was once nicknamed) is home to corporate-transfer families from Toyota, J.P. Morgan, and FedEx whose kids arrive expecting a rigorous environment.</p>
+      <p>The honest note: Plano ISD's TEA score (82) trails its Niche reputation, partly because it covers a large and diverse geographic area where campus performance varies significantly. North Plano addresses are actually zoned to Frisco ISD, not Plano ISD — this surprises a lot of buyers. The housing stock is older than Frisco's but established and well-maintained.</p>
+      <p class="suburb-links">Serves: <a href="/plano-texas">Plano</a> (south/central), Murphy (most).</p>
+    </div>
+
+    <div class="isd-card" id="prosper-isd">
+      <h3>Prosper ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (91)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~27,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Prosper ISD made national headlines as the only Texas district with more than 10,000 students where every single campus earned a TEA A rating. That is not a small accomplishment in a district growing this fast. New construction means new campuses opening regularly — and new campuses building their culture in real time — but the academic systems are clearly working.</p>
+      <p>The trade-off is the tax rate: at $1.26/$100, Prosper ISD carries one of the higher rates in DFW, driven by heavy bond debt from building schools fast enough to keep up with explosive growth. Families buying in Prosper should run the full property tax calculation before comparing sticker prices to an Allen or Coppell home. Also note: "Prosper" in your address may mean Prosper ISD, McKinney ISD, or even Frisco ISD — verify by address before making an offer.</p>
+      <p class="suburb-links">Serves: <a href="/prosper-texas">Prosper</a>, East Frisco, South Celina.</p>
+    </div>
+
+    <div class="isd-card" id="lovejoy-isd">
+      <h3>Lovejoy ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (94)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~5,500 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Lovejoy ISD is Collin County's best-kept secret — a tiny, elite district serving Fairview and Lucas that consistently ranks among the top ISDs in the entire state. At 94 points, its TEA score trails only Highland Park ISD among DFW districts. Families who discover Lovejoy often say they were surprised it wasn't better known: the academics are exceptional, the campuses are intimate, and the community is deeply invested.</p>
+      <p>The honest context: Lovejoy ISD is small, affluent, and not very racially or socioeconomically diverse — Niche's diversity score reflects that. It does not accept open-enrollment transfers. To enroll, you must live within the district boundaries, which cover specific streets in Fairview and Lucas. Homes in Lovejoy ISD carry a significant premium over equivalent homes just outside the boundary. For academically-focused families who can afford it, it is often worth every dollar.</p>
+      <p class="suburb-links">Serves: Fairview, Lucas (most).</p>
+    </div>
+
+    <div class="isd-card" id="wylie-isd">
+      <h3>Wylie ISD <small style="font-weight:400;font-size:0.85rem">(Collin County)</small></h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (92)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~17,400 students</span>
+        <span class="tag">$1.21/$100</span>
+      </div>
+      <p>Wylie ISD punches well above its visibility in DFW relocation conversations. With a 92 TEA score and every campus earning an A, this is one of the most consistently high-performing mid-size districts in Collin County — and it's often overlooked by families fixated on Frisco or Allen. The district serves Wylie, most of Murphy, and most of Sachse, giving it a mix of established neighborhoods and newer growth.</p>
+      <p>What Wylie ISD does well: maintaining quality across all campuses, not just the flagship high school. Families moving from the East Coast or Midwest often gravitate here for the community feel and the district's track record with college prep. One important note: there are two Wylie ISDs in Texas (the other is in Abilene). When searching ratings, confirm you're looking at the Collin County version.</p>
+      <p class="suburb-links">Serves: Wylie, Murphy (east area), Sachse (most).</p>
+    </div>
+
+    <div class="isd-card" id="melissa-isd">
+      <h3>Melissa ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (~90)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~6,700 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Melissa ISD is a genuine surprise for many relocation families — a small, fast-growing north Collin County district posting some of the highest academic proficiency numbers in the entire DFW area. At 63% math and 72% reading proficiency, it outperforms many districts with far more name recognition. All campuses are earning A or B TEA ratings, and the community has bought in hard on supporting the schools.</p>
+      <p>The caveats: Melissa is small, still growing its programs, and AP course breadth doesn't yet match what you'd find at Frisco or Allen. The tax rate sits at the $1.26 cap. And Melissa the city is genuinely far north — commutes to the Legacy Corridor or Plano employment centers run 30–40 minutes. Best suited for families prioritizing academics in an affordable, tight-knit small-town setting who have flexibility on commute.</p>
+      <p class="suburb-links">Serves: Melissa.</p>
+    </div>
+
+    <div class="isd-card" id="celina-isd">
+      <h3>Celina ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (87)</span>
+        <span class="tag">Niche: <strong class="niche-b">B+</strong></span>
+        <span class="tag">~8,000 students</span>
+        <span class="tag">$1.24/$100</span>
+      </div>
+      <p>Celina ISD is growing faster than almost any district in Texas, and that growth is both the district's opportunity and its challenge. Academically, the numbers are solid — and the community is intensely proud of Celina athletics, particularly football. For families who want a small-town identity paired with good enough academics and a lower home price than Prosper or Frisco, Celina makes sense.</p>
+      <p>The honest picture: Niche's lower scores on administration and facilities reflect reality — the district is building campuses as fast as kids arrive, and you can feel that growing pains energy. If you're buying in a new Celina community, expect your child's campus assignment to potentially change as new schools open. Families with strong academic priorities often prefer neighboring Prosper ISD. But families who love Celina's Texas small-town culture are genuinely happy here.</p>
+      <p class="suburb-links">Serves: Celina, South Prosper, East Anna.</p>
+    </div>
+
+    <div class="isd-card" id="aubrey-isd">
+      <h3>Aubrey ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (87)</span>
+        <span class="tag">Niche: <strong class="niche-b">B</strong></span>
+        <span class="tag">~5,500 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Aubrey ISD is a small, quiet Denton County district that suits a specific kind of family: one that wants rural feel, small class sizes, and a genuinely community-oriented school environment without the premium price tags of Argyle or Prosper. The TEA score of 87 is respectable; academics are solid without being exceptional. Dual credit options give motivated high schoolers a head start on college coursework.</p>
+      <p>Aubrey ISD is best for families relocating from smaller markets who feel more comfortable in a tight-knit school environment than in a 70-campus mega-district. It is not the choice for families whose top priority is AP breadth, IB programming, or competitive fine arts. The area is still quite rural, and commutes to employment centers are real — typically 35–45 minutes to the Legacy Corridor. Best paired with families working remotely or near Denton.</p>
+      <p class="suburb-links">Serves: Aubrey.</p>
+    </div>
+
+    <div class="isd-card" id="anna-isd">
+      <h3>Anna ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (~75)</span>
+        <span class="tag">Niche: <strong class="niche-b">B−</strong></span>
+        <span class="tag">~6,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Anna ISD serves a rapidly growing outer-ring Collin County community where affordability is the primary draw. The district has bright spots — Anna High School earned an A TEA rating independently, dual credit programs offer early college access, and a strong Teacher Incentive Allotment designation signals the district is attracting quality teachers. But the overall district TEA score (C, ~75) reflects a system still catching up to rapid growth.</p>
+      <p>I want to be direct here: for families relocating from California or New York specifically for school quality, Anna ISD is not yet at the level of Allen, Wylie, or Prosper. It's a district on an upward trajectory, and the community is working hard. But if academics are your primary criterion, I'd encourage you to look at Melissa ISD (which borders Anna and outperforms it significantly) before settling on this area.</p>
+      <p class="suburb-links">Serves: Anna.</p>
+    </div>
+
+  </div><!-- end Collin County grid -->
+
+  <div class="region-header">📍 Denton County ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="lewisville-isd">
+      <h3>Lewisville ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (81)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~47,000 students</span>
+        <span class="tag">$1.12/$100</span>
+      </div>
+      <p>Lewisville ISD is the district I know best — it's where my family lives, and I chose it deliberately. LISD serves Flower Mound, Highland Village, The Colony, and Lewisville, with flagship high schools like Marcus and Flower Mound among the best in Denton County. The gifted and talented program is extensive, the fine arts programs are nationally competitive, and — critically — the special education program is one of the most robust in North Texas. Families with kids who have IEPs or need strong SpEd support often choose LISD specifically for this reason.</p>
+      <p>The TEA B (81) is honest about where there's room to grow — some campuses in the district outperform others significantly. But for families relocating to Flower Mound or Highland Village, Lewisville ISD is almost always the right choice. Broad programs, good community investment, and a high percentage of families who actively engage with schools.</p>
+      <p class="suburb-links">Serves: <a href="/flower-mound-texas">Flower Mound</a>, Highland Village, The Colony, Lewisville.</p>
+    </div>
+
+    <div class="isd-card" id="argyle-isd">
+      <h3>Argyle ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (92)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~8,000 students</span>
+        <span class="tag">$1.21/$100</span>
+      </div>
+      <p>Argyle ISD is what happens when an excellent small district combines with a community that deeply values education. At 92 TEA points and an A+ from Niche across nearly every category — academics, teachers, sports, food — this district has few peers in the state. Families who discover Argyle ISD often describe the same experience: they came for the schools and fell in love with the community. Argyle Eagles football is a Texas prep powerhouse. The fine arts program is serious. The academic outcomes rival anything in Frisco or Carroll ISD.</p>
+      <p>The context families need: Argyle ISD serves Argyle, most of Lantana, and portions of southwest Flower Mound — so if you're buying in any of these areas, verify your specific address. The district does not accept transfers. Community feel here skews toward horse country — large lots, no sidewalks in some areas, slower pace. Not for every family, but for the right one, it's extraordinary.</p>
+      <p class="suburb-links">Serves: <a href="/argyle-texas">Argyle</a>, Lantana, W. Flower Mound, N. Northlake.</p>
+    </div>
+
+    <div class="isd-card" id="northwest-isd">
+      <h3>Northwest ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (81)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~32,000 students</span>
+        <span class="tag">$1.09/$100</span>
+      </div>
+      <p>Northwest ISD serves Trophy Club, Roanoke, and parts of Northlake and Haslet — a fast-growing western DFW corridor. The district has solid programs, reasonable class sizes compared to larger neighbors, and a genuine community character. Byron Nelson High School in Trophy Club is a well-regarded flagship, and the fine arts and CTE programs are competitive. The Niche A− reflects a district that performs above average across nearly every measure.</p>
+      <p>Northwest ISD's TEA B (81) lands at the lower end of B-range, and teacher quality is one area where the Niche score drops to a C — worth noting for families who prioritize classroom instruction over facilities and programs. For families buying in Trophy Club, the district is generally a good fit. Roanoke is growing rapidly with new construction, and the district is managing well though not perfectly. A solid choice for families who can't or won't stretch to Carroll or Keller ISD price points.</p>
+      <p class="suburb-links">Serves: Trophy Club (part), Roanoke, Northlake (part), Haslet.</p>
+    </div>
+
+    <div class="isd-card" id="denton-isd">
+      <h3>Denton ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (80)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~32,900 students</span>
+        <span class="tag">$1.16/$100</span>
+      </div>
+      <p>Denton ISD deserves more credit than it gets in relocation conversations. The district improved from a C to a B (80) in TEA ratings — a meaningful jump — and its Niche A− reflects genuine strengths: it's the most diverse district in Denton County (#25 of 888 districts statewide for diversity), it has serious fine arts programs, strong dual language offerings, and good athletics. The college-town culture of Denton (home to UNT and TWU) permeates the district, making it a natural fit for academic families who value diversity alongside achievement.</p>
+      <p>Families from larger coastal cities often feel immediately at home in Denton because of that university town energy. The honest caveat: proficiency scores are lower than peer districts, and the district covers a broad range of socioeconomic backgrounds. For families buying specifically in Denton, this is the ISD — and for the right family, it's genuinely a good one.</p>
+      <p class="suburb-links">Serves: Denton, Corinth, Hickory Creek, Lake Dallas (partial).</p>
+    </div>
+
+    <div class="isd-card" id="lake-dallas-isd">
+      <h3>Lake Dallas ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (~83)</span>
+        <span class="tag">Niche: <strong class="niche-b">B</strong></span>
+        <span class="tag">~3,900 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Lake Dallas ISD is one of DFW's smallest districts — just five campuses serving Lake Dallas, Corinth, and Shady Shores along the shores of Lake Lewisville. For families drawn to lakeside living in north Denton County, this is the district that comes with the territory. It's a small-town school experience: your kids will likely know everyone by middle school, and community involvement at the school level is high.</p>
+      <p>Academically, the district is competent but not exceptional. TEA B (~83) and Niche B reflect a district that's holding its own without distinguishing itself. Proficiency scores lag behind top Collin County peers. This is not the district for families whose primary criterion is academic programming breadth — it's for families who love the Lake Lewisville lifestyle and want a connected school community to go with it. For that specific family profile, it works well.</p>
+      <p class="suburb-links">Serves: Lake Dallas, Corinth (part), Shady Shores.</p>
+    </div>
+
+    <div class="isd-card" id="little-elm-isd">
+      <h3>Little Elm ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (79)</span>
+        <span class="tag">Niche: <strong class="niche-b">B−</strong></span>
+        <span class="tag">~11,000 students</span>
+        <span class="tag">$1.23/$100</span>
+      </div>
+      <p>Little Elm ISD has earned a C from TEA for three consecutive years — which is not a trend line I can spin positively. The district is growing fast, administration scores are among the lowest on Niche, and proficiency numbers trail most Denton County peers. The area's affordability draws young families, but the school district is a real consideration families should weigh honestly before buying.</p>
+      <p>The important nuance: not all of Little Elm is served by Little Elm ISD. The eastern portion of Little Elm — including some of the newer communities near the Frisco border — falls within Frisco ISD. If you're drawn to the Little Elm area for its lakefront and affordability, verify your specific address carefully. A home in Frisco ISD on the Little Elm side of the line is a very different school experience than one zoned to Little Elm ISD.</p>
+      <p class="suburb-links">Serves: Little Elm (west/central areas). East Little Elm is Frisco ISD — verify by address.</p>
+    </div>
+
+  </div><!-- end Denton County grid -->
+
+  <div class="region-header">📍 Tarrant County ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="fort-worth-isd">
+      <h3>Fort Worth ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (72)</span>
+        <span class="tag">Niche: <strong class="niche-c">C+</strong></span>
+        <span class="tag">~73,000 students</span>
+        <span class="tag">$1.06/$100</span>
+      </div>
+      <p>Fort Worth ISD is the largest school district in Tarrant County and the urban anchor of the western half of the DFW metroplex. Like Dallas ISD, the overall TEA C (72) reflects a large, urban district serving a high-poverty student population — 85%+ economically disadvantaged — and the district-wide score should not be read as the ceiling for every campus in it. But it does mean that the suburban Tarrant County ISDs — Carroll, Keller, Grapevine-Colleyville, Mansfield — are the destinations most relocating families will target.</p>
+      <p>Where Fort Worth ISD stands out is its magnet and specialized programming. The Performing Arts and Communication Technologies (PASCAL) program at Wyatt High School is one of the most respected fine arts magnets in Texas. The IB program at Paschal High School is a genuine college-prep pipeline. And the district's CTE pathways — healthcare, aviation technology, culinary — reflect the economic realities of Fort Worth's industries in a practical, career-ready way. For families with children who are serious about fine arts, aviation, or healthcare careers, these programs merit a real look.</p>
+      <p>The practical reality: most families relocating to the Fort Worth side of DFW will land in Keller ISD, Carroll ISD, Eagle Mountain-Saginaw ISD, or Grapevine-Colleyville ISD — not Fort Worth ISD. But Fort Worth ISD defines the urban core, sets the context for why the surrounding suburb ISDs exist, and for the right family with the right student profile, its specialized programs are genuinely competitive. Understand it as the backdrop, not the destination — unless a specific magnet program is the draw.</p>
+      <p class="suburb-links">Serves: City of Fort Worth. Magnet applications open to all Fort Worth ISD residents.</p>
+    </div>
+
+    <div class="isd-card" id="carroll-isd">
+      <h3>Carroll ISD <small style="font-weight:400;font-size:0.85rem">(Southlake)</small></h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (95)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~8,500 students</span>
+        <span class="tag">$0.96/$100</span>
+      </div>
+      <p>Carroll ISD is consistently in the conversation for the best school district in Texas. All 11 campuses earned TEA A grades. The Niche scores are A+ across every meaningful category: academics, teachers, college prep, fine arts, athletics. Dragon pride is real — Carroll football and fine arts are cultural institutions in Southlake. And with only 8,500 students, this is a tight, invested community where the district serves one city and does it exceptionally well.</p>
+      <p>The context that matters: Southlake real estate is among the most expensive in DFW. You are paying a significant premium to live in Carroll ISD — and for many families, it's worth every dollar. The honest caveat is that the school culture can be intensely competitive, and the district's socioeconomic and racial diversity is limited. For families who specifically prioritize academic rigor and comprehensive programming in a small, high-performing district, there is almost nowhere better in North Texas.</p>
+      <p class="suburb-links">Serves: <a href="/southlake-texas">Southlake</a>, Westlake (part).</p>
+    </div>
+
+    <div class="isd-card" id="gcisd">
+      <h3>Grapevine-Colleyville ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (86)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~13,500 students</span>
+        <span class="tag">$0.92/$100</span>
+      </div>
+      <p>GCISD is one of the most underrated districts in DFW — a district that earns an A+ from Niche but rarely gets the same attention as Carroll or Frisco. It operates at an A+ quality level for families who want IB programs, dual language (Spanish), strong fine arts, and a community that is genuinely diverse and welcoming, all at one of the lowest tax rates in the region ($0.92/$100). Colleyville Heritage and Grapevine High School are both excellent flagship campuses.</p>
+      <p>The gap between its TEA B (86) and its Niche A+ is worth noting — Niche captures community perception and program breadth that TEA's accountability formula doesn't fully weight. For families considering Colleyville specifically, GCISD is not a compromise relative to Carroll ISD. It's a different kind of excellent: more diverse, slightly less intense, with exceptional programs and a lower cost of entry. I recommend families research both before deciding.</p>
+      <p class="suburb-links">Serves: <a href="/colleyville-texas">Colleyville</a>, Grapevine.</p>
+    </div>
+
+    <div class="isd-card" id="keller-isd">
+      <h3>Keller ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (~85)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~33,000 students</span>
+        <span class="tag">$1.09/$100</span>
+      </div>
+      <p>Keller ISD is the choice I recommend most consistently for families with children who have special education needs. The district's SpEd programs are among the most developed in Tarrant County, with strong IEP support infrastructure, well-trained specialists, and a community culture that treats inclusion seriously. Beyond SpEd, Keller ISD has solid gifted programs, good fine arts, and 42 campuses that provide a meaningful range of programs as kids advance.</p>
+      <p>At 33,000 students, Keller ISD is large — and campus quality does vary across the district. The district covers Keller, part of Trophy Club, and a small northwest portion of Colleyville. Families coming from California with high expectations for academic density (AP breadth, competitive fine arts, elite athletics) may find the overall experience solid but not the ceiling they're accustomed to. For most families, though, Keller ISD delivers consistently and reliably.</p>
+      <p class="suburb-links">Serves: Keller, Trophy Club (part), NW Colleyville.</p>
+    </div>
+
+    <div class="isd-card" id="mansfield-isd">
+      <h3>Mansfield ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (~88)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~34,000 students</span>
+        <span class="tag">$1.15/$100</span>
+      </div>
+      <p>Mansfield ISD earns Niche's A+ in one category no other district in this guide matches: diversity. If your family is coming from a diverse coastal metro and wants a school environment that reflects that, Mansfield ISD is worth serious attention. STEAM academies, strong CTE pathways, dual language programming, and fine arts programs serve a genuinely diverse student population — and the TEA near-B ceiling (~88) places it in the top half of all Tarrant County districts.</p>
+      <p>The honest context: Mansfield ISD is less academically elite than Carroll or Keller, and the geographic location (south Tarrant County) means commute times to most DFW employment corridors are real. This is not the suburb-of-choice for tech or finance families based at Legacy Drive or the airport corridor. But for families prioritizing diversity, STEAM programming, and community authenticity in an affordable market, Mansfield ISD and its surrounding neighborhoods are genuinely undervalued.</p>
+      <p class="suburb-links">Serves: Mansfield, South Arlington.</p>
+    </div>
+
+    <div class="isd-card" id="ems-isd">
+      <h3>Eagle Mountain-Saginaw ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (87)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~23,500 students</span>
+        <span class="tag">$1.25/$100</span>
+      </div>
+      <p>Eagle Mountain-Saginaw ISD covers the northwest Fort Worth growth corridor — a part of Tarrant County that has exploded in the last decade and brought thousands of new families with it. The district has kept up impressively: TEA B (87), Niche A, strong diversity rankings (#27 most diverse out of 1,061 Texas districts), and solid AP and dual credit pathways. For families priced out of Keller or Colleyville who want northwest Tarrant County, EMS ISD is a legitimate, well-performing option.</p>
+      <p>The district is large and growing, and campus quality varies. Teacher ratings on Niche are its weaker area. The Saginaw and northwest Fort Worth areas it serves are less premium than Keller or Trophy Club but meaningfully more affordable, with solid community infrastructure and shorter commutes to the Alliance/Fort Worth employment corridor. A sound choice for families prioritizing value and northwest Tarrant County access.</p>
+      <p class="suburb-links">Serves: Saginaw, Northwest Fort Worth, Lake Worth (part).</p>
+    </div>
+
+    <div class="isd-card" id="birdville-isd">
+      <h3>Birdville ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (~83)</span>
+        <span class="tag">Niche: <strong class="niche-b">B+</strong></span>
+        <span class="tag">~22,000 students</span>
+        <span class="tag">$1.20/$100</span>
+      </div>
+      <p>Birdville ISD serves the older, more urban section of northeast Tarrant County — North Richland Hills, Haltom City, Richland Hills, and Watauga. It's not a district that tops relocation wishlists, but families who end up in North Richland Hills find it to be a functional, workmanlike district with an outsized fine arts reputation (Birdville HS has had nationally recognized programs) and solid CTE pathways for students who aren't college-bound.</p>
+      <p>At TEA B (~83) and Niche B+, this is a mid-range performer in Tarrant County. Individual campuses vary more than in tighter, wealthier districts. The area's affordability is its main draw for relocation families — homes here cost significantly less than Keller or Colleyville. For families with flexible school priorities who need a lower price point in northeast Tarrant County, Birdville ISD gets the job done without distinction in either direction.</p>
+      <p class="suburb-links">Serves: North Richland Hills, Haltom City, Richland Hills, Watauga.</p>
+    </div>
+
+    <div class="isd-card" id="heb-isd">
+      <h3>Hurst-Euless-Bedford ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (88)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~21,000 students</span>
+        <span class="tag">$0.97/$100</span>
+      </div>
+      <p>HEB ISD is one of DFW's most underrated districts for a very specific family profile: those who need excellent schools, easy access to DFW Airport, and a lower total housing cost than Keller or Colleyville. The district earns an 88 TEA score — one of the stronger B performances in the region — and a Niche A, with above-average academic proficiency for its demographics. Corporate transfer families arriving at DFW often find that Hurst, Euless, and Bedford offer a compelling package: good schools, airport proximity, and noticeably lower home prices than the suburbs immediately north.</p>
+      <p>The honest note: this is not a district families choose for its prestige or its fine arts ceiling. It's a district families choose for practical excellence — solid academics, reasonable class sizes, and the lowest school tax rate among major Tarrant County districts ($0.97/$100). For the right family, that's exactly the right trade-off.</p>
+      <p class="suburb-links">Serves: Hurst, Euless, Bedford.</p>
+    </div>
+
+    <div class="isd-card" id="crowley-isd">
+      <h3>Crowley ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (~75)</span>
+        <span class="tag">Niche: <strong class="niche-b">B−</strong></span>
+        <span class="tag">~17,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Crowley ISD serves a highly diverse, lower-income section of south Tarrant County and Fort Worth. The district's 91% minority population makes it one of the most racially diverse in the entire DFW area, and JROTC and athletics give students real opportunities. The district has improved — moving from a D to a C at TEA — and that trajectory matters.</p>
+      <p>But I want to be straightforward: at TEA C (~75) with 28% math and 43% reading proficiency, Crowley ISD is not a district I can recommend to families whose primary criterion is academic performance. The homes in this area are affordable — often significantly below DFW medians — and for some families that price point is the priority, with schools as a secondary consideration. For families prioritizing academics above all else, I'd encourage a serious look at Mansfield ISD or Burleson ISD as nearby alternatives with stronger academic outcomes.</p>
+      <p class="suburb-links">Serves: Crowley, South Fort Worth, Kennedale.</p>
+    </div>
+
+    <div class="isd-card" id="azle-isd">
+      <h3>Azle ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (78)</span>
+        <span class="tag">Niche: <strong class="niche-b">B</strong></span>
+        <span class="tag">~7,200 students</span>
+        <span class="tag">$1.10/$100</span>
+      </div>
+      <p>Azle ISD sits at the Parker/Tarrant County border — a small, rural-suburban district that comes with the Azle lifestyle: lake access, large lots, a genuine small-town feel, and a commute to Fort Worth that most buyers accept as the trade-off. The district is average by most measures: TEA C (78), Niche B, reasonable teacher licensing rates, solid athletics. Individual campuses range from A− to B−.</p>
+      <p>For families drawn to the Azle area for its lifestyle and affordability — often retirees or remote workers — the schools are workable. For families relocating from a high-performing California or New York district specifically for school quality, Azle ISD is not the destination. Eagle Mountain-Saginaw ISD or Keller ISD would be my recommendation for Tarrant County families with stronger academic priorities. Azle is for families who are buying the lifestyle first and treating schools as acceptable context.</p>
+      <p class="suburb-links">Serves: Azle, Pelican Bay, Reno, Parker County border communities.</p>
+    </div>
+
+    <div class="isd-card" id="white-settlement-isd">
+      <h3>White Settlement ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (73)</span>
+        <span class="tag">Niche: <strong class="niche-c">C</strong></span>
+        <span class="tag">~6,900 students</span>
+        <span class="tag">$1.21/$100</span>
+      </div>
+      <p>White Settlement ISD sits adjacent to NAS Fort Worth Joint Reserve Base and serves a working-class Fort Worth community. The overall TEA score of 73 and Niche C reflect a district with meaningful challenges: low proficiency scores at most campuses, wide variability between schools (the Fine Arts Academy of Tannahill earns an A; other campuses earn Ds). The district is not one I typically place relocation clients in unless proximity to the base is a hard operational requirement.</p>
+      <p>One bright spot worth noting for military families specifically: the Tannahill Intermediate School fine arts magnet is genuinely impressive, and the district's proximity to NAS Fort Worth JRB makes it a logistical fit for PCS families. For non-military families, the combination of a C/73 TEA rating and a $1.21 tax rate makes other nearby options — Eagle Mountain-Saginaw ISD, HEB ISD, Keller ISD — more compelling on almost every dimension.</p>
+      <p class="suburb-links">Serves: White Settlement, West Fort Worth, Lake Worth.</p>
+    </div>
+
+  </div><!-- end Tarrant County grid -->
+
+  <div class="region-header">📍 Dallas County ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="dallas-isd">
+      <h3>Dallas ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (75)</span>
+        <span class="tag">Niche: <strong class="niche-b">B−</strong></span>
+        <span class="tag">~140,000 students</span>
+        <span class="tag">$1.10/$100</span>
+      </div>
+      <p>Dallas ISD is the second-largest school district in Texas and the urban core of the entire DFW education landscape. At TEA C (75) district-wide, it is not a district most relocating families will choose as their primary destination — and I want to be honest about that. But Dallas ISD belongs in this guide for two reasons: it's the academic and economic engine that makes the surrounding suburb districts possible, and its magnet school network is genuinely exceptional and available to families across the city.</p>
+      <p>The magnet system is Dallas ISD's crown jewel. The School of Science and Engineering at Townview (consistently ranked among the best STEM high schools in the country), the Talented and Gifted (TAG) school, the Arts Magnet at Booker T. Washington, and the Business and Management magnet at Hillcrest give academically driven families access to a caliber of specialized programming that no suburb ISD can match. These are competitive-admission programs — your child applies and earns their spot — but for the right student, they are transformative. Families living in Lake Highlands, East Dallas, Preston Hollow, and other established Dallas neighborhoods near these campuses often find that Dallas ISD's magnets outperform nearby suburb alternatives for high-achieving kids.</p>
+      <p>The honest full picture for relocating families: the district-wide TEA C reflects significant inequity across 230+ campuses. Neighborhood schools vary enormously — from excellent to struggling — and you must research the specific campus, not just the district. For families who want the city lifestyle and can access a strong neighborhood school or magnet program, Dallas ISD works. For families whose priority is consistent district-wide excellence, the surrounding suburbs deliver more predictably.</p>
+      <p class="suburb-links">Serves: City of Dallas. Magnet applications open to all Dallas ISD residents.</p>
+    </div>
+
+    <div class="isd-card" id="coppell-isd">
+      <h3>Coppell ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (93)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~10,500 students</span>
+        <span class="tag">$1.00/$100</span>
+      </div>
+      <p>Coppell ISD is one of the most complete school districts in DFW — elite academics, two IB World School programs, dual language in both Spanish and Mandarin, exceptional gifted and talented pathways, and a community that genuinely wraps its identity around its schools. At 93 TEA points and an A+ from Niche, this is a district competing at the same level as Carroll ISD but serving a more diverse student body and sitting inside the Dallas County border instead of Tarrant.</p>
+      <p>Coppell ISD serves one city — Coppell — which means the community cohesion is real. Every family in Coppell knows they chose a specific place for specific schools. Home prices reflect that: Coppell carries a significant premium for its size. And the tax rate at $1.00/$100 is actually among the more reasonable for an elite district. For families in international business or with Asian-American backgrounds specifically, Coppell's Mandarin dual language program is uniquely attractive in DFW.</p>
+      <p class="suburb-links">Serves: <a href="/coppell-texas">Coppell</a>.</p>
+    </div>
+
+    <div class="isd-card" id="highland-park-isd">
+      <h3>Highland Park ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-a">A</strong> (96)</span>
+        <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
+        <span class="tag">~7,000 students</span>
+        <span class="tag">$0.87/$100</span>
+      </div>
+      <p>Highland Park ISD is the gold standard of Texas public education by almost every academic metric: 96 TEA points (highest of any district in this guide), 85% math and 93% reading proficiency district-wide, an average ACT composite of 26.9 (seven points above the state average), 95%+ of graduates attending college, and the lowest school tax rate in this entire guide at $0.87/$100. Highland Park High School is regularly ranked among the best public high schools in America.</p>
+      <p>The honest full picture: Highland Park ISD serves Highland Park and University Park — two of the most expensive zip codes in Texas. The student body is approximately 80% white and 0.7% economically disadvantaged. Racial and socioeconomic diversity are among the lowest of any district covered here. This is a district where the entry point is a home in the Park Cities — a purchase that for most families is a generational financial decision, not a casual one. For those who can access it, the academic experience is genuinely exceptional. For everyone else, Carroll ISD, Lovejoy ISD, and Coppell ISD deliver comparable academic outcomes at more accessible price points.</p>
+      <p class="suburb-links">Serves: Highland Park, University Park.</p>
+    </div>
+
+  </div><!-- end Dallas County grid -->
+
+  <div class="region-header">📍 Rockwall &amp; Kaufman Counties ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="rockwall-isd">
+      <h3>Rockwall ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (89)</span>
+        <span class="tag">Niche: <strong class="niche-a">A</strong></span>
+        <span class="tag">~25,000 students</span>
+        <span class="tag">$1.03/$100</span>
+      </div>
+      <p>Rockwall ISD is one of the most compelling overlooked districts in DFW — a district that earns a TEA near-A (89), a Niche A, and a state-leading TEA athletics score, all while being significantly more affordable than comparable Collin County options. Rockwall and Heath are genuinely beautiful lakeside communities, and the school district reflects the community investment. Families who want great schools, lake life, and homes priced $100–200K below equivalent Frisco addresses often find this is the answer they didn't know they were looking for.</p>
+      <p>Rockwall ISD serves Rockwall, Heath, Fate, and part of Royse City. Campus quality is consistent across the district, and the fine arts and gifted programs are solid. The one practical caveat: commute. Rockwall sits east of Dallas, meaning access to most major DFW employment centers — Legacy Drive, the Galleria corridor, Uptown — runs through Dallas traffic. Not a deal-breaker, but a factor to model before buying.</p>
+      <p class="suburb-links">Serves: Rockwall, Heath, Fate, Royse City (part).</p>
+    </div>
+
+    <div class="isd-card" id="royse-city-isd">
+      <h3>Royse City ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (77)</span>
+        <span class="tag">Niche: <strong class="niche-b">B+</strong></span>
+        <span class="tag">~12,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Royse City ISD dropped from a B to a C in TEA's most recent ratings — a real step backward families should factor into their decision. The community is growing fast and the schools are trying to keep up. Niche gives it a B+ based on community perception and some solid campus-level data, but the TEA objective score is C (77). For families comparing Royse City to Rockwall ISD (just 15 minutes west), Rockwall ISD is the clearly stronger choice on the school front. Royse City makes the list because the area is increasingly popular for affordability and families should have accurate data when they arrive.</p>
+      <p class="suburb-links">Serves: Royse City.</p>
+    </div>
+
+    <div class="isd-card" id="forney-isd">
+      <h3>Forney ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (79)</span>
+        <span class="tag">Niche: <strong class="niche-b">B</strong></span>
+        <span class="tag">~20,000 students</span>
+        <span class="tag">$1.29/$100</span>
+      </div>
+      <p>Forney ISD serves Kaufman County just east of Dallas — an area that has grown explosively as buyers chase affordability that's largely disappeared from Collin and Denton County. The district earns a C from TEA (79) and a B from Niche, with athletics as its strongest program area and academics as its weakness. At 20,000 students and growing, the district is managing rapid expansion with mixed results.</p>
+      <p>For families relocating to the DFW area on a tight budget who are comfortable with a longer commute (Forney sits 30–45 minutes from most Dallas employment centers) and who aren't prioritizing top-tier academics, Forney ISD offers affordable homeownership in a growing community. For families where school quality is the primary driver, the eastern suburbs of DFW are not the right starting point. The highest-rated nearby alternative is Rockwall ISD, about 20 minutes north.</p>
+      <p class="suburb-links">Serves: Forney.</p>
+    </div>
+
+  </div><!-- end Rockwall/Kaufman grid -->
+
+  <div class="region-header">📍 Ellis &amp; Johnson Counties ISDs</div>
+  <div class="isd-grid">
+
+    <div class="isd-card" id="waxahachie-isd">
+      <h3>Waxahachie ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-c">C</strong> (76)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~12,000 students</span>
+        <span class="tag">$1.17/$100</span>
+      </div>
+      <p>Waxahachie ISD presents one of the more interesting rating divergences in this guide: Niche gives it an A−, while TEA assigns a C (76). The Niche score reflects strong community reviews, solid fine arts, and a small-city school culture that parents genuinely love. The TEA score reflects more objective proficiency data. The truth, as is often the case, sits somewhere between the two.</p>
+      <p>Waxahachie is a beautiful historic Texas city about 30 miles south of Dallas with genuinely affordable real estate. The schools have a strong community character and the fine arts programs are well-regarded. For families with some flexibility on the academic ceiling who are drawn to historic character and affordability, Waxahachie ISD is a legitimate choice. For families who can't compromise on TEA performance, Midlothian ISD (15 minutes west) posts a B (85) with a similar community feel.</p>
+      <p class="suburb-links">Serves: Waxahachie.</p>
+    </div>
+
+    <div class="isd-card" id="midlothian-isd">
+      <h3>Midlothian ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (85)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~9,000 students</span>
+        <span class="tag">$1.08/$100</span>
+      </div>
+      <p>Midlothian ISD is the strongest academic district in Ellis County, and for families considering the southern DFW suburbs, it's the clear school choice leader. TEA B (85) and Niche A− reflect consistent performance, growing STEM and CTE programs, and a community that is expanding thoughtfully without sacrificing quality. Midlothian Athletics is competitive, and the overall school culture is one of the more positive in the southern DFW ring.</p>
+      <p>Midlothian is growing — it's one of the faster-growing cities in Ellis County — but hasn't yet hit the growing-pains chaos that has challenged some Collin County districts. The commute to Dallas runs 30–40 minutes; Fort Worth access is somewhat easier. For families who want a suburban lifestyle south of DFW with legitimately good schools and meaningfully affordable real estate, Midlothian ISD paired with Midlothian city is a frequently underestimated combination.</p>
+      <p class="suburb-links">Serves: Midlothian.</p>
+    </div>
+
+    <div class="isd-card" id="burleson-isd">
+      <h3>Burleson ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (~82)</span>
+        <span class="tag">Niche: <strong class="niche-b">B+</strong></span>
+        <span class="tag">~14,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Burleson ISD serves the Johnson County suburb just south of Fort Worth — a community that has grown steadily and offers solid schools without the premium of Keller or Mansfield to its north. The district posts a TEA B (~82) and Niche B+, with athletics as its community centerpiece and CTE programs growing to match the area's workforce needs. For families working in south Fort Worth or along I-35, Burleson is a legitimate suburb-of-choice with schools that are good enough to not be a limiting factor.</p>
+      <p>The honest context: Burleson ISD is not a district families typically move to DFW specifically for. It's a district that earns satisfactory marks and doesn't stand out in either direction. Families who end up in Burleson because of proximity to employers, affordability, or community character generally find the schools workable — and some find them genuinely good at the campus level. Lovejoy ISD and Argyle ISD it is not, but solid B-range performance for a working suburban community.</p>
+      <p class="suburb-links">Serves: Burleson.</p>
+    </div>
+
+    <div class="isd-card" id="joshua-isd">
+      <h3>Joshua ISD</h3>
+      <div class="meta">
+        <span class="tag">TEA: <strong class="tea-b">B</strong> (86)</span>
+        <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
+        <span class="tag">~6,000 students</span>
+        <span class="tag">$1.26/$100</span>
+      </div>
+      <p>Joshua ISD is a small, tight-knit Johnson County district that earns a TEA B (86) and a Niche A− — scores that genuinely reflect a community that punches above its weight class for its size and location. A partnership with Hill College and UT OnRamps gives motivated students meaningful dual credit pathways. Athletics are competitive within the district's classification. The school culture reviews on Niche are consistently positive, with parents describing a genuine sense of investment and belonging that's harder to find in larger metro districts.</p>
+      <p>Joshua is rural in character — this is not a suburb for families expecting walkability or urban amenities. Commutes to Fort Worth employment centers run 30–45 minutes. But for remote-working families or those with Fort Worth-side employment who want an affordable small-town environment with legitimately good schools and a strong community character, Joshua ISD delivers that with authenticity.</p>
+      <p class="suburb-links">Serves: Joshua, South Burleson, North Cleburne.</p>
+    </div>
+
+  </div><!-- end Ellis/Johnson Counties grid -->
+
+</section><!-- end spotlights -->
+
+<!-- SECTION 5: SPECIAL CONSIDERATIONS -->
+<section class="section" id="special-considerations">
+  <h2>Special Considerations for Relocating Families</h2>
+  <p>Beyond the headline ratings, these are the program-specific questions I hear most from parents in the relocation process.</p>
+
+  <div class="spec-grid">
+    <div class="spec-card">
+      <h4>🎓 Gifted &amp; Talented Programs</h4>
+      <p><strong>Top-tier GT:</strong> Frisco ISD, Plano ISD (extensive magnet pathways), Coppell ISD, Allen ISD, Lewisville ISD, Lovejoy ISD, and Highland Park ISD have the most developed GT identification and acceleration programs. <strong>Strong small-district GT:</strong> Argyle ISD and Carroll ISD. <strong>Note:</strong> Texas mandates GT identification but not a specific delivery model — quality varies significantly by campus, not just district.</p>
+    </div>
+    <div class="spec-card">
+      <h4>🧩 Special Education &amp; IEP Support</h4>
+      <p>For families with children who have IEPs or who need strong SpEd infrastructure, <strong>Lewisville ISD</strong> and <strong>Keller ISD</strong> are consistently cited by SpEd advocates as the strongest in North Texas. Plano ISD and Frisco ISD have robust programs at scale. Always visit the specific campus and request to speak with the SpEd coordinator before committing — program quality varies more at the campus level than the district level.</p>
+    </div>
+    <div class="spec-card">
+      <h4>🌎 Dual Language &amp; Immersion</h4>
+      <p><strong>Spanish dual language:</strong> Coppell ISD, Plano ISD, Mansfield ISD, Grapevine-Colleyville ISD, Denton ISD. <strong>Mandarin dual language:</strong> Coppell ISD (unique in DFW — the only district with a Mandarin program at the elementary level). <strong>Full IB programs</strong> (primary through diploma): Frisco ISD, Allen ISD, Carroll ISD, Plano ISD, Coppell ISD, Grapevine-Colleyville ISD. Admission to IB programs is typically by application — a school address in the district doesn't guarantee IB placement.</p>
+    </div>
+    <div class="spec-card">
+      <h4>🎭 Fine Arts Powerhouses</h4>
+      <p>DFW has some of the finest public school fine arts programs in the country. <strong>Lewisville ISD</strong> (Marcus HS, Flower Mound HS), <strong>Allen ISD</strong>, <strong>Carroll ISD</strong>, <strong>Frisco ISD</strong>, and <strong>Coppell ISD</strong> are the most frequently cited for competitive orchestra, choir, band, and theatre. <strong>Birdville ISD</strong> and <strong>Mansfield ISD</strong> have strong fine arts reputations that exceed their overall district ratings. If fine arts is a priority, ask specifically about the programs at the high school your child will attend — not just district-level ratings.</p>
+    </div>
+    <div class="spec-card">
+      <h4>🏈 Athletic Culture Districts</h4>
+      <p>If your child is a competitive athlete, district matters. <strong>Carroll ISD</strong> (Southlake Dragons — football dynasty), <strong>Allen ISD</strong> (Eagle Stadium, one of the largest HS stadiums in the country), <strong>Argyle ISD</strong> (consistent state championship contender in multiple sports), <strong>Rockwall ISD</strong> (#1 TEA athletics score in this guide), and <strong>Wylie ISD</strong> have the deepest athletic cultures in the DFW region. Texas takes high school athletics seriously in ways that genuinely surprise transplant families from the coasts.</p>
+    </div>
+    <div class="spec-card">
+      <h4>🏫 Private School Alternatives</h4>
+      <p>For families whose priorities can't be met in any public ISD, DFW has excellent private options: <strong>Greenhill School</strong> (Addison — K-12, highly selective), <strong>Jesuit College Preparatory</strong> (Dallas — boys only, grades 9–12), <strong>Ursuline Academy</strong> (Dallas — girls only), <strong>Parish Episcopal</strong> (Dallas — K-12), <strong>Cistercian Preparatory</strong> (Irving — boys 5–12, academically rigorous), and <strong>ESD (Episcopal School of Dallas)</strong>. Private school tuition in DFW ranges from $18,000–$35,000+ per year. None of these are governed by ISD boundaries — location relative to campus is the limiting factor, not home address.</p>
+    </div>
+    <div class="spec-card">
+      <h4>✈️ Military Families (PCS to DFW)</h4>
+      <p>DFW military installations include <strong>NAS Fort Worth JRB</strong> (Carswell). For PCS families, the nearest ISDs are <strong>White Settlement ISD</strong> (immediately adjacent — C/73 TEA), <strong>Eagle Mountain-Saginaw ISD</strong> (northwest — B/87), and <strong>HEB ISD</strong> (southeast — B/88). My strong recommendation for military families: prioritize EMS ISD or HEB ISD over White Settlement ISD for the academic difference. Texas also offers in-district enrollment for military children arriving mid-year — contact the district's registrar immediately upon arriving. Most districts accommodate PCS timelines without requiring proof of address before enrollment.</p>
+    </div>
+    <div class="spec-card">
+      <h4>📈 Fastest-Growing Districts</h4>
+      <p>Districts adding the most campuses and students right now: <strong>Frisco ISD, Prosper ISD, Celina ISD, Melissa ISD, Anna ISD, and Eagle Mountain-Saginaw ISD</strong>. Fast-growing districts mean new schools (sometimes with first-year teachers and no culture yet established), potential campus assignment changes before your child starts, and construction adjacent to schools. They also mean newer facilities, younger teaching staff, and communities building their identity together — which some families love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: FAQ -->
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Which DFW ISD is best for gifted students? <span class="arrow">▾</span></div>
+    <div class="faq-a">There's no single answer — the right district depends on your child's specific gifts and learning style. That said: Frisco ISD and Plano ISD have the largest and most differentiated GT programs at scale, with multiple magnet pathways. Lovejoy ISD and Carroll ISD consistently produce exceptional college outcomes in small-district settings where gifted students receive more individual attention. Coppell ISD's IB program from elementary through diploma level is one of the strongest structured accelerated pathways in DFW. Argyle ISD is often cited by GT parents who want the academic ceiling without the size and intensity of a mega-district. I'd recommend visiting campuses and speaking directly with the GT coordinator at each — what's on paper rarely fully captures the classroom experience.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Which districts have the strongest special education programs? <span class="arrow">▾</span></div>
+    <div class="faq-a">Lewisville ISD and Keller ISD are consistently named by SpEd advocates and parents of children with IEPs as the most robust in North Texas — both in terms of staffing levels and district culture around inclusion. Plano ISD and Frisco ISD have the scale to provide extensive specialist services. If you have a child with a specific disability, diagnosis, or need, I'd encourage you to reach out to the district's SpEd director before buying your home — not after. Many districts will speak with prospective families. Also note: Texas has an IEP portability law, meaning your child's IEP from another state is legally recognized in Texas, though the specific services may be renegotiated. I can connect you with a local SpEd advocate who specializes in IEP transitions if you need one.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Can I choose my school district when buying a home? <span class="arrow">▾</span></div>
+    <div class="faq-a">Yes — and this is exactly what working with a relocation-focused agent makes possible. Your school district is determined entirely by your home's address, and I can filter home searches specifically by ISD boundary before we ever look at listings. This is not how most agents work. Most show you homes in a city and tell you the district after the fact. I work in reverse: we establish which ISDs are acceptable to your family first, then I show you listings only within those boundaries. If you're still in the research phase, the TEA School District Locator (tea.texas.gov) and most county appraisal district websites let you look up any address and see its ISD assignment within seconds.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">How do I verify which ISD a specific address is zoned to? <span class="arrow">▾</span></div>
+    <div class="faq-a">Three reliable methods: (1) The <a href="https://tea.texas.gov/texas-schools/general-information/school-district-locator" target="_blank" rel="noopener">TEA School District Locator</a> — plug in any Texas address and it tells you the ISD. (2) Your county appraisal district's parcel search — CCAD (Collin), DCAD (Dallas), DCAD/Denton (Denton), TCAD (Tarrant). Every parcel record lists the taxing jurisdictions including the ISD. (3) Call me — I verify ISD zoning on every listing before presenting it to a client. Never assume that a city name = the same-named ISD. This is the number one school-district mistake I see out-of-state buyers make.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Are private schools better than public in DFW? <span class="arrow">▾</span></div>
+    <div class="faq-a">Not necessarily — and this surprises a lot of families coming from California and New York, where public schools can vary enormously by ZIP code. The top DFW public ISDs (Carroll, Highland Park, Lovejoy, Coppell, Argyle, Frisco) produce college outcomes and AP/IB programming that rival the best private schools in the region. The main reasons families choose DFW private schools are: (1) faith-based education (Catholic, Episcopal, Christian); (2) smaller class sizes and individualized attention; (3) specialized learning environments for specific learning profiles; or (4) dissatisfaction with the specific ISDs serving their home address. If you're buying in a top-tier ISD, the public school is almost always the right financial decision. If you're buying in a C-rated ISD because of affordability or location, the private school calculation starts to make more sense.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">How do property taxes relate to school district choice? <span class="arrow">▾</span></div>
+    <div class="faq-a">Your school district M&amp;O and I&amp;S tax rates are applied to your home's assessed value and represent the largest component of your annual Texas property tax bill. Two homes with identical purchase prices but in different ISDs can have property tax bills that differ by $3,000–$6,000 per year based solely on the tax rate. For example: a $600,000 home in Carroll ISD ($0.9617 rate) generates ~$5,770 in school taxes annually. The same home in Prosper ISD ($1.2552 rate) generates ~$7,531 — a difference of $1,761/year, or $147/month on your effective housing cost. I walk every client through this full calculation during our suburb matching conversation — it changes the "affordable" comparison more than most buyers expect.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Which ISDs are growing fastest and building new schools? <span class="arrow">▾</span></div>
+    <div class="faq-a">The fastest-growing ISDs in terms of enrollment and new campus construction are Frisco ISD, Prosper ISD, Celina ISD, Melissa ISD, Anna ISD, Little Elm ISD, and Eagle Mountain-Saginaw ISD. Fast-growing districts have real trade-offs: brand-new facilities (a plus), but also first-year campus cultures, potential boundary redraws as new campuses open, and occasionally long travel times to schools while permanent campuses are being built. If you're buying in a master-planned community in outer Collin or Denton County, always ask the builder which school the community is currently zoned to AND confirm whether that assignment is expected to change when the next campus opens.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Can I transfer my child into a different ISD? <span class="arrow">▾</span></div>
+    <div class="faq-a">Transfer policies vary significantly by district. The top-performing, most sought-after districts — Carroll ISD, Highland Park ISD, Lovejoy ISD, Coppell ISD — generally do not accept open-enrollment transfers. You must live within the district to attend. Dallas ISD operates a robust magnet school system that accepts applications from anywhere in the city, regardless of home address — this is a major exception. Most mid-tier ISDs do accept transfers, but with waitlists and conditions. The most practical advice: verify transfer availability directly with the district before buying a home in a neighboring ISD and assuming you can transfer your child into the preferred district. That assumption ends the conversation with a closed door about 70% of the time for the top districts.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">Which DFW districts offer IB programs? <span class="arrow">▾</span></div>
+    <div class="faq-a">IB (International Baccalaureate) programs in DFW public ISDs include: <strong>Frisco ISD</strong> (multiple IB World Schools), <strong>Allen ISD</strong> (IB Diploma), <strong>Plano ISD</strong> (IB at multiple levels), <strong>Coppell ISD</strong> (IB from elementary through Diploma — one of the most complete public IB programs in the region), <strong>Carroll ISD</strong> (IB Diploma at Carroll Senior HS), <strong>McKinney ISD</strong> (IB Diploma), and <strong>Grapevine-Colleyville ISD</strong>. Important caveat: an ISD "having IB" and a specific campus being an IB World School are different things. IB placement typically requires a separate application and is not automatic based on home address — even within the district. Contact the specific school's IB coordinator to understand the admission process.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">What's the difference between TEA ratings and Niche grades? <span class="arrow">▾</span></div>
+    <div class="faq-a">TEA ratings (A–F) are assigned by the Texas state government based on three objective domains: Student Achievement (test scores and graduation rates), School Progress (growth over time and performance compared to similar schools), and Closing the Gaps (performance gaps between student groups). They are calculated from standardized state data and are the most apples-to-apples comparison tool for Texas schools. Niche grades combine test scores with survey data — parent and student reviews, teacher quality ratings, college prep metrics, food, sports, and community vibe. Niche grades tend to correlate with socioeconomic demographics and community satisfaction as much as objective academic performance. When TEA and Niche diverge (like Waxahachie ISD: Niche A−, TEA C), the honest answer is that TEA reflects what the data says and Niche reflects how the community feels about it. Both are worth understanding — together they paint a fuller picture than either alone. Adding GreatSchools provides a third independent lens, particularly useful for families familiar with the GreatSchools rating system from living in other states.</div>
+  </div>
+
+</section><!-- end FAQ -->
+
+<!-- SECTION 7: CTA -->
+<div class="cta-box" id="contact-kristen">
+  <h2>Not Sure Which Suburb Puts Your Kids in the Right District?</h2>
+  <p>That's exactly what I help families figure out. Before we ever look at a listing, we talk about your kids' ages, their learning needs, your non-negotiables on school quality — and I build the search around those answers. No surprises after closing.</p>
+  <a href="mailto:Kristen@whymovetodallas.com" class="cta-btn">Book a Free Relocation Consultation</a>
+  <p style="margin-top:1.2rem;font-size:0.85rem;color:var(--stone);">Kristen Carpentier &nbsp;·&nbsp; <a href="tel:6024054115" style="color:var(--stone);">(602) 405-4115</a> &nbsp;·&nbsp; <a href="mailto:Kristen@whymovetodallas.com" style="color:var(--stone);">Kristen@whymovetodallas.com</a></p>
+  <p style="font-size:0.8rem;color:var(--stone);margin-top:0.25rem;">Ready to find the right suburb for your family? Contact Kristen at <a href="https://whymovetodallas.com" style="color:var(--stone);">whymovetodallas.com</a></p>
+</div>
+
+<div class="compliance">
+  Kristen Carpentier | Licensed Texas Realtor® #760457 | Brokered by eXp Realty — 15950 Dallas Pkwy #400, Dallas, TX 75248<br>
+  Information on this page is provided for educational purposes and is believed to be accurate as of May 2026. School district boundaries, TEA accountability ratings, Niche grades, GreatSchools ratings, enrollment figures, and tax rates change over time. Always verify ISD zoning by specific property address before making real estate decisions. TEA ratings source: <a href="https://txschools.gov" target="_blank" rel="noopener">txschools.gov</a>. Tax rates: <a href="https://comptroller.texas.gov/taxes/property-tax/rates/" target="_blank" rel="noopener">Texas Comptroller 2024</a>. Niche grades: <a href="https://www.niche.com" target="_blank" rel="noopener">niche.com</a>. GreatSchools profiles: <a href="https://www.greatschools.org" target="_blank" rel="noopener">greatschools.org</a>.
+</div>
+
+</div><!-- end page-wrap -->
+
+<script>
+// ── ISD Master Data ──────────────────────────────────────────────────────────
+// Composite = TEA×40% + Niche×35% + GreatSchools×25%
+// Niche: A+=97, A=93, A-=90, B+=87, B=83, B-=80, C=73
+// GS:    Above average=85, Average=70, Below average=55
+const isdData = {
+  'highland-park-isd':    { comp: 93.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/dallas/highland-park-independent-school-district/' },
+  'carroll-isd':          { comp: 93.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/southlake/carroll-independent-school-district/' },
+  'lovejoy-isd':          { comp: 92.8, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/lovejoy-independent-school-district/' },
+  'coppell-isd':          { comp: 92.4, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/coppell/coppell-independent-school-district/' },
+  'wylie-isd':            { comp: 92.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/wylie/wylie-independent-school-district/' },
+  'argyle-isd':           { comp: 92.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/argyle/argyle-independent-school-district/' },
+  'allen-isd':            { comp: 91.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/allen-independent-school-district/' },
+  'frisco-isd':           { comp: 91.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/frisco/frisco-independent-school-district/' },
+  'prosper-isd':          { comp: 90.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/prosper/prosper-independent-school-district/' },
+  'gcisd':                { comp: 89.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/grapevine/grapevine-colleyville-independent-school-district/' },
+  'rockwall-isd':         { comp: 89.4, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/rockwall/rockwall-independent-school-district/' },
+  'mckinney-isd':         { comp: 89.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/mckinney/mckinney-independent-school-district/' },
+  'plano-isd':            { comp: 86.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/plano/plano-independent-school-district/' },
+  'heb-isd':              { comp: 85.3, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/bedford/hurst-euless-bedford-independent-school-district/' },
+  'mansfield-isd':        { comp: 85.3, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/mansfield/mansfield-independent-school-district/' },
+  'melissa-isd':          { comp: 85.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/melissa/melissa-independent-school-district/' },
+  'ems-isd':              { comp: 84.9, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/eagle-mountain-saginaw-independent-school-district/' },
+  'keller-isd':           { comp: 84.1, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/keller/keller-independent-school-district/' },
+  'joshua-isd':           { comp: 83.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/joshua/joshua-independent-school-district/' },
+  'midlothian-isd':       { comp: 83.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/midlothian/midlothian-independent-school-district/' },
+  'lewisville-isd':       { comp: 82.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/lewisville/lewisville-independent-school-district/' },
+  'celina-isd':           { comp: 82.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/celina/celina-independent-school-district/' },
+  'aubrey-isd':           { comp: 81.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/aubrey/aubrey-independent-school-district/' },
+  'northwest-isd':        { comp: 81.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/northwest-independent-school-district/' },
+  'birdville-isd':        { comp: 81.2, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/north-richland-hills/birdville-independent-school-district/' },
+  'denton-isd':           { comp: 81.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/denton/denton-independent-school-district/' },
+  'burleson-isd':         { comp: 80.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/burleson/burleson-independent-school-district/' },
+  'lake-dallas-isd':      { comp: 79.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/lake-dallas/lake-dallas-independent-school-district/' },
+  'waxahachie-isd':       { comp: 79.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/waxahachie/waxahachie-independent-school-district/' },
+  'royse-city-isd':       { comp: 78.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/royse-city/royse-city-independent-school-district/' },
+  'forney-isd':           { comp: 78.2, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/forney/forney-independent-school-district/' },
+  'azle-isd':             { comp: 77.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/azle/azle-independent-school-district/' },
+  'little-elm-isd':       { comp: 77.1, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/little-elm/little-elm-independent-school-district/' },
+  'anna-isd':             { comp: 75.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/anna/anna-independent-school-district/' },
+  'crowley-isd':          { comp: 75.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/crowley-independent-school-district/' },
+  'dallas-isd':           { comp: 71.8, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/dallas/dallas-independent-school-district/' },
+  'fort-worth-isd':       { comp: 69.2, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/fort-worth/fort-worth-independent-school-district/' },
+  'white-settlement-isd': { comp: 68.5, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/white-settlement/white-settlement-independent-school-district/' }
+};
+
+// ── Inject composite scores + GS data into table and cards ───────────────────
+document.addEventListener('DOMContentLoaded', function () {
+
+  // 1. TABLE ROWS: inject composite TD (col 1) and update GS cell (col 4 after insertion)
+  const tbody = document.getElementById('isdTableBody');
+  if (tbody) {
+    Array.from(tbody.querySelectorAll('tr')).forEach(function(row) {
+      const link = row.querySelector('a.isd-link');
+      if (!link) return;
+      const id = (link.getAttribute('href') || '').replace('#', '');
+      const d = isdData[id];
+      if (!d) return;
+
+      // Insert composite TD as new cell at index 1
+      const compTd = document.createElement('td');
+      compTd.setAttribute('data-composite', d.comp);
+      compTd.style.cssText = 'white-space:nowrap;';
+      compTd.innerHTML =
+        '<span class="comp-score">' + d.comp.toFixed(1) + '</span>' +
+        '<div class="comp-bar-wrap"><div class="comp-bar" style="width:' + d.comp + '%"></div></div>';
+      row.insertBefore(compTd, row.cells[1]);
+
+      // Update GS cell (now at index 4 after insertion)
+      const gsCell = row.cells[4];
+      if (gsCell) {
+        gsCell.innerHTML =
+          '<span class="' + d.gsClass + '">' + d.gs + '</span>' +
+          ' <a href="' + d.url + '" target="_blank" rel="noopener" class="ext-link" style="font-size:0.78rem;">Profile ↗</a>';
+      }
+    });
+
+    // Default sort: composite descending
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    rows.sort(function(a, b) {
+      return parseFloat(b.cells[1].getAttribute('data-composite') || 0) -
+             parseFloat(a.cells[1].getAttribute('data-composite') || 0);
+    });
+    rows.forEach(function(r) { tbody.appendChild(r); });
+
+    // Mark composite column as sorted desc
+    var ths = document.querySelectorAll('#isdTable thead th');
+    ths.forEach(function(th, i) { th.classList.remove('sorted-asc','sorted-desc'); });
+    if (ths[1]) ths[1].classList.add('sorted-desc');
+    sortCol = 1; sortDir = -1;
+  }
+
+  // 2. SPOTLIGHT CARDS: inject GS badge into .meta and reference line above suburb links
+  Object.entries(isdData).forEach(function([id, d]) {
+    const card = document.getElementById(id);
+    if (!card) return;
+
+    // Add GS descriptor badge to .meta
+    const meta = card.querySelector('.meta');
+    if (meta) {
+      const badge = document.createElement('span');
+      badge.className = 'tag';
+      badge.innerHTML = 'GreatSchools: <strong><span class="' + d.gsClass + '">' + d.gs + '</span></strong>';
+      meta.appendChild(badge);
+    }
+
+    // Add reference line before .suburb-links
+    const suburbLinks = card.querySelector('.suburb-links');
+    const ref = document.createElement('p');
+    ref.style.cssText = 'font-size:0.82rem;color:#555;margin-bottom:0.5rem;margin-top:0.25rem;';
+    ref.innerHTML = '📊 GreatSchools rates this district as <strong><span class="' + d.gsClass + '">' + d.gs + '</span></strong>. ' +
+      '<a href="' + d.url + '" target="_blank" rel="noopener" style="color:var(--navy);">View full GreatSchools profile ↗</a> for school-by-school ratings, equity scores, and community reviews.';
+    if (suburbLinks) {
+      card.insertBefore(ref, suburbLinks);
+    } else {
+      card.appendChild(ref);
+    }
+  });
+
+});
+
+// ── Table sort ──────────────────────────────────────────────────────────────
+let sortCol = 1, sortDir = -1;
+function sortTable(col) {
+  const tbody = document.getElementById('isdTableBody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const ths = document.querySelectorAll('#isdTable thead th');
+
+  if (sortCol === col) { sortDir *= -1; } else { sortDir = 1; }
+  sortCol = col;
+
+  ths.forEach(function(th, i) {
+    th.classList.remove('sorted-asc', 'sorted-desc');
+    if (i === col) th.classList.add(sortDir === 1 ? 'sorted-asc' : 'sorted-desc');
+  });
+
+  rows.sort(function(a, b) {
+    let aVal, bVal;
+    // Composite column: use data attribute
+    if (col === 1) {
+      aVal = parseFloat(a.cells[1]?.getAttribute('data-composite') || 0);
+      bVal = parseFloat(b.cells[1]?.getAttribute('data-composite') || 0);
+      return (aVal - bVal) * sortDir;
+    }
+    aVal = (a.cells[col]?.textContent || '').trim();
+    bVal = (b.cells[col]?.textContent || '').trim();
+    const aNum = parseFloat(aVal.replace(/[^0-9.]/g, ''));
+    const bNum = parseFloat(bVal.replace(/[^0-9.]/g, ''));
+    if (!isNaN(aNum) && !isNaN(bNum)) return (aNum - bNum) * sortDir;
+    return aVal.localeCompare(bVal) * sortDir;
+  });
+
+  rows.forEach(function(r) { tbody.appendChild(r); });
+}
+
+// ── Table filter ────────────────────────────────────────────────────────────
+function filterTable() {
+  const search = document.getElementById('tableSearch').value.toLowerCase();
+  const ratingFilter = document.getElementById('ratingFilter').value;
+  const countyFilter = document.getElementById('countyFilter').value;
+  const rows = document.querySelectorAll('#isdTableBody tr');
+
+  rows.forEach(function(row) {
+    const text = row.textContent.toLowerCase();
+    const tea = row.getAttribute('data-tea') || '';
+    const county = row.getAttribute('data-county') || '';
+
+    const matchSearch = !search || text.includes(search);
+    const matchRating = !ratingFilter || tea === ratingFilter;
+    const matchCounty = !countyFilter || county.includes(countyFilter);
+
+    row.style.display = (matchSearch && matchRating && matchCounty) ? '' : 'none';
+  });
+}
+
+// ── FAQ accordion ───────────────────────────────────────────────────────────
+function toggleFaq(el) {
+  const answer = el.nextElementSibling;
+  const isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(function(a) { a.classList.remove('open'); });
+  document.querySelectorAll('.faq-q').forEach(function(q) { q.classList.remove('open'); });
+  if (!isOpen) {
+    answer.classList.add('open');
+    el.classList.add('open');
+  }
+}
+
+// ── Jump nav: smooth scroll ───────────────────────────────────────────────────
+document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ── Jump nav: active section highlight on scroll ─────────────────────────────
+(function() {
+  var navLinks = document.querySelectorAll('.kc-jumpnav-list a');
+  var sections = Array.from(navLinks).map(function(a) {
+    return document.querySelector(a.getAttribute('href'));
+  }).filter(Boolean);
+
+  function onScroll() {
+    var scrollY = window.scrollY + 80;
+    var current = sections[0];
+    sections.forEach(function(s) {
+      if (s.offsetTop <= scrollY) current = s;
+    });
+    navLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current.id);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
+

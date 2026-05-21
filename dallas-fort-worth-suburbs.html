@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title + meta description: Squarespace Page Settings → SEO tab -->
+<!-- Schema: schema/suburbs-faq-schema.json → Page Settings → Advanced → Page Header Code Injection -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');
+:root {
+  --ivory:       #F7F5F1;
+  --navy:        #1F355E;
+  --champagne:   #B9A27A;
+  --taupe:       #E7DFD2;
+  --charcoal:    #171717;
+  --stone:       #C8C1B6;
+  --white:       #FFFFFF;
+  --light-gray:  #f0ede7;
+  --border:      #ddd8d0;
+  --score-high:  #1a6b3a;
+  --score-mid:   #B9A27A;
+  --score-low:   #888;
+  --grade-a:     #1a6b3a;
+  --grade-b:     #2563a8;
+  --grade-c:     #888;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Jost','Segoe UI',Arial,sans-serif;background:var(--ivory);color:var(--charcoal);font-size:17px;line-height:1.75;}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;color:var(--navy);font-weight:600;line-height:1.25;}
+h1{font-size:2.6rem;margin-bottom:1.2rem;}
+h2{font-size:1.95rem;margin-bottom:0.9rem;margin-top:2.5rem;}
+h3{font-size:1.45rem;margin-bottom:0.6rem;margin-top:1.8rem;}
+h4{font-size:1.15rem;margin-bottom:0.4rem;margin-top:1.2rem;}
+p{margin-bottom:1rem;}
+a{color:var(--navy);text-decoration:underline;}
+a:hover{color:var(--champagne);}
+ul,ol{margin:0 0 1rem 1.4rem;}
+li{margin-bottom:0.2rem;}
+.page-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,rgba(31,53,94,0.56) 0%,rgba(31,53,94,0.38) 50%,rgba(31,53,94,0.52) 100%),url('/images/frisco-hero.webp') center/cover no-repeat;color:var(--white);padding:clamp(4rem,10vw,7rem) 1.5rem;text-align:center;}
+.hero h1{color:var(--white);font-size:2.4rem;max-width:820px;margin:0 auto 1rem;text-shadow:0 2px 12px rgba(0,0,0,0.45);}
+.hero p{color:rgba(255,255,255,0.85);font-size:1.05rem;max-width:680px;margin:0 auto;text-shadow:0 1px 6px rgba(0,0,0,0.35);}
+.hero .badge{display:inline-block;font-family:'Jost',sans-serif;font-size:0.9rem;font-weight:700;color:var(--champagne);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.2rem;text-shadow:0 0 16px rgba(0,0,0,0.5);}
+
+/* Jump nav */
+.kc-jumpnav{background:var(--white);border-bottom:1px solid var(--stone);padding:0 1.5rem;position:sticky;top:0;z-index:100;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;}
+.kc-jumpnav::-webkit-scrollbar{display:none;}
+.kc-jumpnav-list{display:flex;gap:0;list-style:none;max-width:1100px;margin:0 auto;white-space:nowrap;}
+.kc-jumpnav-list a{display:block;padding:0.85rem 1rem;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;text-decoration:none;color:var(--navy);border-bottom:3px solid transparent;transition:border-color 0.15s,color 0.15s;}
+.kc-jumpnav-list a:hover,.kc-jumpnav-list a.active{border-bottom-color:var(--champagne);color:var(--champagne);}
+
+/* Editorial */
+.editorial{padding:2rem 0;}
+.lead-paragraph{font-size:1.12rem;line-height:1.8;color:var(--charcoal);margin-bottom:1.2rem;}
+.method-box{background:var(--light-gray);border-left:4px solid var(--champagne);border-radius:6px;padding:1.25rem 1.5rem;margin:1.25rem 0;font-size:0.9rem;}
+.method-box h4{margin:0 0 0.6rem;color:var(--navy);font-size:1rem;font-family:'Cormorant Garamond',Georgia,serif;}
+.method-box ul{margin:0.35rem 0 0;padding-left:1.4rem;}
+.method-box li{margin-bottom:0.3rem;}
+.table-intro{font-size:1rem;color:var(--charcoal);margin:1.5rem 0 0.5rem;border-top:1px solid var(--border);padding-top:1.2rem;}
+
+/* Filter bar */
+.filter-bar{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin:1.25rem 0;display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;position:sticky;top:48px;z-index:90;box-shadow:0 2px 12px rgba(0,0,0,0.07);}
+.filter-group{display:flex;flex-direction:column;gap:0.25rem;}
+.filter-group label{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);}
+.pills{display:flex;gap:0.3rem;flex-wrap:wrap;}
+.pill{padding:0.2rem 0.6rem;border:1px solid var(--stone);border-radius:20px;font-size:0.78rem;font-weight:500;background:var(--white);color:var(--charcoal);cursor:pointer;transition:all 0.15s;white-space:nowrap;}
+.pill:hover{border-color:var(--navy);color:var(--navy);}
+.pill.active{background:var(--navy);color:var(--white);border-color:var(--navy);}
+.filter-group select{padding:0.3rem 0.6rem;border:1px solid var(--stone);border-radius:5px;font-size:0.82rem;background:var(--white);color:var(--charcoal);min-width:140px;}
+.toggle-label{display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;font-weight:500;color:var(--charcoal);cursor:pointer;white-space:nowrap;}
+.filter-count{font-size:0.8rem;color:#666;white-space:nowrap;margin-left:auto;padding-top:1rem;}
+
+/* Table */
+.table-wrap{overflow-x:auto;margin:0.75rem 0 1.5rem;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.09);}
+table{width:100%;border-collapse:collapse;font-size:0.87rem;background:var(--white);}
+thead tr{background:var(--navy);color:var(--white);}
+thead th{padding:0.8rem 0.65rem;text-align:left;font-family:'Jost',sans-serif;font-size:0.74rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;white-space:nowrap;user-select:none;position:relative;}
+thead th:hover{background:#2a3d6a;}
+thead th.sorted-asc::after{content:' ▲';font-size:0.6rem;}
+thead th.sorted-desc::after{content:' ▼';font-size:0.6rem;}
+thead th small{display:block;font-size:0.65rem;font-weight:400;opacity:0.75;letter-spacing:0;}
+tbody tr{border-bottom:1px solid var(--border);transition:background 0.12s;}
+tbody tr:hover{background:#faf8f4;}
+tbody tr:last-child{border-bottom:none;}
+td{padding:0.65rem 0.65rem;vertical-align:middle;}
+td:first-child{font-weight:600;}
+.suburb-link{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--champagne);}
+.suburb-link:hover{color:var(--champagne);}
+
+/* Score cells */
+.score-cell{min-width:72px;}
+.score-num{font-weight:700;font-size:0.95rem;display:block;}
+.score-high{color:var(--score-high);}
+.score-mid{color:var(--score-mid);}
+.score-low{color:var(--score-low);}
+.score-null{color:#bbb;}
+.score-bar{height:4px;background:#e8e4dc;border-radius:2px;width:60px;margin-top:3px;}
+.score-fill-high{height:4px;background:var(--score-high);border-radius:2px;}
+.score-fill-mid{height:4px;background:var(--score-mid);border-radius:2px;}
+.score-fill-low{height:4px;background:var(--score-low);border-radius:2px;}
+
+/* Grade badges */
+.grade-badge{display:inline-block;font-weight:700;font-size:0.82rem;padding:0.12rem 0.45rem;border-radius:4px;white-space:nowrap;}
+.gr-aplus{background:#e8f5e9;color:#1a6b3a;}
+.gr-a{background:#e8f5e9;color:#1a6b3a;}
+.gr-aminus{background:#f0f8f0;color:#2d7a4a;}
+.gr-bplus{background:#fff3cd;color:#856404;}
+.gr-b{background:#fff8e1;color:#9a7a00;}
+.gr-bminus,.gr-cplus,.gr-c,.gr-cminus,.gr-dplus,.gr-d,.gr-f{background:#f5f5f5;color:#666;}
+.gr-null{color:#bbb;font-weight:400;}
+
+/* Market badges */
+.mkt-badge{display:inline-block;font-size:0.75rem;font-weight:600;padding:0.12rem 0.4rem;border-radius:3px;white-space:nowrap;}
+.mkt-seller{background:#fff0e6;color:#c05800;}
+.mkt-balanced{background:#e8f5e9;color:#1a6b3a;}
+.mkt-buyer{background:#e8f0fc;color:#2563a8;}
+.mkt-null{color:#bbb;}
+
+/* Split ISD tooltip */
+.split-isd{cursor:help;font-size:0.8rem;margin-left:3px;opacity:0.7;}
+
+/* Footer CTA */
+.footer-cta{background:var(--navy);color:var(--white);padding:2.5rem 1.5rem;text-align:center;border-radius:10px;margin-top:2rem;}
+.footer-cta h2{color:var(--white);margin-top:0;}
+.footer-cta p{color:rgba(255,255,255,0.82);max-width:620px;margin:0 auto 1.5rem;}
+.cta-btn{display:inline-block;background:var(--champagne);color:var(--navy);font-weight:700;text-decoration:none;padding:0.75rem 2rem;border-radius:6px;font-size:1rem;letter-spacing:0.02em;transition:opacity 0.15s;}
+.cta-btn:hover{opacity:0.88;color:var(--navy);}
+.cta-btn-outline{display:inline-block;border:2px solid rgba(255,255,255,0.6);color:var(--white);font-weight:600;text-decoration:none;padding:0.7rem 1.6rem;border-radius:6px;font-size:0.95rem;margin-left:0.75rem;transition:all 0.15s;}
+.cta-btn-outline:hover{border-color:var(--white);color:var(--white);}
+
+/* TREC footer */
+.trec-footer{font-size:0.75rem;color:#888;text-align:center;margin-top:1.5rem;line-height:1.5;}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{font-size:1.9rem;}
+  .filter-bar{position:static;top:auto;}
+  table{font-size:0.8rem;}
+  .col-hide-mobile{display:none;}
+  .footer-cta .cta-btn-outline{margin-left:0;margin-top:0.6rem;}
+}
+@media(max-width:480px){
+  h1{font-size:1.6rem;}
+  h2{font-size:1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <span class="badge">DFW Family Relocation Specialist</span>
+  <h1>DFW Suburb Comparison — Schools, Safety, Prices & Family Scores</h1>
+  <p>60 Dallas–Fort Worth suburbs scored and ranked across five dimensions families actually care about. Updated with live market data.</p>
+</div>
+
+<!-- Jump nav -->
+<nav class="kc-jumpnav" aria-label="Page sections">
+  <ul class="kc-jumpnav-list">
+    <li><a href="#guide">About</a></li>
+    <li><a href="#scores">Scores</a></li>
+    <li><a href="#factors">Key Factors</a></li>
+    <li><a href="#guide-quick">Quick Guide</a></li>
+    <li><a href="#table">Compare Suburbs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+<!-- ══════════════════════════════════════════════════════ EDITORIAL COPY ══ -->
+<section class="editorial" id="guide">
+
+  <p class="lead-paragraph">
+    The Dallas–Fort Worth metroplex has more than 200 incorporated cities and towns — but if you're relocating with a family, you're really choosing between a much shorter list of suburbs that actually deliver on schools, safety, commute, and community. I've helped hundreds of families make this decision, and the hardest part is never finding information — it's making sense of it all in one place.
+  </p>
+  <p>
+    This page scores every major DFW suburb across five dimensions families actually care about: school quality, neighborhood safety, commute time, lifestyle and amenities, and overall value. You can sort and filter the table below to match your priorities, or read on to understand how each factor should shape your search.
+  </p>
+
+  <h2>How to Use This DFW Suburb Comparison Table</h2>
+  <p>
+    <strong>Start with your non-negotiables.</strong> For most relocating families, that's either schools or budget — rarely both at once in the same suburb. Use the school grade filter to narrow to A and A+ districts first, then see what fits your price range. If your shortlist is empty, that's the conversation we need to have about tradeoffs — and it's exactly the kind of call I do every week with families from California, New York, and Illinois.
+  </p>
+  <p>
+    <strong>Sort by what matters most to you.</strong> The table defaults to Family Score — our composite ranking that weights schools (30%), safety (25%), family life and community (20%), commute (15%), and market stability (10%). But if commute to a specific job corridor is your hard constraint, sort by commute time. If you're on a tighter budget, sort by Affordability Score instead.
+  </p>
+  <p>
+    <strong>Click through to each suburb page</strong> for the full picture — real estate market data, school district details, crime stats, amenity counts, and honest pros and cons. Every suburb page is updated with live NTREIS market data and links directly to the <a href="/dfw-school-districts">school district comparison page</a>.
+  </p>
+  <p>
+    Not sure where to start? <a href="https://tools.whymovetodallas.com">Take the DFW Suburb Quiz →</a> — answer 7 questions about your family's priorities and get a personalized top-3 recommendation.
+  </p>
+
+  <h2 id="scores">Understanding the DFW Family Score and Affordability Score</h2>
+
+  <div class="method-box">
+    <h4>⭐ How the Family Score Works</h4>
+    <p>The Family Score is a weighted composite designed specifically for parents relocating to DFW. It pulls from five independent data sources — Texas Education Agency accountability ratings, Niche school grades, FBI crime statistics, Census demographic data, and NTREIS real estate market data — weighted as follows:</p>
+    <ul>
+      <li><strong>Schools — 30%.</strong> Composite of TEA A–F rating (40%), Niche ISD overall grade (35%), and GreatSchools summary (25%) — the same methodology used on our <a href="/dfw-school-districts">DFW School Districts page</a>.</li>
+      <li><strong>Safety — 25%.</strong> FBI violent and property crime rates per 100,000 residents, cross-referenced with Niche's city-level crime grade.</li>
+      <li><strong>Family Life &amp; Community — 20%.</strong> How well a suburb is actually set up for daily family life — not just in theory. This sub-score looks at: the share of households with children (families concentrate where kids thrive), parks and green space per resident, restaurants per resident, and shopping access per resident. Amenity counts are pulled from OpenStreetMap and normalized per capita, so a small suburb like Argyle isn't unfairly compared to a city the size of Arlington. Walk Score rounds out the picture. Together, these inputs reward suburbs where families can live their daily lives — not just sleep in them.</li>
+      <li><strong>Commute — 15%.</strong> Census median commute time. Lower is better: 15 minutes scores 100, 45 minutes scores 0.</li>
+      <li><strong>Market Stability — 10%.</strong> NTREIS months of supply. A balanced market (2.5–4.5 months) scores highest — both extreme seller's and buyer's markets signal volatility.</li>
+    </ul>
+  </div>
+
+  <div class="method-box">
+    <h4>💰 How the Affordability Score Works</h4>
+    <p>The Affordability Score answers a different question: <em>how much suburb do you get for the money?</em> It weighs price-to-income ratio (35%), school quality relative to price (30%), home price versus the DFW metro average (20%), and ISD property tax rate (15%). A suburb can score low on Family Score and high on Affordability Score — that's your signal to look closer if budget is a priority. Suburbs like Forney, Wylie, and Rockwall often surface here that families from higher-cost markets overlook.</p>
+  </div>
+
+  <h2 id="factors">The 5 Factors That Matter When Choosing a DFW Suburb</h2>
+
+  <h3>School Districts — The Factor Most Families Start With</h3>
+  <p>
+    In DFW, your school district isn't determined by which city you live in — it's determined by which street you're on. A home in Frisco might be zoned to Frisco ISD, Prosper ISD, or McKinney ISD depending on the block. A home in Plano's north side is almost certainly zoned to Frisco ISD, not Plano ISD. This surprises almost every out-of-state family I work with, and it's why I verify district boundaries by address — not city name — before my clients make any offer. Use the <a href="https://tea.texas.gov/texas-schools/general-information/school-district-locator" target="_blank" rel="noopener">TEA School District Locator</a> for any specific address. For a full breakdown of all 36 DFW school districts — including TEA ratings, Niche grades, GreatSchools data, tax rates, enrollment, and notable programs — see our <a href="/dfw-school-districts">DFW School Districts comparison page</a>.
+  </p>
+
+  <h3>Neighborhood Safety — What the Data Actually Shows</h3>
+  <p>
+    DFW's family suburbs are among the safest communities in Texas — but safety varies meaningfully across the metro. The Family Score safety dimension pulls FBI Uniform Crime Report data (violent and property crime per 100,000 residents) and Niche's city-level crime grade. As a general pattern: established inner suburbs like Coppell, Southlake, and Colleyville consistently rank among the safest in the region. Fast-growing outer suburbs are adding infrastructure rapidly; crime rates in newer master-planned communities are typically low due to lower density and newer housing stock. Click through to any suburb page to see the raw crime rate compared to the DFW average.
+  </p>
+
+  <h3>Commute Times — The Factor Families Underestimate</h3>
+  <p>
+    The DFW freeway system is extensive — and during peak hours, the difference between a 20-minute and a 45-minute commute can be a single interchange. The key question: which corridor does your employer sit on? If your office is in the Legacy/Frisco area (Toyota, Liberty Mutual, JPMorgan, PGA of America), Frisco and Prosper are the natural fit. If you're commuting to Las Colinas (Kimberly-Clark, Celanese, Fluor), Coppell and Irving serve you best. If you're going downtown Dallas daily, mid-ring suburbs like Plano and Richardson give you better access than the outer growth suburbs. Sort the table by commute time and filter by county to identify your corridor before shortlisting neighborhoods.
+  </p>
+
+  <h3>Housing Prices and Market Conditions — Reading the Numbers Right</h3>
+  <p>
+    DFW median home prices range from the low $300s in outer suburbs to well over $1.3M in Southlake — more than a 4x spread across the same metro. Two numbers matter most in the table: median SFR price (what you'll actually pay for a single-family home) and days on market (how competitive each neighborhood is right now). A suburb with 15 days on market means multiple-offer situations are common — you need to be pre-approved and ready to move quickly. A suburb with 50+ days gives you room to negotiate. Texas has no state income tax, but property taxes are significant — typically 1.8–2.5% of assessed value depending on your school district and any MUD district fees layered on top. Your total monthly payment, not just the purchase price, is what matters for long-term affordability.
+  </p>
+
+  <h3>Lifestyle, Amenities, and Community Feel — The Harder-to-Quantify Factors</h3>
+  <p>
+    Data can tell you the Walk Score, the park count, and the median age of residents — but it can't fully capture why some families feel immediately at home in Flower Mound and others gravitate toward McKinney's historic downtown. As a general guide: established suburbs like Coppell, Plano, and Colleyville have mature trees, walkable town centers, and a settled community feel. Growth suburbs like Prosper, Celina, and northern Frisco offer newer infrastructure, master-planned amenities — lazy rivers, clubhouses, sports complexes — but fewer established gathering places. Argyle and Trophy Club offer a more rural-adjacent character with strong schools at prices below the Frisco peak. The lifestyle data in each suburb page can help orient you, but nothing replaces spending a Saturday morning in two or three neighborhoods before you commit.
+  </p>
+
+  <h2 id="guide-quick">Which DFW Suburb Is Right for Your Family? A Quick Guide</h2>
+  <p>Every family's priorities are different. Here's how I'd point you based on the situations I see most often:</p>
+  <ul>
+    <li><strong>If schools are your absolute top priority:</strong> Start with Carroll ISD (Southlake, Westlake), Lovejoy ISD (Fairview, Lucas), Frisco ISD, or Allen ISD. These are the elite districts in DFW. Southlake and Westlake carry significant price premiums; Allen and select Frisco neighborhoods deliver equivalent school quality at more accessible prices.</li>
+    <li><strong>If budget is your primary constraint (under $450K):</strong> Look at McKinney (outer areas), Wylie, Rockwall, Forney, and Royse City. McKinney ISD and Rockwall ISD both rate well. You'll trade some amenity density for significantly more house.</li>
+    <li><strong>If you're commuting to Legacy/Frisco corridor:</strong> Frisco, Prosper, Little Elm, and Celina are your natural quadrant — 15 to 25 minutes to most Legacy employers on a typical morning.</li>
+    <li><strong>If you're commuting to Las Colinas:</strong> Coppell is the premium answer. Flower Mound and Lewisville give you a few more commute minutes in exchange for more house at a lower price point.</li>
+    <li><strong>If you want the best school quality per dollar:</strong> Sort the table by Affordability Score. Allen, McKinney, and Rockwall routinely surface as suburbs where elite school district quality is paired with prices well below Frisco and Southlake peaks.</li>
+    <li><strong>If your family wants space and a quieter pace:</strong> Argyle, Lantana, Northlake, and Celina offer larger lots, newer homes, and a more rural character — with strong schools — at prices below the inner Tier 1 suburbs.</li>
+  </ul>
+
+  <p class="table-intro">The table below covers all <strong id="suburbCountInline">60</strong> suburbs across the DFW metroplex. Sort by any column header, filter by your priorities, and click any suburb name for the full data breakdown.</p>
+
+</section>
+<!-- ══════════════════════════════════════════════════ END EDITORIAL COPY ══ -->
+
+<!-- Filter bar -->
+<div class="filter-bar" id="filterBar">
+  <div class="filter-group">
+    <label>Budget</label>
+    <div class="pills" data-filter="budget">
+      <button class="pill active" data-value="all">All</button>
+      <button class="pill" data-value="under400">Under $400K</button>
+      <button class="pill" data-value="400to550">$400K–$550K</button>
+      <button class="pill" data-value="550to750">$550K–$750K</button>
+      <button class="pill" data-value="over750">$750K+</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <label>School Grade</label>
+    <div class="pills" data-filter="grade">
+      <button class="pill active" data-value="all">All</button>
+      <button class="pill" data-value="aplus">A+</button>
+      <button class="pill" data-value="a">A</button>
+      <button class="pill" data-value="aminus">A−</button>
+      <button class="pill" data-value="bplus">B+ &amp; below</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <label>County</label>
+    <select id="countyFilter">
+      <option value="all">All Counties</option>
+      <option value="Collin">Collin</option>
+      <option value="Denton">Denton</option>
+      <option value="Tarrant">Tarrant</option>
+      <option value="Dallas">Dallas</option>
+      <option value="Rockwall">Rockwall</option>
+      <option value="Ellis">Ellis</option>
+      <option value="Johnson">Johnson</option>
+      <option value="Kaufman">Kaufman</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>Market</label>
+    <select id="marketFilter">
+      <option value="all">All Markets</option>
+      <option value="seller">Seller's Market</option>
+      <option value="balanced">Balanced</option>
+      <option value="buyer">Buyer's Market</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label class="toggle-label">
+      <input type="checkbox" id="tier1Toggle">
+      Top suburbs only
+    </label>
+  </div>
+  <div class="filter-count" id="filterCount">Showing 60 of 60 suburbs</div>
+</div>
+
+<!-- Table -->
+<div id="table" class="table-wrap">
+<table id="suburbTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">Suburb</th>
+      <th onclick="sortTable(1)" class="col-score" title="Schools 30% · Safety 25% · Family Community 20% · Commute 15% · Market Stability 10%">
+        ⭐ Family Score <small>0–100</small>
+      </th>
+      <th onclick="sortTable(2)" class="col-score" title="Price-to-income 35% · School quality per dollar 30% · Price vs metro avg 20% · Tax burden 15%">
+        💰 Affordability Score <small>0–100</small>
+      </th>
+      <th onclick="sortTable(3)">ISD</th>
+      <th onclick="sortTable(4)">School Grade</th>
+      <th onclick="sortTable(5)">Median Price</th>
+      <th onclick="sortTable(6)" class="col-hide-mobile">Days on Mkt</th>
+      <th onclick="sortTable(7)" class="col-hide-mobile">Market</th>
+      <th onclick="sortTable(8)" class="col-hide-mobile">Walk Score</th>
+      <th onclick="sortTable(9)" class="col-hide-mobile">% Families</th>
+      <th onclick="sortTable(10)" class="col-hide-mobile">Commute</th>
+      <th class="col-hide-mobile">County</th>
+    </tr>
+  </thead>
+  <tbody id="suburbTableBody"></tbody>
+</table>
+</div>
+
+<!-- Footer CTA -->
+<section class="footer-cta" id="contact">
+  <h2>Ready to Find the Right DFW Suburb for Your Family?</h2>
+  <p>I've helped hundreds of families relocate to DFW — from California, New York, Illinois, and beyond. Let's talk about which suburb fits your schools, commute, and budget.</p>
+  <a href="/contact" class="cta-btn">Get in Touch</a>
+  <a href="https://tools.whymovetodallas.com" class="cta-btn-outline">Take the Suburb Quiz</a>
+</section>
+
+<p class="trec-footer">Kristen Carpentier | Licensed Texas Realtor® #760457 | Brokered by eXp Realty — 15950 Dallas Pkwy #400, Dallas, TX 75248 | <a href="https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank" rel="noopener">TREC Consumer Protection Notice</a> | <a href="https://www.trec.texas.gov/forms/information-about-brokerage-services" target="_blank" rel="noopener">Information About Brokerage Services</a></p>
+
+</div><!-- end .page-wrap -->
+
+<script>
+// ── Suburb data (embedded from data/suburb-profiles.json on build) ────────────
+const SUBURB_DATA = [{"key":"addison","name":"Addison","county":"Dallas","tier":3,"price":630000,"dom":52,"msi":7.4,"mkt":"buyer","walk":62,"isd":"Carrollton-Farmers Branch ISD","grade":"B+","split":false,"pct_ch":18,"commute":22,"pop":17290,"fs":70,"vs":52,"niche":"https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/"},{"key":"allen","name":"Allen","county":"Collin","tier":1,"price":519735,"dom":33.4,"msi":3.4,"mkt":"balanced","walk":67,"isd":"Allen ISD","grade":"A+","split":false,"pct_ch":42.4,"commute":30,"pop":107684,"fs":80,"vs":93,"niche":"https://www.niche.com/k12/d/allen-independent-school-district-tx/"},{"key":"anna","name":"Anna","county":"Collin","tier":3,"price":358832,"dom":55.9,"msi":6,"mkt":"balanced","walk":31,"isd":"Anna ISD","grade":"B-","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":69,"vs":93,"niche":"https://www.niche.com/k12/d/anna-independent-school-district-tx/"},{"key":"argyle","name":"Argyle","county":"Denton","tier":1,"price":569414,"dom":52.9,"msi":4.7,"mkt":"balanced","walk":20,"isd":"Argyle ISD","grade":"A+","split":true,"pct_ch":20.7,"commute":21.3,"pop":573,"fs":87,"vs":71,"niche":"https://www.niche.com/k12/d/argyle-independent-school-district-tx/"},{"key":"arlington","name":"Arlington","county":"Tarrant","tier":3,"price":333885,"dom":31.8,"msi":3.1,"mkt":"balanced","walk":83,"isd":"Arlington ISD","grade":"B","split":false,"pct_ch":34.6,"commute":29.4,"pop":394769,"fs":73,"vs":87,"niche":"https://www.niche.com/k12/d/arlington-independent-school-district-tx/"},{"key":"aubrey","name":"Aubrey","county":"Denton","tier":2,"price":350405,"dom":47.8,"msi":6,"mkt":"balanced","walk":32,"isd":"Aubrey ISD","grade":"B","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":70,"vs":94,"niche":"https://www.niche.com/k12/d/aubrey-independent-school-district-tx/"},{"key":"bedford","name":"Bedford","county":"Tarrant","tier":3,"price":383158,"dom":20.5,"msi":2.4,"mkt":"seller","walk":69,"isd":"HEB ISD","grade":"A+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":85,"vs":99,"niche":"https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/"},{"key":"burleson","name":"Burleson","county":"Johnson","tier":3,"price":350919,"dom":43.7,"msi":3.9,"mkt":"balanced","walk":75,"isd":"Burleson ISD","grade":"B+","split":false,"pct_ch":42.6,"commute":34,"pop":50981,"fs":75,"vs":93,"niche":"https://www.niche.com/k12/d/burleson-independent-school-district-tx/"},{"key":"carrollton","name":"Carrollton","county":"Dallas/Denton","tier":3,"price":425975,"dom":23.9,"msi":2.9,"mkt":"seller","walk":82,"isd":"Carrollton-Farmers Branch ISD","grade":"B+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":85,"vs":95,"niche":"https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/"},{"key":"cedar-hill","name":"Cedar Hill","county":"Dallas","tier":3,"price":346141,"dom":33.2,"msi":4.2,"mkt":"balanced","walk":68,"isd":"Cedar Hill ISD","grade":"C","split":false,"pct_ch":41.3,"commute":28.2,"pop":77474,"fs":72,"vs":94,"niche":"https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/"},{"key":"celina","name":"Celina","county":"Collin","tier":2,"price":531662,"dom":69.2,"msi":6.7,"mkt":"buyer","walk":65,"isd":"Celina ISD","grade":"B+","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":79,"vs":93,"niche":"https://www.niche.com/k12/d/celina-independent-school-district-tx/"},{"key":"cleburne","name":"Cleburne","county":"Johnson","tier":3,"price":288264,"dom":60.1,"msi":5.1,"mkt":"balanced","walk":60,"isd":"Cleburne ISD","grade":"B-","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":76,"vs":93,"niche":"https://www.niche.com/k12/d/cleburne-independent-school-district-tx/"},{"key":"colleyville","name":"Colleyville","county":"Tarrant","tier":1,"price":1002479,"dom":19.1,"msi":2.8,"mkt":"seller","walk":64,"isd":"Grapevine-Colleyville ISD","grade":"A+","split":true,"pct_ch":36.2,"commute":28.2,"pop":32966,"fs":80,"vs":22,"niche":"https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/"},{"key":"coppell","name":"Coppell","county":"Dallas","tier":1,"price":625167,"dom":23.6,"msi":2.5,"mkt":"seller","walk":28,"isd":"Coppell ISD","grade":"A+","split":true,"pct_ch":41.7,"commute":29.1,"pop":42029,"fs":77,"vs":83,"niche":"https://www.niche.com/k12/d/coppell-independent-school-district-tx/"},{"key":"dallas","name":"Dallas","county":"Dallas","tier":3,"price":197302,"dom":129.7,"msi":6.3,"mkt":"buyer","walk":93,"isd":"Dallas ISD","grade":"B","split":false,"pct_ch":28.1,"commute":29,"pop":1299553,"fs":68,"vs":93,"niche":"https://www.niche.com/k12/d/dallas-independent-school-district-tx/"},{"key":"desoto","name":"DeSoto","county":"Dallas","tier":3,"price":356041,"dom":42.7,"msi":4.5,"mkt":"balanced","walk":71,"isd":"DeSoto ISD","grade":"C","split":false,"pct_ch":36.5,"commute":26,"pop":33823,"fs":71,"vs":90,"niche":"https://www.niche.com/k12/d/desoto-independent-school-district-tx/"},{"key":"duncanville","name":"Duncanville","county":"Dallas","tier":3,"price":296625,"dom":30.8,"msi":3.8,"mkt":"balanced","walk":83,"isd":"Duncanville ISD","grade":"B-","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":81,"vs":93,"niche":"https://www.niche.com/k12/d/duncanville-independent-school-district-tx/"},{"key":"euless","name":"Euless","county":"Tarrant","tier":3,"price":374233,"dom":21.6,"msi":2.4,"mkt":"seller","walk":60,"isd":"HEB ISD","grade":"A+","split":false,"pct_ch":35.6,"commute":23.8,"pop":1167,"fs":85,"vs":82,"niche":"https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/"},{"key":"fairview","name":"Fairview","county":"Collin","tier":3,"price":749450,"dom":37.1,"msi":4.4,"mkt":"balanced","walk":1,"isd":"Lovejoy ISD","grade":"A+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":71,"vs":70,"niche":"https://www.niche.com/k12/d/lovejoy-independent-school-district-tx/"},{"key":"fate","name":"Fate","county":"Rockwall","tier":3,"price":383033,"dom":57.5,"msi":4.4,"mkt":"balanced","walk":34,"isd":"Rockwall ISD","grade":"A","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":78,"vs":98,"niche":"https://www.niche.com/k12/d/rockwall-independent-school-district-tx/"},{"key":"flower-mound","name":"Flower Mound","county":"Denton","tier":1,"price":619458,"dom":23.8,"msi":2.8,"mkt":"seller","walk":5,"isd":"Lewisville ISD","grade":"A","split":true,"pct_ch":40.7,"commute":30.7,"pop":77886,"fs":74,"vs":86,"niche":"https://www.niche.com/k12/d/lewisville-independent-school-district-tx/"},{"key":"forney","name":"Forney","county":"Kaufman","tier":3,"price":326291,"dom":62.3,"msi":5.4,"mkt":"balanced","walk":49,"isd":"Forney ISD","grade":"B","split":false,"pct_ch":35.5,"commute":35.5,"pop":1215,"fs":71,"vs":88,"niche":"https://www.niche.com/k12/d/forney-independent-school-district-tx/"},{"key":"fort-worth","name":"Fort Worth","county":"Tarrant","tier":3,"price":339834,"dom":36.5,"msi":3.9,"mkt":"balanced","walk":87,"isd":"Fort Worth ISD","grade":"B-","split":false,"pct_ch":36.1,"commute":29.1,"pop":941311,"fs":72,"vs":86,"niche":"https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/"},{"key":"frisco","name":"Frisco","county":"Collin","tier":1,"price":680752,"dom":37.7,"msi":4.5,"mkt":"balanced","walk":80,"isd":"Frisco ISD","grade":"A+","split":true,"pct_ch":47.3,"commute":29.6,"pop":210238,"fs":83,"vs":77,"niche":"https://www.niche.com/k12/d/frisco-independent-school-district-tx/"},{"key":"garland","name":"Garland","county":"Dallas","tier":3,"price":304713,"dom":32.9,"msi":3.9,"mkt":"balanced","walk":68,"isd":"Garland ISD","grade":"A-","split":false,"pct_ch":37.9,"commute":33,"pop":245298,"fs":73,"vs":92,"niche":"https://www.niche.com/k12/d/garland-independent-school-district-tx/"},{"key":"grand-prairie","name":"Grand Prairie","county":"Dallas/Tarrant","tier":3,"price":353327,"dom":30.3,"msi":3.5,"mkt":"balanced","walk":73,"isd":"Grand Prairie ISD","grade":"B","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":81,"vs":94,"niche":"https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/"},{"key":"grapevine","name":"Grapevine","county":"Tarrant","tier":2,"price":593151,"dom":20.7,"msi":2.2,"mkt":"seller","walk":79,"isd":"Grapevine-Colleyville ISD","grade":"A+","split":false,"pct_ch":39.1,"commute":30.6,"pop":198564,"fs":79,"vs":67,"niche":"https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/"},{"key":"haslet","name":"Haslet","county":"Tarrant","tier":3,"price":506213,"dom":52.8,"msi":4.8,"mkt":"balanced","walk":27,"isd":"Eagle Mountain-Saginaw ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":70,"vs":96,"niche":"https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/"},{"key":"heath","name":"Heath","county":"Rockwall","tier":3,"price":751049,"dom":70.3,"msi":9.3,"mkt":"buyer","walk":3,"isd":"Rockwall ISD","grade":"A","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":65,"vs":68,"niche":"https://www.niche.com/k12/d/rockwall-independent-school-district-tx/"},{"key":"highland-village","name":"Highland Village","county":"Denton","tier":2,"price":618076,"dom":25.7,"msi":2.8,"mkt":"seller","walk":1,"isd":"Lewisville ISD","grade":"A","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":70,"vs":85,"niche":"https://www.niche.com/k12/d/lewisville-independent-school-district-tx/"},{"key":"hurst","name":"Hurst","county":"Tarrant","tier":3,"price":360025,"dom":24.3,"msi":2.4,"mkt":"seller","walk":76,"isd":"HEB ISD","grade":"A+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":86,"vs":99,"niche":"https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/"},{"key":"irving","name":"Irving","county":"Dallas","tier":3,"price":383096,"dom":27.4,"msi":3.9,"mkt":"balanced","walk":7,"isd":"Irving ISD","grade":"B-","split":false,"pct_ch":36.7,"commute":28.1,"pop":255036,"fs":67,"vs":85,"niche":"https://www.niche.com/k12/d/irving-independent-school-district-tx/"},{"key":"keller","name":"Keller","county":"Tarrant","tier":2,"price":674079,"dom":25.4,"msi":3,"mkt":"balanced","walk":75,"isd":"Keller ISD","grade":"A","split":true,"pct_ch":41,"commute":18.6,"pop":3101,"fs":90,"vs":46,"niche":"https://www.niche.com/k12/d/keller-independent-school-district-tx/"},{"key":"lantana","name":"Lantana","county":"Denton","tier":2,"price":650458,"dom":33.6,"msi":2.9,"mkt":"seller","walk":1,"isd":"Northwest ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":62,"vs":80,"niche":"https://www.niche.com/k12/d/northwest-independent-school-district-tx/"},{"key":"lewisville","name":"Lewisville","county":"Denton","tier":2,"price":399933,"dom":27.1,"msi":3.3,"mkt":"balanced","walk":65,"isd":"Lewisville ISD","grade":"A","split":false,"pct_ch":33.1,"commute":29,"pop":128313,"fs":75,"vs":89,"niche":"https://www.niche.com/k12/d/lewisville-independent-school-district-tx/"},{"key":"little-elm","name":"Little Elm","county":"Denton","tier":2,"price":406215,"dom":53.2,"msi":5,"mkt":"balanced","walk":43,"isd":"Little Elm ISD","grade":"B-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":73,"vs":93,"niche":"https://www.niche.com/k12/d/little-elm-independent-school-district-tx/"},{"key":"lucas","name":"Lucas","county":"Collin","tier":3,"price":1054229,"dom":67.8,"msi":4.6,"mkt":"balanced","walk":0,"isd":"Lovejoy ISD","grade":"A+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":65,"vs":35,"niche":"https://www.niche.com/k12/d/lovejoy-independent-school-district-tx/"},{"key":"mansfield","name":"Mansfield","county":"Tarrant","tier":2,"price":475645,"dom":43.9,"msi":3.8,"mkt":"balanced","walk":69,"isd":"Mansfield ISD","grade":"A","split":false,"pct_ch":44.5,"commute":31.4,"pop":75398,"fs":79,"vs":92,"niche":"https://www.niche.com/k12/d/mansfield-independent-school-district-tx/"},{"key":"mckinney","name":"McKinney","county":"Collin","tier":1,"price":496150,"dom":41.9,"msi":3.9,"mkt":"balanced","walk":65,"isd":"McKinney ISD","grade":"A","split":true,"pct_ch":42.8,"commute":28.9,"pop":202314,"fs":79,"vs":92,"niche":"https://www.niche.com/k12/d/mckinney-independent-school-district-tx/"},{"key":"melissa","name":"Melissa","county":"Collin","tier":3,"price":456223,"dom":51.7,"msi":5.1,"mkt":"balanced","walk":33,"isd":"Melissa ISD","grade":"A","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":78,"vs":98,"niche":"https://www.niche.com/k12/d/melissa-independent-school-district-tx/"},{"key":"mesquite","name":"Mesquite","county":"Dallas","tier":3,"price":289058,"dom":42,"msi":4.9,"mkt":"balanced","walk":70,"isd":"Mesquite ISD","grade":"B","split":false,"pct_ch":38.7,"commute":32.9,"pop":148848,"fs":71,"vs":90,"niche":"https://www.niche.com/k12/d/mesquite-independent-school-district-tx/"},{"key":"midlothian","name":"Midlothian","county":"Ellis","tier":3,"price":495753,"dom":72.5,"msi":4.3,"mkt":"balanced","walk":73,"isd":"Midlothian ISD","grade":"A-","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":84,"vs":96,"niche":"https://www.niche.com/k12/d/midlothian-independent-school-district-tx/"},{"key":"murphy","name":"Murphy","county":"Collin","tier":2,"price":596375,"dom":42,"msi":4.3,"mkt":"balanced","walk":57,"isd":"Plano ISD","grade":"A","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":84,"vs":87,"niche":"https://www.niche.com/k12/d/plano-independent-school-district-tx/"},{"key":"north-richland-hills","name":"North Richland Hills","county":"Tarrant","tier":3,"price":386246,"dom":26.8,"msi":3,"mkt":"balanced","walk":36,"isd":"Birdville ISD","grade":"B+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":74,"vs":95,"niche":"https://www.niche.com/k12/d/birdville-independent-school-district-tx/"},{"key":"northlake","name":"Northlake","county":"Denton","tier":3,"price":556847,"dom":62.7,"msi":5,"mkt":"balanced","walk":2,"isd":"Northwest ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":68,"vs":91,"niche":"https://www.niche.com/k12/d/northwest-independent-school-district-tx/"},{"key":"plano","name":"Plano","county":"Collin","tier":1,"price":525231,"dom":30.1,"msi":3.4,"mkt":"balanced","walk":92,"isd":"Plano ISD","grade":"A","split":true,"pct_ch":32.8,"commute":28.9,"pop":287339,"fs":78,"vs":87,"niche":"https://www.niche.com/k12/d/plano-independent-school-district-tx/"},{"key":"princeton","name":"Princeton","county":"Collin","tier":3,"price":301724,"dom":36.8,"msi":3.7,"mkt":"balanced","walk":46,"isd":"Princeton ISD","grade":"B+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":75,"vs":95,"niche":"https://www.niche.com/k12/d/princeton-independent-school-district-tx/"},{"key":"prosper","name":"Prosper","county":"Collin","tier":1,"price":845429,"dom":58.1,"msi":5.4,"mkt":"balanced","walk":40,"isd":"Prosper ISD","grade":"A","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":79,"vs":56,"niche":"https://www.niche.com/k12/d/prosper-independent-school-district-tx/"},{"key":"richardson","name":"Richardson","county":"Dallas/Collin","tier":3,"price":463825,"dom":27.4,"msi":3,"mkt":"balanced","walk":77,"isd":"Richardson ISD","grade":"A-","split":false,"pct_ch":28.3,"commute":28.6,"pop":118269,"fs":75,"vs":87,"niche":"https://www.niche.com/k12/d/richardson-independent-school-district-tx/"},{"key":"roanoke","name":"Roanoke","county":"Denton","tier":2,"price":593280,"dom":47.1,"msi":4.8,"mkt":"balanced","walk":66,"isd":"Northwest ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":83,"vs":87,"niche":"https://www.niche.com/k12/d/northwest-independent-school-district-tx/"},{"key":"rockwall","name":"Rockwall","county":"Rockwall","tier":2,"price":556882,"dom":59.8,"msi":6.3,"mkt":"buyer","walk":79,"isd":"Rockwall ISD","grade":"A","split":false,"pct_ch":25.3,"commute":33.1,"pop":1596,"fs":80,"vs":71,"niche":"https://www.niche.com/k12/d/rockwall-independent-school-district-tx/"},{"key":"rowlett","name":"Rowlett","county":"Dallas/Rockwall","tier":3,"price":379788,"dom":44.7,"msi":4.9,"mkt":"balanced","walk":58,"isd":"Garland ISD","grade":"A-","split":false,"pct_ch":37.8,"commute":33,"pop":64139,"fs":74,"vs":96,"niche":"https://www.niche.com/k12/d/garland-independent-school-district-tx/"},{"key":"royse-city","name":"Royse City","county":"Rockwall","tier":3,"price":329866,"dom":74.3,"msi":6.5,"mkt":"buyer","walk":62,"isd":"Royse City ISD","grade":"B+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":78,"vs":95,"niche":"https://www.niche.com/k12/d/royse-city-independent-school-district-tx/"},{"key":"sachse","name":"Sachse","county":"Collin","tier":3,"price":441256,"dom":38.3,"msi":4.3,"mkt":"balanced","walk":30,"isd":"Garland ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":75,"vs":96,"niche":"https://www.niche.com/k12/d/garland-independent-school-district-tx/"},{"key":"saginaw","name":"Saginaw","county":"Tarrant","tier":3,"price":308987,"dom":32.3,"msi":3.2,"mkt":"balanced","walk":48,"isd":"Eagle Mountain-Saginaw ISD","grade":"A-","split":false,"pct_ch":44.9,"commute":26,"pop":4209,"fs":80,"vs":71,"niche":"https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/"},{"key":"southlake","name":"Southlake","county":"Tarrant","tier":1,"price":1352688,"dom":23.2,"msi":4.2,"mkt":"balanced","walk":74,"isd":"Carroll ISD","grade":"A+","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":88,"vs":35,"niche":"https://www.niche.com/k12/d/carroll-independent-school-district-tx/"},{"key":"the-colony","name":"The Colony","county":"Denton","tier":2,"price":429266,"dom":36.2,"msi":3.5,"mkt":"balanced","walk":31,"isd":"Lewisville ISD","grade":"A","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":75,"vs":98,"niche":"https://www.niche.com/k12/d/lewisville-independent-school-district-tx/"},{"key":"trophy-club","name":"Trophy Club","county":"Denton/Tarrant","tier":2,"price":797288,"dom":23.2,"msi":2.3,"mkt":"seller","walk":7,"isd":"Northwest ISD","grade":"A-","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":71,"vs":61,"niche":"https://www.niche.com/k12/d/northwest-independent-school-district-tx/"},{"key":"waxahachie","name":"Waxahachie","county":"Ellis","tier":3,"price":417371,"dom":46.3,"msi":5.2,"mkt":"balanced","walk":77,"isd":"Waxahachie ISD","grade":"A-","split":false,"pct_ch":null,"commute":null,"pop":null,"fs":84,"vs":96,"niche":"https://www.niche.com/k12/d/waxahachie-independent-school-district-tx/"},{"key":"westlake","name":"Westlake","county":"Tarrant","tier":3,"price":4892752,"dom":96.1,"msi":16.5,"mkt":"buyer","walk":2,"isd":"Carroll ISD","grade":"A+","split":true,"pct_ch":null,"commute":null,"pop":null,"fs":50,"vs":35,"niche":"https://www.niche.com/k12/d/carroll-independent-school-district-tx/"},{"key":"wylie","name":"Wylie","county":"Collin","tier":2,"price":437257,"dom":47.1,"msi":4.5,"mkt":"balanced","walk":3,"isd":"Wylie ISD","grade":"A+","split":false,"pct_ch":51.6,"commute":33.2,"pop":58991,"fs":76,"vs":94,"niche":"https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/"}];
+
+const totalSuburbs = SUBURB_DATA.length;
+
+// ── Grade CSS class helper ────────────────────────────────────────────────────
+function gradeClass(g) {
+  if (!g) return 'gr-null';
+  const m = {'A+':'gr-aplus','A':'gr-a','A-':'gr-aminus','B+':'gr-bplus','B':'gr-b','B-':'gr-bminus','C+':'gr-cplus','C':'gr-c','C-':'gr-cminus','D+':'gr-dplus','D':'gr-d','F':'gr-f'};
+  return m[g] || 'gr-null';
+}
+
+// ── Score cell HTML ───────────────────────────────────────────────────────────
+function scoreCell(score) {
+  if (score === null || score === undefined) {
+    return '<td class="score-cell"><span class="score-null">—</span><div title="Insufficient data to compute score" style="font-size:0.7rem;color:#bbb;">pending</div></td>';
+  }
+  const cls  = score >= 80 ? 'score-high' : score >= 60 ? 'score-mid' : 'score-low';
+  const fill = score >= 80 ? 'score-fill-high' : score >= 60 ? 'score-fill-mid' : 'score-fill-low';
+  return '<td class="score-cell"><span class="score-num ' + cls + '">' + score + '</span><div class="score-bar"><div class="' + fill + '" style="width:' + score + '%"></div></div></td>';
+}
+
+// ── Format price ──────────────────────────────────────────────────────────────
+function fmtPrice(p) {
+  if (!p) return '—';
+  if (p >= 1000000) return '$' + (p/1000000).toFixed(2) + 'M';
+  return '$' + Math.round(p/1000) + 'K';
+}
+
+// ── Market badge ──────────────────────────────────────────────────────────────
+function mktBadge(mkt) {
+  if (!mkt) return '<span class="mkt-null">—</span>';
+  const m = {seller:'mkt-seller',balanced:'mkt-balanced',buyer:'mkt-buyer'};
+  const labels = {seller:"Seller's",balanced:'Balanced',buyer:"Buyer's"};
+  return '<span class="mkt-badge ' + (m[mkt]||'mkt-null') + '">' + (labels[mkt]||mkt) + '</span>';
+}
+
+// ── Build table rows ──────────────────────────────────────────────────────────
+function buildRows() {
+  const tbody = document.getElementById('suburbTableBody');
+  const rows  = [];
+
+  SUBURB_DATA.forEach(s => {
+    // All suburbs in the table have pages — link directly to each city page
+    const suburbUrl = '/' + s.key + '-texas';
+    const nameCell  = '<a href="' + suburbUrl + '" class="suburb-link">' + s.name + '</a>';
+
+    // Split ISD tooltip
+    const splitTag = s.split ? '<span class="split-isd" title="Parts of ' + s.name + ' are served by multiple ISDs — verify your specific address.">⚠️</span>' : '';
+
+    // Grade badge
+    const gradeHtml = s.grade
+      ? '<span class="grade-badge ' + gradeClass(s.grade) + '">' + s.grade + '</span>' + splitTag
+      : '<span class="gr-null">—</span>' + splitTag;
+
+    // ISD with Niche link
+    const isdHtml = s.isd
+      ? (s.niche ? '<a href="' + s.niche + '" target="_blank" rel="noopener" style="color:var(--navy);font-size:0.82rem;">' + s.isd + '</a>' : s.isd)
+      : '<span style="color:#bbb">—</span>';
+
+    const tr = document.createElement('tr');
+    tr.dataset.price  = s.price || 0;
+    tr.dataset.grade  = s.grade || '';
+    tr.dataset.county = s.county || '';
+    tr.dataset.market = s.mkt || '';
+    tr.dataset.tier   = s.tier;
+    tr.dataset.familyScore = s.fs !== null && s.fs !== undefined ? s.fs : -1;
+    tr.dataset.valueScore  = s.vs !== null && s.vs !== undefined ? s.vs : -1;
+    tr.dataset.isd    = s.isd || '';
+    tr.dataset.dom    = s.dom || 9999;
+    tr.dataset.walk   = s.walk !== null ? s.walk : -1;
+    tr.dataset.pctCh  = s.pct_ch !== null ? s.pct_ch : -1;
+    tr.dataset.commute= s.commute !== null ? s.commute : 999;
+
+    tr.innerHTML =
+      '<td>' + nameCell + '</td>' +
+      scoreCell(s.fs).replace('<td', '<td').replace('</td>','</td>') +
+      scoreCell(s.vs).replace('<td', '<td').replace('</td>','</td>') +
+      '<td style="font-size:0.82rem;white-space:nowrap;">' + isdHtml + '</td>' +
+      '<td>' + gradeHtml + '</td>' +
+      '<td style="white-space:nowrap;">' + fmtPrice(s.price) + '</td>' +
+      '<td class="col-hide-mobile">' + (s.dom !== null ? s.dom + 'd' : '—') + '</td>' +
+      '<td class="col-hide-mobile">' + mktBadge(s.mkt) + '</td>' +
+      '<td class="col-hide-mobile">' + (s.walk !== null ? s.walk : '—') + '</td>' +
+      '<td class="col-hide-mobile">' + (s.pct_ch !== null ? s.pct_ch + '%' : '—') + '</td>' +
+      '<td class="col-hide-mobile">' + (s.commute !== null ? s.commute + ' min' : '—') + '</td>' +
+      '<td class="col-hide-mobile" style="font-size:0.82rem;">' + (s.county || '—') + '</td>';
+
+    rows.push(tr);
+  });
+
+  // Default sort: Family Score descending (nulls at bottom, then alpha)
+  rows.sort((a, b) => {
+    const fa = parseInt(a.dataset.familyScore);
+    const fb = parseInt(b.dataset.familyScore);
+    if (fa === -1 && fb === -1) return a.cells[0].textContent.localeCompare(b.cells[0].textContent);
+    if (fa === -1) return 1;
+    if (fb === -1) return -1;
+    return fb - fa;
+  });
+
+  rows.forEach(r => tbody.appendChild(r));
+}
+
+// ── Sort ──────────────────────────────────────────────────────────────────────
+let lastSortCol = 1;
+let lastSortDir = 'desc';
+
+function sortTable(colIdx) {
+  const tbody = document.getElementById('suburbTableBody');
+  const rows  = Array.from(tbody.querySelectorAll('tr'));
+  const dir   = (lastSortCol === colIdx && lastSortDir === 'desc') ? 'asc' : 'desc';
+
+  // Update header indicators
+  document.querySelectorAll('#suburbTable thead th').forEach((th, i) => {
+    th.classList.remove('sorted-asc', 'sorted-desc');
+    if (i === colIdx) th.classList.add(dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+  });
+
+  rows.sort((a, b) => {
+    let va, vb;
+    switch (colIdx) {
+      case 0:  va = a.cells[0].textContent; vb = b.cells[0].textContent; return dir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+      case 1:  va = parseInt(a.dataset.familyScore); vb = parseInt(b.dataset.familyScore); break;
+      case 2:  va = parseInt(a.dataset.valueScore);  vb = parseInt(b.dataset.valueScore);  break;
+      case 3:  va = a.dataset.isd;  vb = b.dataset.isd;  return dir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+      case 4:  va = a.dataset.grade; vb = b.dataset.grade; return dir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+      case 5:  va = parseInt(a.dataset.price);  vb = parseInt(b.dataset.price);  break;
+      case 6:  va = parseFloat(a.dataset.dom);  vb = parseFloat(b.dataset.dom);  break;
+      case 7:  va = a.dataset.market; vb = b.dataset.market; return dir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+      case 8:  va = parseInt(a.dataset.walk);   vb = parseInt(b.dataset.walk);   break;
+      case 9:  va = parseFloat(a.dataset.pctCh); vb = parseFloat(b.dataset.pctCh); break;
+      case 10: va = parseInt(a.dataset.commute); vb = parseInt(b.dataset.commute); break;
+      default: return 0;
+    }
+    // Numeric sort: nulls (-1 or 9999) always to bottom regardless of direction
+    const aNeg = va < 0 || va === 9999;
+    const bNeg = vb < 0 || vb === 9999;
+    if (aNeg && bNeg) return 0;
+    if (aNeg) return 1;
+    if (bNeg) return -1;
+    return dir === 'asc' ? va - vb : vb - va;
+  });
+
+  rows.forEach(r => tbody.appendChild(r));
+  lastSortCol = colIdx;
+  lastSortDir = dir;
+}
+
+// ── Filter ────────────────────────────────────────────────────────────────────
+function applyFilters() {
+  const budget = document.querySelector('.pills[data-filter="budget"] .pill.active')?.dataset.value || 'all';
+  const grade  = document.querySelector('.pills[data-filter="grade"] .pill.active')?.dataset.value  || 'all';
+  const county = document.getElementById('countyFilter').value;
+  const market = document.getElementById('marketFilter').value;
+  const tier1  = document.getElementById('tier1Toggle').checked;
+
+  let visible = 0;
+  document.querySelectorAll('#suburbTableBody tr').forEach(row => {
+    const price  = parseInt(row.dataset.price);
+    const gradeV = row.dataset.grade;
+    const countyV= row.dataset.county;
+    const marketV= row.dataset.market;
+    const tierV  = parseInt(row.dataset.tier);
+
+    const budgetOk =
+      budget === 'all' ||
+      (budget === 'under400'  && price < 400000) ||
+      (budget === '400to550'  && price >= 400000 && price < 550000) ||
+      (budget === '550to750'  && price >= 550000 && price < 750000) ||
+      (budget === 'over750'   && price >= 750000);
+
+    const gradeOk =
+      grade === 'all' ||
+      (grade === 'aplus'  && gradeV === 'A+') ||
+      (grade === 'a'      && gradeV === 'A') ||
+      (grade === 'aminus' && gradeV === 'A-') ||
+      (grade === 'bplus'  && !['A+','A','A-'].includes(gradeV));
+
+    const countyOk = county === 'all' || countyV === county;
+    const marketOk = market === 'all' || marketV === market;
+    const tierOk   = !tier1 || tierV === 1;
+
+    const show = budgetOk && gradeOk && countyOk && marketOk && tierOk;
+    row.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  document.getElementById('filterCount').textContent = 'Showing ' + visible + ' of ' + totalSuburbs + ' suburbs';
+}
+
+// ── Wire up pill buttons ──────────────────────────────────────────────────────
+document.querySelectorAll('.pills button.pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.pills').querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  });
+});
+document.getElementById('countyFilter').addEventListener('change', applyFilters);
+document.getElementById('marketFilter').addEventListener('change', applyFilters);
+document.getElementById('tier1Toggle').addEventListener('change', applyFilters);
+
+// ── Jump nav active state on scroll ──────────────────────────────────────────
+const navLinks = document.querySelectorAll('.kc-jumpnav-list a');
+const sections = Array.from(document.querySelectorAll('[id]'));
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 120;
+  let current = '';
+  sections.forEach(s => { if (s.offsetTop <= scrollY) current = s.id; });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+}, { passive: true });
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+buildRows();
+sortTable(1); // default: Family Score descending (re-applies to built rows)
+</script>
+</body>
+</html>
