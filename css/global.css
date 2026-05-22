@@ -143,17 +143,17 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 /* Mobile: hide full wordmark, show icon monogram */
 .kc-nav-logo .kc-logo-icon { display: none; }
 
-/* Left nav group — right-aligned */
+/* Left nav group — right-aligned, with breathing room from logo */
 .kc-nav-left {
   justify-content: flex-end;
-  padding-right: 8px;
+  padding-right: 40px;
 }
 
-/* Right nav group — left-aligned, contains links + CTA */
+/* Right nav group — breathing room from logo, CTA pushed to far right */
 .kc-nav-right {
   display: flex;
   align-items: center;
-  padding-left: 8px;
+  padding-left: 40px;
   gap: 4px;
 }
 
@@ -203,6 +203,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   display: inline-flex;
   align-items: center;
   transition: background 0.15s, border-color 0.15s;
+  margin-left: auto; /* push to right edge of nav bar */
 }
 
 .kc-nav-cta:hover {
