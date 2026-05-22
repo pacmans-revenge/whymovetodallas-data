@@ -193,7 +193,7 @@
     transition: all .14s;
   }
   .gs-yn.yn-yes { border-color: var(--navy); background: var(--navy); color: var(--white); }
-  .gs-yn.yn-no  { border-color: #ddd; background: #f7f7f7; color: #888; }
+  .gs-yn.yn-no  { border-color: var(--navy); background: var(--navy); color: var(--white); }
   .gs-yn:hover:not(.yn-yes):not(.yn-no) { border-color: var(--gold); }
 
   /* ── Text inputs ── */
@@ -1471,6 +1471,8 @@ gtag('consent', 'default', {
       phone:      state.phone,
       leadTypes:  leadTypes,
       tags:       tags,
+      origin:     state.origin,
+      family:     state.family,
       suburbs:    state.suburbs,
       suburbLocations: suburbLocations,
       timelineBuy:  state.timelineBuy,
