@@ -949,14 +949,24 @@ gtag('consent', 'default', {
   <!-- ── STEP 9: Property location (seller/both) ───────────────────────── -->
   <div class="gs-step" id="gs-s-prop-location">
     <p class="gs-q">Where is the property you're selling?</p>
-    <p class="gs-hint">City and zip code is all we need for now.</p>
+    <p class="gs-hint">Full address helps us prepare a more accurate market analysis.</p>
     <div class="gs-fields">
+      <div class="gs-row">
+        <div class="gs-field" style="flex:1 1 100%;">
+          <label for="gs-prop-street">Street address</label>
+          <input type="text" id="gs-prop-street" placeholder="e.g. 1234 Oak Creek Dr" autocomplete="street-address">
+        </div>
+      </div>
       <div class="gs-row">
         <div class="gs-field">
           <label for="gs-prop-city">City</label>
           <input type="text" id="gs-prop-city" placeholder="e.g. Flower Mound" autocomplete="address-level2">
         </div>
-        <div class="gs-field">
+        <div class="gs-field" style="flex:0 0 120px;">
+          <label for="gs-prop-state">State</label>
+          <input type="text" id="gs-prop-state" placeholder="TX" maxlength="2" autocomplete="address-level1" style="text-transform:uppercase;">
+        </div>
+        <div class="gs-field" style="flex:0 0 140px;">
           <label for="gs-prop-zip">Zip code</label>
           <input type="text" id="gs-prop-zip" placeholder="e.g. 75022" inputmode="numeric" maxlength="5">
         </div>
@@ -1163,7 +1173,9 @@ gtag('consent', 'default', {
     fthb:         null,
     houseToSell:  null,
     withBuyerAgent: null,
+    propStreet:   null,
     propCity:     null,
+    propState:    null,
     propZip:      null,
     timelineSell: null,
     propType:     null,
@@ -1306,8 +1318,9 @@ gtag('consent', 'default', {
       return true; // optional toggles
     }
     if (id === 'prop-location') {
-      var city = document.getElementById('gs-prop-city').value.trim();
-      return city.length > 0;
+      var street = document.getElementById('gs-prop-street').value.trim();
+      var city   = document.getElementById('gs-prop-city').value.trim();
+      return street.length > 0 && city.length > 0;
     }
     if (id === 'timeline-sell') {
       return !!getStepEl('timeline-sell').querySelector('.gs-card.sel');
@@ -1368,8 +1381,10 @@ gtag('consent', 'default', {
     }
     // qualifiers collected live via toggle click handlers
     if (id === 'prop-location') {
-      state.propCity = document.getElementById('gs-prop-city').value.trim();
-      state.propZip  = document.getElementById('gs-prop-zip').value.trim();
+      state.propStreet = document.getElementById('gs-prop-street').value.trim();
+      state.propCity   = document.getElementById('gs-prop-city').value.trim();
+      state.propState  = (document.getElementById('gs-prop-state').value.trim() || 'TX').toUpperCase();
+      state.propZip    = document.getElementById('gs-prop-zip').value.trim();
     }
     if (id === 'timeline-sell') {
       var sel = getStepEl('timeline-sell').querySelector('.gs-card.sel');
@@ -1455,7 +1470,7 @@ gtag('consent', 'default', {
       state.fthb            ? 'First-time buyer: ' + state.fthb : null,
       state.houseToSell     ? 'House to sell: ' + state.houseToSell : null,
       state.withBuyerAgent  ? 'Has buyer agent: ' + state.withBuyerAgent : null,
-      state.propCity        ? 'Sell property: ' + state.propCity + (state.propZip ? ' ' + state.propZip : '') : null,
+      state.propStreet      ? 'Sell property: ' + state.propStreet + ', ' + (state.propCity || '') + ', ' + (state.propState || 'TX') + ' ' + (state.propZip || '') : null,
       state.timelineSell    ? 'Selling timeline: ' + state.timelineSell : null,
       state.propType        ? 'Property type: ' + state.propType : null,
       state.propBeds        ? 'Beds/Baths: ' + state.propBeds + ' / ' + (state.propBaths || '?') : null,
@@ -1485,7 +1500,9 @@ gtag('consent', 'default', {
       withBuyerAgent:  state.withBuyerAgent,
       withListingAgent: state.withListingAgent,
       buyHouse:     state.intent === 'both' ? 'Yes' : null,
+      propStreet:   state.propStreet,
       propCity:     state.propCity,
+      propState:    state.propState,
       propZip:      state.propZip,
       propType:     state.propType,
       propBeds:     state.propBeds,
