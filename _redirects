@@ -149,7 +149,7 @@
 # ── 6. Old Squarespace site-page slugs → current canonical URLs ───────────────
 # These were active 301s in Squarespace — carry them over so no inbound link breaks.
 /living-in-dallas-texas-contact-me                    /contact                                        301
-/about                                                /living-in-dallas-about-social-agent-group      301
+/living-in-dallas-about-social-agent-group            /about                                          301
 /testimonials                                         /living-in-dallas-testimonials                  301
 /services                                             /living-in-dallas-services                      301
 /join-team                                            /living-in-dallas-social-agent-group-join-team  301
