@@ -146,14 +146,14 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 /* Left nav group — right-aligned */
 .kc-nav-left {
   justify-content: flex-end;
-  padding-right: 28px;
+  padding-right: 8px;
 }
 
 /* Right nav group — left-aligned, contains links + CTA */
 .kc-nav-right {
   display: flex;
   align-items: center;
-  padding-left: 28px;
+  padding-left: 8px;
   gap: 4px;
 }
 
@@ -165,7 +165,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-links a {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   color: rgba(255,255,255,0.85);
   padding: 6px 12px;
