@@ -1,0 +1,1600 @@
+<!-- Schema: pages/get-started-schema.html → Page Header Code Injection -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+  /* ── Get Started — multi-step intake form ───────────────────────────────── */
+  :root {
+    --navy:    #1F2D3D;
+    --gold:    #B08D57;
+    --ivory:   #F7F4EE;
+    --stone:   #C8C1B6;
+    --charcoal:#232323;
+    --white:   #fff;
+    --radius:  10px;
+    --shadow:  0 2px 20px rgba(31,45,61,.09);
+  }
+
+  /* ── Hero ── */
+  .gs-hero {
+    background: var(--navy);
+    padding: 60px 24px 52px;
+    text-align: center;
+  }
+  .gs-hero-eyebrow {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .gs-hero h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.9rem, 5vw, 2.9rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--white);
+    margin: 0 0 14px;
+  }
+  .gs-hero-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,.72);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  /* ── Shell ── */
+  .gs-shell { background: var(--ivory); padding-bottom: 80px; min-height: 60vh; }
+  .gs-wrap  { max-width: 700px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── Progress ── */
+  .gs-progress { padding: 36px 0 0; margin-bottom: 40px; }
+  .gs-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .gs-step-label {
+    font-size: .75rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .gs-step-count { font-size: .8rem; color: #999; }
+  .gs-progress-track {
+    height: 3px;
+    background: var(--stone);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .gs-progress-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: width .4s ease;
+  }
+
+  /* ── Step panels ── */
+  .gs-step         { display: none; }
+  .gs-step.active  { display: block; animation: gsFade .28s ease; }
+  @keyframes gsFade {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .gs-q {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.45rem, 3.5vw, 1.95rem);
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .gs-hint {
+    font-size: .88rem;
+    color: #888;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  /* ── Option cards ── */
+  .gs-cards {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .gs-cards-2  { grid-template-columns: repeat(2, 1fr); }
+  .gs-cards-3  { grid-template-columns: repeat(3, 1fr); }
+  .gs-cards-4  { grid-template-columns: repeat(2, 1fr); }
+  .gs-cards-5  { grid-template-columns: repeat(3, 1fr); }
+  .gs-cards-suburbs { grid-template-columns: repeat(3, 1fr); }
+
+  .gs-card {
+    background: var(--white);
+    border: 2px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 20px 14px 18px;
+    cursor: pointer;
+    transition: border-color .18s, background .18s, transform .12s, box-shadow .18s;
+    text-align: center;
+    user-select: none;
+    position: relative;
+  }
+  .gs-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  .gs-card.sel {
+    border-color: var(--navy);
+    background: var(--navy);
+  }
+  .gs-card.sel .gs-ci svg  { stroke: var(--gold); }
+  .gs-card.sel .gs-cl      { color: var(--white); }
+  .gs-card.sel .gs-cd      { color: rgba(255,255,255,.65); }
+  .gs-card-tick {
+    position: absolute; top: 8px; right: 8px;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--gold);
+    display: none; align-items: center; justify-content: center;
+  }
+  .gs-card.sel .gs-card-tick { display: flex; }
+  .gs-card-tick svg { stroke: #fff; width: 10px; height: 10px; }
+  .gs-ci {
+    width: 44px; height: 44px;
+    margin: 0 auto 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .gs-ci svg { stroke: var(--gold); width: 36px; height: 36px; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .gs-cl { font-weight: 600; font-size: .92rem; color: var(--navy); line-height: 1.25; }
+  .gs-cd { font-size: .78rem; color: #999; margin-top: 3px; line-height: 1.35; }
+
+  /* ── Intent step — larger cards ── */
+  .gs-intent .gs-card { padding: 30px 18px 26px; }
+  .gs-intent .gs-ci   { width: 56px; height: 56px; margin-bottom: 12px; }
+  .gs-intent .gs-ci svg { width: 44px; height: 44px; }
+  .gs-intent .gs-cl   { font-size: 1rem; }
+
+  /* ── Suburb / priority — compact multi-select ── */
+  .gs-multi .gs-card  { padding: 14px 10px 12px; }
+  .gs-multi .gs-ci    { width: 30px; height: 30px; margin-bottom: 6px; }
+  .gs-multi .gs-ci svg { width: 24px; height: 24px; }
+  .gs-multi .gs-cl    { font-size: .82rem; }
+
+  /* ── Yes/No toggle rows ── */
+  .gs-toggles { display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px; }
+  .gs-toggle-row {
+    background: var(--white);
+    border: 2px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .gs-toggle-row svg { stroke: var(--gold); width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .gs-toggle-text { flex: 1; }
+  .gs-toggle-lbl { font-weight: 600; font-size: .92rem; color: var(--navy); }
+  .gs-toggle-sub { font-size: .78rem; color: #999; margin-top: 2px; }
+  .gs-toggle-btns { display: flex; gap: 8px; flex-shrink: 0; }
+  .gs-yn {
+    padding: 7px 18px;
+    border-radius: 6px;
+    border: 2px solid var(--stone);
+    background: var(--white);
+    font-size: .84rem; font-weight: 600;
+    cursor: pointer; color: var(--charcoal);
+    transition: all .14s;
+  }
+  .gs-yn.yn-yes { border-color: var(--navy); background: var(--navy); color: var(--white); }
+  .gs-yn.yn-no  { border-color: #ddd; background: #f7f7f7; color: #888; }
+  .gs-yn:hover:not(.yn-yes):not(.yn-no) { border-color: var(--gold); }
+
+  /* ── Text inputs ── */
+  .gs-fields { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+  .gs-row    { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .gs-field  { display: flex; flex-direction: column; gap: 6px; }
+  .gs-field label {
+    font-size: .75rem; font-weight: 700;
+    color: var(--navy); letter-spacing: .06em; text-transform: uppercase;
+  }
+  .gs-field input, .gs-field select {
+    padding: 13px 15px;
+    border: 2px solid var(--stone);
+    border-radius: var(--radius);
+    font-size: .97rem; color: var(--charcoal);
+    background: var(--white); outline: none;
+    transition: border-color .14s;
+    font-family: system-ui, sans-serif;
+    -webkit-appearance: none;
+  }
+  .gs-field input:focus, .gs-field select:focus { border-color: var(--navy); }
+  .gs-field input::placeholder { color: #ccc; }
+
+  /* ── Nav ── */
+  .gs-nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 4px;
+  }
+  .gs-back {
+    background: none; border: none; cursor: pointer;
+    color: #999; font-size: .88rem;
+    display: flex; align-items: center; gap: 5px;
+    padding: 10px 0; transition: color .14s;
+  }
+  .gs-back:hover { color: var(--navy); }
+  .gs-back svg { stroke: currentColor; width: 16px; height: 16px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .gs-next {
+    background: var(--navy); color: var(--white);
+    border: none; border-radius: var(--radius);
+    padding: 13px 30px;
+    font-size: .97rem; font-weight: 600; cursor: pointer;
+    display: flex; align-items: center; gap: 7px;
+    transition: background .14s, transform .1s;
+  }
+  .gs-next:hover:not(:disabled) { background: #162230; transform: translateY(-1px); }
+  .gs-next:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+  .gs-next svg { stroke: var(--white); width: 16px; height: 16px; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .gs-submit {
+    background: var(--gold); color: var(--white);
+    border: none; border-radius: var(--radius);
+    padding: 13px 34px;
+    font-size: .97rem; font-weight: 600; cursor: pointer;
+    display: flex; align-items: center; gap: 7px;
+    transition: background .14s;
+  }
+  .gs-submit:hover:not(:disabled) { background: #9a7a48; }
+  .gs-submit:disabled { opacity: .45; cursor: not-allowed; }
+  .gs-submit svg { stroke: var(--white); width: 16px; height: 16px; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ── Error ── */
+  .gs-err { color: #b03030; font-size: .84rem; margin-top: -22px; margin-bottom: 20px; display: none; }
+  .gs-err.show { display: block; }
+
+  /* ── Success ── */
+  .gs-success { display: none; text-align: center; padding: 64px 20px; }
+  .gs-success.show { display: block; animation: gsFade .4s ease; }
+  .gs-success-icon {
+    width: 72px; height: 72px;
+    background: var(--navy); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .gs-success-icon svg { stroke: var(--gold); width: 34px; height: 34px; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .gs-success h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-weight: 600; color: var(--navy); margin-bottom: 12px;
+  }
+  .gs-success p { color: #666; max-width: 440px; margin: 0 auto 32px; line-height: 1.7; font-size: .97rem; }
+  .gs-success-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .gs-sbtn {
+    padding: 12px 26px; border-radius: var(--radius);
+    font-size: .93rem; font-weight: 600;
+    text-decoration: none; transition: all .14s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .gs-sbtn-primary { background: var(--navy); color: var(--white); }
+  .gs-sbtn-primary:hover { background: #162230; }
+  .gs-sbtn-outline { border: 2px solid var(--navy); color: var(--navy); }
+  .gs-sbtn-outline:hover { background: var(--navy); color: var(--white); }
+
+  /* ── Budget card styling ── */
+  .gs-budget .gs-card { text-align: left; padding: 18px 16px; }
+  .gs-budget .gs-ci   { margin: 0 0 10px 0; }
+  .gs-budget .gs-cl   { font-size: .97rem; }
+
+  /* ── Mobile ── */
+  @media (max-width: 600px) {
+    .gs-cards-3  { grid-template-columns: repeat(2, 1fr); }
+    .gs-cards-5  { grid-template-columns: repeat(2, 1fr); }
+    .gs-cards-suburbs { grid-template-columns: repeat(2, 1fr); }
+    .gs-intent .gs-cards-3 { grid-template-columns: 1fr; }
+    .gs-row      { grid-template-columns: 1fr; }
+    .gs-nav      { flex-direction: column-reverse; gap: 10px; align-items: stretch; }
+    .gs-next, .gs-submit { justify-content: center; }
+    .gs-back     { justify-content: center; }
+    .gs-toggle-btns { flex-direction: column; gap: 6px; }
+    .gs-yn       { text-align: center; }
+    .gs-hero     { padding: 48px 20px 40px; }
+  }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Get Started — DFW Family Relocation Intake Form",
+  "description": "Tell Kristen Carpentier about your family's relocation needs and she'll match you with the right DFW suburbs, schools, and next steps.",
+  "url": "https://whymovetodallas.com/get-started",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Why Move to Dallas",
+    "url": "https://whymovetodallas.com"
+  },
+  "provider": {
+    "@type": "RealEstateAgent",
+    "name": "Kristen Carpentier",
+    "url": "https://whymovetodallas.com",
+    "telephone": "+16024054115",
+    "email": "Kristen@whymovetodallas.com",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Dallas–Fort Worth Metroplex"
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/suburb.css">
+<link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
+</head>
+<body>
+<!-- ═══════════════════════════════════════════════════════════════
+     SITE HEADER — whymovetodallas.com
+     Injected into every page by build.js via wrapInShell().
+
+     Behavior:
+       - Transparent over hero image on page load
+       - Transitions to solid navy + gold CTA on scroll (> 60px)
+       - Hamburger menu on mobile (< 768px)
+     ═══════════════════════════════════════════════════════════════ -->
+
+<header id="kc-site-header" role="banner">
+
+  <!-- Top bar: social icons -->
+  <div class="kc-topbar">
+    <span class="kc-topbar-label">Follow along</span>
+    <nav class="kc-topbar-socials" aria-label="Social media">
+
+      <a href="https://www.youtube.com/@whymovetodallas" target="_blank" rel="noopener noreferrer" aria-label="YouTube — Why Move to Dallas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.5 5 12 5 12 5s-4.5 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.5 0 7-.1c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/></svg>
+      </a>
+
+      <a href="https://www.instagram.com/kristenwcarpentier/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @kristenwcarpentier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.3-.2-4.8-1.7-5-5C2 16.6 2 16.3 2 12s0-3.6.1-4.8c.2-3.3 1.7-4.8 5-5 1.2-.1 1.6-.1 4.9-.1zm0 2.2c-3.2 0-3.5 0-4.8.1-2.2.1-3.2 1.1-3.3 3.3C3.8 8.9 3.8 9.2 3.8 12s0 3.1.1 4.2c.1 2.2 1.1 3.2 3.3 3.3 1.1.1 1.4.1 4.8.1s3.6 0 4.8-.1c2.2-.1 3.2-1.1 3.3-3.3.1-1.1.1-1.4.1-4.2s0-3.1-.1-4.2c-.1-2.2-1.1-3.2-3.3-3.3-1.3-.1-1.6-.1-4.8-.1zm0 3.7a3.9 3.9 0 1 1 0 7.8A3.9 3.9 0 0 1 12 8.1zm0 6.5a2.5 2.5 0 1 0 0-5.1 2.5 2.5 0 0 0 0 5.1zm4.9-6.7a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0z"/></svg>
+      </a>
+
+      <a href="https://www.facebook.com/whymovetodallas" target="_blank" rel="noopener noreferrer" aria-label="Facebook — Why Move to Dallas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/></svg>
+      </a>
+
+      <a href="https://www.pinterest.com/whymovetodallas/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest — Why Move to Dallas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.2 2.6 7.9 6.4 9.4-.1-.8-.1-2.1.1-3 .2-.8 1.3-5.5 1.3-5.5s-.3-.7-.3-1.7c0-1.6.9-2.7 2.1-2.7 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-.9 3.8-.3 1.1.5 2.1 1.6 2.1 2 0 3.4-2.1 3.4-5 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5 2.4-5 4.8 0 .9.4 1.9.8 2.5.1.1.1.2.1.4-.1.4-.3 1.1-.3 1.2-.1.2-.2.3-.4.1-1.4-.7-2.3-2.7-2.3-4.4 0-3.5 2.6-6.8 7.5-6.8 3.9 0 7 2.8 7 6.5 0 3.9-2.4 7-5.8 7-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.3 1-.9 2.1-1.4 2.9.9.3 2 .5 3 .5 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kristencarpentier" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — Kristen Carpentier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6zM8.3 18.5H5.6V9.8h2.7v8.7zm-1.3-9.9c-.9 0-1.6-.7-1.6-1.6s.7-1.6 1.6-1.6 1.6.7 1.6 1.6-.7 1.6-1.6 1.6zm12 9.9h-2.7v-4.2c0-1-.5-1.7-1.4-1.7-.8 0-1.3.5-1.5 1.1-.1.2-.1.4-.1.6v4.1h-2.7V9.8h2.7v1.1c.5-.7 1.3-1.2 2.3-1.2 1.7 0 2.9 1.1 2.9 3.5v5.3z"/></svg>
+      </a>
+
+    </nav>
+  </div>
+
+  <!-- Gold accent line (appears on scroll) -->
+  <span class="kc-nav-accent" aria-hidden="true"></span>
+
+  <!-- Main navigation bar -->
+  <div class="kc-nav">
+
+    <a href="/" class="kc-nav-logo" aria-label="Carpentier Group Real Estate — home">
+      <img src="/images/logo-white.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-full"
+           width="1426" height="200"
+           loading="eager"
+           fetchpriority="high">
+      <img src="/images/logo-icon.png"
+           alt="Carpentier Group Real Estate"
+           class="kc-logo-icon"
+           width="240" height="231"
+           loading="eager">
+    </a>
+
+    <nav class="kc-nav-links" aria-label="Main navigation">
+      <a href="/dallas-fort-worth-suburbs">Suburbs</a>
+      <a href="/dfw-school-districts">Schools</a>
+      <a href="/blog">Blog</a>
+      <a href="/living-in-dallas-about-social-agent-group">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <a href="https://calendly.com/socialagentgroup/let-s-talk" target="_blank" rel="noopener noreferrer" class="kc-nav-cta">Schedule a call</a>
+
+    <button class="kc-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="kc-mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <nav id="kc-mobile-menu" class="kc-mobile-menu" aria-label="Mobile navigation" hidden>
+    <a href="/dallas-fort-worth-suburbs">Suburbs</a>
+    <a href="/dfw-school-districts">Schools</a>
+    <a href="/blog">Blog</a>
+    <a href="/living-in-dallas-about-social-agent-group">About</a>
+    <a href="/contact">Contact</a>
+    <a href="https://calendly.com/socialagentgroup/let-s-talk" target="_blank" rel="noopener noreferrer" class="kc-mobile-cta">Schedule a call</a>
+  </nav>
+
+</header>
+
+<script>
+(function () {
+  var hdr    = document.getElementById('kc-site-header');
+  var burger = hdr.querySelector('.kc-hamburger');
+  var menu   = document.getElementById('kc-mobile-menu');
+
+  // Scroll: transparent → solid navy
+  function onScroll() {
+    hdr.classList.toggle('kc-scrolled', window.scrollY > 60);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // run once on load
+
+  // Hamburger toggle
+  if (burger && menu) {
+    burger.addEventListener('click', function () {
+      var isOpen = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!isOpen));
+      menu.hidden = isOpen;
+      hdr.classList.toggle('kc-menu-open', !isOpen);
+      // Force solid background when menu is open
+      if (!isOpen) hdr.classList.add('kc-scrolled');
+    });
+  }
+
+  // Mark active nav link
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
+  hdr.querySelectorAll('.kc-nav-links a, .kc-mobile-menu a').forEach(function (a) {
+    var href = a.getAttribute('href').replace(/\/$/, '') || '/';
+    if (href === path) a.classList.add('active');
+  });
+}());
+</script>
+
+
+<!-- ── Hero ──────────────────────────────────────────────────────────────── -->
+<section class="gs-hero">
+  <p class="gs-hero-eyebrow">DFW Family Relocation</p>
+  <h1>Let's find the right fit<br>for your family.</h1>
+  <p class="gs-hero-sub">Tell us a little about your situation and we'll match you with the right suburbs, schools, and next steps — in under 3 minutes.</p>
+</section>
+
+<!-- ── Form shell ─────────────────────────────────────────────────────────── -->
+<div class="gs-shell">
+<div class="gs-wrap">
+
+  <!-- Progress bar -->
+  <div class="gs-progress">
+    <div class="gs-progress-meta">
+      <span class="gs-step-label" id="gs-step-label">Getting started</span>
+      <span class="gs-step-count" id="gs-step-count"></span>
+    </div>
+    <div class="gs-progress-track">
+      <div class="gs-progress-fill" id="gs-progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Success state (hidden until submit) -->
+  <div class="gs-success" id="gs-success">
+    <div class="gs-success-icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2>You're all set!</h2>
+    <p>Thanks for sharing your details. Kristen will reach out within one business day to talk through your options and answer any questions.</p>
+    <div class="gs-success-btns">
+      <a href="/dallas-fort-worth-suburbs" class="gs-sbtn gs-sbtn-primary">Explore DFW suburbs</a>
+      <a href="https://calendly.com/socialagentgroup/let-s-talk" target="_blank" rel="noopener noreferrer" class="gs-sbtn gs-sbtn-outline">Schedule a call now</a>
+    </div>
+  </div>
+
+  <!-- ── STEP 1: Intent ──────────────────────────────────────────────────── -->
+  <div class="gs-step active" id="gs-s-intent">
+    <p class="gs-q">What brings you here today?</p>
+    <p class="gs-hint">This helps us ask the right questions.</p>
+    <div class="gs-cards gs-cards-3 gs-intent">
+
+      <div class="gs-card" data-val="buy">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        </div>
+        <p class="gs-cl">Buy in DFW</p>
+        <p class="gs-cd">I'm relocating to the Dallas–Fort Worth area</p>
+      </div>
+
+      <div class="gs-card" data-val="sell">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <p class="gs-cl">Sell in DFW</p>
+        <p class="gs-cd">I have a property here I need to sell</p>
+      </div>
+
+      <div class="gs-card" data-val="both">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+        </div>
+        <p class="gs-cl">Buy + Sell</p>
+        <p class="gs-cd">I need to sell my current home and buy in DFW</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 2: Origin (buyer/both) ────────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-origin">
+    <p class="gs-q">Where are you moving from?</p>
+    <p class="gs-hint">We work a lot with families from high-cost states — we know the transition well.</p>
+    <div class="gs-cards gs-cards-5">
+
+      <div class="gs-card" data-val="California" data-tag="from-california">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </div>
+        <p class="gs-cl">California</p>
+      </div>
+
+      <div class="gs-card" data-val="New York" data-tag="from-new-york">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="18" rx="1"/><rect x="15" y="8" width="6" height="13" rx="1"/><rect x="9" y="5" width="6" height="16" rx="1"/></svg>
+        </div>
+        <p class="gs-cl">New York</p>
+      </div>
+
+      <div class="gs-card" data-val="Illinois" data-tag="from-illinois">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20"/><path d="M6 20V8l6-6 6 6v12"/><path d="M10 20v-5h4v5"/></svg>
+        </div>
+        <p class="gs-cl">Illinois</p>
+      </div>
+
+      <div class="gs-card" data-val="Texas" data-tag="from-texas">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="gs-cl">Texas</p>
+        <p class="gs-cd">Moving within DFW</p>
+      </div>
+
+      <div class="gs-card" data-val="Other" data-tag="from-other-state">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg>
+        </div>
+        <p class="gs-cl">Another state</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 3: Family (buyer/both) ────────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-family">
+    <p class="gs-q">Who's making the move?</p>
+    <p class="gs-hint">Helps us focus on the right schools and neighborhoods.</p>
+    <div class="gs-cards gs-cards-2">
+
+      <div class="gs-card" data-val="single" data-tag="solo-mover">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <p class="gs-cl">Just me</p>
+        <p class="gs-cd">Solo relocation</p>
+      </div>
+
+      <div class="gs-card" data-val="couple" data-tag="couple-no-kids">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <p class="gs-cl">My partner &amp; I</p>
+        <p class="gs-cd">No school-age kids</p>
+      </div>
+
+      <div class="gs-card" data-val="family-young" data-tag="family-young-kids">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><circle cx="17" cy="5" r="2"/></svg>
+        </div>
+        <p class="gs-cl">Family — younger kids</p>
+        <p class="gs-cd">Children under 12</p>
+      </div>
+
+      <div class="gs-card" data-val="family-teens" data-tag="family-teen-kids">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <p class="gs-cl">Family — teenagers</p>
+        <p class="gs-cd">Children 12+</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 4: Buying timeline (buyer/both) ───────────────────────────── -->
+  <div class="gs-step" id="gs-s-timeline-buy">
+    <p class="gs-q">When are you looking to buy?</p>
+    <p class="gs-hint">Even if you're early in the process, we can help you start planning now.</p>
+    <div class="gs-cards gs-cards-5">
+
+      <div class="gs-card" data-val="1-3" data-lofty="1-3">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <p class="gs-cl">1–3 months</p>
+        <p class="gs-cd">Moving soon</p>
+      </div>
+
+      <div class="gs-card" data-val="3-6" data-lofty="3-6">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
+        </div>
+        <p class="gs-cl">3–6 months</p>
+        <p class="gs-cd">Planning ahead</p>
+      </div>
+
+      <div class="gs-card" data-val="6-12" data-lofty="6-12">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <p class="gs-cl">6–12 months</p>
+        <p class="gs-cd">Doing research</p>
+      </div>
+
+      <div class="gs-card" data-val="12+" data-lofty="12+">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <p class="gs-cl">12+ months</p>
+        <p class="gs-cd">Long-range planning</p>
+      </div>
+
+      <div class="gs-card" data-val="Just Looking" data-lofty="Just Looking">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <p class="gs-cl">Just exploring</p>
+        <p class="gs-cd">No timeline yet</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 5: Budget (buyer/both) ───────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-budget">
+    <p class="gs-q">What's your budget range?</p>
+    <p class="gs-hint">DFW offers great value at every price point — this helps us focus your suburb options.</p>
+    <div class="gs-cards gs-cards-4 gs-budget">
+
+      <div class="gs-card" data-val="under500" data-min="0" data-max="500000">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <p class="gs-cl">Under $500K</p>
+        <p class="gs-cd">Great options in Lewisville, Garland, Irving</p>
+      </div>
+
+      <div class="gs-card" data-val="500-700" data-min="500000" data-max="700000">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <p class="gs-cl">$500K – $700K</p>
+        <p class="gs-cd">Frisco, Allen, McKinney, Plano</p>
+      </div>
+
+      <div class="gs-card" data-val="700-1m" data-min="700000" data-max="1000000">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <p class="gs-cl">$700K – $1M</p>
+        <p class="gs-cd">Prosper, Flower Mound, Coppell, Colleyville</p>
+      </div>
+
+      <div class="gs-card" data-val="1m+" data-min="1000000" data-max="9999999">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <p class="gs-cl">$1M+</p>
+        <p class="gs-cd">Southlake, Westlake, Argyle, Highland Park</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 6: Suburbs (buyer/both) ──────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-suburbs">
+    <p class="gs-q">Which suburbs are on your radar?</p>
+    <p class="gs-hint">Select all that interest you — we'll help you narrow it down.</p>
+    <div class="gs-cards gs-cards-suburbs gs-multi">
+
+      <div class="gs-card" data-val="Flower Mound"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Flower Mound</p></div>
+
+      <div class="gs-card" data-val="Frisco"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Frisco</p></div>
+
+      <div class="gs-card" data-val="Southlake"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Southlake</p></div>
+
+      <div class="gs-card" data-val="Allen"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Allen</p></div>
+
+      <div class="gs-card" data-val="McKinney"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">McKinney</p></div>
+
+      <div class="gs-card" data-val="Plano"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Plano</p></div>
+
+      <div class="gs-card" data-val="Coppell"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Coppell</p></div>
+
+      <div class="gs-card" data-val="Prosper"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Prosper</p></div>
+
+      <div class="gs-card" data-val="Argyle"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Argyle</p></div>
+
+      <div class="gs-card" data-val="Colleyville"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Colleyville</p></div>
+
+      <div class="gs-card" data-val="Celina"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Celina</p></div>
+
+      <div class="gs-card" data-val="Keller"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Keller</p></div>
+
+      <div class="gs-card" data-val="Lewisville"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Lewisville</p></div>
+
+      <div class="gs-card" data-val="Highland Village"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Highland Village</p></div>
+
+      <div class="gs-card" data-val="Rockwall"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 0 0-8-8z"/></svg></div><p class="gs-cl">Rockwall</p></div>
+
+      <div class="gs-card" data-val="Not Sure"><span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><p class="gs-cl">Not sure yet</p><p class="gs-cd">Help me decide</p></div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 7: Priorities (buyer/both) ───────────────────────────────── -->
+  <div class="gs-step" id="gs-s-priorities">
+    <p class="gs-q">What matters most to your family?</p>
+    <p class="gs-hint">Pick up to 3 — we'll use these to steer our recommendations.</p>
+    <div class="gs-cards gs-cards-3 gs-multi" id="gs-priorities-cards">
+
+      <div class="gs-card" data-val="priority-schools">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <p class="gs-cl">Schools &amp; Education</p>
+        <p class="gs-cd">ISD ratings, top campuses</p>
+      </div>
+
+      <div class="gs-card" data-val="priority-commute">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <p class="gs-cl">Commute &amp; Location</p>
+        <p class="gs-cd">Drive time to work or airport</p>
+      </div>
+
+      <div class="gs-card" data-val="priority-space">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+        <p class="gs-cl">Space &amp; Yard</p>
+        <p class="gs-cd">Bigger lots, newer homes</p>
+      </div>
+
+      <div class="gs-card" data-val="priority-community">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <p class="gs-cl">Community Feel</p>
+        <p class="gs-cd">Family activities, youth sports</p>
+      </div>
+
+      <div class="gs-card" data-val="priority-affordability">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <p class="gs-cl">Affordability</p>
+        <p class="gs-cd">Value for the price</p>
+      </div>
+
+      <div class="gs-card" data-val="priority-safety">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <p class="gs-cl">Safety</p>
+        <p class="gs-cd">Low crime, family-safe streets</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 8: Buyer qualifiers ───────────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-qualifiers">
+    <p class="gs-q">A few quick questions…</p>
+    <p class="gs-hint">Helps Kristen prepare the right information before your conversation.</p>
+    <div class="gs-toggles">
+
+      <div class="gs-toggle-row">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="gs-toggle-text">
+          <p class="gs-toggle-lbl">Are you pre-approved for a mortgage?</p>
+          <p class="gs-toggle-sub">No pressure either way — just helps with timing</p>
+        </div>
+        <div class="gs-toggle-btns">
+          <button class="gs-yn" data-field="preQual" data-val="Yes">Yes</button>
+          <button class="gs-yn" data-field="preQual" data-val="No">No</button>
+        </div>
+      </div>
+
+      <div class="gs-toggle-row">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        <div class="gs-toggle-text">
+          <p class="gs-toggle-lbl">Is this your first home purchase?</p>
+          <p class="gs-toggle-sub">First-time buyer programs may apply</p>
+        </div>
+        <div class="gs-toggle-btns">
+          <button class="gs-yn" data-field="fthb" data-val="Yes">Yes</button>
+          <button class="gs-yn" data-field="fthb" data-val="No">No</button>
+        </div>
+      </div>
+
+      <div class="gs-toggle-row" id="gs-toggle-house-to-sell">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+        <div class="gs-toggle-text">
+          <p class="gs-toggle-lbl">Do you have a home to sell first?</p>
+          <p class="gs-toggle-sub">Helps us coordinate your timeline</p>
+        </div>
+        <div class="gs-toggle-btns">
+          <button class="gs-yn" data-field="houseToSell" data-val="Yes">Yes</button>
+          <button class="gs-yn" data-field="houseToSell" data-val="No">No</button>
+        </div>
+      </div>
+
+      <div class="gs-toggle-row">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <div class="gs-toggle-text">
+          <p class="gs-toggle-lbl">Are you currently working with a buyer's agent?</p>
+          <p class="gs-toggle-sub">Good to know before reaching out</p>
+        </div>
+        <div class="gs-toggle-btns">
+          <button class="gs-yn" data-field="withBuyerAgent" data-val="Yes">Yes</button>
+          <button class="gs-yn" data-field="withBuyerAgent" data-val="No">No</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 9: Property location (seller/both) ───────────────────────── -->
+  <div class="gs-step" id="gs-s-prop-location">
+    <p class="gs-q">Where is the property you're selling?</p>
+    <p class="gs-hint">City and zip code is all we need for now.</p>
+    <div class="gs-fields">
+      <div class="gs-row">
+        <div class="gs-field">
+          <label for="gs-prop-city">City</label>
+          <input type="text" id="gs-prop-city" placeholder="e.g. Flower Mound" autocomplete="address-level2">
+        </div>
+        <div class="gs-field">
+          <label for="gs-prop-zip">Zip code</label>
+          <input type="text" id="gs-prop-zip" placeholder="e.g. 75022" inputmode="numeric" maxlength="5">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 10: Selling timeline (seller/both) ───────────────────────── -->
+  <div class="gs-step" id="gs-s-timeline-sell">
+    <p class="gs-q">When are you hoping to sell?</p>
+    <p class="gs-hint">We'll tailor our approach based on your urgency.</p>
+    <div class="gs-cards gs-cards-4">
+
+      <div class="gs-card" data-val="1-3">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <p class="gs-cl">1–3 months</p>
+        <p class="gs-cd">Ready to list soon</p>
+      </div>
+
+      <div class="gs-card" data-val="3-6">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <p class="gs-cl">3–6 months</p>
+        <p class="gs-cd">Getting prepared</p>
+      </div>
+
+      <div class="gs-card" data-val="6-12">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <p class="gs-cl">6–12 months</p>
+        <p class="gs-cd">Planning ahead</p>
+      </div>
+
+      <div class="gs-card" data-val="Just Looking">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <p class="gs-cl">Just exploring</p>
+        <p class="gs-cd">No timeline set</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 11: Property details (seller/both) ───────────────────────── -->
+  <div class="gs-step" id="gs-s-prop-details">
+    <p class="gs-q">Tell us about the property.</p>
+    <p class="gs-hint">Rough estimates are fine — helps us prepare a better conversation.</p>
+    <div class="gs-fields">
+      <div class="gs-field">
+        <label for="gs-prop-type">Property type</label>
+        <select id="gs-prop-type">
+          <option value="">Select type…</option>
+          <option value="Single Family Home">Single Family Home</option>
+          <option value="Townhouse">Townhouse</option>
+          <option value="Condo">Condo</option>
+          <option value="Multi-Family">Multi-Family</option>
+          <option value="Vacant Land">Vacant Land</option>
+        </select>
+      </div>
+      <div class="gs-row">
+        <div class="gs-field">
+          <label for="gs-prop-beds">Bedrooms</label>
+          <select id="gs-prop-beds">
+            <option value="">Select…</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5+</option>
+          </select>
+        </div>
+        <div class="gs-field">
+          <label for="gs-prop-baths">Bathrooms</label>
+          <select id="gs-prop-baths">
+            <option value="">Select…</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4+</option>
+          </select>
+        </div>
+      </div>
+      <div class="gs-field">
+        <label for="gs-prop-value">Estimated home value</label>
+        <select id="gs-prop-value">
+          <option value="">Select a range…</option>
+          <option value="250000">Under $300K</option>
+          <option value="350000">$300K – $400K</option>
+          <option value="450000">$400K – $500K</option>
+          <option value="600000">$500K – $700K</option>
+          <option value="850000">$700K – $1M</option>
+          <option value="1250000">$1M – $1.5M</option>
+          <option value="2000000">$1.5M+</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 12: Listing agent (seller/both) ──────────────────────────── -->
+  <div class="gs-step" id="gs-s-listing-agent">
+    <p class="gs-q">Are you currently working with a listing agent?</p>
+    <p class="gs-hint">No pressure either way — just helps us understand where you are in the process.</p>
+    <div class="gs-cards gs-cards-2">
+      <div class="gs-card" data-val="Yes">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p class="gs-cl">Yes, I have an agent</p>
+      </div>
+      <div class="gs-card" data-val="No">
+        <span class="gs-card-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <div class="gs-ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <p class="gs-cl">No, not yet</p>
+        <p class="gs-cd">Still exploring my options</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 13: Contact ───────────────────────────────────────────────── -->
+  <div class="gs-step" id="gs-s-contact">
+    <p class="gs-q">Last step — how should Kristen reach you?</p>
+    <p class="gs-hint">She'll follow up within one business day. Your info is never shared or sold.</p>
+    <div class="gs-fields">
+      <div class="gs-row">
+        <div class="gs-field">
+          <label for="gs-first">First name <span style="color:#b03030">*</span></label>
+          <input type="text" id="gs-first" placeholder="Jane" autocomplete="given-name">
+        </div>
+        <div class="gs-field">
+          <label for="gs-last">Last name</label>
+          <input type="text" id="gs-last" placeholder="Smith" autocomplete="family-name">
+        </div>
+      </div>
+      <div class="gs-field">
+        <label for="gs-email">Email address <span style="color:#b03030">*</span></label>
+        <input type="email" id="gs-email" placeholder="jane@email.com" autocomplete="email">
+      </div>
+      <div class="gs-field">
+        <label for="gs-phone">Phone number</label>
+        <input type="tel" id="gs-phone" placeholder="(555) 000-0000" autocomplete="tel">
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav buttons -->
+  <div class="gs-nav" id="gs-nav">
+    <button class="gs-back" id="gs-back" style="visibility:hidden">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back
+    </button>
+    <button class="gs-next" id="gs-next">
+      Continue
+      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+
+  <p class="gs-err" id="gs-err">Please make a selection to continue.</p>
+
+</div><!-- /.gs-wrap -->
+</div><!-- /.gs-shell -->
+<script>
+(function () {
+  'use strict';
+
+  // ── Step sequences per intent ─────────────────────────────────────────────
+  var SEQUENCES = {
+    buy:  ['intent','origin','family','timeline-buy','budget','suburbs','priorities','qualifiers','contact'],
+    sell: ['intent','prop-location','timeline-sell','prop-details','listing-agent','contact'],
+    both: ['intent','origin','family','timeline-buy','budget','suburbs','priorities','qualifiers','prop-location','timeline-sell','prop-details','listing-agent','contact']
+  };
+
+  var LABELS = {
+    'intent':        'Getting started',
+    'origin':        'Where you\'re from',
+    'family':        'Your family',
+    'timeline-buy':  'Buying timeline',
+    'budget':        'Budget',
+    'suburbs':       'Suburbs',
+    'priorities':    'Priorities',
+    'qualifiers':    'Quick questions',
+    'prop-location': 'Property location',
+    'timeline-sell': 'Selling timeline',
+    'prop-details':  'Property details',
+    'listing-agent': 'Your agent',
+    'contact':       'Contact info'
+  };
+
+  // ── State ─────────────────────────────────────────────────────────────────
+  var state = {
+    intent:       null,   // buy | sell | both
+    origin:       null,   // California | New York | Illinois | Texas | Other
+    originTag:    null,
+    family:       null,
+    familyTag:    null,
+    timelineBuy:  null,
+    budgetMin:    null,
+    budgetMax:    null,
+    suburbs:      [],     // array of city names
+    priorities:   [],     // array of tag strings
+    preQual:      null,
+    fthb:         null,
+    houseToSell:  null,
+    withBuyerAgent: null,
+    propCity:     null,
+    propZip:      null,
+    timelineSell: null,
+    propType:     null,
+    propBeds:     null,
+    propBaths:    null,
+    propValue:    null,
+    withListingAgent: null,
+    firstName:    null,
+    lastName:     null,
+    email:        null,
+    phone:        null
+  };
+
+  var seq       = [];   // active sequence
+  var seqIdx    = 0;    // index into seq
+
+  // ── DOM refs ──────────────────────────────────────────────────────────────
+  var progressFill = document.getElementById('gs-progress-fill');
+  var stepLabel    = document.getElementById('gs-step-label');
+  var stepCount    = document.getElementById('gs-step-count');
+  var backBtn      = document.getElementById('gs-back');
+  var nextBtn      = document.getElementById('gs-next');
+  var navEl        = document.getElementById('gs-nav');
+  var errEl        = document.getElementById('gs-err');
+  var successEl    = document.getElementById('gs-success');
+
+  // ── Helpers ───────────────────────────────────────────────────────────────
+  function getStepEl(id) { return document.getElementById('gs-s-' + id); }
+
+  function showStep(id) {
+    document.querySelectorAll('.gs-step').forEach(function (el) {
+      el.classList.remove('active');
+    });
+    var el = getStepEl(id);
+    if (el) el.classList.add('active');
+    errEl.classList.remove('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function updateProgress() {
+    var total   = seq.length - 1;               // exclude 'intent' from count display
+    var current = seqIdx;
+    var pct     = total > 0 ? Math.round((current / total) * 100) : 0;
+    progressFill.style.width = pct + '%';
+    stepLabel.textContent = LABELS[seq[seqIdx]] || '';
+    stepCount.textContent = seqIdx > 0 ? 'Step ' + seqIdx + ' of ' + total : '';
+    backBtn.style.visibility = seqIdx > 0 ? 'visible' : 'hidden';
+
+    // Swap Next → Submit on last step
+    if (seq[seqIdx] === 'contact') {
+      nextBtn.style.display = 'none';
+      var sb = document.getElementById('gs-submit-btn');
+      if (sb) sb.style.display = 'flex';
+    } else {
+      nextBtn.style.display = 'flex';
+      var sb2 = document.getElementById('gs-submit-btn');
+      if (sb2) sb2.style.display = 'none';
+    }
+  }
+
+  function initSequence(intent) {
+    seq    = SEQUENCES[intent] || SEQUENCES.buy;
+    seqIdx = 0;
+
+    // For 'both' intent: hide the "house to sell" toggle (it's implied)
+    var htsRow = document.getElementById('gs-toggle-house-to-sell');
+    if (htsRow) htsRow.style.display = intent === 'both' ? 'none' : 'flex';
+  }
+
+  // ── Card selection ────────────────────────────────────────────────────────
+  function bindCards(stepId, multi) {
+    var el = getStepEl(stepId);
+    if (!el) return;
+    var cards = el.querySelectorAll('.gs-card');
+    var limit = 3; // max for multi-select
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        if (!multi) {
+          cards.forEach(function (c) { c.classList.remove('sel'); });
+          card.classList.add('sel');
+          errEl.classList.remove('show');
+        } else {
+          var selected = el.querySelectorAll('.gs-card.sel');
+          if (card.classList.contains('sel')) {
+            card.classList.remove('sel');
+          } else {
+            if (selected.length < limit) {
+              card.classList.add('sel');
+            }
+          }
+          errEl.classList.remove('show');
+        }
+      });
+    });
+  }
+
+  // ── Yes/No toggles ────────────────────────────────────────────────────────
+  function bindToggles() {
+    document.querySelectorAll('.gs-yn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var field = btn.dataset.field;
+        var val   = btn.dataset.val;
+        // Deselect siblings
+        document.querySelectorAll('.gs-yn[data-field="' + field + '"]').forEach(function (b) {
+          b.classList.remove('yn-yes', 'yn-no');
+        });
+        btn.classList.add(val === 'Yes' ? 'yn-yes' : 'yn-no');
+        state[field] = val;
+      });
+    });
+  }
+
+  // ── Validate current step ─────────────────────────────────────────────────
+  function validate() {
+    var id = seq[seqIdx];
+
+    if (id === 'intent') {
+      return !!getStepEl('intent').querySelector('.gs-card.sel');
+    }
+    if (id === 'origin') {
+      return !!getStepEl('origin').querySelector('.gs-card.sel');
+    }
+    if (id === 'family') {
+      return !!getStepEl('family').querySelector('.gs-card.sel');
+    }
+    if (id === 'timeline-buy') {
+      return !!getStepEl('timeline-buy').querySelector('.gs-card.sel');
+    }
+    if (id === 'budget') {
+      return !!getStepEl('budget').querySelector('.gs-card.sel');
+    }
+    if (id === 'suburbs') {
+      return getStepEl('suburbs').querySelectorAll('.gs-card.sel').length > 0;
+    }
+    if (id === 'priorities') {
+      return getStepEl('priorities').querySelectorAll('.gs-card.sel').length > 0;
+    }
+    if (id === 'qualifiers') {
+      return true; // optional toggles
+    }
+    if (id === 'prop-location') {
+      var city = document.getElementById('gs-prop-city').value.trim();
+      return city.length > 0;
+    }
+    if (id === 'timeline-sell') {
+      return !!getStepEl('timeline-sell').querySelector('.gs-card.sel');
+    }
+    if (id === 'prop-details') {
+      return true; // optional details
+    }
+    if (id === 'listing-agent') {
+      return !!getStepEl('listing-agent').querySelector('.gs-card.sel');
+    }
+    if (id === 'contact') {
+      var first = document.getElementById('gs-first').value.trim();
+      var email = document.getElementById('gs-email').value.trim();
+      return first.length > 0 && email.includes('@');
+    }
+    return true;
+  }
+
+  // ── Collect state from current step ──────────────────────────────────────
+  function collectStep(id) {
+    if (id === 'intent') {
+      var sel = getStepEl('intent').querySelector('.gs-card.sel');
+      if (sel) {
+        state.intent = sel.dataset.val;
+        initSequence(state.intent);
+      }
+    }
+    if (id === 'origin') {
+      var sel = getStepEl('origin').querySelector('.gs-card.sel');
+      if (sel) { state.origin = sel.dataset.val; state.originTag = sel.dataset.tag; }
+    }
+    if (id === 'family') {
+      var sel = getStepEl('family').querySelector('.gs-card.sel');
+      if (sel) { state.family = sel.dataset.val; state.familyTag = sel.dataset.tag; }
+    }
+    if (id === 'timeline-buy') {
+      var sel = getStepEl('timeline-buy').querySelector('.gs-card.sel');
+      if (sel) state.timelineBuy = sel.dataset.lofty;
+    }
+    if (id === 'budget') {
+      var sel = getStepEl('budget').querySelector('.gs-card.sel');
+      if (sel) {
+        state.budgetMin = parseInt(sel.dataset.min, 10);
+        state.budgetMax = parseInt(sel.dataset.max, 10);
+      }
+    }
+    if (id === 'suburbs') {
+      state.suburbs = [];
+      getStepEl('suburbs').querySelectorAll('.gs-card.sel').forEach(function (c) {
+        state.suburbs.push(c.dataset.val);
+      });
+    }
+    if (id === 'priorities') {
+      state.priorities = [];
+      getStepEl('priorities').querySelectorAll('.gs-card.sel').forEach(function (c) {
+        state.priorities.push(c.dataset.val);
+      });
+    }
+    // qualifiers collected live via toggle click handlers
+    if (id === 'prop-location') {
+      state.propCity = document.getElementById('gs-prop-city').value.trim();
+      state.propZip  = document.getElementById('gs-prop-zip').value.trim();
+    }
+    if (id === 'timeline-sell') {
+      var sel = getStepEl('timeline-sell').querySelector('.gs-card.sel');
+      if (sel) state.timelineSell = sel.dataset.val;
+    }
+    if (id === 'prop-details') {
+      state.propType  = document.getElementById('gs-prop-type').value;
+      state.propBeds  = parseInt(document.getElementById('gs-prop-beds').value, 10) || null;
+      state.propBaths = parseFloat(document.getElementById('gs-prop-baths').value) || null;
+      state.propValue = parseInt(document.getElementById('gs-prop-value').value, 10) || null;
+    }
+    if (id === 'listing-agent') {
+      var sel = getStepEl('listing-agent').querySelector('.gs-card.sel');
+      if (sel) state.withListingAgent = sel.dataset.val;
+    }
+    if (id === 'contact') {
+      state.firstName = document.getElementById('gs-first').value.trim();
+      state.lastName  = document.getElementById('gs-last').value.trim();
+      state.email     = document.getElementById('gs-email').value.trim();
+      state.phone     = document.getElementById('gs-phone').value.trim();
+    }
+  }
+
+  // ── Navigation ────────────────────────────────────────────────────────────
+  nextBtn.addEventListener('click', function () {
+    if (!validate()) {
+      errEl.textContent = seq[seqIdx] === 'contact'
+        ? 'Please enter your name and a valid email address.'
+        : 'Please make a selection to continue.';
+      errEl.classList.add('show');
+      return;
+    }
+    collectStep(seq[seqIdx]);
+    seqIdx++;
+    showStep(seq[seqIdx]);
+    updateProgress();
+  });
+
+  backBtn.addEventListener('click', function () {
+    if (seqIdx > 0) {
+      seqIdx--;
+      showStep(seq[seqIdx]);
+      updateProgress();
+    }
+  });
+
+  // ── Submit ────────────────────────────────────────────────────────────────
+  function buildPayload() {
+    var tags = [];
+    if (state.originTag)   tags.push(state.originTag);
+    if (state.familyTag)   tags.push(state.familyTag);
+    if (state.timelineBuy) tags.push('timeline-' + state.timelineBuy.toLowerCase().replace(/\s+/g, '-'));
+    if (state.budgetMin !== null) {
+      if (state.budgetMax <= 500000)     tags.push('budget-under-500k');
+      else if (state.budgetMax <= 700000) tags.push('budget-500k-700k');
+      else if (state.budgetMax <= 1000000) tags.push('budget-700k-1m');
+      else                                tags.push('budget-1m-plus');
+    }
+    state.priorities.forEach(function (p) { tags.push(p); });
+    if (state.preQual === 'Yes')       tags.push('pre-approved');
+    if (state.houseToSell === 'Yes' || state.intent === 'both') tags.push('has-home-to-sell');
+
+    var leadTypes = [];
+    if (state.intent === 'buy')  leadTypes = [2];
+    if (state.intent === 'sell') leadTypes = [1];
+    if (state.intent === 'both') leadTypes = [1, 2];
+
+    var suburbLocations = state.suburbs
+      .filter(function (s) { return s !== 'Not Sure'; })
+      .map(function (s) { return { city: s, stateCode: 'TX' }; });
+
+    // Build a readable intake note
+    var noteParts = [
+      '=== Website Intake Form ===',
+      'Intent: ' + (state.intent || ''),
+      state.origin     ? 'Moving from: ' + state.origin : null,
+      state.family     ? 'Family: ' + state.family : null,
+      state.timelineBuy ? 'Buying timeline: ' + state.timelineBuy : null,
+      state.budgetMin !== null ? 'Budget: $' + state.budgetMin.toLocaleString() + ' – $' + state.budgetMax.toLocaleString() : null,
+      state.suburbs.length ? 'Suburbs of interest: ' + state.suburbs.join(', ') : null,
+      state.priorities.length ? 'Priorities: ' + state.priorities.join(', ') : null,
+      state.preQual         ? 'Pre-approved: ' + state.preQual : null,
+      state.fthb            ? 'First-time buyer: ' + state.fthb : null,
+      state.houseToSell     ? 'House to sell: ' + state.houseToSell : null,
+      state.withBuyerAgent  ? 'Has buyer agent: ' + state.withBuyerAgent : null,
+      state.propCity        ? 'Sell property: ' + state.propCity + (state.propZip ? ' ' + state.propZip : '') : null,
+      state.timelineSell    ? 'Selling timeline: ' + state.timelineSell : null,
+      state.propType        ? 'Property type: ' + state.propType : null,
+      state.propBeds        ? 'Beds/Baths: ' + state.propBeds + ' / ' + (state.propBaths || '?') : null,
+      state.propValue       ? 'Est. value: $' + state.propValue.toLocaleString() : null,
+      state.withListingAgent ? 'Has listing agent: ' + state.withListingAgent : null
+    ].filter(Boolean).join('\n');
+
+    var payload = {
+      intent:     state.intent,
+      firstName:  state.firstName,
+      lastName:   state.lastName,
+      email:      state.email,
+      phone:      state.phone,
+      leadTypes:  leadTypes,
+      tags:       tags,
+      suburbs:    state.suburbs,
+      suburbLocations: suburbLocations,
+      timelineBuy:  state.timelineBuy,
+      timelineSell: state.timelineSell,
+      budgetMin:    state.budgetMin,
+      budgetMax:    state.budgetMax,
+      preQual:      state.preQual,
+      fthb:         state.fthb,
+      houseToSell:  state.intent === 'both' ? 'Yes' : state.houseToSell,
+      withBuyerAgent:  state.withBuyerAgent,
+      withListingAgent: state.withListingAgent,
+      buyHouse:     state.intent === 'both' ? 'Yes' : null,
+      propCity:     state.propCity,
+      propZip:      state.propZip,
+      propType:     state.propType,
+      propBeds:     state.propBeds,
+      propBaths:    state.propBaths,
+      propValue:    state.propValue,
+      note:         noteParts
+    };
+
+    return payload;
+  }
+
+  function doSubmit() {
+    var submitBtn = document.getElementById('gs-submit-btn');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+
+    var payload = buildPayload();
+
+    fetch('https://whymovetodallas-app.vercel.app/api/intake-to-lofty', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      if (data.success) {
+        navEl.style.display     = 'none';
+        document.querySelectorAll('.gs-step').forEach(function (el) { el.classList.remove('active'); });
+        document.querySelector('.gs-progress').style.display = 'none';
+        successEl.classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        showErr(data.error || 'Something went wrong — please try again.');
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
+      }
+    })
+    .catch(function () {
+      showErr('Could not connect. Please check your internet and try again.');
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
+    });
+  }
+
+  function showErr(msg) {
+    errEl.textContent = msg;
+    errEl.classList.add('show');
+  }
+
+  // ── Inject submit button next to nav ─────────────────────────────────────
+  var submitBtn = document.createElement('button');
+  submitBtn.id          = 'gs-submit-btn';
+  submitBtn.className   = 'gs-submit';
+  submitBtn.style.display = 'none';
+  submitBtn.innerHTML   = 'Submit <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>';
+  submitBtn.addEventListener('click', function () {
+    collectStep('contact');
+    if (!validate()) {
+      showErr('Please enter your name and a valid email address.');
+      return;
+    }
+    doSubmit();
+  });
+  navEl.appendChild(submitBtn);
+
+  // ── Bind all card steps ───────────────────────────────────────────────────
+  bindCards('intent',       false);
+  bindCards('origin',       false);
+  bindCards('family',       false);
+  bindCards('timeline-buy', false);
+  bindCards('budget',       false);
+  bindCards('suburbs',      true);   // multi-select
+  bindCards('priorities',   true);   // multi-select, max 3
+  bindCards('timeline-sell',false);
+  bindCards('listing-agent',false);
+  bindToggles();
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  // Default sequence until intent is selected
+  seq    = ['intent'];
+  seqIdx = 0;
+  showStep('intent');
+  updateProgress();
+
+}());
+</script>
+<!-- ═══════════════════════════════════════════════════════════════
+     SITE FOOTER — whymovetodallas.com
+     Injected into every page by build.js via wrapInShell().
+
+     3-column layout: brand + social / explore links / contact
+     Bottom row: copyright + TREC required disclosures
+     ═══════════════════════════════════════════════════════════════ -->
+
+<footer id="kc-site-footer" role="contentinfo">
+  <div class="kc-footer-inner">
+
+    <div class="kc-footer-grid">
+
+      <!-- Column 1: Brand + tagline + socials -->
+      <div class="kc-footer-brand">
+        <a href="/" aria-label="Carpentier Group Real Estate — home">
+          <img src="/images/logo-white.png"
+               alt="Carpentier Group Real Estate"
+               class="kc-footer-logo"
+               width="1426" height="200"
+               loading="lazy">
+        </a>
+        <p class="kc-footer-tagline">Helping families find the right suburb, the right schools, and the right home in Dallas–Fort Worth. From a mom who made the same move.</p>
+
+        <nav class="kc-footer-socials" aria-label="Social media">
+          <a href="https://www.youtube.com/@whymovetodallas" target="_blank" rel="noopener noreferrer" aria-label="YouTube — Why Move to Dallas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.5 5 12 5 12 5s-4.5 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.5 0 7-.1c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/kristenwcarpentier/" target="_blank" rel="noopener noreferrer" aria-label="Instagram — @kristenwcarpentier">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.3-.2-4.8-1.7-5-5C2 16.6 2 16.3 2 12s0-3.6.1-4.8c.2-3.3 1.7-4.8 5-5 1.2-.1 1.6-.1 4.9-.1zm0 2.2c-3.2 0-3.5 0-4.8.1-2.2.1-3.2 1.1-3.3 3.3C3.8 8.9 3.8 9.2 3.8 12s0 3.1.1 4.2c.1 2.2 1.1 3.2 3.3 3.3 1.1.1 1.4.1 4.8.1s3.6 0 4.8-.1c2.2-.1 3.2-1.1 3.3-3.3.1-1.1.1-1.4.1-4.2s0-3.1-.1-4.2c-.1-2.2-1.1-3.2-3.3-3.3-1.3-.1-1.6-.1-4.8-.1zm0 3.7a3.9 3.9 0 1 1 0 7.8A3.9 3.9 0 0 1 12 8.1zm0 6.5a2.5 2.5 0 1 0 0-5.1 2.5 2.5 0 0 0 0 5.1zm4.9-6.7a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/whymovetodallas" target="_blank" rel="noopener noreferrer" aria-label="Facebook — Why Move to Dallas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/></svg>
+          </a>
+          <a href="https://www.pinterest.com/whymovetodallas/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest — Why Move to Dallas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.2 2.6 7.9 6.4 9.4-.1-.8-.1-2.1.1-3 .2-.8 1.3-5.5 1.3-5.5s-.3-.7-.3-1.7c0-1.6.9-2.7 2.1-2.7 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-.9 3.8-.3 1.1.5 2.1 1.6 2.1 2 0 3.4-2.1 3.4-5 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5 2.4-5 4.8 0 .9.4 1.9.8 2.5.1.1.1.2.1.4-.1.4-.3 1.1-.3 1.2-.1.2-.2.3-.4.1-1.4-.7-2.3-2.7-2.3-4.4 0-3.5 2.6-6.8 7.5-6.8 3.9 0 7 2.8 7 6.5 0 3.9-2.4 7-5.8 7-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.3 1-.9 2.1-1.4 2.9.9.3 2 .5 3 .5 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kristencarpentier" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — Kristen Carpentier">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6zM8.3 18.5H5.6V9.8h2.7v8.7zm-1.3-9.9c-.9 0-1.6-.7-1.6-1.6s.7-1.6 1.6-1.6 1.6.7 1.6 1.6-.7 1.6-1.6 1.6zm12 9.9h-2.7v-4.2c0-1-.5-1.7-1.4-1.7-.8 0-1.3.5-1.5 1.1-.1.2-.1.4-.1.6v4.1h-2.7V9.8h2.7v1.1c.5-.7 1.3-1.2 2.3-1.2 1.7 0 2.9 1.1 2.9 3.5v5.3z"/></svg>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Column 2: Explore links -->
+      <div>
+        <p class="kc-footer-col-title">Explore</p>
+        <ul class="kc-footer-links">
+          <li><a href="/dallas-fort-worth-suburbs">DFW suburb guides</a></li>
+          <li><a href="/dfw-school-districts">School districts</a></li>
+          <li><a href="/dfw-family-relocation-guide">Free relocation guide</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/living-in-dallas-about-social-agent-group">About Kristen</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact -->
+      <div>
+        <p class="kc-footer-col-title">Contact</p>
+
+        <div class="kc-footer-contact-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span><a href="tel:+16024054115">(602) 405-4115</a></span>
+        </div>
+
+        <div class="kc-footer-contact-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span><a href="mailto:Kristen@whymovetodallas.com">Kristen@whymovetodallas.com</a></span>
+        </div>
+
+        <div class="kc-footer-contact-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          <span>eXp Realty<br>15950 Dallas Pkwy #400<br>Dallas, TX 75248</span>
+        </div>
+
+      </div>
+
+    </div><!-- /.kc-footer-grid -->
+
+    <hr class="kc-footer-divider">
+
+    <div class="kc-footer-bottom">
+      <p class="kc-footer-copy">
+        &copy; <span id="kc-footer-year">2026</span> Kristen Carpentier &nbsp;&middot;&nbsp; eXp Realty &nbsp;&middot;&nbsp; TREC #760457 &nbsp;&middot;&nbsp; Licensed in Texas only<br>
+        <a href="https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank" rel="noopener noreferrer">Consumer Protection Notice</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://www.trec.texas.gov/forms/information-about-brokerage-services" target="_blank" rel="noopener noreferrer">Information About Brokerage Services</a>
+      </p>
+    </div>
+
+  </div><!-- /.kc-footer-inner -->
+</footer>
+
+<script>
+// Keep copyright year current automatically
+(function () {
+  var el = document.getElementById('kc-footer-year');
+  if (el) el.textContent = new Date().getFullYear();
+}());
+</script>
+
+</body>
+</html>
