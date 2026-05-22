@@ -56,10 +56,10 @@
 .kc-divider { border: none; border-top: 1px solid var(--stone); margin: 0; opacity: 0.4; }
 
 /* ── Hero ─── */
+/* NOTE: background-image is set per page via an inline <style> override.
+   Do NOT add a url() here — it will override every page's individual hero. */
 .kc-hero {
-  background:
-    linear-gradient(135deg, rgba(31,45,61,0.52) 0%, rgba(31,45,61,0.36) 50%, rgba(31,45,61,0.48) 100%),
-    url('/images/frisco-hero.webp') center / cover no-repeat;
+  background: linear-gradient(135deg, rgba(31,45,61,0.52) 0%, rgba(31,45,61,0.36) 50%, rgba(31,45,61,0.48) 100%) center / cover no-repeat;
   color: var(--white);
   padding: clamp(4rem, 10vw, 7rem) 1.5rem;
   text-align: center;
