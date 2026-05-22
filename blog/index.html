@@ -1,32 +1,56 @@
 <!-- Schema: pages/blog/index-schema.html → Page Header Code Injection -->
 <style>
 .kc-blog-hero {
-  background: var(--navy);
-  padding: 4.5rem 1.5rem 3.5rem;
+  background:
+    linear-gradient(135deg, rgba(31,45,61,0.72) 0%, rgba(31,45,61,0.52) 50%, rgba(31,45,61,0.66) 100%),
+    url('/images/suburbs-hero.webp') center / cover no-repeat;
+  background-color: var(--navy);
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(4rem, 10vw, 6rem) 1.5rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.kc-blog-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
 }
 .kc-blog-hero-eyebrow {
-  font-size: 0.75rem;
+  display: block;
+  font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+.kc-blog-hero-bar {
+  width: 56px; height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 0 auto 1.2rem;
 }
 .kc-blog-hero h1 {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 600;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
   color: #fff;
   margin-bottom: 0.75rem;
-  line-height: 1.2;
+  line-height: 1.15;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.45);
 }
 .kc-blog-hero-sub {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.72);
-  max-width: 520px;
+  font-size: clamp(0.97rem, 2.2vw, 1.1rem);
+  color: rgba(255,255,255,0.82);
+  max-width: 580px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.65;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 .kc-blog-body {
   max-width: 1060px;
@@ -178,18 +202,17 @@
 </style>
 
 <!-- ── Hero ─────────────────────────────────────────────────────────── -->
-<section class="kc-blog-hero">
-  <p class="kc-blog-hero-eyebrow">DFW Family Relocation</p>
-  <h1>The Blog</h1>
-  <p class="kc-blog-hero-sub">Suburbs, schools, cost of living, and everything else families need to know before moving to Dallas–Fort Worth.</p>
+<section class="kc-blog-hero" aria-label="Blog hero">
+  <div class="kc-blog-hero-inner">
+    <span class="kc-blog-hero-eyebrow">DFW Family Relocation</span>
+    <div class="kc-blog-hero-bar"></div>
+    <h1>Suburb Guides, Schools & Relocation Tips</h1>
+    <p class="kc-blog-hero-sub">Straight talk from a DFW mom and licensed Realtor® who's helped hundreds of families find the right suburb, the right schools, and the right home.</p>
+  </div>
 </section>
 
 <!-- ── Posts ─────────────────────────────────────────────────────────── -->
 <div class="kc-blog-body">
-
-  <div class="kc-blog-intro">
-    <p>Straight talk from a DFW mom and licensed Realtor® who's helped hundreds of relocating families find the right suburb, the right schools, and the right home.</p>
-  </div>
 
   <!-- Filter tabs -->
   <div class="kc-blog-filters" id="kc-blog-filters" role="group" aria-label="Filter posts by category">
