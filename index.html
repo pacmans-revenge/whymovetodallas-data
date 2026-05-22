@@ -234,6 +234,9 @@
 .kc-trust-icon  { display: block; margin: 0 auto 0.3rem; width: 28px; height: 28px; }
 .kc-trust-val   { display: block; font-size: 0.98rem; font-weight: 700; color: var(--navy); font-family: 'Cormorant Garamond', serif; }
 .kc-trust-label { display: block; font-size: 0.69rem; color: #666; text-transform: uppercase; letter-spacing: 0.07em; margin-top: 0.1rem; }
+.kc-trust-divider { width: 1px; height: 48px; background: var(--gold); opacity: 0.3; flex-shrink: 0; }
+.kc-trust-badge { height: 52px; width: auto; object-fit: contain; filter: drop-shadow(0 1px 3px rgba(31,45,61,0.1)); opacity: 0.9; }
+@media (max-width: 640px) { .kc-trust-divider { display: none; } }
 
 /* ── SECTION 4: PERSONA CARDS ─────────────────────────────────────────── */
 .kc-persona-bg { background: var(--stone); padding: 4.5rem 1.5rem; }
@@ -1112,6 +1115,9 @@ gtag('consent', 'default', {
       <span class="kc-trust-val">4,900+</span>
       <span class="kc-trust-label">YouTube Subscribers</span>
     </div>
+    <div class="kc-trust-divider" aria-hidden="true"></div>
+    <img src="/images/award-real-producers-2024.webp" alt="Real Producers 2024" class="kc-trust-badge" loading="lazy" width="120" height="52">
+    <img src="/images/award-top-producer-2026.webp"   alt="Top Producer 2026"   class="kc-trust-badge" loading="lazy" width="120" height="52">
   </div>
 </div>
 
