@@ -86,12 +86,27 @@
   font-weight: 600;
   cursor: pointer;
   transition: border-color 0.15s, color 0.15s, background 0.15s;
+  -webkit-appearance: none;
+  appearance: none;
 }
-.kc-blog-filter-btn:hover,
+/* Explicit active state — split from :hover to prevent focus-reset override */
 .kc-blog-filter-btn.active {
+  border-color: var(--navy) !important;
+  background: var(--navy) !important;
+  color: #fff !important;
+}
+.kc-blog-filter-btn:hover {
   border-color: var(--navy);
   background: var(--navy);
   color: #fff;
+}
+/* Prevent browser focus ring from flashing white background on click */
+.kc-blog-filter-btn:focus { outline: none; }
+.kc-blog-filter-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.kc-blog-filter-btn.active:focus,
+.kc-blog-filter-btn.active:active {
+  background: var(--navy) !important;
+  color: #fff !important;
 }
 /* Post grid */
 .kc-blog-grid {
@@ -101,30 +116,68 @@
   margin-bottom: 3rem;
 }
 .kc-blog-card {
-  background: var(--white);
+  background: #f5f3ef; /* warm ivory default */
   border-radius: 10px;
-  border: 1px solid rgba(200,193,182,0.5);
-  border-top: 3px solid var(--stone);
+  border: 1px solid rgba(200,193,182,0.45);
+  border-top: 5px solid var(--stone);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-top-color 0.18s ease;
   text-decoration: none;
   color: inherit;
+  box-shadow: 0 2px 8px rgba(31,45,61,0.06);
 }
 .kc-blog-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(31,45,61,0.1);
+  box-shadow: 0 8px 28px rgba(31,45,61,0.12);
+}
+
+/* ── Category color system ── */
+.kc-blog-card[data-cat="suburb-guides"] {
+  background: #eef0f4;
+  border-top-color: var(--navy);
+}
+.kc-blog-card[data-cat="suburb-guides"]:hover { border-top-color: var(--navy); }
+
+.kc-blog-card[data-cat="schools"] {
+  background: #edf3f9;
+  border-top-color: #2d7abf;
+}
+.kc-blog-card[data-cat="schools"]:hover { border-top-color: #2d7abf; }
+
+.kc-blog-card[data-cat="cost-living"] {
+  background: #f8f4ec;
   border-top-color: var(--gold);
 }
+.kc-blog-card[data-cat="cost-living"]:hover { border-top-color: var(--gold); }
+
+.kc-blog-card[data-cat="relocation"] {
+  background: #edf4ef;
+  border-top-color: #1a6b3a;
+}
+.kc-blog-card[data-cat="relocation"]:hover { border-top-color: #1a6b3a; }
+
+.kc-blog-card[data-cat="market"] {
+  background: #f0f0f0;
+  border-top-color: #444;
+}
+.kc-blog-card[data-cat="market"]:hover { border-top-color: #444; }
+
 .kc-blog-card-tag {
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold); /* default */
 }
+/* Tag color matches category accent */
+.kc-blog-card[data-cat="suburb-guides"] .kc-blog-card-tag { color: var(--navy); }
+.kc-blog-card[data-cat="schools"]       .kc-blog-card-tag { color: #2d7abf; }
+.kc-blog-card[data-cat="cost-living"]   .kc-blog-card-tag { color: #96762d; }
+.kc-blog-card[data-cat="relocation"]    .kc-blog-card-tag { color: #1a6b3a; }
+.kc-blog-card[data-cat="market"]        .kc-blog-card-tag { color: #444; }
 .kc-blog-card h2 {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.2rem;
@@ -345,7 +398,7 @@ var POSTS = [
     empty.style.display = 'none';
     grid.innerHTML = shown.map(function (p) {
       var label = CATEGORY_LABELS[p.cat] || p.cat;
-      return '<a class="kc-blog-card" href="/blog/' + p.slug + '" role="listitem">'
+      return '<a class="kc-blog-card" data-cat="' + p.cat + '" href="/blog/' + p.slug + '" role="listitem">'
         + '<span class="kc-blog-card-tag">' + label + '</span>'
         + '<h2>' + p.title + '</h2>'
         + '<p class="kc-blog-card-excerpt">' + (p.excerpt || '') + '</p>'
