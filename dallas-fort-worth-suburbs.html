@@ -654,8 +654,8 @@ function buildRows() {
 }
 
 // ── Sort ──────────────────────────────────────────────────────────────────────
-let lastSortCol = 1;
-let lastSortDir = 'desc';
+let lastSortCol = -1;
+let lastSortDir = 'asc';
 
 function sortTable(colIdx) {
   const tbody = document.getElementById('suburbTableBody');
