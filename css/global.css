@@ -22,8 +22,8 @@
   --shadow:   0 2px 16px rgba(31,45,61,0.09);
 
   --header-topbar-h: 32px;
-  --header-nav-h:    62px;
-  --header-total-h:  94px; /* topbar + nav */
+  --header-nav-h:    76px;
+  --header-total-h:  108px; /* topbar + nav */
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -135,7 +135,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-logo img {
-  height: 54px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -151,7 +151,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-agent-logo img {
-  height: 48px;
+  height: 58px;
   width: auto;
   display: block;
   opacity: 0.92;
@@ -507,8 +507,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 @media (max-width: 768px) {
   :root {
     --header-topbar-h: 28px;
-    --header-nav-h:    56px;
-    --header-total-h:  84px;
+    --header-nav-h:    66px;
+    --header-total-h:  94px;
   }
 
   /* Mobile nav: revert grid to flex, center logo, hamburger on right */
