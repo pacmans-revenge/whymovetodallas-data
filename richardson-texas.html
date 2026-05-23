@@ -458,248 +458,7 @@ gtag('consent', 'default', {
 <!-- Schema: pages/suburbs/richardson-texas-schema.html → Page Settings → Advanced → Page Header Code Injection -->
 
 <!-- ── STYLES — DO NOT EDIT — identical across all suburb pages ─────────── -->
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap');
-
-.kc-suburb *,
-.kc-suburb *::before,
-.kc-suburb *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-.kc-suburb {
-  --navy:    #1F2D3D;
-  --gold:    #B08D57;
-  --ivory:   #F7F4EE;
-  --stone:   #C8C1B6;
-  --charcoal:#232323;
-  --white:   #ffffff;
-  --green:   #1a6b3a;
-  --blue:    #2d7abf;
-  --amber:   #b87333;
-  --light:   #f0ede7;
-  --shadow:  0 2px 16px rgba(31,45,61,0.09);
-  font-family: 'Jost', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  color: var(--charcoal);
-  background: var(--ivory);
-  line-height: 1.65;
-}
-.kc-suburb h1, .kc-suburb h2, .kc-suburb h3, .kc-suburb h4 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  color: var(--navy);
-  line-height: 1.25;
-}
-.kc-suburb h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 600; }
-.kc-suburb h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 600; margin-bottom: 0.75rem; }
-.kc-suburb h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
-.kc-suburb h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
-.kc-suburb p  { margin-bottom: 1rem; }
-.kc-suburb a  { color: var(--navy); }
-.kc-suburb a:hover { color: var(--gold); }
-.kc-suburb strong { color: var(--navy); }
-.kc-section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
-.kc-divider { border: none; border-top: 1px solid var(--stone); margin: 0; opacity: 0.4; }
-
-/* Hero — UPDATE background-image URL for each suburb */
-.kc-hero {
-  background-color: #1F2D3D;
-  background:
-    linear-gradient(135deg, rgba(31,45,61,0.52) 0%, rgba(31,45,61,0.36) 50%, rgba(31,45,61,0.48) 100%),
-    url('/images/richardson-hero.webp') center / cover no-repeat;
-  background-color: #1F2D3D;
-  color: var(--white);
-  padding: clamp(4rem, 10vw, 7rem) 1.5rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.kc-hero-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
-.kc-hero h1 { color: var(--white); margin-bottom: 1rem; text-shadow: 0 2px 12px rgba(0,0,0,0.45); }
-.kc-hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.85); margin-bottom: 0.5rem; text-shadow: 0 1px 6px rgba(0,0,0,0.35); }
-.kc-hero-location { font-size: 0.9rem; font-weight: 700; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2rem; text-shadow: 0 0 16px rgba(0,0,0,0.9), 0 2px 6px rgba(0,0,0,0.95); }
-.kc-hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-/* Buttons */
-.kc-suburb .kc-btn { display: inline-block; padding: 0.8rem 1.75rem; border-radius: 6px; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.95rem; text-decoration: none !important; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; line-height: 1.3; }
-.kc-suburb .kc-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-.kc-suburb .kc-btn--gold    { background: var(--gold) !important;  color: #ffffff !important; }
-.kc-suburb .kc-btn--navy    { background: var(--navy) !important;  color: #ffffff !important; }
-.kc-suburb .kc-btn--outline { background: transparent !important;  color: #ffffff !important; border: 2px solid rgba(255,255,255,0.7); }
-.kc-suburb .kc-btn--outline:hover { background: rgba(255,255,255,0.12) !important; color: #ffffff !important; }
-.kc-suburb .kc-btn--sm { padding: 0.55rem 1.1rem; font-size: 0.85rem; }
-
-/* Stats bar */
-.kc-stats { background: var(--navy); padding: 0; }
-.kc-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); max-width: 1100px; margin: 0 auto; }
-.kc-stat { padding: 1.5rem 1rem; text-align: center; border-right: 1px solid rgba(255,255,255,0.1); }
-.kc-stat:last-child { border-right: none; }
-.kc-stat-val   { font-size: 1.6rem; font-weight: 700; color: var(--gold); font-family: 'Cormorant Garamond', serif; display: block; }
-.kc-stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0.2rem; }
-.kc-stat-note  { font-size: 0.68rem; color: rgba(255,255,255,0.4); display: block; margin-top: 0.1rem; }
-
-/* Jump nav */
-.kc-jumpnav { background: var(--white); border-bottom: 1px solid var(--stone); padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.kc-jumpnav::-webkit-scrollbar { display: none; }
-.kc-jumpnav { -ms-overflow-style: none; scrollbar-width: none; }
-.kc-jumpnav-list { display: flex; gap: 0; list-style: none; max-width: 1100px; margin: 0 auto; white-space: nowrap; }
-.kc-jumpnav-list a { display: block; padding: 0.85rem 1rem; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; color: var(--navy); border-bottom: 3px solid transparent; transition: border-color 0.15s, color 0.15s; }
-.kc-jumpnav-list a:hover { border-bottom-color: var(--gold); color: var(--gold); }
-
-/* Intro box */
-.kc-intro-box { display: flex; gap: 2rem; align-items: flex-start; background: var(--white); border-radius: 12px; padding: 2rem; box-shadow: var(--shadow); }
-.kc-intro-avatar { width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--gold); object-fit: cover; flex-shrink: 0; }
-.kc-intro-text blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: var(--navy); border-left: 3px solid var(--gold); padding-left: 1rem; margin-bottom: 0.75rem; }
-.kc-intro-contact { font-size: 0.88rem; color: #555; margin-bottom: 0; }
-.kc-intro-contact a { color: var(--navy); font-weight: 600; }
-
-/* Section headers */
-.kc-section-header { margin-bottom: 2rem; }
-.kc-section-header .kc-eyebrow { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); font-weight: 700; display: block; margin-bottom: 0.4rem; }
-
-/* Cards */
-.kc-grid { display: grid; gap: 1.25rem; }
-.kc-grid--2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.kc-grid--3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-.kc-grid--4 { grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); }
-.kc-card { background: var(--white); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow); border-top: 3px solid transparent; transition: transform 0.15s, box-shadow 0.15s; }
-.kc-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(31,45,61,0.13); }
-.kc-card--gold  { border-top-color: var(--gold); }
-.kc-card--navy  { border-top-color: var(--navy); }
-.kc-card--green { border-top-color: var(--green); }
-.kc-card-icon { display: block; width: 32px; height: 32px; margin-bottom: 0.6rem; }
-.kc-card-price { font-size: 0.82rem; color: var(--gold); font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.04em; }
-.kc-card p { font-size: 0.88rem; color: #555; margin-bottom: 0.75rem; }
-
-/* Tables */
-.kc-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; box-shadow: var(--shadow); }
-.kc-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--white); }
-.kc-table th { background: var(--navy); color: var(--white); padding: 0.8rem 1rem; text-align: left; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; white-space: nowrap; }
-.kc-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; }
-.kc-table tr:last-child td { border-bottom: none; }
-.kc-table tr:nth-child(even) td { background: #faf8f4; }
-.kc-table .kc-yes { color: var(--green); font-weight: 700; }
-.kc-table .kc-no  { color: var(--amber); }
-.kc-table .kc-hl  { background: #fffbf2 !important; font-weight: 600; }
-
-/* Callouts */
-.kc-callout { background: var(--light); border-left: 4px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; font-size: 0.9rem; }
-.kc-callout strong { color: var(--navy); }
-
-/* Pros/Cons */
-.kc-proscons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.kc-proscons-col { background: var(--white); border-radius: 10px; padding: 1.5rem; box-shadow: var(--shadow); }
-.kc-proscons-col h3 { margin-bottom: 1rem; }
-.kc-proscons-col.pros h3 { color: var(--green); }
-.kc-proscons-col.cons h3 { color: var(--amber); }
-.kc-proscons-list { list-style: none; }
-.kc-proscons-list li { padding: 0.5rem 0 0.5rem 1.5rem; border-bottom: 1px solid #eee; font-size: 0.88rem; position: relative; }
-.kc-proscons-list li::before { position: absolute; left: 0; }
-.pros .kc-proscons-list li::before { content: "✓"; color: var(--green); font-weight: 700; }
-.cons .kc-proscons-list li::before { content: "—"; color: var(--amber); font-weight: 700; }
-.kc-proscons-list li:last-child { border-bottom: none; }
-
-/* FAQ */
-.kc-faq-item { border-bottom: 1px solid #e0ddd6; }
-.kc-faq-q { width: 100%; background: none; border: none; text-align: left; padding: 1.1rem 0; font-size: 0.95rem; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: 'Jost', sans-serif; }
-.kc-faq-q:hover { color: var(--gold); }
-.kc-faq-icon { font-size: 1.2rem; flex-shrink: 0; transition: transform 0.2s; color: var(--gold); }
-.kc-faq-q.open .kc-faq-icon { transform: rotate(45deg); }
-.kc-faq-a { display: none; padding: 0 0 1.25rem; font-size: 0.9rem; color: #444; line-height: 1.7; }
-.kc-faq-a.open { display: block; }
-
-/* CTAs */
-.kc-leadmagnet { background: linear-gradient(135deg, var(--navy), #2e4560); border-radius: 12px; padding: 3rem 2rem; text-align: center; color: var(--white); margin: 2rem 0; }
-.kc-leadmagnet h2 { color: var(--white); margin-bottom: 0.75rem; }
-.kc-leadmagnet p  { color: rgba(255,255,255,0.8); max-width: 560px; margin: 0 auto 1.5rem; }
-.kc-contact-cta { background: var(--white); border-radius: 12px; padding: 2.5rem 2rem; text-align: center; box-shadow: var(--shadow); border-top: 4px solid var(--gold); }
-.kc-contact-cta p { color: #555; max-width: 520px; margin: 0 auto 1.5rem; }
-.kc-contact-meta { font-size: 0.85rem; color: #888; margin-top: 1rem; margin-bottom: 0; }
-.kc-contact-meta a { color: var(--navy); }
-
-/* Badges */
-.kc-grade { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 4px; font-weight: 700; font-size: 0.9rem; }
-.kc-grade--a  { background: #d4f4e2; color: var(--green); }
-.kc-grade--b  { background: #d4e8f8; color: var(--blue); }
-.kc-grade--ab { background: #e2f1d4; color: #3a7a1a; }
-.kc-gs-above  { color: var(--green); font-weight: 700; }
-.kc-gs-avg    { color: #666; font-weight: 700; }
-.kc-tag { display: inline-block; font-size: 0.72rem; background: var(--light); color: var(--navy); padding: 0.15rem 0.5rem; border-radius: 3px; margin: 1px; font-weight: 600; }
-
-/* Commute cards */
-.kc-commute-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-.kc-commute-card { background: var(--white); border-radius: 8px; padding: 1rem 1.25rem; box-shadow: var(--shadow); }
-.kc-commute-dest { font-weight: 700; font-size: 0.88rem; color: var(--navy); }
-.kc-commute-time { font-size: 1.2rem; font-weight: 700; color: var(--gold); font-family: 'Cormorant Garamond', serif; display: block; margin: 0.2rem 0; }
-.kc-commute-note { font-size: 0.74rem; color: #888; }
-
-/* Breadcrumb */
-.kc-breadcrumb { font-size: 0.78rem; color: #888; max-width: 1100px; margin: 0 auto; padding: 0.75rem 1.5rem; }
-.kc-breadcrumb a { color: #888; text-decoration: none; }
-.kc-breadcrumb a:hover { color: var(--gold); }
-.kc-breadcrumb span { margin: 0 0.4rem; }
-
-/* TREC footer */
-.kc-trec { background: var(--navy); color: rgba(255,255,255,0.55); font-size: 0.72rem; text-align: center; padding: 1.5rem; line-height: 1.7; margin-top: 3rem; }
-.kc-trec a { color: rgba(255,255,255,0.65); }
-
-/* Video embed */
-.kc-video-wrap { position: relative; width: 100%; max-width: 800px; margin: 1.5rem auto; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 8px 32px rgba(0,0,0,0.25); cursor: pointer; }
-.kc-video-wrap::before { content: ''; display: block; padding-top: 56.25%; }
-.kc-video-thumb { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.2s; }
-.kc-video-wrap:hover .kc-video-thumb { opacity: 0.85; }
-.kc-video-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 72px; height: 72px; background: rgba(176,141,87,0.92); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.35); }
-.kc-video-play::after { content: ''; display: block; width: 0; height: 0; border-style: solid; border-width: 12px 0 12px 22px; border-color: transparent transparent transparent #fff; margin-left: 4px; }
-.kc-video-wrap:hover .kc-video-play { background: var(--gold); transform: translate(-50%,-50%) scale(1.08); }
-.kc-video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
-.kc-video-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.75rem 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; font-size: 0.85rem; font-weight: 600; }
-
-/* Responsive */
-@media (max-width: 640px) {
-  #kc-data-subscores { grid-template-columns: 1fr 1fr !important; gap: 0.6rem !important; }
-  .kc-data-top-inner { flex-direction: column !important; align-items: center !important; }
-  #kc-grade-chips { justify-content: center !important; }
-  .kc-school-ratings { justify-content: center !important; }
-  .kc-data-divider { display: none !important; }
-  .kc-data-top-inner > div { text-align: center !important; }
-  #kc-schools div[style*="flex-wrap:wrap"] { justify-content: center !important; }
-  #kc-lifestyle div[style*="flex-wrap:wrap"] { justify-content: center !important; }
-  #kc-recreation div[style*="flex-wrap:wrap"] { justify-content: center !important; }
-  #kc-intro div[style*="flex-wrap:wrap"] { justify-content: center !important; }
-}
-
-@media (max-width: 680px) {
-  .kc-intro-box { flex-direction: column; }
-  .kc-intro-avatar { width: 72px; height: 72px; }
-  .kc-proscons { grid-template-columns: 1fr; }
-  .kc-stat-val { font-size: 1.25rem; }
-  .kc-section { padding: 2.5rem 1rem; }
-  .kc-leadmagnet, .kc-contact-cta { padding: 2rem 1.25rem; }
-  .kc-jumpnav { padding: 0 0.5rem; }
-  .kc-jumpnav-list a { padding: 0.65rem 0.6rem; font-size: 0.68rem; letter-spacing: 0.03em; }
-  .kc-table-wrap { border-radius: 6px; }
-  .kc-table th, .kc-table td { padding: 0.6rem 0.75rem; font-size: 0.82rem; }
-  .kc-table .kc-col-hide-mobile { display: none; }
-  .kc-stats-grid { grid-template-columns: 1fr 1fr; gap: 0; }
-  .kc-stat { border-right: 1px solid rgba(255,255,255,0.15); border-bottom: 1px solid rgba(255,255,255,0.15); padding: 1rem; }
-  .kc-stat:nth-child(even) { border-right: none; }
-  .kc-hero h1 { font-size: 2.2rem; }
-  .kc-hero-sub { font-size: 1rem; }
-  .kc-hero-btns { flex-direction: column; align-items: center; gap: 0.75rem; }
-}
-
-/* ── Amenity rank banner (parks / dining / shopping — injected by JS) ──────── */
-.kc-amenity-rank-banner {
-  display: none;
-  margin: 0 0 1.5rem;
-  padding: 0.85rem 1.15rem;
-  background: var(--light);
-  border-left: 3px solid var(--gold);
-  border-radius: 0 8px 8px 0;
-  font-size: 0.88rem;
-  color: var(--charcoal);
-  line-height: 1.6;
-}
-.kc-amenity-rank-banner strong { color: var(--navy); }
-</style>
+<style>.kc-hero{background-color:#1F2D3D;background:linear-gradient(135deg,rgba(31,45,61,.52) 0%,rgba(31,45,61,.36) 50%,rgba(31,45,61,.48) 100%),url('/images/richardson-hero.webp') center/cover no-repeat;}</style>
 
 <!-- ── PAGE CONTENT ────────────────────────────────────────────────────────── -->
 <div class="kc-suburb">
@@ -1187,7 +946,7 @@ gtag('consent', 'default', {
 <hr class="kc-divider">
 
 <!-- ═══ SECTION 11: EMPLOYERS ═══ -->
-<section id="kc-employers" style="background:var(--ivory);">
+<section id="kc-jobs" style="background:var(--ivory);">
   <div class="kc-section-inner">
     <p class="kc-eyebrow">Work</p>
     <h2>Where Richardson Residents Work</h2>
@@ -1237,7 +996,7 @@ gtag('consent', 'default', {
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M9 3h10M9 3a5 5 0 0 0 5 10 5 5 0 0 0 5-10M14 13v5M10 18h8M8 22h12"/></svg>
         </span>
-        <h3>Youth Sports &amp; Athletics</h3>
+        <h4>Youth Sports &amp; Athletics</h4>
         <p>RISD athletics spans 25+ varsity sports. Richardson Youth Sports Association (RYSA) runs competitive leagues for soccer, baseball, softball, and flag football. Club lacrosse, swimming, and gymnastics programs fill in the gaps. Huffhines Park and Breckinridge Park host weekend tournaments year-round.</p>
       </div>
 
@@ -1245,7 +1004,7 @@ gtag('consent', 'default', {
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M14 3L6 12h4l-3 6h6v7h2v-7h6l-3-6h4L14 3z"/></svg>
         </span>
-        <h3>Outdoor Life at Breckinridge</h3>
+        <h4>Outdoor Life at Breckinridge</h4>
         <p>Breckinridge Park is Richardson's crown jewel — 427 acres with equestrian trails, fishing ponds, nature preserves, and sports fields. Spring Creek Nature Area adds birding and native prairie restoration. On weekends, trails fill with families, cyclists, and dog walkers from across North Dallas.</p>
       </div>
 
@@ -1253,7 +1012,7 @@ gtag('consent', 'default', {
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M6 9a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v13a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"/><path d="M9 9V7M19 9V7M9 14h10M9 18h6"/></svg>
         </span>
-        <h3>CityLine &amp; Main Street Dining</h3>
+        <h4>CityLine &amp; Main Street Dining</h4>
         <p>CityLine — a large mixed-use development next to a DART station — anchors Richardson's dining and retail scene with national brands, local restaurants, and walkable patios. Main Street in historic downtown adds Texas BBQ joints and Tex-Mex. Excellent Korean, Vietnamese, and Indian food clusters along Greenville Ave and Arapaho Road.</p>
       </div>
 
@@ -1261,7 +1020,7 @@ gtag('consent', 'default', {
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><rect x="4" y="6" width="20" height="18" rx="2"/><line x1="4" y1="11" x2="24" y2="11"/><line x1="9" y1="3" x2="9" y2="8"/><line x1="19" y1="3" x2="19" y2="8"/></svg>
         </span>
-        <h3>Wildflower &amp; Arts Festival</h3>
+        <h4>Wildflower &amp; Arts Festival</h4>
         <p>The <strong>Wildflower! Arts &amp; Music Festival</strong> — one of DFW's largest free outdoor music events — draws 25,000+ attendees each May to Galatyn Park. The Richardson Civic Center hosts theater, art exhibitions, and cultural events year-round. July Fourth fireworks at Huffhines Park are a multi-generational Richardson tradition.</p>
       </div>
 
@@ -1269,7 +1028,7 @@ gtag('consent', 'default', {
         <span class="kc-card-icon">
           <svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><circle cx="14" cy="14" r="10"/><polyline points="14,9 14,14 17.5,17.5"/></svg>
         </span>
-        <h3>Telecom Corridor Culture</h3>
+        <h4>Telecom Corridor Culture</h4>
         <p>Living adjacent to a global tech hub shapes daily life — UTD-hosted public lectures, engineering meetups, innovation events, and a startup ecosystem centered around Galatyn Park. For families where both parents work in tech, Richardson is one of the few DFW suburbs where you're embedded in that world, not just commuting past it.</p>
       </div>
 
@@ -1318,6 +1077,8 @@ gtag('consent', 'default', {
     <p style="font-size:0.8rem;color:#888;margin-top:0.75rem;">Source: <a href="https://www.walkscore.com/TX/Richardson" target="_blank" rel="noopener">Walk Score</a>. Scores vary by neighborhood — CityLine area scores higher for walkability.</p>
 
     <h3 style="margin-top:2.5rem;">Parks, Trails &amp; Green Space</h3>
+    <!-- Parks amenity rank — injected by kcLoadSuburbData() from suburb-profiles.json -->
+    <div id="kc-amenity-parks-rank" class="kc-amenity-rank-banner"></div>
     <p>Richardson's park system covers over 900 acres across 58 parks with 26+ miles of trails. Two large natural preserves anchor the system and feel genuinely wild for an inner-ring suburb.</p>
     <div class="kc-grid kc-grid--2" style="margin-top:1.5rem;">
       <div class="kc-card">
@@ -1376,6 +1137,8 @@ gtag('consent', 'default', {
       <span class="kc-tag">Disc Golf</span>
       <span class="kc-tag">Equestrian (Breckinridge)</span>
     </div>
+    <!-- Dining & shopping ranks — injected by kcLoadSuburbData() from suburb-profiles.json -->
+    <div id="kc-amenity-dining-shop-rank" class="kc-amenity-rank-banner" style="margin-top:1.5rem;"></div>
     <div class="kc-callout">
       <strong>Parent reality check:</strong> Richardson's youth sports scene is active but not as tournament-dominated as Frisco or McKinney. For elite club sports, you'll likely drive to Allen or Frisco. For rec leagues, school athletics, and community-level play, Richardson has everything you need within city limits.
     </div>
@@ -1673,6 +1436,49 @@ function kcLoadSuburbData() {
       }
       var updEl = document.getElementById('kc-mkt-updated');
       if (updEl && suburb.market && suburb.market.updated) updEl.textContent = suburb.market.updated;
+
+      // ── Amenity rank narratives ────────────────────────────────────────────
+      var ranks = (suburb.scores && suburb.scores.amenity_ranks) || null;
+      if (ranks) {
+        var _n = SUBURB_NAME || 'This suburb';
+        var demo = suburb.demographics || {};
+        function _vi(rank, mod) { return (rank && mod) ? Math.abs(rank) % mod : 0; }
+        function kcParksNarr(rank, pct, count, total) {
+          if (!rank || !total) return null;
+          var rStr  = '<strong>#' + rank + ' of ' + total + '</strong> DFW suburbs';
+          var cNote = count ? ' — ' + count + ' parks and green spaces mapped within city limits' : '';
+          var v = _vi(rank, 4);
+          if (rank === 1) return 'No suburb in DFW packs in more park space per resident. ' + _n + ' ranks ' + rStr + ' for parks per capita' + cNote + '. Trails, playgrounds, and open fields are woven into nearly every neighborhood — for families, that\'s a meaningful day-to-day quality-of-life win.';
+          if (pct >= 90) { var o = ['Park access is one of ' + _n + '\'s real strengths — ' + rStr + ' for green space per resident (top ' + pct + '%)' + cNote + '. Trails, playgrounds, and sports fields are never far from home.', _n + ' ranks ' + rStr + ' for parks per resident, landing in the top ' + pct + '% of DFW suburbs' + cNote + '. Outdoor options are a short walk or bike ride away rather than a planned outing.', 'With ' + rStr + ' for parks per capita (top ' + pct + '%)' + cNote + ', ' + _n + ' punches well above its weight on outdoor access. Kids sports, trail runs, and weekend picnics rarely require leaving the city.']; return o[v % 3]; }
+          if (pct >= 75) { var o = [_n + ' ranks ' + rStr + ' for parks per resident — top ' + pct + '% in DFW' + cNote + '. Green space is well-distributed across the city, which matters when you\'re picking a neighborhood and want a park within reach of home.', 'For a suburb its size, ' + _n + ' offers strong park coverage: ' + rStr + ' per capita (top ' + pct + '%)' + cNote + '. Most neighborhoods have trail access or a community park nearby.', 'Green space is a genuine asset here — ' + rStr + ' for parks per resident, top ' + pct + '% of DFW' + cNote + '. Weekend outdoor activities and youth sports don\'t require driving to another city.', 'Ranking ' + rStr + ' for parks per capita (top ' + pct + '%)' + cNote + ', ' + _n + ' gives families solid access to trails, playgrounds, and recreation areas without having to plan around it.']; return o[v % 4]; }
+          if (pct >= 50) { var o = [_n + ' lands ' + rStr + ' for parks per resident (top ' + pct + '%)' + cNote + '. The major parks and trail systems cover most of the city — weekend outdoor options are available, though a short drive is usually part of the trip.', 'Park access is mid-range for DFW: ' + rStr + ' per capita (top ' + pct + '%)' + cNote + '. The larger parks and trail corridors are well-used; not every neighborhood has green space within walking distance.', 'Ranking ' + rStr + ' for parks per resident (top ' + pct + '%)' + cNote + ', ' + _n + ' has the essentials covered — community parks, youth sports fields, trail access — though distribution across neighborhoods varies.']; return o[v % 3]; }
+          var o = [_n + ' ranks ' + rStr + ' for parks per resident' + cNote + '. Green space exists but is less evenly distributed than higher-ranked suburbs — most park visits involve a short drive rather than a walk from home.', 'Park density is on the lower end for DFW: ' + rStr + ' per capita' + cNote + '. The parks that exist are well-maintained, but families looking for walkable trail access will find the options thinner than in neighboring suburbs.', 'Ranking ' + rStr + ' for parks per resident' + cNote + ', ' + _n + ' is still building out its recreation infrastructure. Worth checking specific neighborhood proximity to parks before picking a street.']; return o[v % 3];
+        }
+        function kcDiningShopNarr(rRank, rPct, rTotal, sRank, sPct, sTotal, rCount, sCount, pop, density, sqmi) {
+          var hasR = rRank && rTotal; var hasS = sRank && sTotal;
+          if (!hasR && !hasS) return null;
+          var rStr = hasR ? '<strong>#' + rRank + ' of ' + rTotal + '</strong>' : null;
+          var sStr = hasS ? '<strong>#' + sRank + ' of ' + sTotal + '</strong>' : null;
+          var v = _vi(rRank || sRank, 5);
+          if (pop > 150000) { var popK = Math.round(pop / 1000); var sqmiTxt = sqmi ? sqmi + ' sq miles' : ''; var densDesc = density ? density.toLocaleString() + ' residents per sq mile' : ''; var scaleCtx = sqmiTxt && densDesc ? sqmiTxt + ' at ' + densDesc : (sqmiTxt || densDesc); var rCStr = rCount ? rCount.toLocaleString() + ' restaurants' : 'hundreds of dining options'; var sCStr = sCount ? sCount.toLocaleString() + ' retail locations' : 'extensive retail'; var o = ['Per-capita rankings reflect geographic spread, not limited options. ' + _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident — mid-range numbers for a city of ' + popK + 'K' + (sqmiTxt ? ' covering ' + sqmiTxt : '') + '. In practice that means ' + rCStr + ' and ' + sCStr + ' distributed across neighborhoods, with concentrations near major corridors.', 'With ' + popK + 'K residents' + (scaleCtx ? ' across ' + scaleCtx : '') + ', ' + _n + "'s per-capita rankings (" + rStr + ' for dining, ' + sStr + ' for retail) reflect how spread out commercial areas are — not a shortage. Families typically have solid options within a 5-10 minute drive of wherever they live.', _n + ' covers ' + (sqmiTxt || 'a large area') + ', so dining and retail are distributed by neighborhood rather than concentrated downtown. The city ranks ' + rStr + ' for restaurants and ' + sStr + ' for shopping per resident — solid numbers given the scale.']; return o[v % 3]; }
+          var isSpread = density && density < 1500;
+          if (hasR && hasS) {
+            if (rPct >= 75 && sPct >= 75) { var o = ['Day-to-day errands and dining out are well-covered: ' + _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. Most families handle groceries, weeknight dinners, and everyday shopping without leaving the city.', 'Dining and retail are two of ' + _n + '\'s practical strengths — ' + rStr + ' for restaurants and ' + sStr + ' for shopping per capita. Residents rarely need to drive to a neighboring city for everyday needs.', _n + ' ranks ' + rStr + ' for dining and ' + sStr + ' for retail per resident. Weeknight dinner variety is real, and the shopping infrastructure handles the full range of family errands.']; return o[v % 3]; }
+            if (rPct >= 50 && sPct >= 50) { var o = ['On the practical side, ' + _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. The everyday staples are well-covered; specialty dining and stores are a short drive away.', 'Dining and shopping cover daily family life comfortably — ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. Most weeknight needs stay local; a larger mall or specialty grocer may mean a quick trip out.', _n + ' lands ' + rStr + ' for dining and ' + sStr + ' for retail per capita — solidly mid-range for DFW, with the usual suburban mix of chain restaurants and major retailers within easy reach.']; return o[v % 3]; }
+            if (rPct < 50 && sPct < 50) { if (isSpread) { var densDesc = density ? Math.round(density).toLocaleString() + ' residents per sq mile' : 'lower density'; var sqmiDesc = sqmi ? sqmi + ' sq miles' : 'a larger footprint'; var o = [_n + ' is a lower-density suburb (' + densDesc + '), and its commercial footprint reflects that — ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. The essentials are covered locally; families typically drive 10–15 minutes for more variety.', 'At ' + sqmiDesc + ' with a ' + densDesc + ' character, ' + _n + ' spreads development across a larger area than the per-capita numbers suggest. It ranks ' + rStr + ' for dining and ' + sStr + " for retail — expect the basics locally, with neighboring cities filling the gaps.", "Lower residential density means commercial development follows a more spread-out pattern in " + _n + " — " + rStr + " for restaurants and " + sStr + " for retail per resident. What's here covers daily needs; specialty dining and larger retailers are a short drive away."]; return o[v % 3]; } var o = [_n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident — both on the lower end for DFW. Families here regularly drive to neighboring cities for dining variety and bigger shopping options.', 'Dining and retail are still catching up to population growth: ' + rStr + ' for restaurants and ' + sStr + ' for shopping per capita. Essentials are covered locally; expect to drive for variety — a common tradeoff in newer suburbs where commercial development trails residential.', 'As a fast-growing suburb, ' + _n + ' is still building out its commercial base — ' + rStr + ' for dining and ' + sStr + ' for retail per resident. Families get the basics locally; a neighboring city covers the rest.']; return o[v % 3]; }
+            if (rPct >= sPct) { var o = [_n + ' ranks ' + rStr + ' for restaurants per resident — decent weeknight dining variety without leaving the city — but comes in at ' + sStr + ' for retail, so bigger shopping trips mean heading elsewhere.', 'The dining scene holds up well at ' + rStr + ' per resident, but retail is thinner at ' + sStr + ' per capita. Families eat local more than they shop local.']; return o[v % 2]; }
+            var o = ['Retail is the stronger suit: ' + _n + ' ranks ' + sStr + ' for shopping per resident, though the restaurant scene comes in at ' + rStr + ' per capita. Grocery runs and errands stay local; weekend dinner variety usually means a drive.', _n + ' is better positioned for errands than eating out — ' + sStr + ' for retail vs. ' + rStr + ' for restaurants per resident. Shopping infrastructure covers family needs well; the dining selection is more limited.']; return o[v % 2];
+          }
+          if (hasR) return _n + ' ranks ' + rStr + ' for restaurants per resident (top ' + rPct + '% of DFW suburbs). ' + (rPct >= 50 ? 'Weeknight dining variety is solid for a suburb its size.' : 'Options cover the basics — more variety is a short drive away.');
+          return _n + ' ranks ' + sStr + ' for retail per resident (top ' + sPct + '% of DFW suburbs). ' + (sPct >= 50 ? 'Day-to-day shopping and errands are well-covered locally.' : 'Essential retail is in place; specialty stores usually mean a quick trip out.');
+        }
+        var parksNarr = kcParksNarr(ranks.parks_rank, ranks.parks_percentile, ranks.parks_count, ranks.parks_total_suburbs);
+        var dsNarr    = kcDiningShopNarr(ranks.restaurants_rank, ranks.restaurants_percentile, ranks.restaurants_total_suburbs, ranks.shopping_rank, ranks.shopping_percentile, ranks.shopping_total_suburbs, ranks.restaurants_count, ranks.shopping_count, demo.population || 0, demo.pop_density || null, demo.land_area_sqmi || null);
+        var pBanner = document.getElementById('kc-amenity-parks-rank');
+        if (pBanner && parksNarr) { pBanner.innerHTML = parksNarr; pBanner.style.display = 'block'; }
+        var dsBanner = document.getElementById('kc-amenity-dining-shop-rank');
+        if (dsBanner && dsNarr) { dsBanner.innerHTML = dsNarr; dsBanner.style.display = 'block'; }
+      }
     })
     .catch(function(e){ console.warn('kcLoadSuburbData:', e); });
 }
