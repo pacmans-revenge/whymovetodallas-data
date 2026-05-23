@@ -1629,6 +1629,7 @@ function kcPlayVideo(wrap, videoId) {
   iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('loading', 'lazy');
+  // Hide thumbnail and play button
   var thumb = wrap.querySelector('.kc-video-thumb');
   var btn   = wrap.querySelector('.kc-video-play');
   var label = wrap.querySelector('.kc-video-label');
@@ -1644,11 +1645,13 @@ function kcPlayVideo(wrap, videoId) {
 function kcFaq(btn) {
   var answer = btn.nextElementSibling;
   var isOpen = answer.classList.contains('open');
+  // Close all
   document.querySelectorAll('#kc-faq-list .kc-faq-a').forEach(function(a) { a.classList.remove('open'); });
   document.querySelectorAll('#kc-faq-list .kc-faq-q').forEach(function(q) {
     q.classList.remove('open');
     q.setAttribute('aria-expanded','false');
   });
+  // Open clicked (if it was closed)
   if (!isOpen) {
     answer.classList.add('open');
     btn.classList.add('open');
@@ -1674,8 +1677,8 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 // See: tools/build-suburb-profiles.js, tools/data-api-reference.md
 (function kcLoadSuburbData() {
   // ── CONFIG ─────────────────────────────────────────────────────────────────
-  var DATA_URL   = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  var SUBURB_KEY = 'flower-mound';
+  var DATA_URL    = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
+  var SUBURB_KEY  = 'flower-mound';
   var SUBURB_NAME = 'Flower Mound';
   var COMPARE_SUBURBS = ["coppell","southlake","colleyville","keller"];
 
@@ -1726,10 +1729,12 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
       var dataDate = updated || 'Recent';
 
       // ── Stats bar ─────────────────────────────────────────────────────────
+      // Population
       if (demo.population) {
         setText('kc-stat-pop', fmtPop(demo.population));
-        setText('kc-stat-pop-note', 'ACS 2023 5-yr estimate · Census Bureau');
+        setText('kc-stat-pop-note', 'ACS 2023 5-yr est. · current ~80K+');
       }
+      // Median SFR price
       if (mkt.sfr_median_price) {
         setText('kc-stat-price', fmtPrice(mkt.sfr_median_price));
         setText('kc-stat-price-note', 'See live listings ↗ · NTREIS' + (updated ? ' · ' + updated : ''));
@@ -1747,7 +1752,9 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
       // ── Walkability scores ────────────────────────────────────────────────
       if (walk.walk_score != null) setText('kc-ws-walk', walk.walk_score);
       if (walk.bike_score != null) setText('kc-ws-bike', walk.bike_score);
+      // Transit: show N/A if null (Frisco has no transit data)
       setText('kc-ws-transit', walk.transit_score != null ? walk.transit_score : 'N/A');
+      // Walk Score attribution link with UTM params from data
       if (walk.ws_link) {
         var wsLinkEl = document.getElementById('kc-ws-link');
         if (wsLinkEl) wsLinkEl.href = walk.ws_link;
@@ -1764,6 +1771,9 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
       }
       if (mkt.sfr_months_supply != null) {
         setText('kc-mkt-msi', mkt.sfr_months_supply.toFixed(1) + ' mo.');
+        var condition = mkt.market_condition
+          ? mkt.market_condition.charAt(0).toUpperCase() + mkt.market_condition.slice(0) + " market"
+          : msiLabel(mkt.sfr_months_supply);
         setText('kc-mkt-msi-sub', msiLabel(mkt.sfr_months_supply) + ' · 12-month calculation · ' + dataDate);
       }
       if (mkt.sfr_closed_sales_12mo != null) {
@@ -1892,6 +1902,7 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
         cmpEl.innerHTML = tbl;
       }
       if (updated) setText('kc-compare-date', updated);
+
       // ── Amenity rank narratives ────────────────────────────────────────────
       var ranks = (suburb.scores && suburb.scores.amenity_ranks) || null;
       if (ranks) {
