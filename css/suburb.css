@@ -124,15 +124,14 @@
   z-index: 100;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  text-align: center; /* centers inline-flex list when it fits; scroll starts from left when it overflows */
 }
 .kc-jumpnav-list {
-  display: flex;
+  display: inline-flex; /* inline-flex respects parent text-align for centering; avoids left-clipping bug */
   gap: 0;
   list-style: none;
   max-width: 1100px;
-  margin: 0 auto;
   white-space: nowrap;
-  justify-content: center;
 }
 .kc-jumpnav-list a {
   display: block;

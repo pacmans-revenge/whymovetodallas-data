@@ -1248,7 +1248,7 @@ function kcPlayVideo(wrap,videoId){var iframe=document.createElement('iframe');i
 function kcFaq(btn){var answer=btn.nextElementSibling;var isOpen=answer.classList.contains('open');document.querySelectorAll('#kc-faq-list .kc-faq-a').forEach(function(a){a.classList.remove('open')});document.querySelectorAll('#kc-faq-list .kc-faq-q').forEach(function(q){q.classList.remove('open');q.setAttribute('aria-expanded','false')});if(!isOpen){answer.classList.add('open');btn.classList.add('open');btn.setAttribute('aria-expanded','true')}}
 document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a){a.addEventListener('click',function(e){var target=document.querySelector(this.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}})});
 (function kcLoadSuburbData(){
-  var DATA_URL='https://raw.githubusercontent.com/pacmans-revenge/whymovetodallas-data/main/suburb-profiles.json';
+  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
   var SUBURB_KEY='prosper';
   var COMPARE_SUBURBS = ["frisco","celina","mckinney","allen"];
   var SUBURB_NAME='Prosper';

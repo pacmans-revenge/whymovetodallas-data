@@ -1500,7 +1500,7 @@ function kcSet(id, val) {
 }
 
 function kcLoadSuburbData() {
-  fetch('https://raw.githubusercontent.com/pacmans-revenge/whymovetodallas-data/main/suburb-profiles.json')
+  fetch('https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       var suburbs = data.suburbs || data;
