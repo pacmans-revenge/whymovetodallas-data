@@ -600,3 +600,31 @@
   #kc-intro div[style*="flex-wrap:wrap"] { justify-content: center !important; }
 }
 
+/* ── Blog post image rules ───────────────────────────────────────────────── */
+/* Constrain all images inside the article body */
+.kc-post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+}
+/* figure wrapper produced by [caption] shortcode conversion */
+.kc-blog-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.kc-blog-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.kc-blog-figure figcaption {
+  font-size: 0.82rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+  line-height: 1.4;
+}
