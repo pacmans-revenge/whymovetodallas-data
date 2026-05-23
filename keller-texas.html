@@ -796,6 +796,7 @@ gtag('consent', 'default', {
     <li><a href="#kc-safety">Safety</a></li>
     <li><a href="#kc-market">Real Estate</a></li>
     <li><a href="#kc-proscons">Pros &amp; Cons</a></li>
+    <li><a href="#kc-compare">Compare</a></li>
     <li><a href="#kc-faq">FAQ</a></li>
     <li><a href="#kc-contact">Contact</a></li>
   </ul>
@@ -1475,23 +1476,22 @@ gtag('consent', 'default', {
   </div>
   <p>Yes — Keller is one of the safer communities in the DFW metro. The city's violent crime rate sits well below both the Texas state average and the national average of approximately 4.0 per 1,000 residents. Property crime is similarly below average, and Niche consistently rates Keller's crime and safety as an "A" category. For families relocating from higher-crime metro areas, the difference is noticeable.</p>
 
-  <div class="kc-grid kc-grid--3" style="margin-top:1rem;">
-    <div class="kc-card kc-card--green">
-      <svg class="kc-card-icon" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2L4 7v8c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 2z"/></svg>
-      <h4>Violent Crime Rate</h4>
-      <p>~0.8 per 1,000 residents — roughly 80% below the national average of ~4.0. Keller consistently ranks among the safest cities of its size in Tarrant County. Source: FBI UCR / NeighborhoodScout.</p>
+  <div class="kc-grid kc-grid--3" style="margin:1.5rem 0;">
+    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+      <div style="font-size:2rem;font-weight:700;color:var(--green);font-family:'Cormorant Garamond',serif;">0.8</div>
+      <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">Violent crimes per 1,000 residents<br><span style="color:#888;">(U.S. avg: ~4.0)</span></div>
     </div>
-    <div class="kc-card kc-card--green">
-      <svg class="kc-card-icon" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 11.5L14 2l12 9.5"/><path d="M5 9.5v14a.5.5 0 0 0 .5.5H11v-7h6v7h5.5a.5.5 0 0 0 .5-.5V9.5"/></svg>
-      <h4>Property Crime</h4>
-      <p>Below state and national averages. Property crime in Keller tracks near ~12–15 per 1,000 — well under the national ~20/1,000. Package theft and vehicle break-ins (the most common incidents) are not absent, but remain significantly lower than major urban areas.</p>
+    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+      <div style="font-size:2rem;font-weight:700;color:var(--green);font-family:'Cormorant Garamond',serif;">~13</div>
+      <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">Property crimes per 1,000 residents<br><span style="color:#888;">(Texas avg: ~22.4)</span></div>
     </div>
-    <div class="kc-card kc-card--green">
-      <svg class="kc-card-icon" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="11"/><circle cx="14" cy="14" r="6"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="14" y1="20" x2="14" y2="25"/></svg>
-      <h4>Keller Police Department</h4>
-      <p>The Keller PD operates a community-oriented policing model with dedicated neighborhood liaison officers and active communication through Nextdoor and city alerts. Response times are fast for a city this size, and the department has a strong local reputation. Niche Safety Grade: A.</p>
+    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+      <div style="font-size:2rem;font-weight:700;color:var(--green);font-family:'Cormorant Garamond',serif;">A</div>
+      <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">Niche Safety Grade<br><span style="color:#888;">Among the safest cities in Tarrant Co.</span></div>
     </div>
   </div>
+
+  <p style="font-size:0.88rem;color:#555;">Sources: <a href="https://www.niche.com/places-to-live/keller-tarrant-tx/crime-safety/" target="_blank" rel="noopener">Niche Crime &amp; Safety</a> · <a href="https://www.neighborhoodscout.com/tx/keller/crime" target="_blank" rel="noopener">NeighborhoodScout</a> · <a href="https://www.kellertx.gov/189/Police-Department" target="_blank" rel="noopener">Keller PD</a></p>
 </section>
 
 <hr class="kc-divider">
@@ -1600,6 +1600,21 @@ gtag('consent', 'default', {
       </ul>
     </div>
   </div>
+</section>
+
+<hr class="kc-divider">
+
+<!-- ── SUBURB COMPARISON ──────────────────────────────────────────────────── -->
+<section id="kc-compare" class="kc-section">
+  <div class="kc-section-header">
+    <span class="kc-eyebrow">Side by Side</span>
+    <h2>How Keller Compares to Nearby Suburbs</h2>
+  </div>
+  <p>Every family weighs the same factors differently. Here is how Keller stacks up against nearby options on the metrics that matter most for relocating families.</p>
+  <div class="kc-compare-wrap">
+    <div id="kc-compare-table"><!-- populated by JS --></div>
+  </div>
+  <p style="font-size:0.75rem;color:#aaa;margin-top:0.75rem;">Scores computed from Niche, NTREIS, WalkScore, and Census ACS &middot; Updated <span id="kc-compare-date">2026</span> &middot; <a href="/dallas-fort-worth-suburbs" style="color:var(--gold);">Compare all DFW suburbs &rarr;</a></p>
 </section>
 
 <hr class="kc-divider">
@@ -1741,8 +1756,9 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 // ── Live suburb data pipeline ──────────────────────────────────────────────
 (function kcLoadSuburbData() {
   var DATA_URL    = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  var SUBURB_KEY  = 'keller';
-  var SUBURB_NAME = 'Keller';
+  var SUBURB_KEY      = 'keller';
+  var SUBURB_NAME     = 'Keller';
+  var COMPARE_SUBURBS = ['keller','southlake','flower-mound','colleyville','grapevine'];
 
   function fmtPrice(val) {
     if (!val) return null;
@@ -1881,6 +1897,32 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
           condoCallout.innerHTML = calloutHtml;
         }
       }
+
+      // ── Comparison table ─────────────────────────────────────────────────
+      var cmpEl = document.getElementById('kc-compare-table');
+      if (cmpEl && data.suburbs) {
+        var cmpKeys = [SUBURB_KEY];
+        COMPARE_SUBURBS.forEach(function(k) { if (k !== SUBURB_KEY) cmpKeys.push(k); });
+        var tbl = '<table class="kc-compare-tbl"><thead><tr>';
+        tbl += '<th>Suburb</th><th>Family Score</th><th>Affordability Score</th><th>Schools</th><th>Crime</th><th>Families</th><th>Median Price</th>';
+        tbl += '</tr></thead><tbody>';
+        cmpKeys.forEach(function(k) {
+          var s = data.suburbs[k]; if (!s) return;
+          var isCur = k === SUBURB_KEY;
+          tbl += '<tr' + (isCur ? ' class="kc-compare-current"' : '') + '>';
+          tbl += '<td>' + (s.display_name || k) + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.family_score != null ? s.scores.family_score : '—') + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.value_score  != null ? s.scores.value_score  : '—') + '</td>';
+          tbl += '<td>' + (s.schools  && (s.schools.overall_grade  || s.schools.niche_city_schools_grade) || '—') + '</td>';
+          tbl += '<td>' + (s.crime    && s.crime.niche_crime_grade  || '—') + '</td>';
+          tbl += '<td>' + (s.niche_city && s.niche_city.families   || '—') + '</td>';
+          tbl += '<td>' + (s.market   && s.market.sfr_median_price ? fmtPrice(s.market.sfr_median_price) : '—') + '</td>';
+          tbl += '</tr>';
+        });
+        tbl += '</tbody></table>';
+        cmpEl.innerHTML = tbl;
+      }
+      if (updated) setText('kc-compare-date', updated);
 
       // ── Amenity rank narratives ────────────────────────────────────────
       var ranks = (suburb.scores && suburb.scores.amenity_ranks) || null;
