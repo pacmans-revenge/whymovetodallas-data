@@ -601,13 +601,23 @@
 }
 
 /* ── Blog post image rules ───────────────────────────────────────────────── */
-/* Constrain all images inside the article body */
-.kc-post-content img {
+/* Constrain all images inside the article body.
+   .kc-post-body is the <article> wrapper — catches imgs whether they're inside
+   a .kc-post-content div, a .kc-blog-figure, or bare between content blocks. */
+.kc-post-body img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1.5rem auto;
   border-radius: 6px;
+}
+/* Override for author card headshot and other small UI images */
+.kc-post-author-card img,
+.kc-post-hero-byline img {
+  max-width: none;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-block;
 }
 /* figure wrapper produced by [caption] shortcode conversion */
 .kc-blog-figure {
