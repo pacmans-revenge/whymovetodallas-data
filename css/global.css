@@ -121,9 +121,9 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   display: block;
   height: 1px;
   background: var(--gold);
-  opacity: 0;
+  opacity: 0.35;
   transition: opacity 0.25s ease;
-  margin: 0 24px;
+  margin: 0;
 }
 
 /* Logo — centered in middle grid column */
@@ -303,7 +303,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 #kc-site-header.kc-scrolled .kc-nav-accent {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #kc-site-header.kc-scrolled .kc-nav-cta {
