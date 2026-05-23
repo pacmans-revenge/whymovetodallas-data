@@ -463,6 +463,18 @@ gtag('consent', 'default', {
 }
 .kc-blog-card[data-cat="market"]:hover { border-top-color: #444; }
 
+.kc-blog-card[data-cat="home-tours"] {
+  background: #f5f0eb;
+  border-top-color: #8B6347;
+}
+.kc-blog-card[data-cat="home-tours"]:hover { border-top-color: #8B6347; }
+
+.kc-blog-card[data-cat="city-comparisons"] {
+  background: #edf2f7;
+  border-top-color: #2E5A8A;
+}
+.kc-blog-card[data-cat="city-comparisons"]:hover { border-top-color: #2E5A8A; }
+
 .kc-blog-card-tag {
   font-size: 0.68rem;
   font-weight: 700;
@@ -475,7 +487,9 @@ gtag('consent', 'default', {
 .kc-blog-card[data-cat="schools"]       .kc-blog-card-tag { color: #2d7abf; }
 .kc-blog-card[data-cat="cost-living"]   .kc-blog-card-tag { color: #96762d; }
 .kc-blog-card[data-cat="relocation"]    .kc-blog-card-tag { color: #1a6b3a; }
-.kc-blog-card[data-cat="market"]        .kc-blog-card-tag { color: #444; }
+.kc-blog-card[data-cat="market"]          .kc-blog-card-tag { color: #444; }
+.kc-blog-card[data-cat="home-tours"]      .kc-blog-card-tag { color: #8B6347; }
+.kc-blog-card[data-cat="city-comparisons"].kc-blog-card-tag { color: #2E5A8A; }
 .kc-blog-card h2 {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.2rem;
@@ -638,6 +652,8 @@ gtag('consent', 'default', {
     <button class="kc-blog-filter-btn" data-filter="cost-living">Cost of Living</button>
     <button class="kc-blog-filter-btn" data-filter="relocation">Moving to DFW</button>
     <button class="kc-blog-filter-btn" data-filter="market">Real Estate</button>
+    <button class="kc-blog-filter-btn" data-filter="home-tours">Home Tours</button>
+    <button class="kc-blog-filter-btn" data-filter="city-comparisons">City Comparisons</button>
   </div>
 
   <!-- Post grid — populated by JS from posts manifest -->
@@ -680,6 +696,9 @@ var POSTS = [
   { slug: 'northlake-texas-top-family-communities-explained', title: 'Northlake Texas: Top Family Communities Explained', excerpt: 'Northlake is one of the fastest-growing areas in DFW — here\'s what families need to know.', date: '2024-04-01', cat: 'suburb-guides' },
   { slug: 'is-denton-texas-the-perfect-place-for-you-and-your-family-to-call-home', title: 'Is Denton, Texas the Perfect Place for Your Family?', excerpt: 'Denton has universities, a historic square, and a surprisingly affordable housing market. Here\'s the full picture.', date: '2023-07-01', cat: 'suburb-guides' },
   { slug: 'places-to-live-in-dallas-texas-with-a-family-west-of-dallas', title: 'Places to Live in Dallas Texas with a Family (West of Dallas)', excerpt: 'West DFW suburbs — Keller, Southlake, Colleyville, Fort Worth — for families coming from California or the Pacific Northwest.', date: '2023-04-01', cat: 'suburb-guides' },
+  { slug: 'top-reasons-to-live-in-plano-texas', title: 'Top Reasons to Live in Plano, Texas', excerpt: 'Plano is one of DFW\'s original top suburbs — here\'s why families keep choosing it for schools, safety, and quality of life.', date: '2022-08-23', cat: 'suburb-guides' },
+  { slug: 'north-richland-hills-tx-hometown-community', title: 'North Richland Hills, Texas: The Hometown Community', excerpt: 'A closer look at Hometown in North Richland Hills — a walkable mixed-use community with townhomes, singles, and a real neighborhood feel.', date: '2023-11-24', cat: 'suburb-guides' },
+  { slug: 'best-performing-cities-dallas-texas-2023', title: 'Best Performing Cities in Dallas, Texas (2023)', excerpt: 'Which DFW suburbs saw the biggest price gains in 2023? We break down the top-performing cities in the Dallas housing market.', date: '2024-01-08', cat: 'market' },
   { slug: 'wealthiest-cities-dallas-texas', title: 'Wealthiest Cities in Dallas, Texas', excerpt: 'Where DFW\'s wealthiest zip codes are, and what the top suburbs offer in terms of schools and quality of life.', date: '2024-07-01', cat: 'suburb-guides' },
   { slug: 'luxury-living-in-dallas-tx-explained', title: 'Luxury Living in Dallas TX Explained', excerpt: 'From Highland Park to Southlake — the landscape of luxury real estate and high-end communities in DFW.', date: '2023-11-01', cat: 'suburb-guides' },
   { slug: 'best-shopping-and-dining-suburbs-in-dallas-fort-worth', title: 'Best Shopping and Dining Suburbs in Dallas Fort Worth', excerpt: 'Where to eat, shop, and actually enjoy your weekends — the DFW suburbs with the best lifestyle amenities.', date: '2024-06-01', cat: 'suburb-guides' },
@@ -694,10 +713,10 @@ var POSTS = [
   { slug: 'the-ultimate-guide-to-moving-to-dallas-texas', title: 'The Ultimate Guide to Moving to Dallas, Texas', excerpt: 'A comprehensive resource for families planning a DFW relocation — neighborhood selection, timing, budget, and more.', date: '2024-02-01', cat: 'relocation' },
   { slug: 'top-questions-answered-about-moving-to-dallas', title: 'Top Questions Answered About Moving to Dallas', excerpt: 'The questions every relocating family asks — answered with specifics, not marketing copy.', date: '2023-05-01', cat: 'relocation' },
   { slug: 'scariest-things-about-moving-to-dallas-', title: 'Scariest Things About Moving to Dallas', excerpt: 'What actually surprises families about DFW after arrival — from property taxes to summer heat.', date: '2022-12-01', cat: 'relocation' },
-  { slug: 'six-mistakes-people-make-moving-to-dallas-and-how-you-can-avoid-them', title: '6 Mistakes People Make Moving to Dallas (and How to Avoid Them)', excerpt: 'Rushing suburb selection, ignoring property taxes, buying before visiting — the most common DFW relocation mistakes.', date: '2023-06-01', cat: 'relocation' },
+  { slug: '6-mistakes-people-make-moving-to-dallas-and-how-you-can-avoid-them', title: '6 Mistakes People Make Moving to Dallas (And How to Avoid Them)', excerpt: 'Avoid common pitfalls when relocating to DFW — the top mistakes families make and practical tips to sidestep every one of them.', date: '2025-03-16', cat: 'relocation' },
   { slug: 'which-lifestyle-in-dallas-is-for-you', title: 'Which Lifestyle in Dallas Is for You?', excerpt: 'Urban core, lakefront suburb, new-construction community, or established neighborhood? DFW has all of them.', date: '2022-07-01', cat: 'relocation' },
   { slug: 'should-you-avoid-living-in-dallas-texas', title: 'Should You Avoid Living in Dallas, Texas?', excerpt: 'Weighing the pros and cons for families — an honest guide to whether DFW is the right move.', date: '2024-05-01', cat: 'relocation' },
-  { slug: 'moving-to-texas-is-dallas-or-houston-right-for-you', title: 'Moving to Texas: Is Dallas or Houston Right for You?', excerpt: 'The two biggest Texas metros compared for families — schools, cost, job markets, and lifestyle.', date: '2023-09-01', cat: 'relocation' },
+  { slug: 'moving-to-texas-is-dallas-or-houston-right-for-you', title: 'Moving to Texas: Is Dallas or Houston Right for You?', excerpt: 'The two biggest Texas metros compared for families — schools, cost, job markets, and lifestyle.', date: '2023-09-01', cat: 'city-comparisons' },
   { slug: 'dont-california-my-texas-do-texans-have-valid-concerns', title: 'Don\'t California My Texas: Do Texans Have Valid Concerns?', excerpt: 'A nuanced look at the California-to-Texas migration and the cultural conversation around it.', date: '2022-08-01', cat: 'relocation' },
   { slug: 'dallas-texas-is-changing-what-does-it-mean-for-you', title: 'Dallas, Texas Is Changing — What Does It Mean for You?', excerpt: 'How DFW is evolving and what that means for families thinking about moving here now.', date: '2024-05-01', cat: 'relocation' },
   { slug: 'is-dallas-fort-worth-a-good-place-to-live', title: 'Is Dallas–Fort Worth a Good Place to Live?', excerpt: 'A thorough, unsponsored assessment of DFW as a place to raise a family in 2024.', date: '2023-12-01', cat: 'relocation' },
@@ -714,10 +733,10 @@ var POSTS = [
   { slug: 'finding-high-paying-jobs-in-the-dallas-texas', title: 'Finding High-Paying Jobs in Dallas, Texas', excerpt: 'The top industries and employers in DFW — where to look if you\'re relocating for work or job-searching on arrival.', date: '2022-06-01', cat: 'relocation' },
   { slug: 'high-paying-jobs-in-dallas-texas-top-10-employers', title: 'High-Paying Jobs in Dallas Texas: Top 10 Employers', excerpt: 'Toyota, American Airlines, JPMorgan, AT&T and more — the major DFW employers and what they pay.', date: '2023-10-01', cat: 'relocation' },
 
-  // ── Comparisons ───────────────────────────────────────────────────────────
-  { slug: 'dallas-vs-austin-choosing-the-right-city-in-texas', title: 'Dallas vs Austin: Choosing the Right City in Texas', excerpt: 'Two Texas giants compared for families — cost, schools, employers, and the lifestyle differences that matter.', date: '2023-04-01', cat: 'relocation' },
-  { slug: 'dallas-vs-houston-which-texas-city-is-right-for-you', title: 'Dallas vs Houston: Which Texas City Is Right for You?', excerpt: 'The two biggest Texas metros go head-to-head for families weighing the Texas move.', date: '2023-07-01', cat: 'relocation' },
-  { slug: 'dallas-vs-phoenix-which-city-is-better-to-live-in', title: 'Dallas vs Phoenix: Which City Is Better to Live In?', excerpt: 'Two Sun Belt cities compared on cost, schools, job market, and quality of life.', date: '2024-04-01', cat: 'relocation' },
+  // ── City Comparisons ──────────────────────────────────────────────────────
+  { slug: 'dallas-vs-austin-choosing-the-right-city-in-texas', title: 'Dallas vs Austin: Choosing the Right City in Texas', excerpt: 'Two Texas giants compared for families — cost, schools, employers, and the lifestyle differences that matter.', date: '2023-04-01', cat: 'city-comparisons' },
+  { slug: 'dallas-vs-houston-which-texas-city-is-right-for-you', title: 'Dallas vs Houston: Which Texas City Is Right for You?', excerpt: 'The two biggest Texas metros go head-to-head for families weighing the Texas move.', date: '2023-07-01', cat: 'city-comparisons' },
+  { slug: 'dallas-vs-phoenix-which-city-is-better-to-live-in', title: 'Dallas vs Phoenix: Which City Is Better to Live In?', excerpt: 'Two Sun Belt cities compared on cost, schools, job market, and quality of life.', date: '2024-04-01', cat: 'city-comparisons' },
 
   // ── Real Estate / Market ──────────────────────────────────────────────────
   { slug: 'so-how-bad-is-the-dallas-housing-market', title: 'So, How Bad Is the Dallas Housing Market?', excerpt: 'An honest look at DFW real estate conditions for buyers — inventory, prices, and what to expect.', date: '2024-06-01', cat: 'market' },
@@ -731,9 +750,17 @@ var POSTS = [
   { slug: 'living-in-dallas-texas-all-of-dallas-explained', title: 'Living in Dallas, Texas: All of Dallas Explained', excerpt: 'A comprehensive guide to Dallas proper — neighborhoods, lifestyle, commutes, and what to know before you move.', date: '2022-07-01', cat: 'relocation' },
 
   // ── Home Tours / Communities ──────────────────────────────────────────────
-  { slug: 'southlake-tx-custom-home-tour-metairie-community', title: '$2.6M New Construction Home Tour — Southlake Texas', excerpt: 'Inside the Metairie community in Southlake — what $2.6 million buys in one of DFW\'s premier suburbs.', date: '2023-11-01', cat: 'suburb-guides' },
-  { slug: 'dallas-lake-life-custom-home-tour-3-million-dollar-home', title: 'Dallas Lake Life: $3.4M Custom Home Tour', excerpt: 'A stunning lakefront custom home near Dallas — inside DFW\'s luxury lake life communities.', date: '2024-01-01', cat: 'suburb-guides' },
+  { slug: 'fort-worth-tx-resort-eagle-mountain-lake-custom-home-tour', title: 'Waterfront! Custom Home Tour in Fort Worth, Texas', excerpt: 'New construction lakefront luxury — a 4,000 sq ft modern custom home on Eagle Mountain Lake with unbelievable water views.', date: '2024-01-22', cat: 'home-tours' },
+  { slug: 'arlington-tx-viridian-community-drees-custom-home-tour', title: 'Custom Home Tour: Viridian Lake Community in Arlington, Texas', excerpt: 'A Drees custom home inside the beautiful lakefront Viridian community in Arlington — new construction DFW living at its best.', date: '2024-01-18', cat: 'home-tours' },
+  { slug: 'copper-canyon-tx-vickery-toll-brothers-model-home-tour-vanguard-model', title: 'Toll Brothers Model Home Tour Near Flower Mound, Texas', excerpt: 'Unbelievable upgrades — a Toll Brothers Vanguard model home in the Vickery community near Flower Mound, with top-tier finishes.', date: '2024-01-16', cat: 'home-tours' },
+  { slug: 'dallas-home-model-tour-grand-homes-corinth-texas', title: 'Model Home Tour: Grand Homes in Corinth, Texas', excerpt: 'A stunning Grand Homes model in Corinth, Texas — see what new construction looks like in this growing north DFW suburb.', date: '2024-01-15', cat: 'home-tours' },
+  { slug: 'southlake-tx-custom-home-tour-stony-brooke-community', title: '$2.8M Custom Home Tour — Stony Brooke, Southlake Texas', excerpt: 'A virtual tour of a $2.8 million, 5,100 sq ft custom home in Southlake\'s Stony Brooke community — luxury DFW living explained.', date: '2023-11-25', cat: 'home-tours' },
+  { slug: 'southlake-tx-custom-home-tour-metairie-community', title: '$2.6M New Construction Home Tour — Southlake Texas', excerpt: 'Inside the Metairie community in Southlake — what $2.6 million buys in one of DFW\'s premier suburbs.', date: '2023-11-01', cat: 'home-tours' },
+  { slug: 'dallas-lake-life-custom-home-tour-3-million-dollar-home', title: 'Dallas Lake Life: $3.4M Custom Home Tour', excerpt: 'A stunning lakefront custom home near Dallas — inside DFW\'s luxury lake life communities.', date: '2024-01-01', cat: 'home-tours' },
   { slug: 'why-texas-is-a-desirable-place-to-settle-down-exploring-the-allure-of-the-lone-star-state', title: 'Why Texas Is a Desirable Place to Settle Down', excerpt: 'No income tax, strong job market, affordable (relative to coasts) — the full case for Texas.', date: '2024-10-01', cat: 'relocation' },
+  { slug: 'why-are-people-leaving-dallas-texas', title: 'Why Are People Leaving Dallas, Texas?', excerpt: 'Traffic, rising costs, and summer heat top the list. An honest look at why some families decide DFW isn\'t for them — and who thrives here anyway.', date: '2024-06-09', cat: 'relocation' },
+  { slug: 'why-californians-regret-moving-to-texas', title: 'Why Californians REGRET Moving to Texas', excerpt: '5 big reasons some California transplants struggle to adjust to DFW — and what to know before you make the move.', date: '2022-11-23', cat: 'cost-living' },
+  { slug: 'why-dallas-may-not-be-for-you-', title: 'Why Dallas May Not Be For You', excerpt: 'No mountains, brutal summers, car-dependent sprawl — the honest case for why Dallas isn\'t the right move for everyone.', date: '2022-07-10', cat: 'relocation' },
 ];
 
 // ── Render posts ──────────────────────────────────────────────────────────────
@@ -747,11 +774,13 @@ var POSTS = [
   var searchQ   = '';
 
   var CATEGORY_LABELS = {
-    'suburb-guides': 'Suburb Guide',
-    'schools':       'Schools',
-    'cost-living':   'Cost of Living',
-    'relocation':    'Moving to DFW',
-    'market':        'Real Estate',
+    'suburb-guides':    'Suburb Guide',
+    'schools':          'Schools',
+    'cost-living':      'Cost of Living',
+    'relocation':       'Moving to DFW',
+    'market':           'Real Estate',
+    'home-tours':       'Home Tour',
+    'city-comparisons': 'City Comparison',
   };
 
   // Sort POSTS newest-first, once at init
