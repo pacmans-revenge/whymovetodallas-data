@@ -143,6 +143,25 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 /* Mobile: hide full wordmark, show icon monogram */
 .kc-nav-logo .kc-logo-icon { display: none; }
 
+/* Left group — agent logo + nav links */
+.kc-nav-left-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.kc-nav-agent-logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+  opacity: 0.92;
+  transition: opacity 0.2s ease;
+}
+
+.kc-nav-agent-logo:hover img {
+  opacity: 1;
+}
+
 /* Left nav group — right-aligned, with breathing room from logo */
 .kc-nav-left {
   justify-content: flex-end;
@@ -499,8 +518,10 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
     position: relative;
     padding: 0 16px;
   }
-  .kc-nav-left  { display: none; }
-  .kc-nav-right { display: none; }
+  .kc-nav-left        { display: none; }
+  .kc-nav-right       { display: none; }
+  .kc-nav-left-group  { display: none; }
+  .kc-nav-agent-logo  { display: none; }
   .kc-hamburger {
     display: flex;
     position: absolute;
