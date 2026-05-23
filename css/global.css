@@ -135,7 +135,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-logo img {
-  height: 52px;
+  height: 48px;
   width: auto;
   display: block;
 }
@@ -143,11 +143,11 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 /* Mobile: hide full wordmark, show icon monogram */
 .kc-nav-logo .kc-logo-icon { display: none; }
 
-/* Left group — agent logo + nav links */
+/* Left group — agent logo pinned left, nav links pushed right toward center */
 .kc-nav-left-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
 }
 
 .kc-nav-agent-logo img {
