@@ -135,7 +135,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-logo img {
-  height: 48px;
+  height: 54px;
   width: auto;
   display: block;
 }
@@ -151,7 +151,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 }
 
 .kc-nav-agent-logo img {
-  height: 44px;
+  height: 48px;
   width: auto;
   display: block;
   opacity: 0.92;
