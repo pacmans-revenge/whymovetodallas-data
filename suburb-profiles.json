@@ -4669,12 +4669,12 @@
         "acs_vintage": "2023"
       },
       "walkability": {
-        "walk_score": 75,
-        "walk_description": "Very Walkable",
-        "transit_score": null,
-        "transit_description": "Unknown",
-        "bike_score": 60,
-        "bike_description": "Bikeable",
+        "walk_score": 19,
+        "walk_description": "Car-Dependent",
+        "transit_score": 0,
+        "transit_description": "Minimal Transit",
+        "bike_score": 31,
+        "bike_description": "Some Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Keller-TX/lat=32.9343/lng=-97.2294/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
