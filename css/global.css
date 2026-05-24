@@ -140,8 +140,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   display: block;
 }
 
-/* Mobile: hide full wordmark, show icon monogram */
-.kc-nav-logo .kc-logo-icon { display: none; }
+/* Always hide the mobile icon — full wordmark shows on all screen sizes */
+.kc-nav-logo .kc-logo-icon { display: none !important; }
 
 /* Left group — agent logo pinned left, nav links pushed right toward center */
 .kc-nav-left-group {
@@ -507,8 +507,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 @media (max-width: 768px) {
   :root {
     --header-topbar-h: 28px;
-    --header-nav-h:    270px;
-    --header-total-h:  298px;
+    --header-nav-h:    72px;
+    --header-total-h:  100px;
   }
 
   /* Mobile nav: revert grid to flex, center logo, hamburger on right */
@@ -530,9 +530,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
     transform: translateY(-50%);
   }
 
-  /* Swap full wordmark → mobile icon on ALL phones/tablets */
-  .kc-nav-logo .kc-logo-full { display: none !important; }
-  .kc-nav-logo .kc-logo-icon { display: block !important; height: 250px !important; width: auto !important; max-width: none !important; }
+  /* Full wordmark on mobile — sized to fit phone screen */
+  .kc-nav-logo .kc-logo-full { display: block !important; height: 52px !important; width: auto !important; }
 
   .kc-topbar-label { display: none; }
 
@@ -551,4 +550,6 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   .kc-topbar { padding: 0 16px; }
   .kc-nav    { padding: 0 16px; }
   #kc-site-footer { padding: 36px 16px 20px; }
+  /* Extra small phones: slightly tighter logo */
+  .kc-nav-logo .kc-logo-full { height: 44px !important; }
 }
