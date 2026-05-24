@@ -552,5 +552,5 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   .kc-nav    { padding: 0 16px; }
   #kc-site-footer { padding: 36px 16px 20px; }
   /* Extra small phones: slightly tighter */
-  .kc-nav-logo .kc-logo-icon { height: 56px; }
+  .kc-nav-logo .kc-logo-icon { height: 200px !important; }
 }
