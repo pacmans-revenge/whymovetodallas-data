@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-24T19:22:33.999Z",
+    "last_updated": "2026-05-24T19:28:33.131Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -142,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -267,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -392,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -517,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -642,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -767,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -892,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1017,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1142,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1267,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1392,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1517,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1642,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1767,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -1892,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2017,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2142,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2267,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2392,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2517,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2642,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2767,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -2892,7 +2892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3017,7 +3017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3142,7 +3142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3267,7 +3267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3392,7 +3392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3517,7 +3517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3642,7 +3642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3767,7 +3767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3892,7 +3892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -3977,14 +3977,16 @@
         "scraped_date": "2026-05-19"
       },
       "crime": {
-        "niche_crime_grade": null,
+        "niche_crime_grade": "B",
         "niche_crime_numeric": null,
         "fbi_violent_per_100k": null,
         "fbi_property_per_100k": null,
         "fbi_agency_ori": null,
         "fbi_data_available": false,
         "fbi_reporting": null,
-        "fbi_data_year": null
+        "fbi_data_year": null,
+        "crimegrade_url": "https://crimegrade.org/safest-places-in-haslet-tx/",
+        "crimegrade_fetched": "2026-05-24"
       },
       "amenities": {
         "parks": 3,
@@ -3997,7 +3999,7 @@
         "value_score": 95,
         "sub_scores": {
           "education": 90,
-          "safety": 85,
+          "safety": 83,
           "family_community": 71,
           "commute": 33,
           "market_stability": 98
@@ -4017,7 +4019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4142,7 +4144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4267,7 +4269,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4392,7 +4394,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4517,7 +4519,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4642,7 +4644,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4767,7 +4769,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -4892,7 +4894,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5017,7 +5019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5142,7 +5144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5227,14 +5229,16 @@
         "scraped_date": "2026-05-19"
       },
       "crime": {
-        "niche_crime_grade": null,
+        "niche_crime_grade": "B+",
         "niche_crime_numeric": null,
         "fbi_violent_per_100k": null,
         "fbi_property_per_100k": null,
         "fbi_agency_ori": null,
         "fbi_data_available": false,
         "fbi_reporting": null,
-        "fbi_data_year": null
+        "fbi_data_year": null,
+        "crimegrade_url": "https://crimegrade.org/safest-places-in-lucas-tx/",
+        "crimegrade_fetched": "2026-05-24"
       },
       "amenities": {
         "parks": 13,
@@ -5243,11 +5247,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
+        "family_score": 78,
         "value_score": 46,
         "sub_scores": {
           "education": 97,
-          "safety": 89,
+          "safety": 87,
           "family_community": 52,
           "commute": 46,
           "market_stability": 99
@@ -5267,7 +5271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5392,7 +5396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5517,7 +5521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5642,7 +5646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5767,7 +5771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -5892,7 +5896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6017,7 +6021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6142,7 +6146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6267,7 +6271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6392,7 +6396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6517,7 +6521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6642,7 +6646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6767,7 +6771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -6892,7 +6896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7017,7 +7021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7142,7 +7146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7267,7 +7271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7392,7 +7396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7517,7 +7521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7642,7 +7646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7767,7 +7771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -7892,7 +7896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -8017,7 +8021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -8142,7 +8146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -8227,14 +8231,16 @@
         "scraped_date": "2026-05-19"
       },
       "crime": {
-        "niche_crime_grade": null,
+        "niche_crime_grade": "B",
         "niche_crime_numeric": null,
         "fbi_violent_per_100k": null,
         "fbi_property_per_100k": null,
         "fbi_agency_ori": null,
         "fbi_data_available": false,
         "fbi_reporting": null,
-        "fbi_data_year": null
+        "fbi_data_year": null,
+        "crimegrade_url": "https://crimegrade.org/safest-places-in-westlake-tx/",
+        "crimegrade_fetched": "2026-05-24"
       },
       "amenities": {
         "parks": 34,
@@ -8243,11 +8249,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
+        "family_score": 77,
         "value_score": 44,
         "sub_scores": {
           "education": 97,
-          "safety": 89,
+          "safety": 83,
           "family_community": 83,
           "commute": 47,
           "market_stability": 40
@@ -8267,7 +8273,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     },
@@ -8392,7 +8398,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:22:33.983Z",
+        "computed_date": "2026-05-24T19:28:33.114Z",
         "data_completeness": "full"
       }
     }
