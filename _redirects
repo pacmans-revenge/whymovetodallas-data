@@ -58,8 +58,7 @@
 /blog/living-in-plano-texas-for-families-guide           /plano-texas  301
 
 # Allen
-/blog/moving-to-allen-texas-what-you-need-to-know                                                       /allen-texas  301
-/blog/moving-to-allen-texas-what-you-need-to-know-about-the-location-demographics-real-estate-and-more  /allen-texas  301
+/blog/moving-to-allen-texas-what-you-need-to-know-about-the-location-demographics-real-estate-and-more  /blog/moving-to-allen-texas-what-you-need-to-know  301
 
 # McKinney
 /blog/living-in-mckinney-texas-everything-you-need-to-know  /mckinney-texas  301
@@ -141,7 +140,7 @@
 /blog/dallas-real-estate-market-continues-its-rise-find-out-the-biggest-winners-amp-losers-in-dallas-texas   /blog  301
 
 # Also handle the double-path anomaly from old Squarespace (Section 9):
-/living-in-dallas-texas-blog/moving-to-allen-texas-what-you-need-to-know-about-the-location-demographics-real-estate-and-more  /allen-texas  301
+/living-in-dallas-texas-blog/moving-to-allen-texas-what-you-need-to-know-about-the-location-demographics-real-estate-and-more  /blog/moving-to-allen-texas-what-you-need-to-know  301
 
 
 # ── 6. Old Squarespace site-page slugs → current canonical URLs ───────────────
@@ -200,7 +199,6 @@
 # These posts are ranking and getting impressions but have no page on the new site.
 # 301 to the matching suburb page preserves link equity until posts are rebuilt.
 /blog/living-in-rockwall-texas-pros-and-cons                           /rockwall-texas    301
-/blog/moving-to-allen-texas-what-you-need-to-know                      /allen-texas       301
 
 
 # ── 10. Old Squarespace suburb overview/demographics pages ────────────────────
