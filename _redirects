@@ -196,3 +196,12 @@
 # ── 8. Old suburb URL pattern safety net ──────────────────────────────────────
 # Catches any inbound links using the retired /dallas-fort-worth-suburbs/[city] path.
 /dallas-fort-worth-suburbs/*  /dallas-fort-worth-suburbs  301
+
+
+# ── 9. Missing blog posts — top GSC traffic, never migrated from Squarespace ──
+# These posts are ranking and getting impressions but have no page on the new site.
+# 301 to the matching suburb page preserves link equity until posts are rebuilt.
+/blog/why-are-people-leaving-frisco-texas                              /frisco-texas      301
+/blog/avoid-moving-to-fort-worth-texas-unless-you-can-handle-these-8-facts  /fort-worth-texas  301
+/blog/living-in-rockwall-texas-pros-and-cons                           /rockwall-texas    301
+/blog/moving-to-allen-texas-what-you-need-to-know                      /allen-texas       301
