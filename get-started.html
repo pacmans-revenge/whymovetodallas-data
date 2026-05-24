@@ -1220,7 +1220,11 @@ gtag('consent', 'default', {
     var el = getStepEl(id);
     if (el) el.classList.add('active');
     errEl.classList.remove('show');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    var formWrap = document.querySelector('.gs-wrap');
+    if (formWrap) {
+      var offset = formWrap.getBoundingClientRect().top + window.pageYOffset - 20;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
   }
 
   function updateProgress() {
