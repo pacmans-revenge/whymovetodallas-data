@@ -120,6 +120,9 @@ td:first-child{font-weight:600;}
 
 /* Split ISD tooltip */
 .split-isd{cursor:help;font-size:0.8rem;margin-left:3px;opacity:0.7;}
+.table-legend{padding:0.6rem 1.25rem 0.75rem;font-size:0.82rem;color:#666;border-top:1px solid #eee;background:#fafaf8;border-radius:0 0 8px 8px;margin-top:-1px;}
+.table-legend-item{display:inline-flex;align-items:flex-start;gap:0.4rem;line-height:1.5;}
+.legend-icon{font-size:0.9rem;flex-shrink:0;margin-top:0.05rem;}
 
 /* Footer CTA */
 .footer-cta{background:var(--navy);color:var(--white);padding:2.5rem 1.5rem;text-align:center;border-radius:10px;margin-top:2rem;}
@@ -408,8 +411,8 @@ gtag('consent', 'default', {
     <p>The Family Score is a weighted composite designed specifically for parents relocating to DFW. It pulls from five independent data sources — Texas Education Agency accountability ratings, Niche school grades, FBI crime statistics, Census demographic data, and NTREIS real estate market data — weighted as follows:</p>
     <ul>
       <li><strong>Schools — 30%.</strong> Composite of TEA A–F rating (40%), Niche ISD overall grade (35%), and GreatSchools summary (25%) — the same methodology used on our <a href="/dfw-school-districts">DFW School Districts page</a>.</li>
-      <li><strong>Safety — 25%.</strong> FBI violent and property crime rates per 100,000 residents, cross-referenced with Niche's city-level crime grade.</li>
-      <li><strong>Family Life &amp; Community — 20%.</strong> How well a suburb is actually set up for daily family life — not just in theory. This sub-score looks at: the share of households with children (families concentrate where kids thrive), parks and green space per resident, restaurants per resident, and shopping access per resident. Amenity counts are pulled from OpenStreetMap and normalized per capita, so a small suburb like Argyle isn't unfairly compared to a city the size of Arlington. Walk Score rounds out the picture. Together, these inputs reward suburbs where families can live their daily lives — not just sleep in them.</li>
+      <li><strong>Safety — 25%.</strong> Crime data sourced through a three-tier fallback: FBI UCR violent and property crime rates (where available), Niche and CrimeGrade.org city-level crime grades (letter grades converted to a 0–100 scale), and a Niche "families" community grade as a proxy for suburbs too small to appear in national crime databases. Most DFW suburbs land on tier two — Niche and CrimeGrade grades — since the FBI's public API does not currently return offense data for Texas agencies.</li>
+      <li><strong>Family Life &amp; Community — 20%.</strong> How well a suburb is actually set up for daily family life — not just in theory. This sub-score combines: Niche's "families" community rating (how Niche grades the suburb specifically for families), the share of households with children (families cluster where kids thrive), and Walk Score (a proxy for how much of daily life you can accomplish without a car). Together, these inputs reward suburbs where the community genuinely centers around families — not just suburbs that happen to have a lot of children.</li>
       <li><strong>Commute — 15%.</strong> Census median commute time. Lower is better: 15 minutes scores 100, 45 minutes scores 0.</li>
       <li><strong>Market Stability — 10%.</strong> NTREIS months of supply. A balanced market (2.5–4.5 months) scores highest — both extreme seller's and buyer's markets signal volatility.</li>
     </ul>
@@ -458,7 +461,7 @@ gtag('consent', 'default', {
     <li><strong>If your family wants space and a quieter pace:</strong> Argyle, Lantana, Northlake, and Celina offer larger lots, newer homes, and a more rural character — with strong schools — at prices below the inner Tier 1 suburbs.</li>
   </ul>
 
-  <p class="table-intro">The table below covers all <strong id="suburbCountInline">60</strong> suburbs across the DFW metroplex. Sort by any column header, filter by your priorities, and click any suburb name for the full data breakdown.</p>
+  <p class="table-intro">The table below covers all <strong id="suburbCountInline">67</strong> suburbs across the DFW metroplex. Sort by any column header, filter by your priorities, and click any suburb name for the full data breakdown.</p>
 
 </section>
 <!-- ══════════════════════════════════════════════════ END EDITORIAL COPY ══ -->
@@ -553,6 +556,10 @@ gtag('consent', 'default', {
   </thead>
   <tbody id="suburbTableBody"></tbody>
 </table>
+</div>
+
+<div class="table-legend">
+  <span class="table-legend-item"><span class="legend-icon">⚠️</span> <strong>Split ISD</strong> — this city's boundaries overlap more than one school district. The ISD shown is the primary one, but your specific street address may feed into a different district. Always verify at the ISD's website before you buy.</span>
 </div>
 
 <!-- Footer CTA -->
