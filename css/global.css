@@ -530,6 +530,10 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
     transform: translateY(-50%);
   }
 
+  /* Swap full wordmark → mobile icon on ALL phones/tablets */
+  .kc-nav-logo .kc-logo-full { display: none !important; }
+  .kc-nav-logo .kc-logo-icon { display: block !important; height: 250px !important; width: auto !important; max-width: none !important; }
+
   .kc-topbar-label { display: none; }
 
   .kc-footer-grid {
@@ -547,8 +551,4 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   .kc-topbar { padding: 0 16px; }
   .kc-nav    { padding: 0 16px; }
   #kc-site-footer { padding: 36px 16px 20px; }
-
-  /* Swap to monogram icon on small phones */
-  .kc-nav-logo .kc-logo-full { display: none; }
-  .kc-nav-logo .kc-logo-icon { display: block; height: 250px; width: auto; }
 }
