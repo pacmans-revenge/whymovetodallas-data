@@ -507,8 +507,8 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 @media (max-width: 768px) {
   :root {
     --header-topbar-h: 28px;
-    --header-nav-h:    66px;
-    --header-total-h:  94px;
+    --header-nav-h:    80px;
+    --header-total-h:  108px;
   }
 
   /* Mobile nav: revert grid to flex, center logo, hamburger on right */
@@ -550,5 +550,5 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 
   /* Swap to monogram icon on small phones */
   .kc-nav-logo .kc-logo-full { display: none; }
-  .kc-nav-logo .kc-logo-icon { display: block; height: 58px; width: auto; }
+  .kc-nav-logo .kc-logo-icon { display: block; height: 66px; width: auto; }
 }
