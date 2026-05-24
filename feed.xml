@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sat, 23 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Why Are People Leaving Frisco, Texas? The Honest Answer]]></title>
+    <link>https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas</guid>
+    <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Frisco is still one of DFW's fastest-growing suburbs — so why are people leaving? We break down the real reasons and what they mean for families moving to North Dallas.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://img.youtube.com/vi/Cv8ITwkCguQ/maxresdefault.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://img.youtube.com/vi/Cv8ITwkCguQ/maxresdefault.jpg" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Best Suburbs for Families in DFW | Schools, Safety &amp; Real Prices]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://i.ytimg.com/vi/pxev7VASsYY/maxresdefault.jpg" type="image/jpeg" length="0" />
       <media:content url="https://i.ytimg.com/vi/pxev7VASsYY/maxresdefault.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Why do Californians REGRET Moving to Texas?]]></title>
-    <link>https://whymovetodallas.com/blog/why-californians-regret-moving-to-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/why-californians-regret-moving-to-texas</guid>
-    <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
-    <description><![CDATA[Why Californians REGRET Moving to Dallas Texas 5 BIG Reasons!So with all the migration into Dallas Texas over the past years,  and at the time a major exod]]></description>
-      <category>Relocation Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/5b061e13-2a3d-4b33-b8dd-56a4b47abe0f-California-Presidential-Election-Map-2020.png" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/5b061e13-2a3d-4b33-b8dd-56a4b47abe0f-California-Presidential-Election-Map-2020.png" medium="image" />
   </item>
 
   </channel>
