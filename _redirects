@@ -205,3 +205,45 @@
 /blog/avoid-moving-to-fort-worth-texas-unless-you-can-handle-these-8-facts  /fort-worth-texas  301
 /blog/living-in-rockwall-texas-pros-and-cons                           /rockwall-texas    301
 /blog/moving-to-allen-texas-what-you-need-to-know                      /allen-texas       301
+
+
+# ── 10. Old Squarespace suburb overview/demographics pages ────────────────────
+# These were standalone suburb info pages on the old site (not housing stats,
+# not blog posts — a third format Squarespace used). Not covered in Section 7.
+# 301 to canonical suburb page or best available destination.
+/allen-texas-overview-demographics-crime-schools          /allen-texas               301
+/keller-texas-jobs-weather-demographics-schools-crime     /keller-texas              301
+/southlake-texas-safety-schools-demographics              /southlake-texas           301
+/flower-mound-tx-overview-demographics-crime-schools      /flower-mound-texas        301
+/is-denton-texas-a-good-place-to-live                     /denton-texas              301
+/is-fort-worth-texas-a-good-place-to-live                 /fort-worth-texas          301
+/dallas-tx-suburbs-explained                              /dallas-fort-worth-suburbs 301
+/little-elm-texas-what-you-need-to-know                   /dallas-fort-worth-suburbs 301
+/dallas-home-tours                                        /dallas-fort-worth-suburbs 301
+/find-homes-dallas-texas                                  /dallas-fort-worth-suburbs 301
+
+
+# ── 11. Stale market/economics pages — not blog posts ─────────────────────────
+# Standalone Squarespace pages (not under /living-in-dallas-texas-blog/).
+# Not captured by Section 4 wildcard since that targets /blog/ paths.
+/dallas-tx-housing-market-updates                         /blog                      301
+/economic-indicators-that-affect-housing-market           /blog                      301
+
+
+# ── 12. Sub-blog paths — old per-suburb blog index pages ──────────────────────
+# Squarespace used per-suburb filtered blog views (e.g. /dallas-tx-blog).
+# These show impressions in GSC — redirect to the canonical suburb page or /blog.
+/dallas-tx-blog           /blog                      301
+/denton-tx-blog           /denton-texas              301
+/flower-mound-tx-blog     /flower-mound-texas        301
+/plano-tx-blog            /plano-texas               301
+/southlake-texas-blog     /southlake-texas           301
+/allen-texas-blog         /allen-texas               301
+/living-in-frisco-texas-blog  /frisco-texas          301
+/keller-tx-blog           /keller-texas              301
+
+
+# ── 13. Garbled/alternate-slug blog posts ─────────────────────────────────────
+# Posts that exist in GSC under a slug that differs from the rebuilt page.
+/blog/frisco-vs-mckinney-vs-flower-mound-texas                               /dallas-fort-worth-suburbs                              301
+/blog/living-in-little-elm-texas-lakeside-communities-commute-schools        /blog/living-in-little-elm-texas-lake-life-dallas-texas  301
