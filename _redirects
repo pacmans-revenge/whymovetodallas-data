@@ -40,7 +40,7 @@
 # until those pages are built — migrate-blog.js will generate the HTML files.
 
 # Frisco
-/blog/everything-you-need-to-know-about-living-in-frisco-texas  /frisco-texas  301
+# (everything-you-need-to-know-about-living-in-frisco-texas removed — blog post rebuilt)
 /blog/why-people-love-living-in-frisco-texas                     /frisco-texas  301
 /blog/frisco-texas-the-grove-community-explained                 /frisco-texas  301
 /blog/homes-for-sale-in-frisco-texas-just-how-much-does-it-cost  /frisco-texas  301
