@@ -1324,24 +1324,24 @@ gtag('consent', 'default', {
 
   <div class="kc-grid kc-grid--4" style="margin-bottom:0.5rem;">
     <div class="kc-card kc-card--navy" id="kc-mkt-price">
-      <div class="kc-stat-num" id="kc-stat-price-main">~$797K</div>
+      <div class="kc-stat-val" id="kc-stat-price-main">~$797K</div>
       <div class="kc-stat-label">Median Sale Price (SFR)</div>
-      <div class="kc-stat-sub">Single-family homes</div>
+      <div class="kc-stat-note">Single-family homes</div>
     </div>
     <div class="kc-card kc-card--navy" id="kc-mkt-dom">
-      <div class="kc-stat-num">23 days</div>
+      <div class="kc-stat-val">23 days</div>
       <div class="kc-stat-label">Days on Market</div>
-      <div class="kc-stat-sub">Median time to contract</div>
+      <div class="kc-stat-note">Median time to contract</div>
     </div>
     <div class="kc-card kc-card--navy" id="kc-mkt-msi">
-      <div class="kc-stat-num">2.3 mo.</div>
+      <div class="kc-stat-val">2.3 mo.</div>
       <div class="kc-stat-label">Months of Supply</div>
-      <div class="kc-stat-sub">Seller's market (&lt;3 mo.)</div>
+      <div class="kc-stat-note">Seller's market (&lt;3 mo.)</div>
     </div>
     <div class="kc-card kc-card--navy" id="kc-mkt-cs">
-      <div class="kc-stat-num">212</div>
+      <div class="kc-stat-val">212</div>
       <div class="kc-stat-label">Closed Sales (12 mo.)</div>
-      <div class="kc-stat-sub">Annual transaction volume</div>
+      <div class="kc-stat-note">Annual transaction volume</div>
     </div>
   </div>
   <p id="kc-mkt-updated" style="font-size:0.76rem;color:#888;margin-bottom:1.5rem;">Source: NTREIS / North Texas MLS · Data updates monthly</p>
@@ -1429,7 +1429,7 @@ gtag('consent', 'default', {
     <h2>Trophy Club FAQ for Relocating Families</h2>
   </div>
 
-  <div class="kc-faq-list" id="kc-faq-accordion">
+  <div id="kc-faq-list">
     <div class="kc-faq-item">
       <button class="kc-faq-q" aria-expanded="false">Is Trophy Club a good place for families with school-age kids?</button>
       <div class="kc-faq-a"><p>Yes — Trophy Club is consistently ranked among the best family communities in North Texas. The town has four Northwest ISD campuses within its own limits, a violent crime rate 96% below the national average, 13 parks, and a small-town atmosphere where kids are genuinely visible and active outdoors. Niche rates it A+ for families. The biggest tradeoff is the higher home price and the absence of a walkable commercial area, but for families prioritizing schools and safety, it checks the key boxes.</p></div>
@@ -1569,7 +1569,9 @@ function kcFmt(n, prefix) {
 }
 function kcGrade(g) {
   if (!g) return '—';
-  return '<span class="kc-grade kc-grade--' + (g.startsWith('A') ? 'a' : g.startsWith('B') ? 'b' : 'c') + '">' + g + '</span>';
+  var gc = g.startsWith('A') ? 'a' : g.startsWith('B') ? 'b' : 'c';
+  var cls = ['kc-grade', 'kc-grade--' + gc].join(' ');
+  return '<span class="' + cls + '">' + g + '</span>';
 }
 
 function kcLoadSuburbData() {
@@ -1582,22 +1584,22 @@ function kcLoadSuburbData() {
         var sfr = s.market.sfr;
         var priceEl = document.getElementById('kc-mkt-price');
         if (priceEl && sfr.median_sale_price) {
-          priceEl.querySelector('.kc-stat-num').textContent = kcFmt(sfr.median_sale_price, '~$');
+          priceEl.querySelector('.kc-stat-val').textContent = kcFmt(sfr.median_sale_price, '~$');
         }
         var domEl = document.getElementById('kc-mkt-dom');
         if (domEl && sfr.days_on_market) {
-          domEl.querySelector('.kc-stat-num').textContent = Math.round(sfr.days_on_market) + ' days';
+          domEl.querySelector('.kc-stat-val').textContent = Math.round(sfr.days_on_market) + ' days';
         }
         var msiEl = document.getElementById('kc-mkt-msi');
         if (msiEl && sfr.months_supply) {
           var msi = parseFloat(sfr.months_supply).toFixed(1);
           var label = parseFloat(msi) < 3 ? "Seller's market" : parseFloat(msi) <= 6 ? 'Balanced' : "Buyer's market";
-          msiEl.querySelector('.kc-stat-num').textContent = msi + ' mo.';
-          msiEl.querySelector('.kc-stat-sub').textContent = label + ' (<3 mo.)';
+          msiEl.querySelector('.kc-stat-val').textContent = msi + ' mo.';
+          msiEl.querySelector('.kc-stat-note').textContent = label + ' (<3 mo.)';
         }
         var csEl = document.getElementById('kc-mkt-cs');
         if (csEl && sfr.closed_sales) {
-          csEl.querySelector('.kc-stat-num').textContent = sfr.closed_sales;
+          csEl.querySelector('.kc-stat-val').textContent = sfr.closed_sales;
         }
         /* Stat bar price update */
         var statPrice = document.getElementById('kc-stat-price');
@@ -1609,12 +1611,12 @@ function kcLoadSuburbData() {
       var ncity = s.niche_city || {};
       var pBanner = document.getElementById('kc-amenity-parks-rank');
       if (pBanner && ncity.outdoor_activities) {
-        pBanner.innerHTML = '<span class="kc-amenity-rank-label">Niche Outdoor Activities: <strong>' + ncity.outdoor_activities + '</strong></span>';
+        pBanner.innerHTML = '<span>Niche Outdoor Activities: <strong>' + ncity.outdoor_activities + '</strong></span>';
         pBanner.style.display = 'block';
       }
       var dsBanner = document.getElementById('kc-amenity-dining-shop-rank');
       if (dsBanner && ncity.nightlife) {
-        dsBanner.innerHTML = '<span class="kc-amenity-rank-label">Niche Nightlife &amp; Dining: <strong>' + ncity.nightlife + '</strong></span>';
+        dsBanner.innerHTML = '<span>Niche Nightlife &amp; Dining: <strong>' + ncity.nightlife + '</strong></span>';
         dsBanner.style.display = 'block';
       }
       /* ── Condo section ── */

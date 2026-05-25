@@ -1293,25 +1293,25 @@ gtag('consent', 'default', {
   <div id="kc-condo-market" style="display:none;margin-top:1.5rem;">
     <h3 style="margin-bottom:1rem;">Condo &amp; Townhome Market</h3>
     <div id="kc-condo-cards" class="kc-grid kc-grid--4" style="display:none;margin-bottom:1rem;">
-      <div class="kc-stat-card">
-        <div class="kc-stat-card-val" id="kc-condo-price">—</div>
-        <div class="kc-stat-card-label">Median Condo Price</div>
-        <div class="kc-stat-card-sub" id="kc-condo-price-sub">12-month median · NTREIS</div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+        <div style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;" id="kc-condo-price">—</div>
+        <div>Median Condo Price</div>
+        <div id="kc-condo-price-sub">12-month median · NTREIS</div>
       </div>
-      <div class="kc-stat-card">
-        <div class="kc-stat-card-val" id="kc-condo-dom">—</div>
-        <div class="kc-stat-card-label">Days on Market</div>
-        <div class="kc-stat-card-sub">Condo / Townhome · 12-month avg</div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+        <div style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;" id="kc-condo-dom">—</div>
+        <div>Days on Market</div>
+        <div>Condo / Townhome · 12-month avg</div>
       </div>
-      <div class="kc-stat-card">
-        <div class="kc-stat-card-val" id="kc-condo-msi">—</div>
-        <div class="kc-stat-card-label">Months Supply</div>
-        <div class="kc-stat-card-sub" id="kc-condo-msi-sub">12-month calculation</div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+        <div style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;" id="kc-condo-msi">—</div>
+        <div>Months Supply</div>
+        <div id="kc-condo-msi-sub">12-month calculation</div>
       </div>
-      <div class="kc-stat-card">
-        <div class="kc-stat-card-val" id="kc-condo-cs">—</div>
-        <div class="kc-stat-card-label">Closed Sales (12mo)</div>
-        <div class="kc-stat-card-sub">Condo / Townhome · NTREIS · <span id="kc-condo-updated"></span></div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+        <div style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;" id="kc-condo-cs">—</div>
+        <div>Closed Sales (12mo)</div>
+        <div>Condo / Townhome · NTREIS · <span id="kc-condo-updated"></span></div>
       </div>
     </div>
     <div id="kc-condo-no-sales" style="display:none;" class="kc-callout">No condo or townhome sales recorded in the past 12 months for this market. Single-family homes are the dominant product type here.</div>
@@ -1372,7 +1372,7 @@ gtag('consent', 'default', {
     <h2>Highland Park, TX — Frequently Asked Questions</h2>
   </div>
 
-  <div class="kc-faq">
+  <div id="kc-faq-list">
 
     <div class="kc-faq-item" onclick="kcFaq(this)">
       <div class="kc-faq-q">Is Highland Park, Texas its own city separate from Dallas?</div>
@@ -1431,9 +1431,9 @@ gtag('consent', 'default', {
 
 <!-- ── SECTION 18: LEAD MAGNET ─────────────────────────────────────────────── -->
 <div class="kc-leadmagnet">
-  <div class="kc-leadmagnet-inner">
+  <div>
     <svg style="width:32px;height:32px;flex-shrink:0;display:block;" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="20" height="24" rx="2"/><line x1="9" y1="9" x2="19" y2="9"/><line x1="9" y1="14" x2="19" y2="14"/><line x1="9" y1="19" x2="14" y2="19"/></svg>
-    <div class="kc-leadmagnet-text">
+    <div>
       <strong>The DFW Family Relocation Guide</strong>
       <span>Comparing Highland Park to Frisco, Allen, Plano, and Southlake? Download the complete suburb comparison guide — schools, prices, commutes, and tradeoffs in one place.</span>
     </div>
@@ -1458,12 +1458,12 @@ gtag('consent', 'default', {
   <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.15);">
     <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:0.75rem;text-transform:uppercase;letter-spacing:0.06em;">Also exploring?</p>
     <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-      <a href="/university-park-texas" class="kc-pill-link">University Park</a>
-      <a href="/plano-texas" class="kc-pill-link">Plano</a>
-      <a href="/frisco-texas" class="kc-pill-link">Frisco</a>
-      <a href="/southlake-texas" class="kc-pill-link">Southlake</a>
-      <a href="/allen-texas" class="kc-pill-link">Allen</a>
-      <a href="/dallas-fort-worth-suburbs" class="kc-pill-link">Browse All Suburbs →</a>
+      <a href="/university-park-texas" class="kc-btn kc-btn--navy kc-btn--sm">University Park</a>
+      <a href="/plano-texas" class="kc-btn kc-btn--navy kc-btn--sm">Plano</a>
+      <a href="/frisco-texas" class="kc-btn kc-btn--navy kc-btn--sm">Frisco</a>
+      <a href="/southlake-texas" class="kc-btn kc-btn--navy kc-btn--sm">Southlake</a>
+      <a href="/allen-texas" class="kc-btn kc-btn--navy kc-btn--sm">Allen</a>
+      <a href="/dallas-fort-worth-suburbs" class="kc-btn kc-btn--navy kc-btn--sm">Browse All Suburbs →</a>
     </div>
   </div>
 </section>

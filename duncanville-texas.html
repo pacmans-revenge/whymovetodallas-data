@@ -439,7 +439,7 @@ gtag('consent', 'default', {
 
 <!-- ── 1. BREADCRUMB ──────────────────────────────────────────────────────── -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
-  <div class="kc-container" style="padding-top:0.75rem;padding-bottom:0.75rem;">
+  <div style="padding-top:0.75rem;padding-bottom:0.75rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.78rem;color:#888;">
       <a href="/" style="color:var(--gold);text-decoration:none;">Home</a>
       <span style="margin:0 0.4rem;">›</span>
@@ -458,7 +458,7 @@ gtag('consent', 'default', {
     <p class="kc-hero-sub">Affordable Dallas County access · Walk Score 83 · 12 miles to downtown · Duncanville ISD</p>
     <div class="kc-hero-btns">
       <a href="#kc-contact" class="kc-btn kc-btn--gold">Talk to Kristen →</a>
-      <a href="https://whymovetodallas.com/dfw-family-relocation-guide" class="kc-btn kc-btn--white">Get the Free Relocation Guide</a>
+      <a href="https://whymovetodallas.com/dfw-family-relocation-guide" class="kc-btn kc-btn--outline">Get the Free Relocation Guide</a>
     </div>
   </div>
 </div>
@@ -504,41 +504,38 @@ gtag('consent', 'default', {
 </div>
 
 <!-- Stats Bar -->
-<div class="kc-stats-bar">
-  <div class="kc-container">
-    <div class="kc-stats-grid">
+<div class="kc-stats" aria-label="Duncanville at a glance">
+  <div class="kc-stats-grid">
       <div class="kc-stat">
-        <span class="kc-stat-num" id="kc-stat-pop">~40K</span>
-        <span class="kc-stat-lbl" id="kc-stat-pop-note">Residents · Dallas County</span>
+        <span class="kc-stat-val" id="kc-stat-pop">~40K</span>
+        <span class="kc-stat-note" id="kc-stat-pop-note">Residents · Dallas County</span>
       </div>
       <div class="kc-stat">
-        <span class="kc-stat-num kc-stat-price" id="kc-stat-price">~$297K</span>
-        <span class="kc-stat-lbl" id="kc-stat-price-note">Median SFR Price · NTREIS</span>
+        <span class="kc-stat-val" id="kc-stat-price">~$297K</span>
+        <span class="kc-stat-note" id="kc-stat-price-note">Median SFR Price · NTREIS</span>
       </div>
       <div class="kc-stat">
-        <span class="kc-stat-num">B−</span>
-        <span class="kc-stat-lbl">Duncanville ISD · Niche</span>
+        <span class="kc-stat-val">B−</span>
+        <span class="kc-stat-note">Duncanville ISD · Niche</span>
       </div>
       <div class="kc-stat">
-        <span class="kc-stat-num">15–20 min</span>
-        <span class="kc-stat-lbl">To Downtown Dallas via Hwy 67</span>
+        <span class="kc-stat-val">15–20 min</span>
+        <span class="kc-stat-note">To Downtown Dallas via Hwy 67</span>
       </div>
       <div class="kc-stat">
-        <span class="kc-stat-num">~2.25%</span>
-        <span class="kc-stat-lbl">Effective Property Tax Rate</span>
+        <span class="kc-stat-val">~2.25%</span>
+        <span class="kc-stat-note">Effective Property Tax Rate</span>
       </div>
       <div class="kc-stat">
-        <span class="kc-stat-num">C</span>
-        <span class="kc-stat-lbl">Crime &amp; Safety · Niche</span>
+        <span class="kc-stat-val">C</span>
+        <span class="kc-stat-note">Crime &amp; Safety · Niche</span>
       </div>
     </div>
-  </div>
 </div>
 
 <!-- ── 4. JUMP NAV (no Video Tour — no video exists for Duncanville) ─────── -->
 <div class="kc-jumpnav">
-  <div class="kc-container">
-    <ul class="kc-jumpnav-list">
+  <ul class="kc-jumpnav-list">
       <li><a href="#kc-intro">About</a></li>
       <li><a href="#kc-location">Location</a></li>
       <li><a href="#kc-schools">Schools</a></li>
@@ -553,17 +550,16 @@ gtag('consent', 'default', {
       <li><a href="#kc-faq">FAQ</a></li>
       <li><a href="#kc-contact">Contact</a></li>
     </ul>
-  </div>
 </div>
 
 <!-- ── 5. KRISTEN INTRO ──────────────────────────────────────────────────── -->
 <div id="kc-intro" style="background:var(--white);">
-  <div class="kc-container kc-intro-wrap">
-    <div class="kc-intro-quote">
+  <div class="kc-intro-box">
+    <div class="kc-intro-text">
       <blockquote>"Duncanville gets overlooked because people assume affordability means compromise. But I've worked with families from California who were genuinely surprised — a solid 3-bedroom in a walkable neighborhood, 12 miles from downtown Dallas, under $300K. The Duncanville Fieldhouse alone has more under one roof than most suburban rec centers in DFW. This isn't a stepping-stone suburb. For the right family, it's the destination."</blockquote>
-      <div class="kc-intro-sig">— Kristen Carpentier, DFW Family Relocation Specialist</div>
+      <div>— Kristen Carpentier, DFW Family Relocation Specialist</div>
     </div>
-    <div class="kc-intro-bio">
+    <div>
       <p>I'm Kristen — a licensed Texas Realtor®, mom of four, and wife of an Army Veteran who has raised my family in this metro. I specialize in helping families relocating to DFW find the right suburb for their schools, commute, and budget. Duncanville is one of those cities that rarely makes the out-of-state radar but consistently surprises families when they actually look at the numbers.</p>
       <p class="kc-intro-contact">
         <a href="tel:6024054115">(602) 405-4115</a> &nbsp;·&nbsp;
@@ -707,7 +703,7 @@ gtag('consent', 'default', {
   <!-- Niche Category Grades — injected by JS -->
   <div style="margin-top:1.5rem;">
     <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:0.75rem;">Niche City &amp; Schools Grades — <span id="kc-grades-date-schools"></span></div>
-    <div id="kc-grade-chips" class="kc-grade-chips-row"></div>
+    <div id="kc-grade-chips"></div>
   </div>
 
   <div class="kc-callout" style="margin-top:1.5rem;">
