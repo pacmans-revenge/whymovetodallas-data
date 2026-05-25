@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-25T21:23:21.180Z",
+    "last_updated": "2026-05-25T22:03:01.287Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -142,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -267,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -392,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -517,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -642,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -767,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -892,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1017,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1142,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1196,7 +1196,7 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 425975,
@@ -1267,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1392,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1517,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1642,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1767,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -1892,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2017,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2142,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2267,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2392,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2517,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2642,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2767,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -2892,7 +2892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3017,7 +3017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3142,7 +3142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3267,7 +3267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3321,7 +3321,7 @@
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 339833.8,
@@ -3392,7 +3392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3517,7 +3517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3642,7 +3642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3696,7 +3696,7 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 353327.3,
@@ -3767,7 +3767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -3892,7 +3892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4019,7 +4019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4144,7 +4144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4269,7 +4269,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4394,7 +4394,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4519,7 +4519,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4644,7 +4644,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4769,7 +4769,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -4817,18 +4817,18 @@
         "condo_months_supply": null
       },
       "schools": {
-        "isd_name": "Northwest ISD",
-        "overall_grade": "A-",
-        "academics_grade": "A-",
-        "college_prep_grade": "A",
-        "good_for_families": "B",
-        "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
+        "isd_name": "Argyle ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
+        "college_prep_grade": "A+",
+        "good_for_families": "A+",
+        "niche_url": "https://www.niche.com/k12/d/argyle-independent-school-district-tx/",
         "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 650458.3,
-        "overall_isd_grade": 11,
-        "academics_isd_grade": 11,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 55.3,
         "walk_score": 28,
         "transit_score": null,
@@ -4894,7 +4894,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5019,7 +5019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5144,7 +5144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5271,7 +5271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5396,7 +5396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5521,7 +5521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5646,7 +5646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5771,7 +5771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -5896,7 +5896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6021,7 +6021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6075,7 +6075,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 386245.8,
@@ -6146,7 +6146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6271,7 +6271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6396,7 +6396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6521,7 +6521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6646,7 +6646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6771,7 +6771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -6896,7 +6896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7021,7 +7021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7075,7 +7075,7 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false
+        "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 379787.5,
@@ -7146,7 +7146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7271,7 +7271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7319,18 +7319,18 @@
         "condo_months_supply": null
       },
       "schools": {
-        "isd_name": "Garland ISD",
-        "overall_grade": "A-",
-        "academics_grade": "B+",
-        "college_prep_grade": "A",
-        "good_for_families": "B+",
-        "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
+        "isd_name": "Wylie ISD",
+        "overall_grade": "A+",
+        "academics_grade": "A",
+        "college_prep_grade": "A+",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
         "split_isd": true
       },
       "quiz": {
         "sfr_median_price": 441256.1,
-        "overall_isd_grade": 11,
-        "academics_isd_grade": 10,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 12,
         "pct_households_with_children": 39.8,
         "walk_score": 51,
         "transit_score": null,
@@ -7396,7 +7396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7521,7 +7521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7646,7 +7646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7771,7 +7771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -7896,7 +7896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -8021,7 +8021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -8146,7 +8146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -8273,7 +8273,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     },
@@ -8398,7 +8398,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T21:23:21.164Z",
+        "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
     }
