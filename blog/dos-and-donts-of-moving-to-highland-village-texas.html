@@ -250,14 +250,8 @@
     @media(max-width:540px){ .kc-market-urgent-grid { grid-template-columns:repeat(3,1fr); gap:0.65rem; } .kc-market-urgent-num { font-size:1.5rem; } }
 
     /* ── Video Wrapper ────────────────────────────────────── */
-    .kc-video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin:2rem 0; box-shadow:0 6px 24px rgba(0,0,0,0.15); }
-    .kc-video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; }
-    .kc-video-thumb { position:relative; cursor:pointer; border-radius:12px; overflow:hidden; }
-    .kc-video-thumb img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
-    .kc-video-play { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(31,45,61,.35); transition:background .2s; }
-    .kc-video-play:hover { background:rgba(31,45,61,.5); }
-    .kc-video-play-btn { width:64px; height:64px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .kc-video-play-btn svg { width:26px; height:26px; fill:var(--white); margin-left:3px; }
+    .kc-video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin:2rem 0; box-shadow:0 6px 24px rgba(0,0,0,0.15); background:#000; }
+    .kc-video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; border-radius:12px; }
     .kc-video-caption { font-size:0.78rem; color:#888; text-align:center; margin-top:0.6rem; font-style:italic; }
 
     /* ── IDX Card ─────────────────────────────────────────── */
@@ -592,17 +586,14 @@ gtag('consent', 'default', {
   </div>
 
   <!-- Video -->
-  <div id="hv-video-wrap" class="kc-video-thumb" onclick="kcPlay()" style="margin:2rem 0;">
-    <img src="https://img.youtube.com/vi/yl2TBT16e5g/maxresdefault.jpg"
-         alt="Highland Village Texas neighborhood tour showing Lake Lewisville and residential streets"
-         loading="lazy">
-    <div class="kc-video-play">
-      <div class="kc-video-play-btn">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="5,3 19,12 5,21"/></svg>
-      </div>
-    </div>
+  <div class="kc-video-wrap">
+    <iframe src="https://www.youtube.com/embed/yl2TBT16e5g?rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            title="Highland Village Texas Tour — One of Dallas's Best Kept Secrets"></iframe>
   </div>
-  <p class="kc-video-caption">Watch: Highland Village Texas Tour — one of Dallas's best kept secret suburbs, covering neighborhoods, Lake Lewisville access, and what makes it stand apart in North DFW.</p>
+  <p class="kc-video-caption">Watch: Highland Village Texas Tour — neighborhoods, Lake Lewisville, and what makes this small DFW suburb stand apart for families.</p>
 
   <!-- TOC -->
   <nav class="kc-blog-toc">
@@ -1008,12 +999,6 @@ gtag('consent', 'default', {
   }
   window.addEventListener('scroll', upd, { passive: true });
 })();
-
-// Video embed
-function kcPlay() {
-  var w = document.getElementById('hv-video-wrap');
-  w.outerHTML = '<div class="kc-video-wrap"><iframe src="https://www.youtube.com/embed/yl2TBT16e5g?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen title="Highland Village Texas Tour — One of Dallas Best Kept Secrets"></iframe></div>';
-}
 
 // FAQ accordion
 function kcFaq(btn) {
