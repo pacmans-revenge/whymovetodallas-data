@@ -516,11 +516,7 @@ gtag('consent', 'default', {
       </div>
     </div>
     <div id="kc-data-subscores" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.65rem 1.25rem;padding-top:1rem;border-top:1px solid #e5e2db;margin-top:1rem;">
-      <div style="text-align:center;"><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">93</div><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Education</div></div>
-      <div style="text-align:center;"><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">87</div><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Safety</div></div>
-      <div style="text-align:center;"><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">70</div><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Family Community</div></div>
-      <div style="text-align:center;"><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">47</div><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Commute</div></div>
-      <div style="text-align:center;"><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">100</div><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-top:0.15rem;">Market Stability</div></div>
+    </div>
     </div>
   </div>
 </div>
@@ -1400,6 +1396,26 @@ gtag('consent', 'default', {
         var vf = document.getElementById('kc-value-score-fill');
         if (vf) vf.style.width = sc.value_score + '%';
       }
+
+      // ── Sub-score bars ──────────────────────────────────────────────────
+      var ssEl = document.getElementById('kc-data-subscores');
+      if (ssEl && sc.sub_scores) {
+        var ssOrder = ['education', 'safety', 'family_community', 'commute', 'market_stability'];
+        var ssNames = { education: 'Education', safety: 'Safety', family_community: 'Family & Community', commute: 'Commute', market_stability: 'Market Stability' };
+        var ssHtml = '';
+        ssOrder.forEach(function(key) {
+          var v = sc.sub_scores[key];
+          var disp = (v != null) ? v : '—';
+          var pct  = (v != null) ? v : 0;
+          ssHtml += '<div class="kc-subscore-item">';
+          ssHtml += '<div class="kc-subscore-item-label">' + ssNames[key] + '</div>';
+          ssHtml += '<div class="kc-subscore-item-track"><div class="kc-subscore-item-fill" style="width:' + pct + '%"></div></div>';
+          ssHtml += '<span class="kc-subscore-item-val">' + disp + '</span>';
+          ssHtml += '</div>';
+        });
+        ssEl.innerHTML = ssHtml;
+      }
+
 
       // Walkability
       if (walk.walk_score  != null) setText('kc-ws-walk',    walk.walk_score);

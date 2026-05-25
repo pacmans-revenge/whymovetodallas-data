@@ -1614,7 +1614,7 @@ gtag('consent', 'default', {
         }
 
         /* Sub-scores */
-        var ss = d.scores;
+        var ss = d.scores && d.scores.sub_scores;
         if (ss) {
           var subScoreLabels = [
             ['education', 'Education'], ['safety', 'Safety'], ['family_community', 'Family Life'],
