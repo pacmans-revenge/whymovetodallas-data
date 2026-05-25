@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-05-24T19:28:33.131Z",
+    "last_updated": "2026-05-25T20:33:19.959Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
@@ -118,7 +118,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
+        "family_score": 79,
         "value_score": 68,
         "sub_scores": {
           "education": 87,
@@ -142,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -243,7 +243,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
+        "family_score": 84,
         "value_score": 93,
         "sub_scores": {
           "education": 97,
@@ -267,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -368,10 +368,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
-        "value_score": 92,
+        "family_score": 73,
+        "value_score": 93,
         "sub_scores": {
-          "education": 80,
+          "education": 83,
           "safety": 80,
           "family_community": 50,
           "commute": 42,
@@ -392,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -493,7 +493,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 84,
+        "family_score": 86,
         "value_score": 96,
         "sub_scores": {
           "education": 97,
@@ -517,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -618,7 +618,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 74,
         "value_score": 87,
         "sub_scores": {
           "education": 83,
@@ -642,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -743,10 +743,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 70,
+        "family_score": 75,
         "value_score": 94,
         "sub_scores": {
-          "education": 83,
+          "education": 87,
           "safety": 77,
           "family_community": 42,
           "commute": 59,
@@ -767,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -868,7 +868,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 72,
         "value_score": 89,
         "sub_scores": {
           "education": 83,
@@ -892,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -993,10 +993,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
+        "family_score": 81,
         "value_score": 89,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 77,
           "family_community": 77,
           "commute": 54,
@@ -1017,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1118,7 +1118,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 72,
+        "family_score": 75,
         "value_score": 93,
         "sub_scores": {
           "education": 87,
@@ -1142,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1243,10 +1243,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
-        "value_score": 89,
+        "family_score": 83,
+        "value_score": 91,
         "sub_scores": {
-          "education": 87,
+          "education": 97,
           "safety": 80,
           "family_community": 69,
           "commute": 52,
@@ -1267,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1368,7 +1368,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 72,
         "value_score": 89,
         "sub_scores": {
           "education": 73,
@@ -1392,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1493,10 +1493,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
-        "value_score": 95,
+        "family_score": 79,
+        "value_score": 96,
         "sub_scores": {
-          "education": 87,
+          "education": 93,
           "safety": 80,
           "family_community": 70,
           "commute": 47,
@@ -1517,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1618,7 +1618,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 75,
         "value_score": 88,
         "sub_scores": {
           "education": 80,
@@ -1642,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1743,7 +1743,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
+        "family_score": 83,
         "value_score": 56,
         "sub_scores": {
           "education": 97,
@@ -1767,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1868,7 +1868,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 83,
         "value_score": 85,
         "sub_scores": {
           "education": 97,
@@ -1892,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -1993,10 +1993,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
-        "value_score": 92,
+        "family_score": 80,
+        "value_score": 93,
         "sub_scores": {
-          "education": 83,
+          "education": 90,
           "safety": 83,
           "family_community": 65,
           "commute": 46,
@@ -2017,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2118,7 +2118,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 72,
         "value_score": 95,
         "sub_scores": {
           "education": 77,
@@ -2142,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2243,10 +2243,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 68,
-        "value_score": 71,
+        "family_score": 72,
+        "value_score": 72,
         "sub_scores": {
-          "education": 79,
+          "education": 80,
           "safety": 70,
           "family_community": 46,
           "commute": 53,
@@ -2267,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2368,10 +2368,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
-        "value_score": 86,
+        "family_score": 77,
+        "value_score": 85,
         "sub_scores": {
-          "education": 90,
+          "education": 87,
           "safety": 73,
           "family_community": 55,
           "commute": 64,
@@ -2392,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2493,7 +2493,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 62,
+        "family_score": 66,
         "value_score": 87,
         "sub_scores": {
           "education": 73,
@@ -2517,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2618,10 +2618,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 71,
-        "value_score": 89,
+        "family_score": 72,
+        "value_score": 88,
         "sub_scores": {
-          "education": 80,
+          "education": 77,
           "safety": 73,
           "family_community": 52,
           "commute": 55,
@@ -2642,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2743,7 +2743,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
+        "family_score": 80,
         "value_score": 90,
         "sub_scores": {
           "education": 97,
@@ -2767,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2868,7 +2868,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 82,
         "value_score": 61,
         "sub_scores": {
           "education": 97,
@@ -2892,7 +2892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -2993,7 +2993,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 79,
         "value_score": 99,
         "sub_scores": {
           "education": 93,
@@ -3017,7 +3017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3118,10 +3118,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 84,
         "value_score": 88,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 87,
           "family_community": 68,
           "commute": 48,
@@ -3142,7 +3142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3243,10 +3243,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 68,
+        "family_score": 72,
         "value_score": 96,
         "sub_scores": {
-          "education": 83,
+          "education": 87,
           "safety": 73,
           "family_community": 48,
           "commute": 38,
@@ -3267,7 +3267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3368,10 +3368,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 67,
+        "family_score": 70,
         "value_score": 86,
         "sub_scores": {
-          "education": 77,
+          "education": 76,
           "safety": 73,
           "family_community": 37,
           "commute": 53,
@@ -3392,7 +3392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3493,7 +3493,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
+        "family_score": 83,
         "value_score": 80,
         "sub_scores": {
           "education": 97,
@@ -3517,7 +3517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3618,10 +3618,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
-        "value_score": 92,
+        "family_score": 72,
+        "value_score": 91,
         "sub_scores": {
-          "education": 90,
+          "education": 87,
           "safety": 73,
           "family_community": 41,
           "commute": 40,
@@ -3642,7 +3642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3743,7 +3743,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 73,
         "value_score": 88,
         "sub_scores": {
           "education": 83,
@@ -3767,7 +3767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3868,7 +3868,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
+        "family_score": 83,
         "value_score": 82,
         "sub_scores": {
           "education": 97,
@@ -3892,7 +3892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -3995,7 +3995,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 78,
         "value_score": 95,
         "sub_scores": {
           "education": 90,
@@ -4019,7 +4019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4120,10 +4120,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
-        "value_score": 81,
+        "family_score": 80,
+        "value_score": 82,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 83,
           "family_community": 77,
           "commute": 50,
@@ -4144,7 +4144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4269,7 +4269,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4370,10 +4370,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 89,
+        "family_score": 85,
+        "value_score": 90,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 87,
           "family_community": 76,
           "commute": 47,
@@ -4394,7 +4394,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4495,10 +4495,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
+        "family_score": 79,
         "value_score": 87,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 77,
           "family_community": 58,
           "commute": 53,
@@ -4519,7 +4519,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4620,10 +4620,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 70,
-        "value_score": 85,
+        "family_score": 75,
+        "value_score": 86,
         "sub_scores": {
-          "education": 80,
+          "education": 87,
           "safety": 73,
           "family_community": 46,
           "commute": 56,
@@ -4644,7 +4644,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4745,10 +4745,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
-        "value_score": 84,
+        "family_score": 80,
+        "value_score": 85,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 83,
           "family_community": 50,
           "commute": 42,
@@ -4769,7 +4769,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4870,10 +4870,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 84,
-        "value_score": 89,
+        "family_score": 86,
+        "value_score": 90,
         "sub_scores": {
-          "education": 90,
+          "education": 97,
           "safety": 89,
           "family_community": 91,
           "commute": 42,
@@ -4894,7 +4894,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -4995,7 +4995,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 79,
         "value_score": 89,
         "sub_scores": {
           "education": 93,
@@ -5019,7 +5019,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5120,10 +5120,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 70,
-        "value_score": 93,
+        "family_score": 78,
+        "value_score": 96,
         "sub_scores": {
-          "education": 80,
+          "education": 93,
           "safety": 80,
           "family_community": 48,
           "commute": 48,
@@ -5144,7 +5144,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5247,7 +5247,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
+        "family_score": 82,
         "value_score": 46,
         "sub_scores": {
           "education": 97,
@@ -5271,7 +5271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5396,7 +5396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5497,10 +5497,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
-        "value_score": 92,
+        "family_score": 82,
+        "value_score": 93,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 80,
           "family_community": 62,
           "commute": 54,
@@ -5521,7 +5521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5622,10 +5622,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 97,
+        "family_score": 84,
+        "value_score": 98,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 90,
           "family_community": 66,
           "commute": 49,
@@ -5646,7 +5646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5747,7 +5747,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 72,
         "value_score": 90,
         "sub_scores": {
           "education": 83,
@@ -5771,7 +5771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5872,7 +5872,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 76,
         "value_score": 92,
         "sub_scores": {
           "education": 90,
@@ -5896,7 +5896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -5997,10 +5997,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 83,
-        "value_score": 91,
+        "family_score": 85,
+        "value_score": 92,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 87,
           "family_community": 86,
           "commute": 42,
@@ -6021,7 +6021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6122,10 +6122,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 72,
-        "value_score": 91,
+        "family_score": 78,
+        "value_score": 92,
         "sub_scores": {
-          "education": 87,
+          "education": 93,
           "safety": 80,
           "family_community": 44,
           "commute": 50,
@@ -6146,7 +6146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6247,10 +6247,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 87,
+        "family_score": 83,
+        "value_score": 88,
         "sub_scores": {
-          "education": 90,
+          "education": 93,
           "safety": 83,
           "family_community": 86,
           "commute": 47,
@@ -6271,7 +6271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6372,10 +6372,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 88,
+        "family_score": 81,
+        "value_score": 89,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 80,
           "family_community": 53,
           "commute": 54,
@@ -6396,7 +6396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6497,7 +6497,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
+        "family_score": 78,
         "value_score": 96,
         "sub_scores": {
           "education": 87,
@@ -6521,7 +6521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6622,10 +6622,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 68,
+        "family_score": 84,
+        "value_score": 69,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 87,
           "family_community": 75,
           "commute": 46,
@@ -6646,7 +6646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6747,10 +6747,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
-        "value_score": 87,
+        "family_score": 80,
+        "value_score": 88,
         "sub_scores": {
-          "education": 90,
+          "education": 93,
           "safety": 80,
           "family_community": 49,
           "commute": 55,
@@ -6771,7 +6771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6872,10 +6872,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 77,
+        "family_score": 85,
+        "value_score": 79,
         "sub_scores": {
-          "education": 90,
+          "education": 97,
           "safety": 83,
           "family_community": 82,
           "commute": 52,
@@ -6896,7 +6896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -6997,10 +6997,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
-        "value_score": 87,
+        "family_score": 82,
+        "value_score": 88,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 80,
           "family_community": 70,
           "commute": 55,
@@ -7021,7 +7021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7122,10 +7122,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 70,
-        "value_score": 96,
+        "family_score": 74,
+        "value_score": 95,
         "sub_scores": {
-          "education": 90,
+          "education": 87,
           "safety": 80,
           "family_community": 38,
           "commute": 40,
@@ -7146,7 +7146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7247,7 +7247,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
+        "family_score": 74,
         "value_score": 97,
         "sub_scores": {
           "education": 87,
@@ -7271,7 +7271,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7372,10 +7372,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
-        "value_score": 96,
+        "family_score": 76,
+        "value_score": 95,
         "sub_scores": {
-          "education": 90,
+          "education": 87,
           "safety": 83,
           "family_community": 40,
           "commute": 45,
@@ -7396,7 +7396,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7497,7 +7497,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 78,
         "value_score": 97,
         "sub_scores": {
           "education": 90,
@@ -7521,7 +7521,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7622,7 +7622,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 83,
+        "family_score": 84,
         "value_score": 48,
         "sub_scores": {
           "education": 97,
@@ -7646,7 +7646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7747,10 +7747,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
+        "family_score": 80,
         "value_score": 94,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 80,
           "family_community": 51,
           "commute": 46,
@@ -7771,7 +7771,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7872,10 +7872,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 73,
+        "family_score": 85,
+        "value_score": 75,
         "sub_scores": {
-          "education": 90,
+          "education": 97,
           "safety": 90,
           "family_community": 62,
           "commute": 55,
@@ -7896,7 +7896,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -7997,7 +7997,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 86,
+        "family_score": 87,
         "value_score": 44,
         "sub_scores": {
           "education": 97,
@@ -8021,7 +8021,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -8122,7 +8122,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 79,
         "value_score": 86,
         "sub_scores": {
           "education": 90,
@@ -8146,7 +8146,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -8249,7 +8249,7 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 78,
         "value_score": 44,
         "sub_scores": {
           "education": 97,
@@ -8273,7 +8273,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     },
@@ -8374,10 +8374,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 78,
         "value_score": 94,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 80,
           "family_community": 60,
           "commute": 39,
@@ -8398,7 +8398,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-24T19:28:33.114Z",
+        "computed_date": "2026-05-25T20:33:19.926Z",
         "data_completeness": "full"
       }
     }
