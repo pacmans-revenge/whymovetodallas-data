@@ -1734,6 +1734,51 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
       if (updated) setText('kc-compare-date', updated);
 
       // ── Amenity rank narratives ────────────────────────────────────────
+      // ── Scores, sub-scores & Niche grade chips ─────────────────────────
+      var sc = suburb.scores || {};
+      if (sc.family_score != null) {
+        setText('kc-family-score', sc.family_score);
+        var fsFill = document.getElementById('kc-family-score-fill');
+        if (fsFill) { setTimeout(function() { fsFill.style.width = sc.family_score + '%'; }, 80); }
+      }
+      if (sc.value_score != null) {
+        setText('kc-value-score', sc.value_score);
+        var vsFill = document.getElementById('kc-value-score-fill');
+        if (vsFill) { setTimeout(function() { vsFill.style.width = sc.value_score + '%'; }, 80); }
+      }
+      var ssEl = document.getElementById('kc-data-subscores');
+      if (ssEl && sc.sub_scores) {
+        var ssOrder = ['education','safety','family_community','commute','market_stability'];
+        var ssNames = { education:'Education', safety:'Safety', family_community:'Family & Community', commute:'Commute', market_stability:'Market Stability' };
+        var ssHtml = '';
+        ssOrder.forEach(function(key) {
+          var v = sc.sub_scores[key];
+          var disp = (v != null) ? v : '—';
+          var pct  = (v != null) ? v : 0;
+          ssHtml += '<div class="kc-subscore-item">';
+          ssHtml += '<div class="kc-subscore-item-label">' + ssNames[key] + '</div>';
+          ssHtml += '<div class="kc-subscore-item-track"><div class="kc-subscore-item-fill" style="width:' + pct + '%"></div></div>';
+          ssHtml += '<span class="kc-subscore-item-val">' + disp + '</span>';
+          ssHtml += '</div>';
+        });
+        ssEl.innerHTML = ssHtml;
+      }
+      var ncity = suburb.niche_city || {};
+      var chipsEl = document.getElementById('kc-grade-chips');
+      if (chipsEl) {
+        function _gBg(g) { if (!g) return '#f0f0f0'; var l=g.charAt(0); return l==='A'?'#d4f4e2':l==='B'?'#d4e8f8':l==='C'?'#fff3cd':l==='D'?'#fde2d8':'#f0f0f0'; }
+        function _gCol(g) { if (!g) return '#555'; var l=g.charAt(0); return l==='A'?'#1a6b3a':l==='B'?'#2d7abf':l==='C'?'#856404':l==='D'?'#c0392b':'#555'; }
+        var gradeOrder = ['families','public_schools','jobs','cost_of_living','outdoor_activities','commute','housing','health_fitness','nightlife','diversity','weather'];
+        var gradeNames = { families:'Families', public_schools:'Public Schools', jobs:'Jobs', cost_of_living:'Cost of Living', outdoor_activities:'Outdoor Activities', commute:'Commute', housing:'Housing', health_fitness:'Health & Fitness', nightlife:'Nightlife', diversity:'Diversity', weather:'Weather' };
+        var chHtml = '';
+        gradeOrder.forEach(function(key) {
+          var g = ncity[key]; if (!g) return;
+          chHtml += '<span style="background:'+_gBg(g)+';color:'+_gCol(g)+';padding:0.3rem 0.65rem;border-radius:20px;font-size:0.78rem;font-weight:700;">'+gradeNames[key]+' '+g+'</span>';
+        });
+        if (chHtml) chipsEl.innerHTML = chHtml;
+        setText('kc-grades-date', ncity.year || new Date().getFullYear());
+      }
+
       var ranks = (suburb.scores && suburb.scores.amenity_ranks) || null;
       if (ranks) {
         var _n = SUBURB_NAME || 'This suburb';

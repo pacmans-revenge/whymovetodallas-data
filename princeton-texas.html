@@ -1761,6 +1761,40 @@ gtag('consent', 'default', {
       if (vm) vm.style.width = scr.value_score + '%';
     }
 
+    /* Sub-score bars */
+    var ssEl = document.getElementById('kc-data-subscores');
+    if (ssEl && scr.sub_scores) {
+      var ssOrder = ['education','safety','family_community','commute','market_stability'];
+      var ssNames = { education:'Education', safety:'Safety', family_community:'Family & Community', commute:'Commute', market_stability:'Market Stability' };
+      var ssHtml = '';
+      ssOrder.forEach(function(key) {
+        var v = scr.sub_scores[key];
+        var disp = (v != null) ? v : '—';
+        var pct  = (v != null) ? v : 0;
+        ssHtml += '<div class="kc-subscore-item">';
+        ssHtml += '<div class="kc-subscore-item-label">' + ssNames[key] + '</div>';
+        ssHtml += '<div class="kc-subscore-item-track"><div class="kc-subscore-item-fill" style="width:' + pct + '%"></div></div>';
+        ssHtml += '<span class="kc-subscore-item-val">' + disp + '</span>';
+        ssHtml += '</div>';
+      });
+      ssEl.innerHTML = ssHtml;
+    }
+
+    /* Niche grade chips */
+    var gradeOrder = ['overall','families','public_schools','crime','housing','jobs','diversity','cost_of_living','health_fitness','outdoor_activities','nightlife','weather','commute'];
+    var gradeNames = { overall:'Overall', families:'Families', public_schools:'Schools', crime:'Crime & Safety', housing:'Housing', jobs:'Jobs', diversity:'Diversity', cost_of_living:'Cost of Living', health_fitness:'Health', outdoor_activities:'Outdoors', nightlife:'Nightlife', weather:'Weather', commute:'Commute' };
+    var chipsEl = document.getElementById('kc-grade-chips');
+    if (chipsEl) {
+      var chHtml = '';
+      gradeOrder.forEach(function(key) {
+        var g = nic[key]; if (!g) return;
+        var gc = g.charAt(0) === 'A' ? 'gA' : g.charAt(0) === 'B' ? 'gB' : g.charAt(0) === 'C' ? 'gC' : 'gD';
+        chHtml += '<span class="kc-grade-chip"><span class="kc-grade-chip-label">' + gradeNames[key] + '</span><span class="kc-grade-chip-val ' + gc + '">' + g + '</span></span>';
+      });
+      chipsEl.innerHTML = chHtml;
+    }
+    if (nic.scraped_date) setText('kc-grades-date', nic.scraped_date.slice(0,7).replace('-','\/'));
+
     /* Niche grade */
     var ng = document.getElementById('kc-niche-grade');
     if (ng && nic.overall) ng.textContent = nic.overall;
