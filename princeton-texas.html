@@ -437,7 +437,7 @@ gtag('consent', 'default', {
      SECTION 1 — BREADCRUMB
      ═══════════════════════════════════════════ -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
-  <div class="kc-container">
+  <div >
     <nav class="kc-breadcrumb" aria-label="Breadcrumb">
       <ol>
         <li><a href="/">Home</a></li>
@@ -452,7 +452,7 @@ gtag('consent', 'default', {
      SECTION 2 — HERO
      ═══════════════════════════════════════════ -->
 <section class="kc-hero" id="kc-top" aria-label="Princeton, Texas suburb guide hero">
-  <div class="kc-hero-inner kc-container">
+  <div class="kc-hero-inner">
     <p class="kc-hero-location">Collin County &nbsp;·&nbsp; Princeton ISD</p>
     <h1>Living in Princeton, Texas</h1>
     <p class="kc-hero-sub">Collin County's best-value suburb — B+ schools, Lake Lavon access, and new construction starting in the $280s</p>
@@ -467,32 +467,32 @@ gtag('consent', 'default', {
 <!-- ═══════════════════════════════════════════
      SECTION 3 — STATS BAR
      ═══════════════════════════════════════════ -->
-<div class="kc-stats-bar">
-  <div class="kc-stats-bar-inner kc-container">
-    <div class="kc-stat-item">
+<div class="kc-stats">
+  <div class="kc-stats-grid">
+    <div class="kc-stat">
       <span class="kc-stat-label">Population</span>
-      <span class="kc-stat-value">~27,000</span>
+      <span class="kc-stat-val">~27,000</span>
     </div>
-    <div class="kc-stat-item">
+    <div class="kc-stat">
       <span class="kc-stat-label">Median Home Price</span>
-      <span class="kc-stat-value" id="kc-stat-price">~$302K</span>
+      <span class="kc-stat-val" id="kc-stat-price">~$302K</span>
       <span class="kc-stat-note" id="kc-stat-price-note">SFR · balanced market</span>
     </div>
-    <div class="kc-stat-item">
+    <div class="kc-stat">
       <span class="kc-stat-label">School Rating</span>
-      <span class="kc-stat-value">B+</span>
+      <span class="kc-stat-val">B+</span>
     </div>
-    <div class="kc-stat-item">
+    <div class="kc-stat">
       <span class="kc-stat-label">Commute to Dallas</span>
-      <span class="kc-stat-value">~44 min</span>
+      <span class="kc-stat-val">~44 min</span>
     </div>
-    <div class="kc-stat-item">
+    <div class="kc-stat">
       <span class="kc-stat-label">Property Tax Rate</span>
-      <span class="kc-stat-value">~1.69%</span>
+      <span class="kc-stat-val">~1.69%</span>
     </div>
-    <div class="kc-stat-item">
+    <div class="kc-stat">
       <span class="kc-stat-label">Safety</span>
-      <span class="kc-stat-value">Safer than 64%</span>
+      <span class="kc-stat-val">Safer than 64%</span>
     </div>
   </div>
 </div>
@@ -500,52 +500,52 @@ gtag('consent', 'default', {
 <!-- ═══════════════════════════════════════════
      SECTION 4 — JUMP NAV (Video Tour removed — no video)
      ═══════════════════════════════════════════ -->
-<nav class="kc-jump-nav" aria-label="Page sections">
-  <div class="kc-jump-nav-inner kc-container">
-    <a href="#kc-intro">About</a>
-    <a href="#kc-location">Location</a>
-    <a href="#kc-schools">Schools</a>
-    <a href="#kc-neighborhoods">Neighborhoods</a>
-    <a href="#kc-cost">Cost of Living</a>
-    <a href="#kc-jobs">Employers</a>
-    <a href="#kc-lifestyle">Lifestyle</a>
-    <a href="#kc-recreation">Recreation</a>
-    <a href="#kc-safety">Safety</a>
-    <a href="#kc-market">Market</a>
-    <a href="#kc-proscons">Pros &amp; Cons</a>
-    <a href="#kc-faq">FAQ</a>
-    <a href="#kc-contact">Contact</a>
-  </div>
+<nav class="kc-jumpnav" aria-label="Page sections">
+  <ul class="kc-jumpnav-list">
+    <li><a href="#kc-intro">About</a></li>
+    <li><a href="#kc-location">Location</a></li>
+    <li><a href="#kc-schools">Schools</a></li>
+    <li><a href="#kc-neighborhoods">Neighborhoods</a></li>
+    <li><a href="#kc-cost">Cost of Living</a></li>
+    <li><a href="#kc-jobs">Employers</a></li>
+    <li><a href="#kc-lifestyle">Lifestyle</a></li>
+    <li><a href="#kc-recreation">Recreation</a></li>
+    <li><a href="#kc-safety">Safety</a></li>
+    <li><a href="#kc-market">Market</a></li>
+    <li><a href="#kc-proscons">Pros &amp; Cons</a></li>
+    <li><a href="#kc-faq">FAQ</a></li>
+    <li><a href="#kc-contact">Contact</a></li>
+  </ul>
 </nav>
 
 <!-- ═══════════════════════════════════════════
      SECTION 5 — KRISTEN INTRO + DATA STRIP
      ═══════════════════════════════════════════ -->
 <div id="kc-intro" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Your Guide to Princeton</span>
       <h2>The Most Affordable Collin County Suburb — With Schools to Match</h2>
     </div>
 
-    <div class="kc-intro-wrap">
-      <div class="kc-quote">
+    <div class="kc-intro-box">
+      <div >
         <p>"Princeton is the suburb I recommend when a family wants real Collin County schools and that tight-knit community feel without spending $600K to get there. The value is exceptional — B+ schools, Lake Lavon right in your backyard, and new construction still available under $350K. That combination doesn't exist anywhere else in Collin County."</p>
-        <span class="kc-quote-attr">— Kristen Carpentier, DFW Family Relocation Specialist</span>
+        <span >— Kristen Carpentier, DFW Family Relocation Specialist</span>
       </div>
 
-      <div class="kc-bio">
-        <div class="kc-bio-img-wrap">
-          <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, licensed Texas Realtor and DFW family relocation specialist" class="kc-bio-img" loading="lazy" width="120" height="120">
+      <div class="kc-intro-text">
+        <div class="kc-intro-avatar">
+          <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, licensed Texas Realtor and DFW family relocation specialist"  loading="lazy" width="120" height="120">
         </div>
-        <div class="kc-bio-text">
+        <div >
           <strong>Kristen Carpentier</strong>
           <span>Licensed Texas Realtor® · TREC #760457</span>
           <span>DFW Family Relocation Specialist · eXp Realty</span>
           <span>Mom of four · Flower Mound resident</span>
-          <a href="tel:+16024054115" class="kc-bio-contact">(602) 405-4115</a>
-          <a href="mailto:Kristen@whymovetodallas.com" class="kc-bio-contact">Kristen@whymovetodallas.com</a>
+          <a href="tel:+16024054115" >(602) 405-4115</a>
+          <a href="mailto:Kristen@whymovetodallas.com" >Kristen@whymovetodallas.com</a>
         </div>
       </div>
     </div>
@@ -588,29 +588,24 @@ gtag('consent', 'default', {
     <p style="font-size:0.65rem;color:#c0bdb6;margin:0.7rem 0 0;">Family Score = schools (30%) + safety (25%) + community (20%) + commute (15%) + market stability (10%) &middot; Affordability Score = price-to-income ratio + school quality per dollar + price vs. metro avg &middot; Sub-scores on a 0–10 scale &middot; Niche grades refreshed annually each fall</p>
   </div>
 </div>
-              </div>
-              <span class="kc-score-meter-num" id="kc-family-score">79</span>
-              <span class="kc-score-meter-max">/100</span>
-            </div>
-          </div>
-          <div class="kc-score-meter-wrap">
-            <div class="kc-score-meter-label">Value Score</div>
+          <div >
+            <div >Value Score</div>
             <div class="kc-score-meter" data-score-id="value_score" data-suburb="princeton">
-              <div class="kc-score-meter-bar">
-                <div class="kc-score-meter-fill kc-score-meter-fill--gold" style="width:96%"></div>
+              <div >
+                <div  style="width:96%"></div>
               </div>
-              <span class="kc-score-meter-num" id="kc-value-score">96</span>
-              <span class="kc-score-meter-max">/100</span>
+              <span  id="kc-value-score">96</span>
+              <span >/100</span>
             </div>
           </div>
         </div>
 
-        <div class="kc-niche-block" id="kc-niche-block">
-          <div class="kc-niche-grade-wrap">
-            <span class="kc-niche-grade" id="kc-niche-grade">B+</span>
-            <span class="kc-niche-label">Niche Overall</span>
+        <div  id="kc-niche-block">
+          <div >
+            <span  id="kc-niche-grade">B+</span>
+            <span >Niche Overall</span>
           </div>
-          <div class="kc-niche-chips" id="kc-niche-chips">
+          <div  id="kc-niche-chips">
             <!-- JS populated -->
           </div>
         </div>
@@ -618,30 +613,30 @@ gtag('consent', 'default', {
     </div>
 
     <!-- Census snapshot row — JS populated -->
-    <div class="kc-census-snapshot" id="kc-census-snapshot">
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-pop">~27,000</span>
-        <span class="kc-census-label">Population</span>
+    <div  id="kc-census-snapshot">
+      <div >
+        <span  id="kc-pop">~27,000</span>
+        <span >Population</span>
       </div>
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-median-age">32.9</span>
-        <span class="kc-census-label">Median Age</span>
+      <div >
+        <span  id="kc-median-age">32.9</span>
+        <span >Median Age</span>
       </div>
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-hhi">$96,766</span>
-        <span class="kc-census-label">Median HH Income</span>
+      <div >
+        <span  id="kc-hhi">$96,766</span>
+        <span >Median HH Income</span>
       </div>
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-kids-pct">50%</span>
-        <span class="kc-census-label">HHs with Children</span>
+      <div >
+        <span  id="kc-kids-pct">50%</span>
+        <span >HHs with Children</span>
       </div>
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-owner-pct">80%</span>
-        <span class="kc-census-label">Owner-Occupied</span>
+      <div >
+        <span  id="kc-owner-pct">80%</span>
+        <span >Owner-Occupied</span>
       </div>
-      <div class="kc-census-item">
-        <span class="kc-census-val" id="kc-commute">31.6 min</span>
-        <span class="kc-census-label">Avg Commute</span>
+      <div >
+        <span  id="kc-commute">31.6 min</span>
+        <span >Avg Commute</span>
       </div>
     </div>
 
@@ -658,7 +653,7 @@ gtag('consent', 'default', {
      SECTION 7 — LOCATION & COMMUTE
      ═══════════════════════════════════════════ -->
 <div id="kc-location" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Where You'll Land</span>
@@ -675,7 +670,7 @@ gtag('consent', 'default', {
       title="Princeton, Texas — location map"
     ></iframe>
 
-    <h3 class="kc-commute-heading">Commute Times from Princeton</h3>
+    <h3 >Commute Times from Princeton</h3>
     <div class="kc-commute-grid">
 
       <div class="kc-commute-card">
@@ -739,7 +734,7 @@ gtag('consent', 'default', {
      SECTION 8 — SCHOOLS
      ═══════════════════════════════════════════ -->
 <div id="kc-schools" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Schools &amp; Education</span>
@@ -747,18 +742,18 @@ gtag('consent', 'default', {
     </div>
 
     <!-- ISD Rating Chips (JS will update these) -->
-    <div class="kc-isd-ratings">
-      <div class="kc-rating-chip kc-rating-chip--tea">
-        <span class="kc-rating-chip-label">TEA Rating</span>
-        <span class="kc-rating-chip-val" id="kc-tea-rating">A</span>
+    <div >
+      <div class="kc-grade kc-grade--b">
+        <span class="kc-grade-chip-label">TEA Rating</span>
+        <span class="kc-grade-chip-val" id="kc-tea-rating">A</span>
       </div>
-      <div class="kc-rating-chip kc-rating-chip--niche">
-        <span class="kc-rating-chip-label">Niche Overall</span>
-        <span class="kc-rating-chip-val" id="kc-niche-isd-grade">B+</span>
+      <div class="kc-grade kc-grade--b">
+        <span class="kc-grade-chip-label">Niche Overall</span>
+        <span class="kc-grade-chip-val" id="kc-niche-isd-grade">B+</span>
       </div>
-      <div class="kc-rating-chip kc-rating-chip--gs">
-        <span class="kc-rating-chip-label">College Prep</span>
-        <span class="kc-rating-chip-val" id="kc-college-prep-grade">A−</span>
+      <div class="kc-grade kc-grade--a">
+        <span class="kc-grade-chip-label">College Prep</span>
+        <span class="kc-grade-chip-val" id="kc-college-prep-grade">A−</span>
       </div>
     </div>
 
@@ -767,7 +762,7 @@ gtag('consent', 'default', {
     <p>The district runs a Gifted &amp; Talented (GT) program starting in elementary school, and both high schools offer dual credit courses through Collin College for qualifying students. For military families on PCS orders, Princeton ISD typically accommodates mid-year enrollment without difficulty — a genuine advantage for tight timelines.</p>
 
     <!-- Campus Highlights Table -->
-    <h3 class="kc-table-heading">Notable Campuses — Princeton ISD</h3>
+    <h3 >Notable Campuses — Princeton ISD</h3>
     <div class="kc-table-wrap">
       <table class="kc-table">
         <thead>
@@ -806,30 +801,30 @@ gtag('consent', 'default', {
         </tbody>
       </table>
     </div>
-    <p class="kc-table-source">Source: Princeton ISD (princetonisdtx.net) · Niche 2024 · TEA 2023–24. Verify campus assignments at princetonisdtx.net before committing to a neighborhood.</p>
+    <p >Source: Princeton ISD (princetonisdtx.net) · Niche 2024 · TEA 2023–24. Verify campus assignments at princetonisdtx.net before committing to a neighborhood.</p>
 
     <!-- Niche Category Badges — JS populated -->
-    <div class="kc-niche-badge-row" id="kc-niche-badge-row">
+    <div  id="kc-niche-badge-row">
       <div class="kc-niche-badge" id="kc-badge-academics">
-        <span class="kc-badge-grade">B+</span>
-        <span class="kc-badge-label">Academics</span>
+        <span class="kc-grade-chip-val">B+</span>
+        <span class="kc-grade-chip-label">Academics</span>
       </div>
       <div class="kc-niche-badge" id="kc-badge-college-prep">
-        <span class="kc-badge-grade">A−</span>
-        <span class="kc-badge-label">College Prep</span>
+        <span class="kc-grade-chip-val">A−</span>
+        <span class="kc-grade-chip-label">College Prep</span>
       </div>
       <div class="kc-niche-badge" id="kc-badge-families">
-        <span class="kc-badge-grade">B</span>
-        <span class="kc-badge-label">Good for Families</span>
+        <span class="kc-grade-chip-val">B</span>
+        <span class="kc-grade-chip-label">Good for Families</span>
       </div>
       <div class="kc-niche-badge" id="kc-badge-diversity">
-        <span class="kc-badge-grade">A</span>
-        <span class="kc-badge-label">Diversity</span>
+        <span class="kc-grade-chip-val">A</span>
+        <span class="kc-grade-chip-label">Diversity</span>
       </div>
     </div>
 
     <!-- Kristen school callout -->
-    <div class="kc-callout kc-callout--kristen">
+    <div class="kc-callout kc-callout">
       <strong>Kristen's take on Princeton ISD:</strong> For families relocating on a budget, Princeton ISD is one of the best school stories in all of Collin County. You get B+ ratings, an A− for college prep, and a graduation rate above 96% — all at home prices $200K–$300K below what you'd pay in Frisco or Allen for comparable academics. The trade-off is that the district is growing fast, which means new campuses, boundary adjustments, and classroom sizes in flux. Verify which campus your neighborhood feeds to before buying.
     </div>
 
@@ -840,7 +835,7 @@ gtag('consent', 'default', {
      SECTION 9 — NEIGHBORHOODS
      ═══════════════════════════════════════════ -->
 <div id="kc-neighborhoods" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Where to Live</span>
@@ -852,66 +847,66 @@ gtag('consent', 'default', {
     <div class="kc-grid kc-grid--2">
 
       <div class="kc-card kc-card--gold">
-        <h3 class="kc-card-title">Bridgewater</h3>
+        <h3 >Bridgewater</h3>
         <p class="kc-card-price">$320s–$470s</p>
         <p>One of Princeton's largest and most established master-planned communities. Bridgewater features a resort-style pool, scenic ponds, walking trails, and a strong HOA that keeps the community well-maintained. Homes range from mid-sized production builds to larger custom lots. Feeds to Princeton ISD — confirm specific campus with the district before buying.</p>
-        <div class="kc-card-tags">
+        <div >
           <span class="kc-tag">Master-Planned</span>
           <span class="kc-tag">Pool &amp; Amenities</span>
           <span class="kc-tag">Walking Trails</span>
           <span class="kc-tag">Princeton ISD</span>
         </div>
-        <div class="kc-card-footer">
+        <div >
           <!-- ACTION: Create Lofty saved search for Bridgewater, Princeton TX and add URL to data/idx-search-index.json -->
-          <span class="kc-action-note">Contact Kristen for current Bridgewater listings</span>
+          <span class="kc-callout">Contact Kristen for current Bridgewater listings</span>
         </div>
       </div>
 
       <div class="kc-card kc-card--gold">
-        <h3 class="kc-card-title">Whitewing Trails</h3>
+        <h3 >Whitewing Trails</h3>
         <p class="kc-card-price">$290s–$380s</p>
         <p>One of Princeton's most accessible entry-level communities — a strong choice for first-time buyers and families relocating from high-cost markets who need to make a budget work. Whitewing Trails offers newer construction, open floor plans, and community green space. Proximity to US-380 makes the McKinney commute fast and straightforward.</p>
-        <div class="kc-card-tags">
+        <div >
           <span class="kc-tag">Entry-Level Value</span>
           <span class="kc-tag">New Construction</span>
           <span class="kc-tag">US-380 Access</span>
           <span class="kc-tag">Princeton ISD</span>
         </div>
-        <div class="kc-card-footer">
+        <div >
           <!-- ACTION: Create Lofty saved search for Whitewing Trails, Princeton TX -->
-          <span class="kc-action-note">Contact Kristen for current Whitewing Trails listings</span>
+          <span class="kc-callout">Contact Kristen for current Whitewing Trails listings</span>
         </div>
       </div>
 
       <div class="kc-card kc-card--gold">
-        <h3 class="kc-card-title">Heritage Estates</h3>
+        <h3 >Heritage Estates</h3>
         <p class="kc-card-price">$310s–$430s</p>
         <p>A well-regarded subdivision offering slightly larger lots than many Princeton communities — a meaningful difference for families who want a yard and some breathing room. Heritage Estates tends to attract families with school-age children drawn to the quieter, more established feel. Homes sit on generous lots with mature landscaping beginning to take hold in older sections.</p>
-        <div class="kc-card-tags">
+        <div >
           <span class="kc-tag">Larger Lots</span>
           <span class="kc-tag">Family-Oriented</span>
           <span class="kc-tag">Established Feel</span>
           <span class="kc-tag">Princeton ISD</span>
         </div>
-        <div class="kc-card-footer">
+        <div >
           <!-- ACTION: Create Lofty saved search for Heritage Estates, Princeton TX -->
-          <span class="kc-action-note">Contact Kristen for current Heritage Estates listings</span>
+          <span class="kc-callout">Contact Kristen for current Heritage Estates listings</span>
         </div>
       </div>
 
       <div class="kc-card kc-card--gold">
-        <h3 class="kc-card-title">Eastridge</h3>
+        <h3 >Eastridge</h3>
         <p class="kc-card-price">$280s–$390s</p>
         <p>One of Princeton's most competitively priced communities — frequently the first stop for families relocating from California or the Northeast who want to see what their budget actually buys in Collin County. Eastridge offers newer production homes with modern finishes and layouts. For buyers who want to maximize square footage and features per dollar, this community is worth a close look.</p>
-        <div class="kc-card-tags">
+        <div >
           <span class="kc-tag">Best Price-Per-Sq-Ft</span>
           <span class="kc-tag">Modern Finishes</span>
           <span class="kc-tag">Great for CA Movers</span>
           <span class="kc-tag">Princeton ISD</span>
         </div>
-        <div class="kc-card-footer">
+        <div >
           <!-- ACTION: Create Lofty saved search for Eastridge, Princeton TX -->
-          <span class="kc-action-note">Contact Kristen for current Eastridge listings</span>
+          <span class="kc-callout">Contact Kristen for current Eastridge listings</span>
         </div>
       </div>
 
@@ -928,7 +923,7 @@ gtag('consent', 'default', {
      SECTION 10 — COST OF LIVING
      ═══════════════════════════════════════════ -->
 <div id="kc-cost" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Cost of Living</span>
@@ -939,7 +934,7 @@ gtag('consent', 'default', {
 
     <!-- COL Comparison Table -->
     <div class="kc-table-wrap">
-      <table class="kc-table kc-table--col">
+      <table class="kc-table kc-table">
         <thead>
           <tr>
             <th>Category</th>
@@ -990,12 +985,12 @@ gtag('consent', 'default', {
     </div>
 
     <!-- California Math Callout -->
-    <div class="kc-callout kc-callout--gold">
+    <div class="kc-callout kc-callout">
       <strong>The California math:</strong> A household earning $175,000 in California pays roughly $14,000–$16,000/year in state income tax. In Texas, that bill is $0. That's an immediate $1,100–$1,350 per month in additional take-home pay — before you factor in the lower mortgage payment on a $302K Princeton home vs. a $1.4M Bay Area equivalent. Most California families who run the numbers find themselves $4,000–$6,000 per month ahead after the move.
     </div>
 
     <!-- Property Tax Breakdown -->
-    <h3 class="kc-table-heading" style="margin-top:2rem;">Princeton Property Tax Breakdown</h3>
+    <h3  style="margin-top:2rem;">Princeton Property Tax Breakdown</h3>
     <div class="kc-table-wrap">
       <table class="kc-table">
         <thead>
@@ -1034,7 +1029,7 @@ gtag('consent', 'default', {
         </tbody>
       </table>
     </div>
-    <p class="kc-table-source">Rates estimated based on Collin County Truth in Taxation data. Homestead exemption reduces taxable value — Texas offers a $100K general homestead exemption statewide, plus ISD-specific exemptions. New construction in some Princeton communities may include MUD (Municipal Utility District) fees — verify before buying. Always confirm current rates at collincad.org.</p>
+    <p >Rates estimated based on Collin County Truth in Taxation data. Homestead exemption reduces taxable value — Texas offers a $100K general homestead exemption statewide, plus ISD-specific exemptions. New construction in some Princeton communities may include MUD (Municipal Utility District) fees — verify before buying. Always confirm current rates at collincad.org.</p>
 
   </div>
 </div>
@@ -1043,7 +1038,7 @@ gtag('consent', 'default', {
      SECTION 11 — EMPLOYERS
      ═══════════════════════════════════════════ -->
 <div id="kc-jobs" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Work &amp; Economy</span>
@@ -1053,18 +1048,18 @@ gtag('consent', 'default', {
     <p>Princeton's own employment base is growing but modest — most residents commute to McKinney, Frisco, Allen, or Plano for work. The US-380 corridor places Princeton within an easy drive of Collin County's largest employment centers, making it a viable home base for families with jobs in the region's booming tech, healthcare, and financial services sectors.</p>
 
     <div class="kc-grid kc-grid--2">
-      <div class="kc-employer-col">
-        <h3 class="kc-employer-heading">In Princeton</h3>
-        <ul class="kc-employer-list">
+      <div >
+        <h3 >In Princeton</h3>
+        <ul class="kc-table">
           <li><strong>Princeton ISD</strong> — the city's largest employer, with 13 campuses and a fast-growing staff</li>
           <li><strong>City of Princeton</strong> — municipal services, utilities, parks &amp; rec, growing admin</li>
           <li><strong>Healthcare &amp; Retail</strong> — a growing commercial corridor along US-380 with urgent care, banking, and national retail chains establishing presence</li>
           <li><strong>Light Industrial / Distribution</strong> — eastern Collin County's logistics growth is drawing warehousing and distribution near the US-380 / SH-78 corridor</li>
         </ul>
       </div>
-      <div class="kc-employer-col">
-        <h3 class="kc-employer-heading">Within 15–35 Min (McKinney–Frisco–Plano Corridor)</h3>
-        <ul class="kc-employer-list">
+      <div >
+        <h3 >Within 15–35 Min (McKinney–Frisco–Plano Corridor)</h3>
+        <ul class="kc-table">
           <li><strong>Raytheon Technologies</strong> — McKinney, ~15 min · defense and aerospace engineering</li>
           <li><strong>Medical Center of McKinney</strong> — McKinney, ~15 min · regional healthcare hub</li>
           <li><strong>Toyota Motor North America HQ</strong> — Plano, ~35 min · 4,000+ employees</li>
@@ -1088,7 +1083,7 @@ gtag('consent', 'default', {
      SECTION 12 — LIFESTYLE
      ═══════════════════════════════════════════ -->
 <div id="kc-lifestyle" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Family Life</span>
@@ -1103,7 +1098,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><circle cx="14" cy="14" r="11"/><path d="M14 3C14 3 10 8 10 14s4 11 4 11"/><path d="M3 14h22"/><path d="M4.5 9.5C7 10 9.5 11.5 14 11.5s7-1.5 9.5-2"/><path d="M4.5 18.5C7 18 9.5 16.5 14 16.5s7 1.5 9.5 2"/></svg>
         </div>
-        <h3 class="kc-card-title">Youth Sports &amp; Athletics</h3>
+        <h3 >Youth Sports &amp; Athletics</h3>
         <p>Princeton's city recreation program runs youth leagues year-round for ages 3–14: T-ball, baseball, softball, soccer, football, cheerleading, basketball, and volleyball. Participation rates are high — this is an active sports community. PISD athletics are competitive at the 5A level, and the high school programs draw strong community involvement.</p>
       </div>
 
@@ -1111,7 +1106,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M3 12c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M3 17c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M3 22c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/></svg>
         </div>
-        <h3 class="kc-card-title">Lake Lavon &amp; Outdoor Life</h3>
+        <h3 >Lake Lavon &amp; Outdoor Life</h3>
         <p>Lake Lavon is Princeton's defining amenity — a 21,400-acre Corps of Engineers reservoir that forms the city's western and northern boundary. Families use it year-round for boating, fishing, kayaking, paddleboarding, and lakeside camping. Sister Grove Regional Park borders the lake with trail systems for hiking and mountain biking. This is something no other Collin County suburb at Princeton's price point can offer.</p>
       </div>
 
@@ -1119,7 +1114,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M4 7h20l-2 14H6L4 7z"/><path d="M10 7c0-2.2 1.8-4 4-4s4 1.8 4 4"/><circle cx="10.5" cy="22" r="1"/><circle cx="18.5" cy="22" r="1"/></svg>
         </div>
-        <h3 class="kc-card-title">Shopping &amp; Dining</h3>
+        <h3 >Shopping &amp; Dining</h3>
         <p>Princeton's US-380 commercial corridor is growing quickly — Walmart Supercenter, Brookshire's, auto services, and a mix of national fast-casual dining options anchor the strip. For full dining variety, most Princeton families drive 15 minutes to McKinney's bustling Historic District or the restaurants along Eldorado Pkwy. Frisco's restaurant scene is 28 minutes away. Local options are expanding but still modest.</p>
       </div>
 
@@ -1127,7 +1122,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><rect x="3" y="5" width="22" height="20" rx="2"/><path d="M19 3v4M9 3v4M3 11h22"/><rect x="7" y="15" width="3" height="3" rx="0.5"/><rect x="12.5" y="15" width="3" height="3" rx="0.5"/><rect x="18" y="15" width="3" height="3" rx="0.5"/></svg>
         </div>
-        <h3 class="kc-card-title">Events &amp; Community Culture</h3>
+        <h3 >Events &amp; Community Culture</h3>
         <p>Princeton's community calendar punches above its size. The annual Princeton Harvest Festival draws thousands of residents each fall — a hallmark of the small-town roots the city works to preserve even as it grows. Fourth of July celebrations, PISD athletic events, and neighborhood HOA gatherings give families regular social touchpoints. For new arrivals from out of state, it's easier to meet people here than in larger, more established suburbs.</p>
       </div>
 
@@ -1135,7 +1130,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M3 12L14 3l11 9"/><path d="M6 9.5V24h16V9.5"/><path d="M10 24v-8h8v8"/></svg>
         </div>
-        <h3 class="kc-card-title">New Construction Advantage</h3>
+        <h3 >New Construction Advantage</h3>
         <p>Princeton is one of the last Collin County cities where national builders — Lennar, D.R. Horton, Pulte, and others — are still actively producing homes under $350K. That means relocating families can often buy new, pick floor plans and finish packages, and move into a home with a builder warranty rather than navigating the competitive resale market. The window for this won't be open indefinitely as Princeton fills in.</p>
       </div>
 
@@ -1143,13 +1138,13 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><circle cx="10" cy="9" r="4"/><path d="M2 25c0-4.4 3.6-8 8-8s8 3.6 8 8"/><circle cx="22" cy="11" r="3"/><path d="M26 25c0-3.3-1.8-6-4-7"/></svg>
         </div>
-        <h3 class="kc-card-title">Community Feel</h3>
+        <h3 >Community Feel</h3>
         <p>Princeton has something rare in fast-growing Texas suburbs: a genuine small-town identity that hasn't yet been swallowed by its own growth. Neighbors wave. People stop to talk. The community Facebook groups are active and welcoming. Many Princeton residents are themselves transplants — from California, Illinois, or the Northeast — which creates an unexpectedly easy social environment for new arrivals trying to build community from scratch.</p>
       </div>
 
     </div>
 
-    <div class="kc-callout kc-callout--warn">
+    <div class="kc-callout kc-callout">
       <strong>The honest trade-off:</strong> Princeton's local dining and retail scene is still building out. For now, most evenings out, weekend errands beyond the basics, and entertainment plans require a 10–15 minute drive to McKinney. If your family needs walkable restaurants, a downtown town center, or Saturday morning farmers markets within walking distance of home, Princeton is 3–5 years away from delivering that. Go in with realistic expectations and you'll love it. Go in expecting Allen or McKinney and you'll feel the difference immediately.
     </div>
 
@@ -1160,7 +1155,7 @@ gtag('consent', 'default', {
      SECTION 13 — RECREATION
      ═══════════════════════════════════════════ -->
 <div id="kc-recreation" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Getting Outside</span>
@@ -1168,31 +1163,31 @@ gtag('consent', 'default', {
     </div>
 
     <!-- Amenity rank banners — JS populated from suburb-profiles.json -->
-    <div id="kc-amenity-parks-rank" class="kc-amenity-banner" style="display:none;"></div>
-    <div id="kc-amenity-dining-shop-rank" class="kc-amenity-banner" style="display:none;"></div>
+    <div id="kc-amenity-parks-rank" class="kc-amenity-rank-banner" style="display:none;"></div>
+    <div id="kc-amenity-dining-shop-rank" class="kc-amenity-rank-banner" style="display:none;"></div>
 
     <p>Princeton is a car-dependent community — there is no DART light rail, no DCTA bus service, and no meaningful public transit. Every errand, commute, and school run requires a vehicle. That's the baseline reality, and it's consistent with most of eastern Collin County. What Princeton offers in return is remarkable outdoor access: Lake Lavon's 21,400 acres sit directly on the city's edge, giving residents a natural recreation asset that costs nothing to use and gets better the further you explore it. The city's four parks are compact but well-maintained, and the new construction communities add trail systems and amenity ponds that supplement the public park infrastructure.</p>
 
     <!-- Walkability Scores -->
     <h3>Walkability &amp; Transportation Scores</h3>
     <div class="kc-grid kc-grid--3">
-      <div class="kc-score-box">
+      <div >
         <span class="kc-score-num" id="kc-walk-score">61</span>
         <strong class="kc-score-label">Walk Score</strong>
-        <p class="kc-score-desc">Somewhat walkable — the US-380 commercial corridor is accessible on foot from nearby neighborhoods, but most destinations require a car</p>
+        <p >Somewhat walkable — the US-380 commercial corridor is accessible on foot from nearby neighborhoods, but most destinations require a car</p>
       </div>
-      <div class="kc-score-box">
+      <div >
         <span class="kc-score-num" id="kc-bike-score">49</span>
         <strong class="kc-score-label">Bike Score</strong>
-        <p class="kc-score-desc">Bikeable for leisure in quieter neighborhoods and trail systems; not practical for commuting to McKinney or beyond</p>
+        <p >Bikeable for leisure in quieter neighborhoods and trail systems; not practical for commuting to McKinney or beyond</p>
       </div>
-      <div class="kc-score-box">
+      <div >
         <span class="kc-score-num">N/A</span>
         <strong class="kc-score-label">Transit Score</strong>
-        <p class="kc-score-desc">No public transit available — Princeton has no bus routes, no rail stations, and no ride-share infrastructure beyond personal apps</p>
+        <p >No public transit available — Princeton has no bus routes, no rail stations, and no ride-share infrastructure beyond personal apps</p>
       </div>
     </div>
-    <p class="kc-table-source">Source: Walk Score (walkscore.com/TX/Princeton). Scores reflect May 2026.</p>
+    <p >Source: Walk Score (walkscore.com/TX/Princeton). Scores reflect May 2026.</p>
 
     <!-- Parks -->
     <h3>Parks, Trails &amp; Green Space</h3>
@@ -1204,7 +1199,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M14 3L6 14h5l-3 7h12l-3-7h5L14 3z"/><line x1="14" y1="21" x2="14" y2="25"/></svg>
         </div>
-        <h3 class="kc-card-title">Lake Lavon (Corps of Engineers)</h3>
+        <h3 >Lake Lavon (Corps of Engineers)</h3>
         <p>21,400 acres of open water — the largest lake in Collin County. Multiple boat ramps and day-use areas accessible from Princeton's shoreline. Fishing (bass, crappie, catfish), power boating, kayaking, sailing, and lakeside camping. Free public access at most Corps-managed areas.</p>
       </div>
 
@@ -1212,7 +1207,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M3 25c4-8 6-14 11-20"/><path d="M25 25c-4-8-6-14-11-20"/><path d="M8 15c2 1 4 1 6 0s4-1 6 0"/></svg>
         </div>
-        <h3 class="kc-card-title">Sister Grove Regional Park</h3>
+        <h3 >Sister Grove Regional Park</h3>
         <p>A Collin County regional park adjacent to Lake Lavon with natural surface trails for hiking, mountain biking, and equestrian use. The trail system winds through native prairie and wooded creek bottoms — one of the more scenic natural areas in eastern Collin County. No admission fee for most access points.</p>
       </div>
 
@@ -1220,7 +1215,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M14 3L6 14h5l-3 7h12l-3-7h5L14 3z"/><line x1="14" y1="21" x2="14" y2="25"/></svg>
         </div>
-        <h3 class="kc-card-title">Dr. James Standifer Park</h3>
+        <h3 >Dr. James Standifer Park</h3>
         <p>Princeton's primary municipal park, featuring athletic fields, playgrounds, picnic pavilions, and walking paths. The site of city youth sports leagues and community events including the annual Princeton Harvest Festival. Well-maintained facilities that serve as the community gathering hub for the city's young family population.</p>
       </div>
 
@@ -1228,7 +1223,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M3 12c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M3 17c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M3 22c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/></svg>
         </div>
-        <h3 class="kc-card-title">Lavon Lake Shoreline Access</h3>
+        <h3 >Lavon Lake Shoreline Access</h3>
         <p>Multiple public access points along Lake Lavon's Princeton-adjacent shoreline — including East Fork Park and Collin Park, managed by the U.S. Army Corps of Engineers. Sandy beaches, boat launches, and primitive camping at select sites. Peak season (Memorial Day–Labor Day) draws heavy local use; weekday access is peaceful and uncrowded.</p>
       </div>
 
@@ -1236,7 +1231,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M3 25c4-8 6-14 11-20"/><path d="M25 25c-4-8-6-14-11-20"/><path d="M8 15c2 1 4 1 6 0s4-1 6 0"/></svg>
         </div>
-        <h3 class="kc-card-title">Community Trail Systems</h3>
+        <h3 >Community Trail Systems</h3>
         <p>Princeton's master-planned communities (Bridgewater and others) include internal walking and jogging trails connecting amenity ponds, green corridors, and community pools. These HOA-maintained trails are separate from the city park network and give neighborhoods a walkable feel that the overall Walk Score doesn't fully capture.</p>
       </div>
 
@@ -1244,7 +1239,7 @@ gtag('consent', 'default', {
         <div class="kc-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:32px;height:32px;margin-bottom:0.6rem"><path d="M14 3L6 14h5l-3 7h12l-3-7h5L14 3z"/><line x1="14" y1="21" x2="14" y2="25"/></svg>
         </div>
-        <h3 class="kc-card-title">Nearby Expansions — McKinney &amp; Allen</h3>
+        <h3 >Nearby Expansions — McKinney &amp; Allen</h3>
         <p>Within 15–22 minutes of Princeton: Bonnie Wenk Park in McKinney (200+ acres, splash pad, amphitheater), Towne Lake Recreation Area, and Allen Station Park (sports complex, disc golf, trails). Princeton residents effectively have access to the full Collin County parks network within a short drive — a meaningful supplement to the city's own developing infrastructure.</p>
       </div>
 
@@ -1290,7 +1285,7 @@ gtag('consent', 'default', {
     <h3>Youth Sports &amp; Organized Recreation</h3>
     <p>Princeton Recreation runs robust youth leagues through PISD facilities and Dr. James Standifer Park, covering a wide age range with inclusive programming. Registration fills quickly in spring and fall seasons — new residents should sign up early after moving in.</p>
 
-    <div class="kc-tag-row">
+    <div >
       <span class="kc-tag">T-Ball (Ages 3–5)</span>
       <span class="kc-tag">Coach Pitch Baseball</span>
       <span class="kc-tag">Youth Softball</span>
@@ -1313,7 +1308,7 @@ gtag('consent', 'default', {
      SECTION 14 — SAFETY
      ═══════════════════════════════════════════ -->
 <div id="kc-safety" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Safety &amp; Crime</span>
@@ -1322,36 +1317,30 @@ gtag('consent', 'default', {
 
     <div class="kc-grid kc-grid--3">
 
-      <div class="kc-safety-stat">
-        <div class="kc-safety-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M14 3L4 7v7c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 3z"/></svg>
-        </div>
-        <span class="kc-safety-num">2.2</span>
-        <span class="kc-safety-label">Violent Crimes per 1,000</span>
-        <span class="kc-safety-context">vs. U.S. average of ~4.0 — below average, safer than most U.S. cities</span>
+      <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M14 3L4 7v7c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 3z"/></svg>
+        <div style="font-size:2rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;">2.2</div>
+        <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">Violent Crimes per 1,000</div>
+        <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">vs. U.S. average of ~4.0 — below average, safer than most U.S. cities</div>
       </div>
 
-      <div class="kc-safety-stat">
-        <div class="kc-safety-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M3 12L14 3l11 9"/><path d="M6 9.5V24h16V9.5"/><path d="M10 24v-8h8v8"/></svg>
-        </div>
-        <span class="kc-safety-num">12.1</span>
-        <span class="kc-safety-label">Property Crimes per 1,000</span>
-        <span class="kc-safety-context">Typical for a rapidly growing suburb — package theft and vehicle break-ins account for most incidents; lock your car</span>
+      <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M3 12L14 3l11 9"/><path d="M6 9.5V24h16V9.5"/><path d="M10 24v-8h8v8"/></svg>
+        <div style="font-size:2rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;">12.1</div>
+        <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">Property Crimes per 1,000</div>
+        <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">Typical for a rapidly growing suburb — package theft and vehicle break-ins account for most incidents; lock your car</div>
       </div>
 
-      <div class="kc-safety-stat">
-        <div class="kc-safety-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M14 3L4 7v7c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 3z"/><polyline points="9,14 12.5,17.5 19,11"/></svg>
-        </div>
-        <span class="kc-safety-num">Safer than 64%</span>
-        <span class="kc-safety-label">of U.S. Cities</span>
-        <span class="kc-safety-context">CrimeGrade.org overall assessment · Princeton earns a "B" grade for safety — above average for a city its size and growth rate</span>
+      <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;width:36px;height:36px;margin:0 auto 0.75rem"><path d="M14 3L4 7v7c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 3z"/><polyline points="9,14 12.5,17.5 19,11"/></svg>
+        <div style="font-size:2rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;">Safer than 64%</div>
+        <div style="font-size:0.78rem;color:#555;margin-top:0.3rem;">of U.S. Cities</div>
+        <div style="font-size:0.72rem;color:#888;margin-top:0.2rem;">CrimeGrade.org overall assessment · Princeton earns a "B" grade for safety — above average for a city its size and growth rate</div>
       </div>
 
     </div>
 
-    <p class="kc-table-source">Sources: NeighborhoodScout · CrimeGrade.org · FBI UCR. Crime rates are per 1,000 residents annually. Data reflects most recent available year. As Princeton grows rapidly, crime statistics may shift — check NeighborhoodScout for current data before purchase.</p>
+    <p >Sources: NeighborhoodScout · CrimeGrade.org · FBI UCR. Crime rates are per 1,000 residents annually. Data reflects most recent available year. As Princeton grows rapidly, crime statistics may shift — check NeighborhoodScout for current data before purchase.</p>
 
     <div class="kc-callout">
       Princeton's violent crime rate of 2.2 per 1,000 is meaningfully below the national average of approximately 4.0 — a strong result for a city growing this fast. Property crime (car break-ins, package theft) is the most common issue, particularly along the US-380 commercial corridor and in newer communities still establishing neighborhood watch programs. Overall, Princeton is a safe place to raise a family.
@@ -1364,7 +1353,7 @@ gtag('consent', 'default', {
      SECTION 15 — REAL ESTATE MARKET
      ═══════════════════════════════════════════ -->
 <div id="kc-market" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Real Estate Market</span>
@@ -1372,34 +1361,34 @@ gtag('consent', 'default', {
     </div>
 
     <div class="kc-grid kc-grid--4">
-      <div class="kc-mkt-card" id="kc-mkt-price">
-        <span class="kc-mkt-label">Median SFR Price</span>
-        <span class="kc-mkt-val">~$302K</span>
-        <span class="kc-mkt-note">single-family residential</span>
-      </div>
-      <div class="kc-mkt-card" id="kc-mkt-dom">
-        <span class="kc-mkt-label">Days on Market</span>
-        <span class="kc-mkt-val">37 days</span>
-        <span class="kc-mkt-note">median, SFR</span>
-      </div>
-      <div class="kc-mkt-card" id="kc-mkt-msi">
-        <span class="kc-mkt-label">Months Supply</span>
-        <span class="kc-mkt-val">3.7 mo.</span>
-        <span class="kc-mkt-note">balanced market</span>
-      </div>
-      <div class="kc-mkt-card" id="kc-mkt-cs">
-        <span class="kc-mkt-label">Closed Sales (12mo)</span>
-        <span class="kc-mkt-val">2,207</span>
-        <span class="kc-mkt-note">SFR, NTREIS data</span>
-      </div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+          <h4 style="margin-bottom:0.5rem;">Median SFR Price</h4>
+          <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">~$302K</p>
+          <p style="font-size:0.78rem;color:#666;margin:0;">single-family residential</p>
+        </div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+          <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+          <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">37 days</p>
+          <p style="font-size:0.78rem;color:#666;margin:0;">median, SFR</p>
+        </div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+          <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+          <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">3.7 mo.</p>
+          <p id="kc-mkt-msi-cond" style="font-size:0.78rem;color:#666;margin:0;">balanced market</p>
+        </div>
+      <div class="kc-card kc-card--navy" style="text-align:center;">
+          <h4 style="margin-bottom:0.5rem;">Closed Sales (12mo)</h4>
+          <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">2,207</p>
+          <p style="font-size:0.78rem;color:#666;margin:0;">SFR, NTREIS data</p>
+        </div>
     </div>
-    <p class="kc-table-source" id="kc-mkt-updated">Source: NTREIS via suburb-profiles.json · Data updated periodically · Figures reflect SFR (single-family residential) only</p>
+    <p  id="kc-mkt-updated">Source: NTREIS via suburb-profiles.json · Data updated periodically · Figures reflect SFR (single-family residential) only</p>
 
     <p>Princeton's real estate market is balanced at 3.7 months of supply — sellers still have a meaningful advantage in desirable communities, but buyers have more time and leverage than they would in a true seller's market. The $302K median is the lowest among all Collin County suburbs with rated schools, making Princeton uniquely attractive for families who've been outbid or priced out of Frisco, Allen, and McKinney. Active new construction keeps supply from drying up the way it has in more built-out suburbs.</p>
 
     <p>Appreciation potential is real but uncertain — Princeton has grown rapidly, and continued growth depends on infrastructure investment (particularly US-380 corridor improvements and eventual SH-78 expansion). Families buying here for the long term — 5+ years — have historically seen strong appreciation. Short-term investors face more uncertainty given the ongoing supply from new construction. Resale homes compete directly with new builds, which keeps pricing disciplined.</p>
 
-    <div class="kc-market-cta" style="margin-top:1.5rem;">
+    <div  style="margin-top:1.5rem;">
       <a href="https://kristencarpentier.expportal.com/idx/search/listings?city=Princeton&state=TX"
          class="kc-btn kc-btn--navy" target="_blank" rel="noopener">View Current Princeton Listings →</a>
     </div>
@@ -1408,17 +1397,17 @@ gtag('consent', 'default', {
     <div id="kc-condo-section" style="display:none;margin-top:2rem;">
       <h3>Princeton Condo &amp; Townhome Market</h3>
       <div class="kc-grid kc-grid--3">
-        <div class="kc-mkt-card">
-          <span class="kc-mkt-label">Median Condo Price</span>
-          <span class="kc-mkt-val" id="kc-condo-price">—</span>
+        <div class="kc-card kc-card--navy">
+          <span >Median Condo Price</span>
+          <span  id="kc-condo-price">—</span>
         </div>
-        <div class="kc-mkt-card">
-          <span class="kc-mkt-label">Condo DOM</span>
-          <span class="kc-mkt-val" id="kc-condo-dom">—</span>
+        <div class="kc-card kc-card--navy">
+          <span >Condo DOM</span>
+          <span  id="kc-condo-dom">—</span>
         </div>
-        <div class="kc-mkt-card">
-          <span class="kc-mkt-label">Condo Sales (12mo)</span>
-          <span class="kc-mkt-val" id="kc-condo-cs">—</span>
+        <div class="kc-card kc-card--navy">
+          <span >Condo Sales (12mo)</span>
+          <span  id="kc-condo-cs">—</span>
         </div>
       </div>
     </div>
@@ -1430,7 +1419,7 @@ gtag('consent', 'default', {
      SECTION 16 — PROS & CONS
      ═══════════════════════════════════════════ -->
 <div id="kc-proscons" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Honest Assessment</span>
@@ -1439,9 +1428,9 @@ gtag('consent', 'default', {
 
     <div class="kc-grid kc-grid--2">
 
-      <div class="kc-pros-col">
-        <h3 class="kc-pros-heading">What Princeton Gets Right</h3>
-        <ul class="kc-pros-list">
+      <div class="kc-proscons-col pros">
+        <h3 >What Princeton Gets Right</h3>
+        <ul class="kc-proscons-list">
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#B08D57" aria-hidden="true" style="width:18px;height:18px;flex-shrink:0;margin-top:2px"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
             <span><strong>Value score of 96/100</strong> — the highest in Collin County. B+ schools, Lake Lavon access, and a growing community at prices $200K–$400K below comparable Collin County alternatives</span>
@@ -1469,9 +1458,9 @@ gtag('consent', 'default', {
         </ul>
       </div>
 
-      <div class="kc-cons-col">
-        <h3 class="kc-cons-heading">What to Know Before You Move</h3>
-        <ul class="kc-cons-list">
+      <div class="kc-proscons-col cons">
+        <h3 >What to Know Before You Move</h3>
+        <ul class="kc-proscons-list">
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#888" aria-hidden="true" style="width:18px;height:18px;flex-shrink:0;margin-top:2px"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
             <span><strong>Local dining and retail is thin</strong> — most evening plans and weekend errands beyond basics require a 10–15 minute drive to McKinney. A genuine limitation that affects quality of daily life</span>
@@ -1504,14 +1493,14 @@ gtag('consent', 'default', {
      SECTION 17 — FAQ
      ═══════════════════════════════════════════ -->
 <div id="kc-faq" style="background:var(--ivory);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
     <div class="kc-section-header">
       <span class="kc-eyebrow">Frequently Asked Questions</span>
       <h2>Princeton, Texas — Questions Families Ask Before Moving</h2>
     </div>
 
-    <div class="kc-faq-list" id="kc-faq-list">
+    <div id="kc-faq-list">
 
       <div class="kc-faq-item" onclick="kcFaq(this)">
         <div class="kc-faq-q">Is Princeton, Texas a good place to raise a family?</div>
@@ -1601,38 +1590,38 @@ gtag('consent', 'default', {
      SECTION 19 — CONTACT CTA + TREC FOOTER
      ═══════════════════════════════════════════ -->
 <div id="kc-contact" style="background:var(--navy);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
 
-    <div class="kc-contact-inner">
-      <div class="kc-contact-text">
-        <span class="kc-eyebrow kc-eyebrow--light">Ready to Make Your Move?</span>
-        <h2 class="kc-contact-h2">Let's Find Your Family the Right Home in Princeton</h2>
-        <p class="kc-contact-p">Kristen Carpentier is a licensed Texas Realtor® who specializes in helping families relocate to Collin County from out of state. She knows Princeton's neighborhoods, school boundaries, and builder communities — and she'll help you avoid the mistakes that trip up first-time Texas buyers.</p>
-        <div class="kc-contact-actions">
+    <div >
+      <div >
+        <span class="kc-eyebrow">Ready to Make Your Move?</span>
+        <h2 >Let's Find Your Family the Right Home in Princeton</h2>
+        <p >Kristen Carpentier is a licensed Texas Realtor® who specializes in helping families relocate to Collin County from out of state. She knows Princeton's neighborhoods, school boundaries, and builder communities — and she'll help you avoid the mistakes that trip up first-time Texas buyers.</p>
+        <div >
           <a href="https://calendly.com/socialagentgroup/let-s-talk" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Schedule a Call</a>
-          <a href="mailto:Kristen@whymovetodallas.com" class="kc-btn kc-btn--outline-light">Send an Email</a>
+          <a href="mailto:Kristen@whymovetodallas.com" class="kc-btn kc-btn--outline">Send an Email</a>
         </div>
-        <div class="kc-contact-details">
-          <a href="tel:+16024054115" class="kc-contact-link">(602) 405-4115</a>
-          <a href="mailto:Kristen@whymovetodallas.com" class="kc-contact-link">Kristen@whymovetodallas.com</a>
+        <div >
+          <a href="tel:+16024054115" >(602) 405-4115</a>
+          <a href="mailto:Kristen@whymovetodallas.com" >Kristen@whymovetodallas.com</a>
         </div>
       </div>
-      <div class="kc-contact-photo">
+      <div >
         <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier — DFW Family Relocation Specialist" loading="lazy" width="280" height="280">
       </div>
     </div>
 
     <!-- Also exploring -->
-    <div class="kc-also-wrap">
-      <p class="kc-also-label">Also exploring Collin County?</p>
-      <div class="kc-also-pills">
-        <a href="/mckinney-texas" class="kc-also-pill">McKinney</a>
-        <a href="/frisco-texas" class="kc-also-pill">Frisco</a>
-        <a href="/allen-texas" class="kc-also-pill">Allen</a>
-        <a href="/anna-texas" class="kc-also-pill">Anna</a>
-        <a href="/celina-texas" class="kc-also-pill">Celina</a>
-        <a href="/prosper-texas" class="kc-also-pill">Prosper</a>
-        <a href="/dallas-fort-worth-suburbs" class="kc-also-pill kc-also-pill--all">Browse All DFW Suburbs →</a>
+    <div >
+      <p >Also exploring Collin County?</p>
+      <div >
+        <a href="/mckinney-texas" class="kc-btn kc-btn--navy kc-btn--sm">McKinney</a>
+        <a href="/frisco-texas" class="kc-btn kc-btn--navy kc-btn--sm">Frisco</a>
+        <a href="/allen-texas" class="kc-btn kc-btn--navy kc-btn--sm">Allen</a>
+        <a href="/anna-texas" class="kc-btn kc-btn--navy kc-btn--sm">Anna</a>
+        <a href="/celina-texas" class="kc-btn kc-btn--navy kc-btn--sm">Celina</a>
+        <a href="/prosper-texas" class="kc-btn kc-btn--navy kc-btn--sm">Prosper</a>
+        <a href="/dallas-fort-worth-suburbs" class="kc-btn kc-btn--navy kc-btn--sm kc-btn kc-btn--navy kc-btn--sm">Browse All DFW Suburbs →</a>
       </div>
     </div>
 
@@ -1640,8 +1629,8 @@ gtag('consent', 'default', {
 </div>
 
 <!-- TREC Compliance Footer -->
-<div class="kc-trec-bar">
-  <div class="kc-container">
+<div class="kc-trec">
+  <div >
     <p class="kc-trec">Kristen Carpentier · Licensed Texas Realtor® · TREC #760457 · Brokered by eXp Realty · 15950 Dallas Pkwy #400, Dallas, TX 75248 · Information is deemed reliable but not guaranteed. Verify all data independently before making real estate decisions. <a href="https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank" rel="noopener">Consumer Protection Notice</a> · <a href="https://www.trec.texas.gov/agency-information/information-about-brokerage-services" target="_blank" rel="noopener">Information About Brokerage Services</a></p>
   </div>
 </div>
@@ -1650,7 +1639,7 @@ gtag('consent', 'default', {
      SUBURB COMPARISON TABLE (JS populated)
      ═══════════════════════════════════════════ -->
 <div id="kc-compare" style="background:var(--white);">
-  <div class="kc-container kc-section">
+  <div class="kc-section">
     <div class="kc-section-header">
       <span class="kc-eyebrow">Side by Side</span>
       <h2>Princeton vs. Nearby Collin County Suburbs</h2>
@@ -1658,7 +1647,7 @@ gtag('consent', 'default', {
     <p>How does Princeton stack up against comparable eastern Collin County and growing-suburb alternatives? The comparison below pulls live data so numbers stay current.</p>
     <div id="kc-compare-table-wrap" class="kc-table-wrap">
       <!-- JS populated by kcBuildCompareTable() -->
-      <p class="kc-compare-loading">Loading comparison data…</p>
+      <p >Loading comparison data…</p>
     </div>
   </div>
 </div>
@@ -1736,17 +1725,14 @@ gtag('consent', 'default', {
     }
 
     /* Market cards */
-    var mp = document.getElementById('kc-mkt-price');
-    if (mp && mkt.sfr_median_price) mp.querySelector('.kc-mkt-val').textContent = fmt$K(mkt.sfr_median_price);
-    var md = document.getElementById('kc-mkt-dom');
-    if (md && mkt.sfr_days_on_market) md.querySelector('.kc-mkt-val').textContent = fmtNum(mkt.sfr_days_on_market, 1) + ' days';
-    var mm = document.getElementById('kc-mkt-msi');
-    if (mm && mkt.sfr_months_supply) {
-      mm.querySelector('.kc-mkt-val').textContent = fmtNum(mkt.sfr_months_supply, 1) + ' mo.';
-      mm.querySelector('.kc-mkt-note').textContent = marketCond(mkt.sfr_months_supply);
+    /* Market cards */
+    if (mkt.sfr_median_price) setText('kc-mkt-price', fmt$K(mkt.sfr_median_price));
+    if (mkt.sfr_days_on_market) setText('kc-mkt-dom', fmtNum(mkt.sfr_days_on_market, 1) + ' days');
+    if (mkt.sfr_months_supply) {
+      setText('kc-mkt-msi', fmtNum(mkt.sfr_months_supply, 1) + ' mo.');
+      setText('kc-mkt-msi-cond', marketCond(mkt.sfr_months_supply));
     }
-    var mc = document.getElementById('kc-mkt-cs');
-    if (mc && mkt.sfr_closed_sales_12mo) mc.querySelector('.kc-mkt-val').textContent = fmtNum(mkt.sfr_closed_sales_12mo, 0);
+    if (mkt.sfr_closed_sales_12mo) setText('kc-mkt-cs', fmtNum(mkt.sfr_closed_sales_12mo, 0));
 
     /* Condo section */
     var condoCs = mkt.condo_closed_sales_12mo;
@@ -1782,7 +1768,7 @@ gtag('consent', 'default', {
     /* School badges */
     function setBadge(id, val) {
       var el = document.getElementById(id);
-      if (el && val) el.querySelector('.kc-badge-grade').textContent = val;
+      if (el && val) el.querySelector('.kc-grade-chip-val').textContent = val;
     }
     setBadge('kc-badge-academics',    sch.academics_grade);
     setBadge('kc-badge-college-prep', sch.college_prep_grade);
@@ -1820,7 +1806,7 @@ gtag('consent', 'default', {
     var wrap = document.getElementById('kc-compare-table-wrap');
     if (!wrap) return;
 
-    var html = '<table class="kc-table kc-table--compare"><thead><tr>'
+    var html = '<table class="kc-table kc-table"><thead><tr>'
       + '<th>Suburb</th><th>Median Price</th><th>School Grade</th>'
       + '<th>Family Score</th><th>Value Score</th><th>Walk Score</th>'
       + '</tr></thead><tbody>';
@@ -1886,7 +1872,7 @@ gtag('consent', 'default', {
   function showAmenityBanner(id, html) {
     var el = document.getElementById(id);
     if (!el || !html) return;
-    el.innerHTML = '<p class="kc-amenity-text">' + html + '</p>';
+    el.innerHTML = '<p >' + html + '</p>';
     el.style.display = '';
   }
 
