@@ -453,8 +453,8 @@ gtag('consent', 'default', {
      ═══════════════════════════════════════════ -->
 <section class="kc-hero" id="kc-top" aria-label="Princeton, Texas suburb guide hero">
   <div class="kc-hero-inner kc-container">
-    <p class="kc-hero-eyebrow">Collin County &nbsp;·&nbsp; Princeton ISD</p>
-    <h1 class="kc-hero-h1">Living in Princeton, Texas</h1>
+    <p class="kc-hero-location">Collin County &nbsp;·&nbsp; Princeton ISD</p>
+    <h1>Living in Princeton, Texas</h1>
     <p class="kc-hero-sub">Collin County's best-value suburb — B+ schools, Lake Lavon access, and new construction starting in the $280s</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/idx/search/listings?city=Princeton&state=TX"
@@ -550,15 +550,44 @@ gtag('consent', 'default', {
       </div>
     </div>
 
-    <!-- Data strip — JS populated from suburb-profiles.json -->
-    <div class="kc-data-top">
-      <div class="kc-data-top-inner">
-        <div class="kc-scores-block">
-          <div class="kc-score-meter-wrap">
-            <div class="kc-score-meter-label">Family Score</div>
-            <div class="kc-score-meter" data-score-id="family_score" data-suburb="princeton">
-              <div class="kc-score-meter-bar">
-                <div class="kc-score-meter-fill" style="width:79%"></div>
+<!-- ── DATA STRIP: Scores · Niche Grades · Sub-scores ────────────────────── -->
+<div id="kc-data-strip" style="background:var(--ivory);border-bottom:1px solid #e0ddd6;">
+  <div class="kc-section" style="padding-top:1.5rem;padding-bottom:1.5rem;">
+    <div class="kc-data-top-inner" style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;margin-bottom:1.25rem;">
+      <!-- Score meters -->
+      <div style="display:flex;gap:2rem;flex-shrink:0;">
+        <div>
+          <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Family Score</div>
+          <div style="display:flex;align-items:baseline;gap:0.2rem;">
+            <span id="kc-family-score" style="font-size:2.5rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;line-height:1;">—</span>
+            <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+          </div>
+          <div class="kc-score-bar" style="width:100px;"><div id="kc-family-score-fill" class="kc-score-bar-fill" style="width:0"></div></div>
+        </div>
+        <div>
+          <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Affordability Score</div>
+          <div style="display:flex;align-items:baseline;gap:0.2rem;">
+            <span id="kc-value-score" style="font-size:2.5rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;line-height:1;">—</span>
+            <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+          </div>
+          <div class="kc-score-bar" style="width:100px;"><div id="kc-value-score-fill" class="kc-score-bar-fill kc-score-bar-fill--navy" style="width:0"></div></div>
+        </div>
+      </div>
+      <!-- Vertical divider -->
+      <div class="kc-data-divider" style="width:1px;height:52px;background:#ddd;flex-shrink:0;align-self:center;"></div>
+      <!-- Niche grade chips -->
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.45rem;">Niche.com City Grades &middot; <span id="kc-grades-date">–</span></div>
+        <div id="kc-grade-chips" style="display:flex;flex-wrap:wrap;gap:0.35rem;"><!-- populated by JS --></div>
+      </div>
+    </div>
+    <!-- Sub-score bars -->
+    <div id="kc-data-subscores" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.65rem 1.25rem;padding-top:1rem;border-top:1px solid #e5e2db;">
+      <!-- populated by JS -->
+    </div>
+    <p style="font-size:0.65rem;color:#c0bdb6;margin:0.7rem 0 0;">Family Score = schools (30%) + safety (25%) + community (20%) + commute (15%) + market stability (10%) &middot; Affordability Score = price-to-income ratio + school quality per dollar + price vs. metro avg &middot; Sub-scores on a 0–10 scale &middot; Niche grades refreshed annually each fall</p>
+  </div>
+</div>
               </div>
               <span class="kc-score-meter-num" id="kc-family-score">79</span>
               <span class="kc-score-meter-max">/100</span>
