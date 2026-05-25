@@ -71,6 +71,17 @@ li{margin-bottom:0.2rem;}
 .filter-group select{padding:0.3rem 0.6rem;border:1px solid var(--stone);border-radius:5px;font-size:0.82rem;background:var(--white);color:var(--charcoal);min-width:140px;}
 .toggle-label{display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;font-weight:500;color:var(--charcoal);cursor:pointer;white-space:nowrap;}
 .filter-count{font-size:0.8rem;color:#666;white-space:nowrap;margin-left:auto;padding-top:1rem;}
+/* Suburb search */
+.filter-group--search{flex-shrink:0;}
+.search-wrap{position:relative;display:flex;align-items:center;}
+.search-wrap .search-icon{position:absolute;left:0.5rem;width:14px;height:14px;pointer-events:none;flex-shrink:0;opacity:0.6;}
+#suburbSearch{padding:0.3rem 2rem 0.3rem 1.85rem;border:1px solid var(--stone);border-radius:5px;font-size:0.82rem;background:var(--white);color:var(--charcoal);width:185px;outline:none;transition:border-color 0.15s;}
+#suburbSearch:focus{border-color:var(--navy);box-shadow:0 0 0 2px rgba(31,45,61,0.08);}
+#suburbSearch::placeholder{color:#aaa;}
+#suburbSearch::-webkit-search-cancel-button{-webkit-appearance:none;}
+.search-clear{position:absolute;right:0.45rem;background:none;border:none;cursor:pointer;color:#aaa;font-size:0.9rem;line-height:1;padding:0.1rem 0.15rem;display:none;border-radius:3px;}
+.search-clear:hover{color:var(--navy);}
+.search-clear.visible{display:block;}
 
 /* Table */
 .table-wrap{overflow-x:auto;margin:0.75rem 0 1.5rem;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.09);}
@@ -468,6 +479,17 @@ gtag('consent', 'default', {
 
 <!-- Filter bar -->
 <div class="filter-bar" id="filterBar">
+  <div class="filter-group filter-group--search">
+    <label for="suburbSearch">Find a Suburb</label>
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="6.5" cy="6.5" r="5" stroke="#B08D57" stroke-width="1.5"/>
+        <line x1="10.2" y1="10.2" x2="14.5" y2="14.5" stroke="#B08D57" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="suburbSearch" placeholder="e.g. Frisco, Keller…" autocomplete="off" spellcheck="false" aria-label="Search suburbs by name">
+      <button class="search-clear" id="searchClear" aria-label="Clear search" tabindex="-1">×</button>
+    </div>
+  </div>
   <div class="filter-group">
     <label>Budget</label>
     <div class="pills" data-filter="budget">
@@ -658,6 +680,7 @@ function buildRows() {
       : '<span style="color:#bbb">—</span>';
 
     const tr = document.createElement('tr');
+    tr.dataset.name   = s.name.toLowerCase();
     tr.dataset.price  = s.price || 0;
     tr.dataset.grade  = s.grade || '';
     tr.dataset.county = s.county || '';
@@ -755,6 +778,10 @@ function applyFilters() {
   const county   = document.getElementById('countyFilter').value;
   const market   = document.getElementById('marketFilter').value;
   const tier1    = document.getElementById('tier1Toggle').checked;
+  const search   = document.getElementById('suburbSearch').value.toLowerCase().trim();
+
+  // Show/hide clear button
+  document.getElementById('searchClear').classList.toggle('visible', search.length > 0);
 
   let visible = 0;
   document.querySelectorAll('#suburbTableBody tr').forEach(row => {
@@ -764,6 +791,7 @@ function applyFilters() {
     const marketV   = row.dataset.market;
     const tierV     = parseInt(row.dataset.tier);
     const quadrantV = row.dataset.quadrant;
+    const nameV     = row.dataset.name || '';
 
     const budgetOk =
       budget === 'all' ||
@@ -783,8 +811,9 @@ function applyFilters() {
     const marketOk   = market === 'all' || marketV === market;
     const tierOk     = !tier1 || tierV === 1;
     const quadrantOk = quadrant === 'all' || quadrantV === quadrant;
+    const searchOk   = !search || nameV.includes(search);
 
-    const show = budgetOk && gradeOk && countyOk && marketOk && tierOk && quadrantOk;
+    const show = budgetOk && gradeOk && countyOk && marketOk && tierOk && quadrantOk && searchOk;
     row.style.display = show ? '' : 'none';
     if (show) visible++;
   });
@@ -803,6 +832,12 @@ document.querySelectorAll('.pills button.pill').forEach(btn => {
 document.getElementById('countyFilter').addEventListener('change', applyFilters);
 document.getElementById('marketFilter').addEventListener('change', applyFilters);
 document.getElementById('tier1Toggle').addEventListener('change', applyFilters);
+document.getElementById('suburbSearch').addEventListener('input', applyFilters);
+document.getElementById('searchClear').addEventListener('click', () => {
+  document.getElementById('suburbSearch').value = '';
+  applyFilters();
+  document.getElementById('suburbSearch').focus();
+});
 
 // ── Jump nav active state on scroll ──────────────────────────────────────────
 const navLinks = document.querySelectorAll('.kc-jumpnav-list a');
