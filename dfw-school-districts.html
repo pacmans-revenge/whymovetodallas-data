@@ -880,6 +880,11 @@ gtag('consent', 'default', {
     </select>
   </div>
 
+  <!-- ⚠ DO NOT hand-edit the table rows or the isdData object below.
+       Both are generated from data/school-districts.json by tools/generate-schools-table.js.
+       To update (e.g. each fall: TEA ratings ~Aug, Niche grades ~Sept, tax rates ~Oct):
+       edit data/school-districts.json → run `node tools/generate-schools-table.js` → `node build.js`.
+       The composite score is recomputed automatically from TEA + Niche + GreatSchools. -->
   <div class="table-wrap">
     <table id="isdTable">
       <thead>
@@ -898,8 +903,6 @@ gtag('consent', 'default', {
         </tr>
       </thead>
       <tbody id="isdTableBody">
-
-        <!-- COLLIN COUNTY -->
         <tr data-county="Collin" data-tea="A">
           <td><a class="isd-link" href="#frisco-isd">Frisco ISD</a></td>
           <td><span class="tea-a">A</span> <small>(90)</small></td>
@@ -986,7 +989,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Collin" data-tea="A">
           <td><a class="isd-link" href="#melissa-isd">Melissa ISD</a></td>
-          <td><span class="tea-a">A</span> <small>(~90)</small></td>
+          <td><span class="tea-a">A</span> <small>(90)</small></td>
           <td><a href="https://www.niche.com/k12/d/melissa-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A−</a></td>
           <td><a href="https://www.greatschools.org/texas/melissa/melissa-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~6,700</td>
@@ -998,7 +1001,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Collin" data-tea="C">
           <td><a class="isd-link" href="#anna-isd">Anna ISD</a></td>
-          <td><span class="tea-c">C</span> <small>(~75)</small></td>
+          <td><span class="tea-c">C</span> <small>(75)</small></td>
           <td><a href="https://www.niche.com/k12/d/anna-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
           <td><a href="https://www.greatschools.org/texas/anna/anna-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~6,000</td>
@@ -1032,8 +1035,6 @@ gtag('consent', 'default', {
           <td>Denton</td>
           <td>Aubrey</td>
         </tr>
-
-        <!-- DENTON COUNTY -->
         <tr data-county="Denton" data-tea="B">
           <td><a class="isd-link" href="#lewisville-isd">Lewisville ISD</a></td>
           <td><span class="tea-b">B</span> <small>(81)</small></td>
@@ -1084,7 +1085,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Denton" data-tea="B">
           <td><a class="isd-link" href="#lake-dallas-isd">Lake Dallas ISD</a></td>
-          <td><span class="tea-b">B</span> <small>(~83)</small></td>
+          <td><span class="tea-b">B</span> <small>(83)</small></td>
           <td><a href="https://www.niche.com/k12/d/lake-dallas-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B</a></td>
           <td><a href="https://www.greatschools.org/texas/lake-dallas/lake-dallas-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~3,900</td>
@@ -1106,8 +1107,6 @@ gtag('consent', 'default', {
           <td>Denton</td>
           <td>Little Elm (parts; east side is Frisco ISD)</td>
         </tr>
-
-        <!-- TARRANT COUNTY -->
         <tr data-county="Tarrant" data-tea="C">
           <td><a class="isd-link" href="#fort-worth-isd">Fort Worth ISD</a></td>
           <td><span class="tea-c">C</span> <small>(72)</small></td>
@@ -1146,7 +1145,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Tarrant" data-tea="B">
           <td><a class="isd-link" href="#keller-isd">Keller ISD</a></td>
-          <td><span class="tea-b">B</span> <small>(~85)</small></td>
+          <td><span class="tea-b">B</span> <small>(85)</small></td>
           <td><a href="https://www.niche.com/k12/d/keller-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
           <td><a href="https://www.greatschools.org/texas/keller/keller-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~33,000</td>
@@ -1158,7 +1157,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Tarrant" data-tea="B">
           <td><a class="isd-link" href="#mansfield-isd">Mansfield ISD</a></td>
-          <td><span class="tea-b">B</span> <small>(~88)</small></td>
+          <td><span class="tea-b">B</span> <small>(88)</small></td>
           <td><a href="https://www.niche.com/k12/d/mansfield-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-a">A</a></td>
           <td><a href="https://www.greatschools.org/texas/mansfield/mansfield-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~34,000</td>
@@ -1182,7 +1181,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Tarrant" data-tea="B">
           <td><a class="isd-link" href="#birdville-isd">Birdville ISD</a></td>
-          <td><span class="tea-b">B</span> <small>(~83)</small></td>
+          <td><span class="tea-b">B</span> <small>(83)</small></td>
           <td><a href="https://www.niche.com/k12/d/birdville-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
           <td><a href="https://www.greatschools.org/texas/north-richland-hills/birdville-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~22,000</td>
@@ -1206,7 +1205,7 @@ gtag('consent', 'default', {
         </tr>
         <tr data-county="Tarrant" data-tea="C">
           <td><a class="isd-link" href="#crowley-isd">Crowley ISD</a></td>
-          <td><span class="tea-c">C</span> <small>(~75)</small></td>
+          <td><span class="tea-c">C</span> <small>(75)</small></td>
           <td><a href="https://www.niche.com/k12/d/crowley-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B−</a></td>
           <td><a href="https://www.greatschools.org/texas/fort-worth/crowley-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~17,000</td>
@@ -1240,8 +1239,6 @@ gtag('consent', 'default', {
           <td>Tarrant</td>
           <td>White Settlement, W. Fort Worth, Lake Worth</td>
         </tr>
-
-        <!-- DALLAS COUNTY -->
         <tr data-county="Dallas" data-tea="C">
           <td><a class="isd-link" href="#dallas-isd">Dallas ISD</a></td>
           <td><span class="tea-c">C</span> <small>(75)</small></td>
@@ -1278,8 +1275,6 @@ gtag('consent', 'default', {
           <td>Dallas</td>
           <td>Highland Park, University Park</td>
         </tr>
-
-        <!-- ROCKWALL COUNTY -->
         <tr data-county="Rockwall" data-tea="B">
           <td><a class="isd-link" href="#rockwall-isd">Rockwall ISD</a></td>
           <td><span class="tea-b">B</span> <small>(89)</small></td>
@@ -1304,8 +1299,6 @@ gtag('consent', 'default', {
           <td>Rockwall/Collin</td>
           <td>Royse City</td>
         </tr>
-
-        <!-- KAUFMAN COUNTY -->
         <tr data-county="Kaufman" data-tea="C">
           <td><a class="isd-link" href="#forney-isd">Forney ISD</a></td>
           <td><span class="tea-c">C</span> <small>(79)</small></td>
@@ -1318,8 +1311,6 @@ gtag('consent', 'default', {
           <td>Kaufman</td>
           <td>Forney</td>
         </tr>
-
-        <!-- ELLIS COUNTY -->
         <tr data-county="Ellis" data-tea="C">
           <td><a class="isd-link" href="#waxahachie-isd">Waxahachie ISD</a></td>
           <td><span class="tea-c">C</span> <small>(76)</small></td>
@@ -1344,11 +1335,9 @@ gtag('consent', 'default', {
           <td>Ellis</td>
           <td>Midlothian</td>
         </tr>
-
-        <!-- JOHNSON COUNTY -->
         <tr data-county="Johnson" data-tea="B">
           <td><a class="isd-link" href="#burleson-isd">Burleson ISD</a></td>
-          <td><span class="tea-b">B</span> <small>(~82)</small></td>
+          <td><span class="tea-b">B</span> <small>(82)</small></td>
           <td><a href="https://www.niche.com/k12/d/burleson-independent-school-district-tx/" target="_blank" rel="noopener" class="niche-b">B+</a></td>
           <td><a href="https://www.greatschools.org/texas/burleson/burleson-independent-school-district/" target="_blank" rel="noopener" class="ext-link">View ↗</a></td>
           <td>~14,000</td>
@@ -1370,7 +1359,6 @@ gtag('consent', 'default', {
           <td>Johnson</td>
           <td>Joshua, S. Burleson, N. Cleburne</td>
         </tr>
-
       </tbody>
     </table>
   </div>
@@ -2034,44 +2022,44 @@ gtag('consent', 'default', {
 // Niche: A+=97, A=93, A-=90, B+=87, B=83, B-=80, C=73
 // GS:    Above average=85, Average=70, Below average=55
 const isdData = {
-  'highland-park-isd':    { comp: 93.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/dallas/highland-park-independent-school-district/' },
-  'carroll-isd':          { comp: 93.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/southlake/carroll-independent-school-district/' },
-  'lovejoy-isd':          { comp: 92.8, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/lovejoy-independent-school-district/' },
-  'coppell-isd':          { comp: 92.4, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/coppell/coppell-independent-school-district/' },
-  'wylie-isd':            { comp: 92.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/wylie/wylie-independent-school-district/' },
-  'argyle-isd':           { comp: 92.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/argyle/argyle-independent-school-district/' },
-  'allen-isd':            { comp: 91.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/allen-independent-school-district/' },
-  'frisco-isd':           { comp: 91.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/frisco/frisco-independent-school-district/' },
-  'prosper-isd':          { comp: 90.2, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/prosper/prosper-independent-school-district/' },
-  'gcisd':                { comp: 89.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/grapevine/grapevine-colleyville-independent-school-district/' },
-  'rockwall-isd':         { comp: 89.4, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/rockwall/rockwall-independent-school-district/' },
-  'mckinney-isd':         { comp: 89.0, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/mckinney/mckinney-independent-school-district/' },
-  'plano-isd':            { comp: 86.6, gs: 'Above average',  gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/plano/plano-independent-school-district/' },
-  'heb-isd':              { comp: 85.3, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/bedford/hurst-euless-bedford-independent-school-district/' },
-  'mansfield-isd':        { comp: 85.3, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/mansfield/mansfield-independent-school-district/' },
-  'melissa-isd':          { comp: 85.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/melissa/melissa-independent-school-district/' },
-  'ems-isd':              { comp: 84.9, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/eagle-mountain-saginaw-independent-school-district/' },
-  'keller-isd':           { comp: 84.1, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/keller/keller-independent-school-district/' },
-  'joshua-isd':           { comp: 83.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/joshua/joshua-independent-school-district/' },
-  'midlothian-isd':       { comp: 83.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/midlothian/midlothian-independent-school-district/' },
-  'lewisville-isd':       { comp: 82.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/lewisville/lewisville-independent-school-district/' },
-  'celina-isd':           { comp: 82.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/celina/celina-independent-school-district/' },
-  'aubrey-isd':           { comp: 81.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/aubrey/aubrey-independent-school-district/' },
-  'northwest-isd':        { comp: 81.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/northwest-independent-school-district/' },
-  'birdville-isd':        { comp: 81.2, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/north-richland-hills/birdville-independent-school-district/' },
-  'denton-isd':           { comp: 81.0, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/denton/denton-independent-school-district/' },
-  'burleson-isd':         { comp: 80.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/burleson/burleson-independent-school-district/' },
-  'lake-dallas-isd':      { comp: 79.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/lake-dallas/lake-dallas-independent-school-district/' },
-  'waxahachie-isd':       { comp: 79.4, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/waxahachie/waxahachie-independent-school-district/' },
-  'royse-city-isd':       { comp: 78.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/royse-city/royse-city-independent-school-district/' },
-  'forney-isd':           { comp: 78.2, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/forney/forney-independent-school-district/' },
-  'azle-isd':             { comp: 77.8, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/azle/azle-independent-school-district/' },
-  'little-elm-isd':       { comp: 77.1, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/little-elm/little-elm-independent-school-district/' },
-  'anna-isd':             { comp: 75.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/anna/anna-independent-school-district/' },
-  'crowley-isd':          { comp: 75.5, gs: 'Average',         gsClass: 'gs-avg',   url: 'https://www.greatschools.org/texas/fort-worth/crowley-independent-school-district/' },
-  'dallas-isd':           { comp: 71.8, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/dallas/dallas-independent-school-district/' },
-  'fort-worth-isd':       { comp: 69.2, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/fort-worth/fort-worth-independent-school-district/' },
-  'white-settlement-isd': { comp: 68.5, gs: 'Below average',   gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/white-settlement/white-settlement-independent-school-district/' }
+  'frisco-isd': { comp: 91.2, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/frisco/frisco-independent-school-district/' },
+  'allen-isd': { comp: 91.6, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/allen-independent-school-district/' },
+  'mckinney-isd': { comp: 89, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/mckinney/mckinney-independent-school-district/' },
+  'plano-isd': { comp: 86.6, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/plano/plano-independent-school-district/' },
+  'prosper-isd': { comp: 90.2, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/prosper/prosper-independent-school-district/' },
+  'lovejoy-isd': { comp: 92.8, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/allen/lovejoy-independent-school-district/' },
+  'wylie-isd': { comp: 92, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/wylie/wylie-independent-school-district/' },
+  'melissa-isd': { comp: 85, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/melissa/melissa-independent-school-district/' },
+  'anna-isd': { comp: 75.5, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/anna/anna-independent-school-district/' },
+  'celina-isd': { comp: 82.8, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/celina/celina-independent-school-district/' },
+  'aubrey-isd': { comp: 81.4, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/aubrey/aubrey-independent-school-district/' },
+  'lewisville-isd': { comp: 82.5, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/lewisville/lewisville-independent-school-district/' },
+  'argyle-isd': { comp: 92, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/argyle/argyle-independent-school-district/' },
+  'northwest-isd': { comp: 81.4, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/fort-worth/northwest-independent-school-district/' },
+  'denton-isd': { comp: 81, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/denton/denton-independent-school-district/' },
+  'lake-dallas-isd': { comp: 79.8, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/lake-dallas/lake-dallas-independent-school-district/' },
+  'little-elm-isd': { comp: 77.1, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/little-elm/little-elm-independent-school-district/' },
+  'fort-worth-isd': { comp: 69.5, gs: 'Below average', gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/fort-worth/fort-worth-independent-school-district/' },
+  'carroll-isd': { comp: 93.2, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/southlake/carroll-independent-school-district/' },
+  'gcisd': { comp: 89.6, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/grapevine/grapevine-colleyville-independent-school-district/' },
+  'keller-isd': { comp: 84.1, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/keller/keller-independent-school-district/' },
+  'mansfield-isd': { comp: 85.3, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/mansfield/mansfield-independent-school-district/' },
+  'ems-isd': { comp: 84.9, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/fort-worth/eagle-mountain-saginaw-independent-school-district/' },
+  'birdville-isd': { comp: 81.2, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/north-richland-hills/birdville-independent-school-district/' },
+  'heb-isd': { comp: 85.3, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/bedford/hurst-euless-bedford-independent-school-district/' },
+  'crowley-isd': { comp: 75.5, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/fort-worth/crowley-independent-school-district/' },
+  'azle-isd': { comp: 77.8, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/azle/azle-independent-school-district/' },
+  'white-settlement-isd': { comp: 68.5, gs: 'Below average', gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/white-settlement/white-settlement-independent-school-district/' },
+  'dallas-isd': { comp: 71.8, gs: 'Below average', gsClass: 'gs-below', url: 'https://www.greatschools.org/texas/dallas/dallas-independent-school-district/' },
+  'coppell-isd': { comp: 92.4, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/coppell/coppell-independent-school-district/' },
+  'highland-park-isd': { comp: 93.6, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/dallas/highland-park-independent-school-district/' },
+  'rockwall-isd': { comp: 89.4, gs: 'Above average', gsClass: 'gs-above', url: 'https://www.greatschools.org/texas/rockwall/rockwall-independent-school-district/' },
+  'royse-city-isd': { comp: 78.8, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/royse-city/royse-city-independent-school-district/' },
+  'forney-isd': { comp: 78.2, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/forney/forney-independent-school-district/' },
+  'waxahachie-isd': { comp: 79.4, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/waxahachie/waxahachie-independent-school-district/' },
+  'midlothian-isd': { comp: 83, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/midlothian/midlothian-independent-school-district/' },
+  'burleson-isd': { comp: 80.8, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/burleson/burleson-independent-school-district/' },
+  'joshua-isd': { comp: 83.4, gs: 'Average', gsClass: 'gs-avg', url: 'https://www.greatschools.org/texas/joshua/joshua-independent-school-district/' }
 };
 
 // ── Inject composite scores + GS data into table and cards ───────────────────
