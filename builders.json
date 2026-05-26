@@ -1,0 +1,4028 @@
+{
+  "meta": {
+    "description": "DFW homebuilder data for whymovetodallas.com new construction section",
+    "last_updated": "2026-Q2",
+    "next_refresh": "2026-Q3",
+    "review_minimum": 10,
+    "scoring_version": "1.0",
+    "data_sources": [
+      "TrustBuilder/NewHomeSource Professional (newhomesourceprofessional.com/ntreis/reviews) — 7 builders",
+      "NewHomeSource public (newhomesource.com) — fallback for builders not on NHS Pro",
+      "Google Places API (maps.googleapis.com) — fallback overall rating when NHS unavailable",
+      "BBB Texas (bbb.org/us/tx/category/home-builders)",
+      "Builder Websites (scraped via Bright Data web_unlocker1)",
+      "suburb-profiles.json (Niche ISD grades for suburb quality scoring)"
+    ],
+    "notes": "TrustBuilder scores seeded manually May 2026 from NHS Pro (NTREIS subscription). Alternative reviews (reviews.*) populated by tools/reviews-fetcher.cjs for 13 builders not on NHS Pro. Communities populated by tools/builders-scraper.cjs. Scores computed by tools/build-builder-profiles.cjs — never edit score.* fields by hand."
+  },
+  "builders": [
+    {
+      "slug": "highland-homes",
+      "tier": "semi-custom",
+      "website": "https://www.highlandhomes.com",
+      "name": "Highland Homes",
+      "communities_page": "https://www.highlandhomes.com/new-homes/texas/dfw",
+      "bbb_search": "Highland Homes TX",
+      "trustbuilder": {
+        "overall": 4.5,
+        "quality": 4.3,
+        "trustworthiness": 4.5,
+        "value": 4.4,
+        "responsiveness": 4.4,
+        "review_count": 1338,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/highland-homes/reviews/8/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 37,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/highland-homes--0875-3000323",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 6,
+        "notes": "Reduced from 10yr structural to 6yr for contracts signed Jan 1, 2026 or later. Homes under contract before Jan 1, 2026 retain 10yr coverage. Administered by 2-10 Home Buyers Warranty.",
+        "source_url": "https://www.highlandhomes.com/new-home-warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 300000,
+        "max": 1200000
+      },
+      "active_suburbs": [
+        "anna",
+        "aubrey",
+        "celina",
+        "crandall",
+        "dallas",
+        "denton",
+        "fate",
+        "flower-mound",
+        "forney",
+        "fort-worth",
+        "frisco",
+        "grapevine",
+        "heath",
+        "mansfield",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "midlothian",
+        "northlake",
+        "plano",
+        "prosper",
+        "rockwall",
+        "rowlett",
+        "royse-city",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [],
+      "score": {
+        "total": 89,
+        "quality_pts": 17.2,
+        "trust_resp_pts": 17.8,
+        "value_pts": 13.2,
+        "bbb_pts": 15,
+        "warranty_pts": 13,
+        "suburb_quality_pts": 12.9,
+        "raw_pts": 89.1,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.783Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:00:16.701Z",
+        "source_url": "https://www.highlandhomes.com/new-homes/texas/dfw",
+        "html_size_kb": 348
+      }
+    },
+    {
+      "slug": "perry-homes",
+      "tier": "semi-custom",
+      "website": "https://www.perryhomes.com",
+      "name": "Perry Homes",
+      "communities_page": "https://www.perryhomes.com/new-homes/texas/dallas",
+      "bbb_search": "Perry Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 51,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/perry-homes-0875-91129782",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 2,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Perry uses a 2-10 structure: the 2yr \"Express Limited Warranty\" covers workmanship AND mechanical systems (HVAC, plumbing, electrical, countertops, flooring, paint, hardware) in one combined period. No separate 1yr workmanship tier.",
+        "source_url": "https://www.perryhomes.com/warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 300000,
+        "max": 800000
+      },
+      "active_suburbs": [
+        "allen",
+        "anna",
+        "arlington",
+        "aubrey",
+        "burleson",
+        "carrollton",
+        "celina",
+        "dallas",
+        "denton",
+        "desoto",
+        "fairview",
+        "fate",
+        "forney",
+        "fort-worth",
+        "frisco",
+        "garland",
+        "grapevine",
+        "haslet",
+        "heath",
+        "keller",
+        "lewisville",
+        "lucas",
+        "mansfield",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "midlothian",
+        "northlake",
+        "plano",
+        "prosper",
+        "richardson",
+        "roanoke",
+        "rockwall",
+        "rowlett",
+        "saginaw",
+        "southlake",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [],
+      "score": {
+        "total": 94,
+        "quality_pts": null,
+        "trust_resp_pts": null,
+        "value_pts": null,
+        "bbb_pts": 14,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 13.1,
+        "raw_pts": 42.1,
+        "raw_max": 45,
+        "grade": "A+",
+        "data_completeness": "limited",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:16:57.543Z",
+        "source_url": "https://www.perryhomes.com/new-homes/texas/dallas",
+        "html_size_kb": 140
+      },
+      "reviews": null
+    },
+    {
+      "slug": "david-weekley-homes",
+      "tier": "semi-custom",
+      "website": "https://www.davidweekleyhomes.com",
+      "name": "David Weekley Homes",
+      "communities_page": "https://www.davidweekleyhomes.com/new-homes/us/texas/dallas",
+      "bbb_search": "David Weekley Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 17,
+        "source_url": "https://www.bbb.org/us/tx/carrollton/profile/home-builders/david-weekley-homes-0875-13745",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Assigned Warranty Service Representative conducts a walk-through near the 1yr anniversary.",
+        "source_url": "https://www.davidweekleyhomes.com/build-quality/warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 400000,
+        "max": 1500000
+      },
+      "active_suburbs": [
+        "arlington",
+        "dallas",
+        "fate",
+        "mansfield",
+        "mckinney",
+        "mesquite",
+        "prosper"
+      ],
+      "communities": [
+        {
+          "name": "Huffines Launches NewMaster Planned Community",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/news/article/hufflnes-new-dallas-community",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Enjoy a Special Real Estate Agent Tour in/Ft. Worth",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/page/real-estate-agent-tour-dallas-ft-worth",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "David Weekley Building New Central Living Community in",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/news/article/david-weekleyhomes-building-new-central-living-community-in-dallas",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Design Center",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/tx/dallas-ft-worth/design-center",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Central Living by David Weekley Building in South",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/news/article/central-living-by-david-weekley-building-in-south-dallas",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Welcome/Ft. Worth-area Real Estate Agents!",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/realtors/tx/dallas-ft-worth/realtors",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "David Weekley Team Members Partner with the  Ramp Project",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/news/article/david-weekley-team-members-partner-with-the-texas-ramp-project",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Charlotte",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/nc/charlotte",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Colorado Springs",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/co/colorado-springs",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "/Ft. Worth",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/tx/dallas-ft-worth",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Denver",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/co/denver",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        },
+        {
+          "name": "Houston",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes/tx/houston",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:26.392Z"
+        }
+      ],
+      "score": {
+        "total": 89,
+        "quality_pts": 16.8,
+        "trust_resp_pts": 16.8,
+        "value_pts": 12.6,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.8,
+        "raw_pts": 89,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:00:26.392Z",
+        "source_url": "https://www.davidweekleyhomes.com/new-homes/us/texas/dallas",
+        "html_size_kb": 115
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.2,
+        "review_count": 78,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=David%20Weekley%20Homes%20home%20builder",
+        "place_name": "David Weekley Homes Dallas/Ft. Worth Division Office",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "shaddock-homes",
+      "tier": "custom",
+      "website": "https://www.shaddockhomes.com",
+      "name": "Shaddock Homes",
+      "communities_page": "https://www.shaddockhomes.com/communities/",
+      "bbb_search": "Shaddock Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "B-",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 2,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/shaddock-homes-ltd-0875-90234871",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10 administered by 2-10 Home Buyers Warranty (third-party insured). Transferable to subsequent owners.",
+        "source_url": "https://www.shaddockhomes.com/warranty-info",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 500000,
+        "max": 1500000
+      },
+      "active_suburbs": [
+        "allen",
+        "argyle",
+        "arlington",
+        "aubrey",
+        "carrollton",
+        "celina",
+        "dallas",
+        "denton",
+        "fairview",
+        "fate",
+        "flower-mound",
+        "forney",
+        "fort-worth",
+        "frisco",
+        "heath",
+        "lewisville",
+        "little-elm",
+        "lucas",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "murphy",
+        "plano",
+        "princeton",
+        "prosper",
+        "rockwall",
+        "the-colony",
+        "westlake",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "View Community",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-fort-worth/mckinney/aster-park",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://placeholder/communities/dallas-fort-worth/prosper/brookhollow-west",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/communities/dallas-fort-worth/celina/cottages-of-celina",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "allen",
+          "city_name": "Allen",
+          "url": "https://placeholder/communities/dallas-fort-worth/allen/custer-ridge-estates",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/communities/dallas-fort-worth/forney/devonshire",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "fate",
+          "city_name": "Fate",
+          "url": "https://placeholder/communities/dallas-fort-worth/fate/edgewater",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "frisco",
+          "city_name": "Frisco",
+          "url": "https://placeholder/communities/dallas-fort-worth/frisco/estates-at-rockhill",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "argyle",
+          "city_name": "Argyle",
+          "url": "https://placeholder/communities/dallas-fort-worth/argyle/furst-ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "lucas",
+          "city_name": "Lucas",
+          "url": "https://placeholder/communities/dallas-fort-worth/lucas/inspiration-grace-village",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/communities/dallas-fort-worth/parker/kings-crossing-phase-3",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/communities/dallas-fort-worth/rockwall/quail-hollow",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/communities/dallas-fort-worth/mesquite/solterra-texas",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:31.970Z"
+        }
+      ],
+      "score": {
+        "total": 86,
+        "quality_pts": 18.8,
+        "trust_resp_pts": 18.8,
+        "value_pts": 14.1,
+        "bbb_pts": 6,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 13.3,
+        "raw_pts": 86,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:00:31.970Z",
+        "source_url": "https://www.shaddockhomes.com/communities/",
+        "html_size_kb": 4811
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.7,
+        "review_count": 222,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Shaddock%20Homes%20home%20builder",
+        "place_name": "Shaddock Homes",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "drees-homes",
+      "tier": "semi-custom",
+      "website": "https://www.dreeshomes.com",
+      "name": "Drees Homes",
+      "communities_page": "https://www.dreeshomes.com/new-homes/texas/dallas-ft-worth/",
+      "bbb_search": "Drees Homes TX",
+      "trustbuilder": {
+        "overall": 3.3,
+        "quality": 3.3,
+        "trustworthiness": 3.6,
+        "value": 3.4,
+        "responsiveness": 3.1,
+        "review_count": 80,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/drees-custom-homes/reviews/56/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 36,
+        "source_url": "https://www.bbb.org/us/tx/irving/profile/home-builders/drees-custom-homes-0875-19002246",
+        "last_updated": "2026-Q2",
+        "notes": "Listed as Drees Custom Homes on BBB",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Transferable. 2yr systems period not explicitly listed in some marketing materials but is standard per Texas Property Code 430; verify with Drees warranty documentation.",
+        "source_url": "https://www.dreeshomes.com/warranty/",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 500000,
+        "max": 2000000
+      },
+      "active_suburbs": [],
+      "communities": [],
+      "score": {
+        "total": 79,
+        "quality_pts": 13.2,
+        "trust_resp_pts": 13.4,
+        "value_pts": 10.2,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": null,
+        "raw_pts": 66.8,
+        "raw_max": 85,
+        "grade": "B+",
+        "data_completeness": "partial",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:17:02.147Z",
+        "source_url": "https://www.dreeshomes.com/new-homes/texas/dallas-ft-worth/",
+        "html_size_kb": 119
+      }
+    },
+    {
+      "slug": "toll-brothers",
+      "tier": "production",
+      "tier_notes": "Classified as production by industry analysts due to national volume; offers more finish options than typical production builders — sometimes described as luxury production or semi-custom by consumers",
+      "website": "https://www.tollbrothers.com",
+      "name": "Toll Brothers",
+      "communities_page": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dallas-Fort-Worth",
+      "bbb_search": "Toll Brothers TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 187,
+        "source_url": "https://www.bbb.org/us/pa/ft-washington/profile/real-estate-development/toll-brothers-incorporated-0241-80000274",
+        "last_updated": "2026-Q2",
+        "notes": "National profile (HQ: Fort Washington, PA); complaints are company-wide",
+        "complaint_themes": [
+          "Construction quality inconsistency for luxury price point: drywall seams, ceiling cracks, gapped flooring, improperly taped walls",
+          "Electrical/safety issues: incorrect garage wiring (fire hazard), outlets installed incorrectly, non-standard installations",
+          "Spec/square footage discrepancies: homes built to different specs than contracted; some buyers discovered wrong sq footage days before closing",
+          "Post-close warranty responsiveness: unreturned emails, missed walk-through appointments, first-year warranty items disputed"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Structural warranty excludes exterior wall cladding (brick, stucco, siding). No action required for structural unless home is unsafe.",
+        "source_url": "https://www.tollbrothers.com/why-toll-brothers/quality",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 700000,
+        "max": 3000000
+      },
+      "active_suburbs": [
+        "argyle",
+        "celina",
+        "dallas",
+        "denton",
+        "flower-mound",
+        "fort-worth",
+        "frisco",
+        "heath",
+        "highland-village",
+        "hurst",
+        "keller",
+        "lewisville",
+        "mckinney",
+        "murphy",
+        "northlake",
+        "plano",
+        "prosper",
+        "rockwall"
+      ],
+      "communities": [
+        {
+          "name": "Crescent Hill",
+          "suburb_slug": "murphy",
+          "city_name": "Murphy",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Crescent-Hill",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Dixon Estates",
+          "suburb_slug": "flower-mound",
+          "city_name": "Flower Mound",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dixon-Estates",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Enclave at Hickory Hill",
+          "suburb_slug": "argyle",
+          "city_name": "Argyle",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Enclave-at-Hickory-Hill",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Light Farms",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Light-Farms",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Oakbridge Crossing",
+          "suburb_slug": "flower-mound",
+          "city_name": "Flower Mound",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Oakbridge-Crossing",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Prestwick Grove",
+          "suburb_slug": "frisco",
+          "city_name": "Frisco",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Prestwick-Grove",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Star Trail",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Star-Trail",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "The Ranch at Uptown Celina",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/The-Ranch-at-Uptown-Celina",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Adkins Park",
+          "suburb_slug": "hurst",
+          "city_name": "Hurst",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Adkins-Park",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Aster Park",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Aster-Park",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Bristol Valley",
+          "suburb_slug": "heath",
+          "city_name": "Heath",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Bristol-Valley",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Creek Meadows West",
+          "suburb_slug": "northlake",
+          "city_name": "Northlake",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Creek-Meadows-West",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Fields",
+          "suburb_slug": "frisco",
+          "city_name": "Frisco",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Fields",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Furst Ranch",
+          "suburb_slug": "argyle",
+          "city_name": "Argyle",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Furst-Ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Landmark",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Landmark",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Toll Brothers at Walsh",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Walsh",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Town Lake at Flower Mound",
+          "suburb_slug": "flower-mound",
+          "city_name": "Flower Mound",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Town-Lake-at-Flower-Mound",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Wandering Creek at Brookhollow",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Wandering-Creek-at-Brookhollow",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        },
+        {
+          "name": "Wildflower Ranch",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Wildflower-Ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-26T01:00:45.413Z"
+        }
+      ],
+      "score": {
+        "total": 90,
+        "quality_pts": 18,
+        "trust_resp_pts": 18,
+        "value_pts": 13.5,
+        "bbb_pts": 12,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 13.5,
+        "raw_pts": 90,
+        "raw_max": 100,
+        "grade": "A+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "nextjs",
+        "scraped_date": "2026-05-26T01:00:45.413Z",
+        "source_url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dallas-Fort-Worth",
+        "html_size_kb": 1175
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.5,
+        "review_count": 15,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Toll%20Brothers%20home%20builder",
+        "place_name": "Toll Brothers, Inc.",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "meritage-homes",
+      "tier": "production",
+      "website": "https://www.meritagehomes.com",
+      "name": "Meritage Homes",
+      "communities_page": "https://www.meritagehomes.com/state/texas/dallas-fort-worth",
+      "bbb_search": "Meritage Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 292,
+        "source_url": "https://www.bbb.org/us/tx/coppell/profile/home-builders/meritage-homes-0875-8000611",
+        "last_updated": "2026-Q2",
+        "notes": "DFW profile (Coppell, TX); complaints are company-wide per BBB",
+        "complaint_themes": [
+          "Foundation movement in some DFW communities: known subdivision-level issues in Roanoke/Briarwyck; heaving/settlement reported",
+          "Water intrusion: seeping through garage walls, windows, and flashing; roof leaks reported",
+          "Post-sale communication drop-off: sales team attentive pre-contract, warranty team described as unresponsive after closing",
+          "Warranty classification disputes: buyers report repairs reclassified as 'maintenance' to deny claims"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Cosmetic items corrected one time only at/near the 1yr anniversary date.",
+        "source_url": "https://www.meritagehomes.com/why-meritage/quality-and-sustainability",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 300000,
+        "max": 700000
+      },
+      "active_suburbs": [
+        "dallas"
+      ],
+      "communities": [
+        {
+          "name": "Austin",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.meritagehomes.com/state/tx/austin",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:52.531Z"
+        },
+        {
+          "name": "/Ft. Worth",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:52.531Z"
+        },
+        {
+          "name": "Houston",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.meritagehomes.com/state/tx/houston",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:52.531Z"
+        },
+        {
+          "name": "San Antonio",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.meritagehomes.com/state/tx/san-antonio",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:00:52.531Z"
+        }
+      ],
+      "score": {
+        "total": 73,
+        "quality_pts": 13.2,
+        "trust_resp_pts": 13.2,
+        "value_pts": 9.9,
+        "bbb_pts": 10,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 11.5,
+        "raw_pts": 72.8,
+        "raw_max": 100,
+        "grade": "B+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:00:52.531Z",
+        "source_url": "https://www.meritagehomes.com/state/texas/dallas-fort-worth",
+        "html_size_kb": 164
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 3.3,
+        "review_count": 62,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Meritage%20Homes%20home%20builder",
+        "place_name": "Meritage Homes - Dallas Corporate Office",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "trophy-signature-homes",
+      "tier": "semi-custom",
+      "website": "https://trophysignaturehomes.com",
+      "name": "Trophy Signature Homes",
+      "communities_page": "https://trophysignaturehomes.com/communities/",
+      "bbb_search": "Trophy Signature Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 48,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/trophy-signature-homes-0875-91130948",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10 administered by 2-10 Home Buyers Warranty (third-party insured).",
+        "source_url": "https://trophysignaturehomes.com/warranty-info",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 300000,
+        "max": 600000
+      },
+      "active_suburbs": [
+        "allen",
+        "aubrey",
+        "celina",
+        "dallas",
+        "denton",
+        "forney",
+        "fort-worth",
+        "frisco",
+        "garland",
+        "haslet",
+        "keller",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "plano",
+        "princeton",
+        "prosper",
+        "rockwall",
+        "royse-city",
+        "saginaw",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "Belmont  76227",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/communities/dallas-ft-worth/aubrey/belmont",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/communities/dallas-ft-worth/aubrey/belmont",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/communities/dallas-ft-worth/fort-worth/cibolo-hills-west",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Cross Creek Meadows  75009",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/communities/dallas-ft-worth/celina/cross-creek-meadows",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/communities/dallas-ft-worth/celina/cross-creek-meadows",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Devonshire  75126",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/communities/dallas-ft-worth/forney/devonshire",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/communities/dallas-ft-worth/forney/devonshire",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Dove Hollow  75165",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/communities/dallas-ft-worth/waxahachie/dove-hollow",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/communities/dallas-ft-worth/waxahachie/dove-hollow",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Eastridge  75071",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/mckinney/eastridge",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/mckinney/eastridge",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "ElevonLavon,  75166",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/lavon/elevon",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/lavon/elevon",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "LakehavenFarmersville,  75442",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/farmersville/lakehaven",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Lone OakAlvarado,  76009",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/alvarado/lone-oak",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "princeton",
+          "city_name": "Princeton",
+          "url": "https://placeholder/communities/dallas-ft-worth/alvarado/lone-oak",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Lowry Trails  75407",
+          "suburb_slug": "princeton",
+          "city_name": "Princeton",
+          "url": "https://placeholder/communities/dallas-ft-worth/princeton/lowry-trails",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Madero  76052",
+          "suburb_slug": "haslet",
+          "city_name": "Haslet",
+          "url": "https://placeholder/communities/dallas-ft-worth/haslet/madero",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Visit Community",
+          "suburb_slug": "haslet",
+          "city_name": "Haslet",
+          "url": "https://placeholder/communities/dallas-ft-worth/haslet/madero",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "MorningstarAledo,  76008",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/aledo/morningstar",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Nicholson RanchLavon,  75166",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/lavon/nicholson-ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Painted Tree  75071",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/mckinney/painted-tree",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Southridge  75071",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/mckinney/southridge",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "StonehavenSeagoville,  75159",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/communities/dallas-ft-worth/seagoville/stonehaven",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Sunset RanchGunter,  75058",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/gunter/sunset-ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Terra Vella  76052",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/communities/dallas-ft-worth/dallas-ft-worth/terra-vella",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Tesoro at Chisholm Trail RanchCrowley,  76036",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/crowley/tesoro-at-chisholm-trail-ranch",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Trails of LavonLavon,  75166",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth/lavon/trails-of-lavon",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Windmore  75407",
+          "suburb_slug": "princeton",
+          "city_name": "Princeton",
+          "url": "https://placeholder/communities/dallas-ft-worth/princeton/windmore",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Austin",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/austin",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "/ Ft Worth",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/dallas-ft-worth",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Houston",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/communities/houston",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        },
+        {
+          "name": "Builder Designs",
+          "suburb_slug": "plano",
+          "city_name": "Plano",
+          "url": "https://www.builderdesigns.com",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:01.492Z"
+        }
+      ],
+      "score": {
+        "total": 80,
+        "quality_pts": 13.6,
+        "trust_resp_pts": 13.6,
+        "value_pts": 10.2,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.9,
+        "raw_pts": 80.3,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:01:01.492Z",
+        "source_url": "https://trophysignaturehomes.com/communities/",
+        "html_size_kb": 12782
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 3.4,
+        "review_count": 222,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Trophy%20Signature%20Homes%20home%20builder",
+        "place_name": "Trophy Signature Homes",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "bloomfield-homes",
+      "tier": "semi-custom",
+      "website": "https://www.bloomfieldhomes.com",
+      "name": "Bloomfield Homes",
+      "communities_page": "https://www.bloomfieldhomes.com/new-homes/",
+      "bbb_search": "Bloomfield Homes TX",
+      "trustbuilder": {
+        "overall": 4.3,
+        "quality": 4.1,
+        "trustworthiness": 4.3,
+        "value": 4.3,
+        "responsiveness": 4.1,
+        "review_count": 1038,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/bloomfield-homes/reviews/19389/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "A-",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 23,
+        "source_url": "https://www.bbb.org/us/tx/southlake/profile/home-builders/bloomfield-homes-lp-0825-175405774",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 6,
+        "notes": "Structural warranty is 6 years, not the more common 10yr standard. Administered by American eWarranty. Transferable within 30 days of resale (written notice required or warranty voids).",
+        "source_url": "https://www.bloomfieldhomes.com/warranty/",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 280000,
+        "max": 600000
+      },
+      "active_suburbs": [
+        "addison",
+        "anna",
+        "argyle",
+        "aubrey",
+        "bedford",
+        "burleson",
+        "cedar-hill",
+        "celina",
+        "cleburne",
+        "crandall",
+        "dallas",
+        "denton",
+        "desoto",
+        "duncanville",
+        "euless",
+        "fairview",
+        "forney",
+        "fort-worth",
+        "hurst",
+        "little-elm",
+        "mansfield",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "midlothian",
+        "prosper",
+        "rockwall",
+        "royse-city",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "Sunset Ridge",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/alvarado/sunset-ridge/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Meadow Vista",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/anna/meadow-vista/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Villages of Hurricane Creek",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/anna/villages-of-hurricane-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "West Crossing",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/anna/west-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "ArrowBrooke",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/arrowbrooke/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Union Park",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/new-homes/tx/little-elm/union-park/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Woodstone",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/new-homes/tx/providence-village/woodstone/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Arcadia Trails",
+          "suburb_slug": "bedford",
+          "city_name": "Bedford",
+          "url": "https://placeholder/new-homes/tx/balch-springs/arcadia-trails/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Grace Park",
+          "suburb_slug": "bedford",
+          "city_name": "Bedford",
+          "url": "https://placeholder/new-homes/tx/bedford/grace-park/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Parks at Panchasarp Farms",
+          "suburb_slug": "burleson",
+          "city_name": "Burleson",
+          "url": "https://placeholder/new-homes/tx/burleson/parks-at-panchasarp-farms/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Addison Hills",
+          "suburb_slug": "cedar-hill",
+          "city_name": "Cedar Hill",
+          "url": "https://placeholder/new-homes/tx/cedar-hill/addison-hills/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Creekview Meadows",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/pilot-point/creekview-meadows/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Mosaic",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/mosaic/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Sutton Fields",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/sutton-fields/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Silo Mills",
+          "suburb_slug": "cleburne",
+          "city_name": "Cleburne",
+          "url": "https://placeholder/new-homes/tx/joshua/silo-mills/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Heartland",
+          "suburb_slug": "crandall",
+          "city_name": "Crandall",
+          "url": "https://placeholder/new-homes/tx/heartland/heartland/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Heartland Classic 60",
+          "suburb_slug": "crandall",
+          "city_name": "Crandall",
+          "url": "https://placeholder/new-homes/tx/heartland/heartland-classic-60/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Crowley",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/crowley/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Hulen Trails",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/fort-worth/hulen-trails/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Hunters Ridge",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/crowley/hunters-ridge/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Country Lakes",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/country-lakes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Glenwood Meadows",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/glenwood-meadows/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Devonshire",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/new-homes/tx/forney/devonshire/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Meraki",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/mclendon-chisholm/meraki/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Mockingbird Hills",
+          "suburb_slug": "burleson",
+          "city_name": "Burleson",
+          "url": "https://placeholder/new-homes/tx/joshua/mockingbird-hills/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Silo Mills",
+          "suburb_slug": "burleson",
+          "city_name": "Burleson",
+          "url": "https://placeholder/new-homes/tx/joshua/silo-mills/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Justin",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/justin/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Paloma Ranch",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/new-fairview/paloma-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Timberbrook",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/justin/timberbrook/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Grand Heritage",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/new-homes/tx/lavon/grand-heritage/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Rockwood",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/new-homes/tx/mansfield/rockwood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Somerset",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/new-homes/tx/mansfield/somerset/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Triple Diamond Ranch",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/new-homes/tx/mansfield/triple-diamond-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Painted Tree",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/new-homes/tx/mckinney/painted-tree/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Willow Wood",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/new-homes/tx/mckinney/willow-wood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "McLendon-Chisolm",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/new-homes/tx/mclendon-chisolm/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Meraki",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/mclendon-chisholm/meraki/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Sonoma Verde",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/rockwall/sonoma-verde/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Liberty",
+          "suburb_slug": "melissa",
+          "city_name": "Melissa",
+          "url": "https://placeholder/new-homes/tx/melissa/liberty/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Arcadia Trails",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/new-homes/tx/balch-springs/arcadia-trails/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Ridge Ranch",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/new-homes/tx/mesquite/ridge-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Hayes Crossing",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/new-homes/tx/midlothian/hayes-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Mockingbird Heights",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/new-homes/tx/midlothian/mockingbird-heights/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Ridgepoint",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/new-homes/tx/midlothian/ridgepoint/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Villages of Walnut Grove",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/new-homes/tx/midlothian/villages-of-walnut-grove/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "New",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/new-fairview/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Oak Point",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/oak-point/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Creekview Meadows",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://placeholder/new-homes/tx/pilot-point/creekview-meadows/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Providence Village",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/providence-village/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "The Oaks",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/red-oak/the-oaks/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Terracina",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/rockwall/terracina/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Stone River Glen",
+          "suburb_slug": "royse-city",
+          "city_name": "Royse City",
+          "url": "https://placeholder/new-homes/tx/royse-city/stone-river/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Waterscape",
+          "suburb_slug": "royse-city",
+          "city_name": "Royse City",
+          "url": "https://placeholder/new-homes/tx/royse-city/waterscape/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Anderson Crossing",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/new-homes/tx/trenton/anderson-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "North Grove",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/new-homes/tx/waxahachie/north-grove/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Sunrise at Garden Valley",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/new-homes/tx/waxahachie/sunrise-at-garden-valley/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Kreymer East",
+          "suburb_slug": "wylie",
+          "city_name": "Wylie",
+          "url": "https://placeholder/new-homes/tx/wylie/kreymer-east/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Lewis Ranch",
+          "suburb_slug": "wylie",
+          "city_name": "Wylie",
+          "url": "https://placeholder/new-homes/tx/wylie/lewis-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Addison Hills Classic 60s",
+          "suburb_slug": "cedar-hill",
+          "city_name": "Cedar Hill",
+          "url": "https://placeholder/new-homes/tx/cedar-hill/addison-hills-classic-60s/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Addison Hills Classic 80s",
+          "suburb_slug": "cedar-hill",
+          "city_name": "Cedar Hill",
+          "url": "https://placeholder/new-homes/tx/cedar-hill/addison-hills-classic-80s/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "ArrowBrooke Classic 50",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/arrowbrooke-50/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "ArrowBrooke Classic 60",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/arrowbrooke-60/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "ArrowBrooke Elements",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/arrowbrooke-elements/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Country Lakes Classic 50",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/country-lakes-classic-50/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Country Lakes Classic 60",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/country-lakes-classic-60/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Devonshire Classic 50-55",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/new-homes/tx/forney/devonshire-classic-50-55/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "Devonshire Classic 60-65",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/new-homes/tx/forney/devonshire-classic-60-65/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "cedar-hill",
+          "city_name": "Cedar Hill",
+          "url": "https://placeholder/new-homes/tx/cedar-hill/addison-hills/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/arrowbrooke/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/country-lakes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/new-homes/tx/forney/devonshire/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "bedford",
+          "city_name": "Bedford",
+          "url": "https://placeholder/new-homes/tx/bedford/grace-park/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/new-homes/tx/midlothian/hayes-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "desoto",
+          "city_name": "DeSoto",
+          "url": "https://placeholder/new-homes/tx/desoto/homestead-at-daniel-farms/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/fort-worth/hulen-trails/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "wylie",
+          "city_name": "Wylie",
+          "url": "https://placeholder/new-homes/tx/wylie/kreymer-east/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "melissa",
+          "city_name": "Melissa",
+          "url": "https://placeholder/new-homes/tx/melissa/liberty/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/anna/meadow-vista/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/mosaic/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/new-homes/tx/waxahachie/north-grove/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/new-homes/tx/mckinney/painted-tree/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "fairview",
+          "city_name": "Fairview",
+          "url": "https://placeholder/new-homes/tx/new-fairview/paloma-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "burleson",
+          "city_name": "Burleson",
+          "url": "https://placeholder/new-homes/tx/burleson/parks-at-panchasarp-farms/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/new-homes/tx/mesquite/ridge-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/new-homes/tx/mansfield/rockwood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/rockwall/sonoma-verde/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "royse-city",
+          "city_name": "Royse City",
+          "url": "https://placeholder/new-homes/tx/royse-city/stone-river/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        },
+        {
+          "name": "View Community",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/new-homes/tx/little-elm/union-park/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:05.562Z"
+        }
+      ],
+      "score": {
+        "total": 84,
+        "quality_pts": 16.4,
+        "trust_resp_pts": 16.8,
+        "value_pts": 12.9,
+        "bbb_pts": 12,
+        "warranty_pts": 13,
+        "suburb_quality_pts": 12.5,
+        "raw_pts": 83.6,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:17:05.562Z",
+        "source_url": "https://www.bloomfieldhomes.com/new-homes/",
+        "html_size_kb": 380
+      }
+    },
+    {
+      "slug": "pulte-homes",
+      "tier": "production",
+      "website": "https://www.pulte.com",
+      "name": "Pulte Homes",
+      "communities_page": "https://www.pulte.com/homes/texas/dallas-fort-worth-area",
+      "bbb_search": "Pulte Homes TX",
+      "trustbuilder": {
+        "overall": 4.2,
+        "quality": 4.1,
+        "trustworthiness": 4.3,
+        "value": 4.3,
+        "responsiveness": 4.2,
+        "review_count": 499,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/pulte-homes/reviews/3/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "NR",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 456,
+        "source_url": "https://www.bbb.org/us/tx/irving/profile/home-builders/pulte-homes-0875-8001384",
+        "last_updated": "2026-Q2",
+        "notes": "Not Rated — BBB states business is in process of responding to previously closed complaints; complaints are company-wide",
+        "complaint_themes": [
+          "Structural and material defects: driveways cracking/crumbling within months, garage door misalignment, uneven floors, roof leaks",
+          "Warranty repair delays: promised appointments missed, issues unresolved 2+ years post-closing, difficulty reaching customer service",
+          "Coercive closing practices reported: buyers threatened with deposit forfeiture to sign on homes with unresolved major defects",
+          "BBB 'Not Rated' status (as of Q2 2026) due to volume of complaints under review — notable red flag vs peers"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Above-standard: includes additional 5yr water infiltration warranty (covers internal leaks and various water intrusion types) on top of standard 1-2-10. Warranty is transferable.",
+        "source_url": "https://www.pulte.com/why-pulte/our-warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 350000,
+        "max": 900000
+      },
+      "active_suburbs": [
+        "anna",
+        "aubrey",
+        "burleson",
+        "celina",
+        "dallas",
+        "denton",
+        "forney",
+        "fort-worth",
+        "haslet",
+        "lantana",
+        "little-elm",
+        "mckinney",
+        "mesquite",
+        "midlothian",
+        "northlake",
+        "princeton",
+        "rockwall",
+        "westlake"
+      ],
+      "communities": [
+        {
+          "name": "Austin",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.pulte.com/homes/texas/austin",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:15.610Z"
+        },
+        {
+          "name": "Houston",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.pulte.com/homes/texas/houston",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:15.610Z"
+        },
+        {
+          "name": "San Antonio",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://www.pulte.com/homes/texas/san-antonio",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:01:15.610Z"
+        }
+      ],
+      "score": {
+        "total": 76,
+        "quality_pts": 16.4,
+        "trust_resp_pts": 17,
+        "value_pts": 12.9,
+        "bbb_pts": 2,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.7,
+        "raw_pts": 76,
+        "raw_max": 100,
+        "grade": "B+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:01:15.610Z",
+        "source_url": "https://www.pulte.com/homes/texas/dallas-fort-worth-area",
+        "html_size_kb": 1585
+      }
+    },
+    {
+      "slug": "k-hovnanian-homes",
+      "tier": "production",
+      "website": "https://www.khov.com",
+      "name": "K. Hovnanian Homes",
+      "communities_page": "https://www.khov.com/new-homes/texas/dallas",
+      "bbb_search": "K Hovnanian Homes TX",
+      "trustbuilder": {
+        "overall": 4.3,
+        "quality": 4.1,
+        "trustworthiness": 4.3,
+        "value": 4.2,
+        "responsiveness": 4.3,
+        "review_count": 366,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/k-hovnanian-homes/reviews/880/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 13,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/k-hovnanian-homes-dfw-llc-0875-4002509",
+        "last_updated": "2026-Q2",
+        "notes": "DFW LLC entity",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Year 1 described as \"bumper-to-bumper.\" Excludes gale force winds and acts of nature from structural coverage.",
+        "source_url": "https://www.khov.com/why-khov/k-hovnanian-warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 280000,
+        "max": 600000
+      },
+      "active_suburbs": [
+        "arlington",
+        "celina",
+        "dallas",
+        "denton",
+        "fate",
+        "forney",
+        "fort-worth",
+        "heath",
+        "lucas",
+        "rockwall",
+        "wylie"
+      ],
+      "communities": [],
+      "score": {
+        "total": 89,
+        "quality_pts": 16.4,
+        "trust_resp_pts": 17.2,
+        "value_pts": 12.6,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.9,
+        "raw_pts": 89.1,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:01:21.141Z",
+        "source_url": "https://www.khov.com/new-homes/texas/dallas",
+        "html_size_kb": 232
+      }
+    },
+    {
+      "slug": "gfo-homes",
+      "tier": "semi-custom",
+      "website": "https://gfohomes.com",
+      "name": "GFO Homes",
+      "communities_page": "https://gfohomes.com/communities/",
+      "bbb_search": "GFO Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 65,
+        "source_url": "https://www.bbb.org/us/tx/addison/profile/home-builders/gehan-homes-0875-19000234",
+        "last_updated": "2026-Q2",
+        "notes": "BBB profile still listed under former brand name Gehan Homes",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 6,
+        "notes": "Structural warranty is 6 years (foundation latent defects), not the more common 10yr standard. 1yr workmanship is non-transferable; 2yr mechanical and 6yr structural transfer to new owner on resale.",
+        "source_url": "https://www.gfohome.com/wp-content/uploads/2024/07/GFO-Home-Warranty-Program-2023-REVISED-9-1-23-2.pdf",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 400000,
+        "max": 800000
+      },
+      "active_suburbs": [],
+      "communities": [],
+      "score": {
+        "total": 86,
+        "quality_pts": 16.8,
+        "trust_resp_pts": 16.8,
+        "value_pts": 12.6,
+        "bbb_pts": 14,
+        "warranty_pts": 13,
+        "suburb_quality_pts": null,
+        "raw_pts": 73.2,
+        "raw_max": 85,
+        "grade": "A",
+        "data_completeness": "partial",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:02:07.276Z",
+        "source_url": "https://gfohomes.com/communities/",
+        "html_size_kb": 11
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.2,
+        "review_count": 15,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=GFO%20Homes%20home%20builder",
+        "place_name": "Sweetgrass by GFO Home",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "chesmar-homes",
+      "tier": "custom",
+      "website": "https://chesmar.com",
+      "name": "Chesmar Homes",
+      "communities_page": "https://chesmar.com/communities/",
+      "bbb_search": "Chesmar Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "NR",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 21,
+        "source_url": "https://www.bbb.org/us/tx/richardson/profile/home-builders/chesmar-homes-dfw-ltd-0875-91148001",
+        "last_updated": "2026-Q2",
+        "notes": "Not Rated on BBB",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10 administered by 2-10 Home Buyers Warranty.",
+        "source_url": "https://chesmar.com/warranty/",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 300000,
+        "max": 700000
+      },
+      "active_suburbs": [
+        "dallas"
+      ],
+      "communities": [
+        {
+          "name": "Austin",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/texas/austin-new-homes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:11.708Z"
+        },
+        {
+          "name": "Central",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/texas/central-texas-new-homes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:11.708Z"
+        },
+        {
+          "name": "Houston",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/texas/houston-new-homes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:11.708Z"
+        },
+        {
+          "name": "San Antonio",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/texas/san-antonio-new-homes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:11.708Z"
+        }
+      ],
+      "score": {
+        "total": 79,
+        "quality_pts": 16.4,
+        "trust_resp_pts": 16.4,
+        "value_pts": 12.3,
+        "bbb_pts": 7,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 11.5,
+        "raw_pts": 78.6,
+        "raw_max": 100,
+        "grade": "B+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:02:11.708Z",
+        "source_url": "https://chesmar.com/communities/",
+        "html_size_kb": 38
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.1,
+        "review_count": 64,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Chesmar%20Homes%20home%20builder",
+        "place_name": "Chesmar Homes Austin",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "beazer-homes",
+      "tier": "production",
+      "website": "https://www.beazer.com",
+      "name": "Beazer Homes",
+      "communities_page": "https://www.beazer.com/texas/dallas-fort-worth-area",
+      "bbb_search": "Beazer Homes TX",
+      "trustbuilder": {
+        "overall": 4.6,
+        "quality": null,
+        "trustworthiness": null,
+        "value": null,
+        "responsiveness": null,
+        "review_count": 911,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/beazer-homes/reviews/1/texas/dallas",
+        "last_updated": "2026-Q2",
+        "notes": "Dimension breakdown not available for Dallas market; overall score only"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 93,
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/home-builders/beazer-homes-corporation-0443-13001884",
+        "last_updated": "2026-Q2",
+        "notes": "National profile (HQ: Atlanta, GA); complaints are company-wide",
+        "complaint_themes": [
+          "Finish work quality: paint, trim, and drywall finishes consistently cited as below expectations; poor craftsmanship at closing",
+          "HVAC reliability: repeated repair calls required within first 5 years, not just routine maintenance",
+          "Moisture/water issues: shower panel installations allowing water into walls; roof shingles improperly nailed",
+          "Warranty service speed: slow response times reported across multiple markets; overall satisfaction ratings low (1.6/5 on ConsumerAffairs)"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Beazer provides 10yr structural warranty directly (not third-party administered).",
+        "source_url": "https://www.beazer.com/warranty-information",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 280000,
+        "max": 600000
+      },
+      "active_suburbs": [
+        "dallas"
+      ],
+      "communities": [],
+      "score": {
+        "total": 90,
+        "quality_pts": null,
+        "trust_resp_pts": null,
+        "value_pts": null,
+        "bbb_pts": 14,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 11.5,
+        "raw_pts": 40.5,
+        "raw_max": 45,
+        "grade": "A+",
+        "data_completeness": "limited",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:02:19.752Z",
+        "source_url": "https://www.beazer.com/texas/dallas-fort-worth-area",
+        "html_size_kb": 236
+      }
+    },
+    {
+      "slug": "coventry-homes",
+      "tier": "custom",
+      "website": "https://www.coventryhomes.com",
+      "name": "Coventry Homes",
+      "communities_page": "https://www.coventryhomes.com/new-homes/tx/dallas-ft-worth/",
+      "bbb_search": "Coventry Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": null,
+        "accredited": null,
+        "accredited_since_year": null,
+        "complaint_count_3yr": null,
+        "source_url": null,
+        "last_updated": "2026-Q2",
+        "notes": "No BBB profile found for Coventry Homes in DFW as of Q2 2026",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 1,
+        "structural_years": 10,
+        "notes": "Warranty documentation describes a 1yr coverage for materials, workmanship, AND mechanical systems combined, plus 10yr structural. Systems period appears to be 1yr (not 2yr). Verify with Coventry warranty book (DFH Form Rev. 4/6/2023) for Texas-specific terms.",
+        "source_url": "https://media.homefiniti.com/434/2025/7/8/Coventry_Homes_Warranty_Book.pdf",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 350000,
+        "max": 700000
+      },
+      "active_suburbs": [
+        "anna",
+        "arlington",
+        "aubrey",
+        "celina",
+        "dallas",
+        "denton",
+        "flower-mound",
+        "fort-worth",
+        "highland-village",
+        "mansfield",
+        "mckinney",
+        "mesquite",
+        "northlake",
+        "prosper",
+        "rockwall",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "Heartland",
+          "suburb_slug": "flower-mound",
+          "city_name": "Flower Mound",
+          "url": "https://placeholder/new-homes/tx/heartland/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Oak Point",
+          "suburb_slug": "northlake",
+          "city_name": "Northlake",
+          "url": "https://placeholder/new-homes/tx/oak-point/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Cambridge Crossing",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/cambridge-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "South Pointe",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/new-homes/tx/mansfield/south-pointe/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Wildflower Ranch",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/fort-worth/wildflower-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Dominion of Pleasant Valley",
+          "suburb_slug": "wylie",
+          "city_name": "Wylie",
+          "url": "https://placeholder/new-homes/tx/wylie/dominion-of-pleasant-valley/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Furst Ranch",
+          "suburb_slug": "flower-mound",
+          "city_name": "Flower Mound",
+          "url": "https://placeholder/new-homes/tx/flower-mound/furst-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Hillside Village",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/hillside-village/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Hulen Trails",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes/tx/fort-worth/hulen-trails/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Landmark",
+          "suburb_slug": "denton",
+          "city_name": "Denton",
+          "url": "https://placeholder/new-homes/tx/denton/landmark/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Meadow Vista",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/new-homes/tx/anna/meadow-vista/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Mustang Lakes",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/mustang-lakes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Myrtle Creek",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/new-homes/tx/waxahachie/myrtle-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Painted Tree",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/new-homes/tx/mckinney/painted-tree/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Pecan Square",
+          "suburb_slug": "northlake",
+          "city_name": "Northlake",
+          "url": "https://placeholder/new-homes/tx/northlake/pecan-square/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Ramble",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/new-homes/tx/celina/ramble/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Saddle Star Estates",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes/tx/rockwall/saddle-star-estates/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Sandbrock Ranch",
+          "suburb_slug": "aubrey",
+          "city_name": "Aubrey",
+          "url": "https://placeholder/new-homes/tx/aubrey/sandbrock-ranch/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        },
+        {
+          "name": "Solterra",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/new-homes/tx/mesquite/solterra-texas/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:08.536Z"
+        }
+      ],
+      "score": {
+        "total": 90,
+        "quality_pts": 18.4,
+        "trust_resp_pts": 18.4,
+        "value_pts": 13.8,
+        "bbb_pts": null,
+        "warranty_pts": 13,
+        "suburb_quality_pts": 12.8,
+        "raw_pts": 76.4,
+        "raw_max": 85,
+        "grade": "A+",
+        "data_completeness": "partial",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:17:08.536Z",
+        "source_url": "https://www.coventryhomes.com/new-homes/tx/dallas-ft-worth/",
+        "html_size_kb": 355
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.6,
+        "review_count": 109,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Coventry%20Homes%20home%20builder",
+        "place_name": "Coventry Homes - South Pointe",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "dr-horton",
+      "tier": "production",
+      "website": "https://www.drhorton.com",
+      "name": "D.R. Horton",
+      "communities_page": "https://www.drhorton.com/texas/dallas-fort-worth",
+      "bbb_search": "DR Horton TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 788,
+        "source_url": "https://www.bbb.org/us/tx/rowlett/profile/home-builders/horton-d-r-custom-homes-0875-8000505",
+        "last_updated": "2026-Q2",
+        "notes": "Listed as \"Horton, D R, Custom Homes\" on BBB; complaints are company-wide",
+        "complaint_themes": [
+          "Construction quality reflects entry-level price point: substandard materials, improper installations, peeling concrete, cheap cabinets/fixtures reported",
+          "HVAC sizing and moisture issues in Texas heat: units run constantly but fail to control humidity, leading to condensation and mold reports",
+          "Warranty/post-close responsiveness: slow or unresponsive teams, unresolved structural defects persisting months after move-in",
+          "DHI Mortgage class action (2025): buyers alleged property taxes were systematically underestimated to make monthly payments appear lower than actual"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Warranty clock starts on closing date, not move-in date.",
+        "source_url": "https://www.drhorton.com/resources/warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 250000,
+        "max": 500000
+      },
+      "active_suburbs": [
+        "dallas"
+      ],
+      "communities": [],
+      "score": {
+        "total": 84,
+        "quality_pts": 17.2,
+        "trust_resp_pts": 17.2,
+        "value_pts": 12.9,
+        "bbb_pts": 10,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 11.5,
+        "raw_pts": 83.8,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:02:32.089Z",
+        "source_url": "https://www.drhorton.com/texas/dallas-fort-worth",
+        "html_size_kb": 244
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.3,
+        "review_count": 314,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=D.R.%20Horton%20home%20builder",
+        "place_name": "Silverado by D.R. Horton",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "first-texas-homes",
+      "tier": "custom",
+      "website": "https://www.firsttexashomes.com",
+      "name": "First Texas Homes",
+      "communities_page": "https://www.firsttexashomes.com/communities/",
+      "bbb_search": "First Texas Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": false,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 23,
+        "source_url": "https://www.bbb.org/us/tx/dallas/profile/home-builders/first-texas-homes-inc-0875-8000500",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Systems coverage termed \"delivery systems\" (electrical, plumbing, HVAC).",
+        "source_url": "https://www.firsttexashomes.com/warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 350000,
+        "max": 700000
+      },
+      "active_suburbs": [
+        "allen",
+        "anna",
+        "burleson",
+        "carrollton",
+        "cedar-hill",
+        "celina",
+        "dallas",
+        "denton",
+        "desoto",
+        "fate",
+        "forney",
+        "fort-worth",
+        "frisco",
+        "garland",
+        "grand-prairie",
+        "haslet",
+        "little-elm",
+        "lucas",
+        "mansfield",
+        "mckinney",
+        "melissa",
+        "mesquite",
+        "midlothian",
+        "prosper",
+        "rockwall",
+        "rowlett",
+        "saginaw",
+        "waxahachie",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "The Villages of Hurricane Creek",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/community/anna/16513/the-villages-of-hurricane-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "High Country",
+          "suburb_slug": "burleson",
+          "city_name": "Burleson",
+          "url": "https://placeholder/community/burleson/16515/high-country/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Bear Creek",
+          "suburb_slug": "cedar-hill",
+          "city_name": "Cedar Hill",
+          "url": "https://placeholder/community/cedar-hill/16503/bear-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Edgewood Creek",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/community/celina/16535/edgewood-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Sutton Fields",
+          "suburb_slug": "celina",
+          "city_name": "Celina",
+          "url": "https://placeholder/community/celina/16498/sutton-fields/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Hidden Lakes Estates",
+          "suburb_slug": "desoto",
+          "city_name": "DeSoto",
+          "url": "https://placeholder/community/desoto/16537/hidden-lakes-estates/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Summit Parks",
+          "suburb_slug": "desoto",
+          "city_name": "DeSoto",
+          "url": "https://placeholder/community/desoto/16502/summit-parks/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "The Abbey at Mercer Crossing",
+          "suburb_slug": "fate",
+          "city_name": "Fate",
+          "url": "https://placeholder/community/farmers-branch/16511/the-abbey-at-mercer-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Las Lomas",
+          "suburb_slug": "forney",
+          "city_name": "Forney",
+          "url": "https://placeholder/community/forney/16533/las-lomas/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "La Frontera",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/community/fort-worth/16489/la-frontera/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Collinsbrook Farm",
+          "suburb_slug": "frisco",
+          "city_name": "Frisco",
+          "url": "https://placeholder/community/frisco/16500/collinsbrook-farm/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Villages of Creekwood",
+          "suburb_slug": "frisco",
+          "city_name": "Frisco",
+          "url": "https://placeholder/community/frisco/16506/villages-of-creekwood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Mira Lagos Crossing",
+          "suburb_slug": "grand-prairie",
+          "city_name": "Grand Prairie",
+          "url": "https://placeholder/community/grand-prairie/16496/mira-lagos-crossing/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Valencia on The Lake",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/community/little-elm/16491/valencia-on-the-lake/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Inspiration",
+          "suburb_slug": "lucas",
+          "city_name": "Lucas",
+          "url": "https://placeholder/community/lucas/16494/inspiration/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Birdsong",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/community/mansfield/16517/birdsong/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Birdsong - Harwood",
+          "suburb_slug": "mansfield",
+          "city_name": "Mansfield",
+          "url": "https://placeholder/community/mansfield/16561/birdsong-harwood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Pecan Hill",
+          "suburb_slug": "mckinney",
+          "city_name": "McKinney",
+          "url": "https://placeholder/community/mckinney/16559/pecan-hill/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Brookfield",
+          "suburb_slug": "melissa",
+          "city_name": "Melissa",
+          "url": "https://placeholder/community/melissa/16555/brookfield/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Solterra",
+          "suburb_slug": "mesquite",
+          "city_name": "Mesquite",
+          "url": "https://placeholder/community/mesquite/16543/solterra/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Shady Valley Estates",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/community/midlothian/16553/shady-valley-estates/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Westside Preserve",
+          "suburb_slug": "midlothian",
+          "city_name": "Midlothian",
+          "url": "https://placeholder/community/midlothian/16554/westside-preserve/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Cambridge Estates",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://placeholder/community/prosper/16526/cambridge-estates/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Cambridge Estates - Harwood",
+          "suburb_slug": "prosper",
+          "city_name": "Prosper",
+          "url": "https://placeholder/community/prosper/18764/cambridge-estates-harwood/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Trails at Cottonwood Creek",
+          "suburb_slug": "rowlett",
+          "city_name": "Rowlett",
+          "url": "https://placeholder/community/rowlett/16550/trails-at-cottonwood-creek/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Quick Move-In",
+          "suburb_slug": "anna",
+          "city_name": "Anna",
+          "url": "https://placeholder/quick-move-in-homes/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        },
+        {
+          "name": "Floor Plans",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://placeholder/floorplans/",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:02:36.234Z"
+        }
+      ],
+      "score": {
+        "total": 86,
+        "quality_pts": 15.6,
+        "trust_resp_pts": 15.6,
+        "value_pts": 11.7,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.8,
+        "raw_pts": 85.7,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:02:36.234Z",
+        "source_url": "https://www.firsttexashomes.com/communities/",
+        "html_size_kb": 135
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 3.9,
+        "review_count": 75,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=First%20Texas%20Homes%20home%20builder",
+        "place_name": "First Texas Homes - Collinsbrook Farm",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "american-legend-homes",
+      "tier": "semi-custom",
+      "website": "https://www.americanlegendhomes.com",
+      "name": "American Legend Homes",
+      "communities_page": "https://www.americanlegendhomes.com/communities/",
+      "bbb_search": "American Legend Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 16,
+        "source_url": "https://www.bbb.org/us/tx/lewisville/profile/home-builders/american-legend-homes-llc-0875-90019799",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Aims to resolve all warranty requests within 7 business days.",
+        "source_url": "https://www.amlegendhomes.com/texas-warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 400000,
+        "max": 900000
+      },
+      "active_suburbs": [],
+      "communities": [],
+      "score": {
+        "total": 84,
+        "quality_pts": 15.2,
+        "trust_resp_pts": 15.2,
+        "value_pts": 11.4,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": null,
+        "raw_pts": 71.8,
+        "raw_max": 85,
+        "grade": "A",
+        "data_completeness": "partial",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "suburb-scan-only",
+        "scraped_date": "2026-05-26T01:03:26.654Z",
+        "source_url": "https://www.americanlegendhomes.com/communities/",
+        "html_size_kb": 0
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 3.8,
+        "review_count": 46,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=American%20Legend%20Homes%20home%20builder",
+        "place_name": "American Legend Homes Corporate Office - Texas",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "kindred-homes",
+      "tier": "custom",
+      "website": "https://www.kindredhomes.com",
+      "name": "Kindred Homes",
+      "communities_page": "https://www.kindredhomes.com/communities/",
+      "bbb_search": "Kindred Homes TX",
+      "trustbuilder": {
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/reviews",
+        "last_updated": null
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 6,
+        "source_url": "https://www.bbb.org/us/tx/grapevine/profile/new-construction/kindred-homes-0825-235978484",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Structural warranty administered by StrucSure Home Warranty Company (independent third-party).",
+        "source_url": "https://www.kindredhomes.com/warranty",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 270000,
+        "max": 450000
+      },
+      "active_suburbs": [
+        "azle",
+        "dallas",
+        "desoto",
+        "forney",
+        "fort-worth",
+        "haslet",
+        "mesquite",
+        "midlothian",
+        "northlake",
+        "rockwall",
+        "waxahachie"
+      ],
+      "communities": [
+        {
+          "name": "Dallas",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/new-homes&#x2f;texas&#x2f;dallas-fort-worth",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:03:31.289Z"
+        },
+        {
+          "name": "Build on Your Lot",
+          "suburb_slug": "fort-worth",
+          "city_name": "Fort Worth",
+          "url": "https://placeholder/build-on-your-lot",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:03:31.289Z"
+        }
+      ],
+      "score": {
+        "total": 91,
+        "quality_pts": 17.6,
+        "trust_resp_pts": 17.6,
+        "value_pts": 13.2,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.2,
+        "raw_pts": 90.6,
+        "raw_max": 100,
+        "grade": "A+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:03:31.289Z",
+        "source_url": "https://www.kindredhomes.com/communities/",
+        "html_size_kb": 42
+      },
+      "reviews": {
+        "source": "google_places",
+        "overall": 4.4,
+        "review_count": 23,
+        "quality": null,
+        "value": null,
+        "trustworthiness": null,
+        "responsiveness": null,
+        "source_url": "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Kindred%20Homes%20home%20builder",
+        "place_name": "Kindred Homes",
+        "last_updated": "2026-Q2"
+      }
+    },
+    {
+      "slug": "pacesetter-homes",
+      "tier": "custom",
+      "website": "https://www.pacesetterhouston.com",
+      "name": "Pacesetter Homes",
+      "communities_page": "https://www.pacesetterhomestexas.com/home-builders/dallas/communities",
+      "bbb_search": "Pacesetter Homes TX",
+      "trustbuilder": {
+        "overall": 4.3,
+        "quality": 3.9,
+        "trustworthiness": 4.1,
+        "value": 4.2,
+        "responsiveness": 3.9,
+        "review_count": 84,
+        "market": "Dallas, TX",
+        "source_url": "https://www.newhomesourceprofessional.com/ntreis/builder/pacesetter-homes-texas/reviews/29225/texas/dallas",
+        "last_updated": "2026-Q2"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": null,
+        "complaint_count_3yr": 11,
+        "source_url": "https://www.bbb.org/us/tx/mckinney/profile/home-builders/pacesetter-homes-0875-91129230",
+        "last_updated": "2026-Q2",
+        "complaint_themes": []
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Structural warranty administered by ProHome Warranty Management Services (independent third-party). Systems coverage termed \"distribution systems.\"",
+        "source_url": "https://www.pacesetterhomestexas.com/",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 280000,
+        "max": 500000
+      },
+      "active_suburbs": [
+        "anna",
+        "aubrey",
+        "celina",
+        "dallas",
+        "forney",
+        "little-elm",
+        "melissa",
+        "princeton",
+        "rockwall",
+        "wylie"
+      ],
+      "communities": [
+        {
+          "name": "Lavon",
+          "suburb_slug": "rockwall",
+          "city_name": "Rockwall",
+          "url": "https://placeholder/new-homes-for-sale-dallas/lavon-tx",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:09.790Z"
+        },
+        {
+          "name": "Pilot Point",
+          "suburb_slug": "little-elm",
+          "city_name": "Little Elm",
+          "url": "https://placeholder/new-homes-for-sale-dallas/pilot-point-tx",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:09.790Z"
+        },
+        {
+          "name": "Heartland",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes-for-sale-dallas/heartland-tx",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:09.790Z"
+        },
+        {
+          "name": "Van Alstyne",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes-for-sale-dallas/van-alstyne-tx",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:09.790Z"
+        },
+        {
+          "name": "Justin",
+          "suburb_slug": "dallas",
+          "city_name": "Dallas",
+          "url": "https://placeholder/new-homes-for-sale-dallas/justin-tx",
+          "price_min": null,
+          "price_max": null,
+          "extraction_confidence": "medium",
+          "scraped_date": "2026-05-26T01:17:09.790Z"
+        }
+      ],
+      "score": {
+        "total": 87,
+        "quality_pts": 15.6,
+        "trust_resp_pts": 16,
+        "value_pts": 12.6,
+        "bbb_pts": 15,
+        "warranty_pts": 15,
+        "suburb_quality_pts": 12.5,
+        "raw_pts": 86.7,
+        "raw_max": 100,
+        "grade": "A",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-26T02:18:12.784Z"
+      },
+      "kristens_notes": "",
+      "scrape_meta": {
+        "strategy": "anchor-city",
+        "scraped_date": "2026-05-26T01:17:09.790Z",
+        "source_url": "https://www.pacesetterhomestexas.com/home-builders/dallas/communities",
+        "html_size_kb": 60
+      }
+    }
+  ]
+}
