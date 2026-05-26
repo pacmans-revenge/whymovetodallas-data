@@ -1131,32 +1131,32 @@ gtag('consent', 'default', {
   <p>Prosper is one of the most active new-construction markets in DFW right now, with <strong>39 communities</strong> currently listed. Buyers have a wide range of builders, price points, and lot sizes to choose from — from entry-level production homes to semi-custom builds on larger lots.</p>
 
   <!-- Stats bar -->
-  <div style="display:flex;gap:1.5rem;flex-wrap:wrap;background:var(--ivory);border:1px solid var(--border);border-radius:10px;padding:1rem 1.4rem;margin:1.5rem 0;">
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Active Communities</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">39</div>
+  <div class="kc-nc-stats">
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Active Communities</span>
+      <span class="kc-nc-stat-value">39</span>
     </div>
-    <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Price Range (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$438k – $2.7M</div>
+    <div class="kc-nc-stat-divider"></div>
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Price Range (sample)</span>
+      <span class="kc-nc-stat-value">$438k – $2.7M</span>
     </div>
-    <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">404+</div>
+    <div class="kc-nc-stat-divider"></div>
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Homes Available (sample)</span>
+      <span class="kc-nc-stat-value">404+</span>
     </div>
   </div>
 
   <!-- Active builders -->
   <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.65rem;">Active Builders in Prosper</h3>
-  <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Toll Brothers</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Southgate Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Highland Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">American Legend Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">BRITTON HOMES</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Perry Homes</span>
+  <div class="kc-nc-builders">
+    <span class="kc-nc-builder-chip">Toll Brothers</span>
+    <span class="kc-nc-builder-chip">Southgate Homes</span>
+    <span class="kc-nc-builder-chip">Highland Homes</span>
+    <span class="kc-nc-builder-chip">American Legend Homes</span>
+    <span class="kc-nc-builder-chip">BRITTON HOMES</span>
+    <span class="kc-nc-builder-chip">Perry Homes</span>
   </div>
 
   
@@ -1165,65 +1165,54 @@ gtag('consent', 'default', {
     <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
     <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>24 of 39 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-prosper" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
-    <!-- Filters -->
-    <div class="kc-nc-filters">
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-builder-prosper">Builder</label>
+    <div class="kc-filter-bar">
+      <div class="kc-filter-group">
+        <label>Builder</label>
         <select id="nc-builder-prosper">
-          <option value="">All builders</option>
+          <option value="">All Builders</option>
           <option value="American Legend Homes">American Legend Homes</option><option value="BRITTON HOMES">BRITTON HOMES</option><option value="Highland Homes">Highland Homes</option><option value="Perry Homes">Perry Homes</option><option value="Southgate Homes">Southgate Homes</option><option value="Toll Brothers">Toll Brothers</option>
         </select>
       </div>
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-pmin-prosper">Min price</label>
-        <input id="nc-pmin-prosper" type="number" placeholder="$438k" step="25000">
+      <div class="kc-filter-group">
+        <label>Price Range</label>
+        <div class="kc-pills" id="nc-price-prosper">
+          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
+          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+        </div>
       </div>
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-pmax-prosper">Max price</label>
-        <input id="nc-pmax-prosper" type="number" placeholder="$2.7M" step="25000">
+      <div class="kc-filter-group">
+        <label>Beds</label>
+        <div class="kc-pills" id="nc-beds-prosper">
+          <button class="kc-pill active" data-min="0">Any</button>
+          <button class="kc-pill" data-min="2">2+</button>
+          <button class="kc-pill" data-min="3">3+</button>
+          <button class="kc-pill" data-min="4">4+</button>
+          <button class="kc-pill" data-min="5">5+</button>
+        </div>
       </div>
+    </div>
 
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-beds-prosper">Min beds</label>
-        <select id="nc-beds-prosper">
-          <option value="0">Any</option>
-          <option value="2">2+</option>
-          <option value="3">3+</option>
-          <option value="4">4+</option>
-          <option value="5">5+</option>
-        </select>
-      </div>
+    <p class="kc-filter-count" id="nc-count-prosper"></p>
 
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-sqft-prosper">Min sq ft</label>
-        <input id="nc-sqft-prosper" type="number" placeholder="No min" step="250">
-      </div>
-
-      <button id="nc-clear-prosper" class="kc-nc-filter-clear">Clear</button>
-
-    </div><!-- /filters -->
-
-    <!-- Table -->
     <div class="kc-table-wrap">
-      <table class="kc-table" style="min-width:580px;">
+      <table class="kc-table" style="min-width:560px;">
         <thead>
           <tr>
             <th>Community</th>
             <th>Builder</th>
             <th>Price Range</th>
-            <th style="text-align:center;">Beds</th>
+            <th>Beds</th>
             <th>Sq Ft</th>
-            <th style="text-align:center;">Avail.</th>
-            <th style="text-align:center;">Promo</th>
+            <th>Avail.</th>
+            <th>Promo</th>
           </tr>
         </thead>
         <tbody id="nc-tbody-prosper"></tbody>
       </table>
     </div>
-    <p id="nc-count-prosper" class="kc-nc-table-note"></p>
   </div>
 
   <script>
@@ -1237,7 +1226,7 @@ gtag('consent', 'default', {
     }
 
     function renderRows(rows) {
-      var tbody = document.getElementById('nc-tbody-prosper');
+      var tbody   = document.getElementById('nc-tbody-prosper');
       var countEl = document.getElementById('nc-count-prosper');
       if (!tbody) return;
 
@@ -1251,78 +1240,68 @@ gtag('consent', 'default', {
         var pMin = fmt(r.price_min), pMax = fmt(r.price_max);
         var price = pMin && pMax ? pMin + '\u2013' + pMax : (pMin || '\u2014');
         var beds  = r.beds_min && r.beds_max
-          ? (r.beds_min === r.beds_max ? r.beds_min : r.beds_min + '\u2013' + r.beds_max)
-          : (r.beds_min || '\u2014');
+          ? (r.beds_min === r.beds_max ? String(r.beds_min) : r.beds_min + '\u2013' + r.beds_max)
+          : (r.beds_min ? String(r.beds_min) : '\u2014');
         var sqft  = r.sqft_min && r.sqft_max
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
-        var promo = r.has_promo
-          ? '<span class="kc-promo-badge">PROMO</span>'
-          : '';
+        var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
         return '<tr>'
-          + '<td style="font-weight:500;">' + r.name + '</td>'
+          + '<td>' + r.name + '</td>'
           + '<td>' + (r.builder || '\u2014') + '</td>'
-          + '<td style="white-space:nowrap;">' + price + '</td>'
-          + '<td style="text-align:center;">' + beds + '</td>'
-          + '<td style="white-space:nowrap;">' + sqft + '</td>'
-          + '<td style="text-align:center;">' + (r.homes_available || '\u2014') + '</td>'
-          + '<td style="text-align:center;">' + promo + '</td>'
+          + '<td class="kc-col-nowrap">' + price + '</td>'
+          + '<td class="kc-col-center">' + beds + '</td>'
+          + '<td class="kc-col-nowrap">' + sqft + '</td>'
+          + '<td class="kc-col-center">' + (r.homes_available || '\u2014') + '</td>'
+          + '<td class="kc-col-center">' + promo + '</td>'
           + '</tr>';
       }).join('');
 
       if (countEl) {
         countEl.textContent = rows.length === DATA.length
           ? 'Showing all ' + DATA.length + ' communities'
-          : rows.length + ' of ' + DATA.length + ' communities match your filters';
+          : 'Showing ' + rows.length + ' of ' + DATA.length + ' communities';
       }
     }
 
+    function activePill(pillsId) {
+      var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
+      return el ? el.dataset : {};
+    }
+
     function applyFilters() {
-      var builder = document.getElementById('nc-builder-prosper').value;
-      var pMin    = parseFloat(document.getElementById('nc-pmin-prosper').value) || 0;
-      var pMax    = parseFloat(document.getElementById('nc-pmax-prosper').value) || Infinity;
-      var beds    = parseInt(document.getElementById('nc-beds-prosper').value) || 0;
-      var sqft    = parseFloat(document.getElementById('nc-sqft-prosper').value) || 0;
+      var builder = ((document.getElementById('nc-builder-prosper') || {}).value) || '';
+      var priceD  = activePill('nc-price-prosper');
+      var pMin    = parseInt(priceD.pmin) || 0;
+      var pMax    = parseInt(priceD.pmax) || 0;
+      var bedsD   = activePill('nc-beds-prosper');
+      var beds    = parseInt(bedsD.min)   || 0;
 
       var filtered = DATA.filter(function (r) {
-        if (builder && r.builder !== builder) return false;
-        // Price: community overlaps the requested range
+        if (builder && r.builder !== builder)               return false;
         if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
-        if (pMax < Infinity && r.price_min && r.price_min > pMax) return false;
-        // Beds: community's max beds must meet the minimum requested
-        if (beds > 0 && (r.beds_max || 0) < beds) return false;
-        // Sqft: community's max sqft must meet the minimum requested
-        if (sqft > 0 && (r.sqft_max || 0) < sqft) return false;
+        if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
+        if (beds > 0 && (r.beds_max || 0) < beds)          return false;
         return true;
       });
 
       renderRows(filtered);
     }
 
-    // Wire up filter inputs
-    ['nc-builder-prosper', 'nc-beds-prosper'].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) el.addEventListener('change', applyFilters);
-    });
-    ['nc-pmin-prosper', 'nc-pmax-prosper', 'nc-sqft-prosper'].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) { el.addEventListener('input', applyFilters); el.addEventListener('change', applyFilters); }
-    });
-
-    // Clear button
-    var clearBtn = document.getElementById('nc-clear-prosper');
-    if (clearBtn) {
-      clearBtn.addEventListener('click', function () {
-        document.getElementById('nc-builder-prosper').value = '';
-        document.getElementById('nc-pmin-prosper').value   = '';
-        document.getElementById('nc-pmax-prosper').value   = '';
-        document.getElementById('nc-beds-prosper').value   = '0';
-        document.getElementById('nc-sqft-prosper').value   = '';
-        renderRows(DATA);
+    // Pill click handlers
+    document.querySelectorAll('#nc-price-prosper .kc-pill, #nc-beds-prosper .kc-pill').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        applyFilters();
       });
-    }
+    });
 
-    // Initial render — show all rows on page load
+    // Builder select
+    var builderEl = document.getElementById('nc-builder-prosper');
+    if (builderEl) builderEl.addEventListener('change', applyFilters);
+
+    // Initial render
     renderRows(DATA);
   })();
   </script>

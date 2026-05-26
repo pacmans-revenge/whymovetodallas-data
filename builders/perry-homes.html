@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/suburb.css">
   <style>
     /* ── Page variables ───────────────────────────────────────── */
     :root {
@@ -577,145 +578,170 @@ gtag('consent', 'default', {
     </div>
 
     <!-- SHOWINGNEW_TABLE_START:perry-homes -->
-    <p style="font-size:0.82rem;color:#888;margin:0.75rem 0 0.5rem;">Showing <strong>12 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to sampling; browse the portal for the full list.</p>
-    <div style="overflow-x:auto;margin:0.5rem 0 1.5rem;">
-      <table class="warranty-table" style="min-width:700px;">
+    <p class="kc-nc-table-note" id="bt-note-perry-homes" style="margin:0 0 0.85rem;">Showing <strong>26 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
+
+    <div class="kc-filter-bar">
+      <div class="kc-filter-group">
+        <label>Suburb</label>
+        <select id="bt-suburb-perry-homes">
+          <option value="">All Suburbs</option>
+          <option value="fate">Fate</option>
+          <option value="forney">Forney</option>
+          <option value="heath">Heath</option>
+          <option value="lucas">Lucas</option>
+          <option value="mckinney">Mckinney</option>
+          <option value="prosper">Prosper</option>
+          <option value="rockwall">Rockwall</option>
+          <option value="waxahachie">Waxahachie</option>
+        </select>
+      </div>
+      <div class="kc-filter-group">
+        <label>Price Range</label>
+        <div class="kc-pills" id="bt-price-perry-homes">
+          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
+          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+        </div>
+      </div>
+      <div class="kc-filter-group">
+        <label>Beds</label>
+        <div class="kc-pills" id="bt-beds-perry-homes">
+          <button class="kc-pill active" data-min="0">Any</button>
+          <button class="kc-pill" data-min="2">2+</button>
+          <button class="kc-pill" data-min="3">3+</button>
+          <button class="kc-pill" data-min="4">4+</button>
+          <button class="kc-pill" data-min="5">5+</button>
+        </div>
+      </div>
+      <div class="kc-filter-group">
+        <label>Baths</label>
+        <div class="kc-pills" id="bt-baths-perry-homes">
+          <button class="kc-pill active" data-min="0">Any</button>
+          <button class="kc-pill" data-min="2">2+</button>
+          <button class="kc-pill" data-min="3">3+</button>
+          <button class="kc-pill" data-min="4">4+</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="kc-filter-count" id="bt-count-perry-homes"></p>
+
+    <div class="kc-table-wrap">
+      <table class="kc-table" id="bt-table-perry-homes">
         <thead>
           <tr>
             <th>Suburb</th>
             <th>Community</th>
             <th>Price Range</th>
-            <th style="text-align:center;">Beds</th>
+            <th>Beds</th>
+            <th>Baths</th>
             <th>Sq Ft</th>
-            <th style="text-align:center;">Homes Avail.</th>
-            <th style="text-align:center;">Promo</th>
+            <th>Avail.</th>
+            <th>Promo</th>
             <th>Portal</th>
           </tr>
         </thead>
-        <tbody>
-      <tr>
-        <td><a href="/fate-texas" style="color:var(--navy);font-weight:500;">Fate</a></td>
-        <td>Avondale 40'</td>
-        <td style="white-space:nowrap;">$350k–$517k</td>
-        <td style="text-align:center;">3–4</td>
-        <td style="white-space:nowrap;">1,561–2,945</td>
-        <td style="text-align:center;">15</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-fate" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/fate-texas" style="color:var(--navy);font-weight:500;">Fate</a></td>
-        <td>Avondale 45'</td>
-        <td style="white-space:nowrap;">$450k–$539k</td>
-        <td style="text-align:center;">3–4</td>
-        <td style="white-space:nowrap;">1,910–2,594</td>
-        <td style="text-align:center;">15</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-fate" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/forney-texas" style="color:var(--navy);font-weight:500;">Forney</a></td>
-        <td>Devonshire 55'</td>
-        <td style="white-space:nowrap;">$450k–$565k</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">2,357–3,553</td>
-        <td style="text-align:center;">27</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-forney" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/heath-texas" style="color:var(--navy);font-weight:500;">Heath</a></td>
-        <td>Bristol Valley 1 Acre</td>
-        <td style="white-space:nowrap;">$1.2M–$1.7M</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">3,274–6,321</td>
-        <td style="text-align:center;">20</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-heath" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/heath-texas" style="color:var(--navy);font-weight:500;">Heath</a></td>
-        <td>Bristol Valley Half Acre</td>
-        <td style="white-space:nowrap;">$1.0M–$1.4M</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">3,068–5,573</td>
-        <td style="text-align:center;">25</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-heath" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/lucas-texas" style="color:var(--navy);font-weight:500;">Lucas</a></td>
-        <td>Enchanted Creek 1 Acre</td>
-        <td style="white-space:nowrap;">$1.2M–$1.6M</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">3,274–6,321</td>
-        <td style="text-align:center;">25</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-lucas" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/mckinney-texas" style="color:var(--navy);font-weight:500;">Mckinney</a></td>
-        <td>Eliana 50'</td>
-        <td style="white-space:nowrap;">$643k–$843k</td>
-        <td style="text-align:center;">3–5</td>
-        <td style="white-space:nowrap;">2,127–3,553</td>
-        <td style="text-align:center;">25</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-mckinney" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/mckinney-texas" style="color:var(--navy);font-weight:500;">Mckinney</a></td>
-        <td>Trinity Falls 50'</td>
-        <td style="white-space:nowrap;">$536k–$648k</td>
-        <td style="text-align:center;">3–4</td>
-        <td style="white-space:nowrap;">2,187–3,241</td>
-        <td style="text-align:center;">20</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-mckinney" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/prosper-texas" style="color:var(--navy);font-weight:500;">Prosper</a></td>
-        <td>Mosaic 50'</td>
-        <td style="white-space:nowrap;">$629k–$775k</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">2,187–3,553</td>
-        <td style="text-align:center;">23</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-prosper" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/rockwall-texas" style="color:var(--navy);font-weight:500;">Rockwall</a></td>
-        <td>Somerset Park 80'</td>
-        <td style="white-space:nowrap;">$724k–$874k</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">3,236–4,978</td>
-        <td style="text-align:center;">16</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-rockwall" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/rockwall-texas" style="color:var(--navy);font-weight:500;">Rockwall</a></td>
-        <td>Terraces 82'/100'</td>
-        <td style="white-space:nowrap;">$759k–$912k</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">3,310–4,891</td>
-        <td style="text-align:center;">16</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-rockwall" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-      <tr>
-        <td><a href="/waxahachie-texas" style="color:var(--navy);font-weight:500;">Waxahachie</a></td>
-        <td>Myrtle Creek 71'</td>
-        <td style="white-space:nowrap;">$577k–$700k</td>
-        <td style="text-align:center;">4–5</td>
-        <td style="white-space:nowrap;">2,769–4,140</td>
-        <td style="text-align:center;">27</td>
-        <td style="text-align:center;"></td>
-        <td><a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-waxahachie" target="_blank" rel="noopener" style="font-size:0.78rem;color:#b08d57;white-space:nowrap;">View →</a></td>
-      </tr>
-        </tbody>
+        <tbody id="bt-tbody-perry-homes"></tbody>
       </table>
     </div>
+
+    <script>
+    (function() {
+      var DATA = [{"suburb":"fate","name":"Avondale 40'","price_min":349900,"price_max":516900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1561,"sqft_max":2945,"homes_available":15,"has_promo":false},{"suburb":"fate","name":"Avondale 45'","price_min":449900,"price_max":538900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1910,"sqft_max":2594,"homes_available":15,"has_promo":false},{"suburb":"forney","name":"Devonshire 55'","price_min":449900,"price_max":564900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2357,"sqft_max":3553,"homes_available":27,"has_promo":false},{"suburb":"forney","name":"Devonshire Reserve 45'","price_min":357900,"price_max":474900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1722,"sqft_max":2754,"homes_available":30,"has_promo":false},{"suburb":"forney","name":"Devonshire Reserve 50'","price_min":445900,"price_max":536900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":2251,"sqft_max":2999,"homes_available":15,"has_promo":false},{"suburb":"forney","name":"Devonshire Reserve 60'","price_min":479900,"price_max":618900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2493,"sqft_max":4016,"homes_available":25,"has_promo":false},{"suburb":"forney","name":"Meraki 45'","price_min":389900,"price_max":535900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1910,"sqft_max":2594,"homes_available":25,"has_promo":false},{"suburb":"forney","name":"Meraki 50'","price_min":474900,"price_max":615900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2251,"sqft_max":3553,"homes_available":26,"has_promo":false},{"suburb":"heath","name":"Bristol Valley 1 Acre","price_min":1235900,"price_max":1732900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3274,"sqft_max":6321,"homes_available":20,"has_promo":false},{"suburb":"heath","name":"Bristol Valley Half Acre","price_min":1020900,"price_max":1361900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3068,"sqft_max":5573,"homes_available":25,"has_promo":false},{"suburb":"lucas","name":"Enchanted Creek 1 Acre","price_min":1222900,"price_max":1649900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3274,"sqft_max":6321,"homes_available":25,"has_promo":false},{"suburb":"mckinney","name":"Eliana 50'","price_min":642900,"price_max":842900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2127,"sqft_max":3553,"homes_available":25,"has_promo":false},{"suburb":"mckinney","name":"Ridgeline 60'","price_min":631900,"price_max":761900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2586,"sqft_max":4016,"homes_available":18,"has_promo":false},{"suburb":"mckinney","name":"Trinity Falls 45'","price_min":474900,"price_max":605900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1910,"sqft_max":2754,"homes_available":26,"has_promo":false},{"suburb":"mckinney","name":"Trinity Falls 50'","price_min":535900,"price_max":647900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":2187,"sqft_max":3241,"homes_available":20,"has_promo":false},{"suburb":"mckinney","name":"Trinity Falls 60'","price_min":623900,"price_max":765900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2519,"sqft_max":4016,"homes_available":26,"has_promo":false},{"suburb":"mckinney","name":"Trinity Falls At Province Woods 45'","price_min":499900,"price_max":592900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1910,"sqft_max":2594,"homes_available":19,"has_promo":false},{"suburb":"mckinney","name":"Trinity Falls At Province Woods 50'","price_min":535900,"price_max":647900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":2187,"sqft_max":3241,"homes_available":19,"has_promo":false},{"suburb":"prosper","name":"Mosaic 50'","price_min":628900,"price_max":774900,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2187,"sqft_max":3553,"homes_available":23,"has_promo":false},{"suburb":"rockwall","name":"Somerset Park 80'","price_min":723900,"price_max":873900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":3236,"sqft_max":4978,"homes_available":16,"has_promo":false},{"suburb":"rockwall","name":"Sonoma Verde 70'","price_min":623900,"price_max":802900,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2896,"sqft_max":5240,"homes_available":32,"has_promo":false},{"suburb":"rockwall","name":"Terraces 62'","price_min":630900,"price_max":799900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2600,"sqft_max":3978,"homes_available":19,"has_promo":false},{"suburb":"rockwall","name":"Terraces 72'","price_min":683900,"price_max":899900,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2810,"sqft_max":4336,"homes_available":24,"has_promo":false},{"suburb":"rockwall","name":"Terraces 82'/100'","price_min":758900,"price_max":911900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":3310,"sqft_max":4891,"homes_available":16,"has_promo":false},{"suburb":"waxahachie","name":"Myrtle Creek 60'","price_min":449900,"price_max":649900,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":2187,"sqft_max":3396,"homes_available":29,"has_promo":false},{"suburb":"waxahachie","name":"Myrtle Creek 71'","price_min":576900,"price_max":699900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2769,"sqft_max":4140,"homes_available":27,"has_promo":false}];
+
+      function fmtP(n) {
+        if (!n) return null;
+        if (n >= 1000000) {
+          var v = n / 1000000;
+          return '$' + (v % 1 === 0 ? v.toFixed(0) : v.toFixed(1)) + 'M';
+        }
+        return '$' + Math.round(n / 1000) + 'k';
+      }
+      function titleCase(s) {
+        return s.split('-').map(function(w){ return w.charAt(0).toUpperCase()+w.slice(1); }).join(' ');
+      }
+
+      function renderRows(rows) {
+        var tbody   = document.getElementById('bt-tbody-perry-homes');
+        var countEl = document.getElementById('bt-count-perry-homes');
+        if (!tbody) return;
+        if (rows.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="9" style="text-align:center;color:#888;padding:1.5rem;">No communities match your filters.</td></tr>';
+          if (countEl) countEl.textContent = '';
+          return;
+        }
+        tbody.innerHTML = rows.map(function(r) {
+          var pStr  = (fmtP(r.price_min) && fmtP(r.price_max)) ? fmtP(r.price_min)+'\u2013'+fmtP(r.price_max) : (fmtP(r.price_min) || '\u2014');
+          var bStr  = (r.beds_min && r.beds_max) ? (r.beds_min===r.beds_max ? String(r.beds_min) : r.beds_min+'\u2013'+r.beds_max) : (r.beds_min ? String(r.beds_min) : '\u2014');
+          var baStr = (r.baths_min && r.baths_max) ? (r.baths_min===r.baths_max ? String(r.baths_min) : r.baths_min+'\u2013'+r.baths_max) : (r.baths_min ? String(r.baths_min) : '\u2014');
+          var sStr  = (r.sqft_min && r.sqft_max) ? r.sqft_min.toLocaleString()+'\u2013'+r.sqft_max.toLocaleString() : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
+          var snUrl = 'https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-'+r.suburb;
+          var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
+          return '<tr>'
+            +'<td><a href="/'+r.suburb+'-texas">'+titleCase(r.suburb)+'</a></td>'
+            +'<td>'+r.name+'</td>'
+            +'<td class="kc-col-nowrap">'+pStr+'</td>'
+            +'<td class="kc-col-center">'+bStr+'</td>'
+            +'<td class="kc-col-center">'+baStr+'</td>'
+            +'<td class="kc-col-nowrap">'+sStr+'</td>'
+            +'<td class="kc-col-center">'+(r.homes_available || '\u2014')+'</td>'
+            +'<td class="kc-col-center">'+promo+'</td>'
+            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" class="kc-portal-link">View \u2192</a></td>'
+            +'</tr>';
+        }).join('');
+        if (countEl) {
+          countEl.textContent = rows.length === DATA.length
+            ? 'Showing all ' + DATA.length + ' communities'
+            : 'Showing ' + rows.length + ' of ' + DATA.length + ' communities';
+        }
+      }
+
+      function activePill(pillsId) {
+        var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
+        return el ? el.dataset : {};
+      }
+
+      function applyFilters() {
+        var suburb = ((document.getElementById('bt-suburb-perry-homes') || {}).value) || '';
+        var priceD = activePill('bt-price-perry-homes');
+        var pMin   = parseInt(priceD.pmin) || 0;
+        var pMax   = parseInt(priceD.pmax) || 0;
+        var bedsD  = activePill('bt-beds-perry-homes');
+        var beds   = parseInt(bedsD.min)   || 0;
+        var bathsD = activePill('bt-baths-perry-homes');
+        var baths  = parseInt(bathsD.min)  || 0;
+
+        var filtered = DATA.filter(function(r) {
+          if (suburb && r.suburb !== suburb)                return false;
+          if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
+          if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
+          if (beds  > 0 && (r.beds_max  || 0) < beds)        return false;
+          if (baths > 0 && (r.baths_max || 0) < baths)       return false;
+          return true;
+        });
+        renderRows(filtered);
+      }
+
+      // Pill click handlers
+      ['bt-price-perry-homes', 'bt-beds-perry-homes', 'bt-baths-perry-homes'].forEach(function(pillsId) {
+        document.querySelectorAll('#' + pillsId + ' .kc-pill').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function(p) { p.classList.remove('active'); });
+            btn.classList.add('active');
+            applyFilters();
+          });
+        });
+      });
+
+      // Suburb select
+      var suburbEl = document.getElementById('bt-suburb-perry-homes');
+      if (suburbEl) suburbEl.addEventListener('change', applyFilters);
+
+      document.addEventListener('DOMContentLoaded', function() { renderRows(DATA); });
+    })();
+    </script>
     <!-- SHOWINGNEW_TABLE_END:perry-homes -->
 
     <div style="text-align:center;margin-top:2rem;">

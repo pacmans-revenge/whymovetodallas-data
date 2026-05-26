@@ -1385,32 +1385,32 @@ gtag('consent', 'default', {
   <p>Little Elm has <strong>9 active new-construction communities</strong> — a focused selection that still gives buyers real choices in builder, floor plan, and price point. Inventory moves quickly in markets this size, so pre-qualification before touring is a smart move.</p>
 
   <!-- Stats bar -->
-  <div style="display:flex;gap:1.5rem;flex-wrap:wrap;background:var(--ivory);border:1px solid var(--border);border-radius:10px;padding:1rem 1.4rem;margin:1.5rem 0;">
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Active Communities</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">9</div>
+  <div class="kc-nc-stats">
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Active Communities</span>
+      <span class="kc-nc-stat-value">9</span>
     </div>
-    <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Price Range (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$313k – $856k</div>
+    <div class="kc-nc-stat-divider"></div>
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Price Range (sample)</span>
+      <span class="kc-nc-stat-value">$313k – $856k</span>
     </div>
-    <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
-    <div>
-      <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">157+</div>
+    <div class="kc-nc-stat-divider"></div>
+    <div class="kc-nc-stat">
+      <span class="kc-nc-stat-label">Homes Available (sample)</span>
+      <span class="kc-nc-stat-value">157+</span>
     </div>
   </div>
 
   <!-- Active builders -->
   <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.65rem;">Active Builders in Little Elm</h3>
-  <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Mattamy Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Beazer Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Tri Pointe Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Ladera Living</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">First Texas Homes</span>
-    <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Pacesetter Homes Texas</span>
+  <div class="kc-nc-builders">
+    <span class="kc-nc-builder-chip">Mattamy Homes</span>
+    <span class="kc-nc-builder-chip">Beazer Homes</span>
+    <span class="kc-nc-builder-chip">Tri Pointe Homes</span>
+    <span class="kc-nc-builder-chip">Ladera Living</span>
+    <span class="kc-nc-builder-chip">First Texas Homes</span>
+    <span class="kc-nc-builder-chip">Pacesetter Homes Texas</span>
   </div>
 
   
@@ -1419,65 +1419,54 @@ gtag('consent', 'default', {
     <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
     <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>9 communities</strong>.</p>
 
-    <!-- Filters -->
-    <div class="kc-nc-filters">
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-builder-little-elm">Builder</label>
+    <div class="kc-filter-bar">
+      <div class="kc-filter-group">
+        <label>Builder</label>
         <select id="nc-builder-little-elm">
-          <option value="">All builders</option>
+          <option value="">All Builders</option>
           <option value="Beazer Homes">Beazer Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Ladera Living">Ladera Living</option><option value="Mattamy Homes">Mattamy Homes</option><option value="Pacesetter Homes Texas">Pacesetter Homes Texas</option><option value="Tri Pointe Homes">Tri Pointe Homes</option>
         </select>
       </div>
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-pmin-little-elm">Min price</label>
-        <input id="nc-pmin-little-elm" type="number" placeholder="$313k" step="25000">
+      <div class="kc-filter-group">
+        <label>Price Range</label>
+        <div class="kc-pills" id="nc-price-little-elm">
+          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
+          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+        </div>
       </div>
-
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-pmax-little-elm">Max price</label>
-        <input id="nc-pmax-little-elm" type="number" placeholder="$856k" step="25000">
+      <div class="kc-filter-group">
+        <label>Beds</label>
+        <div class="kc-pills" id="nc-beds-little-elm">
+          <button class="kc-pill active" data-min="0">Any</button>
+          <button class="kc-pill" data-min="2">2+</button>
+          <button class="kc-pill" data-min="3">3+</button>
+          <button class="kc-pill" data-min="4">4+</button>
+          <button class="kc-pill" data-min="5">5+</button>
+        </div>
       </div>
+    </div>
 
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-beds-little-elm">Min beds</label>
-        <select id="nc-beds-little-elm">
-          <option value="0">Any</option>
-          <option value="2">2+</option>
-          <option value="3">3+</option>
-          <option value="4">4+</option>
-          <option value="5">5+</option>
-        </select>
-      </div>
+    <p class="kc-filter-count" id="nc-count-little-elm"></p>
 
-      <div class="kc-nc-filter-group">
-        <label class="kc-nc-filter-label" for="nc-sqft-little-elm">Min sq ft</label>
-        <input id="nc-sqft-little-elm" type="number" placeholder="No min" step="250">
-      </div>
-
-      <button id="nc-clear-little-elm" class="kc-nc-filter-clear">Clear</button>
-
-    </div><!-- /filters -->
-
-    <!-- Table -->
     <div class="kc-table-wrap">
-      <table class="kc-table" style="min-width:580px;">
+      <table class="kc-table" style="min-width:560px;">
         <thead>
           <tr>
             <th>Community</th>
             <th>Builder</th>
             <th>Price Range</th>
-            <th style="text-align:center;">Beds</th>
+            <th>Beds</th>
             <th>Sq Ft</th>
-            <th style="text-align:center;">Avail.</th>
-            <th style="text-align:center;">Promo</th>
+            <th>Avail.</th>
+            <th>Promo</th>
           </tr>
         </thead>
         <tbody id="nc-tbody-little-elm"></tbody>
       </table>
     </div>
-    <p id="nc-count-little-elm" class="kc-nc-table-note"></p>
   </div>
 
   <script>
@@ -1491,7 +1480,7 @@ gtag('consent', 'default', {
     }
 
     function renderRows(rows) {
-      var tbody = document.getElementById('nc-tbody-little-elm');
+      var tbody   = document.getElementById('nc-tbody-little-elm');
       var countEl = document.getElementById('nc-count-little-elm');
       if (!tbody) return;
 
@@ -1505,78 +1494,68 @@ gtag('consent', 'default', {
         var pMin = fmt(r.price_min), pMax = fmt(r.price_max);
         var price = pMin && pMax ? pMin + '\u2013' + pMax : (pMin || '\u2014');
         var beds  = r.beds_min && r.beds_max
-          ? (r.beds_min === r.beds_max ? r.beds_min : r.beds_min + '\u2013' + r.beds_max)
-          : (r.beds_min || '\u2014');
+          ? (r.beds_min === r.beds_max ? String(r.beds_min) : r.beds_min + '\u2013' + r.beds_max)
+          : (r.beds_min ? String(r.beds_min) : '\u2014');
         var sqft  = r.sqft_min && r.sqft_max
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
-        var promo = r.has_promo
-          ? '<span class="kc-promo-badge">PROMO</span>'
-          : '';
+        var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
         return '<tr>'
-          + '<td style="font-weight:500;">' + r.name + '</td>'
+          + '<td>' + r.name + '</td>'
           + '<td>' + (r.builder || '\u2014') + '</td>'
-          + '<td style="white-space:nowrap;">' + price + '</td>'
-          + '<td style="text-align:center;">' + beds + '</td>'
-          + '<td style="white-space:nowrap;">' + sqft + '</td>'
-          + '<td style="text-align:center;">' + (r.homes_available || '\u2014') + '</td>'
-          + '<td style="text-align:center;">' + promo + '</td>'
+          + '<td class="kc-col-nowrap">' + price + '</td>'
+          + '<td class="kc-col-center">' + beds + '</td>'
+          + '<td class="kc-col-nowrap">' + sqft + '</td>'
+          + '<td class="kc-col-center">' + (r.homes_available || '\u2014') + '</td>'
+          + '<td class="kc-col-center">' + promo + '</td>'
           + '</tr>';
       }).join('');
 
       if (countEl) {
         countEl.textContent = rows.length === DATA.length
           ? 'Showing all ' + DATA.length + ' communities'
-          : rows.length + ' of ' + DATA.length + ' communities match your filters';
+          : 'Showing ' + rows.length + ' of ' + DATA.length + ' communities';
       }
     }
 
+    function activePill(pillsId) {
+      var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
+      return el ? el.dataset : {};
+    }
+
     function applyFilters() {
-      var builder = document.getElementById('nc-builder-little-elm').value;
-      var pMin    = parseFloat(document.getElementById('nc-pmin-little-elm').value) || 0;
-      var pMax    = parseFloat(document.getElementById('nc-pmax-little-elm').value) || Infinity;
-      var beds    = parseInt(document.getElementById('nc-beds-little-elm').value) || 0;
-      var sqft    = parseFloat(document.getElementById('nc-sqft-little-elm').value) || 0;
+      var builder = ((document.getElementById('nc-builder-little-elm') || {}).value) || '';
+      var priceD  = activePill('nc-price-little-elm');
+      var pMin    = parseInt(priceD.pmin) || 0;
+      var pMax    = parseInt(priceD.pmax) || 0;
+      var bedsD   = activePill('nc-beds-little-elm');
+      var beds    = parseInt(bedsD.min)   || 0;
 
       var filtered = DATA.filter(function (r) {
-        if (builder && r.builder !== builder) return false;
-        // Price: community overlaps the requested range
+        if (builder && r.builder !== builder)               return false;
         if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
-        if (pMax < Infinity && r.price_min && r.price_min > pMax) return false;
-        // Beds: community's max beds must meet the minimum requested
-        if (beds > 0 && (r.beds_max || 0) < beds) return false;
-        // Sqft: community's max sqft must meet the minimum requested
-        if (sqft > 0 && (r.sqft_max || 0) < sqft) return false;
+        if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
+        if (beds > 0 && (r.beds_max || 0) < beds)          return false;
         return true;
       });
 
       renderRows(filtered);
     }
 
-    // Wire up filter inputs
-    ['nc-builder-little-elm', 'nc-beds-little-elm'].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) el.addEventListener('change', applyFilters);
-    });
-    ['nc-pmin-little-elm', 'nc-pmax-little-elm', 'nc-sqft-little-elm'].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) { el.addEventListener('input', applyFilters); el.addEventListener('change', applyFilters); }
-    });
-
-    // Clear button
-    var clearBtn = document.getElementById('nc-clear-little-elm');
-    if (clearBtn) {
-      clearBtn.addEventListener('click', function () {
-        document.getElementById('nc-builder-little-elm').value = '';
-        document.getElementById('nc-pmin-little-elm').value   = '';
-        document.getElementById('nc-pmax-little-elm').value   = '';
-        document.getElementById('nc-beds-little-elm').value   = '0';
-        document.getElementById('nc-sqft-little-elm').value   = '';
-        renderRows(DATA);
+    // Pill click handlers
+    document.querySelectorAll('#nc-price-little-elm .kc-pill, #nc-beds-little-elm .kc-pill').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        applyFilters();
       });
-    }
+    });
 
-    // Initial render — show all rows on page load
+    // Builder select
+    var builderEl = document.getElementById('nc-builder-little-elm');
+    if (builderEl) builderEl.addEventListener('change', applyFilters);
+
+    // Initial render
     renderRows(DATA);
   })();
   </script>
