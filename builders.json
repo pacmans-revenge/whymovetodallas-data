@@ -6,14 +6,14 @@
     "review_minimum": 10,
     "scoring_version": "1.0",
     "data_sources": [
-      "TrustBuilder/NewHomeSource Professional (newhomesourceprofessional.com/ntreis/reviews) — 7 builders",
-      "NewHomeSource public (newhomesource.com) — fallback for builders not on NHS Pro",
-      "Google Places API (maps.googleapis.com) — fallback overall rating when NHS unavailable",
+      "TrustBuilder/NewHomeSource Professional (newhomesourceprofessional.com/ntreis/reviews) \u2014 7 builders",
+      "NewHomeSource public (newhomesource.com) \u2014 fallback for builders not on NHS Pro",
+      "Google Places API (maps.googleapis.com) \u2014 fallback overall rating when NHS unavailable",
       "BBB Texas (bbb.org/us/tx/category/home-builders)",
       "Builder Websites (scraped via Bright Data web_unlocker1)",
       "suburb-profiles.json (Niche ISD grades for suburb quality scoring)"
     ],
-    "notes": "TrustBuilder scores seeded manually May 2026 from NHS Pro (NTREIS subscription). Alternative reviews (reviews.*) populated by tools/reviews-fetcher.cjs for 13 builders not on NHS Pro. Communities populated by tools/builders-scraper.cjs. Scores computed by tools/build-builder-profiles.cjs — never edit score.* fields by hand."
+    "notes": "TrustBuilder scores seeded manually May 2026 from NHS Pro (NTREIS subscription). Alternative reviews (reviews.*) populated by tools/reviews-fetcher.cjs for 13 builders not on NHS Pro. Communities populated by tools/builders-scraper.cjs. Scores computed by tools/build-builder-profiles.cjs \u2014 never edit score.* fields by hand."
   },
   "builders": [
     {
@@ -250,6 +250,7 @@
         "arlington",
         "dallas",
         "fate",
+        "flower-mound",
         "mansfield",
         "mckinney",
         "mesquite",
@@ -703,7 +704,7 @@
     {
       "slug": "toll-brothers",
       "tier": "production",
-      "tier_notes": "Classified as production by industry analysts due to national volume; offers more finish options than typical production builders — sometimes described as luxury production or semi-custom by consumers",
+      "tier_notes": "Classified as production by industry analysts due to national volume; offers more finish options than typical production builders \u2014 sometimes described as luxury production or semi-custom by consumers",
       "website": "https://www.tollbrothers.com",
       "name": "Toll Brothers",
       "communities_page": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dallas-Fort-Worth",
@@ -2542,12 +2543,12 @@
         "complaint_count_3yr": 456,
         "source_url": "https://www.bbb.org/us/tx/irving/profile/home-builders/pulte-homes-0875-8001384",
         "last_updated": "2026-Q2",
-        "notes": "Not Rated — BBB states business is in process of responding to previously closed complaints; complaints are company-wide",
+        "notes": "Not Rated \u2014 BBB states business is in process of responding to previously closed complaints; complaints are company-wide",
         "complaint_themes": [
           "Structural and material defects: driveways cracking/crumbling within months, garage door misalignment, uneven floors, roof leaks",
           "Warranty repair delays: promised appointments missed, issues unresolved 2+ years post-closing, difficulty reaching customer service",
           "Coercive closing practices reported: buyers threatened with deposit forfeiture to sign on homes with unresolved major defects",
-          "BBB 'Not Rated' status (as of Q2 2026) due to volume of complaints under review — notable red flag vs peers"
+          "BBB 'Not Rated' status (as of Q2 2026) due to volume of complaints under review \u2014 notable red flag vs peers"
         ]
       },
       "warranty": {
@@ -4251,7 +4252,7 @@
         "workmanship_years": 1,
         "systems_years": 2,
         "structural_years": 10,
-        "notes": "Standard 1-2-10 limited warranty. Structural warranty backed by 2-10 Home Buyers Warranty (2-10 HBW) — confirmed third-party administrator.",
+        "notes": "Standard 1-2-10 limited warranty. Structural warranty backed by 2-10 Home Buyers Warranty (2-10 HBW) \u2014 confirmed third-party administrator.",
         "source_url": "https://www.centurycommunities.com/warranty",
         "last_updated": "2026-Q2"
       },
@@ -4697,7 +4698,7 @@
         "workmanship_years": 1,
         "systems_years": 2,
         "structural_years": 10,
-        "notes": "Standard 1-2-10 builder-backed limited warranty. Green Brick Partners sibling Southgate confirmed uses StrucSure — Normandy likely same administrator.",
+        "notes": "Standard 1-2-10 builder-backed limited warranty. Green Brick Partners sibling Southgate confirmed uses StrucSure \u2014 Normandy likely same administrator.",
         "source_url": "https://normandyhomes.com/frequently-asked-questions/",
         "last_updated": "2026-Q2"
       },
