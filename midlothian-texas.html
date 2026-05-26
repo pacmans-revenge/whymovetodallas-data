@@ -1395,9 +1395,186 @@ gtag('consent', 'default', {
     <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">DRB Homes</span>
   </div>
 
+  
+  <!-- ── Community table (filterable) ──────────────────────────────────────── -->
+  <div style="margin:2rem 0 0.5rem;">
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
+    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 29 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-midlothian" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+
+    <!-- Filters -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-builder-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
+        <select id="nc-builder-midlothian" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+          <option value="">All builders</option>
+          <option value="American Legend Homes">American Legend Homes</option><option value="Bloomfield Homes">Bloomfield Homes</option><option value="DRB Homes">DRB Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Heritage Towne">Heritage Towne</option><option value="Risewell Homes">Risewell Homes</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmin-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
+        <input id="nc-pmin-midlothian" type="number" placeholder="$353k" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmax-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
+        <input id="nc-pmax-midlothian" type="number" placeholder="$693k" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-beds-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
+        <select id="nc-beds-midlothian" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+          <option value="0">Any</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-sqft-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
+        <input id="nc-sqft-midlothian" type="number" placeholder="No min" step="250"
+          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
+        <button id="nc-clear-midlothian"
+          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
+          Clear
+        </button>
+      </div>
+
+    </div><!-- /filters -->
+
+    <!-- Table -->
+    <div style="overflow-x:auto;">
+      <table class="warranty-table" style="min-width:620px;width:100%;">
+        <thead>
+          <tr>
+            <th>Community</th>
+            <th>Builder</th>
+            <th>Price Range</th>
+            <th style="text-align:center;">Beds</th>
+            <th>Sq Ft</th>
+            <th style="text-align:center;">Avail.</th>
+            <th style="text-align:center;">Promo</th>
+          </tr>
+        </thead>
+        <tbody id="nc-tbody-midlothian"></tbody>
+      </table>
+    </div>
+    <p id="nc-count-midlothian" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+  </div>
+
+  <script>
+  (function () {
+    var DATA = [{"name":"Hawkins Meadows","builder":"First Texas Homes","zip":"76065","homes_available":3,"price_min":680950,"price_max":692819,"sqft_min":2860,"sqft_max":4314,"beds_min":5,"beds_max":6,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"BridgeWater 40s","builder":"American Legend Homes","zip":"76065","homes_available":13,"price_min":376990,"price_max":483990,"sqft_min":1619,"sqft_max":2843,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Westside Preserve","builder":"First Texas Homes","zip":"76065","homes_available":28,"price_min":374950,"price_max":667950,"sqft_min":1502,"sqft_max":4305,"beds_min":3,"beds_max":6,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Massey Meadows","builder":"Risewell Homes","zip":"76065","homes_available":5,"price_min":458990,"price_max":502990,"sqft_min":2370,"sqft_max":2972,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Redden Farms - Classic Series","builder":"Risewell Homes","zip":"76065","homes_available":8,"price_min":352990,"price_max":471999,"sqft_min":1802,"sqft_max":3106,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Mockingbird Heights","builder":"Bloomfield Homes","zip":"76065","homes_available":52,"price_min":442990,"price_max":677990,"sqft_min":2098,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heritage Towne","builder":"Heritage Towne","zip":"76065","homes_available":19,"price_min":367000,"price_max":565000,"sqft_min":1454,"sqft_max":2869,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Westside Preserve Premier","builder":"DRB Homes","zip":"76065","homes_available":9,"price_min":377990,"price_max":527890,"sqft_min":1970,"sqft_max":3064,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Ridgepoint","builder":"Bloomfield Homes","zip":"76065","homes_available":3,"price_min":529990,"price_max":549990,"sqft_min":3019,"sqft_max":3485,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Bridgewater 60s","builder":"American Legend Homes","zip":"76065","homes_available":14,"price_min":504990,"price_max":621990,"sqft_min":2295,"sqft_max":3438,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false}];
+
+    function fmt(n) {
+      if (!n || n === 0) return null;
+      if (n >= 1000000) { var v = n / 1000000; return '$' + (v % 1 === 0 ? v.toFixed(0) : v.toFixed(1)) + 'M'; }
+      return '$' + Math.round(n / 1000) + 'k';
+    }
+
+    function renderRows(rows) {
+      var tbody = document.getElementById('nc-tbody-midlothian');
+      var countEl = document.getElementById('nc-count-midlothian');
+      if (!tbody) return;
+
+      if (rows.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#888;padding:1.5rem;">No communities match your filters.</td></tr>';
+        if (countEl) countEl.textContent = '';
+        return;
+      }
+
+      tbody.innerHTML = rows.map(function (r) {
+        var pMin = fmt(r.price_min), pMax = fmt(r.price_max);
+        var price = pMin && pMax ? pMin + '\u2013' + pMax : (pMin || '\u2014');
+        var beds  = r.beds_min && r.beds_max
+          ? (r.beds_min === r.beds_max ? r.beds_min : r.beds_min + '\u2013' + r.beds_max)
+          : (r.beds_min || '\u2014');
+        var sqft  = r.sqft_min && r.sqft_max
+          ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
+          : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
+        var promo = r.has_promo
+          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          : '';
+        return '<tr>'
+          + '<td style="font-weight:500;">' + r.name + '</td>'
+          + '<td>' + (r.builder || '\u2014') + '</td>'
+          + '<td style="white-space:nowrap;">' + price + '</td>'
+          + '<td style="text-align:center;">' + beds + '</td>'
+          + '<td style="white-space:nowrap;">' + sqft + '</td>'
+          + '<td style="text-align:center;">' + (r.homes_available || '\u2014') + '</td>'
+          + '<td style="text-align:center;">' + promo + '</td>'
+          + '</tr>';
+      }).join('');
+
+      if (countEl) {
+        countEl.textContent = rows.length === DATA.length
+          ? 'Showing all ' + DATA.length + ' communities'
+          : rows.length + ' of ' + DATA.length + ' communities match your filters';
+      }
+    }
+
+    function applyFilters() {
+      var builder = document.getElementById('nc-builder-midlothian').value;
+      var pMin    = parseFloat(document.getElementById('nc-pmin-midlothian').value) || 0;
+      var pMax    = parseFloat(document.getElementById('nc-pmax-midlothian').value) || Infinity;
+      var beds    = parseInt(document.getElementById('nc-beds-midlothian').value) || 0;
+      var sqft    = parseFloat(document.getElementById('nc-sqft-midlothian').value) || 0;
+
+      var filtered = DATA.filter(function (r) {
+        if (builder && r.builder !== builder) return false;
+        // Price: community overlaps the requested range
+        if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
+        if (pMax < Infinity && r.price_min && r.price_min > pMax) return false;
+        // Beds: community's max beds must meet the minimum requested
+        if (beds > 0 && (r.beds_max || 0) < beds) return false;
+        // Sqft: community's max sqft must meet the minimum requested
+        if (sqft > 0 && (r.sqft_max || 0) < sqft) return false;
+        return true;
+      });
+
+      renderRows(filtered);
+    }
+
+    // Wire up filter inputs
+    ['nc-builder-midlothian', 'nc-beds-midlothian'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('change', applyFilters);
+    });
+    ['nc-pmin-midlothian', 'nc-pmax-midlothian', 'nc-sqft-midlothian'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.addEventListener('input', applyFilters); el.addEventListener('change', applyFilters); }
+    });
+
+    // Clear button
+    var clearBtn = document.getElementById('nc-clear-midlothian');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        document.getElementById('nc-builder-midlothian').value = '';
+        document.getElementById('nc-pmin-midlothian').value   = '';
+        document.getElementById('nc-pmax-midlothian').value   = '';
+        document.getElementById('nc-beds-midlothian').value   = '0';
+        document.getElementById('nc-sqft-midlothian').value   = '';
+        renderRows(DATA);
+      });
+    }
+
+    // Initial render — show all rows on page load
+    renderRows(DATA);
+  })();
+  </script>
+
   <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 4 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
-  <p style="font-size:0.88rem;color:#555;margin-top:0.75rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
+  <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 
   <p style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
     <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-midlothian" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Browse New Homes in Midlothian →</a>

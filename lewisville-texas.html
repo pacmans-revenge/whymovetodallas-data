@@ -1322,8 +1322,185 @@ gtag('consent', 'default', {
   </div>
 
   
+  <!-- ── Community table (filterable) ──────────────────────────────────────── -->
+  <div style="margin:2rem 0 0.5rem;">
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
+    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>1 community</strong>.</p>
 
-  <p style="font-size:0.88rem;color:#555;margin-top:0.75rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
+    <!-- Filters -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-builder-lewisville" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
+        <select id="nc-builder-lewisville" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+          <option value="">All builders</option>
+          <option value="American Legend Homes">American Legend Homes</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmin-lewisville" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
+        <input id="nc-pmin-lewisville" type="number" placeholder="$593k" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmax-lewisville" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
+        <input id="nc-pmax-lewisville" type="number" placeholder="$699k" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-beds-lewisville" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
+        <select id="nc-beds-lewisville" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+          <option value="0">Any</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-sqft-lewisville" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
+        <input id="nc-sqft-lewisville" type="number" placeholder="No min" step="250"
+          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
+        <button id="nc-clear-lewisville"
+          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
+          Clear
+        </button>
+      </div>
+
+    </div><!-- /filters -->
+
+    <!-- Table -->
+    <div style="overflow-x:auto;">
+      <table class="warranty-table" style="min-width:620px;width:100%;">
+        <thead>
+          <tr>
+            <th>Community</th>
+            <th>Builder</th>
+            <th>Price Range</th>
+            <th style="text-align:center;">Beds</th>
+            <th>Sq Ft</th>
+            <th style="text-align:center;">Avail.</th>
+            <th style="text-align:center;">Promo</th>
+          </tr>
+        </thead>
+        <tbody id="nc-tbody-lewisville"></tbody>
+      </table>
+    </div>
+    <p id="nc-count-lewisville" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+  </div>
+
+  <script>
+  (function () {
+    var DATA = [{"name":"Castle Hills Northpointe - Townhomes","builder":"American Legend Homes","zip":"75056","homes_available":14,"price_min":593000,"price_max":699000,"sqft_min":2316,"sqft_max":2610,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
+
+    function fmt(n) {
+      if (!n || n === 0) return null;
+      if (n >= 1000000) { var v = n / 1000000; return '$' + (v % 1 === 0 ? v.toFixed(0) : v.toFixed(1)) + 'M'; }
+      return '$' + Math.round(n / 1000) + 'k';
+    }
+
+    function renderRows(rows) {
+      var tbody = document.getElementById('nc-tbody-lewisville');
+      var countEl = document.getElementById('nc-count-lewisville');
+      if (!tbody) return;
+
+      if (rows.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#888;padding:1.5rem;">No communities match your filters.</td></tr>';
+        if (countEl) countEl.textContent = '';
+        return;
+      }
+
+      tbody.innerHTML = rows.map(function (r) {
+        var pMin = fmt(r.price_min), pMax = fmt(r.price_max);
+        var price = pMin && pMax ? pMin + '\u2013' + pMax : (pMin || '\u2014');
+        var beds  = r.beds_min && r.beds_max
+          ? (r.beds_min === r.beds_max ? r.beds_min : r.beds_min + '\u2013' + r.beds_max)
+          : (r.beds_min || '\u2014');
+        var sqft  = r.sqft_min && r.sqft_max
+          ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
+          : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
+        var promo = r.has_promo
+          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          : '';
+        return '<tr>'
+          + '<td style="font-weight:500;">' + r.name + '</td>'
+          + '<td>' + (r.builder || '\u2014') + '</td>'
+          + '<td style="white-space:nowrap;">' + price + '</td>'
+          + '<td style="text-align:center;">' + beds + '</td>'
+          + '<td style="white-space:nowrap;">' + sqft + '</td>'
+          + '<td style="text-align:center;">' + (r.homes_available || '\u2014') + '</td>'
+          + '<td style="text-align:center;">' + promo + '</td>'
+          + '</tr>';
+      }).join('');
+
+      if (countEl) {
+        countEl.textContent = rows.length === DATA.length
+          ? 'Showing all ' + DATA.length + ' communities'
+          : rows.length + ' of ' + DATA.length + ' communities match your filters';
+      }
+    }
+
+    function applyFilters() {
+      var builder = document.getElementById('nc-builder-lewisville').value;
+      var pMin    = parseFloat(document.getElementById('nc-pmin-lewisville').value) || 0;
+      var pMax    = parseFloat(document.getElementById('nc-pmax-lewisville').value) || Infinity;
+      var beds    = parseInt(document.getElementById('nc-beds-lewisville').value) || 0;
+      var sqft    = parseFloat(document.getElementById('nc-sqft-lewisville').value) || 0;
+
+      var filtered = DATA.filter(function (r) {
+        if (builder && r.builder !== builder) return false;
+        // Price: community overlaps the requested range
+        if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
+        if (pMax < Infinity && r.price_min && r.price_min > pMax) return false;
+        // Beds: community's max beds must meet the minimum requested
+        if (beds > 0 && (r.beds_max || 0) < beds) return false;
+        // Sqft: community's max sqft must meet the minimum requested
+        if (sqft > 0 && (r.sqft_max || 0) < sqft) return false;
+        return true;
+      });
+
+      renderRows(filtered);
+    }
+
+    // Wire up filter inputs
+    ['nc-builder-lewisville', 'nc-beds-lewisville'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('change', applyFilters);
+    });
+    ['nc-pmin-lewisville', 'nc-pmax-lewisville', 'nc-sqft-lewisville'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.addEventListener('input', applyFilters); el.addEventListener('change', applyFilters); }
+    });
+
+    // Clear button
+    var clearBtn = document.getElementById('nc-clear-lewisville');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        document.getElementById('nc-builder-lewisville').value = '';
+        document.getElementById('nc-pmin-lewisville').value   = '';
+        document.getElementById('nc-pmax-lewisville').value   = '';
+        document.getElementById('nc-beds-lewisville').value   = '0';
+        document.getElementById('nc-sqft-lewisville').value   = '';
+        renderRows(DATA);
+      });
+    }
+
+    // Initial render — show all rows on page load
+    renderRows(DATA);
+  })();
+  </script>
+
+  
+
+  <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 
   <p style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
     <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-lewisville" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Browse New Homes in Lewisville →</a>

@@ -1375,9 +1375,186 @@ gtag('consent', 'default', {
     <span style="display:inline-block;background:var(--ivory);border:1px solid var(--border);border-radius:6px;padding:3px 10px;font-size:0.82rem;color:var(--navy);font-weight:500;">Highland Homes</span>
   </div>
 
+  
+  <!-- ── Community table (filterable) ──────────────────────────────────────── -->
+  <div style="margin:2rem 0 0.5rem;">
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
+    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>8 communities</strong>.</p>
+
+    <!-- Filters -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-builder-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
+        <select id="nc-builder-heath" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+          <option value="">All builders</option>
+          <option value="Beazer Homes">Beazer Homes</option><option value="Grand Homes">Grand Homes</option><option value="Heath Golf and Yacht Club">Heath Golf and Yacht Club</option><option value="Highland Homes">Highland Homes</option><option value="K. Hovnanian® Homes">K. Hovnanian® Homes</option><option value="Perry Homes">Perry Homes</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmin-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
+        <input id="nc-pmin-heath" type="number" placeholder="$379k" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-pmax-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
+        <input id="nc-pmax-heath" type="number" placeholder="$1.8M" step="25000"
+          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-beds-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
+        <select id="nc-beds-heath" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+          <option value="0">Any</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+        </select>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label for="nc-sqft-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
+        <input id="nc-sqft-heath" type="number" placeholder="No min" step="250"
+          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
+        <button id="nc-clear-heath"
+          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
+          Clear
+        </button>
+      </div>
+
+    </div><!-- /filters -->
+
+    <!-- Table -->
+    <div style="overflow-x:auto;">
+      <table class="warranty-table" style="min-width:620px;width:100%;">
+        <thead>
+          <tr>
+            <th>Community</th>
+            <th>Builder</th>
+            <th>Price Range</th>
+            <th style="text-align:center;">Beds</th>
+            <th>Sq Ft</th>
+            <th style="text-align:center;">Avail.</th>
+            <th style="text-align:center;">Promo</th>
+          </tr>
+        </thead>
+        <tbody id="nc-tbody-heath"></tbody>
+      </table>
+    </div>
+    <p id="nc-count-heath" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+  </div>
+
+  <script>
+  (function () {
+    var DATA = [{"name":"Bristol Valley Half Acre","builder":"Perry Homes","zip":"75032","homes_available":25,"price_min":1020900,"price_max":1361900,"sqft_min":3068,"sqft_max":5573,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":true},{"name":"Bristol Valley 1 Acre","builder":"Perry Homes","zip":"75032","homes_available":20,"price_min":1235900,"price_max":1732900,"sqft_min":3274,"sqft_max":6321,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Estates","builder":"K. Hovnanian® Homes","zip":"75032","homes_available":8,"price_min":564900,"price_max":699000,"sqft_min":2825,"sqft_max":3707,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf and Yacht Club","builder":"Heath Golf and Yacht Club","zip":"75032","homes_available":66,"price_min":378900,"price_max":1314900,"sqft_min":1616,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Heath Golf & Yacht Club","builder":"Grand Homes","zip":"75126","homes_available":14,"price_min":734900,"price_max":1314900,"sqft_min":2377,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Villas","builder":"K. Hovnanian® Homes","zip":"75126","homes_available":15,"price_min":378900,"price_max":560000,"sqft_min":1616,"sqft_max":2916,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Heath Golf and Yacht Club","builder":"Beazer Homes","zip":"75032","homes_available":12,"price_min":568990,"price_max":746990,"sqft_min":2342,"sqft_max":3894,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Estates at Bristol Valley","builder":"Highland Homes","zip":"75032","homes_available":12,"price_min":1299990,"price_max":1817923,"sqft_min":3520,"sqft_max":5196,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":true,"price_reduced":true}];
+
+    function fmt(n) {
+      if (!n || n === 0) return null;
+      if (n >= 1000000) { var v = n / 1000000; return '$' + (v % 1 === 0 ? v.toFixed(0) : v.toFixed(1)) + 'M'; }
+      return '$' + Math.round(n / 1000) + 'k';
+    }
+
+    function renderRows(rows) {
+      var tbody = document.getElementById('nc-tbody-heath');
+      var countEl = document.getElementById('nc-count-heath');
+      if (!tbody) return;
+
+      if (rows.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#888;padding:1.5rem;">No communities match your filters.</td></tr>';
+        if (countEl) countEl.textContent = '';
+        return;
+      }
+
+      tbody.innerHTML = rows.map(function (r) {
+        var pMin = fmt(r.price_min), pMax = fmt(r.price_max);
+        var price = pMin && pMax ? pMin + '\u2013' + pMax : (pMin || '\u2014');
+        var beds  = r.beds_min && r.beds_max
+          ? (r.beds_min === r.beds_max ? r.beds_min : r.beds_min + '\u2013' + r.beds_max)
+          : (r.beds_min || '\u2014');
+        var sqft  = r.sqft_min && r.sqft_max
+          ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
+          : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
+        var promo = r.has_promo
+          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          : '';
+        return '<tr>'
+          + '<td style="font-weight:500;">' + r.name + '</td>'
+          + '<td>' + (r.builder || '\u2014') + '</td>'
+          + '<td style="white-space:nowrap;">' + price + '</td>'
+          + '<td style="text-align:center;">' + beds + '</td>'
+          + '<td style="white-space:nowrap;">' + sqft + '</td>'
+          + '<td style="text-align:center;">' + (r.homes_available || '\u2014') + '</td>'
+          + '<td style="text-align:center;">' + promo + '</td>'
+          + '</tr>';
+      }).join('');
+
+      if (countEl) {
+        countEl.textContent = rows.length === DATA.length
+          ? 'Showing all ' + DATA.length + ' communities'
+          : rows.length + ' of ' + DATA.length + ' communities match your filters';
+      }
+    }
+
+    function applyFilters() {
+      var builder = document.getElementById('nc-builder-heath').value;
+      var pMin    = parseFloat(document.getElementById('nc-pmin-heath').value) || 0;
+      var pMax    = parseFloat(document.getElementById('nc-pmax-heath').value) || Infinity;
+      var beds    = parseInt(document.getElementById('nc-beds-heath').value) || 0;
+      var sqft    = parseFloat(document.getElementById('nc-sqft-heath').value) || 0;
+
+      var filtered = DATA.filter(function (r) {
+        if (builder && r.builder !== builder) return false;
+        // Price: community overlaps the requested range
+        if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
+        if (pMax < Infinity && r.price_min && r.price_min > pMax) return false;
+        // Beds: community's max beds must meet the minimum requested
+        if (beds > 0 && (r.beds_max || 0) < beds) return false;
+        // Sqft: community's max sqft must meet the minimum requested
+        if (sqft > 0 && (r.sqft_max || 0) < sqft) return false;
+        return true;
+      });
+
+      renderRows(filtered);
+    }
+
+    // Wire up filter inputs
+    ['nc-builder-heath', 'nc-beds-heath'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('change', applyFilters);
+    });
+    ['nc-pmin-heath', 'nc-pmax-heath', 'nc-sqft-heath'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.addEventListener('input', applyFilters); el.addEventListener('change', applyFilters); }
+    });
+
+    // Clear button
+    var clearBtn = document.getElementById('nc-clear-heath');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        document.getElementById('nc-builder-heath').value = '';
+        document.getElementById('nc-pmin-heath').value   = '';
+        document.getElementById('nc-pmax-heath').value   = '';
+        document.getElementById('nc-beds-heath').value   = '0';
+        document.getElementById('nc-sqft-heath').value   = '';
+        renderRows(DATA);
+      });
+    }
+
+    // Initial render — show all rows on page load
+    renderRows(DATA);
+  })();
+  </script>
+
   <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 2 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
-  <p style="font-size:0.88rem;color:#555;margin-top:0.75rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
+  <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 
   <p style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
     <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-heath" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Browse New Homes in Heath →</a>
