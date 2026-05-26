@@ -1259,7 +1259,7 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">115+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">182+</div>
     </div>
   </div>
 
@@ -1278,35 +1278,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 21 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-waxahachie" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>13 of 21 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-waxahachie" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-waxahachie" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-waxahachie" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-waxahachie">Builder</label>
+        <select id="nc-builder-waxahachie">
           <option value="">All builders</option>
           <option value="Centre Living Homes">Centre Living Homes</option><option value="Chesmar Homes">Chesmar Homes</option><option value="DRB Homes">DRB Homes</option><option value="Highland Homes">Highland Homes</option><option value="HistoryMaker Homes   ">HistoryMaker Homes   </option><option value="Perry Homes">Perry Homes</option><option value="Risewell Homes">Risewell Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-waxahachie" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-waxahachie" type="number" placeholder="$360k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-waxahachie">Min price</label>
+        <input id="nc-pmin-waxahachie" type="number" placeholder="$360k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-waxahachie" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-waxahachie" type="number" placeholder="$884k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-waxahachie">Max price</label>
+        <input id="nc-pmax-waxahachie" type="number" placeholder="$884k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-waxahachie" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-waxahachie" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-waxahachie">Min beds</label>
+        <select id="nc-beds-waxahachie">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1315,25 +1313,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-waxahachie" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-waxahachie" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-waxahachie">Min sq ft</label>
+        <input id="nc-sqft-waxahachie" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-waxahachie"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-waxahachie" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1348,12 +1339,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-waxahachie"></tbody>
       </table>
     </div>
-    <p id="nc-count-waxahachie" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-waxahachie" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Dove Hollow","builder":"Highland Homes","zip":"75165","homes_available":2,"price_min":499000,"price_max":685000,"sqft_min":2319,"sqft_max":2822,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Ridge Crossing","builder":"DRB Homes","zip":"75167","homes_available":13,"price_min":399490,"price_max":533241,"sqft_min":2211,"sqft_max":4130,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Myrtle Creek","builder":"Risewell Homes","zip":"75165","homes_available":10,"price_min":419990,"price_max":569999,"sqft_min":2256,"sqft_max":3543,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Ellis Ranch Estates","builder":"Centre Living Homes","zip":"75165","homes_available":10,"price_min":459900,"price_max":569900,"sqft_min":2029,"sqft_max":3227,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Oaks of North Grove","builder":"Chesmar Homes","zip":"75165","homes_available":13,"price_min":412990,"price_max":535357,"sqft_min":2108,"sqft_max":3726,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Myrtle Creek 71'","builder":"Perry Homes","zip":"75165","homes_available":27,"price_min":576900,"price_max":699900,"sqft_min":2769,"sqft_max":4140,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Lakeway Estates","builder":"Chesmar Homes","zip":"75165","homes_available":5,"price_min":724990,"price_max":883877,"sqft_min":3437,"sqft_max":4079,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Lakeway Estates","builder":"Centre Living Homes","zip":"75165","homes_available":12,"price_min":475000,"price_max":707523,"sqft_min":2338,"sqft_max":3778,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Sheppard's Place","builder":"HistoryMaker Homes   ","zip":"75167","homes_available":4,"price_min":399990,"price_max":429990,"sqft_min":1892,"sqft_max":2260,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Dove Hollow","builder":"Centre Living Homes","zip":"75165","homes_available":19,"price_min":359900,"price_max":479900,"sqft_min":1923,"sqft_max":3444,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Dove Hollow","builder":"Highland Homes","builder_id":21,"zip":"75165","homes_available":2,"price_min":499000,"price_max":685000,"sqft_min":2319,"sqft_max":2822,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Ridge Crossing","builder":"DRB Homes","builder_id":94661,"zip":"75167","homes_available":13,"price_min":399490,"price_max":533241,"sqft_min":2211,"sqft_max":4130,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Myrtle Creek","builder":"Risewell Homes","builder_id":94527,"zip":"75165","homes_available":10,"price_min":419990,"price_max":569999,"sqft_min":2256,"sqft_max":3543,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Ellis Ranch Estates","builder":"Centre Living Homes","builder_id":93303,"zip":"75165","homes_available":10,"price_min":459900,"price_max":569900,"sqft_min":2029,"sqft_max":3227,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Oaks of North Grove","builder":"Chesmar Homes","builder_id":96131,"zip":"75165","homes_available":13,"price_min":412990,"price_max":535357,"sqft_min":2108,"sqft_max":3726,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Myrtle Creek 71'","builder":"Perry Homes","builder_id":68,"zip":"75165","homes_available":27,"price_min":576900,"price_max":699900,"sqft_min":2769,"sqft_max":4140,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Lakeway Estates","builder":"Chesmar Homes","builder_id":96131,"zip":"75165","homes_available":5,"price_min":724990,"price_max":883877,"sqft_min":3437,"sqft_max":4079,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Lakeway Estates","builder":"Centre Living Homes","builder_id":93303,"zip":"75165","homes_available":12,"price_min":475000,"price_max":707523,"sqft_min":2338,"sqft_max":3778,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Sheppard's Place","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"75167","homes_available":4,"price_min":399990,"price_max":429990,"sqft_min":1892,"sqft_max":2260,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Dove Hollow","builder":"Centre Living Homes","builder_id":93303,"zip":"75165","homes_available":19,"price_min":359900,"price_max":479900,"sqft_min":1923,"sqft_max":3444,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Myrtle Creek","builder":"Highland Homes","builder_id":21,"zip":"75165","homes_available":16,"price_min":393990,"price_max":626482,"sqft_min":1629,"sqft_max":3803,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Ridge Crossing","builder":"Highland Homes","builder_id":21,"zip":"75167","homes_available":22,"price_min":484990,"price_max":637990,"sqft_min":2263,"sqft_max":3799,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Myrtle Creek 60'","builder":"Perry Homes","builder_id":68,"zip":"75165","homes_available":29,"price_min":449900,"price_max":649900,"sqft_min":2187,"sqft_max":3396,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1382,7 +1373,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1452,7 +1443,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 2 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 4 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

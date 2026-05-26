@@ -1386,12 +1386,12 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Price Range (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$261k – $632k</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$215k – $816k</div>
     </div>
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">164+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">390+</div>
     </div>
   </div>
 
@@ -1412,35 +1412,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 43 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-forney" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>22 of 43 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-forney" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-forney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-forney" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-forney">Builder</label>
+        <select id="nc-builder-forney">
           <option value="">All builders</option>
           <option value="Centex Homes">Centex Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Highland Homes">Highland Homes</option><option value="HistoryMaker Homes   ">HistoryMaker Homes   </option><option value="K. Hovnanian® Homes">K. Hovnanian® Homes</option><option value="Mattamy Homes">Mattamy Homes</option><option value="Pacesetter Homes Texas">Pacesetter Homes Texas</option><option value="Perry Homes">Perry Homes</option><option value="Starlight Homes">Starlight Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-forney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-forney" type="number" placeholder="$261k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-forney">Min price</label>
+        <input id="nc-pmin-forney" type="number" placeholder="$215k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-forney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-forney" type="number" placeholder="$632k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-forney">Max price</label>
+        <input id="nc-pmax-forney" type="number" placeholder="$816k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-forney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-forney" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-forney">Min beds</label>
+        <select id="nc-beds-forney">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1449,25 +1447,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-forney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-forney" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-forney">Min sq ft</label>
+        <input id="nc-sqft-forney" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-forney"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-forney" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1482,12 +1473,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-forney"></tbody>
       </table>
     </div>
-    <p id="nc-count-forney" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-forney" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Gateway Parks","builder":"K. Hovnanian® Homes","zip":"75126","homes_available":10,"price_min":327900,"price_max":460000,"sqft_min":2237,"sqft_max":3164,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Devonshire","builder":"HistoryMaker Homes   ","zip":"75126","homes_available":25,"price_min":285990,"price_max":457990,"sqft_min":1440,"sqft_max":3531,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Walden Pond West","builder":"Pacesetter Homes Texas","zip":"75126","homes_available":1,"price_min":389970,"price_max":389970,"sqft_min":2237,"sqft_max":2237,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Devonshire 55'","builder":"Perry Homes","zip":"75126","homes_available":27,"price_min":449900,"price_max":564900,"sqft_min":2357,"sqft_max":3553,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Walden Pond","builder":"Mattamy Homes","zip":"75126","homes_available":21,"price_min":260990,"price_max":395990,"sqft_min":1447,"sqft_max":3038,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Gateway Parks","builder":"Starlight Homes","zip":"75126","homes_available":18,"price_min":299000,"price_max":414990,"sqft_min":1827,"sqft_max":3131,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Grayhawk Addition","builder":"First Texas Homes","zip":"75126","homes_available":7,"price_min":529950,"price_max":619944,"sqft_min":2683,"sqft_max":3281,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meraki: 70ft. lots","builder":"Highland Homes","zip":"75126","homes_available":16,"price_min":517990,"price_max":631990,"sqft_min":2602,"sqft_max":3799,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meraki: 45ft. lots","builder":"Highland Homes","zip":"75126","homes_available":16,"price_min":374990,"price_max":476640,"sqft_min":1594,"sqft_max":2680,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Arbordale","builder":"Centex Homes","zip":"75126","homes_available":23,"price_min":269990,"price_max":373990,"sqft_min":1532,"sqft_max":2673,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true}];
+    var DATA = [{"name":"Gateway Parks","builder":"K. Hovnanian® Homes","builder_id":2267,"zip":"75126","homes_available":10,"price_min":327900,"price_max":460000,"sqft_min":2237,"sqft_max":3164,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Devonshire","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"75126","homes_available":25,"price_min":285990,"price_max":457990,"sqft_min":1440,"sqft_max":3531,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Walden Pond West","builder":"Pacesetter Homes Texas","builder_id":59454,"zip":"75126","homes_available":1,"price_min":389970,"price_max":389970,"sqft_min":2237,"sqft_max":2237,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Devonshire 55'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":27,"price_min":449900,"price_max":564900,"sqft_min":2357,"sqft_max":3553,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Walden Pond","builder":"Mattamy Homes","builder_id":68235,"zip":"75126","homes_available":21,"price_min":260990,"price_max":395990,"sqft_min":1447,"sqft_max":3038,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Gateway Parks","builder":"Starlight Homes","builder_id":53457,"zip":"75126","homes_available":18,"price_min":299000,"price_max":414990,"sqft_min":1827,"sqft_max":3131,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Grayhawk Addition","builder":"First Texas Homes","builder_id":4917,"zip":"75126","homes_available":7,"price_min":529950,"price_max":619944,"sqft_min":2683,"sqft_max":3281,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meraki: 70ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":16,"price_min":517990,"price_max":631990,"sqft_min":2602,"sqft_max":3799,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meraki: 45ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":16,"price_min":374990,"price_max":476640,"sqft_min":1594,"sqft_max":2680,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Arbordale","builder":"Centex Homes","builder_id":48600,"zip":"75126","homes_available":23,"price_min":269990,"price_max":373990,"sqft_min":1532,"sqft_max":2673,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Devonshire Reserve 60'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":25,"price_min":479900,"price_max":618900,"sqft_min":2493,"sqft_max":4016,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Devonshire Reserve 45'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":30,"price_min":357900,"price_max":474900,"sqft_min":1722,"sqft_max":2754,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Meraki 50'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":26,"price_min":474900,"price_max":615900,"sqft_min":2251,"sqft_max":3553,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Meraki 45'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":25,"price_min":389900,"price_max":535900,"sqft_min":1910,"sqft_max":2594,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Devonshire Reserve 50'","builder":"Perry Homes","builder_id":68,"zip":"75126","homes_available":15,"price_min":445900,"price_max":536900,"sqft_min":2251,"sqft_max":2999,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Windmill Farms","builder":"Starlight Homes","builder_id":53457,"zip":"75126","homes_available":24,"price_min":215000,"price_max":325990,"sqft_min":1200,"sqft_max":2776,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Polo Ridge","builder":"First Texas Homes","builder_id":4917,"zip":"75126","homes_available":12,"price_min":504161,"price_max":815787,"sqft_min":2612,"sqft_max":3981,"beds_min":4,"beds_max":6,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Las Lomas","builder":"First Texas Homes","builder_id":4917,"zip":"75126","homes_available":33,"price_min":298950,"price_max":625950,"sqft_min":1502,"sqft_max":4302,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Meraki: 60ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":19,"price_min":486990,"price_max":600990,"sqft_min":2602,"sqft_max":3799,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meraki: 40ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":7,"price_min":364990,"price_max":409990,"sqft_min":1480,"sqft_max":2345,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Devonshire","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":3,"price_min":450000,"price_max":550000,"sqft_min":2305,"sqft_max":2882,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Talia","builder":"Highland Homes","builder_id":21,"zip":"75126","homes_available":7,"price_min":299990,"price_max":369954,"sqft_min":1607,"sqft_max":2345,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1516,7 +1507,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1586,7 +1577,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 5 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 12 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

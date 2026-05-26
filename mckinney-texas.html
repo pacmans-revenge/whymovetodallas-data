@@ -1300,12 +1300,12 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Price Range (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$269k – $1.1M</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$269k – $1.2M</div>
     </div>
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">183+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">553+</div>
     </div>
   </div>
 
@@ -1325,35 +1325,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 60 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-mckinney" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>32 of 60 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-mckinney" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-mckinney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-mckinney" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-mckinney">Builder</label>
+        <select id="nc-builder-mckinney">
           <option value="">All builders</option>
           <option value="CB JENI Homes">CB JENI Homes</option><option value="Coventry Homes">Coventry Homes</option><option value="Drees Custom Homes">Drees Custom Homes</option><option value="Highland Homes">Highland Homes</option><option value="Meritage Homes">Meritage Homes</option><option value="Perry Homes">Perry Homes</option><option value="Southgate Homes">Southgate Homes</option><option value="Tri Pointe Homes">Tri Pointe Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-mckinney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-mckinney" type="number" placeholder="$269k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-mckinney">Min price</label>
+        <input id="nc-pmin-mckinney" type="number" placeholder="$269k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-mckinney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-mckinney" type="number" placeholder="$1.1M" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-mckinney">Max price</label>
+        <input id="nc-pmax-mckinney" type="number" placeholder="$1.2M" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-mckinney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-mckinney" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-mckinney">Min beds</label>
+        <select id="nc-beds-mckinney">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1362,25 +1360,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-mckinney" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-mckinney" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-mckinney">Min sq ft</label>
+        <input id="nc-sqft-mckinney" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-mckinney"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-mckinney" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1395,12 +1386,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-mckinney"></tbody>
       </table>
     </div>
-    <p id="nc-count-mckinney" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-mckinney" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Southridge - Spring Series","builder":"Meritage Homes","zip":"75071","homes_available":17,"price_min":268867,"price_max":345325,"sqft_min":1318,"sqft_max":2357,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false},{"name":"Painted Tree Woodlands","builder":"Drees Custom Homes","zip":"75071","homes_available":5,"price_min":849990,"price_max":909900,"sqft_min":3541,"sqft_max":3673,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Trinity Falls 50'","builder":"Perry Homes","zip":"75071","homes_available":20,"price_min":535900,"price_max":647900,"sqft_min":2187,"sqft_max":3241,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Eliana 50'","builder":"Perry Homes","zip":"75071","homes_available":25,"price_min":642900,"price_max":842900,"sqft_min":2127,"sqft_max":3553,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Carriage Collection 40 at Painted Tree","builder":"Tri Pointe Homes","zip":"75071","homes_available":15,"price_min":399990,"price_max":569233,"sqft_min":1606,"sqft_max":2471,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Eliana","builder":"Southgate Homes","zip":"75071","homes_available":12,"price_min":749900,"price_max":1149900,"sqft_min":2928,"sqft_max":4470,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Painted Tree 60' Series","builder":"Southgate Homes","zip":"75071","homes_available":10,"price_min":779900,"price_max":1149900,"sqft_min":2928,"sqft_max":4191,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Ridgeline: 50ft. lots","builder":"Highland Homes","zip":"75071","homes_available":23,"price_min":534990,"price_max":672990,"sqft_min":1944,"sqft_max":3277,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Painted Tree","builder":"Coventry Homes","zip":"75071","homes_available":45,"price_min":529990,"price_max":974163,"sqft_min":1977,"sqft_max":4168,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true},{"name":"Painted Tree - Woodland District","builder":"CB JENI Homes","zip":"75071","homes_available":11,"price_min":363820,"price_max":425990,"sqft_min":1925,"sqft_max":2367,"beds_min":2,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Southridge - Spring Series","builder":"Meritage Homes","builder_id":4655,"zip":"75071","homes_available":17,"price_min":268867,"price_max":345325,"sqft_min":1318,"sqft_max":2357,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false},{"name":"Painted Tree Woodlands","builder":"Drees Custom Homes","builder_id":84325,"zip":"75071","homes_available":5,"price_min":849990,"price_max":909900,"sqft_min":3541,"sqft_max":3673,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Trinity Falls 50'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":20,"price_min":535900,"price_max":647900,"sqft_min":2187,"sqft_max":3241,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Eliana 50'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":25,"price_min":642900,"price_max":842900,"sqft_min":2127,"sqft_max":3553,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Carriage Collection 40 at Painted Tree","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75071","homes_available":15,"price_min":399990,"price_max":569233,"sqft_min":1606,"sqft_max":2471,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Eliana","builder":"Southgate Homes","builder_id":40813,"zip":"75071","homes_available":12,"price_min":749900,"price_max":1149900,"sqft_min":2928,"sqft_max":4470,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Painted Tree 60' Series","builder":"Southgate Homes","builder_id":40813,"zip":"75071","homes_available":10,"price_min":779900,"price_max":1149900,"sqft_min":2928,"sqft_max":4191,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Ridgeline: 50ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75071","homes_available":23,"price_min":534990,"price_max":672990,"sqft_min":1944,"sqft_max":3277,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Painted Tree","builder":"Coventry Homes","builder_id":93970,"zip":"75071","homes_available":45,"price_min":529990,"price_max":974163,"sqft_min":1977,"sqft_max":4168,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true},{"name":"Painted Tree - Woodland District","builder":"CB JENI Homes","builder_id":45776,"zip":"75071","homes_available":11,"price_min":363820,"price_max":425990,"sqft_min":1925,"sqft_max":2367,"beds_min":2,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Southridge - Signature Series","builder":"Meritage Homes","builder_id":4655,"zip":"75071","homes_available":11,"price_min":292990,"price_max":416569,"sqft_min":1833,"sqft_max":3100,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Eastridge - Spring Series","builder":"Meritage Homes","builder_id":4655,"zip":"75071","homes_available":41,"price_min":276017,"price_max":376507,"sqft_min":1318,"sqft_max":2357,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":true},{"name":"Eastridge - Premier Series","builder":"Meritage Homes","builder_id":4655,"zip":"75071","homes_available":11,"price_min":350020,"price_max":479077,"sqft_min":1874,"sqft_max":3429,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Eastridge - Signature Series","builder":"Meritage Homes","builder_id":4655,"zip":"75071","homes_available":25,"price_min":328672,"price_max":446264,"sqft_min":1833,"sqft_max":3100,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Trinity Falls 60","builder":"Drees Custom Homes","builder_id":84325,"zip":"75071","homes_available":12,"price_min":670900,"price_max":774990,"sqft_min":2486,"sqft_max":3930,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Timber Creek","builder":"Drees Custom Homes","builder_id":84325,"zip":"75071","homes_available":17,"price_min":549900,"price_max":849990,"sqft_min":2445,"sqft_max":3841,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Painted Tree Showcase","builder":"Drees Custom Homes","builder_id":84325,"zip":"75071","homes_available":10,"price_min":700000,"price_max":974990,"sqft_min":2581,"sqft_max":4065,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Ridgeline Towns","builder":"Drees Custom Homes","builder_id":84325,"zip":"75071","homes_available":7,"price_min":449900,"price_max":524990,"sqft_min":2067,"sqft_max":2455,"beds_min":3,"beds_max":3,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Trinity Falls At Province Woods 50'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":19,"price_min":535900,"price_max":647900,"sqft_min":2187,"sqft_max":3241,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Trinity Falls 45'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":26,"price_min":474900,"price_max":605900,"sqft_min":1910,"sqft_max":2754,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Trinity Falls At Province Woods 45'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":19,"price_min":499900,"price_max":592900,"sqft_min":1910,"sqft_max":2594,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Ridgeline 60'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":18,"price_min":631900,"price_max":761900,"sqft_min":2586,"sqft_max":4016,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Trinity Falls 60'","builder":"Perry Homes","builder_id":68,"zip":"75071","homes_available":26,"price_min":623900,"price_max":765900,"sqft_min":2519,"sqft_max":4016,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Discovery Collection 50s at Painted Tree","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75071","homes_available":16,"price_min":474990,"price_max":659311,"sqft_min":1853,"sqft_max":3169,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Inspiration Collection 60 at Painted Tree","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75071","homes_available":14,"price_min":554990,"price_max":749390,"sqft_min":2437,"sqft_max":3693,"beds_min":2,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Inspiration Collection 70 at Painted Tree","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75071","homes_available":5,"price_min":584990,"price_max":691990,"sqft_min":2762,"sqft_max":3692,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Painted Tree 50' Series","builder":"Southgate Homes","builder_id":40813,"zip":"75071","homes_available":8,"price_min":723990,"price_max":902529,"sqft_min":3561,"sqft_max":3942,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Aster Park: 50ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75071","homes_available":21,"price_min":636990,"price_max":791197,"sqft_min":2106,"sqft_max":3277,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Ridgeline: 70ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75071","homes_available":14,"price_min":933990,"price_max":1156990,"sqft_min":3208,"sqft_max":4789,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Aster Park: 40ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75071","homes_available":11,"price_min":495990,"price_max":599250,"sqft_min":1597,"sqft_max":2454,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Trinity Falls","builder":"Highland Homes","builder_id":21,"zip":"75071","homes_available":30,"price_min":499990,"price_max":698740,"sqft_min":1864,"sqft_max":3251,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Painted Tree - Village District","builder":"CB JENI Homes","builder_id":45776,"zip":"75071","homes_available":9,"price_min":365990,"price_max":425990,"sqft_min":1925,"sqft_max":2367,"beds_min":2,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1429,7 +1420,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1499,7 +1490,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 6 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 22 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

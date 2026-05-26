@@ -1342,35 +1342,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>8 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>8 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-melissa" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-melissa" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-melissa">Builder</label>
+        <select id="nc-builder-melissa">
           <option value="">All builders</option>
           <option value="Ashton Woods">Ashton Woods</option><option value="Bloomfield Homes">Bloomfield Homes</option><option value="Drees Custom Homes">Drees Custom Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Impression Homes">Impression Homes</option><option value="Pacesetter Homes Texas">Pacesetter Homes Texas</option><option value="Starlight Homes">Starlight Homes</option><option value="UnionMain Homes">UnionMain Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-melissa" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-melissa" type="number" placeholder="$321k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-melissa">Min price</label>
+        <input id="nc-pmin-melissa" type="number" placeholder="$321k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-melissa" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-melissa" type="number" placeholder="$781k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-melissa">Max price</label>
+        <input id="nc-pmax-melissa" type="number" placeholder="$781k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-melissa" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-melissa" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-melissa">Min beds</label>
+        <select id="nc-beds-melissa">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1379,25 +1377,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-melissa" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-melissa" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-melissa">Min sq ft</label>
+        <input id="nc-sqft-melissa" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-melissa"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-melissa" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1412,12 +1403,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-melissa"></tbody>
       </table>
     </div>
-    <p id="nc-count-melissa" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-melissa" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Liberty","builder":"Bloomfield Homes","zip":"75454","homes_available":41,"price_min":499990,"price_max":694990,"sqft_min":2098,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meadow Park","builder":"Ashton Woods","zip":"75454","homes_available":13,"price_min":379000,"price_max":525000,"sqft_min":1688,"sqft_max":3138,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Meadow Park","builder":"Starlight Homes","zip":"75454","homes_available":17,"price_min":322990,"price_max":421990,"sqft_min":1401,"sqft_max":2776,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meadow Run","builder":"Pacesetter Homes Texas","zip":"75454","homes_available":25,"price_min":437900,"price_max":609990,"sqft_min":1869,"sqft_max":3380,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Milrany Ranch","builder":"UnionMain Homes","zip":"75454","homes_available":18,"price_min":450990,"price_max":704000,"sqft_min":2052,"sqft_max":4399,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Bryant Farms","builder":"Impression Homes","zip":"75454","homes_available":11,"price_min":320999,"price_max":403990,"sqft_min":1424,"sqft_max":2463,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Creek View - 50'","builder":"Drees Custom Homes","zip":"75454","homes_available":7,"price_min":500000,"price_max":500000,"sqft_min":2151,"sqft_max":3154,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Brookfield","builder":"First Texas Homes","zip":"75454","homes_available":35,"price_min":372950,"price_max":781462,"sqft_min":1570,"sqft_max":4302,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true}];
+    var DATA = [{"name":"Liberty","builder":"Bloomfield Homes","builder_id":40335,"zip":"75454","homes_available":41,"price_min":499990,"price_max":694990,"sqft_min":2098,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meadow Park","builder":"Ashton Woods","builder_id":1096,"zip":"75454","homes_available":13,"price_min":379000,"price_max":525000,"sqft_min":1688,"sqft_max":3138,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Meadow Park","builder":"Starlight Homes","builder_id":53457,"zip":"75454","homes_available":17,"price_min":322990,"price_max":421990,"sqft_min":1401,"sqft_max":2776,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Meadow Run","builder":"Pacesetter Homes Texas","builder_id":59454,"zip":"75454","homes_available":25,"price_min":437900,"price_max":609990,"sqft_min":1869,"sqft_max":3380,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Milrany Ranch","builder":"UnionMain Homes","builder_id":56527,"zip":"75454","homes_available":18,"price_min":450990,"price_max":704000,"sqft_min":2052,"sqft_max":4399,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Bryant Farms","builder":"Impression Homes","builder_id":33844,"zip":"75454","homes_available":11,"price_min":320999,"price_max":403990,"sqft_min":1424,"sqft_max":2463,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Creek View - 50'","builder":"Drees Custom Homes","builder_id":84325,"zip":"75454","homes_available":7,"price_min":500000,"price_max":500000,"sqft_min":2151,"sqft_max":3154,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Brookfield","builder":"First Texas Homes","builder_id":4917,"zip":"75454","homes_available":35,"price_min":372950,"price_max":781462,"sqft_min":1570,"sqft_max":4302,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1446,7 +1437,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

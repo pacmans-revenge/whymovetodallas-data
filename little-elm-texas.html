@@ -1416,35 +1416,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>9 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>9 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-little-elm" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-little-elm" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-little-elm">Builder</label>
+        <select id="nc-builder-little-elm">
           <option value="">All builders</option>
           <option value="Beazer Homes">Beazer Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Ladera Living">Ladera Living</option><option value="Mattamy Homes">Mattamy Homes</option><option value="Pacesetter Homes Texas">Pacesetter Homes Texas</option><option value="Tri Pointe Homes">Tri Pointe Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-little-elm" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-little-elm" type="number" placeholder="$313k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-little-elm">Min price</label>
+        <input id="nc-pmin-little-elm" type="number" placeholder="$313k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-little-elm" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-little-elm" type="number" placeholder="$856k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-little-elm">Max price</label>
+        <input id="nc-pmax-little-elm" type="number" placeholder="$856k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-little-elm" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-little-elm" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-little-elm">Min beds</label>
+        <select id="nc-beds-little-elm">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1453,25 +1451,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-little-elm" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-little-elm" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-little-elm">Min sq ft</label>
+        <input id="nc-sqft-little-elm" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-little-elm"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-little-elm" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1486,12 +1477,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-little-elm"></tbody>
       </table>
     </div>
-    <p id="nc-count-little-elm" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-little-elm" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Valencia On The Lake","builder":"Mattamy Homes","zip":"75068","homes_available":3,"price_min":529990,"price_max":589171,"sqft_min":2573,"sqft_max":2787,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Valencia on the Lake","builder":"Beazer Homes","zip":"75068","homes_available":14,"price_min":447990,"price_max":679990,"sqft_min":1931,"sqft_max":3451,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Garden Collection at Union Park","builder":"Tri Pointe Homes","zip":"75068","homes_available":8,"price_min":399990,"price_max":499971,"sqft_min":2224,"sqft_max":2424,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Lake Pointe","builder":"Beazer Homes","zip":"75068","homes_available":11,"price_min":345990,"price_max":462990,"sqft_min":1536,"sqft_max":2876,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false},{"name":"Ladera Little Elm","builder":"Ladera Living","zip":"75068","homes_available":18,"price_min":394990,"price_max":641990,"sqft_min":1322,"sqft_max":2905,"beds_min":2,"beds_max":3,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Valencia on The Lake","builder":"First Texas Homes","zip":"75068","homes_available":26,"price_min":509950,"price_max":855807,"sqft_min":2122,"sqft_max":4305,"beds_min":4,"beds_max":6,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"The Reserve at Spiritas Ranch","builder":"Pacesetter Homes Texas","zip":"75068","homes_available":31,"price_min":375900,"price_max":679980,"sqft_min":1501,"sqft_max":3503,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Spiritas Ranch","builder":"First Texas Homes","zip":"75068","homes_available":25,"price_min":469950,"price_max":815603,"sqft_min":2122,"sqft_max":4302,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Spiritas Ranch","builder":"Mattamy Homes","zip":"75068","homes_available":21,"price_min":312990,"price_max":465915,"sqft_min":1574,"sqft_max":3038,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false}];
+    var DATA = [{"name":"Valencia On The Lake","builder":"Mattamy Homes","builder_id":68235,"zip":"75068","homes_available":3,"price_min":529990,"price_max":589171,"sqft_min":2573,"sqft_max":2787,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Valencia on the Lake","builder":"Beazer Homes","builder_id":379,"zip":"75068","homes_available":14,"price_min":447990,"price_max":679990,"sqft_min":1931,"sqft_max":3451,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Garden Collection at Union Park","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75068","homes_available":8,"price_min":399990,"price_max":499971,"sqft_min":2224,"sqft_max":2424,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Lake Pointe","builder":"Beazer Homes","builder_id":379,"zip":"75068","homes_available":11,"price_min":345990,"price_max":462990,"sqft_min":1536,"sqft_max":2876,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false},{"name":"Ladera Little Elm","builder":"Ladera Living","builder_id":92148,"zip":"75068","homes_available":18,"price_min":394990,"price_max":641990,"sqft_min":1322,"sqft_max":2905,"beds_min":2,"beds_max":3,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Valencia on The Lake","builder":"First Texas Homes","builder_id":4917,"zip":"75068","homes_available":26,"price_min":509950,"price_max":855807,"sqft_min":2122,"sqft_max":4305,"beds_min":4,"beds_max":6,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"The Reserve at Spiritas Ranch","builder":"Pacesetter Homes Texas","builder_id":59454,"zip":"75068","homes_available":31,"price_min":375900,"price_max":679980,"sqft_min":1501,"sqft_max":3503,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Spiritas Ranch","builder":"First Texas Homes","builder_id":4917,"zip":"75068","homes_available":25,"price_min":469950,"price_max":815603,"sqft_min":2122,"sqft_max":4302,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Spiritas Ranch","builder":"Mattamy Homes","builder_id":68235,"zip":"75068","homes_available":21,"price_min":312990,"price_max":465915,"sqft_min":1574,"sqft_max":3038,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1520,7 +1511,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

@@ -1469,35 +1469,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>3 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>3 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-plano" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-plano" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-plano">Builder</label>
+        <select id="nc-builder-plano">
           <option value="">All builders</option>
           <option value="Ashton Woods">Ashton Woods</option><option value="CB JENI Homes">CB JENI Homes</option><option value="Mattamy Homes">Mattamy Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-plano" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-plano" type="number" placeholder="$437k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-plano">Min price</label>
+        <input id="nc-pmin-plano" type="number" placeholder="$437k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-plano" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-plano" type="number" placeholder="$634k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-plano">Max price</label>
+        <input id="nc-pmax-plano" type="number" placeholder="$634k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-plano" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-plano" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-plano">Min beds</label>
+        <select id="nc-beds-plano">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1506,25 +1504,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-plano" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-plano" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-plano">Min sq ft</label>
+        <input id="nc-sqft-plano" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-plano"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-plano" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1539,12 +1530,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-plano"></tbody>
       </table>
     </div>
-    <p id="nc-count-plano" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-plano" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Plano Gateway","builder":"CB JENI Homes","zip":"75074","homes_available":0,"price_min":0,"price_max":0,"sqft_min":0,"sqft_max":0,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"has_promo":false,"price_reduced":false},{"name":"Collin Creek","builder":"Mattamy Homes","zip":"75075","homes_available":14,"price_min":475000,"price_max":633990,"sqft_min":1470,"sqft_max":3129,"beds_min":2,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Collin Creek","builder":"Ashton Woods","zip":"75075","homes_available":11,"price_min":437000,"price_max":564900,"sqft_min":1520,"sqft_max":2480,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true}];
+    var DATA = [{"name":"Plano Gateway","builder":"CB JENI Homes","builder_id":45776,"zip":"75074","homes_available":0,"price_min":0,"price_max":0,"sqft_min":0,"sqft_max":0,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"has_promo":false,"price_reduced":false},{"name":"Collin Creek","builder":"Mattamy Homes","builder_id":68235,"zip":"75075","homes_available":14,"price_min":475000,"price_max":633990,"sqft_min":1470,"sqft_max":3129,"beds_min":2,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Collin Creek","builder":"Ashton Woods","builder_id":1096,"zip":"75075","homes_available":11,"price_min":437000,"price_max":564900,"sqft_min":1520,"sqft_max":2480,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1573,7 +1564,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

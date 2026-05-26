@@ -1378,35 +1378,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>8 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>8 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-heath" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-heath">Builder</label>
+        <select id="nc-builder-heath">
           <option value="">All builders</option>
           <option value="Beazer Homes">Beazer Homes</option><option value="Grand Homes">Grand Homes</option><option value="Heath Golf and Yacht Club">Heath Golf and Yacht Club</option><option value="Highland Homes">Highland Homes</option><option value="K. Hovnanian® Homes">K. Hovnanian® Homes</option><option value="Perry Homes">Perry Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-heath" type="number" placeholder="$379k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-heath">Min price</label>
+        <input id="nc-pmin-heath" type="number" placeholder="$379k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-heath" type="number" placeholder="$1.8M" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-heath">Max price</label>
+        <input id="nc-pmax-heath" type="number" placeholder="$1.8M" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-heath" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-heath">Min beds</label>
+        <select id="nc-beds-heath">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1415,25 +1413,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-heath" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-heath" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-heath">Min sq ft</label>
+        <input id="nc-sqft-heath" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-heath"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-heath" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1448,12 +1439,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-heath"></tbody>
       </table>
     </div>
-    <p id="nc-count-heath" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-heath" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Bristol Valley Half Acre","builder":"Perry Homes","zip":"75032","homes_available":25,"price_min":1020900,"price_max":1361900,"sqft_min":3068,"sqft_max":5573,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":true},{"name":"Bristol Valley 1 Acre","builder":"Perry Homes","zip":"75032","homes_available":20,"price_min":1235900,"price_max":1732900,"sqft_min":3274,"sqft_max":6321,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Estates","builder":"K. Hovnanian® Homes","zip":"75032","homes_available":8,"price_min":564900,"price_max":699000,"sqft_min":2825,"sqft_max":3707,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf and Yacht Club","builder":"Heath Golf and Yacht Club","zip":"75032","homes_available":66,"price_min":378900,"price_max":1314900,"sqft_min":1616,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Heath Golf & Yacht Club","builder":"Grand Homes","zip":"75126","homes_available":14,"price_min":734900,"price_max":1314900,"sqft_min":2377,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Villas","builder":"K. Hovnanian® Homes","zip":"75126","homes_available":15,"price_min":378900,"price_max":560000,"sqft_min":1616,"sqft_max":2916,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Heath Golf and Yacht Club","builder":"Beazer Homes","zip":"75032","homes_available":12,"price_min":568990,"price_max":746990,"sqft_min":2342,"sqft_max":3894,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Estates at Bristol Valley","builder":"Highland Homes","zip":"75032","homes_available":12,"price_min":1299990,"price_max":1817923,"sqft_min":3520,"sqft_max":5196,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":true,"price_reduced":true}];
+    var DATA = [{"name":"Bristol Valley Half Acre","builder":"Perry Homes","builder_id":68,"zip":"75032","homes_available":25,"price_min":1020900,"price_max":1361900,"sqft_min":3068,"sqft_max":5573,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":true},{"name":"Bristol Valley 1 Acre","builder":"Perry Homes","builder_id":68,"zip":"75032","homes_available":20,"price_min":1235900,"price_max":1732900,"sqft_min":3274,"sqft_max":6321,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Estates","builder":"K. Hovnanian® Homes","builder_id":2267,"zip":"75032","homes_available":8,"price_min":564900,"price_max":699000,"sqft_min":2825,"sqft_max":3707,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf and Yacht Club","builder":"Heath Golf and Yacht Club","builder_id":61544,"zip":"75032","homes_available":66,"price_min":378900,"price_max":1314900,"sqft_min":1616,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Heath Golf & Yacht Club","builder":"Grand Homes","builder_id":468,"zip":"75126","homes_available":14,"price_min":734900,"price_max":1314900,"sqft_min":2377,"sqft_max":5019,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heath Golf & Yacht Villas","builder":"K. Hovnanian® Homes","builder_id":2267,"zip":"75126","homes_available":15,"price_min":378900,"price_max":560000,"sqft_min":1616,"sqft_max":2916,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Heath Golf and Yacht Club","builder":"Beazer Homes","builder_id":379,"zip":"75032","homes_available":12,"price_min":568990,"price_max":746990,"sqft_min":2342,"sqft_max":3894,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Estates at Bristol Valley","builder":"Highland Homes","builder_id":21,"zip":"75032","homes_available":12,"price_min":1299990,"price_max":1817923,"sqft_min":3520,"sqft_max":5196,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":true,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1482,7 +1473,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

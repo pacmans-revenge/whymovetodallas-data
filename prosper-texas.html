@@ -1144,7 +1144,7 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">166+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">404+</div>
     </div>
   </div>
 
@@ -1162,35 +1162,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 39 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-prosper" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>24 of 39 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-prosper" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-prosper" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-prosper" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-prosper">Builder</label>
+        <select id="nc-builder-prosper">
           <option value="">All builders</option>
           <option value="American Legend Homes">American Legend Homes</option><option value="BRITTON HOMES">BRITTON HOMES</option><option value="Highland Homes">Highland Homes</option><option value="Perry Homes">Perry Homes</option><option value="Southgate Homes">Southgate Homes</option><option value="Toll Brothers">Toll Brothers</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-prosper" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-prosper" type="number" placeholder="$438k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-prosper">Min price</label>
+        <input id="nc-pmin-prosper" type="number" placeholder="$438k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-prosper" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-prosper" type="number" placeholder="$2.7M" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-prosper">Max price</label>
+        <input id="nc-pmax-prosper" type="number" placeholder="$2.7M" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-prosper" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-prosper" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-prosper">Min beds</label>
+        <select id="nc-beds-prosper">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1199,25 +1197,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-prosper" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-prosper" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-prosper">Min sq ft</label>
+        <input id="nc-sqft-prosper" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-prosper"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-prosper" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1232,12 +1223,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-prosper"></tbody>
       </table>
     </div>
-    <p id="nc-count-prosper" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-prosper" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Light Farms - Elite Collection","builder":"Toll Brothers","zip":"75078","homes_available":1,"price_min":799000,"price_max":799000,"sqft_min":2999,"sqft_max":2999,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Prosper Ridge","builder":"Southgate Homes","zip":"75078","homes_available":12,"price_min":945000,"price_max":1141900,"sqft_min":3881,"sqft_max":4547,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Mosaic: 50ft. lots","builder":"Highland Homes","zip":"75078","homes_available":24,"price_min":569990,"price_max":770022,"sqft_min":2106,"sqft_max":3535,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"StarView","builder":"Highland Homes","zip":"75078","homes_available":22,"price_min":999990,"price_max":1511412,"sqft_min":3104,"sqft_max":4789,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Star Trail: 55ft. lots","builder":"Highland Homes","zip":"75078","homes_available":21,"price_min":734990,"price_max":997740,"sqft_min":1990,"sqft_max":3748,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true},{"name":"Mosaic 50s","builder":"American Legend Homes","zip":"75078","homes_available":20,"price_min":635000,"price_max":896960,"sqft_min":2165,"sqft_max":4097,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Wandering Creek at Brookhollow - Estate Collection","builder":"Toll Brothers","zip":"75078","homes_available":8,"price_min":1220995,"price_max":2739000,"sqft_min":4024,"sqft_max":5967,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Star Trail 76'","builder":"BRITTON HOMES","zip":"75078","homes_available":21,"price_min":1066900,"price_max":1399900,"sqft_min":3308,"sqft_max":4900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":true},{"name":"Mosaic 50'","builder":"Perry Homes","zip":"75078","homes_available":23,"price_min":628900,"price_max":774900,"sqft_min":2187,"sqft_max":3553,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Mosaic: 40ft. lots","builder":"Highland Homes","zip":"75078","homes_available":14,"price_min":437990,"price_max":575615,"sqft_min":1597,"sqft_max":2513,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true}];
+    var DATA = [{"name":"Light Farms - Elite Collection","builder":"Toll Brothers","builder_id":10549,"zip":"75078","homes_available":1,"price_min":799000,"price_max":799000,"sqft_min":2999,"sqft_max":2999,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Prosper Ridge","builder":"Southgate Homes","builder_id":40813,"zip":"75078","homes_available":12,"price_min":945000,"price_max":1141900,"sqft_min":3881,"sqft_max":4547,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Mosaic: 50ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":24,"price_min":569990,"price_max":770022,"sqft_min":2106,"sqft_max":3535,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"StarView","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":22,"price_min":999990,"price_max":1511412,"sqft_min":3104,"sqft_max":4789,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Star Trail: 55ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":21,"price_min":734990,"price_max":997740,"sqft_min":1990,"sqft_max":3748,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":true},{"name":"Mosaic 50s","builder":"American Legend Homes","builder_id":41619,"zip":"75078","homes_available":20,"price_min":635000,"price_max":896960,"sqft_min":2165,"sqft_max":4097,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Wandering Creek at Brookhollow - Estate Collection","builder":"Toll Brothers","builder_id":10549,"zip":"75078","homes_available":8,"price_min":1220995,"price_max":2739000,"sqft_min":4024,"sqft_max":5967,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Star Trail 76'","builder":"BRITTON HOMES","builder_id":44964,"zip":"75078","homes_available":21,"price_min":1066900,"price_max":1399900,"sqft_min":3308,"sqft_max":4900,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":true},{"name":"Mosaic 50'","builder":"Perry Homes","builder_id":68,"zip":"75078","homes_available":23,"price_min":628900,"price_max":774900,"sqft_min":2187,"sqft_max":3553,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Mosaic: 40ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":14,"price_min":437990,"price_max":575615,"sqft_min":1597,"sqft_max":2513,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Light Farms - Select Collection","builder":"Toll Brothers","builder_id":10549,"zip":"75078","homes_available":1,"price_min":949000,"price_max":949000,"sqft_min":3669,"sqft_max":3669,"beds_min":4,"beds_max":4,"baths_min":4,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Wandering Creek at Brookhollow - Executive Collection","builder":"Toll Brothers","builder_id":10549,"zip":"75078","homes_available":9,"price_min":1042995,"price_max":1425000,"sqft_min":3635,"sqft_max":4940,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Star Trail","builder":"Toll Brothers","builder_id":10549,"zip":"75078","homes_available":10,"price_min":1056995,"price_max":1461000,"sqft_min":3244,"sqft_max":4940,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Windsong Ranch 71' Series","builder":"Southgate Homes","builder_id":40813,"zip":"75078","homes_available":18,"price_min":969900,"price_max":1360946,"sqft_min":3279,"sqft_max":4499,"beds_min":4,"beds_max":6,"baths_min":3,"baths_max":6,"has_promo":true,"price_reduced":false},{"name":"Windsong Ranch 61' Series","builder":"Southgate Homes","builder_id":40813,"zip":"75078","homes_available":8,"price_min":759900,"price_max":1445000,"sqft_min":3047,"sqft_max":3799,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":true},{"name":"Mosaic: 60ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":23,"price_min":674990,"price_max":961478,"sqft_min":2602,"sqft_max":3824,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Star Trail: 65ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":24,"price_min":847990,"price_max":1051400,"sqft_min":2874,"sqft_max":4337,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Mosaic: 70ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":23,"price_min":882990,"price_max":1300000,"sqft_min":3104,"sqft_max":4789,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Star Trail: 86ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75078","homes_available":26,"price_min":1149990,"price_max":1685000,"sqft_min":3104,"sqft_max":5291,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Mosaic 40s","builder":"American Legend Homes","builder_id":41619,"zip":"75078","homes_available":14,"price_min":552990,"price_max":703500,"sqft_min":1660,"sqft_max":3059,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Star Trail - 65s","builder":"American Legend Homes","builder_id":41619,"zip":"75078","homes_available":18,"price_min":864990,"price_max":1183590,"sqft_min":2921,"sqft_max":4354,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Star Trail - 55s","builder":"American Legend Homes","builder_id":41619,"zip":"75078","homes_available":21,"price_min":714990,"price_max":998145,"sqft_min":2165,"sqft_max":3900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Mosaic 60s","builder":"American Legend Homes","builder_id":41619,"zip":"75078","homes_available":20,"price_min":750000,"price_max":1010565,"sqft_min":2759,"sqft_max":4323,"beds_min":3,"beds_max":4,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Starview 64'","builder":"BRITTON HOMES","builder_id":44964,"zip":"75078","homes_available":23,"price_min":915900,"price_max":1260900,"sqft_min":2827,"sqft_max":4579,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1266,7 +1257,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1336,7 +1327,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 4 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 10 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

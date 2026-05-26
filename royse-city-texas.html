@@ -1375,7 +1375,7 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">235+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">260+</div>
     </div>
   </div>
 
@@ -1394,35 +1394,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 19 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-royse-city" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>12 of 19 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-royse-city" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-royse-city" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-royse-city" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-royse-city">Builder</label>
+        <select id="nc-builder-royse-city">
           <option value="">All builders</option>
           <option value="Beazer Homes">Beazer Homes</option><option value="Bloomfield Homes">Bloomfield Homes</option><option value="Highland Homes">Highland Homes</option><option value="HistoryMaker Homes   ">HistoryMaker Homes   </option><option value="Impression Homes">Impression Homes</option><option value="M/I Homes">M/I Homes</option><option value="UnionMain Homes">UnionMain Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-royse-city" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-royse-city" type="number" placeholder="$256k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-royse-city">Min price</label>
+        <input id="nc-pmin-royse-city" type="number" placeholder="$256k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-royse-city" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-royse-city" type="number" placeholder="$581k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-royse-city">Max price</label>
+        <input id="nc-pmax-royse-city" type="number" placeholder="$581k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-royse-city" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-royse-city" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-royse-city">Min beds</label>
+        <select id="nc-beds-royse-city">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1431,25 +1429,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-royse-city" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-royse-city" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-royse-city">Min sq ft</label>
+        <input id="nc-sqft-royse-city" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-royse-city"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-royse-city" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1464,12 +1455,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-royse-city"></tbody>
       </table>
     </div>
-    <p id="nc-count-royse-city" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-royse-city" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Verandah - Crossings 60'","builder":"Beazer Homes","zip":"75189","homes_available":10,"price_min":341990,"price_max":469990,"sqft_min":1931,"sqft_max":3075,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Creekshaw","builder":"Highland Homes","zip":"75189","homes_available":15,"price_min":300990,"price_max":392990,"sqft_min":1582,"sqft_max":2480,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"DeBerry Reserve","builder":"Impression Homes","zip":"75189","homes_available":10,"price_min":307999,"price_max":390990,"sqft_min":1861,"sqft_max":2687,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Waterscape","builder":"HistoryMaker Homes   ","zip":"75189","homes_available":19,"price_min":283990,"price_max":416990,"sqft_min":1458,"sqft_max":3116,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Stone River Glen","builder":"Bloomfield Homes","zip":"75189","homes_available":67,"price_min":380990,"price_max":577990,"sqft_min":1840,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Creekshaw","builder":"Impression Homes","zip":"75189","homes_available":11,"price_min":255999,"price_max":324990,"sqft_min":1504,"sqft_max":2420,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Verandah","builder":"M/I Homes","zip":"75189","homes_available":23,"price_min":267990,"price_max":384809,"sqft_min":1800,"sqft_max":2869,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Waterscape","builder":"Bloomfield Homes","zip":"75189","homes_available":52,"price_min":380990,"price_max":580990,"sqft_min":1840,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Creekside","builder":"UnionMain Homes","zip":"75189","homes_available":9,"price_min":299990,"price_max":432000,"sqft_min":1581,"sqft_max":2563,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Mercer Meadows","builder":"Impression Homes","zip":"75189","homes_available":19,"price_min":339990,"price_max":439990,"sqft_min":1804,"sqft_max":3567,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Verandah - Crossings 60'","builder":"Beazer Homes","builder_id":379,"zip":"75189","homes_available":10,"price_min":341990,"price_max":469990,"sqft_min":1931,"sqft_max":3075,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Creekshaw","builder":"Highland Homes","builder_id":21,"zip":"75189","homes_available":15,"price_min":300990,"price_max":392990,"sqft_min":1582,"sqft_max":2480,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"DeBerry Reserve","builder":"Impression Homes","builder_id":33844,"zip":"75189","homes_available":10,"price_min":307999,"price_max":390990,"sqft_min":1861,"sqft_max":2687,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Waterscape","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"75189","homes_available":19,"price_min":283990,"price_max":416990,"sqft_min":1458,"sqft_max":3116,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Stone River Glen","builder":"Bloomfield Homes","builder_id":40335,"zip":"75189","homes_available":67,"price_min":380990,"price_max":577990,"sqft_min":1840,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Creekshaw","builder":"Impression Homes","builder_id":33844,"zip":"75189","homes_available":11,"price_min":255999,"price_max":324990,"sqft_min":1504,"sqft_max":2420,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Verandah","builder":"M/I Homes","builder_id":18073,"zip":"75189","homes_available":23,"price_min":267990,"price_max":384809,"sqft_min":1800,"sqft_max":2869,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Waterscape","builder":"Bloomfield Homes","builder_id":40335,"zip":"75189","homes_available":52,"price_min":380990,"price_max":580990,"sqft_min":1840,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Creekside","builder":"UnionMain Homes","builder_id":56527,"zip":"75189","homes_available":9,"price_min":299990,"price_max":432000,"sqft_min":1581,"sqft_max":2563,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Mercer Meadows","builder":"Impression Homes","builder_id":33844,"zip":"75189","homes_available":19,"price_min":339990,"price_max":439990,"sqft_min":1804,"sqft_max":3567,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Verandah - Meadows 50'","builder":"Beazer Homes","builder_id":379,"zip":"75189","homes_available":13,"price_min":299990,"price_max":399990,"sqft_min":1854,"sqft_max":2845,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":true},{"name":"Liberty Crossing","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"75189","homes_available":12,"price_min":319990,"price_max":466990,"sqft_min":1837,"sqft_max":3873,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1498,7 +1489,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1568,7 +1559,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 4 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 5 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

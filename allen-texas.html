@@ -1505,35 +1505,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>5 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>5 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-allen" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-allen" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-allen">Builder</label>
+        <select id="nc-builder-allen">
           <option value="">All builders</option>
           <option value="Beazer Homes">Beazer Homes</option><option value="CB JENI Homes">CB JENI Homes</option><option value="Drees Custom Homes">Drees Custom Homes</option><option value="Shaddock Homes">Shaddock Homes</option><option value="Southgate Homes">Southgate Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-allen" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-allen" type="number" placeholder="$350k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-allen">Min price</label>
+        <input id="nc-pmin-allen" type="number" placeholder="$350k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-allen" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-allen" type="number" placeholder="$1.3M" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-allen">Max price</label>
+        <input id="nc-pmax-allen" type="number" placeholder="$1.3M" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-allen" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-allen" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-allen">Min beds</label>
+        <select id="nc-beds-allen">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1542,25 +1540,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-allen" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-allen" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-allen">Min sq ft</label>
+        <input id="nc-sqft-allen" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-allen"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-allen" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1575,12 +1566,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-allen"></tbody>
       </table>
     </div>
-    <p id="nc-count-allen" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-allen" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Twin Creeks Watters","builder":"CB JENI Homes","zip":"75013","homes_available":15,"price_min":412890,"price_max":550990,"sqft_min":1586,"sqft_max":2688,"beds_min":2,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"The Reserve at Watters","builder":"Southgate Homes","zip":"75013","homes_available":11,"price_min":949000,"price_max":1297579,"sqft_min":2928,"sqft_max":4315,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Custer Ridge Estates","builder":"Shaddock Homes","zip":"75013","homes_available":16,"price_min":924000,"price_max":1330500,"sqft_min":2586,"sqft_max":4645,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Gatherings at Twin Creeks","builder":"Beazer Homes","zip":"75013","homes_available":1,"price_min":350000,"price_max":350000,"sqft_min":1702,"sqft_max":1702,"beds_min":2,"beds_max":2,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Chelsea Commons","builder":"Drees Custom Homes","zip":"75013","homes_available":12,"price_min":449990,"price_max":499990,"sqft_min":1727,"sqft_max":1986,"beds_min":3,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false}];
+    var DATA = [{"name":"Twin Creeks Watters","builder":"CB JENI Homes","builder_id":45776,"zip":"75013","homes_available":15,"price_min":412890,"price_max":550990,"sqft_min":1586,"sqft_max":2688,"beds_min":2,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"The Reserve at Watters","builder":"Southgate Homes","builder_id":40813,"zip":"75013","homes_available":11,"price_min":949000,"price_max":1297579,"sqft_min":2928,"sqft_max":4315,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Custer Ridge Estates","builder":"Shaddock Homes","builder_id":4529,"zip":"75013","homes_available":16,"price_min":924000,"price_max":1330500,"sqft_min":2586,"sqft_max":4645,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":false,"price_reduced":false},{"name":"Gatherings at Twin Creeks","builder":"Beazer Homes","builder_id":379,"zip":"75013","homes_available":1,"price_min":350000,"price_max":350000,"sqft_min":1702,"sqft_max":1702,"beds_min":2,"beds_max":2,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Chelsea Commons","builder":"Drees Custom Homes","builder_id":84325,"zip":"75013","homes_available":12,"price_min":449990,"price_max":499990,"sqft_min":1727,"sqft_max":1986,"beds_min":3,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1609,7 +1600,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

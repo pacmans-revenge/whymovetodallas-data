@@ -1375,12 +1375,12 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Price Range (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$353k – $693k</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">$353k – $883k</div>
     </div>
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">154+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">228+</div>
     </div>
   </div>
 
@@ -1398,35 +1398,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 29 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-midlothian" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>15 of 29 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-midlothian" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-midlothian" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-midlothian">Builder</label>
+        <select id="nc-builder-midlothian">
           <option value="">All builders</option>
           <option value="American Legend Homes">American Legend Homes</option><option value="Bloomfield Homes">Bloomfield Homes</option><option value="DRB Homes">DRB Homes</option><option value="First Texas Homes">First Texas Homes</option><option value="Heritage Towne">Heritage Towne</option><option value="Risewell Homes">Risewell Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-midlothian" type="number" placeholder="$353k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-midlothian">Min price</label>
+        <input id="nc-pmin-midlothian" type="number" placeholder="$353k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-midlothian" type="number" placeholder="$693k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-midlothian">Max price</label>
+        <input id="nc-pmax-midlothian" type="number" placeholder="$883k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-midlothian" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-midlothian">Min beds</label>
+        <select id="nc-beds-midlothian">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1435,25 +1433,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-midlothian" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-midlothian" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-midlothian">Min sq ft</label>
+        <input id="nc-sqft-midlothian" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-midlothian"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-midlothian" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1468,12 +1459,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-midlothian"></tbody>
       </table>
     </div>
-    <p id="nc-count-midlothian" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-midlothian" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Hawkins Meadows","builder":"First Texas Homes","zip":"76065","homes_available":3,"price_min":680950,"price_max":692819,"sqft_min":2860,"sqft_max":4314,"beds_min":5,"beds_max":6,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"BridgeWater 40s","builder":"American Legend Homes","zip":"76065","homes_available":13,"price_min":376990,"price_max":483990,"sqft_min":1619,"sqft_max":2843,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Westside Preserve","builder":"First Texas Homes","zip":"76065","homes_available":28,"price_min":374950,"price_max":667950,"sqft_min":1502,"sqft_max":4305,"beds_min":3,"beds_max":6,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Massey Meadows","builder":"Risewell Homes","zip":"76065","homes_available":5,"price_min":458990,"price_max":502990,"sqft_min":2370,"sqft_max":2972,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Redden Farms - Classic Series","builder":"Risewell Homes","zip":"76065","homes_available":8,"price_min":352990,"price_max":471999,"sqft_min":1802,"sqft_max":3106,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Mockingbird Heights","builder":"Bloomfield Homes","zip":"76065","homes_available":52,"price_min":442990,"price_max":677990,"sqft_min":2098,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heritage Towne","builder":"Heritage Towne","zip":"76065","homes_available":19,"price_min":367000,"price_max":565000,"sqft_min":1454,"sqft_max":2869,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Westside Preserve Premier","builder":"DRB Homes","zip":"76065","homes_available":9,"price_min":377990,"price_max":527890,"sqft_min":1970,"sqft_max":3064,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Ridgepoint","builder":"Bloomfield Homes","zip":"76065","homes_available":3,"price_min":529990,"price_max":549990,"sqft_min":3019,"sqft_max":3485,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Bridgewater 60s","builder":"American Legend Homes","zip":"76065","homes_available":14,"price_min":504990,"price_max":621990,"sqft_min":2295,"sqft_max":3438,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Hawkins Meadows","builder":"First Texas Homes","builder_id":4917,"zip":"76065","homes_available":3,"price_min":680950,"price_max":692819,"sqft_min":2860,"sqft_max":4314,"beds_min":5,"beds_max":6,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"BridgeWater 40s","builder":"American Legend Homes","builder_id":41619,"zip":"76065","homes_available":13,"price_min":376990,"price_max":483990,"sqft_min":1619,"sqft_max":2843,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Westside Preserve","builder":"First Texas Homes","builder_id":4917,"zip":"76065","homes_available":28,"price_min":374950,"price_max":667950,"sqft_min":1502,"sqft_max":4305,"beds_min":3,"beds_max":6,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Massey Meadows","builder":"Risewell Homes","builder_id":94527,"zip":"76065","homes_available":5,"price_min":458990,"price_max":502990,"sqft_min":2370,"sqft_max":2972,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Redden Farms - Classic Series","builder":"Risewell Homes","builder_id":94527,"zip":"76065","homes_available":8,"price_min":352990,"price_max":471999,"sqft_min":1802,"sqft_max":3106,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Mockingbird Heights","builder":"Bloomfield Homes","builder_id":40335,"zip":"76065","homes_available":52,"price_min":442990,"price_max":677990,"sqft_min":2098,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Heritage Towne","builder":"Heritage Towne","builder_id":60729,"zip":"76065","homes_available":19,"price_min":367000,"price_max":565000,"sqft_min":1454,"sqft_max":2869,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Westside Preserve Premier","builder":"DRB Homes","builder_id":94661,"zip":"76065","homes_available":9,"price_min":377990,"price_max":527890,"sqft_min":1970,"sqft_max":3064,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Ridgepoint","builder":"Bloomfield Homes","builder_id":40335,"zip":"76065","homes_available":3,"price_min":529990,"price_max":549990,"sqft_min":3019,"sqft_max":3485,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Bridgewater 60s","builder":"American Legend Homes","builder_id":41619,"zip":"76065","homes_available":14,"price_min":504990,"price_max":621990,"sqft_min":2295,"sqft_max":3438,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Shady Valley Estates","builder":"First Texas Homes","builder_id":4917,"zip":"76065","homes_available":23,"price_min":469950,"price_max":882984,"sqft_min":2508,"sqft_max":4602,"beds_min":4,"beds_max":6,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Redden Farms - Signature Series","builder":"Risewell Homes","builder_id":94527,"zip":"76065","homes_available":9,"price_min":433990,"price_max":530990,"sqft_min":2046,"sqft_max":3136,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Villages of Walnut Grove","builder":"Bloomfield Homes","builder_id":40335,"zip":"76065","homes_available":29,"price_min":439990,"price_max":599990,"sqft_min":2250,"sqft_max":4238,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Hayes Crossing","builder":"Bloomfield Homes","builder_id":40335,"zip":"76065","homes_available":3,"price_min":500000,"price_max":620000,"sqft_min":2242,"sqft_max":3696,"beds_min":4,"beds_max":6,"baths_min":2,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Westside Preserve Classic","builder":"DRB Homes","builder_id":94661,"zip":"76065","homes_available":10,"price_min":417990,"price_max":559890,"sqft_min":2430,"sqft_max":4130,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1502,7 +1493,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1572,7 +1563,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 4 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 7 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

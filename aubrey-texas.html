@@ -700,7 +700,7 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">231+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">372+</div>
     </div>
   </div>
 
@@ -717,35 +717,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 22 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-aubrey" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>13 of 22 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-aubrey" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-aubrey" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-aubrey" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-aubrey">Builder</label>
+        <select id="nc-builder-aubrey">
           <option value="">All builders</option>
           <option value="Bloomfield Homes">Bloomfield Homes</option><option value="Highland Homes">Highland Homes</option><option value="HistoryMaker Homes   ">HistoryMaker Homes   </option><option value="Impression Homes">Impression Homes</option><option value="M/I Homes">M/I Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-aubrey" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-aubrey" type="number" placeholder="$296k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-aubrey">Min price</label>
+        <input id="nc-pmin-aubrey" type="number" placeholder="$296k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-aubrey" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-aubrey" type="number" placeholder="$1.0M" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-aubrey">Max price</label>
+        <input id="nc-pmax-aubrey" type="number" placeholder="$1.0M" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-aubrey" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-aubrey" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-aubrey">Min beds</label>
+        <select id="nc-beds-aubrey">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -754,25 +752,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-aubrey" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-aubrey" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-aubrey">Min sq ft</label>
+        <input id="nc-sqft-aubrey" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-aubrey"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-aubrey" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -787,12 +778,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-aubrey"></tbody>
       </table>
     </div>
-    <p id="nc-count-aubrey" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-aubrey" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Sandbrock Ranch: 50ft. lots","builder":"Highland Homes","zip":"76227","homes_available":32,"price_min":436990,"price_max":647920,"sqft_min":1864,"sqft_max":3277,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Belmont","builder":"Impression Homes","zip":"76227","homes_available":18,"price_min":302122,"price_max":431990,"sqft_min":1424,"sqft_max":2699,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Saratoga","builder":"HistoryMaker Homes   ","zip":"76227","homes_available":20,"price_min":299990,"price_max":484990,"sqft_min":1440,"sqft_max":3308,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Keeneland","builder":"Impression Homes","zip":"76227","homes_available":19,"price_min":296379,"price_max":429990,"sqft_min":1424,"sqft_max":2687,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Sandbrock Ranch: 70ft. lots","builder":"Highland Homes","zip":"76227","homes_available":24,"price_min":647990,"price_max":1000524,"sqft_min":3056,"sqft_max":4425,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Sandbrock Ranch: Quick Move-Ins - 60ft. lots","builder":"Highland Homes","zip":"76227","homes_available":6,"price_min":714059,"price_max":820227,"sqft_min":2945,"sqft_max":3807,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Sandbrock Ranch: New Builds - 60ft Lots","builder":"Highland Homes","zip":"76227","homes_available":15,"price_min":549990,"price_max":690990,"sqft_min":2602,"sqft_max":3803,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Providence Commons","builder":"HistoryMaker Homes   ","zip":"76227","homes_available":11,"price_min":378990,"price_max":501990,"sqft_min":2105,"sqft_max":3531,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Lily Creek At Sutton Fields","builder":"M/I Homes","zip":"76227","homes_available":22,"price_min":426990,"price_max":646845,"sqft_min":1834,"sqft_max":3435,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"ArrowBrooke","builder":"Bloomfield Homes","zip":"76227","homes_available":64,"price_min":420990,"price_max":678990,"sqft_min":1672,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Sandbrock Ranch: 50ft. lots","builder":"Highland Homes","builder_id":21,"zip":"76227","homes_available":32,"price_min":436990,"price_max":647920,"sqft_min":1864,"sqft_max":3277,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Belmont","builder":"Impression Homes","builder_id":33844,"zip":"76227","homes_available":18,"price_min":302122,"price_max":431990,"sqft_min":1424,"sqft_max":2699,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Saratoga","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"76227","homes_available":20,"price_min":299990,"price_max":484990,"sqft_min":1440,"sqft_max":3308,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Keeneland","builder":"Impression Homes","builder_id":33844,"zip":"76227","homes_available":19,"price_min":296379,"price_max":429990,"sqft_min":1424,"sqft_max":2687,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Sandbrock Ranch: 70ft. lots","builder":"Highland Homes","builder_id":21,"zip":"76227","homes_available":24,"price_min":647990,"price_max":1000524,"sqft_min":3056,"sqft_max":4425,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Sandbrock Ranch: Quick Move-Ins - 60ft. lots","builder":"Highland Homes","builder_id":21,"zip":"76227","homes_available":6,"price_min":714059,"price_max":820227,"sqft_min":2945,"sqft_max":3807,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Sandbrock Ranch: New Builds - 60ft Lots","builder":"Highland Homes","builder_id":21,"zip":"76227","homes_available":15,"price_min":549990,"price_max":690990,"sqft_min":2602,"sqft_max":3803,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Providence Commons","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"76227","homes_available":11,"price_min":378990,"price_max":501990,"sqft_min":2105,"sqft_max":3531,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Lily Creek At Sutton Fields","builder":"M/I Homes","builder_id":18073,"zip":"76227","homes_available":22,"price_min":426990,"price_max":646845,"sqft_min":1834,"sqft_max":3435,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"ArrowBrooke","builder":"Bloomfield Homes","builder_id":40335,"zip":"76227","homes_available":64,"price_min":420990,"price_max":678990,"sqft_min":1672,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Sandbrock Ranch: 45ft. lots","builder":"Highland Homes","builder_id":21,"zip":"76227","homes_available":21,"price_min":394990,"price_max":572190,"sqft_min":1599,"sqft_max":2921,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Keeneland","builder":"HistoryMaker Homes   ","builder_id":40605,"zip":"76227","homes_available":26,"price_min":299990,"price_max":490990,"sqft_min":1440,"sqft_max":3531,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false},{"name":"Union Park","builder":"Bloomfield Homes","builder_id":40335,"zip":"76227","homes_available":94,"price_min":429000,"price_max":759990,"sqft_min":1840,"sqft_max":4226,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -821,7 +812,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -891,7 +882,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 5 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 7 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

@@ -1481,35 +1481,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 11 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-princeton" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>10 of 11 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-princeton" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-princeton" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-princeton" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-princeton">Builder</label>
+        <select id="nc-builder-princeton">
           <option value="">All builders</option>
           <option value="Ashton Woods">Ashton Woods</option><option value="Beazer Homes">Beazer Homes</option><option value="Centex Homes">Centex Homes</option><option value="Imagination Homes">Imagination Homes</option><option value="LGI Homes">LGI Homes</option><option value="Meritage Homes">Meritage Homes</option><option value="Pacesetter Homes Texas">Pacesetter Homes Texas</option><option value="Pulte Homes">Pulte Homes</option><option value="Starlight Homes">Starlight Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-princeton" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-princeton" type="number" placeholder="$235k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-princeton">Min price</label>
+        <input id="nc-pmin-princeton" type="number" placeholder="$235k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-princeton" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-princeton" type="number" placeholder="$500k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-princeton">Max price</label>
+        <input id="nc-pmax-princeton" type="number" placeholder="$500k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-princeton" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-princeton" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-princeton">Min beds</label>
+        <select id="nc-beds-princeton">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1518,25 +1516,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-princeton" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-princeton" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-princeton">Min sq ft</label>
+        <input id="nc-sqft-princeton" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-princeton"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-princeton" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1551,12 +1542,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-princeton"></tbody>
       </table>
     </div>
-    <p id="nc-count-princeton" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-princeton" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Whitewing Trails","builder":"Pulte Homes","zip":"75407","homes_available":29,"price_min":317990,"price_max":499990,"sqft_min":1648,"sqft_max":3698,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Princeton Heights","builder":"LGI Homes","zip":"75407","homes_available":7,"price_min":289900,"price_max":389900,"sqft_min":1242,"sqft_max":2523,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":true},{"name":"Windmore","builder":"Meritage Homes","zip":"75407","homes_available":21,"price_min":338490,"price_max":460134,"sqft_min":1833,"sqft_max":3429,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Clearhaven","builder":"Imagination Homes","zip":"75407","homes_available":1,"price_min":303949,"price_max":303949,"sqft_min":2289,"sqft_max":2289,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Ashford Crossing","builder":"Centex Homes","zip":"75407","homes_available":26,"price_min":234990,"price_max":393990,"sqft_min":1204,"sqft_max":2673,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Whitewing Trails","builder":"Beazer Homes","zip":"75407","homes_available":16,"price_min":324990,"price_max":484990,"sqft_min":1536,"sqft_max":3317,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Town Park","builder":"Pacesetter Homes Texas","zip":"75407","homes_available":3,"price_min":254990,"price_max":259990,"sqft_min":1521,"sqft_max":1622,"beds_min":3,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Clearhaven","builder":"Centex Homes","zip":"75407","homes_available":13,"price_min":261990,"price_max":345260,"sqft_min":1243,"sqft_max":2451,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Monticello Park","builder":"Starlight Homes","zip":"75407","homes_available":13,"price_min":260000,"price_max":357990,"sqft_min":1401,"sqft_max":2776,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Monticello Park","builder":"Ashton Woods","zip":"75407","homes_available":14,"price_min":315000,"price_max":424990,"sqft_min":1688,"sqft_max":3135,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true}];
+    var DATA = [{"name":"Whitewing Trails","builder":"Pulte Homes","builder_id":48641,"zip":"75407","homes_available":29,"price_min":317990,"price_max":499990,"sqft_min":1648,"sqft_max":3698,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Princeton Heights","builder":"LGI Homes","builder_id":9160,"zip":"75407","homes_available":7,"price_min":289900,"price_max":389900,"sqft_min":1242,"sqft_max":2523,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":2,"has_promo":true,"price_reduced":true},{"name":"Windmore","builder":"Meritage Homes","builder_id":4655,"zip":"75407","homes_available":21,"price_min":338490,"price_max":460134,"sqft_min":1833,"sqft_max":3429,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Clearhaven","builder":"Imagination Homes","builder_id":94322,"zip":"75407","homes_available":1,"price_min":303949,"price_max":303949,"sqft_min":2289,"sqft_max":2289,"beds_min":4,"beds_max":4,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Ashford Crossing","builder":"Centex Homes","builder_id":48600,"zip":"75407","homes_available":26,"price_min":234990,"price_max":393990,"sqft_min":1204,"sqft_max":2673,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Whitewing Trails","builder":"Beazer Homes","builder_id":379,"zip":"75407","homes_available":16,"price_min":324990,"price_max":484990,"sqft_min":1536,"sqft_max":3317,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Town Park","builder":"Pacesetter Homes Texas","builder_id":59454,"zip":"75407","homes_available":3,"price_min":254990,"price_max":259990,"sqft_min":1521,"sqft_max":1622,"beds_min":3,"beds_max":3,"baths_min":2,"baths_max":2,"has_promo":false,"price_reduced":false},{"name":"Clearhaven","builder":"Centex Homes","builder_id":48600,"zip":"75407","homes_available":13,"price_min":261990,"price_max":345260,"sqft_min":1243,"sqft_max":2451,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Monticello Park","builder":"Starlight Homes","builder_id":53457,"zip":"75407","homes_available":13,"price_min":260000,"price_max":357990,"sqft_min":1401,"sqft_max":2776,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Monticello Park","builder":"Ashton Woods","builder_id":1096,"zip":"75407","homes_available":14,"price_min":315000,"price_max":424990,"sqft_min":1688,"sqft_max":3135,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1585,7 +1576,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

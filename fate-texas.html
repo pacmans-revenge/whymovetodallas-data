@@ -1364,7 +1364,7 @@ gtag('consent', 'default', {
     <div style="width:1px;background:var(--border);flex-shrink:0;"></div>
     <div>
       <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#888;margin-bottom:0.2rem;">Homes Available (sample)</div>
-      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">158+</div>
+      <div style="font-size:1.6rem;font-weight:800;color:var(--navy);line-height:1;">200+</div>
     </div>
   </div>
 
@@ -1383,35 +1383,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing <strong>10 of 17 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-fate" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing <strong>13 of 17 communities</strong> (data sample) — <a href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-fate" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">browse the portal for the full list</a>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-fate" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-fate" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-fate">Builder</label>
+        <select id="nc-builder-fate">
           <option value="">All builders</option>
           <option value="David Weekley Homes">David Weekley Homes</option><option value="Grand Homes">Grand Homes</option><option value="Highland Homes">Highland Homes</option><option value="K. Hovnanian® Homes">K. Hovnanian® Homes</option><option value="Perry Homes">Perry Homes</option><option value="Tri Pointe Homes">Tri Pointe Homes</option><option value="UnionMain Homes">UnionMain Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-fate" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-fate" type="number" placeholder="$350k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-fate">Min price</label>
+        <input id="nc-pmin-fate" type="number" placeholder="$350k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-fate" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-fate" type="number" placeholder="$858k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-fate">Max price</label>
+        <input id="nc-pmax-fate" type="number" placeholder="$858k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-fate" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-fate" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-fate">Min beds</label>
+        <select id="nc-beds-fate">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1420,25 +1418,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-fate" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-fate" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-fate">Min sq ft</label>
+        <input id="nc-sqft-fate" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-fate"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-fate" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1453,12 +1444,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-fate"></tbody>
       </table>
     </div>
-    <p id="nc-count-fate" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-fate" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Avondale 40'","builder":"Perry Homes","zip":"75087","homes_available":15,"price_min":349900,"price_max":516900,"sqft_min":1561,"sqft_max":2945,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Edgewater Garden Series","builder":"David Weekley Homes","zip":"75189","homes_available":6,"price_min":361990,"price_max":419990,"sqft_min":1740,"sqft_max":2439,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Monterra - Classics","builder":"David Weekley Homes","zip":"75087","homes_available":15,"price_min":542990,"price_max":714990,"sqft_min":2578,"sqft_max":3763,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Monterra","builder":"Grand Homes","zip":"75087","homes_available":16,"price_min":515900,"price_max":857850,"sqft_min":2377,"sqft_max":4539,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Edgewater","builder":"UnionMain Homes","zip":"75189","homes_available":24,"price_min":373990,"price_max":685000,"sqft_min":1646,"sqft_max":3668,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Edgewater","builder":"Grand Homes","zip":"75189","homes_available":27,"price_min":414900,"price_max":669900,"sqft_min":1895,"sqft_max":3541,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Avondale 45'","builder":"Perry Homes","zip":"75087","homes_available":15,"price_min":449900,"price_max":538900,"sqft_min":1910,"sqft_max":2594,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Avondale","builder":"Tri Pointe Homes","zip":"75087","homes_available":0,"price_min":525990,"price_max":525990,"sqft_min":1627,"sqft_max":2506,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"has_promo":true,"price_reduced":false},{"name":"Monterra: 50ft. lots","builder":"Highland Homes","zip":"75087","homes_available":24,"price_min":399990,"price_max":560990,"sqft_min":1629,"sqft_max":3143,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Monterra","builder":"K. Hovnanian® Homes","zip":"75087","homes_available":16,"price_min":524900,"price_max":621000,"sqft_min":2823,"sqft_max":3796,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Avondale 40'","builder":"Perry Homes","builder_id":68,"zip":"75087","homes_available":15,"price_min":349900,"price_max":516900,"sqft_min":1561,"sqft_max":2945,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Edgewater Garden Series","builder":"David Weekley Homes","builder_id":23,"zip":"75189","homes_available":6,"price_min":361990,"price_max":419990,"sqft_min":1740,"sqft_max":2439,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Monterra - Classics","builder":"David Weekley Homes","builder_id":23,"zip":"75087","homes_available":15,"price_min":542990,"price_max":714990,"sqft_min":2578,"sqft_max":3763,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"has_promo":true,"price_reduced":true},{"name":"Monterra","builder":"Grand Homes","builder_id":468,"zip":"75087","homes_available":16,"price_min":515900,"price_max":857850,"sqft_min":2377,"sqft_max":4539,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Edgewater","builder":"UnionMain Homes","builder_id":56527,"zip":"75189","homes_available":24,"price_min":373990,"price_max":685000,"sqft_min":1646,"sqft_max":3668,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Edgewater","builder":"Grand Homes","builder_id":468,"zip":"75189","homes_available":27,"price_min":414900,"price_max":669900,"sqft_min":1895,"sqft_max":3541,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Avondale 45'","builder":"Perry Homes","builder_id":68,"zip":"75087","homes_available":15,"price_min":449900,"price_max":538900,"sqft_min":1910,"sqft_max":2594,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":true},{"name":"Avondale","builder":"Tri Pointe Homes","builder_id":61719,"zip":"75087","homes_available":0,"price_min":525990,"price_max":525990,"sqft_min":1627,"sqft_max":2506,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"has_promo":true,"price_reduced":false},{"name":"Monterra: 50ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75087","homes_available":24,"price_min":399990,"price_max":560990,"sqft_min":1629,"sqft_max":3143,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Monterra","builder":"K. Hovnanian® Homes","builder_id":2267,"zip":"75087","homes_available":16,"price_min":524900,"price_max":621000,"sqft_min":2823,"sqft_max":3796,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Edgewater Classic Series","builder":"David Weekley Homes","builder_id":23,"zip":"75189","homes_available":6,"price_min":418990,"price_max":485990,"sqft_min":2049,"sqft_max":3140,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false},{"name":"Monterra - Gardens","builder":"David Weekley Homes","builder_id":23,"zip":"75087","homes_available":14,"price_min":414990,"price_max":539990,"sqft_min":1885,"sqft_max":2940,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":true},{"name":"Monterra: 70ft. lots","builder":"Highland Homes","builder_id":21,"zip":"75087","homes_available":22,"price_min":516990,"price_max":686990,"sqft_min":2318,"sqft_max":3803,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"has_promo":true,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1487,7 +1478,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'
@@ -1557,7 +1548,7 @@ gtag('consent', 'default', {
   })();
   </script>
 
-  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 6 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
+  <p style="margin-top:0.85rem;font-size:0.88rem;color:#555;"><strong style="color:var(--gold);">Note:</strong> 9 of the sampled communities currently have active builder promotions or incentives — ask your agent to confirm before touring.</p>
 
   <p style="font-size:0.88rem;color:#555;margin-top:1.25rem;">Builder inventory, pricing, and availability change frequently — the data above reflects a recent snapshot. Browse the live portal for current listings.</p>
 

@@ -1355,35 +1355,33 @@ gtag('consent', 'default', {
   
   <!-- ── Community table (filterable) ──────────────────────────────────────── -->
   <div style="margin:2rem 0 0.5rem;">
-    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.5rem;">Browse Communities</h3>
-    <p style="font-size:0.82rem;color:#888;margin:0 0 1rem;">Showing all <strong>5 communities</strong>.</p>
+    <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.35rem;">Browse Communities</h3>
+    <p class="kc-nc-table-note" style="margin:0 0 0.85rem;">Showing all <strong>5 communities</strong>.</p>
 
     <!-- Filters -->
-    <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:flex-end;background:var(--ivory);border:1px solid var(--border);border-radius:8px;padding:0.85rem 1rem;margin-bottom:1rem;">
+    <div class="kc-nc-filters">
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-builder-fort-worth" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Builder</label>
-        <select id="nc-builder-fort-worth" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);min-width:160px;">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-builder-fort-worth">Builder</label>
+        <select id="nc-builder-fort-worth">
           <option value="">All builders</option>
           <option value="DRB Homes">DRB Homes</option><option value="Highland Homes">Highland Homes</option><option value="Toll Brothers">Toll Brothers</option><option value="William Ryan Homes">William Ryan Homes</option>
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmin-fort-worth" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min price</label>
-        <input id="nc-pmin-fort-worth" type="number" placeholder="$385k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmin-fort-worth">Min price</label>
+        <input id="nc-pmin-fort-worth" type="number" placeholder="$385k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-pmax-fort-worth" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Max price</label>
-        <input id="nc-pmax-fort-worth" type="number" placeholder="$800k" step="25000"
-          style="width:110px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-pmax-fort-worth">Max price</label>
+        <input id="nc-pmax-fort-worth" type="number" placeholder="$800k" step="25000">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-beds-fort-worth" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min beds</label>
-        <select id="nc-beds-fort-worth" style="font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-beds-fort-worth">Min beds</label>
+        <select id="nc-beds-fort-worth">
           <option value="0">Any</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -1392,25 +1390,18 @@ gtag('consent', 'default', {
         </select>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label for="nc-sqft-fort-worth" style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#888;">Min sq ft</label>
-        <input id="nc-sqft-fort-worth" type="number" placeholder="No min" step="250"
-          style="width:100px;font-size:0.82rem;border:1px solid var(--border);border-radius:6px;padding:5px 8px;background:white;color:var(--navy);">
+      <div class="kc-nc-filter-group">
+        <label class="kc-nc-filter-label" for="nc-sqft-fort-worth">Min sq ft</label>
+        <input id="nc-sqft-fort-worth" type="number" placeholder="No min" step="250">
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.25rem;">
-        <label style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:transparent;">Reset</label>
-        <button id="nc-clear-fort-worth"
-          style="font-size:0.78rem;border:1px solid var(--border);border-radius:6px;padding:5px 12px;background:white;color:#888;cursor:pointer;">
-          Clear
-        </button>
-      </div>
+      <button id="nc-clear-fort-worth" class="kc-nc-filter-clear">Clear</button>
 
     </div><!-- /filters -->
 
     <!-- Table -->
-    <div style="overflow-x:auto;">
-      <table class="warranty-table" style="min-width:620px;width:100%;">
+    <div class="kc-table-wrap">
+      <table class="kc-table" style="min-width:580px;">
         <thead>
           <tr>
             <th>Community</th>
@@ -1425,12 +1416,12 @@ gtag('consent', 'default', {
         <tbody id="nc-tbody-fort-worth"></tbody>
       </table>
     </div>
-    <p id="nc-count-fort-worth" style="font-size:0.78rem;color:#888;margin:0.4rem 0 0;"></p>
+    <p id="nc-count-fort-worth" class="kc-nc-table-note"></p>
   </div>
 
   <script>
   (function () {
-    var DATA = [{"name":"Wildflower Ranch - Select Collection","builder":"Toll Brothers","zip":"76247","homes_available":10,"price_min":505995,"price_max":734000,"sqft_min":2499,"sqft_max":3722,"beds_min":3,"beds_max":4,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Wildflower Ranch","builder":"DRB Homes","zip":"76247","homes_available":12,"price_min":384990,"price_max":534890,"sqft_min":1850,"sqft_max":3504,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Wildflower Ranch: 60ft. lots","builder":"Highland Homes","zip":"76247","homes_available":16,"price_min":529990,"price_max":799990,"sqft_min":2602,"sqft_max":3917,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Wildflower Ranch","builder":"William Ryan Homes","zip":"76247","homes_available":23,"price_min":384990,"price_max":624990,"sqft_min":1712,"sqft_max":3643,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Wildflower Ranch - Elite Collection","builder":"Toll Brothers","zip":"76247","homes_available":14,"price_min":399995,"price_max":649000,"sqft_min":1992,"sqft_max":3363,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
+    var DATA = [{"name":"Wildflower Ranch - Select Collection","builder":"Toll Brothers","builder_id":10549,"zip":"76247","homes_available":10,"price_min":505995,"price_max":734000,"sqft_min":2499,"sqft_max":3722,"beds_min":3,"beds_max":4,"baths_min":3,"baths_max":4,"has_promo":false,"price_reduced":false},{"name":"Wildflower Ranch","builder":"DRB Homes","builder_id":94661,"zip":"76247","homes_available":12,"price_min":384990,"price_max":534890,"sqft_min":1850,"sqft_max":3504,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":true,"price_reduced":false},{"name":"Wildflower Ranch: 60ft. lots","builder":"Highland Homes","builder_id":21,"zip":"76247","homes_available":16,"price_min":529990,"price_max":799990,"sqft_min":2602,"sqft_max":3917,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"has_promo":true,"price_reduced":false},{"name":"Wildflower Ranch","builder":"William Ryan Homes","builder_id":85943,"zip":"76247","homes_available":23,"price_min":384990,"price_max":624990,"sqft_min":1712,"sqft_max":3643,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"has_promo":false,"price_reduced":true},{"name":"Wildflower Ranch - Elite Collection","builder":"Toll Brothers","builder_id":10549,"zip":"76247","homes_available":14,"price_min":399995,"price_max":649000,"sqft_min":1992,"sqft_max":3363,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"has_promo":false,"price_reduced":false}];
 
     function fmt(n) {
       if (!n || n === 0) return null;
@@ -1459,7 +1450,7 @@ gtag('consent', 'default', {
           ? r.sqft_min.toLocaleString() + '\u2013' + r.sqft_max.toLocaleString()
           : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
         var promo = r.has_promo
-          ? '<span style="display:inline-block;background:#fffbf0;color:#b08d57;border:1px solid #e8d8b0;border-radius:4px;font-size:0.7rem;font-weight:700;padding:1px 6px;letter-spacing:0.04em;">PROMO</span>'
+          ? '<span class="kc-promo-badge">PROMO</span>'
           : '';
         return '<tr>'
           + '<td style="font-weight:500;">' + r.name + '</td>'

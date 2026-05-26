@@ -234,6 +234,68 @@
 .kc-table .kc-yes { color: var(--green); font-weight: 700; }
 .kc-table .kc-no  { color: var(--amber); }
 .kc-table .kc-hl  { background: #fffbf2 !important; font-weight: 600; }
+.kc-table tbody tr:hover td { background: var(--ivory); }
+
+/* ── New-construction community table filters ── */
+.kc-nc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: flex-end;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+}
+.kc-nc-filter-group { display: flex; flex-direction: column; gap: 0.2rem; }
+.kc-nc-filter-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+}
+.kc-nc-filters select,
+.kc-nc-filters input[type="number"] {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 0.85rem;
+  background: var(--white);
+  color: var(--navy);
+}
+.kc-nc-filters select { min-width: 150px; cursor: pointer; }
+.kc-nc-filters input[type="number"] { width: 110px; }
+.kc-nc-filter-clear {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--white);
+  color: #888;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: color 0.15s, border-color 0.15s;
+}
+.kc-nc-filter-clear:hover { color: var(--navy); border-color: var(--navy); }
+.kc-nc-table-note { font-size: 0.78rem; color: #888; margin: 0.4rem 0 0; line-height: 1.5; }
+.kc-promo-badge {
+  display: inline-block;
+  background: #fffbf0;
+  color: #b08d57;
+  border: 1px solid #e8d8b0;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 680px) {
+  .kc-nc-filters { gap: 0.5rem; padding: 0.75rem; }
+  .kc-nc-filters select { min-width: 120px; }
+  .kc-nc-filters input[type="number"] { width: 90px; }
+}
 
 /* ── Callout boxes ─── */
 .kc-callout {
