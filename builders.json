@@ -41,7 +41,11 @@
         "complaint_count_3yr": 37,
         "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/highland-homes--0875-3000323",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "warranty response time",
+          "finish quality",
+          "plumbing workmanship"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
