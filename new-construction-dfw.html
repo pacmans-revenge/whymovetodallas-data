@@ -115,6 +115,8 @@ li{margin-bottom:0.25rem;}
 .suburb-card .sc-badge{display:inline-block;font-size:0.68rem;font-weight:700;padding:0.15rem 0.45rem;border-radius:3px;margin-top:0.5rem;text-transform:uppercase;letter-spacing:0.04em;}
 .sc-badge--hot{background:#fff3e0;color:#c85a00;}
 .sc-badge--value{background:#e8f5e9;color:#1a6b3a;}
+.sc-listings-link{display:block;margin-top:0.65rem;font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;border-top:1px solid var(--border);padding-top:0.55rem;}
+.sc-listings-link:hover{color:var(--gold);}
 .sc-badge--premium{background:#e8eaf6;color:#3949ab;}
 .sc-badge--growing{background:#f3e5f5;color:#7b1fa2;}
 .isd-grade-a{color:var(--green);font-weight:700;}
@@ -146,12 +148,17 @@ td:first-child{font-weight:600;}
 .grade-a-plus{color:var(--green);font-weight:700;}
 .grade-a{color:var(--green);font-weight:700;}
 .grade-b-plus{color:var(--blue);font-weight:700;}
+.grade-c{color:var(--orange);font-weight:700;}
+.grade-d{color:#c62828;font-weight:700;}
 .score-bar-wrap{width:60px;height:5px;background:#e8e4dc;border-radius:3px;margin-top:3px;}
 .score-bar{height:5px;background:var(--gold);border-radius:3px;}
 .bbb-a-plus{color:var(--green);}
 .bbb-a{color:var(--green);}
 .bbb-a-minus{color:var(--blue);}
 .bbb-b-minus{color:var(--orange);}
+.bbb-c{color:var(--orange);}
+.bbb-d-minus{color:#c62828;}
+.bbb-f{color:#c62828;font-weight:700;}
 .bbb-nr{color:#999;}
 .review-stars{color:var(--gold);font-size:0.82rem;}
 .table-note{font-size:0.78rem;color:#777;margin-top:0.5rem;line-height:1.5;}
@@ -714,7 +721,7 @@ gtag('consent', 'default', {
 
   <h3>Four Reasons New Construction Works Especially Well for Relocating Families</h3>
 
-  <div class="tier-grid">
+  <div class="tier-grid" style="grid-template-columns:repeat(2,1fr);">
     <div class="tier-card">
       <span class="price-tag">Reason 1</span>
       <h3>You Know Exactly What You're Getting</h3>
@@ -729,6 +736,11 @@ gtag('consent', 'default', {
       <span class="price-tag">Reason 3</span>
       <h3>Master-Planned Community = Built-In Community</h3>
       <p>The biggest worry for relocating families isn't the house — it's belonging. Master-planned communities in suburbs like <a href="/prosper-texas">Prosper</a>, <a href="/celina-texas">Celina</a>, and <a href="/frisco-texas">Frisco</a> are designed for exactly this: pools, trails, event programming, and neighbors all starting fresh at the same time.</p>
+    </div>
+    <div class="tier-card">
+      <span class="price-tag">Reason 4</span>
+      <h3>Your Closing Timeline Is Contractual</h3>
+      <p>Resale deals fall through — the seller changes their mind, the inspection blows up, the chain collapses. A new construction contract gives you a builder-committed closing date you can plan a cross-country move around. For families coordinating job start dates, school enrollment deadlines, and movers booked six weeks out, that certainty is worth a lot.</p>
     </div>
   </div>
 
@@ -792,6 +804,7 @@ gtag('consent', 'default', {
         America's fastest-growing city; top-rated schools, The Star, world-class amenities
       </div>
       <span class="sc-badge sc-badge--premium">Premium</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-frisco" target="_blank" rel="noopener">Browse New Homes in Frisco →</a>
     </div>
 
     <div class="suburb-card">
@@ -803,6 +816,7 @@ gtag('consent', 'default', {
         Master-planned communities, explosive growth, newer campuses opening every year
       </div>
       <span class="sc-badge sc-badge--hot">Hottest Growth</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-prosper" target="_blank" rel="noopener">Browse New Homes in Prosper →</a>
     </div>
 
     <div class="suburb-card">
@@ -814,6 +828,7 @@ gtag('consent', 'default', {
         Most builder options in DFW; affordable entry into growing North Collin corridor
       </div>
       <span class="sc-badge sc-badge--value">Best Value</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-celina" target="_blank" rel="noopener">Browse New Homes in Celina →</a>
     </div>
 
     <div class="suburb-card">
@@ -825,6 +840,7 @@ gtag('consent', 'default', {
         Historic downtown charm + active new construction on north and east sides
       </div>
       <span class="sc-badge sc-badge--growing">Established + Growing</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-mckinney" target="_blank" rel="noopener">Browse New Homes in McKinney →</a>
     </div>
 
     <div class="suburb-card">
@@ -836,6 +852,7 @@ gtag('consent', 'default', {
         Lake Ray Hubbard lifestyle; Dallas commute under 35 min; strong A-rated schools
       </div>
       <span class="sc-badge sc-badge--value">Lake Life + Schools</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-rockwall" target="_blank" rel="noopener">Browse New Homes in Rockwall →</a>
     </div>
 
     <div class="suburb-card">
@@ -847,6 +864,7 @@ gtag('consent', 'default', {
         Small-town feel, Niche's #1-ranked ISD in North Texas, equestrian estates
       </div>
       <span class="sc-badge sc-badge--premium">Top-Rated Schools</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-argyle" target="_blank" rel="noopener">Browse New Homes in Argyle →</a>
     </div>
 
     <div class="suburb-card">
@@ -858,6 +876,7 @@ gtag('consent', 'default', {
         Fast-growing corridor north of Denton; affordable new construction, small class sizes
       </div>
       <span class="sc-badge sc-badge--value">Affordable Growth</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-aubrey" target="_blank" rel="noopener">Browse New Homes in Aubrey →</a>
     </div>
 
     <div class="suburb-card">
@@ -869,6 +888,7 @@ gtag('consent', 'default', {
         Strategic I-35W corridor location; master-planned communities growing fast
       </div>
       <span class="sc-badge sc-badge--growing">I-35 Corridor</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-northlake" target="_blank" rel="noopener">Browse New Homes in Northlake →</a>
     </div>
 
     <div class="suburb-card">
@@ -880,6 +900,7 @@ gtag('consent', 'default', {
         Small-town community feel with A-rated schools; strong value north of McKinney
       </div>
       <span class="sc-badge sc-badge--value">Hidden Gem</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-melissa" target="_blank" rel="noopener">Browse New Homes in Melissa →</a>
     </div>
 
     <div class="suburb-card">
@@ -891,6 +912,7 @@ gtag('consent', 'default', {
         Rockwall ISD schools at lower price points; growing community east of Dallas
       </div>
       <span class="sc-badge sc-badge--value">Value Play</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-fate" target="_blank" rel="noopener">Browse New Homes in Fate →</a>
     </div>
 
     <div class="suburb-card">
@@ -902,6 +924,7 @@ gtag('consent', 'default', {
         One of the most affordable new construction markets near Dallas; rapid growth
       </div>
       <span class="sc-badge sc-badge--value">Most Affordable</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-forney" target="_blank" rel="noopener">Browse New Homes in Forney →</a>
     </div>
 
     <div class="suburb-card">
@@ -913,9 +936,18 @@ gtag('consent', 'default', {
         Very affordable; ISD is improving but note the current C rating if schools are a priority
       </div>
       <span class="sc-badge sc-badge--value">Budget Entry</span>
+      <a class="sc-listings-link" href="https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-anna" target="_blank" rel="noopener">Browse New Homes in Anna →</a>
     </div>
 
   </div>
+
+  <p style="text-align:center;margin-top:1.5rem;">
+    <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener"
+       style="display:inline-block;background:var(--navy);color:#fff;padding:0.75rem 1.75rem;border-radius:6px;font-weight:600;font-size:0.95rem;text-decoration:none;letter-spacing:0.02em;">
+      Browse All DFW New Construction →
+    </a>
+    <span style="display:block;font-size:0.78rem;color:#888;margin-top:0.5rem;">Searches through Kristen's NewHomeSource portal — listings update daily</span>
+  </p>
 
   <p style="margin-top:1.25rem;font-size:0.9rem;color:#555;">
     Also active: <a href="/denton-texas">Denton</a> (10 builders, UNT/TWU presence), <a href="/wylie-texas">Wylie</a> (9 builders, Wylie ISD A+), <a href="/little-elm-texas">Little Elm</a> (5 builders, Little Elm ISD), <a href="/princeton-texas">Princeton</a> (4 builders, Princeton ISD), <a href="/midlothian-texas">Midlothian</a> (6 builders, Midlothian ISD B+), and <a href="/waxahachie-texas">Waxahachie</a> (7 builders, Waxahachie ISD) for families looking south of Dallas.
@@ -924,7 +956,7 @@ gtag('consent', 'default', {
 
 <!-- ─── SECTION 4: BUILDER COMPARISON TABLE ──────────────────────────── -->
 <section class="section" id="compare">
-  <h2>DFW Home Builder Comparison: All 20 Builders Ranked</h2>
+  <h2>DFW Home Builder Comparison: All 32 Builders Ranked</h2>
   <p>Every major DFW builder scored across six categories: customer satisfaction, responsiveness, value, BBB standing, warranty quality, and active suburb coverage. Scores are calculated from TrustBuilder (NHS Professional / NTREIS verified reviews), Google reviews, BBB data, and warranty specifications.</p>
 
   <div class="method-box">
@@ -974,60 +1006,93 @@ gtag('consent', 'default', {
         </tr>
       </thead>
       <tbody id="buildersTableBody">
-        <tr data-tier="production" data-score="84" data-grade="A" data-name="D.R. Horton">
-          <td class="builder-name"><a href="https://www.drhorton.com/texas/dallas-fort-worth" target="_blank" rel="noopener">D.R. Horton</a></td>
+                <tr data-tier="production" data-score="98" data-grade="A+" data-name="Southgate Homes">
+          <td class="builder-name"><a href="https://southgatehomes.com/communities/" target="_blank" rel="noopener">Southgate Homes</a></td>
           <td><span class="tier-pill tier-production">Production</span></td>
-          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
-          <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 4.3 <small>(314 reviews)</small></td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$250k–$500k</td>
-          <td>1</td>
-        </tr>
-        <tr data-tier="production" data-score="90" data-grade="A+" data-name="Beazer Homes">
-          <td class="builder-name"><a href="https://www.beazer.com/dallas-fort-worth-homebuilder" target="_blank" rel="noopener">Beazer Homes</a></td>
-          <td><span class="tier-pill tier-production">Production</span></td>
-          <td><strong>90</strong><div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div></td>
+          <td><strong>98</strong><div class="score-bar-wrap"><div class="score-bar" style="width:98%"></div></div></td>
           <td><span class="grade-a-plus">A+</span></td>
-          <td><span class="review-stars">★</span> 4.6 <small>(911 — TrustBuilder)</small></td>
+          <td><span style="color:#999;">—</span></td>
           <td class="bbb-a-plus">A+</td>
           <td class="warranty-10">10-yr</td>
-          <td>$280k–$600k</td>
-          <td>1</td>
+          <td>$724k–$1.2M</td>
+          <td>3</td>
         </tr>
-        <tr data-tier="production" data-score="89" data-grade="A" data-name="K. Hovnanian Homes">
-          <td class="builder-name"><a href="https://www.khov.com/find-your-home/texas/dallas-fort-worth" target="_blank" rel="noopener">K. Hovnanian Homes</a></td>
+        <tr data-tier="production" data-score="97" data-grade="A+" data-name="Normandy Homes">
+          <td class="builder-name"><a href="https://normandyhomes.com/find-your-home/" target="_blank" rel="noopener">Normandy Homes</a></td>
           <td><span class="tier-pill tier-production">Production</span></td>
-          <td><strong>89</strong><div class="score-bar-wrap"><div class="score-bar" style="width:89%"></div></div></td>
-          <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 4.3 <small>(366 — TrustBuilder)</small></td>
+          <td><strong>97</strong><div class="score-bar-wrap"><div class="score-bar" style="width:97%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
           <td class="bbb-a-plus">A+</td>
           <td class="warranty-10">10-yr</td>
-          <td>$280k–$600k</td>
-          <td>11</td>
+          <td>$370k–$800k</td>
+          <td>5</td>
         </tr>
-        <tr data-tier="production" data-score="76" data-grade="B+" data-name="Pulte Homes">
-          <td class="builder-name"><a href="https://www.pulte.com/homes/texas/dallas-fort-worth" target="_blank" rel="noopener">Pulte Homes</a></td>
+        <tr data-tier="semi-custom" data-score="96" data-grade="A+" data-name="Grand Homes">
+          <td class="builder-name"><a href="https://www.grandhomes.com/index.cfm?p=communities" target="_blank" rel="noopener">Grand Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>96</strong><div class="score-bar-wrap"><div class="score-bar" style="width:96%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$437k–$1.1M</td>
+          <td>14</td>
+        </tr>
+        <tr data-tier="production" data-score="95" data-grade="A+" data-name="Taylor Morrison">
+          <td class="builder-name"><a href="https://www.taylormorrison.com/tx/dallas" target="_blank" rel="noopener">Taylor Morrison</a></td>
           <td><span class="tier-pill tier-production">Production</span></td>
-          <td><strong>76</strong><div class="score-bar-wrap"><div class="score-bar" style="width:76%"></div></div></td>
-          <td><span class="grade-b-plus">B+</span></td>
-          <td><span class="review-stars">★</span> 4.2 <small>(499 — TrustBuilder)</small></td>
+          <td><strong>95</strong><div class="score-bar-wrap"><div class="score-bar" style="width:95%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$257k–$725k</td>
+          <td>8</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="94" data-grade="A+" data-name="Perry Homes">
+          <td class="builder-name"><a href="https://www.perryhomes.com/new-homes/texas/dallas" target="_blank" rel="noopener">Perry Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>94</strong><div class="score-bar-wrap"><div class="score-bar" style="width:94%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$300k–$800k</td>
+          <td>38</td>
+        </tr>
+        <tr data-tier="production" data-score="93" data-grade="A+" data-name="Century Communities">
+          <td class="builder-name"><a href="https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/" target="_blank" rel="noopener">Century Communities</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>93</strong><div class="score-bar-wrap"><div class="score-bar" style="width:93%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$280k–$450k</td>
+          <td>3</td>
+        </tr>
+        <tr data-tier="production" data-score="92" data-grade="A+" data-name="Riverside Homebuilders">
+          <td class="builder-name"><a href="https://www.riversidehomebuilders.com/communities/" target="_blank" rel="noopener">Riverside Homebuilders</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>92</strong><div class="score-bar-wrap"><div class="score-bar" style="width:92%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span style="color:#999;">—</span></td>
           <td class="bbb-nr">NR</td>
           <td class="warranty-10">10-yr</td>
-          <td>$350k–$900k</td>
-          <td>18</td>
+          <td>$300k–$619k</td>
+          <td>4</td>
         </tr>
-        <tr data-tier="production" data-score="73" data-grade="B+" data-name="Meritage Homes">
-          <td class="builder-name"><a href="https://www.meritagehomes.com/state/tx/dallas-fort-worth" target="_blank" rel="noopener">Meritage Homes</a></td>
-          <td><span class="tier-pill tier-production">Production</span></td>
-          <td><strong>73</strong><div class="score-bar-wrap"><div class="score-bar" style="width:73%"></div></div></td>
-          <td><span class="grade-b-plus">B+</span></td>
-          <td><span class="review-stars">★</span> 3.3 <small>(62)</small></td>
+        <tr data-tier="custom" data-score="91" data-grade="A+" data-name="Kindred Homes">
+          <td class="builder-name"><a href="https://www.kindredhomes.com/communities/" target="_blank" rel="noopener">Kindred Homes</a></td>
+          <td><span class="tier-pill tier-custom">Custom</span></td>
+          <td><strong>91</strong><div class="score-bar-wrap"><div class="score-bar" style="width:91%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span class="review-stars">★</span> 4.4 <small>(23)</small></td>
           <td class="bbb-a-plus">A+</td>
           <td class="warranty-10">10-yr</td>
-          <td>$300k–$700k</td>
-          <td>1</td>
+          <td>$270k–$450k</td>
+          <td>11</td>
         </tr>
         <tr data-tier="production" data-score="90" data-grade="A+" data-name="Toll Brothers">
           <td class="builder-name"><a href="https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dallas-Fort-Worth" target="_blank" rel="noopener">Toll Brothers</a></td>
@@ -1040,19 +1105,30 @@ gtag('consent', 'default', {
           <td>$700k–$3.0M</td>
           <td>18</td>
         </tr>
-        <tr data-tier="semi-custom" data-score="84" data-grade="A" data-name="Bloomfield Homes">
-          <td class="builder-name"><a href="https://www.bloomfieldhomes.com" target="_blank" rel="noopener">Bloomfield Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
-          <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 4.3 <small>(1,038 — TrustBuilder)</small></td>
-          <td class="bbb-a-minus">A−</td>
-          <td class="warranty-6">6-yr</td>
+        <tr data-tier="production" data-score="90" data-grade="A+" data-name="Beazer Homes">
+          <td class="builder-name"><a href="https://www.beazer.com/texas/dallas-fort-worth-area" target="_blank" rel="noopener">Beazer Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>90</strong><div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span class="review-stars">★</span> 4.6 <small>(911 — TrustBuilder)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
           <td>$280k–$600k</td>
-          <td>30</td>
+          <td>1</td>
+        </tr>
+        <tr data-tier="custom" data-score="90" data-grade="A+" data-name="Coventry Homes">
+          <td class="builder-name"><a href="https://www.coventryhomes.com/new-homes/tx/dallas-ft-worth/" target="_blank" rel="noopener">Coventry Homes</a></td>
+          <td><span class="tier-pill tier-custom">Custom</span></td>
+          <td><strong>90</strong><div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div></td>
+          <td><span class="grade-a-plus">A+</span></td>
+          <td><span class="review-stars">★</span> 4.6 <small>(109)</small></td>
+          <td class="bbb-nr">NR</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$350k–$700k</td>
+          <td>17</td>
         </tr>
         <tr data-tier="semi-custom" data-score="89" data-grade="A" data-name="Highland Homes">
-          <td class="builder-name"><a href="https://www.highlandhomes.com/dallas-fort-worth" target="_blank" rel="noopener">Highland Homes</a></td>
+          <td class="builder-name"><a href="https://www.highlandhomes.com/new-homes/texas/dfw" target="_blank" rel="noopener">Highland Homes</a></td>
           <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
           <td><strong>89</strong><div class="score-bar-wrap"><div class="score-bar" style="width:89%"></div></div></td>
           <td><span class="grade-a">A</span></td>
@@ -1062,19 +1138,8 @@ gtag('consent', 'default', {
           <td>$300k–$1.2M</td>
           <td>26</td>
         </tr>
-        <tr data-tier="semi-custom" data-score="94" data-grade="A+" data-name="Perry Homes">
-          <td class="builder-name"><a href="https://www.perryhomes.com/new-homes/texas/dfw" target="_blank" rel="noopener">Perry Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>94</strong><div class="score-bar-wrap"><div class="score-bar" style="width:94%"></div></div></td>
-          <td><span class="grade-a-plus">A+</span></td>
-          <td>—</td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$300k–$800k</td>
-          <td>38</td>
-        </tr>
         <tr data-tier="semi-custom" data-score="89" data-grade="A" data-name="David Weekley Homes">
-          <td class="builder-name"><a href="https://www.davidweekleyhomes.com/new-homes/tx/dallas" target="_blank" rel="noopener">David Weekley Homes</a></td>
+          <td class="builder-name"><a href="https://www.davidweekleyhomes.com/new-homes/us/texas/dallas" target="_blank" rel="noopener">David Weekley Homes</a></td>
           <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
           <td><strong>89</strong><div class="score-bar-wrap"><div class="score-bar" style="width:89%"></div></div></td>
           <td><span class="grade-a">A</span></td>
@@ -1084,74 +1149,19 @@ gtag('consent', 'default', {
           <td>$400k–$1.5M</td>
           <td>7</td>
         </tr>
-        <tr data-tier="semi-custom" data-score="79" data-grade="B+" data-name="Drees Homes">
-          <td class="builder-name"><a href="https://www.dreeshomes.com/new-homes/texas/dallas-fort-worth" target="_blank" rel="noopener">Drees Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>79</strong><div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div></td>
-          <td><span class="grade-b-plus">B+</span></td>
-          <td><span class="review-stars">★</span> 3.3 <small>(80 — TrustBuilder)</small></td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$500k–$2.0M</td>
-          <td>0</td>
-        </tr>
-        <tr data-tier="semi-custom" data-score="80" data-grade="A" data-name="Trophy Signature Homes">
-          <td class="builder-name"><a href="https://trophysignaturehomes.com" target="_blank" rel="noopener">Trophy Signature Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>80</strong><div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div></td>
+        <tr data-tier="production" data-score="89" data-grade="A" data-name="K. Hovnanian Homes">
+          <td class="builder-name"><a href="https://www.khov.com/new-homes/texas/dallas" target="_blank" rel="noopener">K. Hovnanian Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>89</strong><div class="score-bar-wrap"><div class="score-bar" style="width:89%"></div></div></td>
           <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 3.4 <small>(222)</small></td>
+          <td><span class="review-stars">★</span> 4.3 <small>(366 — TrustBuilder)</small></td>
           <td class="bbb-a-plus">A+</td>
           <td class="warranty-10">10-yr</td>
-          <td>$300k–$600k</td>
-          <td>22</td>
-        </tr>
-        <tr data-tier="semi-custom" data-score="86" data-grade="A" data-name="GFO Homes">
-          <td class="builder-name"><a href="https://gfohomes.com" target="_blank" rel="noopener">GFO Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>86</strong><div class="score-bar-wrap"><div class="score-bar" style="width:86%"></div></div></td>
-          <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 4.2 <small>(15)</small></td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-6">6-yr</td>
-          <td>$400k–$800k</td>
-          <td>0</td>
-        </tr>
-        <tr data-tier="semi-custom" data-score="84" data-grade="A" data-name="American Legend Homes">
-          <td class="builder-name"><a href="https://www.americanlegendhomes.com" target="_blank" rel="noopener">American Legend Homes</a></td>
-          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
-          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
-          <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 3.8 <small>(46)</small></td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$400k–$900k</td>
-          <td>0</td>
-        </tr>
-        <tr data-tier="custom" data-score="91" data-grade="A+" data-name="Kindred Homes">
-          <td class="builder-name"><a href="https://www.kindredhomes.com" target="_blank" rel="noopener">Kindred Homes</a></td>
-          <td><span class="tier-pill tier-custom">Custom</span></td>
-          <td><strong>91</strong><div class="score-bar-wrap"><div class="score-bar" style="width:91%"></div></div></td>
-          <td><span class="grade-a-plus">A+</span></td>
-          <td><span class="review-stars">★</span> 4.4 <small>(23)</small></td>
-          <td class="bbb-a-plus">A+</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$270k–$450k</td>
+          <td>$280k–$600k</td>
           <td>11</td>
         </tr>
-        <tr data-tier="custom" data-score="90" data-grade="A+" data-name="Coventry Homes">
-          <td class="builder-name"><a href="https://www.coventryhomes.com" target="_blank" rel="noopener">Coventry Homes</a></td>
-          <td><span class="tier-pill tier-custom">Custom</span></td>
-          <td><strong>90</strong><div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div></td>
-          <td><span class="grade-a-plus">A+</span></td>
-          <td><span class="review-stars">★</span> 4.6 <small>(109)</small></td>
-          <td>—</td>
-          <td class="warranty-10">10-yr</td>
-          <td>$350k–$700k</td>
-          <td>17</td>
-        </tr>
         <tr data-tier="custom" data-score="87" data-grade="A" data-name="Pacesetter Homes">
-          <td class="builder-name"><a href="https://www.pacesetterhouston.com" target="_blank" rel="noopener">Pacesetter Homes</a></td>
+          <td class="builder-name"><a href="https://www.pacesetterhomestexas.com/home-builders/dallas/communities" target="_blank" rel="noopener">Pacesetter Homes</a></td>
           <td><span class="tier-pill tier-custom">Custom</span></td>
           <td><strong>87</strong><div class="score-bar-wrap"><div class="score-bar" style="width:87%"></div></div></td>
           <td><span class="grade-a">A</span></td>
@@ -1161,8 +1171,30 @@ gtag('consent', 'default', {
           <td>$280k–$500k</td>
           <td>10</td>
         </tr>
+        <tr data-tier="custom" data-score="86" data-grade="A" data-name="Shaddock Homes">
+          <td class="builder-name"><a href="https://www.shaddockhomes.com/communities/" target="_blank" rel="noopener">Shaddock Homes</a></td>
+          <td><span class="tier-pill tier-custom">Custom</span></td>
+          <td><strong>86</strong><div class="score-bar-wrap"><div class="score-bar" style="width:86%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 4.7 <small>(222)</small></td>
+          <td class="bbb-b-minus">B-</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$500k–$1.5M</td>
+          <td>29</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="86" data-grade="A" data-name="GFO Homes">
+          <td class="builder-name"><a href="https://gfohomes.com/communities/" target="_blank" rel="noopener">GFO Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>86</strong><div class="score-bar-wrap"><div class="score-bar" style="width:86%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 4.2 <small>(15)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-6">6-yr</td>
+          <td>$400k–$800k</td>
+          <td>0</td>
+        </tr>
         <tr data-tier="custom" data-score="86" data-grade="A" data-name="First Texas Homes">
-          <td class="builder-name"><a href="https://www.firsttexashomes.com" target="_blank" rel="noopener">First Texas Homes</a></td>
+          <td class="builder-name"><a href="https://www.firsttexashomes.com/communities/" target="_blank" rel="noopener">First Texas Homes</a></td>
           <td><span class="tier-pill tier-custom">Custom</span></td>
           <td><strong>86</strong><div class="score-bar-wrap"><div class="score-bar" style="width:86%"></div></div></td>
           <td><span class="grade-a">A</span></td>
@@ -1172,19 +1204,74 @@ gtag('consent', 'default', {
           <td>$350k–$700k</td>
           <td>29</td>
         </tr>
-        <tr data-tier="custom" data-score="86" data-grade="A" data-name="Shaddock Homes">
-          <td class="builder-name"><a href="https://www.shaddockhomes.com" target="_blank" rel="noopener">Shaddock Homes</a></td>
-          <td><span class="tier-pill tier-custom">Custom</span></td>
-          <td><strong>86</strong><div class="score-bar-wrap"><div class="score-bar" style="width:86%"></div></div></td>
+        <tr data-tier="semi-custom" data-score="84" data-grade="A" data-name="Bloomfield Homes">
+          <td class="builder-name"><a href="https://www.bloomfieldhomes.com/new-homes/" target="_blank" rel="noopener">Bloomfield Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
           <td><span class="grade-a">A</span></td>
-          <td><span class="review-stars">★</span> 4.7 <small>(222)</small></td>
-          <td class="bbb-b-minus">B−</td>
+          <td><span class="review-stars">★</span> 4.3 <small>(1,038 — TrustBuilder)</small></td>
+          <td class="bbb-a-minus">A-</td>
+          <td class="warranty-6">6-yr</td>
+          <td>$280k–$600k</td>
+          <td>30</td>
+        </tr>
+        <tr data-tier="production" data-score="84" data-grade="A" data-name="D.R. Horton">
+          <td class="builder-name"><a href="https://www.drhorton.com/texas/dallas-fort-worth" target="_blank" rel="noopener">D.R. Horton</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 4.3 <small>(314)</small></td>
+          <td class="bbb-a-plus">A+</td>
           <td class="warranty-10">10-yr</td>
-          <td>$500k–$1.5M</td>
-          <td>29</td>
+          <td>$250k–$500k</td>
+          <td>1</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="84" data-grade="A" data-name="American Legend Homes">
+          <td class="builder-name"><a href="https://www.americanlegendhomes.com/communities/" target="_blank" rel="noopener">American Legend Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>84</strong><div class="score-bar-wrap"><div class="score-bar" style="width:84%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 3.8 <small>(46)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$400k–$900k</td>
+          <td>0</td>
+        </tr>
+        <tr data-tier="production" data-score="83" data-grade="A" data-name="Lennar">
+          <td class="builder-name"><a href="https://www.lennar.com/new-homes/texas/dallas-ft-worth" target="_blank" rel="noopener">Lennar</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>83</strong><div class="score-bar-wrap"><div class="score-bar" style="width:83%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 3.7 <small>(1,489 — TrustBuilder)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$174k–$700k</td>
+          <td>17</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="80" data-grade="A" data-name="Trophy Signature Homes">
+          <td class="builder-name"><a href="https://trophysignaturehomes.com/communities/" target="_blank" rel="noopener">Trophy Signature Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>80</strong><div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div></td>
+          <td><span class="grade-a">A</span></td>
+          <td><span class="review-stars">★</span> 3.4 <small>(222)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$300k–$600k</td>
+          <td>22</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="79" data-grade="B+" data-name="Drees Homes">
+          <td class="builder-name"><a href="https://www.dreeshomes.com/new-homes/texas/dallas-ft-worth/" target="_blank" rel="noopener">Drees Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>79</strong><div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span class="review-stars">★</span> 3.3 <small>(80 — TrustBuilder)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$500k–$2.0M</td>
+          <td>0</td>
         </tr>
         <tr data-tier="custom" data-score="79" data-grade="B+" data-name="Chesmar Homes">
-          <td class="builder-name"><a href="https://chesmar.com" target="_blank" rel="noopener">Chesmar Homes</a></td>
+          <td class="builder-name"><a href="https://chesmar.com/communities/" target="_blank" rel="noopener">Chesmar Homes</a></td>
           <td><span class="tier-pill tier-custom">Custom</span></td>
           <td><strong>79</strong><div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div></td>
           <td><span class="grade-b-plus">B+</span></td>
@@ -1193,6 +1280,83 @@ gtag('consent', 'default', {
           <td class="warranty-10">10-yr</td>
           <td>$300k–$700k</td>
           <td>1</td>
+        </tr>
+        <tr data-tier="production" data-score="76" data-grade="B+" data-name="Pulte Homes">
+          <td class="builder-name"><a href="https://www.pulte.com/homes/texas/dallas-fort-worth-area" target="_blank" rel="noopener">Pulte Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>76</strong><div class="score-bar-wrap"><div class="score-bar" style="width:76%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span class="review-stars">★</span> 4.2 <small>(499 — TrustBuilder)</small></td>
+          <td class="bbb-nr">NR</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$350k–$900k</td>
+          <td>18</td>
+        </tr>
+        <tr data-tier="production" data-score="76" data-grade="B+" data-name="Megatel Homes">
+          <td class="builder-name"><a href="https://www.megatelhomes.com/communities/dallas-fort-worth-tx" target="_blank" rel="noopener">Megatel Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>76</strong><div class="score-bar-wrap"><div class="score-bar" style="width:76%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-b-minus">B-</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$309k–$579k</td>
+          <td>24</td>
+        </tr>
+        <tr data-tier="production" data-score="75" data-grade="B+" data-name="Ashton Woods">
+          <td class="builder-name"><a href="https://www.ashtonwoods.com/dallas" target="_blank" rel="noopener">Ashton Woods</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>75</strong><div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-b-minus">B-</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$299k–$750k</td>
+          <td>11</td>
+        </tr>
+        <tr data-tier="production" data-score="73" data-grade="B+" data-name="Meritage Homes">
+          <td class="builder-name"><a href="https://www.meritagehomes.com/state/texas/dallas-fort-worth" target="_blank" rel="noopener">Meritage Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>73</strong><div class="score-bar-wrap"><div class="score-bar" style="width:73%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span class="review-stars">★</span> 3.3 <small>(62)</small></td>
+          <td class="bbb-a-plus">A+</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$300k–$700k</td>
+          <td>1</td>
+        </tr>
+        <tr data-tier="semi-custom" data-score="71" data-grade="B+" data-name="UnionMain Homes">
+          <td class="builder-name"><a href="https://unionmainhomes.com/region/dallas-fort-worth/" target="_blank" rel="noopener">UnionMain Homes</a></td>
+          <td><span class="tier-pill tier-semi-custom">Semi-Custom</span></td>
+          <td><strong>71</strong><div class="score-bar-wrap"><div class="score-bar" style="width:71%"></div></div></td>
+          <td><span class="grade-b-plus">B+</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-c">C</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$272k–$453k</td>
+          <td>5</td>
+        </tr>
+        <tr data-tier="production" data-score="57" data-grade="C" data-name="M/I Homes">
+          <td class="builder-name"><a href="https://www.mihomes.com/new-homes/texas/dallas-fort-worth-metroplex/communities" target="_blank" rel="noopener">M/I Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>57</strong><div class="score-bar-wrap"><div class="score-bar" style="width:57%"></div></div></td>
+          <td><span class="grade-c">C</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-d-minus">D-</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$242k–$510k</td>
+          <td>7</td>
+        </tr>
+        <tr data-tier="production" data-score="55" data-grade="C" data-name="LGI Homes">
+          <td class="builder-name"><a href="https://www.lgihomes.com/texas/dallas-fort-worth" target="_blank" rel="noopener">LGI Homes</a></td>
+          <td><span class="tier-pill tier-production">Production</span></td>
+          <td><strong>55</strong><div class="score-bar-wrap"><div class="score-bar" style="width:55%"></div></div></td>
+          <td><span class="grade-c">C</span></td>
+          <td><span style="color:#999;">—</span></td>
+          <td class="bbb-f">F</td>
+          <td class="warranty-10">10-yr</td>
+          <td>$242k–$370k</td>
+          <td>4</td>
         </tr>
       </tbody>
     </table>
