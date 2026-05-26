@@ -1490,7 +1490,7 @@ function toggleFaq(el) {
 }
 
 // ── Builder table filter + sort ───────────────────────────────────────
-let sortCol = 2, sortDir = -1; // default: score descending
+let sortCol = -1, sortDir = 1; // initial state — sortBuilders(2) on load sets score desc
 
 function filterBuilders() {
   const q    = document.getElementById('builderSearch').value.toLowerCase();
@@ -1531,6 +1531,7 @@ function sortBuilders(col) {
   });
   rows.forEach(r => tbody.appendChild(r));
 }
+document.addEventListener('DOMContentLoaded', () => sortBuilders(2));
 
 // ── Jump nav active highlight ─────────────────────────────────────────
 const sections = document.querySelectorAll('.section[id]');
