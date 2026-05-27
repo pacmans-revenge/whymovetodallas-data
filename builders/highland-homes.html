@@ -51,10 +51,12 @@
     .hero-stat .lbl { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.75); margin-top:0.25rem; }
 
     /* ── Jump nav ─────────────────────────────────────────────── */
-    .kc-jumpnav { background:var(--navy); border-bottom:2px solid var(--gold); position:sticky; top:0; z-index:100; }
-    .kc-jumpnav-list { display:flex; gap:0; list-style:none; margin:0; padding:0; overflow-x:auto; justify-content:center; }
-    .kc-jumpnav-list li a { display:block; padding:0.75rem 1.1rem; font-size:0.82rem; font-weight:600; color:rgba(255,255,255,0.8); text-decoration:none; white-space:nowrap; letter-spacing:0.04em; text-transform:uppercase; transition:color 0.2s,background 0.2s; }
-    .kc-jumpnav-list li a:hover { color:var(--gold); background:rgba(255,255,255,0.06); }
+    .kc-jumpnav { background:var(--white); border-bottom:1px solid var(--stone); padding:0 1.5rem; position:sticky; top:var(--header-total-h); z-index:100; overflow-x:auto; -webkit-overflow-scrolling:touch; text-align:center; }
+    .kc-jumpnav-list { display:inline-flex; gap:0; list-style:none; margin:0; padding:0; max-width:1100px; white-space:nowrap; }
+    .kc-jumpnav-list li a { display:block; padding:0.85rem 1rem; font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; color:var(--navy); border-bottom:3px solid transparent; transition:border-color 0.15s,color 0.15s; }
+    .kc-jumpnav-list li a:hover { border-bottom-color:var(--gold); color:var(--gold); }
+    .kc-jumpnav::-webkit-scrollbar { display:none; }
+    .kc-jumpnav { -ms-overflow-style:none; scrollbar-width:none; }
 
     /* ── Layout ───────────────────────────────────────────────── */
     .page-body { max-width:940px; margin:0 auto; padding:0 1.25rem 4rem; }
