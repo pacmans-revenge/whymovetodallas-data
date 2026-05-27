@@ -577,12 +577,12 @@ gtag('consent', 'default', {
     </div>
 
     <!-- SHOWINGNEW_TABLE_START:david-weekley -->
-    <p class="kc-nc-table-note" id="bt-note-david-weekley" style="margin:0 0 0.85rem;">Showing <strong>17 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
+    <p id="bt-note-david-weekley" style="font-size:0.87rem;color:#555;margin:0 0 0.85rem;">Showing <strong>17 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
 
-    <div class="kc-filter-bar">
-      <div class="kc-filter-group">
-        <label>Suburb</label>
-        <select id="bt-suburb-david-weekley">
+    <div style="background:#fff;border:1px solid #e0d9ce;border-radius:10px;padding:1rem 1.25rem;margin:1.25rem 0 0.5rem;display:flex;flex-wrap:wrap;gap:0.85rem;align-items:flex-end;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Suburb</label>
+        <select id="bt-suburb-david-weekley" style="padding:0.3rem 0.6rem;border:1px solid #c8c1b6;border-radius:6px;font-size:0.82rem;color:#232323;background:#fff;cursor:pointer;">
           <option value="">All Suburbs</option>
           <option value="argyle">Argyle</option>
           <option value="celina">Celina</option>
@@ -593,38 +593,38 @@ gtag('consent', 'default', {
           <option value="rockwall">Rockwall</option>
         </select>
       </div>
-      <div class="kc-filter-group">
-        <label>Price Range</label>
-        <div class="kc-pills" id="bt-price-david-weekley">
-          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
-          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
-          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
-          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
-          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Price Range</label>
+        <div id="bt-price-david-weekley" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-pmin="0" data-pmax="0">All</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="750000" data-pmax="0">$750k+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Beds</label>
-        <div class="kc-pills" id="bt-beds-david-weekley">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
-          <button class="kc-pill" data-min="5">5+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Beds</label>
+        <div id="bt-beds-david-weekley" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="5">5+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Baths</label>
-        <div class="kc-pills" id="bt-baths-david-weekley">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Baths</label>
+        <div id="bt-baths-david-weekley" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
         </div>
       </div>
     </div>
 
-    <p class="kc-filter-count" id="bt-count-david-weekley"></p>
+    <p id="bt-count-david-weekley" style="font-size:0.82rem;color:#666;text-align:right;margin:0.25rem 0 0.5rem;"></p>
 
     <div class="kc-table-wrap">
       <table class="kc-table" id="bt-table-david-weekley">
@@ -647,6 +647,7 @@ gtag('consent', 'default', {
 
     <script>
     (function() {
+      var NAVY = '#1f2d3d';
       var DATA = [{"suburb":"argyle","name":"The Retreat at Harvest","price_min":421990,"price_max":543256,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1912,"sqft_max":3112,"homes_available":18,"has_promo":true},{"suburb":"celina","name":"Mustang Lakes","price_min":598990,"price_max":774990,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2295,"sqft_max":3443,"homes_available":14,"has_promo":true},{"suburb":"celina","name":"The Parks at Wilson Creek","price_min":495990,"price_max":674990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1885,"sqft_max":3185,"homes_available":18,"has_promo":true},{"suburb":"denton","name":"Landmark","price_min":429990,"price_max":579571,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1662,"sqft_max":2599,"homes_available":12,"has_promo":true},{"suburb":"fate","name":"Edgewater Classic Series","price_min":418990,"price_max":485990,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2049,"sqft_max":3140,"homes_available":6,"has_promo":true},{"suburb":"fate","name":"Edgewater Garden Series","price_min":361990,"price_max":419990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1740,"sqft_max":2439,"homes_available":6,"has_promo":true},{"suburb":"fate","name":"Monterra - Classics","price_min":542990,"price_max":714990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2578,"sqft_max":3763,"homes_available":15,"has_promo":true},{"suburb":"fate","name":"Monterra - Gardens","price_min":414990,"price_max":539990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1885,"sqft_max":2940,"homes_available":14,"has_promo":true},{"suburb":"flower-mound","name":"Whyburn Estate Series","price_min":1132990,"price_max":1237990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3681,"sqft_max":5282,"homes_available":8,"has_promo":true},{"suburb":"flower-mound","name":"Whyburn Manor Series","price_min":938990,"price_max":1019990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2926,"sqft_max":4140,"homes_available":6,"has_promo":true},{"suburb":"northlake","name":"Pecan Square - Estates","price_min":789990,"price_max":989000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":3209,"sqft_max":4306,"homes_available":11,"has_promo":true},{"suburb":"northlake","name":"Pecan Square - Gardens","price_min":495990,"price_max":639000,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2063,"sqft_max":3185,"homes_available":15,"has_promo":true},{"suburb":"northlake","name":"Pecan Square – Classics","price_min":605990,"price_max":769000,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2490,"sqft_max":4165,"homes_available":13,"has_promo":true},{"suburb":"northlake","name":"The Ridge at Northlake","price_min":591990,"price_max":759000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2490,"sqft_max":3949,"homes_available":18,"has_promo":true},{"suburb":"rockwall","name":"Horizon Lakes","price_min":0,"price_max":0,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"sqft_min":0,"sqft_max":0,"homes_available":null,"has_promo":true},{"suburb":"rockwall","name":"Southside Hills – Estate Series","price_min":0,"price_max":0,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"sqft_min":0,"sqft_max":0,"homes_available":null,"has_promo":true},{"suburb":"rockwall","name":"Southside Hills – Manor Series","price_min":0,"price_max":0,"beds_min":0,"beds_max":0,"baths_min":0,"baths_max":0,"sqft_min":0,"sqft_max":0,"homes_available":null,"has_promo":true}];
 
       function fmtP(n) {
@@ -676,7 +677,9 @@ gtag('consent', 'default', {
           var baStr = (r.baths_min && r.baths_max) ? (r.baths_min===r.baths_max ? String(r.baths_min) : r.baths_min+'\u2013'+r.baths_max) : (r.baths_min ? String(r.baths_min) : '\u2014');
           var sStr  = (r.sqft_min && r.sqft_max) ? r.sqft_min.toLocaleString()+'\u2013'+r.sqft_max.toLocaleString() : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
           var snUrl = 'https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-'+r.suburb;
-          var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
+          var promo = r.has_promo
+            ? '<span style="display:inline-block;background:#b08d57;color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;padding:0.1rem 0.45rem;border-radius:4px;">PROMO</span>'
+            : '';
           return '<tr>'
             +'<td><a href="/'+r.suburb+'-texas">'+titleCase(r.suburb)+'</a></td>'
             +'<td>'+r.name+'</td>'
@@ -686,7 +689,7 @@ gtag('consent', 'default', {
             +'<td class="kc-col-nowrap">'+sStr+'</td>'
             +'<td class="kc-col-center">'+(r.homes_available || '\u2014')+'</td>'
             +'<td class="kc-col-center">'+promo+'</td>'
-            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" class="kc-portal-link">View \u2192</a></td>'
+            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" style="color:#b08d57;font-weight:600;text-decoration:none;white-space:nowrap;">View \u2192</a></td>'
             +'</tr>';
         }).join('');
         if (countEl) {
@@ -696,38 +699,50 @@ gtag('consent', 'default', {
         }
       }
 
-      function activePill(pillsId) {
-        var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
-        return el ? el.dataset : {};
+      // Active pill detection by inline style (no CSS class dependency)
+      function activePillData(groupId) {
+        var active = document.querySelector('#' + groupId + ' button[style*="' + NAVY + '"]');
+        return active ? active.dataset : {};
+      }
+
+      function setPillActive(btn) {
+        var group = btn.parentNode;
+        group.querySelectorAll('button').forEach(function(b) {
+          b.style.background   = '#fff';
+          b.style.color        = '#232323';
+          b.style.borderColor  = '#c8c1b6';
+        });
+        btn.style.background  = NAVY;
+        btn.style.color       = '#fff';
+        btn.style.borderColor = NAVY;
       }
 
       function applyFilters() {
         var suburb = ((document.getElementById('bt-suburb-david-weekley') || {}).value) || '';
-        var priceD = activePill('bt-price-david-weekley');
+        var priceD = activePillData('bt-price-david-weekley');
         var pMin   = parseInt(priceD.pmin) || 0;
         var pMax   = parseInt(priceD.pmax) || 0;
-        var bedsD  = activePill('bt-beds-david-weekley');
+        var bedsD  = activePillData('bt-beds-david-weekley');
         var beds   = parseInt(bedsD.min)   || 0;
-        var bathsD = activePill('bt-baths-david-weekley');
+        var bathsD = activePillData('bt-baths-david-weekley');
         var baths  = parseInt(bathsD.min)  || 0;
 
         var filtered = DATA.filter(function(r) {
-          if (suburb && r.suburb !== suburb)                return false;
-          if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
-          if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
-          if (beds  > 0 && (r.beds_max  || 0) < beds)        return false;
-          if (baths > 0 && (r.baths_max || 0) < baths)       return false;
+          if (suburb && r.suburb !== suburb)                   return false;
+          if (pMin > 0 && r.price_max && r.price_max < pMin)  return false;
+          if (pMax > 0 && r.price_min && r.price_min > pMax)  return false;
+          if (beds  > 0 && (r.beds_max  || 0) < beds)         return false;
+          if (baths > 0 && (r.baths_max || 0) < baths)        return false;
           return true;
         });
         renderRows(filtered);
       }
 
       // Pill click handlers
-      ['bt-price-david-weekley', 'bt-beds-david-weekley', 'bt-baths-david-weekley'].forEach(function(pillsId) {
-        document.querySelectorAll('#' + pillsId + ' .kc-pill').forEach(function(btn) {
+      ['bt-price-david-weekley', 'bt-beds-david-weekley', 'bt-baths-david-weekley'].forEach(function(groupId) {
+        document.querySelectorAll('#' + groupId + ' button').forEach(function(btn) {
           btn.addEventListener('click', function() {
-            btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function(p) { p.classList.remove('active'); });
-            btn.classList.add('active');
+            setPillActive(btn);
             applyFilters();
           });
         });

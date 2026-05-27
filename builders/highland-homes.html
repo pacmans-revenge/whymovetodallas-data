@@ -587,12 +587,12 @@ gtag('consent', 'default', {
     </div>
 
     <!-- SHOWINGNEW_TABLE_START:highland-homes -->
-    <p class="kc-nc-table-note" id="bt-note-highland-homes" style="margin:0 0 0.85rem;">Showing <strong>53 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
+    <p id="bt-note-highland-homes" style="font-size:0.87rem;color:#555;margin:0 0 0.85rem;">Showing <strong>53 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
 
-    <div class="kc-filter-bar">
-      <div class="kc-filter-group">
-        <label>Suburb</label>
-        <select id="bt-suburb-highland-homes">
+    <div style="background:#fff;border:1px solid #e0d9ce;border-radius:10px;padding:1rem 1.25rem;margin:1.25rem 0 0.5rem;display:flex;flex-wrap:wrap;gap:0.85rem;align-items:flex-end;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Suburb</label>
+        <select id="bt-suburb-highland-homes" style="padding:0.3rem 0.6rem;border:1px solid #c8c1b6;border-radius:6px;font-size:0.82rem;color:#232323;background:#fff;cursor:pointer;">
           <option value="">All Suburbs</option>
           <option value="argyle">Argyle</option>
           <option value="aubrey">Aubrey</option>
@@ -610,38 +610,38 @@ gtag('consent', 'default', {
           <option value="waxahachie">Waxahachie</option>
         </select>
       </div>
-      <div class="kc-filter-group">
-        <label>Price Range</label>
-        <div class="kc-pills" id="bt-price-highland-homes">
-          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
-          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
-          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
-          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
-          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Price Range</label>
+        <div id="bt-price-highland-homes" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-pmin="0" data-pmax="0">All</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="750000" data-pmax="0">$750k+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Beds</label>
-        <div class="kc-pills" id="bt-beds-highland-homes">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
-          <button class="kc-pill" data-min="5">5+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Beds</label>
+        <div id="bt-beds-highland-homes" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="5">5+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Baths</label>
-        <div class="kc-pills" id="bt-baths-highland-homes">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Baths</label>
+        <div id="bt-baths-highland-homes" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
         </div>
       </div>
     </div>
 
-    <p class="kc-filter-count" id="bt-count-highland-homes"></p>
+    <p id="bt-count-highland-homes" style="font-size:0.82rem;color:#666;text-align:right;margin:0.25rem 0 0.5rem;"></p>
 
     <div class="kc-table-wrap">
       <table class="kc-table" id="bt-table-highland-homes">
@@ -664,6 +664,7 @@ gtag('consent', 'default', {
 
     <script>
     (function() {
+      var NAVY = '#1f2d3d';
       var DATA = [{"suburb":"argyle","name":"Furst Ranch: 60ft. lots","price_min":843990,"price_max":1118286,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2792,"sqft_max":4111,"homes_available":18,"has_promo":true},{"suburb":"argyle","name":"Furst Ranch: 70ft. lots","price_min":953990,"price_max":1275210,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":4425,"homes_available":16,"has_promo":true},{"suburb":"argyle","name":"Wellington: 50ft. lots","price_min":452990,"price_max":590990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":2055,"sqft_max":3277,"homes_available":18,"has_promo":true},{"suburb":"aubrey","name":"Sandbrock Ranch: 45ft. lots","price_min":394990,"price_max":572190,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1599,"sqft_max":2921,"homes_available":21,"has_promo":true},{"suburb":"aubrey","name":"Sandbrock Ranch: 50ft. lots","price_min":436990,"price_max":647920,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1864,"sqft_max":3277,"homes_available":32,"has_promo":true},{"suburb":"aubrey","name":"Sandbrock Ranch: 70ft. lots","price_min":647990,"price_max":1000524,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3056,"sqft_max":4425,"homes_available":24,"has_promo":true},{"suburb":"aubrey","name":"Sandbrock Ranch: New Builds - 60ft Lots","price_min":549990,"price_max":690990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2602,"sqft_max":3803,"homes_available":15,"has_promo":true},{"suburb":"aubrey","name":"Sandbrock Ranch: Quick Move-Ins - 60ft. lots","price_min":714059,"price_max":820227,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2945,"sqft_max":3807,"homes_available":6,"has_promo":true},{"suburb":"celina","name":"Cambridge Crossing: 50ft. lots","price_min":528990,"price_max":758505,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":1864,"sqft_max":3477,"homes_available":30,"has_promo":true},{"suburb":"celina","name":"Cambridge Crossing: 74ft. lots","price_min":866990,"price_max":1376018,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2932,"sqft_max":4789,"homes_available":33,"has_promo":true},{"suburb":"celina","name":"Mustang Lakes: 60ft. lots","price_min":699990,"price_max":838990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2602,"sqft_max":3803,"homes_available":13,"has_promo":true},{"suburb":"celina","name":"Mustang Lakes: 60s Model and Quick Move-Ins","price_min":850000,"price_max":1047475,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2713,"sqft_max":4359,"homes_available":9,"has_promo":true},{"suburb":"celina","name":"Mustang Lakes: 74ft. lots","price_min":841990,"price_max":1295690,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":4789,"homes_available":25,"has_promo":true},{"suburb":"celina","name":"Mustang Lakes: 86ft. lots","price_min":1060990,"price_max":1643189,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":5183,"homes_available":22,"has_promo":true},{"suburb":"celina","name":"Ramble: 50ft. lots","price_min":498990,"price_max":700000,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2106,"sqft_max":3506,"homes_available":21,"has_promo":true},{"suburb":"celina","name":"The Parks at Wilson Creek: 40ft. lots","price_min":399990,"price_max":559900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"sqft_min":1597,"sqft_max":2513,"homes_available":19,"has_promo":true},{"suburb":"celina","name":"The Parks at Wilson Creek: 50ft. lots","price_min":509990,"price_max":692985,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2055,"sqft_max":3350,"homes_available":28,"has_promo":true},{"suburb":"celina","name":"The Parks at Wilson Creek: 74ft. lots","price_min":749990,"price_max":1125000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":4789,"homes_available":23,"has_promo":true},{"suburb":"denton","name":"Landmark","price_min":500990,"price_max":718145,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2055,"sqft_max":3306,"homes_available":24,"has_promo":true},{"suburb":"fate","name":"Monterra: 50ft. lots","price_min":399990,"price_max":560990,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1629,"sqft_max":3143,"homes_available":24,"has_promo":true},{"suburb":"fate","name":"Monterra: 70ft. lots","price_min":516990,"price_max":686990,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2318,"sqft_max":3803,"homes_available":22,"has_promo":true},{"suburb":"forney","name":"Devonshire","price_min":450000,"price_max":550000,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"sqft_min":2305,"sqft_max":2882,"homes_available":3,"has_promo":true},{"suburb":"forney","name":"Meraki: 40ft. lots","price_min":364990,"price_max":409990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1480,"sqft_max":2345,"homes_available":7,"has_promo":true},{"suburb":"forney","name":"Meraki: 45ft. lots","price_min":374990,"price_max":476640,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1594,"sqft_max":2680,"homes_available":16,"has_promo":true},{"suburb":"forney","name":"Meraki: 60ft. lots","price_min":486990,"price_max":600990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2602,"sqft_max":3799,"homes_available":19,"has_promo":true},{"suburb":"forney","name":"Meraki: 70ft. lots","price_min":517990,"price_max":631990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2602,"sqft_max":3799,"homes_available":16,"has_promo":true},{"suburb":"forney","name":"Talia","price_min":299990,"price_max":369954,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"sqft_min":1607,"sqft_max":2345,"homes_available":7,"has_promo":true},{"suburb":"fort-worth","name":"Wildflower Ranch: 60ft. lots","price_min":529990,"price_max":799990,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2602,"sqft_max":3917,"homes_available":16,"has_promo":true},{"suburb":"heath","name":"Estates at Bristol Valley","price_min":1299990,"price_max":1817923,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"sqft_min":3520,"sqft_max":5196,"homes_available":12,"has_promo":true},{"suburb":"mckinney","name":"Aster Park: 40ft. lots","price_min":495990,"price_max":599250,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1597,"sqft_max":2454,"homes_available":11,"has_promo":true},{"suburb":"mckinney","name":"Aster Park: 50ft. lots","price_min":636990,"price_max":791197,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":2106,"sqft_max":3277,"homes_available":21,"has_promo":true},{"suburb":"mckinney","name":"Ridgeline: 50ft. lots","price_min":534990,"price_max":672990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1944,"sqft_max":3277,"homes_available":23,"has_promo":true},{"suburb":"mckinney","name":"Ridgeline: 70ft. lots","price_min":933990,"price_max":1156990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3208,"sqft_max":4789,"homes_available":14,"has_promo":true},{"suburb":"mckinney","name":"Trinity Falls","price_min":499990,"price_max":698740,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1864,"sqft_max":3251,"homes_available":30,"has_promo":true},{"suburb":"northlake","name":"Pecan Square: 100ft. lots","price_min":933990,"price_max":1171990,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3056,"sqft_max":4425,"homes_available":17,"has_promo":true},{"suburb":"northlake","name":"Pecan Square: 40ft. lots","price_min":432990,"price_max":572168,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"sqft_min":1597,"sqft_max":2513,"homes_available":21,"has_promo":true},{"suburb":"northlake","name":"Pecan Square: 50ft. lots","price_min":507990,"price_max":719900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2055,"sqft_max":3306,"homes_available":31,"has_promo":true},{"suburb":"northlake","name":"Pecan Square: 60ft. lots","price_min":694990,"price_max":960085,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2456,"sqft_max":3983,"homes_available":21,"has_promo":true},{"suburb":"prosper","name":"Mosaic: 40ft. lots","price_min":437990,"price_max":575615,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":3,"sqft_min":1597,"sqft_max":2513,"homes_available":14,"has_promo":true},{"suburb":"prosper","name":"Mosaic: 50ft. lots","price_min":569990,"price_max":770022,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":2106,"sqft_max":3535,"homes_available":24,"has_promo":true},{"suburb":"prosper","name":"Mosaic: 60ft. lots","price_min":674990,"price_max":961478,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2602,"sqft_max":3824,"homes_available":23,"has_promo":true},{"suburb":"prosper","name":"Mosaic: 70ft. lots","price_min":882990,"price_max":1300000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":4789,"homes_available":23,"has_promo":true},{"suburb":"prosper","name":"Star Trail: 55ft. lots","price_min":734990,"price_max":997740,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":1990,"sqft_max":3748,"homes_available":21,"has_promo":true},{"suburb":"prosper","name":"Star Trail: 65ft. lots","price_min":847990,"price_max":1051400,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2874,"sqft_max":4337,"homes_available":24,"has_promo":true},{"suburb":"prosper","name":"Star Trail: 86ft. lots","price_min":1149990,"price_max":1685000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":5291,"homes_available":26,"has_promo":true},{"suburb":"prosper","name":"StarView","price_min":999990,"price_max":1511412,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3104,"sqft_max":4789,"homes_available":22,"has_promo":true},{"suburb":"rockwall","name":"Saddle Star Estates","price_min":735950,"price_max":735950,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"sqft_min":2745,"sqft_max":2745,"homes_available":1,"has_promo":true},{"suburb":"rockwall","name":"Sonoma Verde: 60ft. lots","price_min":399990,"price_max":627990,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1973,"sqft_max":3630,"homes_available":28,"has_promo":true},{"suburb":"rockwall","name":"Sonoma Verde: 70ft. lots","price_min":576990,"price_max":716290,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2602,"sqft_max":3799,"homes_available":19,"has_promo":true},{"suburb":"royse-city","name":"Creekshaw","price_min":300990,"price_max":392990,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1582,"sqft_max":2480,"homes_available":15,"has_promo":true},{"suburb":"waxahachie","name":"Dove Hollow","price_min":499000,"price_max":685000,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":2319,"sqft_max":2822,"homes_available":2,"has_promo":true},{"suburb":"waxahachie","name":"Myrtle Creek","price_min":393990,"price_max":626482,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1629,"sqft_max":3803,"homes_available":16,"has_promo":true},{"suburb":"waxahachie","name":"Ridge Crossing","price_min":484990,"price_max":637990,"beds_min":4,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2263,"sqft_max":3799,"homes_available":22,"has_promo":true}];
 
       function fmtP(n) {
@@ -693,7 +694,9 @@ gtag('consent', 'default', {
           var baStr = (r.baths_min && r.baths_max) ? (r.baths_min===r.baths_max ? String(r.baths_min) : r.baths_min+'\u2013'+r.baths_max) : (r.baths_min ? String(r.baths_min) : '\u2014');
           var sStr  = (r.sqft_min && r.sqft_max) ? r.sqft_min.toLocaleString()+'\u2013'+r.sqft_max.toLocaleString() : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
           var snUrl = 'https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-'+r.suburb;
-          var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
+          var promo = r.has_promo
+            ? '<span style="display:inline-block;background:#b08d57;color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;padding:0.1rem 0.45rem;border-radius:4px;">PROMO</span>'
+            : '';
           return '<tr>'
             +'<td><a href="/'+r.suburb+'-texas">'+titleCase(r.suburb)+'</a></td>'
             +'<td>'+r.name+'</td>'
@@ -703,7 +706,7 @@ gtag('consent', 'default', {
             +'<td class="kc-col-nowrap">'+sStr+'</td>'
             +'<td class="kc-col-center">'+(r.homes_available || '\u2014')+'</td>'
             +'<td class="kc-col-center">'+promo+'</td>'
-            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" class="kc-portal-link">View \u2192</a></td>'
+            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" style="color:#b08d57;font-weight:600;text-decoration:none;white-space:nowrap;">View \u2192</a></td>'
             +'</tr>';
         }).join('');
         if (countEl) {
@@ -713,38 +716,50 @@ gtag('consent', 'default', {
         }
       }
 
-      function activePill(pillsId) {
-        var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
-        return el ? el.dataset : {};
+      // Active pill detection by inline style (no CSS class dependency)
+      function activePillData(groupId) {
+        var active = document.querySelector('#' + groupId + ' button[style*="' + NAVY + '"]');
+        return active ? active.dataset : {};
+      }
+
+      function setPillActive(btn) {
+        var group = btn.parentNode;
+        group.querySelectorAll('button').forEach(function(b) {
+          b.style.background   = '#fff';
+          b.style.color        = '#232323';
+          b.style.borderColor  = '#c8c1b6';
+        });
+        btn.style.background  = NAVY;
+        btn.style.color       = '#fff';
+        btn.style.borderColor = NAVY;
       }
 
       function applyFilters() {
         var suburb = ((document.getElementById('bt-suburb-highland-homes') || {}).value) || '';
-        var priceD = activePill('bt-price-highland-homes');
+        var priceD = activePillData('bt-price-highland-homes');
         var pMin   = parseInt(priceD.pmin) || 0;
         var pMax   = parseInt(priceD.pmax) || 0;
-        var bedsD  = activePill('bt-beds-highland-homes');
+        var bedsD  = activePillData('bt-beds-highland-homes');
         var beds   = parseInt(bedsD.min)   || 0;
-        var bathsD = activePill('bt-baths-highland-homes');
+        var bathsD = activePillData('bt-baths-highland-homes');
         var baths  = parseInt(bathsD.min)  || 0;
 
         var filtered = DATA.filter(function(r) {
-          if (suburb && r.suburb !== suburb)                return false;
-          if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
-          if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
-          if (beds  > 0 && (r.beds_max  || 0) < beds)        return false;
-          if (baths > 0 && (r.baths_max || 0) < baths)       return false;
+          if (suburb && r.suburb !== suburb)                   return false;
+          if (pMin > 0 && r.price_max && r.price_max < pMin)  return false;
+          if (pMax > 0 && r.price_min && r.price_min > pMax)  return false;
+          if (beds  > 0 && (r.beds_max  || 0) < beds)         return false;
+          if (baths > 0 && (r.baths_max || 0) < baths)        return false;
           return true;
         });
         renderRows(filtered);
       }
 
       // Pill click handlers
-      ['bt-price-highland-homes', 'bt-beds-highland-homes', 'bt-baths-highland-homes'].forEach(function(pillsId) {
-        document.querySelectorAll('#' + pillsId + ' .kc-pill').forEach(function(btn) {
+      ['bt-price-highland-homes', 'bt-beds-highland-homes', 'bt-baths-highland-homes'].forEach(function(groupId) {
+        document.querySelectorAll('#' + groupId + ' button').forEach(function(btn) {
           btn.addEventListener('click', function() {
-            btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function(p) { p.classList.remove('active'); });
-            btn.classList.add('active');
+            setPillActive(btn);
             applyFilters();
           });
         });

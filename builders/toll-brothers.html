@@ -568,12 +568,12 @@ gtag('consent', 'default', {
     </div>
 
     <!-- SHOWINGNEW_TABLE_START:toll-brothers -->
-    <p class="kc-nc-table-note" id="bt-note-toll-brothers" style="margin:0 0 0.85rem;">Showing <strong>15 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
+    <p id="bt-note-toll-brothers" style="font-size:0.87rem;color:#555;margin:0 0 0.85rem;">Showing <strong>15 sampled communities</strong> from Kristen's ShowingNew portal — data scraped 2026-05-26. Some communities may not appear due to API sampling; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:var(--gold);">browse the portal</a> for the full list.</p>
 
-    <div class="kc-filter-bar">
-      <div class="kc-filter-group">
-        <label>Suburb</label>
-        <select id="bt-suburb-toll-brothers">
+    <div style="background:#fff;border:1px solid #e0d9ce;border-radius:10px;padding:1rem 1.25rem;margin:1.25rem 0 0.5rem;display:flex;flex-wrap:wrap;gap:0.85rem;align-items:flex-end;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Suburb</label>
+        <select id="bt-suburb-toll-brothers" style="padding:0.3rem 0.6rem;border:1px solid #c8c1b6;border-radius:6px;font-size:0.82rem;color:#232323;background:#fff;cursor:pointer;">
           <option value="">All Suburbs</option>
           <option value="argyle">Argyle</option>
           <option value="flower-mound">Flower Mound</option>
@@ -583,38 +583,38 @@ gtag('consent', 'default', {
           <option value="prosper">Prosper</option>
         </select>
       </div>
-      <div class="kc-filter-group">
-        <label>Price Range</label>
-        <div class="kc-pills" id="bt-price-toll-brothers">
-          <button class="kc-pill active" data-pmin="0" data-pmax="0">All</button>
-          <button class="kc-pill" data-pmin="0" data-pmax="400000">Under $400k</button>
-          <button class="kc-pill" data-pmin="400000" data-pmax="550000">$400–$550k</button>
-          <button class="kc-pill" data-pmin="550000" data-pmax="750000">$550–$750k</button>
-          <button class="kc-pill" data-pmin="750000" data-pmax="0">$750k+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Price Range</label>
+        <div id="bt-price-toll-brothers" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-pmin="0" data-pmax="0">All</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="0" data-pmax="400000">Under $400k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="400000" data-pmax="550000">$400–$550k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="750000" data-pmax="0">$750k+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Beds</label>
-        <div class="kc-pills" id="bt-beds-toll-brothers">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
-          <button class="kc-pill" data-min="5">5+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Beds</label>
+        <div id="bt-beds-toll-brothers" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="5">5+</button>
         </div>
       </div>
-      <div class="kc-filter-group">
-        <label>Baths</label>
-        <div class="kc-pills" id="bt-baths-toll-brothers">
-          <button class="kc-pill active" data-min="0">Any</button>
-          <button class="kc-pill" data-min="2">2+</button>
-          <button class="kc-pill" data-min="3">3+</button>
-          <button class="kc-pill" data-min="4">4+</button>
+      <div style="display:flex;flex-direction:column;gap:0.25rem;">
+        <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1f2d3d;">Baths</label>
+        <div id="bt-baths-toll-brothers" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-min="0">Any</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="2">2+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="3">3+</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-min="4">4+</button>
         </div>
       </div>
     </div>
 
-    <p class="kc-filter-count" id="bt-count-toll-brothers"></p>
+    <p id="bt-count-toll-brothers" style="font-size:0.82rem;color:#666;text-align:right;margin:0.25rem 0 0.5rem;"></p>
 
     <div class="kc-table-wrap">
       <table class="kc-table" id="bt-table-toll-brothers">
@@ -637,6 +637,7 @@ gtag('consent', 'default', {
 
     <script>
     (function() {
+      var NAVY = '#1f2d3d';
       var DATA = [{"suburb":"argyle","name":"Enclave at Hickory Hill","price_min":1355995,"price_max":1999000,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":6,"sqft_min":3782,"sqft_max":6012,"homes_available":9,"has_promo":false},{"suburb":"flower-mound","name":"Dixon Estates","price_min":1250995,"price_max":1649000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3723,"sqft_max":5967,"homes_available":8,"has_promo":false},{"suburb":"flower-mound","name":"Oakbridge Crossing","price_min":1494995,"price_max":1849000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":4024,"sqft_max":5967,"homes_available":13,"has_promo":false},{"suburb":"flower-mound","name":"Town Lake at Flower Mound","price_min":1465995,"price_max":1775995,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"sqft_min":3782,"sqft_max":6021,"homes_available":6,"has_promo":false},{"suburb":"fort-worth","name":"Wildflower Ranch - Elite Collection","price_min":399995,"price_max":649000,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":3,"sqft_min":1992,"sqft_max":3363,"homes_available":14,"has_promo":false},{"suburb":"fort-worth","name":"Wildflower Ranch - Select Collection","price_min":505995,"price_max":734000,"beds_min":3,"beds_max":4,"baths_min":3,"baths_max":4,"sqft_min":2499,"sqft_max":3722,"homes_available":10,"has_promo":false},{"suburb":"frisco","name":"Prestwick Grove","price_min":964995,"price_max":1421000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2993,"sqft_max":4757,"homes_available":12,"has_promo":false},{"suburb":"frisco","name":"Toll Brothers at Fields - Summit Collection","price_min":2399000,"price_max":2399000,"beds_min":4,"beds_max":4,"baths_min":4,"baths_max":4,"sqft_min":4261,"sqft_max":4261,"homes_available":1,"has_promo":false},{"suburb":"frisco","name":"Toll Brothers at Fields - Woodlands Collection","price_min":1262995,"price_max":1549000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":2950,"sqft_max":4582,"homes_available":9,"has_promo":false},{"suburb":"murphy","name":"Crescent Hill","price_min":930000,"price_max":930000,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"sqft_min":2757,"sqft_max":2757,"homes_available":1,"has_promo":false},{"suburb":"prosper","name":"Light Farms - Elite Collection","price_min":799000,"price_max":799000,"beds_min":4,"beds_max":4,"baths_min":3,"baths_max":3,"sqft_min":2999,"sqft_max":2999,"homes_available":1,"has_promo":false},{"suburb":"prosper","name":"Light Farms - Select Collection","price_min":949000,"price_max":949000,"beds_min":4,"beds_max":4,"baths_min":4,"baths_max":4,"sqft_min":3669,"sqft_max":3669,"homes_available":1,"has_promo":false},{"suburb":"prosper","name":"Star Trail","price_min":1056995,"price_max":1461000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3244,"sqft_max":4940,"homes_available":10,"has_promo":false},{"suburb":"prosper","name":"Wandering Creek at Brookhollow - Estate Collection","price_min":1220995,"price_max":2739000,"beds_min":4,"beds_max":5,"baths_min":4,"baths_max":5,"sqft_min":4024,"sqft_max":5967,"homes_available":8,"has_promo":false},{"suburb":"prosper","name":"Wandering Creek at Brookhollow - Executive Collection","price_min":1042995,"price_max":1425000,"beds_min":4,"beds_max":5,"baths_min":3,"baths_max":5,"sqft_min":3635,"sqft_max":4940,"homes_available":9,"has_promo":false}];
 
       function fmtP(n) {
@@ -666,7 +667,9 @@ gtag('consent', 'default', {
           var baStr = (r.baths_min && r.baths_max) ? (r.baths_min===r.baths_max ? String(r.baths_min) : r.baths_min+'\u2013'+r.baths_max) : (r.baths_min ? String(r.baths_min) : '\u2014');
           var sStr  = (r.sqft_min && r.sqft_max) ? r.sqft_min.toLocaleString()+'\u2013'+r.sqft_max.toLocaleString() : (r.sqft_min ? r.sqft_min.toLocaleString() : '\u2014');
           var snUrl = 'https://www.showingnew.com/whymovetodallas/homes/texas/dallas/city-'+r.suburb;
-          var promo = r.has_promo ? '<span class="kc-promo-badge">PROMO</span>' : '';
+          var promo = r.has_promo
+            ? '<span style="display:inline-block;background:#b08d57;color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;padding:0.1rem 0.45rem;border-radius:4px;">PROMO</span>'
+            : '';
           return '<tr>'
             +'<td><a href="/'+r.suburb+'-texas">'+titleCase(r.suburb)+'</a></td>'
             +'<td>'+r.name+'</td>'
@@ -676,7 +679,7 @@ gtag('consent', 'default', {
             +'<td class="kc-col-nowrap">'+sStr+'</td>'
             +'<td class="kc-col-center">'+(r.homes_available || '\u2014')+'</td>'
             +'<td class="kc-col-center">'+promo+'</td>'
-            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" class="kc-portal-link">View \u2192</a></td>'
+            +'<td><a href="'+snUrl+'" target="_blank" rel="noopener" style="color:#b08d57;font-weight:600;text-decoration:none;white-space:nowrap;">View \u2192</a></td>'
             +'</tr>';
         }).join('');
         if (countEl) {
@@ -686,38 +689,50 @@ gtag('consent', 'default', {
         }
       }
 
-      function activePill(pillsId) {
-        var el = document.querySelector('#' + pillsId + ' .kc-pill.active');
-        return el ? el.dataset : {};
+      // Active pill detection by inline style (no CSS class dependency)
+      function activePillData(groupId) {
+        var active = document.querySelector('#' + groupId + ' button[style*="' + NAVY + '"]');
+        return active ? active.dataset : {};
+      }
+
+      function setPillActive(btn) {
+        var group = btn.parentNode;
+        group.querySelectorAll('button').forEach(function(b) {
+          b.style.background   = '#fff';
+          b.style.color        = '#232323';
+          b.style.borderColor  = '#c8c1b6';
+        });
+        btn.style.background  = NAVY;
+        btn.style.color       = '#fff';
+        btn.style.borderColor = NAVY;
       }
 
       function applyFilters() {
         var suburb = ((document.getElementById('bt-suburb-toll-brothers') || {}).value) || '';
-        var priceD = activePill('bt-price-toll-brothers');
+        var priceD = activePillData('bt-price-toll-brothers');
         var pMin   = parseInt(priceD.pmin) || 0;
         var pMax   = parseInt(priceD.pmax) || 0;
-        var bedsD  = activePill('bt-beds-toll-brothers');
+        var bedsD  = activePillData('bt-beds-toll-brothers');
         var beds   = parseInt(bedsD.min)   || 0;
-        var bathsD = activePill('bt-baths-toll-brothers');
+        var bathsD = activePillData('bt-baths-toll-brothers');
         var baths  = parseInt(bathsD.min)  || 0;
 
         var filtered = DATA.filter(function(r) {
-          if (suburb && r.suburb !== suburb)                return false;
-          if (pMin > 0 && r.price_max && r.price_max < pMin) return false;
-          if (pMax > 0 && r.price_min && r.price_min > pMax) return false;
-          if (beds  > 0 && (r.beds_max  || 0) < beds)        return false;
-          if (baths > 0 && (r.baths_max || 0) < baths)       return false;
+          if (suburb && r.suburb !== suburb)                   return false;
+          if (pMin > 0 && r.price_max && r.price_max < pMin)  return false;
+          if (pMax > 0 && r.price_min && r.price_min > pMax)  return false;
+          if (beds  > 0 && (r.beds_max  || 0) < beds)         return false;
+          if (baths > 0 && (r.baths_max || 0) < baths)        return false;
           return true;
         });
         renderRows(filtered);
       }
 
       // Pill click handlers
-      ['bt-price-toll-brothers', 'bt-beds-toll-brothers', 'bt-baths-toll-brothers'].forEach(function(pillsId) {
-        document.querySelectorAll('#' + pillsId + ' .kc-pill').forEach(function(btn) {
+      ['bt-price-toll-brothers', 'bt-beds-toll-brothers', 'bt-baths-toll-brothers'].forEach(function(groupId) {
+        document.querySelectorAll('#' + groupId + ' button').forEach(function(btn) {
           btn.addEventListener('click', function() {
-            btn.closest('.kc-pills').querySelectorAll('.kc-pill').forEach(function(p) { p.classList.remove('active'); });
-            btn.classList.add('active');
+            setPillActive(btn);
             applyFilters();
           });
         });
