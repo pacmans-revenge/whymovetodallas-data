@@ -4272,8 +4272,8 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 241900,
-        "max": 370000
+        "min": 289900,
+        "max": 415900
       },
       "active_suburbs": [
         "forney",
@@ -4282,7 +4282,13 @@
         "princeton"
       ],
       "communities": [],
-      "reviews": null,
+      "reviews": {
+        "source": "NewHomeSource",
+        "score": "4.1",
+        "review_count": 272,
+        "note": "NewHomeSource public (not NHS Pro/TrustBuilder — NTREIS subscription does not include LGI). BBB grade F. Yelp 1.6/5 (216 reviews). ConsumerAffairs mixed.",
+        "last_updated": "2026-Q2"
+      },
       "score": {
         "total": 55,
         "quality_pts": null,
@@ -4300,7 +4306,7 @@
       "kristens_notes": "",
       "scrape_meta": {
         "strategy": "manual-seed",
-        "scraped_date": "2026-05-25T00:00:00.000Z"
+        "scraped_date": "2026-05-27T00:00:00.000Z"
       }
     },
     {
@@ -4318,7 +4324,12 @@
         "complaint_count_3yr": null,
         "source_url": "https://www.bbb.org/us/tx/shavano-park/profile/home-builders/century-communities-0825-1000177077",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "warranty claims closed without resolution",
+          "construction quality / finish workmanship",
+          "warranty service responsiveness",
+          "rushed construction timelines"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -4335,7 +4346,9 @@
       "active_suburbs": [
         "anna",
         "forney",
-        "royse-city"
+        "royse-city",
+        "dallas",
+        "red-oak"
       ],
       "communities": [],
       "reviews": null,
@@ -4353,10 +4366,10 @@
         "data_completeness": "limited",
         "last_calculated": "2026-05-26T03:20:01.794Z"
       },
-      "kristens_notes": "",
+      "kristens_notes": "East/south DFW corridor focus. Overland Grove (Forney) is flagship DFW community — 500+ lots. Rate buydowns are primary incentive. Warranty responsiveness is documented weak spot — buyers should document everything in writing. Best for budget-focused families under $400k who want amenity-rich communities.",
       "scrape_meta": {
         "strategy": "manual-seed",
-        "scraped_date": "2026-05-25T00:00:00.000Z"
+        "scraped_date": "2026-05-27T00:00:00.000Z"
       }
     },
     {
