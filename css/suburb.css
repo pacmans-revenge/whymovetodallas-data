@@ -546,6 +546,9 @@
   }
   .kc-stat:nth-child(even) { border-right: none; }
 
+  /* Hero — ensure content clears the fixed header on mobile */
+  .kc-hero { padding-top: var(--header-total-h); }
+
   /* Hero text */
   .kc-hero h1 { font-size: 2.2rem; }
   .kc-hero-sub { font-size: 1rem; }
