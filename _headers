@@ -34,6 +34,11 @@
   Cache-Control: public, max-age=3600, s-maxage=86400
   Access-Control-Allow-Origin: *
 
+# ── PDF assets — force download, no inline preview ───────────────────────────
+/assets/*.pdf
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=86400
+
 # ── Robots + verification files — no cache needed ────────────────────────────
 /robots.txt
   Cache-Control: public, max-age=86400
