@@ -4396,11 +4396,11 @@
       },
       "warranty": {
         "workmanship_years": 1,
-        "systems_years": null,
+        "systems_years": 2,
         "structural_years": 10,
-        "notes": "M/I Homes offers 1-Year Customer Care coverage and 10-Year Construction Defects structural warranty (transferable). No explicit 2-year mechanical systems tier found in DFW-specific documentation.",
+        "notes": "M/I Homes offers 1-Year Customer Care (workmanship), 2-Year mechanical systems, and 10-Year structural (administered by PWSC — transferable). Verified from mihomes.com warranty page and multiple buyer sources, May 2026.",
         "source_url": "https://www.mihomes.com/warranty",
-        "last_updated": "2026-Q2"
+        "last_updated": "2026-Q2-updated"
       },
       "price_range": {
         "min": 241990,
@@ -4408,11 +4408,9 @@
       },
       "active_suburbs": [
         "argyle",
+        "aubrey",
         "celina",
-        "mckinney",
-        "mesquite",
-        "princeton",
-        "prosper",
+        "denton",
         "royse-city"
       ],
       "communities": [],
@@ -4429,12 +4427,12 @@
         "raw_max": 40,
         "grade": "C",
         "data_completeness": "limited",
-        "last_calculated": "2026-05-26T03:20:01.794Z"
+        "last_calculated": "2026-05-27T00:00:00.000Z"
       },
       "kristens_notes": "",
       "scrape_meta": {
         "strategy": "manual-seed",
-        "scraped_date": "2026-05-25T00:00:00.000Z"
+        "scraped_date": "2026-05-27T00:00:00.000Z"
       }
     },
     {
@@ -4542,8 +4540,8 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 299000,
-        "max": 750000
+        "min": 315000,
+        "max": 899000
       },
       "active_suburbs": [
         "anna",
@@ -4556,7 +4554,8 @@
         "mckinney",
         "melissa",
         "plano",
-        "princeton"
+        "princeton",
+        "wylie"
       ],
       "communities": [],
       "reviews": null,
