@@ -6,14 +6,14 @@
     "review_minimum": 10,
     "scoring_version": "1.0",
     "data_sources": [
-      "TrustBuilder/NewHomeSource Professional (newhomesourceprofessional.com/ntreis/reviews) \u2014 7 builders",
-      "NewHomeSource public (newhomesource.com) \u2014 fallback for builders not on NHS Pro",
-      "Google Places API (maps.googleapis.com) \u2014 fallback overall rating when NHS unavailable",
+      "TrustBuilder/NewHomeSource Professional (newhomesourceprofessional.com/ntreis/reviews) — 7 builders",
+      "NewHomeSource public (newhomesource.com) — fallback for builders not on NHS Pro",
+      "Google Places API (maps.googleapis.com) — fallback overall rating when NHS unavailable",
       "BBB Texas (bbb.org/us/tx/category/home-builders)",
       "Builder Websites (scraped via Bright Data web_unlocker1)",
       "suburb-profiles.json (Niche ISD grades for suburb quality scoring)"
     ],
-    "notes": "TrustBuilder scores seeded manually May 2026 from NHS Pro (NTREIS subscription). Alternative reviews (reviews.*) populated by tools/reviews-fetcher.cjs for 13 builders not on NHS Pro. Communities populated by tools/builders-scraper.cjs. Scores computed by tools/build-builder-profiles.cjs \u2014 never edit score.* fields by hand."
+    "notes": "TrustBuilder scores seeded manually May 2026 from NHS Pro (NTREIS subscription). Alternative reviews (reviews.*) populated by tools/reviews-fetcher.cjs for 13 builders not on NHS Pro. Communities populated by tools/builders-scraper.cjs. Scores computed by tools/build-builder-profiles.cjs — never edit score.* fields by hand."
   },
   "builders": [
     {
@@ -722,7 +722,7 @@
     {
       "slug": "toll-brothers",
       "tier": "production",
-      "tier_notes": "Classified as production by industry analysts due to national volume; offers more finish options than typical production builders \u2014 sometimes described as luxury production or semi-custom by consumers",
+      "tier_notes": "Classified as production by industry analysts due to national volume; offers more finish options than typical production builders — sometimes described as luxury production or semi-custom by consumers",
       "website": "https://www.tollbrothers.com",
       "name": "Toll Brothers",
       "communities_page": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dallas-Fort-Worth",
@@ -1590,7 +1590,12 @@
         "complaint_count_3yr": 23,
         "source_url": "https://www.bbb.org/us/tx/southlake/profile/home-builders/bloomfield-homes-lp-0825-175405774",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "electrical defects",
+          "warranty response time",
+          "roofing and water damage",
+          "construction quality control"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -2538,7 +2543,13 @@
         "scraped_date": "2026-05-26T01:17:05.562Z",
         "source_url": "https://www.bloomfieldhomes.com/new-homes/",
         "html_size_kb": 380
-      }
+      },
+      "complaint_themes": [
+        "electrical defects",
+        "warranty response time",
+        "roofing and water damage",
+        "construction quality control"
+      ]
     },
     {
       "slug": "pulte-homes",
@@ -2565,12 +2576,12 @@
         "complaint_count_3yr": 456,
         "source_url": "https://www.bbb.org/us/tx/irving/profile/home-builders/pulte-homes-0875-8001384",
         "last_updated": "2026-Q2",
-        "notes": "Not Rated \u2014 BBB states business is in process of responding to previously closed complaints; complaints are company-wide",
+        "notes": "Not Rated — BBB states business is in process of responding to previously closed complaints; complaints are company-wide",
         "complaint_themes": [
           "Structural and material defects: driveways cracking/crumbling within months, garage door misalignment, uneven floors, roof leaks",
           "Warranty repair delays: promised appointments missed, issues unresolved 2+ years post-closing, difficulty reaching customer service",
           "Coercive closing practices reported: buyers threatened with deposit forfeiture to sign on homes with unresolved major defects",
-          "BBB 'Not Rated' status (as of Q2 2026) due to volume of complaints under review \u2014 notable red flag vs peers"
+          "BBB 'Not Rated' status (as of Q2 2026) due to volume of complaints under review — notable red flag vs peers"
         ]
       },
       "warranty": {
@@ -2685,7 +2696,12 @@
         "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/k-hovnanian-homes-dfw-llc-0875-4002509",
         "last_updated": "2026-Q2",
         "notes": "DFW LLC entity",
-        "complaint_themes": []
+        "complaint_themes": [
+          "warranty response time",
+          "finish quality",
+          "communication issues",
+          "lengthy repair timelines"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -2738,10 +2754,10 @@
     {
       "slug": "gfo-homes",
       "tier": "semi-custom",
-      "website": "https://gfohomes.com",
-      "name": "GFO Homes",
-      "communities_page": "https://gfohomes.com/communities/",
-      "bbb_search": "GFO Homes TX",
+      "website": "https://www.gfohome.com",
+      "name": "GFO Home",
+      "communities_page": "https://www.gfohome.com/division/dallas/",
+      "bbb_search": "GFO Home LLC TX",
       "trustbuilder": {
         "quality": null,
         "value": null,
@@ -2753,14 +2769,19 @@
         "last_updated": null
       },
       "bbb": {
-        "grade": "A+",
+        "grade": "C-",
         "accredited": false,
         "accredited_since_year": null,
-        "complaint_count_3yr": 65,
-        "source_url": "https://www.bbb.org/us/tx/addison/profile/home-builders/gehan-homes-0875-19000234",
+        "complaint_count_3yr": 4,
+        "source_url": "https://www.bbb.org/us/tx/dallas/profile/home-builders/gfo-home-llc-0875-91131551",
         "last_updated": "2026-Q2",
-        "notes": "BBB profile still listed under former brand name Gehan Homes",
-        "complaint_themes": []
+        "notes": "IMPORTANT: GFO Home LLC (Dallas) is a completely separate company from Gehan Homes/Brightland Homes. C- grade with 4 complaints in 3yr period, 1 failure to respond. NOT BBB accredited. BBB address: 2750 Burbank St, Dallas TX 75235. The former builders.json entry incorrectly linked to the Brightland/Gehan BBB page (A+ grade, 65 complaints) — that data has been removed.",
+        "complaint_themes": [
+          "warranty response delays",
+          "warranty claim denials",
+          "HVAC issues post-close",
+          "poor communication"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -2774,21 +2795,28 @@
         "min": 400000,
         "max": 800000
       },
-      "active_suburbs": [],
+      "active_suburbs": [
+        "mansfield",
+        "celina",
+        "forney",
+        "royse-city",
+        "haslet",
+        "fort-worth"
+      ],
       "communities": [],
       "score": {
-        "total": 86,
+        "total": 75,
         "quality_pts": 16.8,
         "trust_resp_pts": 16.8,
         "value_pts": 12.6,
-        "bbb_pts": 14,
+        "bbb_pts": 3,
         "warranty_pts": 13,
-        "suburb_quality_pts": null,
-        "raw_pts": 73.2,
-        "raw_max": 85,
-        "grade": "A",
-        "data_completeness": "partial",
-        "last_calculated": "2026-05-26T03:20:01.793Z"
+        "suburb_quality_pts": 12.6,
+        "raw_pts": 74.8,
+        "raw_max": 100,
+        "grade": "B+",
+        "data_completeness": "full",
+        "last_calculated": "2026-05-27T08:12:25.727Z"
       },
       "kristens_notes": "",
       "scrape_meta": {
@@ -2812,10 +2840,10 @@
     },
     {
       "slug": "chesmar-homes",
-      "tier": "custom",
+      "tier": "regional",
       "website": "https://chesmar.com",
       "name": "Chesmar Homes",
-      "communities_page": "https://chesmar.com/communities/",
+      "communities_page": "https://chesmar.com/dallas/",
       "bbb_search": "Chesmar Homes TX",
       "trustbuilder": {
         "quality": null,
@@ -2834,8 +2862,13 @@
         "complaint_count_3yr": 21,
         "source_url": "https://www.bbb.org/us/tx/richardson/profile/home-builders/chesmar-homes-dfw-ltd-0875-91148001",
         "last_updated": "2026-Q2",
-        "notes": "Not Rated on BBB",
-        "complaint_themes": []
+        "notes": "Not Rated on BBB — DFW entity: Chesmar Homes DFW LTD (Richardson, TX)",
+        "complaint_themes": [
+          "insulation issues above garage",
+          "roofing shingle degradation",
+          "closing delays",
+          "electrical defects at closing"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -2846,52 +2879,43 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 300000,
-        "max": 700000
+        "min": 412990,
+        "max": 1019990
       },
       "active_suburbs": [
-        "dallas"
+        "argyle",
+        "waxahachie"
       ],
       "communities": [
         {
-          "name": "Austin",
-          "suburb_slug": "dallas",
-          "city_name": "Dallas",
-          "url": "https://placeholder/texas/austin-new-homes/",
-          "price_min": null,
-          "price_max": null,
-          "extraction_confidence": "medium",
-          "scraped_date": "2026-05-26T01:02:11.708Z"
+          "name": "Canyon Falls",
+          "suburb_slug": "argyle",
+          "city_name": "Argyle",
+          "url": "https://chesmar.com/texas/dallas-new-homes/argyle/canyon-falls/",
+          "price_min": 703990,
+          "price_max": 1019990,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-27T00:00:00.000Z"
         },
         {
-          "name": "Central",
-          "suburb_slug": "dallas",
-          "city_name": "Dallas",
-          "url": "https://placeholder/texas/central-texas-new-homes/",
-          "price_min": null,
-          "price_max": null,
-          "extraction_confidence": "medium",
-          "scraped_date": "2026-05-26T01:02:11.708Z"
+          "name": "Oaks of North Grove",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://chesmar.com/dallas/",
+          "price_min": 412990,
+          "price_max": 535357,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-27T00:00:00.000Z"
         },
         {
-          "name": "Houston",
-          "suburb_slug": "dallas",
-          "city_name": "Dallas",
-          "url": "https://placeholder/texas/houston-new-homes/",
-          "price_min": null,
-          "price_max": null,
-          "extraction_confidence": "medium",
-          "scraped_date": "2026-05-26T01:02:11.708Z"
-        },
-        {
-          "name": "San Antonio",
-          "suburb_slug": "dallas",
-          "city_name": "Dallas",
-          "url": "https://placeholder/texas/san-antonio-new-homes/",
-          "price_min": null,
-          "price_max": null,
-          "extraction_confidence": "medium",
-          "scraped_date": "2026-05-26T01:02:11.708Z"
+          "name": "Lakeway Estates",
+          "suburb_slug": "waxahachie",
+          "city_name": "Waxahachie",
+          "url": "https://chesmar.com/communities/lakeway-estates/",
+          "price_min": 724990,
+          "price_max": 883877,
+          "extraction_confidence": "high",
+          "scraped_date": "2026-05-27T00:00:00.000Z"
         }
       ],
       "score": {
@@ -2971,11 +2995,16 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 280000,
-        "max": 600000
+        "min": 289990,
+        "max": 746990
       },
       "active_suburbs": [
-        "dallas"
+        "anna",
+        "princeton",
+        "royse-city",
+        "heath",
+        "little-elm",
+        "allen"
       ],
       "communities": [],
       "score": {
@@ -3037,7 +3066,7 @@
       },
       "price_range": {
         "min": 350000,
-        "max": 700000
+        "max": 975000
       },
       "active_suburbs": [
         "anna",
@@ -3397,7 +3426,12 @@
         "complaint_count_3yr": 23,
         "source_url": "https://www.bbb.org/us/tx/dallas/profile/home-builders/first-texas-homes-inc-0875-8000500",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "warranty response time",
+          "HVAC service delays",
+          "warranty claims disputed",
+          "construction finish quality"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -3772,7 +3806,12 @@
         "complaint_count_3yr": 16,
         "source_url": "https://www.bbb.org/us/tx/lewisville/profile/home-builders/american-legend-homes-llc-0875-90019799",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "drainage issues after closing",
+          "warranty response time",
+          "foundation concerns",
+          "contract and deposit disputes"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -3824,7 +3863,7 @@
     },
     {
       "slug": "kindred-homes",
-      "tier": "custom",
+      "tier": "semi-custom",
       "website": "https://www.kindredhomes.com",
       "name": "Kindred Homes",
       "communities_page": "https://www.kindredhomes.com/communities/",
@@ -3857,8 +3896,8 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 270000,
-        "max": 450000
+        "min": 360000,
+        "max": 1100000
       },
       "active_suburbs": [
         "azle",
@@ -3932,7 +3971,7 @@
     {
       "slug": "pacesetter-homes",
       "tier": "custom",
-      "website": "https://www.pacesetterhouston.com",
+      "website": "https://www.pacesetterhomestexas.com",
       "name": "Pacesetter Homes",
       "communities_page": "https://www.pacesetterhomestexas.com/home-builders/dallas/communities",
       "bbb_search": "Pacesetter Homes TX",
@@ -3954,7 +3993,11 @@
         "complaint_count_3yr": 11,
         "source_url": "https://www.bbb.org/us/tx/mckinney/profile/home-builders/pacesetter-homes-0875-91129230",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "warranty response time",
+          "finish quality",
+          "post-warranty material issues"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -4281,7 +4324,7 @@
         "workmanship_years": 1,
         "systems_years": 2,
         "structural_years": 10,
-        "notes": "Standard 1-2-10 limited warranty. Structural warranty backed by 2-10 Home Buyers Warranty (2-10 HBW) \u2014 confirmed third-party administrator.",
+        "notes": "Standard 1-2-10 limited warranty. Structural warranty backed by 2-10 Home Buyers Warranty (2-10 HBW) — confirmed third-party administrator.",
         "source_url": "https://www.centurycommunities.com/warranty",
         "last_updated": "2026-Q2"
       },
@@ -4727,7 +4770,7 @@
         "workmanship_years": 1,
         "systems_years": 2,
         "structural_years": 10,
-        "notes": "Standard 1-2-10 builder-backed limited warranty. Green Brick Partners sibling Southgate confirmed uses StrucSure \u2014 Normandy likely same administrator.",
+        "notes": "Standard 1-2-10 builder-backed limited warranty. Green Brick Partners sibling Southgate confirmed uses StrucSure — Normandy likely same administrator.",
         "source_url": "https://normandyhomes.com/frequently-asked-questions/",
         "last_updated": "2026-Q2"
       },
@@ -4847,6 +4890,80 @@
         "strategy": "manual-seed",
         "scraped_date": "2026-05-25T00:00:00.000Z"
       }
+    },
+    {
+      "slug": "trophy-signature-homes",
+      "tier": "production",
+      "website": "https://www.trophysignaturehomes.com",
+      "name": "Trophy Signature Homes",
+      "communities_page": "https://trophysignaturehomes.com/communities/dallas-ft-worth",
+      "bbb_search": "Trophy Signature Homes TX",
+      "trustbuilder": {
+        "overall": null,
+        "quality": null,
+        "trustworthiness": null,
+        "value": null,
+        "responsiveness": null,
+        "review_count": null,
+        "market": "Dallas, TX",
+        "source_url": "https://reviews.eliant.com/trophy-signature-homes",
+        "last_updated": null,
+        "notes": "Individual community reviews available on Eliant; no aggregate TrustBuilder score published as of 2026-Q2 research"
+      },
+      "bbb": {
+        "grade": "A+",
+        "accredited": true,
+        "accredited_since_year": 2021,
+        "complaint_count_3yr": null,
+        "source_url": "https://www.bbb.org/us/tx/plano/profile/home-builders/trophy-signature-homes-0875-91130948",
+        "last_updated": "2026-Q2",
+        "complaint_themes": [
+          "warranty response delays",
+          "exterior paint and finish issues post-close",
+          "drainage problems",
+          "roofing and window defects"
+        ]
+      },
+      "warranty": {
+        "workmanship_years": 1,
+        "systems_years": 2,
+        "structural_years": 10,
+        "notes": "Standard 1-2-10. Structural administered by 2-10 Home Buyers Warranty (third-party). Online warranty request form at trophysignaturehomes.com/warranty-request. Conducts 3-6-9-12 month check-in schedule. Notable non-warrantable: fences, cabinet damage, carpet, caulking shrinkage, subfloor squeaks, tile chips, glass/mirror damage, wood floor scratches.",
+        "source_url": "https://trophysignaturehomes.com/warranty-manuals",
+        "last_updated": "2026-Q2"
+      },
+      "price_range": {
+        "min": 238990,
+        "max": 714490
+      },
+      "active_suburbs": [
+        "aledo",
+        "alvarado",
+        "aubrey",
+        "celina",
+        "crowley",
+        "farmersville",
+        "forney",
+        "fort-worth",
+        "greenville",
+        "gunter",
+        "haslet",
+        "lavon",
+        "mckinney",
+        "ponder",
+        "princeton",
+        "seagoville",
+        "waxahachie"
+      ],
+      "communities": [],
+      "score": null,
+      "kristens_notes": "Green Brick Partners subsidiary (NYSE: GRBK). Founded 2018 in DFW, 7th largest DFW homebuilder. Strong energy-efficiency package bundled at base price. 25 active DFW communities as of May 2026. ENERGY STAR certified. Operation Finally Home partner. Green Brick Mortgage (in-house lender) tied to rate incentives. Primary complaint: post-close warranty responsiveness.",
+      "scrape_meta": {
+        "strategy": "manual-research",
+        "scraped_date": "2026-05-27T00:00:00.000Z",
+        "source_url": "https://trophysignaturehomes.com/communities/dallas-ft-worth"
+      },
+      "reviews": null
     }
   ]
 }
