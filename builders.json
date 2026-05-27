@@ -4675,18 +4675,20 @@
         "last_updated": "2026-Q2"
       },
       "price_range": {
-        "min": 271990,
-        "max": 452990
+        "min": 299990,
+        "max": 704000
       },
       "active_suburbs": [
-        "celina",
         "fate",
-        "forney",
         "royse-city",
-        "waxahachie"
+        "melissa"
       ],
       "communities": [],
-      "reviews": null,
+      "reviews": {
+        "source": "BBB + Birdeye",
+        "score": "C (BBB) / 3.8 stars (Birdeye, 30 reviews)",
+        "last_updated": "2026-Q2"
+      },
       "score": {
         "total": 71,
         "quality_pts": null,
@@ -4701,10 +4703,10 @@
         "data_completeness": "limited",
         "last_calculated": "2026-05-26T03:20:01.794Z"
       },
-      "kristens_notes": "",
+      "kristens_notes": "Founded 2019 by Tim Gehan (former CEO of Gehan Homes). Semi-custom regional builder with DFW + Atlanta presence. Active in Fate (Edgewater), Royse City (Creekside), Melissa (Milrany Ranch) as of May 2026. Preferred lender: UMH Mortgage. Hometown Hero program: $1,000 credit for military/teachers/nurses/first responders. BBB grade C (not accredited, 2 complaints in 3yr: warranty non-response, workmanship, HVAC/mold). Staff turnover flagged in 2026 tier list. Warranty: standard 1-2-10, online submission portal, third-party administrator not publicly confirmed. TREC: no disciplinary actions found.",
       "scrape_meta": {
-        "strategy": "manual-seed",
-        "scraped_date": "2026-05-25T00:00:00.000Z"
+        "strategy": "manual-research",
+        "scraped_date": "2026-05-27T00:00:00.000Z"
       }
     },
     {
