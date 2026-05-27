@@ -4594,7 +4594,11 @@
         "complaint_count_3yr": null,
         "source_url": "https://www.bbb.org/us/tx/fort-worth/profile/custom-home-builder/riverside-homebuilders-ltd-0825-1000201675",
         "last_updated": "2026-Q2",
-        "complaint_themes": []
+        "complaint_themes": [
+          "post-closing warranty response delays",
+          "construction timeline delays",
+          "finish items not resolved at walkthrough"
+        ]
       },
       "warranty": {
         "workmanship_years": 1,
@@ -4615,7 +4619,12 @@
         "saginaw"
       ],
       "communities": [],
-      "reviews": null,
+      "reviews": {
+        "source": "Birdeye",
+        "score": "4.8",
+        "count": 1670,
+        "last_updated": "2026-Q2"
+      },
       "score": {
         "total": 92,
         "quality_pts": null,
