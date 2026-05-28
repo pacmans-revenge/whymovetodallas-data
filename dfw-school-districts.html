@@ -1641,7 +1641,7 @@ gtag('consent', 'default', {
     </div>
 
     <div class="isd-card" id="wylie-isd">
-      <h3>Wylie ISD <small style="font-weight:400;font-size:0.85rem">(Collin County)</small></h3>
+      <h3><a href="/wylie-isd-texas" class="isd-link">Wylie ISD</a> <small style="font-weight:400;font-size:0.85rem">(Collin County)</small></h3>
       <div class="meta">
         <span class="tag">TEA: <strong class="tea-a">A</strong> (92)</span>
         <span class="tag">Niche: <strong class="niche-a">A+</strong></span>
@@ -1654,7 +1654,7 @@ gtag('consent', 'default', {
     </div>
 
     <div class="isd-card" id="melissa-isd">
-      <h3>Melissa ISD</h3>
+      <h3><a href="/melissa-isd-texas" class="isd-link">Melissa ISD</a></h3>
       <div class="meta">
         <span class="tag">TEA: <strong class="tea-a">A</strong> (~90)</span>
         <span class="tag">Niche: <strong class="niche-a">A−</strong></span>
@@ -2267,7 +2267,11 @@ document.addEventListener('DOMContentLoaded', function () {
     Array.from(tbody.querySelectorAll('tr')).forEach(function(row) {
       const link = row.querySelector('a.isd-link');
       if (!link) return;
-      const id = link.getAttribute('data-isd') || (link.getAttribute('href') || '').replace('#', '');
+      // Derive isdData key from href (/frisco-isd-texas → frisco-isd) or data-isd attribute
+      let id = link.getAttribute('data-isd')
+        || (link.getAttribute('href') || '').replace(/^\//, '').replace(/-texas$/, '');
+      // Special case: grapevine-colleyville-isd → gcisd (isdData legacy key)
+      if (id === 'grapevine-colleyville-isd') id = 'gcisd';
       const d = isdData[id];
       if (!d) return;
 
