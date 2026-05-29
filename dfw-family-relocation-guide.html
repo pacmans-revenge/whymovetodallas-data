@@ -1110,16 +1110,37 @@ gtag('consent', 'default', {
 
           </form>
 
+          <div id="kc-guide-error" style="display:none;margin-top:12px;padding:1rem 1.1rem;background:#fff5f5;border:1px solid #f5c6c6;border-left:3px solid #c0392b;border-radius:6px;font-size:.85rem;color:#555;line-height:1.6;">
+            <strong style="display:block;color:#c0392b;margin-bottom:.3rem;">Something went wrong — please try again.</strong>
+            If the issue continues, reach Kristen directly:<br>
+            <a href="tel:6024054115" style="color:var(--navy);font-weight:700;text-decoration:none;">(602) 405-4115</a>
+            &nbsp;·&nbsp;
+            <a href="mailto:Kristen@whymovetodallas.com" style="color:var(--navy);font-weight:700;text-decoration:none;">Kristen@whymovetodallas.com</a>
+          </div>
+
           <div class="kc-lp-form-success" id="kc-guide-success" role="alert" aria-live="polite">
+            <svg style="width:48px;height:48px;display:block;margin:0 auto .75rem;" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="11"/><polyline points="9 14 12.5 17.5 19 11"/></svg>
             <h4>You're in!</h4>
             <p>Your DFW Family Relocation Guide is on its way — check your inbox in the next few minutes.</p>
-            <a href="/assets/DFW_Family_Relocation_Guide.pdf"
-               download="DFW_Family_Relocation_Guide.pdf"
-               style="display:inline-block;margin:.75rem 0 1rem;padding:.8rem 1.75rem;background:var(--gold);color:#fff;font-family:'Jost',sans-serif;font-weight:700;font-size:.95rem;border-radius:6px;text-decoration:none;">
-              Download the Guide Now →
+            <p style="font-size:.82rem;color:#888;">Don't see it? Check your spam or promotions folder, or add <strong>Guide@whymovetodallas.com</strong> to your contacts.</p>
+            <div style="background:var(--ivory);border-radius:8px;padding:1rem 1.25rem;text-align:left;margin:.75rem 0 1.25rem;font-size:.84rem;color:#555;line-height:1.6;">
+              <strong style="display:block;color:var(--navy);margin-bottom:.5rem;font-size:.88rem;">What happens next:</strong>
+              <div style="display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.4rem;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">1.</span><span>The guide arrives in your inbox — suburb profiles, school district comparisons, and property tax breakdown all inside</span></div>
+              <div style="display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.4rem;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">2.</span><span>Read through it at your own pace — use it to narrow your suburb shortlist</span></div>
+              <div style="display:flex;align-items:flex-start;gap:.6rem;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">3.</span><span>When you're ready to talk through your specific situation, book a free call below</span></div>
+            </div>
+            <a href="https://calendly.com/socialagentgroup/let-s-talk"
+               target="_blank" rel="noopener"
+               style="display:block;padding:.85rem 1.25rem;background:var(--gold);color:#fff;font-family:'Jost',sans-serif;font-weight:700;font-size:.92rem;border-radius:6px;text-decoration:none;margin-bottom:.6rem;">
+              Schedule a Free Relocation Call →
             </a>
-            <p style="font-size:.82rem;color:#888;">If you don't see the email, check your spam folder.</p>
-            <p><a href="https://whymovetodallas.com" style="color:var(--gold);font-weight:700;text-decoration:none;">Explore whymovetodallas.com →</a></p>
+            <p style="font-size:.78rem;color:#999;margin:.9rem 0 .5rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;">While you wait, explore:</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.6rem;">
+              <a href="/dallas-fort-worth-suburbs" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">DFW Suburb Profiles →</a>
+              <a href="/dfw-school-districts" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">School District Guide →</a>
+              <a href="/new-construction-dfw" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">New Construction DFW →</a>
+              <a href="/dfw-relocation-services" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">Relocation Services →</a>
+            </div>
           </div>
           <!-- /opt-in form -->
 
@@ -1212,10 +1233,21 @@ gtag('consent', 'default', {
 (function () {
   var form    = document.getElementById('kc-guide-form');
   var success = document.getElementById('kc-guide-success');
+  var errorEl = document.getElementById('kc-guide-error');
   var btn     = document.getElementById('kc-guide-submit');
+
+  function showError() {
+    errorEl.style.display = 'block';
+    errorEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function hideError() {
+    errorEl.style.display = 'none';
+  }
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
+    hideError();
 
     var firstName = document.getElementById('kc-fname').value.trim();
     var lastName  = document.getElementById('kc-lname').value.trim();
@@ -1226,15 +1258,15 @@ gtag('consent', 'default', {
 
     // Client-side validation
     if (!firstName) {
-      document.getElementById('kc-fname').focus();
-      document.getElementById('kc-fname').style.borderColor = '#c0392b';
-      alert('Please enter your first name.');
+      var fnEl = document.getElementById('kc-fname');
+      fnEl.style.borderColor = '#c0392b';
+      fnEl.focus();
       return;
     }
     if (!email || !email.includes('@')) {
-      document.getElementById('kc-email').focus();
-      document.getElementById('kc-email').style.borderColor = '#c0392b';
-      alert('Please enter a valid email address.');
+      var emEl = document.getElementById('kc-email');
+      emEl.style.borderColor = '#c0392b';
+      emEl.focus();
       return;
     }
 
@@ -1249,16 +1281,27 @@ gtag('consent', 'default', {
       });
 
       if (res.ok) {
-        form.style.display    = 'none';
-        success.style.display = 'block';
+        // Only redirect after confirmed 200 from Vercel
+        window.location.href = '/guide-thank-you';
       } else {
-        throw new Error('Server error');
+        // Non-2xx response — show inline error, re-enable button
+        btn.disabled    = false;
+        btn.textContent = 'Send Me the Guide →';
+        showError();
       }
     } catch (err) {
+      // Network failure — show inline error, re-enable button
       btn.disabled    = false;
       btn.textContent = 'Send Me the Guide →';
-      alert('Something went wrong — please try again or call Kristen directly at (602) 405-4115.');
+      showError();
     }
+  });
+
+  // Clear red border when user starts correcting a field
+  ['kc-fname', 'kc-email'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', function () {
+      this.style.borderColor = '';
+    });
   });
 }());
 </script>
