@@ -1,0 +1,597 @@
+<style>
+:root {
+  --ivory: #F7F4EE; --navy: #1F2D3D; --gold: #B08D57; --stone: #C8C1B6;
+  --charcoal: #232323; --white: #ffffff; --light-gray: #f0ede7; --border: #ddd8d0;
+}
+.isd-page { font-family: 'Jost', 'Segoe UI', Arial, sans-serif; color: var(--charcoal); font-size: 17px; line-height: 1.75; }
+.isd-page h1, .isd-page h2, .isd-page h3, .isd-page h4 { font-family: 'Cormorant Garamond', Georgia, serif; color: var(--navy); font-weight: 600; line-height: 1.25; }
+.isd-page h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+.isd-page h2 { font-size: 1.85rem; margin-bottom: 0.8rem; margin-top: 2.5rem; }
+.isd-page h3 { font-size: 1.35rem; margin-bottom: 0.6rem; margin-top: 1.8rem; }
+.isd-page p { margin-bottom: 1rem; }
+.isd-page a { color: var(--navy); }
+.isd-page a:hover { color: var(--gold); }
+.isd-hero { background: linear-gradient(135deg, rgba(31,45,61,0.62) 0%, rgba(31,45,61,0.45) 50%, rgba(31,45,61,0.58) 100%), url('/images/north-richland-hills-hero.webp') center/cover no-repeat; color: var(--white); padding: clamp(3.5rem, 9vw, 6rem) 1.5rem; text-align: center; }
+.isd-hero .badge { display: inline-block; font-family: 'Jost', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; text-shadow: 0 0 16px rgba(0,0,0,0.5); }
+.isd-hero h1 { color: var(--white); max-width: 820px; margin: 0 auto 1rem; text-shadow: 0 2px 12px rgba(0,0,0,0.45); }
+.isd-hero p { color: rgba(255,255,255,0.88); max-width: 680px; margin: 0 auto 1.5rem; }
+.isd-hero-btns { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
+.isd-hero-btn { display: inline-block; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.9rem; padding: 0.75rem 1.75rem; border-radius: 5px; text-decoration: none; transition: opacity 0.2s; }
+.isd-hero-btn--gold { background: var(--gold); color: var(--white); }
+.isd-hero-btn--outline { background: transparent; border: 2px solid rgba(255,255,255,0.7); color: var(--white); }
+.isd-hero-btn:hover { opacity: 0.88; }
+.isd-jumpnav { background: var(--white); border-bottom: 1px solid var(--stone); padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.isd-jumpnav::-webkit-scrollbar { display: none; }
+.isd-jumpnav ul { display: flex; list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; white-space: nowrap; }
+.isd-jumpnav a { display: block; padding: 0.85rem 0.9rem; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; color: var(--navy); border-bottom: 3px solid transparent; transition: all 0.15s; }
+.isd-jumpnav a:hover { border-bottom-color: var(--gold); color: var(--gold); }
+.isd-wrap { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.isd-stats { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.75rem 0; }
+.isd-stat { flex: 1; min-width: 130px; background: var(--white); border-radius: 10px; padding: 1.1rem 1rem; text-align: center; border: 1px solid var(--border); }
+.isd-stat-num { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 0.35rem; }
+.isd-stat-label { display: block; font-size: 0.72rem; font-weight: 600; color: var(--navy); letter-spacing: 0.04em; text-transform: uppercase; }
+.isd-callout { background: var(--light-gray); border-left: 4px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+.isd-callout-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+.isd-callout p { margin: 0; font-size: 0.97rem; }
+.isd-callout p + p { margin-top: 0.6rem; }
+.isd-section { padding: 1.75rem 0; border-bottom: 1px solid var(--border); }
+.isd-section:last-of-type { border-bottom: none; }
+.fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; }
+.fit-box { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem 1.4rem; }
+.fit-box h4 { margin: 0 0 0.75rem; font-size: 1rem; color: var(--navy); }
+.fit-box ul { margin: 0; padding-left: 1.2rem; font-size: 0.9rem; line-height: 1.7; }
+.campus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.25rem 0; }
+.campus-card { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: 6px; padding: 1.2rem 1.3rem; }
+.campus-card h4 { margin: 0 0 0.35rem; font-size: 1.05rem; color: var(--navy); }
+.campus-card .tag-row { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.6rem; }
+.campus-card p { font-size: 0.88rem; line-height: 1.6; margin: 0; }
+.tag { display: inline-block; font-size: 0.72rem; background: var(--light-gray); color: var(--charcoal); padding: 0.1rem 0.45rem; border-radius: 3px; white-space: nowrap; }
+.tag--gold { background: var(--gold); color: var(--white); }
+.program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+.program-item { background: var(--white); border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.2rem; }
+.program-item h4 { margin: 0 0 0.4rem; font-size: 1rem; color: var(--gold); }
+.program-item p { margin: 0; font-size: 0.87rem; line-height: 1.6; }
+.compare-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.88rem; }
+.compare-table th { background: var(--navy); color: var(--white); padding: 0.6rem 0.85rem; text-align: left; font-weight: 600; }
+.compare-table td { padding: 0.55rem 0.85rem; border-bottom: 1px solid var(--border); }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: var(--light-gray); }
+.faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+.faq-q { font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; font-size: 1rem; }
+.faq-q .arrow { font-size: 1rem; flex-shrink: 0; transition: transform 0.2s; }
+.faq-q.open .arrow { transform: rotate(180deg); }
+.faq-a { display: none; padding-top: 0.75rem; font-size: 0.95rem; line-height: 1.7; }
+.faq-a.open { display: block; }
+.isd-cta { background: var(--navy); color: var(--white); border-radius: 10px; padding: 2.75rem 2.25rem; text-align: center; margin-top: 2rem; }
+.isd-cta h2 { color: var(--white); margin-top: 0; }
+.isd-cta p { color: var(--stone); max-width: 540px; margin: 0 auto 1.5rem; }
+.isd-cta-btns { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
+.isd-cta-btn { display: inline-block; background: var(--gold); color: var(--white); font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2rem; border-radius: 5px; text-decoration: none; transition: opacity 0.2s; }
+.isd-cta-btn--outline { background: transparent; border: 2px solid rgba(255,255,255,0.55); color: var(--white); }
+.isd-cta-btn:hover { opacity: 0.88; color: var(--white); }
+.explore-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.explore-link { display: inline-block; padding: 0.4rem 0.9rem; border: 1px solid var(--border); border-radius: 4px; font-size: 0.85rem; color: var(--navy); text-decoration: none; transition: border-color 0.15s; }
+.explore-link:hover { border-color: var(--gold); color: var(--gold); }
+.sources-list { font-size: 0.82rem; color: #666; line-height: 1.7; }
+.sources-list li { margin-bottom: 0.2rem; }
+.compliance { font-size: 0.78rem; color: #888; border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 2.5rem; line-height: 1.6; }
+@media(max-width:640px) {
+  .isd-hero h1 { font-size: 1.85rem; }
+  .isd-wrap { padding: 1.5rem 1rem 3rem; }
+  .isd-stats { gap: 0.6rem; }
+  .isd-stat { min-width: calc(50% - 0.3rem); }
+  .campus-grid, .program-grid, .fit-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="isd-page">
+
+<!-- HERO -->
+<div class="isd-hero">
+  <div class="badge">DFW School District Profile</div>
+  <h1>Birdville ISD — Complete Family Guide</h1>
+  <p>Everything relocating families need to know about Birdville ISD — TEA ratings, campus highlights, CTE programs at BCTAL, open enrollment flexibility, and boundary verification before you buy in NE Tarrant County.</p>
+  <div class="isd-hero-btns">
+    <a href="/north-richland-hills-texas" class="isd-hero-btn isd-hero-btn--gold">Living in North Richland Hills →</a>
+    <a href="/dfw-school-districts" class="isd-hero-btn isd-hero-btn--outline">Compare All DFW ISDs</a>
+  </div>
+</div>
+
+<!-- JUMP NAV -->
+<nav class="isd-jumpnav" aria-label="Page sections">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#tea-rating">TEA Rating</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#campuses">Campuses</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#enrollment">Enrollment</a></li>
+    <li><a href="#boundary">Boundary</a></li>
+    <li><a href="#finances">Finances</a></li>
+    <li><a href="#compare">Compare</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="isd-wrap">
+
+<!-- OVERVIEW -->
+<section class="isd-section" id="overview">
+  <h2>Birdville ISD at a Glance</h2>
+
+  <div class="isd-stats">
+    <div class="isd-stat">
+      <span class="isd-stat-num">~22,000</span>
+      <span class="isd-stat-label">Students (2025–26)</span>
+    </div>
+    <div class="isd-stat">
+      <span class="isd-stat-num">33</span>
+      <span class="isd-stat-label">Campuses</span>
+    </div>
+    <div class="isd-stat">
+      <span class="isd-stat-num">B (83)</span>
+      <span class="isd-stat-label">TEA Rating (2022–23)</span>
+    </div>
+    <div class="isd-stat">
+      <span class="isd-stat-num">B+</span>
+      <span class="isd-stat-label">Niche Grade (2026)</span>
+    </div>
+    <div class="isd-stat">
+      <span class="isd-stat-num">~92%</span>
+      <span class="isd-stat-label">Graduation Rate</span>
+    </div>
+    <div class="isd-stat">
+      <span class="isd-stat-num">$1.19</span>
+      <span class="isd-stat-label">Tax Rate / $100 AV (2025)</span>
+    </div>
+  </div>
+
+  <p>Birdville ISD serves a compact 40-square-mile corner of northeast Tarrant County that many DFW newcomers overlook — and that often works in favor of families who do their homework. The district covers North Richland Hills, Haltom City, Richland Hills, and Watauga, plus portions of Hurst and the far eastern edge of Fort Worth. With approximately 22,000 students across 33 campuses and a 2022–23 TEA accountability rating of B (83), Birdville sits in the solid mid-tier of Tarrant County districts. The honest tradeoff families need to understand upfront: <strong>campus quality varies meaningfully within the district</strong>. Richland High School earns a 7/10 on GreatSchools; Smithfield Middle School earns a 9/10. Haltom High School earns a 4/10. Your specific street address — and which campus it feeds — matters significantly.</p>
+
+  <p>What softens that variation is Birdville's genuinely flexible <strong>"No Boundaries" open enrollment policy</strong>. Any student, in-district or out-of-district, can apply to attend any campus. Applications are reviewed by the principal and Student Services, and approval is renewed annually rather than guaranteed long-term. But in practice, this gives families more control over their child's placement than strict-zoning districts would — especially for families targeting specific programs. Birdville's career-technology campus, <strong>BCTAL (Birdville Center of Technology and Advanced Learning)</strong>, serves students district-wide and offers industry certification pathways in healthcare, IT, construction, and more. North Richland Middle School holds a national STEM certification. Smithfield Middle School is one of the highest-rated middle campuses in NE Tarrant County.</p>
+
+  <p>Compared to neighboring Keller ISD or HEB ISD, Birdville's core geography — North Richland Hills and Haltom City — tends to run 20–30% below Keller on home prices, while the 2025 certified tax rate of $1.18654 per $100 assessed value is modestly lower than HEB's. For families prioritizing housing value in NE Tarrant County who are willing to research specific campuses and consider open enrollment, Birdville frequently makes the shortlist.</p>
+
+  <div class="fit-grid">
+    <div class="fit-box">
+      <h4>Best Fit For Families Who…</h4>
+      <ul>
+        <li>Are buying in North Richland Hills, Richland Hills, or Watauga and want an affordable NE Tarrant option</li>
+        <li>Have students targeting BCTAL's career and technical programs (healthcare, IT, construction, trades)</li>
+        <li>Value open enrollment flexibility to choose campuses beyond their home zone</li>
+        <li>Have middle schoolers where the Smithfield or North Richland Middle zones are accessible</li>
+        <li>Prioritize housing value over the academic brand premium of Keller or Southlake</li>
+      </ul>
+    </div>
+    <div class="fit-box">
+      <h4>May Not Be the Best Fit If…</h4>
+      <ul>
+        <li>Academic consistency across every campus is a non-negotiable — the gap between Birdville's highest- and lowest-rated campuses is wide</li>
+        <li>You are buying in Hurst — much of Hurst is served by HEB ISD, not Birdville; address verification is critical</li>
+        <li>An IB (International Baccalaureate) programme is a priority — Birdville does not offer one</li>
+        <li>You prefer a small-town or tight-knit district feel — at 22,000 students and 33 campuses, this is a mid-size urban district</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="isd-callout">
+    <div class="isd-callout-label">⚠ Boundary Verification</div>
+    <p>Not every home with a North Richland Hills, Haltom City, Watauga, or Hurst address falls within Birdville ISD. Hurst is particularly important to verify — the city straddles the Birdville and HEB ISD boundary line, and the two do not align with any simple east/west or north/south street. Always verify your specific address at <a href="https://www.birdvilleschools.net/departments/transportation/online-school-maps" target="_blank" rel="noopener">birdvilleschools.net's boundary maps</a> or through <a href="https://www.choosebirdville.net" target="_blank" rel="noopener">choosebirdville.net</a> before making an offer.</p>
+  </div>
+</section>
+
+<!-- TEA RATING -->
+<section class="isd-section" id="tea-rating">
+  <h2>TEA Accountability Rating</h2>
+
+  <p>Birdville ISD earned an overall <strong>B (score: 83)</strong> in the 2022–23 TEA A-F accountability system — the most recently published rating cycle. Texas suspended A-F ratings from 2019 through 2022 due to COVID-era disruptions and subsequent legal challenges; ratings resumed for the 2022–23 school year. The 2024 and 2025 ratings were released simultaneously in late 2025. To view the current rating and domain scores, visit <a href="https://txschools.gov/districts/220902/profile" target="_blank" rel="noopener">txschools.gov — Birdville ISD (District #220902)</a>.</p>
+
+  <p>Texas grades districts and campuses across three domains:</p>
+  <ul>
+    <li><strong>Domain 1 — Student Achievement:</strong> Measures how students perform on STAAR assessments, graduation rates, and college/career/military readiness (CCMR) across all grade levels.</li>
+    <li><strong>Domain 2 — School Progress:</strong> Measures year-over-year academic growth for all students and for the economically disadvantaged population in particular.</li>
+    <li><strong>Domain 3 — Closing the Gaps:</strong> Measures performance equity across student groups — racial and ethnic groups, special education, economically disadvantaged, and English learners.</li>
+  </ul>
+
+  <p><strong>What a B (83) means in practice:</strong> For a district serving a population where approximately 62% of students qualify for free or reduced-price lunch — a considerably higher rate than Keller (roughly 18%) or Carroll ISD (roughly 8%) — an overall B reflects meaningful instructional outcomes under more challenging socioeconomic conditions. Texas grades on a tight absolute scale: 90+ earns an A, 80–89 earns a B. The more actionable number for relocating families is the <em>individual campus rating</em>, which can range from a 4/10 to a 9/10 within the same district. Campus-level accountability reports are available at txschools.gov under the individual school profiles.</p>
+
+  <div class="isd-callout">
+    <div class="isd-callout-label">📌 Note on TEA Data Timing</div>
+    <p>TEA accountability ratings can lag the current school year. For the most up-to-date scores and domain breakdowns, always check <a href="https://txschools.gov/districts/220902/profile" target="_blank" rel="noopener">txschools.gov</a> directly. Campus-level ratings matter more than district averages for individual families — search each campus name once you've identified your address zone.</p>
+  </div>
+</section>
+
+<!-- ACADEMICS -->
+<section class="isd-section" id="academics">
+  <h2>Academic Performance</h2>
+
+  <p>Niche rates Birdville ISD's academics at <strong>B+</strong> and its college prep offerings at <strong>A</strong> for the 2026 ranking cycle — a meaningful distinction. The district offers Advanced Placement courses at all three comprehensive high schools (Birdville HS, Richland HS, Haltom HS) and a Dual Credit pathway through Tarrant County College. The <strong>Collegiate Academy of Birdville</strong>, an Early College High School on a separate campus (~151 students), allows selected students to earn a college associate degree concurrently with their high school diploma.</p>
+
+  <p>The district's graduation rate is approximately <strong>92%</strong> district-wide, with individual high schools ranging higher. Richland High School posted a 95.3% on-time diploma rate for the Class of 2023 (Texas Tribune data). The 17:1 student-teacher ratio (Niche, sourced from state data) is close to the national average of 16:1 — typical for a mid-size suburban district.</p>
+
+  <p>The more honest framing for relocating families: Birdville's district averages are pulled in both directions by the wide variation between its highest- and lowest-performing campuses. A student entering Smithfield Middle School or Richland High School is in a materially different academic environment from a student entering Haltom High School. <strong>Texas STAAR proficiency rates and campus-level A-F scores at txschools.gov are the most reliable guide for evaluating the specific campus your address would feed.</strong> Don't rely on the district average alone.</p>
+
+  <p>Per-pupil expenditure for 2023–24 is approximately <strong>$11,122 per student</strong> (Niche, sourced from TEA/NCES data) — below the national average of roughly $17,834 but consistent with mid-size Texas districts that rely primarily on state funding and local property taxes. BCTAL (Birdville Center of Technology and Advanced Learning) supplements traditional academic spending with dedicated career-technical infrastructure and industry partnership programs.</p>
+</section>
+
+<!-- CAMPUSES -->
+<section class="isd-section" id="campuses">
+  <h2>Campuses to Know</h2>
+
+  <h3>High Schools</h3>
+  <div class="campus-grid">
+    <div class="campus-card">
+      <h4>Richland High School</h4>
+      <div class="tag-row">
+        <span class="tag">High School</span>
+        <span class="tag">~2,063 students</span>
+        <span class="tag tag--gold">GS: 7/10</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>The highest-rated comprehensive high school in the district per GreatSchools, Richland HS offers AP coursework, Project Lead the Way STEM pathways, and posted a 95.3% on-time graduation rate for the Class of 2023. Families in the NRH east zone frequently target this campus through both home search and open enrollment applications.</p>
+    </div>
+    <div class="campus-card">
+      <h4>Birdville High School</h4>
+      <div class="tag-row">
+        <span class="tag">High School</span>
+        <span class="tag">~2,067 students</span>
+        <span class="tag tag--gold">GS: 6/10</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>Birdville HS serves the northern and western NRH zone and has earned multiple College Success Awards recognizing students who complete college-level coursework. The campus offers AP and Dual Credit through TCC and feeds directly into BCTAL for students pursuing CTE pathways.</p>
+    </div>
+    <div class="campus-card">
+      <h4>Haltom High School</h4>
+      <div class="tag-row">
+        <span class="tag">High School</span>
+        <span class="tag">~2,757 students</span>
+        <span class="tag">GS: 4/10</span>
+        <span class="tag">Haltom City</span>
+      </div>
+      <p>The largest comprehensive campus in the district by enrollment, Haltom HS serves a predominantly Haltom City student body. GreatSchools rates it below average for Texas. Families buying in Haltom City should research this campus carefully — open enrollment to Richland or Birdville HS is an option worth applying for before finalizing a home purchase.</p>
+    </div>
+    <div class="campus-card">
+      <h4>Collegiate Academy of Birdville</h4>
+      <div class="tag-row">
+        <span class="tag">Early College High School</span>
+        <span class="tag">~151 students</span>
+        <span class="tag tag--gold">Application Required</span>
+      </div>
+      <p>A selective Early College High School where students complete high school requirements and earn college credits (up to an associate degree) through Tarrant County College. Application and eligibility requirements apply — not zoning-based. An excellent option for college-bound students who qualify, regardless of home zone assignment.</p>
+    </div>
+  </div>
+
+  <h3>Notable Middle Schools</h3>
+  <div class="campus-grid">
+    <div class="campus-card">
+      <h4>Smithfield Middle School</h4>
+      <div class="tag-row">
+        <span class="tag">Middle School</span>
+        <span class="tag">~784 students</span>
+        <span class="tag tag--gold">GS: 9/10</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>The highest-rated middle campus in the district by GreatSchools, Smithfield MS carries U.S. News Best Schools recognition and consistently high Niche academic grades. Families with middle schoolers frequently list Smithfield zone as a primary consideration in their home search — or apply for open enrollment if they land outside it.</p>
+    </div>
+    <div class="campus-card">
+      <h4>North Richland Middle School</h4>
+      <div class="tag-row">
+        <span class="tag">Middle School</span>
+        <span class="tag">~864 students</span>
+        <span class="tag tag--gold">STEM Certified</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>The only nationally STEM-certified middle school campus in Birdville ISD. STEM integration runs across curriculum rather than being limited to a single elective track. Enrollment is open to out-of-zone applicants through the district's No Boundaries policy.</p>
+    </div>
+  </div>
+
+  <h3>Notable Elementary Campuses</h3>
+  <div class="campus-grid">
+    <div class="campus-card">
+      <h4>Smithfield Elementary</h4>
+      <div class="tag-row">
+        <span class="tag">Elementary</span>
+        <span class="tag">~671 students</span>
+        <span class="tag tag--gold">2017 National Blue Ribbon</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>A 2017 National Blue Ribbon School and consistent U.S. News Best Elementary recognition recipient. One of the district's most recognized elementary campuses for academic performance. Niche grades it A.</p>
+    </div>
+    <div class="campus-card">
+      <h4>Green Valley Elementary</h4>
+      <div class="tag-row">
+        <span class="tag">Elementary</span>
+        <span class="tag">~406 students</span>
+        <span class="tag tag--gold">2005 National Blue Ribbon</span>
+        <span class="tag">North Richland Hills</span>
+      </div>
+      <p>A 2005 National Blue Ribbon School with a Niche grade of A and a strong GreatSchools rating. One of Birdville's legacy high-performing elementary campuses in the NRH core.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="isd-section" id="programs">
+  <h2>Specialty Programs</h2>
+
+  <div class="program-grid">
+    <div class="program-item">
+      <h4>BCTAL — Birdville Center of Technology and Advanced Learning</h4>
+      <p><strong>Campus-specific, district-wide access.</strong> BCTAL is a dedicated career and technical campus that high school students from all Birdville campuses can attend for part of their school day. It offers 16+ programs of study including Health Science (leading to CNA and other certifications), Information Technology, Architecture and Construction, Agriculture/Natural Resources, Transportation and Logistics, Arts/AV/Communications, and more. Students earn industry certifications alongside their high school diploma. <strong>Transportation is parent-provided to BCTAL;</strong> students return to their home campus for non-CTE coursework. Families specifically interested in BCTAL pathways should confirm their student's home campus schedule allows BCTAL enrollment before committing to a specific address zone.</p>
+    </div>
+    <div class="program-item">
+      <h4>Gifted and Talented (GT / GATE)</h4>
+      <p><strong>Districtwide, K–12.</strong> GT identification uses a multi-criteria assessment process. In grades K–5, identified students receive pull-out enrichment classes. In grades 6–12, GT students access Honors, Honors+, AP, AVID, and Dual Credit pathways across all campuses. Identification is testing-based; new families should contact their campus GT coordinator within the first grading period after enrollment. Texas state law protects GT student services upon transfer — a new ARD-equivalent review (GT meeting) should occur within 30 days of enrollment if your student had GT services at a previous Texas district.</p>
+    </div>
+    <div class="program-item">
+      <h4>Advanced Placement and Dual Credit</h4>
+      <p><strong>Districtwide at all comprehensive high schools.</strong> AP courses are offered at Birdville HS, Richland HS, and Haltom HS across core subjects and electives. Dual Credit is available through Tarrant County College for eligible juniors and seniors. The number of AP offerings varies by campus — Richland and Birdville HS typically carry broader AP catalogs. Confirm specific course availability for your student's interests before selecting a campus or address zone.</p>
+    </div>
+    <div class="program-item">
+      <h4>Collegiate Academy of Birdville (Early College HS)</h4>
+      <p><strong>Campus-specific, application required.</strong> Students apply through a competitive process independent of home-zone assignment. Accepted students complete high school at the Collegiate Academy campus while earning TCC college credits — potentially graduating with a full associate degree. This program is ideal for academically motivated students who qualify regardless of which comprehensive high school their address would otherwise feed. Check birdvilleschools.net for current application windows.</p>
+    </div>
+    <div class="program-item">
+      <h4>ESL and Dual Language</h4>
+      <p><strong>Districtwide ESL; Dual Language at select campuses.</strong> Content-Based ESL is available at all elementary campuses; Pull-Out ESL at all secondary campuses. A Bilingual/Dual Language program operates at select elementary campuses for qualifying students. Families with English learners should contact the district's Bilingual/ESL department at enrollment to identify the appropriate campus placement and program level for their child.</p>
+    </div>
+    <div class="program-item">
+      <h4>AVID (Advancement Via Individual Determination)</h4>
+      <p><strong>Districtwide, grades 6–12.</strong> AVID supports students in the academic middle — college-capable students who may need organizational skills, tutoring support, and structured college-readiness coaching to reach their potential. Available at all middle and high school campuses. No competitive application; enrollment is by teacher recommendation and student/parent interest.</p>
+    </div>
+  </div>
+
+  <p><strong>No IB Programme:</strong> Birdville ISD does not offer an International Baccalaureate program. Families with IB as a priority should consider Carroll ISD (Southlake) or check nearby districts for IB Middle Years or Diploma Programme options.</p>
+</section>
+
+<!-- ENROLLMENT -->
+<section class="isd-section" id="enrollment">
+  <h2>Enrollment Guide</h2>
+
+  <p>Birdville ISD uses an online enrollment system through the Focus School Software portal. The primary enrollment gateway is <a href="https://www.choosebirdville.net" target="_blank" rel="noopener">choosebirdville.net</a>.</p>
+
+  <h3>Steps to Enroll (2025–26)</h3>
+  <ol>
+    <li><strong>Verify your address zone</strong> at <a href="https://www.birdvilleschools.net/departments/transportation/online-school-maps" target="_blank" rel="noopener">birdvilleschools.net boundary maps</a> to confirm your home feeds to Birdville ISD and identify your zoned campus.</li>
+    <li><strong>Create an account</strong> at choosebirdville.net using legal parent or guardian name and contact information.</li>
+    <li><strong>Complete online enrollment forms</strong> in the Focus School Software portal (birdville.focusschoolsoftware.com). Required documents typically include: proof of residency (lease, utility bill, or mortgage statement), immunization records, birth certificate, and prior school records/report card.</li>
+    <li><strong>Submit and confirm.</strong> Campus staff will review and contact you to complete the process. In-person assistance is available for families who need help with the online system.</li>
+  </ol>
+
+  <h3>Open Enrollment (No Boundaries Policy)</h3>
+  <p>Any student — in-district or out-of-district — may apply to attend a campus other than their home-zone campus. Applications are reviewed case by case by the campus principal and Student Services. Key requirements: the student must have passed all portions of their most recent STAAR or EOC assessments, and space must be available at the requested campus and grade level. Approval is renewed annually — an open enrollment student must reapply each school year. Students can be returned to their home campus for disciplinary or academic reasons. For 2025–26, applications were open as of spring 2025 at birdvilleschools.net/Domain/8477.</p>
+
+  <h3>Intra- and Inter-District Transfers</h3>
+  <p>Intra-district transfers (moving to a different campus within Birdville) follow the same open enrollment process above. Inter-district transfers (students from outside Birdville ISD boundaries applying to enroll) are also reviewed through open enrollment — space permitting. Inter-district transfer students do not automatically carry transportation services; verify with the district if this is a factor.</p>
+
+  <h3>Special Education and 504 Transfers</h3>
+  <p>If your student has an active IEP or 504 plan from a previous Texas district, Texas law requires the receiving campus to hold an ARD (Admission, Review, and Dismissal) meeting within <strong>30 days</strong> of enrollment to review and adopt, modify, or develop a new plan. Bring all prior documentation — IEP, 504, evaluation reports, and any related service records — to enrollment. Contact Birdville ISD's Special Services office before your move to get the process started early. Parent experience with special education services can vary significantly by campus; direct conversations with the campus Special Education coordinator are the best way to assess fit for your child's specific needs.</p>
+</section>
+
+<!-- BOUNDARY VERIFICATION -->
+<section class="isd-section" id="boundary">
+  <h2>Boundary Verification</h2>
+
+  <p>Birdville ISD covers 40 square miles in northeast Tarrant County, but the district boundary does not follow city limits cleanly. <strong>Making an offer without verifying your specific address can mean your child attends a different school than you planned — and boundary maps do not always match common-sense geography.</strong></p>
+
+  <h3>Cities Primarily Within Birdville ISD</h3>
+  <ul>
+    <li><strong>North Richland Hills</strong> — The largest city in the district. The vast majority of NRH addresses are within Birdville ISD. Small edge areas on the western boundary may fall into Keller ISD territory; verify any address near the Keller city limits.</li>
+    <li><strong>Richland Hills</strong> — The entire city of Richland Hills is served by Birdville ISD.</li>
+    <li><strong>Haltom City</strong> — Most of Haltom City is in Birdville ISD. A small number of far-western Haltom City addresses may be served by Fort Worth ISD; verify any address near the Fort Worth city line.</li>
+    <li><strong>Watauga</strong> — The majority of Watauga is served by Birdville ISD. A small number of Watauga addresses near the western edge may fall into Keller ISD; verify.</li>
+  </ul>
+
+  <h3>Cities With Significant Boundary Splits</h3>
+  <ul>
+    <li><strong>Hurst (critical)</strong> — Hurst is divided between Birdville ISD and HEB ISD (Hurst-Euless-Bedford). The boundary does not run along a single major road; it cuts through residential neighborhoods. Many buyers assume their Hurst address is in HEB ISD — some are in Birdville. Do not assume either way. Use the address lookup tools before any offer.</li>
+    <li><strong>Colleyville</strong> — A very small sliver of far northeastern Colleyville falls within Birdville ISD boundaries. The vast majority of Colleyville is served by Grapevine-Colleyville ISD. If you're buying in Colleyville primarily for GCISD, verify the address regardless.</li>
+    <li><strong>Fort Worth (eastern edge)</strong> — A narrow strip of eastern Fort Worth near the Haltom City border is within Birdville ISD. Most Fort Worth buyers would be served by Fort Worth ISD. This edge case is rare but worth verifying if your address is very close to the Haltom City line.</li>
+  </ul>
+
+  <h3>New Construction</h3>
+  <p>New construction developments in NRH and Watauga occasionally straddle district boundary lines, particularly on the western edge near Keller. In fast-growing subdivisions, school assignments can also shift as new campuses are built and attendance zones are redrawn. Always verify the specific lot address — not just the subdivision name — with the district before committing to a new-build contract.</p>
+
+  <h3>How to Verify Your Address</h3>
+  <ul>
+    <li><strong>Birdville ISD boundary maps:</strong> <a href="https://www.birdvilleschools.net/departments/transportation/online-school-maps" target="_blank" rel="noopener">birdvilleschools.net/departments/transportation/online-school-maps</a></li>
+    <li><strong>Enrollment portal address check:</strong> <a href="https://www.choosebirdville.net" target="_blank" rel="noopener">choosebirdville.net</a></li>
+    <li><strong>TEA School Locator:</strong> <a href="https://tea.texas.gov/apps/school-directory" target="_blank" rel="noopener">tea.texas.gov/apps/school-directory</a></li>
+  </ul>
+</section>
+
+<!-- FINANCES -->
+<section class="isd-section" id="finances">
+  <h2>Taxes and School Finances</h2>
+
+  <p>Birdville ISD's <strong>2025 certified total tax rate is $1.18654 per $100 of assessed value</strong>, adopted by the board of trustees in August 2025. This breaks down as:</p>
+  <ul>
+    <li><strong>M&amp;O (Maintenance and Operations):</strong> $0.7869 per $100</li>
+    <li><strong>I&amp;S (Interest and Sinking / Debt Service):</strong> $0.39964 per $100</li>
+  </ul>
+  <p>Source: Tarrant County Tax Rate Calculation Worksheets, 2025.</p>
+
+  <p><strong>What this means for a monthly mortgage payment:</strong> On a $350,000 home in NRH with Texas's $100,000 homestead exemption applied, the taxable value is $250,000. Annual school taxes would be approximately $250,000 × $1.18654 ÷ 100 = <strong>$2,966 per year, or roughly $247 per month</strong> added to your mortgage escrow. On a $450,000 home (taxable value $350,000 after exemption), that's approximately $4,153 per year — about $346/month.</p>
+
+  <p><strong>Texas $100,000 Homestead Exemption:</strong> Texas law allows a $100,000 school district homestead exemption on your primary residence, applied before the school tax rate is calculated. This is separate from any city or county exemptions. The exemption is not automatic — file with Tarrant County Appraisal District after closing.</p>
+
+  <p><strong>Per-pupil expenditure:</strong> Approximately $11,122 per student (2023–24, sourced from TEA/NCES via Niche). This reflects the combination of state funding formulas, local property tax revenue, and federal grants. The figure is meaningful context but does not directly translate to the quality of instruction at a specific campus.</p>
+
+  <p><strong>Recent bond activity:</strong> Verify any current or recent bond elections with the district at birdvilleschools.net, as approved bonds can affect the I&amp;S component of the tax rate in subsequent years.</p>
+</section>
+
+<!-- COMPARE -->
+<section class="isd-section" id="compare">
+  <h2>How Birdville ISD Compares</h2>
+
+  <p>Families shopping NE and N Tarrant County most commonly cross-shop Birdville against Keller ISD (northwest) and HEB ISD (adjacent to the west and south). Here's a snapshot of key comparison factors:</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>District</th>
+        <th>Enrollment</th>
+        <th>TEA Grade</th>
+        <th>Tax Rate (2025)</th>
+        <th>Often Preferred By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Birdville ISD</strong></td>
+        <td>~22,000</td>
+        <td>B (83)</td>
+        <td>$1.19</td>
+        <td>Value-focused buyers in NRH; BCTAL/CTE families; open enrollment flexibility seekers</td>
+      </tr>
+      <tr>
+        <td><a href="/keller-isd-texas">Keller ISD</a></td>
+        <td>~36,000</td>
+        <td>A (~90)</td>
+        <td>~$1.26</td>
+        <td>Families prioritizing consistent districtwide academic ratings; NW Tarrant County buyers</td>
+      </tr>
+      <tr>
+        <td><a href="/heb-isd-texas">HEB ISD (Hurst-Euless-Bedford)</a></td>
+        <td>~24,000</td>
+        <td>A (~90)</td>
+        <td>~$1.28</td>
+        <td>Mid-Tarrant County buyers who want an A-rated district at urban-adjacent price points; strong extracurriculars</td>
+      </tr>
+      <tr>
+        <td><a href="/fort-worth-isd-texas">Fort Worth ISD</a></td>
+        <td>~70,000</td>
+        <td>C</td>
+        <td>~$1.18</td>
+        <td>Urban buyers or those targeting specific magnet/choice programs within Fort Worth</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Keller ISD tends to attract families for whom a consistent A-rating across campuses is the top criterion, and who are buying in northwest Tarrant County where Keller is the natural district. HEB ISD occupies a similar niche — somewhat smaller, A-rated, and serving a geographically compact three-city area (Hurst, Euless, Bedford). Both carry higher tax rates than Birdville. Birdville most often makes sense for families who are buying in NRH or Haltom City, are willing to research specific campuses, value the BCTAL pathway, or are targeting open enrollment to specific high-performing campuses within the district.</p>
+</section>
+
+<!-- COMMUNITY -->
+<section class="isd-section" id="community">
+  <h2>Community and School Culture</h2>
+
+  <p>Birdville ISD's parent culture varies noticeably by campus — which is itself a useful signal about the district's character. In North Richland Hills, booster clubs at Birdville HS and Richland HS are active and well-funded, with strong athletics programs (football, band, theater) that anchor school identity. Youth sports leagues in NRH are organized and competitive. The communities served by Smithfield and Green Valley elementary zones have a particularly engaged parent volunteer culture, which families frequently cite in online discussions as a reason those campuses perform above the district average.</p>
+
+  <p>Haltom City and parts of Haltom HS's attendance zone present a different community feel — more urban-adjacent, more economically diverse, with a larger percentage of students navigating additional challenges. Parents in these zones are often deeply invested in their children's schools but have fewer discretionary resources for booster programs and supplemental enrichment. Haltom HS's 4/10 GreatSchools rating reflects this reality, not a lack of caring by families or teachers. Families buying in Haltom City who have high school students should weigh BCTAL enrollment and open enrollment options carefully.</p>
+
+  <p>A consistent theme in parent community discussions online (Reddit r/DFW, NRH community Facebook groups): Birdville's "No Boundaries" open enrollment policy is genuinely used and appreciated by families who know about it. Parents who engage with the process early — ideally before closing on a home — have more campus flexibility than they expected. The district's size (~22,000 students) keeps it from feeling anonymous the way a 60,000-student district might, while still offering enough program variety to serve diverse student interests. The BCTAL campus in particular draws consistent positive feedback from parents of students pursuing healthcare and skilled-trades certifications, who note the real-world industry connections and credential outcomes.</p>
+</section>
+
+<!-- FAQ -->
+<section class="isd-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div id="faq-list">
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">Does my North Richland Hills address guarantee enrollment in Birdville ISD? <span class="arrow">▾</span></div>
+      <div class="faq-a">Almost certainly yes — but not automatically. The vast majority of North Richland Hills addresses are within Birdville ISD. However, a small number of NRH addresses near the western city limits fall within Keller ISD instead. You should always verify your specific address using the Birdville ISD boundary lookup tool at birdvilleschools.net/departments/transportation/online-school-maps or by entering your address on choosebirdville.net before making an offer. The city address and the school district boundary are not the same line.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">What's the difference between Birdville High, Richland High, and Haltom High? <span class="arrow">▾</span></div>
+      <div class="faq-a">All three are comprehensive high schools within Birdville ISD, but they differ in academic performance ratings and campus culture. Richland High School (North Richland Hills) earns a 7/10 on GreatSchools and posted a 95.3% on-time graduation rate for the Class of 2023. Birdville High School (NRH) earns a 6/10 and has earned College Success Awards for college-level coursework completion. Haltom High School (Haltom City) earns a 4/10 and is the largest of the three by enrollment. The specific campus your address feeds is one of the most important factors to verify before buying — and if your home zone assigns you to a campus that doesn't fit your priorities, Birdville's "No Boundaries" open enrollment policy allows you to apply to transfer before the school year begins.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">How does Birdville ISD handle special education transfers from another Texas district? <span class="arrow">▾</span></div>
+      <div class="faq-a">Texas law requires any receiving district to hold an ARD (Admission, Review, and Dismissal) meeting within 30 days of enrollment for students who transfer with an active IEP. For students with a 504 plan, a comparable review meeting should also occur promptly. Bring all documentation to enrollment: the current IEP or 504, most recent evaluation reports, related service logs, and any behavior intervention plans. Contact Birdville ISD's Special Services office before your move — reaching out early gives the district time to arrange the ARD meeting, ensure the receiving campus has appropriate resources in place, and address any placement questions before the first day of school. Quality and quantity of special education services can vary by campus; direct conversations with the campus Special Education coordinator are the most reliable way to assess fit for your child's specific needs.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">Why does Niche give Birdville a B+ but TEA gives a B? What's the difference between those grades? <span class="arrow">▾</span></div>
+      <div class="faq-a">Niche and the Texas Education Agency use entirely different methodologies, which is why their grades can diverge. Niche's B+ (2026 cycle) is a composite that weighs academic performance, teacher quality, diversity, extracurricular offerings, and survey data from students and parents. It's broader in scope and reflects community satisfaction signals. TEA's B (score: 83, 2022–23 cycle) is an absolute performance threshold tied specifically to Texas state assessment results, graduation rates, and equity metrics across student groups. A school district can perform above the state average on TEA's narrow academic criteria while still scoring lower on Niche's broader rubric — or vice versa. For relocation purposes, TEA scores on individual campus profiles (available at txschools.gov) tend to be the most useful apples-to-apples comparison for academic performance specifically.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">What is Birdville's open enrollment (No Boundaries) policy and how does it work in practice? <span class="arrow">▾</span></div>
+      <div class="faq-a">Birdville ISD's "No Boundaries" open enrollment allows any student — whether they live inside or outside the district — to apply to attend any Birdville campus. Applications are reviewed by the campus principal and Student Services based on available space and the student's academic and behavioral record (the student must have passed all portions of their most recent STAAR or EOC assessments). Approval is granted annually, not permanently — you reapply each school year. Open enrollment students can be returned to their home campus for disciplinary or academic reasons. The practical implication for relocating families: if your address zones you to a campus that doesn't meet your priorities, you should apply for open enrollment to your preferred campus before the school year begins, ideally right after enrollment opens in spring. Approval isn't guaranteed, but many families successfully use this pathway. Applications are available at birdvilleschools.net/Domain/8477.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">How does Birdville ISD's tax rate compare to Keller ISD and HEB ISD? <span class="arrow">▾</span></div>
+      <div class="faq-a">Birdville ISD's 2025 certified total tax rate is $1.18654 per $100 of assessed value. Keller ISD's rate is approximately $1.26 per $100, and HEB ISD's rate is approximately $1.28 per $100. On a $400,000 home with the $100,000 Texas homestead exemption applied (taxable value $300,000): Birdville would generate roughly $3,560 per year in school taxes; Keller would generate roughly $3,780; HEB would generate roughly $3,840. The annual difference between Birdville and Keller on that home is approximately $220/year — or about $18/month. The tax rate difference is real but modest on its own; the larger factor driving total housing cost is typically the difference in home prices between NRH/Haltom City and the Keller/Southlake/Bedford markets, where prices can run 20–40% higher for comparable square footage.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" tabindex="0">What is BCTAL and who can attend? <span class="arrow">▾</span></div>
+      <div class="faq-a">BCTAL — the Birdville Center of Technology and Advanced Learning — is a dedicated career and technical education campus that serves high school students from all Birdville ISD campuses. Students attend BCTAL for a portion of their school day (typically one to two class periods) and return to their home high school for traditional coursework. BCTAL offers 16+ programs of study including Health Science (CNA and related certifications), Information Technology, Architecture and Construction, Transportation and Logistics, Arts/AV Technology, Finance, and more. Students can earn industry-recognized certifications alongside their high school diploma. Enrollment is open to all Birdville high school students — no competitive application, though specific programs may have limited seats. Note that transportation to and from BCTAL is typically parent-provided, not district-provided; confirm this before scheduling. Visit bctal.birdvilleschools.net for current program listings and enrollment information.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="isd-cta">
+  <h2>Ready to Find a Home in Birdville ISD Territory?</h2>
+  <p>I help relocating families verify school boundaries, identify the right campus zone, and navigate the NE Tarrant County buying process — start to finish.</p>
+  <div class="isd-cta-btns">
+    <a href="https://calendly.com/socialagentgroup/let-s-talk" class="isd-cta-btn" target="_blank" rel="noopener">Schedule a Free Call →</a>
+    <a href="/dfw-school-districts" class="isd-cta-btn isd-cta-btn--outline">Compare All DFW ISDs →</a>
+  </div>
+  <p style="margin-top:1.25rem;font-size:0.85rem;color:var(--stone);">
+    Or email <a href="mailto:Kristen@whymovetodallas.com" style="color:var(--gold);">Kristen@whymovetodallas.com</a> ·
+    (602) 405-4115 · TREC #760457</p>
+</div>
+
+<!-- RELATED PLACES -->
+<section class="isd-section" style="border-bottom:none;">
+  <h3 style="font-size:1rem;margin-top:0;">Related Places to Explore</h3>
+  <div class="explore-links">
+    <a href="/north-richland-hills-texas" class="explore-link">Living in North Richland Hills →</a>
+    <a href="/haltom-city-texas" class="explore-link">Living in Haltom City →</a>
+    <a href="/watauga-texas" class="explore-link">Living in Watauga →</a>
+    <a href="/heb-isd-texas" class="explore-link">HEB ISD Profile →</a>
+    <a href="/keller-isd-texas" class="explore-link">Keller ISD Profile →</a>
+    <a href="/dfw-school-districts" class="explore-link">All DFW ISDs →</a>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="isd-section" style="border-bottom:none;padding-bottom:0;">
+  <h3 style="font-size:1rem;margin-top:1.5rem;">Sources</h3>
+  <ul class="sources-list">
+    <li>Birdville ISD official website (birdvilleschools.net) — enrollment figures, campus list, programs, open enrollment policy, BCTAL, boundary maps</li>
+    <li>Texas Education Agency, txschools.gov — 2022–23 A-F Accountability ratings (District #220902)</li>
+    <li>Texas Comptroller, comptroller.texas.gov / Tarrant County Tax Rate Worksheets — 2025 certified tax rates</li>
+    <li>Niche.com — district and campus grades, 2026 ranking cycle (third-party)</li>
+    <li>GreatSchools.org — campus ratings (third-party)</li>
+    <li>Texas Tribune Schools Explorer (schools.texastribune.org) — enrollment, campus data, graduation rates</li>
+    <li>U.S. News &amp; World Report, Best Schools — campus recognition (third-party)</li>
+  </ul>
+</section>
+
+<!-- COMPLIANCE -->
+<p class="compliance">
+  Kristen Carpentier · Licensed Texas Realtor® · TREC License #760457 ·
+  Brokered by eXp Realty · 15950 Dallas Pkwy #400, Dallas TX 75248<br>
+  School data is provided for informational purposes only and is subject to
+  change. School attendance boundaries change regularly — always verify your
+  specific address with the district before making a purchase decision.
+  Equal Housing Opportunity.
+</p>
+
+</div><!-- /isd-wrap -->
+</div><!-- /isd-page -->
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const a = q.nextElementSibling;
+    const open = q.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(x => {
+      x.classList.remove('open');
+      x.nextElementSibling.classList.remove('open');
+    });
+    if (!open) { q.classList.add('open'); a.classList.add('open'); }
+  });
+  q.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+  });
+});
+</script>
