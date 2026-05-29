@@ -1,0 +1,839 @@
+<style>
+/* ── Brand Tokens ─────────────────────────────────────────────── */
+:root {
+  --ivory:    #FAFAF7;
+  --navy:     #1A2B4A;
+  --gold:     #C9A84C;
+  --stone:    #8C8C7A;
+  --charcoal: #2D2D2D;
+  --white:    #FFFFFF;
+  --border:   #E0E0D8;
+  --light:    #F4F4F0;
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+.isd-page * { box-sizing: border-box; }
+.isd-page {
+  font-family: 'Georgia', serif;
+  color: var(--charcoal);
+  background: var(--ivory);
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0;
+}
+.isd-page p { line-height: 1.75; margin: 0 0 1rem; }
+.isd-page h2 { font-size: 1.75rem; color: var(--navy); margin: 0 0 0.75rem; font-weight: 700; }
+.isd-page h3 { font-size: 1.2rem; color: var(--navy); margin: 1.25rem 0 0.5rem; }
+.isd-page section { padding: 2.5rem 1.5rem; border-bottom: 1px solid var(--border); }
+.isd-page a { color: var(--navy); }
+
+/* ── Breadcrumb ───────────────────────────────────────────────── */
+.isd-breadcrumb {
+  background: var(--navy);
+  padding: 0.6rem 1.5rem !important;
+  border-bottom: none;
+}
+.isd-breadcrumb nav { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-family: 'Helvetica Neue', sans-serif; }
+.isd-breadcrumb a { color: rgba(255,255,255,0.8); text-decoration: none; }
+.isd-breadcrumb a:hover { color: var(--gold); }
+.isd-breadcrumb span { margin: 0 0.4rem; }
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+.isd-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 !important;
+  border-bottom: none;
+  overflow: hidden;
+}
+.isd-hero img.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.isd-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,43,74,0.88) 0%, rgba(26,43,74,0.35) 60%, transparent 100%);
+}
+.isd-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1.5rem;
+  color: var(--white);
+}
+.isd-hero-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.isd-hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: var(--white);
+}
+.isd-hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  margin: 0;
+  max-width: 580px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.isd-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(201,168,76,0.18);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.82rem;
+  color: var(--gold);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── Verdict Box ──────────────────────────────────────────────── */
+.verdict-box {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.verdict-box h3 {
+  color: var(--gold);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0 0 0.65rem;
+}
+.verdict-box p { color: rgba(255,255,255,0.9); margin: 0; line-height: 1.7; }
+
+/* ── Fit Grid ─────────────────────────────────────────────────── */
+.fit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1rem 0;
+}
+@media (max-width: 580px) { .fit-grid { grid-template-columns: 1fr; } }
+.fit-box {
+  border-radius: 6px;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+}
+.fit-box.good  { background: #F0FAF4; border-color: #A8D9B8; }
+.fit-box.caution { background: #FDF6EC; border-color: #F0C878; }
+.fit-box h4 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0 0 0.75rem;
+}
+.fit-box.good h4    { color: #1E7A3A; }
+.fit-box.caution h4 { color: #9A6200; }
+.fit-box ul { margin: 0; padding: 0 0 0 1.1rem; }
+.fit-box li { font-size: 0.92rem; line-height: 1.65; margin-bottom: 0.4rem; color: var(--charcoal); }
+
+/* ── TEA Rating ───────────────────────────────────────────────── */
+.tea-rating-block { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+.tea-grade-circle {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--white);
+}
+.grade-letter  { font-size: 2.5rem; font-weight: 700; line-height: 1; color: var(--gold); }
+.grade-score   { font-size: 0.7rem; color: rgba(255,255,255,0.7); font-family: sans-serif; margin-top: 2px; }
+
+/* ── Campus Table ─────────────────────────────────────────────── */
+.campus-table-wrap { overflow-x: auto; margin: 1rem 0; }
+.campus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.campus-table th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.campus-table td {
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--charcoal);
+  vertical-align: top;
+}
+.campus-table tr:last-child td { border-bottom: none; }
+.campus-table tr:nth-child(even) td { background: var(--light); }
+.grade-a { color: #1E7A3A; font-weight: 700; }
+.grade-b { color: #1A6B8A; font-weight: 700; }
+.grade-c { color: #9A6200; font-weight: 700; }
+.grade-d { color: #C0392B; font-weight: 700; }
+
+/* ── Stat Cards ───────────────────────────────────────────────── */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--stone);
+  margin-top: 0.25rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.stat-context {
+  font-size: 0.75rem;
+  color: var(--stone);
+  margin-top: 0.2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* ── Info Box ─────────────────────────────────────────────────── */
+.info-box {
+  background: var(--light);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 0.92rem;
+}
+.info-box p { margin: 0; }
+.info-box strong { color: var(--navy); }
+
+/* ── Compare Table ────────────────────────────────────────────── */
+.compare-table-wrap { overflow-x: auto; margin: 1.25rem 0; }
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.compare-table th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.7rem 0.85rem;
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.compare-table td {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: var(--charcoal);
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr.highlight td { background: rgba(201,168,76,0.08); }
+.compare-table tr:nth-child(even):not(.highlight) td { background: var(--light); }
+
+/* ── CTA Section ──────────────────────────────────────────────── */
+.isd-cta-section {
+  background: var(--navy);
+  text-align: center;
+  border-bottom: none;
+}
+.isd-cta-section h2 { color: var(--white); }
+.isd-cta-section p { color: rgba(255,255,255,0.82); max-width: 560px; margin: 0 auto 1.75rem; }
+.isd-cta-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.88; }
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.5);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+.btn-outline:hover { border-color: var(--white); }
+
+/* ── Explore Links ────────────────────────────────────────────── */
+.explore-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.explore-link {
+  display: inline-block;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.88rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  transition: border-color 0.2s;
+}
+.explore-link:hover { border-color: var(--navy); }
+
+/* ── FAQ ──────────────────────────────────────────────────────── */
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: var(--navy);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.25s;
+  color: var(--stone);
+}
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.faq-item.open .faq-answer { max-height: 500px; }
+.faq-answer-inner {
+  padding: 0 0 1rem;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ── Sources ──────────────────────────────────────────────────── */
+.isd-sources {
+  background: var(--light);
+  font-size: 0.8rem;
+  color: var(--stone);
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.65;
+}
+.isd-sources h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--stone);
+  margin: 0 0 0.5rem;
+}
+.isd-sources a { color: var(--stone); }
+.isd-sources a:hover { color: var(--navy); }
+.compliance-notice {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.76rem;
+}
+</style>
+
+<div class="isd-page">
+
+<!-- BREADCRUMB -->
+<section class="isd-breadcrumb">
+  <nav aria-label="Breadcrumb">
+    <a href="/">Why Move to Dallas</a>
+    <span aria-hidden="true">›</span>
+    <a href="/dfw-school-districts">DFW School Districts</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">White Settlement ISD</span>
+  </nav>
+</section>
+
+<!-- HERO -->
+<section class="isd-hero" aria-label="White Settlement ISD hero">
+  <img class="hero-img" src="/images/fort-worth-hero.webp" alt="Fort Worth skyline near White Settlement ISD" loading="eager" width="860" height="340">
+  <div class="isd-hero-content">
+    <p class="isd-hero-eyebrow">DFW School District Guide · Tarrant County</p>
+    <h1>Living in the White Settlement ISD Zone</h1>
+    <p class="isd-hero-sub">An honest relocation guide to a C-rated district near NAS Fort Worth JRB — who it fits, what the campuses look like, and what homes cost inside the boundary.</p>
+    <div class="isd-rating-badge">TEA 2024: C Rating (73/100) · 6,808 Students · ~$1.17/100 Tax Rate</div>
+  </div>
+</section>
+
+<!-- SECTION 1: QUICK VERDICT -->
+<section id="verdict" aria-labelledby="verdict-heading">
+  <h2 id="verdict-heading">Is White Settlement ISD Right for Your Family?</h2>
+  <div class="verdict-box">
+    <h3>The Bottom Line</h3>
+    <p>White Settlement ISD earned a TEA C rating (73/100) in 2024 — average by Texas standards. Two specialty campuses (a Fine Arts Academy rated A and an N-STEAM campus rated B) raise the ceiling considerably for families who seek them out. The remaining traditional campuses cluster in the C–D range, and district-wide STAAR pass rates run about 5 points below the state average. This is a reasonable district for budget-conscious buyers, defense-industry families near NAS Fort Worth JRB, and investors — but if your primary criterion is academic rankings, Northwest ISD or HEB ISD will be a better fit at a moderate price premium.</p>
+  </div>
+  <p>White Settlement is a self-contained municipality of roughly 16,500 residents that sits entirely within the Fort Worth city limits on the west side — its own city hall, its own police department, and its own school district. That small-town identity inside a major metro is the community's most underrated asset. The tradeoff is an academic profile that requires more active navigation than in higher-rated neighboring districts.</p>
+  <p>The four questions that matter most for this specific district: Is the defense corridor (NAS Fort Worth JRB, Lockheed Martin, Bell) central to your family's location? Does your child's age and interest make the Fine Arts Academy or N-STEAM program relevant? Is home affordability driving the trade-off against school rating? And have you boundary-checked — because a D-rated elementary assignment is a different situation than an A-rated one within the same district?</p>
+</section>
+
+<!-- SECTION 2: BEST-FIT / NOT-A-FIT -->
+<section id="fit" aria-labelledby="fit-heading">
+  <h2 id="fit-heading">Who This District Is — and Isn't — Right For</h2>
+  <div class="fit-grid">
+    <div class="fit-box good">
+      <h4>✓ Good Fit</h4>
+      <ul>
+        <li>Budget buyers seeking affordable Tarrant County entry points — some of the lowest price-per-square-foot in the west Fort Worth corridor</li>
+        <li>Civilian defense contractor and military families whose jobs are at NAS Fort Worth JRB, Lockheed Martin, or Bell</li>
+        <li>Families with K–5 students whose interests align with the Fine Arts Academy (A-rated) or N-STEAM (B-rated) — both accept applications district-wide</li>
+        <li>Investors focused on stable rental demand from the defense-industry workforce</li>
+        <li>Families who value a defined small-city identity (White Settlement has its own municipal government) inside the DFW metro</li>
+      </ul>
+    </div>
+    <div class="fit-box caution">
+      <h4>✗ Not Typically a Fit</h4>
+      <ul>
+        <li>Families whose top relocation priority is academic rankings or broad college-prep options</li>
+        <li>Buyers who haven't boundary-checked — Blue Haze and Liberty elementary zones earned D ratings in 2024</li>
+        <li>Families expecting A- or B-rated performance across all grade levels and campuses</li>
+        <li>Those looking for a wide range of advanced academics, dual enrollment, or specialized high school pathways</li>
+      </ul>
+    </div>
+  </div>
+  <div class="info-box">
+    <p><strong>Boundary check before you buy:</strong> Campus ratings vary significantly within WSISD. A home feeding to the Fine Arts Academy delivers a meaningfully different academic experience than one assigned to Liberty or Blue Haze Elementary. Use the <a href="https://www.schoolsitelocator.com/apps/whitesettlement/" target="_blank" rel="noopener">WSISD school locator</a> to confirm which campus a specific address is assigned to before making an offer.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: TEA RATING -->
+<section id="tea-rating" aria-labelledby="tea-heading">
+  <h2 id="tea-heading">TEA Accountability Rating: What the C Means</h2>
+  <div class="tea-rating-block">
+    <div class="tea-grade-circle" aria-label="TEA 2024 overall rating: C, score 73 out of 100">
+      <span class="grade-letter">C</span>
+      <span class="grade-score">73 / 100</span>
+    </div>
+    <div>
+      <p>The Texas Education Agency rates districts A through F across three domains: Student Achievement, School Progress, and Closing the Gaps. White Settlement ISD earned a <strong>C (73/100)</strong> for the 2024 accountability year.</p>
+      <p>A TEA C is not a failing district. It means overall student achievement is close to — but below — state average on most measures, with meaningful variation at the campus level. Approximately one-third of Texas school districts earn a C, placing WSISD squarely in the middle of the state distribution. For a relocating family, the C signals a functional, stable district where the headline number is less useful than the campus-level breakdown below.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: CAMPUS BREAKDOWN -->
+<section id="campuses" aria-labelledby="campuses-heading">
+  <h2 id="campuses-heading">Campus-by-Campus TEA Ratings (2024)</h2>
+  <p>The district's C overall masks a significant internal range — from an A-rated specialty program to two D-rated traditional elementaries. Which campus serves your specific address is the most important variable in evaluating WSISD for your family.</p>
+  <div class="campus-table-wrap">
+    <table class="campus-table" aria-label="White Settlement ISD campus TEA ratings 2024">
+      <thead>
+        <tr>
+          <th>Campus</th>
+          <th>Grades</th>
+          <th>Type</th>
+          <th>TEA 2024</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Fine Arts Academy</strong></td>
+          <td>K–5</td>
+          <td>Specialty — district-wide application</td>
+          <td><span class="grade-a">A</span></td>
+          <td>91</td>
+        </tr>
+        <tr>
+          <td><strong>N-STEAM Elementary</strong></td>
+          <td>K–5</td>
+          <td>Specialty — neighborhood + open enrollment</td>
+          <td><span class="grade-b">B</span></td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Brewer High School</td>
+          <td>9–12</td>
+          <td>Traditional — serves all WSISD 9th–12th graders</td>
+          <td><span class="grade-c">C</span></td>
+          <td>76</td>
+        </tr>
+        <tr>
+          <td>Brewer Middle School</td>
+          <td>6–8</td>
+          <td>Traditional — serves all WSISD 6th–8th graders</td>
+          <td><span class="grade-c">C</span></td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Blue Haze Elementary</td>
+          <td>K–5</td>
+          <td>Traditional — neighborhood assignment</td>
+          <td><span class="grade-d">D</span></td>
+          <td>69</td>
+        </tr>
+        <tr>
+          <td>Liberty Elementary</td>
+          <td>K–5</td>
+          <td>Traditional — neighborhood assignment</td>
+          <td><span class="grade-d">D</span></td>
+          <td>67</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.8rem; color:var(--stone); margin-top:0.5rem; font-family:sans-serif;">Source: TEA 2024 Accountability Ratings. Scores reflect the composite domain rating on a 100-point scale.</p>
+  <div class="info-box">
+    <p><strong>What this means in practice:</strong> If your home feeds to Blue Haze or Liberty, your child starts in D-rated elementary territory before moving to the C-rated middle and high schools. Families who want to access the A-rated Fine Arts Academy need to apply — it does not serve a geographic zone. The 24-point gap between the highest- and lowest-rated campuses in this district (91 vs. 67) is unusually wide and makes address-level verification essential before buying.</p>
+  </div>
+</section>
+
+<!-- SECTION 5: ACADEMIC PERFORMANCE -->
+<section id="academics" aria-labelledby="academics-heading">
+  <h2 id="academics-heading">Academic Performance: STAAR Results 2024–25</h2>
+  <p>STAAR measures the percentage of students reaching "approaches grade level" — the minimum passing standard in Texas. White Settlement ISD's 2024–25 district-wide results:</p>
+  <div class="stat-cards">
+    <div class="stat-card">
+      <div class="stat-value">70%</div>
+      <div class="stat-label">All Tests</div>
+      <div class="stat-context">State avg: ~75%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">73%</div>
+      <div class="stat-label">Reading / ELA</div>
+      <div class="stat-context">State avg: ~76%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">65%</div>
+      <div class="stat-label">Math</div>
+      <div class="stat-context">State avg: ~72%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">77%</div>
+      <div class="stat-label">Science</div>
+      <div class="stat-context">State avg: ~78%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">70%</div>
+      <div class="stat-label">Social Studies</div>
+      <div class="stat-context">State avg: ~72%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">89.9%</div>
+      <div class="stat-label">Graduation Rate</div>
+      <div class="stat-context">Class of 2023</div>
+    </div>
+  </div>
+  <p>The 5-point gap between WSISD and state average on overall passing rates translates to roughly 1 in 20 additional students not meeting minimum grade-level expectations compared to the state benchmark. The gap is widest in math (approximately 7 points). Science is the district's strongest subject, coming within 1 point of the state average.</p>
+  <p>The graduation rate of 89.9% is a genuine strength — nearly 9 in 10 students who enter Brewer High School earn a diploma, a figure close to the statewide average and evidence of stable student retention in a moderate-performing district.</p>
+  <p style="font-size:0.8rem; color:var(--stone); font-family:sans-serif; margin-top:0.25rem;">STAAR "approaches grade level" is the minimum passing standard, not mastery. For families focused on college readiness, the "meets grade level" and "masters grade level" rates in the TEA TAPR provide a fuller picture.</p>
+</section>
+
+<!-- SECTION 6: SPECIAL PROGRAMS & UNIQUE FEATURES -->
+<section id="programs" aria-labelledby="programs-heading">
+  <h2 id="programs-heading">Specialty Programs and What Sets This District Apart</h2>
+
+  <h3>Fine Arts Academy (K–5)</h3>
+  <p>The Fine Arts Academy is White Settlement ISD's standout program — a district-wide specialty campus rated A (91/100) by TEA, focused on visual arts, music, theater, and dance. It accepts applications from anywhere in the district rather than serving a geographic zone. The A rating in a C-rated district is a meaningful signal: this campus performs at a level 18 points above the district composite and offers a genuinely different academic experience within WSISD. Families with K–5 students whose interests align with the arts should investigate availability before discounting this district.</p>
+
+  <h3>N-STEAM Elementary (K–5)</h3>
+  <p>Rated B (80/100), N-STEAM combines a neighborhood assignment with limited open-enrollment seats. The curriculum integrates science, technology, engineering, arts, and mathematics. At 80 points, it outperforms the district average by 7 points and represents the district's answer to the growing STEM-focused demand from defense-industry families in the corridor.</p>
+
+  <h3>District Police Department and Guardian Program</h3>
+  <p>White Settlement ISD maintains its own independent police department — unusual for a district of approximately 6,800 students — with dedicated school resource officers on each campus. The district also operates a Guardian Program for additional campus security. This level of security infrastructure reflects the community's priorities, which came into sharp national focus in 2019 after a high-profile incident at a local church demonstrated the area's preparedness culture. For families who place safety infrastructure among their school selection criteria, WSISD's investment here is worth noting.</p>
+
+  <h3>2022 Bond Program: Capital Investment Underway</h3>
+  <p>White Settlement ISD passed a capital bond program in 2022 that funded improvements across all campuses — renovations, technology infrastructure, and facility upgrades. This is an important nuance for buyers: the physical facilities are receiving active investment even as TEA ratings at some campuses remain moderate. Building quality and instructional outcome are separate variables. The bond program indicates the community's long-term commitment to the district, even if academic outcomes are still catching up.</p>
+</section>
+
+<!-- SECTION 7: TAX RATE -->
+<section id="tax-rate" aria-labelledby="tax-heading">
+  <h2 id="tax-heading">Property Tax Rate</h2>
+  <p>The 2024 certified total tax rate for White Settlement ISD is approximately <strong>$1.17 per $100 of assessed valuation</strong>. Here is what that looks like at typical WSISD home price points:</p>
+  <div class="stat-cards">
+    <div class="stat-card">
+      <div class="stat-value">$2,340</div>
+      <div class="stat-label">Annual — $200K home</div>
+      <div class="stat-context">ISD portion only</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$2,925</div>
+      <div class="stat-label">Annual — $250K home</div>
+      <div class="stat-context">ISD portion only</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$3,510</div>
+      <div class="stat-label">Annual — $300K home</div>
+      <div class="stat-context">ISD portion only</div>
+    </div>
+  </div>
+  <p>These figures reflect only the ISD levy. Your total Tarrant County tax bill will add approximately $0.45–$0.60 per $100 for county, city, and other special district taxes on top of the ISD rate.</p>
+  <p>In context: WSISD's rate is <strong>higher than Northwest ISD</strong> ($1.0879) and <strong>lower than Eagle Mountain-Saginaw ISD</strong> ($1.2457). The ~$0.08 gap between WSISD and Northwest ISD amounts to roughly $240 per year on a $300,000 home — a relatively modest annual difference compared to the likely price premium for a comparable home inside Northwest ISD's boundary.</p>
+  <div class="info-box">
+    <p><strong>Texas Homestead Exemption:</strong> Texas homeowners who occupy a property as their primary residence qualify for a $100,000 homestead exemption on school district taxes (as of 2023). This reduces your taxable assessed value before the district rate is applied — a meaningful saving regardless of which ISD you choose.</p>
+  </div>
+</section>
+
+<!-- SECTION 8: COMPARE TABLE -->
+<section id="compare" aria-labelledby="compare-heading">
+  <h2 id="compare-heading">How White Settlement ISD Compares to Nearby Districts</h2>
+  <p>These four Tarrant County districts serve the west and northwest Fort Worth corridor and are the most commonly evaluated alternatives when families are considering this part of the metro.</p>
+  <div class="compare-table-wrap">
+    <table class="compare-table" aria-label="White Settlement ISD vs Northwest ISD, Eagle Mountain-Saginaw ISD, and HEB ISD comparison">
+      <thead>
+        <tr>
+          <th>District</th>
+          <th>TEA 2024</th>
+          <th>Tax Rate / $100</th>
+          <th>Enrollment</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td><strong>White Settlement ISD</strong></td>
+          <td><span class="grade-c">C (73)</span></td>
+          <td>~$1.17</td>
+          <td>6,808</td>
+          <td>Budget buyers, NAS Fort Worth JRB / defense corridor families, Fine Arts / STEAM program seekers</td>
+        </tr>
+        <tr>
+          <td><a href="/northwest-isd-texas">Northwest ISD</a></td>
+          <td><span class="grade-a">A</span></td>
+          <td>$1.0879</td>
+          <td>~28,000</td>
+          <td>Academic-focused families; lower tax rate; strong performance across all campuses in Keller, Roanoke, and Northlake</td>
+        </tr>
+        <tr>
+          <td>Eagle Mountain-Saginaw ISD</td>
+          <td><span class="grade-c">C</span></td>
+          <td>$1.2457</td>
+          <td>~23,000</td>
+          <td>West Fort Worth growth corridor; newer construction; higher tax rate than WSISD for a similar academic profile</td>
+        </tr>
+        <tr>
+          <td>HEB ISD</td>
+          <td><span class="grade-b">B</span></td>
+          <td>~$1.15</td>
+          <td>~22,000</td>
+          <td>Mid-Cities location; solid B-rated academic profile; better fit for families splitting commutes between east and west DFW</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The most direct academic comparison is Northwest ISD, which outperforms WSISD significantly and does so at a slightly lower tax rate — the trade-off is a premium on home prices. Eagle Mountain-Saginaw ISD is geographically adjacent and similarly rated, but carries a higher tax burden. HEB ISD earns a B rating and is a meaningful upgrade for families willing to accept a different geographic position in the metro. If school rating is the tie-breaker and budget allows, Northwest ISD is the move. If location in the defense corridor and purchase price are the primary drivers, WSISD makes a coherent case.</p>
+</section>
+
+<!-- SECTION 9: BOUNDARY CHECK -->
+<section id="boundary" aria-labelledby="boundary-heading">
+  <h2 id="boundary-heading">Boundary Check and School Locator</h2>
+  <p>Not every property in or near White Settlement falls inside White Settlement ISD. Portions of the surrounding area are served by Fort Worth ISD, Eagle Mountain-Saginaw ISD, or other districts — and boundaries do not follow zip code or city lines with any consistency.</p>
+  <p>The official tool for verifying which campus a specific address is assigned to:</p>
+  <p><a href="https://www.schoolsitelocator.com/apps/whitesettlement/" target="_blank" rel="noopener" style="font-weight:600;">→ WSISD School Site Locator (schoolsitelocator.com)</a></p>
+  <p>New students can enroll through the district's online enrollment portal at <a href="https://www.wsisd.com/students-families/enrollment" target="_blank" rel="noopener">wsisd.com/students-families/enrollment</a>. The district administration office is at 8224 White Settlement Road, White Settlement, TX 76108.</p>
+  <div class="info-box">
+    <p><strong>Two homes, two different campuses:</strong> Within WSISD, two properties on the same street can be assigned to different elementary campuses — and the difference between a Fine Arts Academy assignment and a Liberty Elementary assignment is a 24-point TEA rating gap. Always confirm the campus assignment directly with the district before relying on any third-party source, including real estate listings.</p>
+  </div>
+</section>
+
+<!-- SECTION 10: REAL ESTATE CONTEXT -->
+<section id="real-estate" aria-labelledby="realestate-heading">
+  <h2 id="realestate-heading">Homes and Real Estate in the WSISD Zone</h2>
+  <p>White Settlement ISD covers the city of White Settlement and adjacent portions of western Fort Worth — a compact geography with immediate freeway access to I-820, I-30, and SH-183. The combination of a self-contained municipal identity, defense-industry employment within a short commute, and home valuations below the DFW median makes this one of the more affordable entry points for buyers priced out of the Northwest ISD or Keller ISD zones.</p>
+  <p>The housing stock runs toward established ranch-style and mid-century homes built between the 1960s and 1990s, with newer construction limited primarily to infill. Buyers focused on price-per-square-foot efficiency rather than top-tier academic ratings will find more purchasing power here than in most neighboring districts. The consistent demand from NAS Fort Worth JRB personnel, Lockheed Martin, and Bell employees creates a rental market with relatively stable, employment-anchored demand — a useful characteristic for investors evaluating long-term hold scenarios.</p>
+  <p>The trade-off is clear: the academic profile requires more active parental navigation at the elementary level, and the district's overall performance gap relative to Northwest ISD or HEB ISD is real and should factor into any long-term household planning.</p>
+  <p><a href="/fort-worth-texas" style="font-weight:600;">→ Explore Fort Worth neighborhoods, home values, and commute data</a></p>
+</section>
+
+<!-- SECTION 11: FAQ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
+        Is White Settlement ISD a good district for relocating families?
+        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer" id="faq-a1" role="region">
+        <div class="faq-answer-inner">
+          It depends on what your family prioritizes. WSISD earned a TEA C (73/100) in 2024 — a functional mid-range district with two standout specialty campuses and a 89.9% graduation rate. It fits families focused on affordability, NAS Fort Worth JRB proximity, or access to the Fine Arts Academy or N-STEAM programs. Families whose top criterion is academic rankings should also evaluate Northwest ISD (A-rated, slightly lower tax rate) or HEB ISD (B-rated), both accessible at a moderate price premium over comparable WSISD homes.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
+        What is the property tax rate in White Settlement ISD?
+        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer" id="faq-a2" role="region">
+        <div class="faq-answer-inner">
+          The 2024 certified ISD rate is approximately $1.17 per $100 of assessed valuation. On a $300,000 home, that is roughly $3,510 per year in district taxes before the homestead exemption. Texas's $100,000 homestead exemption reduces your taxable base if you occupy the property as your primary residence. Your total Tarrant County tax bill will add approximately $0.45–$0.60 per $100 on top of the ISD rate for county, city of White Settlement, and other levies.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+        Does White Settlement ISD have specialty or magnet programs?
+        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer" id="faq-a3" role="region">
+        <div class="faq-answer-inner">
+          Yes — two significant ones. The Fine Arts Academy (K–5) is a district-wide specialty campus rated A (91/100) by TEA, offering a curriculum centered on visual arts, music, theater, and dance. Families anywhere in WSISD can apply regardless of home address. The N-STEAM Elementary (K–5) is rated B (80/100) and integrates science, technology, engineering, arts, and math into its curriculum. Both campuses outperform the district's traditional elementary campuses by wide margins and represent meaningful educational options within a C-rated district.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
+        How do I find which school serves a specific address in WSISD?
+        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer" id="faq-a4" role="region">
+        <div class="faq-answer-inner">
+          Use the official WSISD School Site Locator at <a href="https://www.schoolsitelocator.com/apps/whitesettlement/" target="_blank" rel="noopener">schoolsitelocator.com/apps/whitesettlement</a>. Enter any address and the tool will return the assigned elementary, middle, and high school for that property. Campus assignments can change when the district redraws boundaries, so always confirm directly with the district office before purchasing a home if a specific campus assignment is part of your decision.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
+        How does White Settlement ISD compare to Northwest ISD?
+        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer" id="faq-a5" role="region">
+        <div class="faq-answer-inner">
+          Northwest ISD consistently earns an A from TEA and carries a lower tax rate ($1.0879 vs. WSISD's ~$1.17). STAAR pass rates in Northwest ISD are notably higher across all tested subjects. The practical trade-off is home prices: Northwest ISD communities — Keller, Roanoke, Northlake — typically command a meaningful premium over comparable homes in White Settlement. For families where school rating is the primary factor, Northwest ISD is the stronger choice. For families balancing budget against defense-corridor location, White Settlement ISD delivers more purchasing power at a slightly higher tax rate.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="isd-cta-section" aria-labelledby="cta-heading">
+  <h2 id="cta-heading">Want Help Finding the Right Home Inside WSISD?</h2>
+  <p>Every home purchase in a school district is also a school decision. Let's talk through which neighborhoods fit your family's priorities — whether that's the Fine Arts Academy zone, access to the defense corridor, or the right balance of price and academic profile in Tarrant County.</p>
+  <div class="isd-cta-btns">
+    <a href="https://calendly.com/socialagentgroup/let-s-talk" target="_blank" rel="noopener" class="btn-primary">Schedule a Free Consultation</a>
+    <a href="/dfw-school-districts" class="btn-outline">Compare All DFW ISDs</a>
+  </div>
+</section>
+
+<!-- EXPLORE LINKS -->
+<section id="explore" aria-labelledby="explore-heading">
+  <h2 id="explore-heading">Keep Exploring</h2>
+  <p>Not sure White Settlement ISD is the right fit? Here are the pages relocating families check next:</p>
+  <div class="explore-links">
+    <a href="/fort-worth-texas" class="explore-link">Fort Worth</a>
+    <a href="/haslet-texas" class="explore-link">Haslet</a>
+    <a href="/dfw-school-districts" class="explore-link">All DFW School Districts</a>
+  </div>
+</section>
+
+<!-- SOURCES + COMPLIANCE -->
+<footer class="isd-sources">
+  <section aria-label="Sources and compliance">
+    <h4>Data Sources</h4>
+    <p>
+      TEA 2024 Accountability Ratings — <a href="https://rptsvr1.tea.texas.gov/perfreport/account/" target="_blank" rel="noopener">rptsvr1.tea.texas.gov</a> ·
+      WSISD 2024–25 TAPR — Texas Academic Performance Report, TEA ·
+      White Settlement ISD — <a href="https://www.wsisd.com" target="_blank" rel="noopener">wsisd.com</a> ·
+      WSISD School Site Locator — <a href="https://www.schoolsitelocator.com/apps/whitesettlement/" target="_blank" rel="noopener">schoolsitelocator.com</a> ·
+      Tarrant Appraisal District — 2024 certified tax rate data ·
+      U.S. Census Bureau American Community Survey — White Settlement demographic and housing estimates
+    </p>
+    <div class="compliance-notice">
+      <p>This page is provided for general informational purposes only. School district boundaries, campus assignments, tax rates, and TEA ratings change annually — verify all data directly with White Settlement ISD and the Tarrant Appraisal District before making any real estate decision. Why Move to Dallas is a licensed Texas real estate brand. Equal Housing Opportunity. This content does not evaluate or characterize school quality based on the demographic composition of student populations and is written in compliance with the Fair Housing Act.</p>
+    </div>
+  </section>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var items = document.querySelectorAll('.faq-item');
+  if (!items.length) return;
+  items.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      // Collapse all items
+      items.forEach(function (el) {
+        el.classList.remove('open');
+        var b = el.querySelector('.faq-question');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      // If this item was closed, open it
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}());
+</script>
