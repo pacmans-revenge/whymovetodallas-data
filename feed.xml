@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Dallas Texas Cost of Living: What Families Need to Know]]></title>
+    <link>https://whymovetodallas.com/blog/cost-of-living-in-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/cost-of-living-in-dallas-texas</guid>
+    <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Dallas-Fort Worth? Get a full breakdown of housing costs, property taxes, utilities, groceries, and childcare by suburb — plus the real monthly budget for a DFW family.]]></description>
+      <category>Relocation Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/dallas-hero.webp" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/dallas-hero.webp" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Living in Frisco, Texas: Everything You Need to Know]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://i.ytimg.com/vi/5hMeaVqzHWE/maxresdefault.jpg" type="image/jpeg" length="0" />
       <media:content url="https://i.ytimg.com/vi/5hMeaVqzHWE/maxresdefault.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Living in Forney Texas: Discover Affordable DFW Living]]></title>
-    <link>https://whymovetodallas.com/blog/living-in-forney-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/living-in-forney-texas</guid>
-    <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
-    <description><![CDATA[Planning a move to Forney, Texas? Discover everything you need to know about this charming city just outside Dallas. From schools and employment opportunit]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/e64965b3-7637-4a46-ba0c-3f63e24304c0-Forney-Texas-Map-Distance-to-Dallas-Texas.png" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/e64965b3-7637-4a46-ba0c-3f63e24304c0-Forney-Texas-Map-Distance-to-Dallas-Texas.png" medium="image" />
   </item>
 
   </channel>
