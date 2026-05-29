@@ -39,10 +39,11 @@
 /* ── Hero confirmation ──────────────────────────────────────────────────── */
 .kc-ty-hero {
   background: linear-gradient(135deg, var(--navy) 0%, #2a3f58 100%);
-  padding: clamp(3rem, 7vw, 5rem) 1.5rem;
+  /* Top padding accounts for the fixed site header (108px desktop / 148px mobile) */
+  padding: calc(var(--header-total-h, 108px) + clamp(2.5rem, 5vw, 4rem)) 1.5rem clamp(3rem, 6vw, 4.5rem);
   text-align: center;
 }
-.kc-ty-hero-inner { max-width: 640px; margin: 0 auto; }
+.kc-ty-hero-inner { max-width: 660px; margin: 0 auto; }
 .kc-ty-check {
   display: block;
   width: 64px; height: 64px;
@@ -62,14 +63,45 @@
 .kc-ty-hero-sub {
   color: rgba(255,255,255,.82);
   font-size: clamp(.95rem, 2.2vw, 1.1rem);
-  max-width: 500px; margin: 0 auto .5rem;
+  max-width: 500px; margin: 0 auto 1.5rem;
 }
-.kc-ty-hero-spam {
+
+/* ── Kristen photo card in hero ─────────────────────────────────────────── */
+.kc-ty-from {
+  display: inline-flex; align-items: center; gap: .85rem;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 50px;
+  padding: .5rem 1.25rem .5rem .5rem;
+  margin-bottom: 1.25rem;
+}
+.kc-ty-from img {
+  width: 44px; height: 44px; border-radius: 50%;
+  object-fit: cover; object-position: center top;
+  border: 2px solid var(--gold-b);
+  flex-shrink: 0;
+}
+.kc-ty-from-text {
+  text-align: left;
+  font-size: .78rem;
+  color: rgba(255,255,255,.72);
+  line-height: 1.35;
+}
+.kc-ty-from-text strong {
+  display: block;
+  color: var(--white);
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/* ── Inbox note (replaces spam callout) ─────────────────────────────────── */
+.kc-ty-inbox-note {
   font-size: .8rem;
-  color: rgba(255,255,255,.55);
-  margin-top: .5rem;
+  color: rgba(255,255,255,.5);
+  max-width: 480px; margin: 0 auto;
+  line-height: 1.6;
 }
-.kc-ty-hero-spam strong { color: rgba(255,255,255,.75); font-weight: 600; }
+.kc-ty-inbox-note strong { color: rgba(255,255,255,.72); font-weight: 600; }
 
 /* ── Main content wrapper ─────────────────────────────────────────────── */
 .kc-ty-main {
@@ -439,7 +471,22 @@ gtag('consent', 'default', {
       <h1>You're in!</h1>
       <hr class="kc-ty-rule" aria-hidden="true">
       <p class="kc-ty-hero-sub">Your DFW Family Relocation Guide is on its way — check your inbox in the next few minutes.</p>
-      <p class="kc-ty-hero-spam">Don't see it? Check your spam or promotions folder, or add <strong>Guide@whymovetodallas.com</strong> to your contacts.</p>
+
+      <!-- Kristen photo pill -->
+      <div class="kc-ty-from" aria-label="Sent personally by Kristen">
+        <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Family Relocation Specialist" width="44" height="44">
+        <div class="kc-ty-from-text">
+          <strong>Sent by Kristen Carpentier</strong>
+          DFW Family Relocation Specialist
+        </div>
+      </div>
+
+      <p class="kc-ty-inbox-note">
+        The email arrives from <strong>kristen_carpentier@mail.expreach.com</strong> — add that
+        address to your contacts or safe senders list so it reaches your inbox.
+        If it hasn't arrived after a few minutes, check your spam folder and mark it as
+        <strong>"Not Spam"</strong> so future messages from Kristen get through too.
+      </p>
 
     </div>
   </section>
