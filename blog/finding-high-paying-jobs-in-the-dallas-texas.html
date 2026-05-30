@@ -495,18 +495,21 @@ gtag('consent', 'default', {
   'analytics_storage':  'granted'
 });
 </script>
-<!-- Google tag (gtag.js) — load-deferred for LCP -->
+<!-- Google tag (gtag.js) — load-deferred for LCP, routed via Cloudflare first-party gateway -->
 <script>
   window.addEventListener('load', function() {
     var s = document.createElement('script');
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q';
+    s.src = 'https://whymovetodallas.com/metrics/gtag/js?id=G-KKLBMB6X0Q';
     s.async = true;
     document.head.appendChild(s);
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     window.gtag = gtag;
     gtag('js', new Date());
-    gtag('config', 'G-KKLBMB6X0Q');
+    gtag('config', 'G-KKLBMB6X0Q', {
+      'transport_url': 'https://whymovetodallas.com/metrics',
+      'first_party_collection': true
+    });
   });
 </script>
 <!-- Microsoft Clarity -->
