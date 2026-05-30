@@ -1542,6 +1542,7 @@ gtag('consent','default',{
         document.querySelector('.gs-progress').style.display = 'none';
         successEl.classList.add('show');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.location.href = '/get-started-thank-you';
       } else {
         showErr(data.error || 'Something went wrong — please try again.');
         if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
