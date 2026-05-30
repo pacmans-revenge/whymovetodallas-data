@@ -374,6 +374,34 @@
   width: 100%; height: 100%;
   border: none;
 }
+/* YouTube facade — thumbnail + play button, no JS loaded until click */
+.kc-yt-facade {
+  cursor: pointer;
+}
+.kc-yt-facade img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.kc-yt-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px; height: 48px;
+  background: #ff0000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.kc-yt-facade:hover .kc-yt-play { background: #cc0000; transform: translate(-50%, -50%) scale(1.08); }
+.kc-yt-play svg { width: 24px; height: 24px; fill: #fff; }
 
 /* ── TOC ───────────────────────────────────────────────────────────────── */
 .kc-blog-toc {
@@ -622,8 +650,10 @@
   .kc-blog-bar-label { width: 80px; }
 }
 </style>
+<link rel="preload" as="image" href="/images/dallas-hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="/css/global.css">
-<link rel="stylesheet" href="/css/suburb.css">
+<link rel="stylesheet" href="/css/suburb.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/suburb.css"></noscript>
 <!-- Site verifications -->
 <meta name="ahrefs-site-verification" content="0ce5b9f21be99897ea2af7da64a710d253016a2b6fe1eeb79c7d9d1a2eed4174">
 <meta name="p:domain_verify" content="4c6d262c6ac5a835c32182b2ce11e98d">
@@ -881,15 +911,20 @@ gtag('consent', 'default', {
 
     <div class="kc-post-content" itemprop="articleBody">
 
-      <!-- YouTube video: Frisco Cost of Living — embed first, as required -->
-      <div class="kc-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/8UeiYKdbW9w?rel=0&modestbranding=1&showinfo=0"
-          title="Frisco Texas Cost of Living for Families (Real Monthly Budget Breakdown)"
-          loading="lazy"
-          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <!-- YouTube video: Frisco Cost of Living — facade loads thumbnail only, iframe on click -->
+      <div class="kc-video-wrap kc-yt-facade"
+           data-videoid="8UeiYKdbW9w"
+           data-title="Frisco Texas Cost of Living for Families (Real Monthly Budget Breakdown)"
+           role="button"
+           tabindex="0"
+           aria-label="Play video: Frisco Texas Cost of Living for Families">
+        <img src="https://img.youtube.com/vi/8UeiYKdbW9w/maxresdefault.jpg"
+             alt="Frisco Texas Cost of Living for Families (Real Monthly Budget Breakdown)"
+             loading="lazy"
+             width="1280" height="720">
+        <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
       </div>
 
       <p>Every family researching a move to Dallas-Fort Worth eventually asks the same question: <em>what does it actually cost to live here?</em> The answer is genuinely complicated — not because the data is hard to find, but because "Dallas" encompasses everything from <a href="/dallas-texas">the city itself</a> to a ring of suburbs where median home prices range from $370K to well over $1.3 million. Where you land in that range changes your monthly picture dramatically.</p>
@@ -1356,6 +1391,31 @@ gtag('consent', 'default', {
   </article>
 
 </main>
+
+<script>
+// YouTube facade — load iframe only on click
+(function() {
+  function activateFacade(el) {
+    var id    = el.dataset.videoid;
+    var title = el.dataset.title || 'YouTube video';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&showinfo=0';
+    iframe.title = title;
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    el.innerHTML = '';
+    el.appendChild(iframe);
+    el.classList.remove('kc-yt-facade');
+  }
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    el.addEventListener('click', function() { activateFacade(el); });
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateFacade(el); }
+    });
+  });
+})();
+</script>
 
 <script>
 (function() {
