@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why Are People Leaving Frisco, Texas? The Honest Answer</title>
-<meta name="description" content="Frisco is still one of DFW's fastest-growing suburbs — so why are people leaving? We break down the real reasons and what they mean for families moving to North Dallas.">
+<meta name="description" content="Frisco is still growing — but some families are leaving. Here's the honest breakdown: cost data, traffic truth, school ratings, and whether Frisco fits your family.">
 <link rel="canonical" href="https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas">
 
 <!-- Open Graph / Social -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Why Are People Leaving Frisco, Texas? The Honest Answer">
-<meta property="og:description" content="Frisco is still one of DFW's fastest-growing suburbs — so why are people leaving? We break down the real reasons and what they mean for families moving to North Dallas.">
+<meta property="og:description" content="Frisco is still growing — but some families are leaving. Here's the honest breakdown: cost data, traffic truth, school ratings, and whether Frisco fits your family.">
 <meta property="og:url" content="https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas">
 <meta property="og:image" content="https://whymovetodallas.com/images/blog/why-are-people-leaving-frisco-texas-hero.webp">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="720">
 <meta property="og:site_name" content="Why Move to Dallas">
 <meta property="article:published_time" content="2026-05-24T12:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-24T12:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-30T12:00:00.000Z">
 <meta property="article:author" content="Kristen Carpentier">
 <meta property="article:section" content="Suburb Guide">
 
@@ -37,10 +37,10 @@
       "@type": "BlogPosting",
       "@id": "https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas#article",
       "headline": "Why Are People Leaving Frisco, Texas? The Honest Answer",
-      "description": "Frisco is still one of DFW's fastest-growing suburbs — so why are people leaving? We break down the real reasons and what they mean for families moving to North Dallas.",
+      "description": "Frisco is still growing — but some families are leaving. Here's the honest breakdown: cost data, traffic truth, school ratings, and whether Frisco fits your family.",
       "url": "https://whymovetodallas.com/blog/why-are-people-leaving-frisco-texas",
       "datePublished": "2026-05-24T12:00:00.000Z",
-      "dateModified": "2026-05-24T12:00:00.000Z",
+      "dateModified": "2026-05-30T12:00:00.000Z",
       "author": {
         "@type": "Person",
         "name": "Kristen Carpentier",
@@ -239,7 +239,7 @@
 .kc-post-content td { padding: 0.55rem 0.85rem; border-bottom: 1px solid #eee; color: var(--charcoal); }
 .kc-post-content tr:nth-child(even) td { background: var(--ivory); }
 
-/* YouTube embed */
+/* YouTube embed + facade */
 .kc-video-wrap {
   position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
   border-radius: 10px; margin: 2.25rem 0; background: #000;
@@ -247,6 +247,24 @@
 }
 .kc-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 .kc-video-caption { font-size: 0.8rem; color: #888; text-align: center; margin-top: -1.5rem; margin-bottom: 2rem; font-style: italic; }
+
+/* YouTube facade — thumbnail + play button, loads iframe only on click */
+.kc-yt-facade { cursor: pointer; }
+.kc-yt-facade img {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; object-fit: cover; border-radius: 10px;
+}
+.kc-yt-play {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px; height: 48px; background: #ff0000;
+  border: none; border-radius: 12px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.kc-yt-facade:hover .kc-yt-play { background: #cc0000; transform: translate(-50%, -50%) scale(1.08); }
+.kc-yt-play svg { width: 24px; height: 24px; fill: #fff; }
 
 /* ── Visual components ─────────────────────────────────────────────────── */
 
@@ -386,8 +404,11 @@
   .kc-blog-bar-label { width: 75px; }
 }
 </style>
+<link rel="preload" as="image" href="/images/blog/why-are-people-leaving-frisco-texas-hero.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/blog/why-are-people-leaving-frisco-texas-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
-<link rel="stylesheet" href="/css/suburb.css">
+<link rel="stylesheet" href="/css/suburb.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/suburb.css"></noscript>
 <!-- Site verifications -->
 <meta name="ahrefs-site-verification" content="0ce5b9f21be99897ea2af7da64a710d253016a2b6fe1eeb79c7d9d1a2eed4174">
 <meta name="p:domain_verify" content="4c6d262c6ac5a835c32182b2ce11e98d">
@@ -623,7 +644,7 @@ gtag('consent', 'default', {
       <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Realtor" width="36" height="36" loading="eager" onerror="this.style.display='none'">
       <div class="kc-post-hero-byline-text">
         <span class="kc-post-hero-byline-name">Kristen Carpentier</span>
-        <span class="kc-post-hero-byline-meta">Licensed TX Realtor® &nbsp;·&nbsp; May 24, 2026 &nbsp;·&nbsp; 9 min read</span>
+        <span class="kc-post-hero-byline-meta">Licensed TX Realtor® &nbsp;·&nbsp; May 30, 2026 &nbsp;·&nbsp; 9 min read</span>
       </div>
     </div>
   </header>
@@ -632,7 +653,7 @@ gtag('consent', 'default', {
   <article class="kc-post-body" itemscope itemtype="https://schema.org/BlogPosting">
     <meta itemprop="headline" content="Why Are People Leaving Frisco, Texas? The Honest Answer">
     <meta itemprop="datePublished" content="2026-05-24T12:00:00.000Z">
-    <meta itemprop="dateModified" content="2026-05-24T12:00:00.000Z">
+    <meta itemprop="dateModified" content="2026-05-30T12:00:00.000Z">
     <meta itemprop="author" content="Kristen Carpentier">
 
     <div class="kc-post-content" itemprop="articleBody">
@@ -641,15 +662,20 @@ gtag('consent', 'default', {
 
       <p>I've helped hundreds of families relocate to DFW from California, New York, and Illinois. Frisco comes up in almost every conversation. Here's what I tell them — including the parts that other agents leave out.</p>
 
-      <!-- Video embed — first screen -->
-      <div class="kc-video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/Cv8ITwkCguQ?rel=0&modestbranding=1"
-          title="Why People are Leaving Frisco? Dallas Texas Most POPULAR City!"
-          loading="lazy"
-          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <!-- Video embed — facade loads thumbnail only, iframe on click -->
+      <div class="kc-video-wrap kc-yt-facade"
+           data-videoid="Cv8ITwkCguQ"
+           data-title="Why People are Leaving Frisco? Dallas Texas Most POPULAR City!"
+           role="button"
+           tabindex="0"
+           aria-label="Play video: Why People are Leaving Frisco? Dallas Texas Most POPULAR City!">
+        <img src="https://img.youtube.com/vi/Cv8ITwkCguQ/maxresdefault.jpg"
+             alt="Why People are Leaving Frisco? Dallas Texas Most POPULAR City!"
+             loading="lazy"
+             width="1280" height="720">
+        <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
       </div>
       <p class="kc-video-caption">Watch: Why people are leaving Frisco — an honest breakdown of the real reasons, and what they mean for families moving to DFW.</p>
 
@@ -668,7 +694,7 @@ gtag('consent', 'default', {
           <span class="kc-blog-stat-label">Combined Tax Rate</span>
         </div>
         <div class="kc-blog-stat">
-          <span class="kc-blog-stat-num">4.5 mo</span>
+          <span class="kc-blog-stat-num">3.3 mo</span>
           <span class="kc-blog-stat-label">Months Supply</span>
         </div>
       </div>
@@ -690,7 +716,7 @@ gtag('consent', 'default', {
       <!-- Section 1: Cost -->
       <h2 id="section-cost">The Cost Has Caught Up — Frisco Is No Longer "Affordable"</h2>
 
-      <p>Ten years ago, Frisco was the value play in North Dallas. You got excellent schools and a brand-new suburb for prices well below what you'd pay in Plano or Richardson. That window has closed. The median single-family home in Frisco is now approximately <strong>$681,000</strong>, and the combined property tax rate — city, Collin County, Frisco ISD, and community college — runs around 1.78% in Collin County portions of the city.</p>
+      <p>Ten years ago, Frisco was the value play in North Dallas. You got excellent schools and a brand-new suburb for prices well below what you'd pay in <a href="/plano-texas">Plano</a> or <a href="/richardson-texas">Richardson</a>. That window has closed. The median single-family home in Frisco is now approximately <strong>$681,000</strong>, and the combined property tax rate — city, Collin County, Frisco ISD, and community college — runs around 1.78% in Collin County portions of the city.</p>
 
       <p>On a $681,000 home, that's roughly <strong>$12,000 per year in property taxes</strong> before the homestead exemption. After a $100,000 homestead exemption on the school district portion, you're closer to $10,500–$11,000 annually. It's a real number, and it surprises some buyers who fixate on the purchase price without budgeting for the ongoing tax bill.</p>
 
@@ -719,17 +745,17 @@ gtag('consent', 'default', {
         <div class="kc-blog-chart-source">Source: NTREIS 12-month rolling median, 2026</div>
       </div>
 
-      <p>For current Frisco residents, particularly those who bought five or more years ago, this appreciation is a wealth win — and some are choosing to cash out and move somewhere with more space for less money. For buyers entering the market now, it's a real affordability ceiling. HOA fees in many of Frisco's gated and master-planned communities add another $150–$500/month on top of the tax bill.</p>
+      <p>For current Frisco residents, particularly those who bought five or more years ago, this appreciation is a wealth win — and some are choosing to cash out and move somewhere with more space for less money. For buyers entering the market now, it's a real affordability ceiling. HOA fees in many of Frisco's gated and master-planned communities add another $150–$500/month on top of the tax bill. And if your home sits within a Municipal Utility District (MUD) — which many master-planned communities in Frisco do — expect an additional 0.25%–0.75% added to your effective tax rate. It's a line item that catches a lot of buyers by surprise when the first tax bill arrives.</p>
 
       <div class="kc-blog-callout">
         <div class="kc-blog-callout-label">Kristen's Take</div>
-        <p>The families I work with who leave Frisco citing cost are almost always comparing it to what they could get in Prosper, Celina, or Anna — not to where they came from. When I run the numbers against San Jose or Westchester, Frisco still wins by a significant margin, especially once you factor in zero Texas state income tax. But if you've already been living in DFW for five years and you're watching Celina build brand-new construction at $440K, the math looks different.</p>
+        <p>The families I work with who leave Frisco citing cost are almost always comparing it to what they could get in Prosper, Celina, or <a href="/anna-texas">Anna</a> — not to where they came from. When I run the numbers against San Jose or Westchester, Frisco still wins by a significant margin, especially once you factor in zero Texas state income tax. But if you've already been living in DFW for five years and you're watching Celina build brand-new construction at $440K, the math looks different.</p>
       </div>
 
       <!-- Section 2: Traffic -->
       <h2 id="section-traffic">Traffic Is the Daily Complaint You'll Hear from Every Resident</h2>
 
-      <p>Ask anyone who's lived in Frisco for more than two years what they'd change, and traffic comes up within 30 seconds. The Dallas North Tollway — the main artery connecting Frisco to Plano, Legacy West, and downtown Dallas — is a parking lot during morning and evening rush hours. US-380 through central Frisco sees the same pattern. The city has added lanes, built new roads, and issued bond packages, but the infrastructure has consistently lagged behind the population growth.</p>
+      <p>Ask anyone who's lived in Frisco for more than two years what they'd change, and traffic comes up within 30 seconds. The Dallas North Tollway — the main artery connecting Frisco to <a href="/plano-texas">Plano</a>, Legacy West, and downtown Dallas — is a parking lot during morning and evening rush hours. US-380 through central Frisco sees the same pattern. The city has added lanes, built new roads, and issued bond packages, but the infrastructure has consistently lagged behind the population growth.</p>
 
       <p>Being car-dependent is the baseline in Frisco. The transit score is effectively zero — there's no rail service and minimal bus coverage. Every errand, school pickup, sports practice, and grocery run requires a car. For families coming from New York or Chicago who are used to hopping on a train, this is a genuine lifestyle adjustment. For families relocating from suburban California, it's roughly what they're used to — just on different roads.</p>
 
@@ -738,7 +764,7 @@ gtag('consent', 'default', {
       <!-- Section 3: Schools -->
       <h2 id="section-schools">Frisco ISD Is Still Excellent — But It's Managing Its Growth</h2>
 
-      <p>This one requires nuance. Frisco ISD earns an <strong>A+</strong> from Niche across every academic category — overall, academics, college prep, and good for families. The district consistently ranks in the top tier of Texas ISDs. Those ratings haven't slipped. But the district has also grown from a few thousand students to nearly 70,000 in two decades, and some elementary schools do run near capacity during growth spurts.</p>
+      <p>This one requires nuance. Frisco ISD earns an <strong>A+</strong> from Niche across every academic category — overall, academics, college prep, and good for families. The district consistently ranks in the top tier of Texas ISDs. Those ratings haven't slipped. But the district grew from a few thousand students to a peak of about 67,000 — enrollment is now stabilizing around 65,000 as the city's growth rate moderates — and some elementary schools do run near capacity during growth spurts.</p>
 
       <p>Frisco ISD's response has been to build new campuses — and they've done it consistently. When a neighborhood fills up, a new school typically follows within a few years. The feeder patterns shift as new schools open, which occasionally creates confusion for families who bought specifically to feed into a particular campus. This is worth asking about directly when you're buying in a specific neighborhood.</p>
 
@@ -763,7 +789,7 @@ gtag('consent', 'default', {
       <!-- Section 4: Moving North -->
       <h2 id="section-moving-north">Most People "Leaving" Frisco Are Moving North — Not Out of DFW</h2>
 
-      <p>This is the detail that gets lost in every headline about Frisco departures. The majority of residents who leave Frisco are not fleeing Texas or even the DFW suburbs. They're moving 10 to 20 miles north to Prosper, Celina, McKinney, or Anna — chasing more square footage, newer construction, bigger lots, and lower entry prices.</p>
+      <p>This is the detail that gets lost in every headline about Frisco departures. The majority of residents who leave Frisco are not fleeing Texas or even the DFW suburbs. They're moving 10 to 20 miles north to Prosper, Celina, McKinney, or <a href="/anna-texas">Anna</a> — chasing more square footage, newer construction, bigger lots, and lower entry prices.</p>
 
       <p>This pattern is as old as suburban growth itself. Frisco was once the destination for people leaving Plano for more space and lower prices. Now Frisco is Plano, and the new frontier is further north. Celina in particular has attracted significant attention from Frisco residents looking for half-acre lots and new construction under $500,000.</p>
 
@@ -787,6 +813,8 @@ gtag('consent', 'default', {
       <p>The restaurant and retail scene is genuinely good — Frisco scores well above average for dining and shopping compared to other DFW suburbs. But the growth in population has consistently outpaced the growth in amenities, so there's a recurring feeling among long-term residents that their favorite spots are now crowded and parking is a battle on weekends.</p>
 
       <p>Mayor Jeff Cheney himself identified the lack of arts and cultural entertainment as a primary reason residents leave — which is a notable thing for a city's own mayor to say publicly, and a fair one. Frisco has sports (The Star, Toyota Stadium, the PGA headquarters), excellent retail, and a vibrant restaurant scene. It does not have a thriving arts district, live music culture, or the kind of creative neighborhood feel you'd find in a more urban setting. Families for whom that matters tend to point toward <a href="/dallas-texas">Dallas proper</a>, <a href="/fort-worth-texas">Fort Worth's Sundance Square</a>, or more urban neighborhoods.</p>
+
+      <p>That said, the entertainment picture in Frisco is changing. <strong>Universal Kids Resort</strong> — a 20-acre theme park with seven themed lands designed specifically for families with young children — is set to open in Frisco on July 1, 2026. It's the first Universal-branded park in Texas, and it's located directly in Frisco, not in a nearby city. For families with kids under 12, this is a genuine addition to the city's family amenity stack. It won't satisfy the crowd that wants live music and gallery walks, but it meaningfully closes the gap for anyone whose "entertainment" is really code for "things to do with my kids on a Saturday."</p>
 
       <div class="kc-blog-callout">
         <div class="kc-blog-callout-label">The Honest Tradeoff</div>
@@ -846,6 +874,14 @@ gtag('consent', 'default', {
       <p>The families who leave Frisco — and the ones who thrive there — are often making the same comparison. It comes down to where you are in life, what your kids need right now, and what you're optimizing for. Frisco is one of the best-built suburbs in DFW. It's also more expensive and more congested than it was five years ago. Both things are true.</p>
 
       <p>If you're trying to figure out whether Frisco or a neighboring suburb is the right fit for your specific situation — school ages, commute corridor, budget, community size — that's exactly the kind of conversation I have with families every week. It's always easier to get it right before you move than after.</p>
+
+      <div class="kc-blog-idx">
+        <div class="kc-blog-idx-text">
+          <strong>Search All Frisco Homes for Sale</strong>
+          <span>Live listings updated daily — all price ranges, all neighborhoods</span>
+        </div>
+        <a href="https://kristencarpentier.expportal.com/frisco-texas-homes-for-sale" target="_blank" rel="noopener" class="kc-blog-idx-btn">Search Frisco Listings →</a>
+      </div>
 
       <div class="kc-blog-idx">
         <div class="kc-blog-idx-text">
@@ -913,7 +949,7 @@ gtag('consent', 'default', {
       <div>
         <span class="kc-post-author-card-name">Kristen Carpentier</span>
         <span class="kc-post-author-card-title">Licensed Texas Realtor® · DFW Family Relocation Specialist</span>
-        <p class="kc-post-author-card-bio">Wife, mom of four, and longtime Flower Mound resident. I've helped hundreds of families from California, New York, and Illinois find the right suburb, school district, and home in DFW. Questions? <a href="/contact">Let's talk.</a></p>
+        <p class="kc-post-author-card-bio">Wife, mom of four, and longtime Flower Mound resident. I've helped hundreds of families relocating from across the U.S. — California, New York, Illinois, Colorado, Georgia, and from right here in Texas — find the right suburb, school district, and home in DFW. Questions? <a href="/contact">Let's talk.</a></p>
       </div>
     </div>
 
@@ -960,6 +996,30 @@ gtag('consent', 'default', {
   }
   window.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
+})();
+</script>
+
+<script>
+// YouTube facade — load iframe only on click, avoiding ~776KB YouTube JS on page load
+(function() {
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    function activate() {
+      var vid = el.getAttribute('data-videoid');
+      var title = el.getAttribute('data-title') || 'YouTube video';
+      if (!vid) return;
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0&modestbranding=1';
+      iframe.title = title;
+      iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:10px;';
+      el.innerHTML = '';
+      el.appendChild(iframe);
+      el.style.cursor = 'default';
+    }
+    el.addEventListener('click', activate);
+    el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') activate(); });
+  });
 })();
 </script>
 

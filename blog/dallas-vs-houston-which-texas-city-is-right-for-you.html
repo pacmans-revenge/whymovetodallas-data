@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dallas vs Houston for Families: Which Is Better?</title>
-<meta name="description" content="Dallas vs Houston for families: compare schools, suburbs, home prices, crime, weather, jobs, taxes, and hidden costs before moving to Texas.">
+<meta name="description" content="Dallas vs Houston for families — the honest breakdown: schools, home prices, flooding risk, and which Texas metro fits your budget. From a DFW relocation specialist.">
 <link rel="canonical" href="https://whymovetodallas.com/blog/dallas-vs-houston-which-texas-city-is-right-for-you">
 
 <!-- Open Graph / Social -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dallas vs Houston for Families: Which Is Better?">
-<meta property="og:description" content="Dallas vs Houston for families: compare schools, suburbs, home prices, crime, weather, jobs, taxes, and hidden costs before moving to Texas.">
+<meta property="og:description" content="Dallas vs Houston for families — the honest breakdown: schools, home prices, flooding risk, and which Texas metro fits your budget. From a DFW relocation specialist.">
 <meta property="og:url" content="https://whymovetodallas.com/blog/dallas-vs-houston-which-texas-city-is-right-for-you">
 <meta property="og:image" content="https://whymovetodallas.com/images/blog/dallas-vs-houston-hero.webp">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="720">
 <meta property="og:site_name" content="Why Move to Dallas">
 <meta property="article:published_time" content="2023-09-02T15:45:39.000Z">
-<meta property="article:modified_time" content="2026-05-29T18:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-30T18:00:00.000Z">
 <meta property="article:author" content="Kristen Carpentier">
 <meta property="article:section" content="Relocation Guide">
 
@@ -40,7 +40,7 @@
       "description": "Moving to Texas with kids? Schools, suburbs, home prices, crime, and weather — here's the honest Dallas vs Houston breakdown for relocating families.",
       "url": "https://whymovetodallas.com/blog/dallas-vs-houston-which-texas-city-is-right-for-you",
       "datePublished": "2023-09-02T15:45:39.000Z",
-      "dateModified": "2026-05-29T18:00:00.000Z",
+      "dateModified": "2026-05-30T18:00:00.000Z",
       "author": {
         "@type": "Person",
         "name": "Kristen Carpentier",
@@ -188,7 +188,7 @@
 /* ── Post hero (navy header) ───────────────────────────────────────────── */
 .kc-post-hero {
   background: var(--navy, #1F2D3D);
-  padding: 3.5rem 1.5rem 3rem;
+  padding: calc(var(--header-total-h, 108px) + 2rem) 1.5rem 3rem;
   text-align: center;
 }
 .kc-post-hero-breadcrumb {
@@ -366,6 +366,32 @@
   width: 100%; height: 100%;
   border: none;
 }
+/* YouTube facade — thumbnail + play button, no JS loaded until click */
+.kc-yt-facade { cursor: pointer; }
+.kc-yt-facade img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.kc-yt-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px; height: 48px;
+  background: #ff0000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.kc-yt-facade:hover .kc-yt-play { background: #cc0000; transform: translate(-50%, -50%) scale(1.08); }
+.kc-yt-play svg { width: 24px; height: 24px; fill: #fff; }
 .kc-video-caption {
   font-size: 0.78rem;
   color: #888;
@@ -513,7 +539,8 @@
 }
 </style>
 <link rel="stylesheet" href="/css/global.css">
-<link rel="stylesheet" href="/css/suburb.css">
+<link rel="stylesheet" href="/css/suburb.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/suburb.css"></noscript>
 <!-- Site verifications -->
 <meta name="ahrefs-site-verification" content="0ce5b9f21be99897ea2af7da64a710d253016a2b6fe1eeb79c7d9d1a2eed4174">
 <meta name="p:domain_verify" content="4c6d262c6ac5a835c32182b2ce11e98d">
@@ -757,7 +784,7 @@ gtag('consent', 'default', {
            onerror="this.style.display='none'">
       <div class="kc-post-hero-byline-text">
         <span class="kc-post-hero-byline-name">Kristen Carpentier</span>
-        <span class="kc-post-hero-byline-meta">Licensed TX Realtor® &nbsp;·&nbsp; Updated May 29, 2026 &nbsp;·&nbsp; 11 min read</span>
+        <span class="kc-post-hero-byline-meta">Licensed TX Realtor® &nbsp;·&nbsp; Updated May 30, 2026 &nbsp;·&nbsp; 11 min read</span>
       </div>
     </div>
   </header>
@@ -766,7 +793,7 @@ gtag('consent', 'default', {
   <article class="kc-post-body" itemscope itemtype="https://schema.org/BlogPosting">
     <meta itemprop="headline" content="Dallas vs. Houston: Which Texas City Is Actually Better for Families?">
     <meta itemprop="datePublished" content="2023-09-02T15:45:39.000Z">
-    <meta itemprop="dateModified" content="2026-05-29T18:00:00.000Z">
+    <meta itemprop="dateModified" content="2026-05-30T18:00:00.000Z">
     <meta itemprop="author" content="Kristen Carpentier">
 
     <div class="kc-post-content" itemprop="articleBody">
@@ -775,13 +802,20 @@ gtag('consent', 'default', {
 
 <p>I've spent nearly 15 years in DFW as a mom, a Realtor, and the wife of an Army Veteran. I know the Dallas suburbs the way you'd know a neighborhood you've actually raised kids in — not from a data sheet. But I also know Houston well enough to tell you what the data misses. This guide gives you the honest comparison, because picking the wrong metro is a mistake that's hard to undo.</p>
 
-<!-- ── Video embed ─────────────────────────────────────────────────── -->
-<div class="kc-video-wrap">
-  <iframe src="https://www.youtube.com/embed/Zw3ae6uwHXk"
-          title="Dallas vs Houston? Is Dallas or Houston Right for You?"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"></iframe>
+<!-- ── Video embed (facade — thumbnail only, iframe loads on click) ─── -->
+<div class="kc-video-wrap kc-yt-facade"
+     data-videoid="Zw3ae6uwHXk"
+     data-title="Dallas vs Houston? Is Dallas or Houston Right for You?"
+     role="button"
+     tabindex="0"
+     aria-label="Play video: Dallas vs Houston? Is Dallas or Houston Right for You?">
+  <img src="https://img.youtube.com/vi/Zw3ae6uwHXk/maxresdefault.jpg"
+       alt="Dallas vs Houston — Which Texas City is Right for Your Family?"
+       loading="lazy"
+       width="1280" height="720">
+  <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+  </button>
 </div>
 <p class="kc-video-caption">Watch: Dallas vs. Houston head-to-head — schools, suburbs, cost of living, and the honest trade-offs for relocating families.</p>
 
@@ -867,7 +901,7 @@ gtag('consent', 'default', {
 
 <p>Let's be direct: Houston is more affordable than Dallas. That gap has widened since 2023. The Houston metro median SFR price sits around $330,000–$335,000 as of early 2026, while the Dallas city median is approximately $492,000 (NTREIS). DFW's top family suburbs push significantly higher — <a href="/frisco-texas">Frisco</a> sits around $692,000 median, <a href="/plano-texas">Plano</a> around $500,000, and <a href="/mckinney-texas">McKinney</a> around $510,000.</p>
 
-<p>Houston's family suburbs — Katy, Sugar Land, The Woodlands, Cypress, Pearland — offer a wide price range. Katy runs ~$340K citywide (with master-planned ZIPs like 77494 running higher), while The Woodlands skews much higher at ~$627K as Houston's premier master-planned suburb. For most families, Katy and Pearland (~$375K) provide the best purchasing power per dollar. DFW also has strong new construction options in outer suburbs like Prosper, Celina, and Aubrey — see our <a href="/new-construction-dfw">DFW new construction guide</a> for current builder inventory.</p>
+<p>Houston's family suburbs — Katy, Sugar Land, The Woodlands, Cypress, Pearland — offer a wide price range. Katy runs ~$340K citywide (with master-planned ZIPs like 77494 running higher), while The Woodlands skews much higher at ~$627K as Houston's premier master-planned suburb. For most families, Katy and Pearland (~$375K) provide the best purchasing power per dollar. DFW also has strong new construction options in outer suburbs like <a href="/prosper-texas">Prosper</a>, <a href="/celina-texas">Celina</a>, and Aubrey — see our <a href="/new-construction-dfw">DFW new construction guide</a> for current builder inventory.</p>
 
 <!-- Bar chart: median prices by area -->
 <div class="kc-blog-chart">
@@ -1098,7 +1132,7 @@ gtag('consent', 'default', {
 
 <p>In DFW: south Plano to downtown Dallas runs 20–25 minutes; Allen is 30–38 minutes via US-75; Frisco is 35–45 minutes on the tollway; McKinney is 45–60+ minutes in morning traffic. On the Houston side: Pearland to the Medical Center is 20–40 minutes; Sugar Land to downtown is 30–50 minutes; Katy to downtown is 30–45 minutes (and only 15 minutes to the Energy Corridor); The Woodlands is 45–60 minutes in traffic. Both metros have comparable commute profiles from their outer suburbs — the real question is which employment hub you're heading toward.</p>
 
-<p>DART (Dallas Area Rapid Transit) covers 90 miles of light rail with 62 stations serving 13 cities — roughly 96,000 weekday riders. If you live in Plano or Richardson and work downtown, DART is a legitimate option. Houston's Metro Rail covers about 22.7 miles with roughly 39 stations and about 63,000 daily riders — useful for the Medical Center and Midtown corridors. For most suburban commuters in both metros, though, the car is the daily reality. Budget $150–$250/month in tolls if you're regularly on the Dallas North Tollway or SH-121 in DFW; Houston's toll infrastructure is comparable. Factor that into your cost-of-living math alongside the home price difference.</p>
+<p>DART (Dallas Area Rapid Transit) covers 90 miles of light rail with 62 stations serving 13 cities — roughly 96,000 weekday riders. If you live in <a href="/plano-texas">Plano</a> or <a href="/richardson-texas">Richardson</a> and work downtown, DART is a legitimate option. Houston's Metro Rail covers about 22.7 miles with roughly 39 stations and about 63,000 daily riders — useful for the Medical Center and Midtown corridors. For most suburban commuters in both metros, though, the car is the daily reality. Budget $150–$250/month in tolls if you're regularly on the Dallas North Tollway or SH-121 in DFW; Houston's toll infrastructure is comparable. Factor that into your cost-of-living math alongside the home price difference.</p>
 
 <!-- ── Verdict ──────────────────────────────────────────────────────── -->
 <h2 id="section-verdict">The Honest Verdict: Which City Is Right for Your Family?</h2>
@@ -1114,7 +1148,7 @@ gtag('consent', 'default', {
     <li>Your employer is in tech, finance, healthcare, or corporate management</li>
     <li>You want to avoid hurricane and flooding risk entirely</li>
     <li>You have a budget of $450K+ and want access to top-tier suburban communities</li>
-    <li>You're a military family near NAS Fort Worth JRB or a veteran settling post-service</li>
+    <li>You're a military family near NAS <a href="/fort-worth-texas">Fort Worth</a> JRB or a veteran settling post-service</li>
     <li>You're coming from California and want suburban culture that mirrors what you're used to</li>
   </ul>
 </div>
@@ -1227,6 +1261,31 @@ gtag('consent', 'default', {
   </article>
 
 </main>
+
+<script>
+// YouTube facade — load iframe only on click
+(function() {
+  function activateFacade(el) {
+    var id    = el.dataset.videoid;
+    var title = el.dataset.title || 'YouTube video';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&showinfo=0';
+    iframe.title = title;
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    el.innerHTML = '';
+    el.appendChild(iframe);
+    el.classList.remove('kc-yt-facade');
+  }
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    el.addEventListener('click', function() { activateFacade(el); });
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateFacade(el); }
+    });
+  });
+})();
+</script>
 
 <script>
 (function() {
