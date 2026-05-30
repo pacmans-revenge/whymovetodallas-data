@@ -207,6 +207,12 @@
   padding: calc(var(--header-total-h, 108px) + 2rem) 1.5rem 3rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .kc-post-hero {
+    background-image: linear-gradient(135deg, rgba(31,45,61,.65) 0%, rgba(31,45,61,.48) 50%, rgba(31,45,61,.60) 100%),
+                      url('/images/dallas-hero-mobile.webp');
+  }
+}
 .kc-post-hero-breadcrumb {
   font-size: 0.74rem;
   color: rgba(255,255,255,0.45);
@@ -650,7 +656,8 @@
   .kc-blog-bar-label { width: 80px; }
 }
 </style>
-<link rel="preload" as="image" href="/images/dallas-hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/dallas-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/dallas-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="/css/suburb.css"></noscript>
