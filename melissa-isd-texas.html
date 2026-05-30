@@ -40,13 +40,19 @@ gtag('consent', 'default', {
   'analytics_storage':  'granted'
 });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q"></script>
+<!-- Google tag (gtag.js) — load-deferred for LCP -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KKLBMB6X0Q');
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-KKLBMB6X0Q');
+  });
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -1036,5 +1042,22 @@ gtag('consent', 'default', {
 }());
 </script>
 
+<!-- OSM lazy-load -->
+<script>
+(function(){
+  var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
+  if(!maps.length)return;
+  var io=new IntersectionObserver(function(entries,obs){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var f=e.target;
+      f.src=f.getAttribute('data-src');
+      f.removeAttribute('data-src');
+      obs.unobserve(f);
+    });
+  },{rootMargin:'200px'});
+  maps.forEach(function(m){io.observe(m);});
+})();
+</script>
 </body>
 </html>

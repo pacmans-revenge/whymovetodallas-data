@@ -40,13 +40,19 @@ gtag('consent', 'default', {
   'analytics_storage':  'granted'
 });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q"></script>
+<!-- Google tag (gtag.js) — load-deferred for LCP -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KKLBMB6X0Q');
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-KKLBMB6X0Q');
+  });
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -608,8 +614,8 @@ gtag('consent', 'default', {
 
   <p>The southeast position is a genuine trade-off that families need to price in. Most DFW employment corridors — Plano/Legacy West, Las Colinas, DFW Airport, Frisco/The Star — are on the north and west sides of the metro. From Crandall, you're essentially driving through the city to reach them, which means real exposure to I-20 and US-175 rush hour traffic. The sweet spot here is for families where at least one partner works in Dallas proper, in Mesquite, or works remotely. If both adults have long drives to the northwest suburbs, account for that commute reality before you fall in love with the new construction prices.</p>
 
-  <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-96.5633,32.5335,-96.3633,32.7335&layer=mapnik&marker=32.6335,-96.4633"
+  <iframe class="kc-lazy-map"
+      data-src="https://www.openstreetmap.org/export/embed.html?bbox=-96.5633,32.5335,-96.3633,32.7335&layer=mapnik&marker=32.6335,-96.4633"
       width="100%" height="220" style="border:0;display:block;" loading="lazy" allowfullscreen=""
       title="Crandall, Texas — location map"
     ></iframe>
@@ -1762,5 +1768,22 @@ function kcFaq(el) {
 }());
 </script>
 
+<!-- OSM lazy-load -->
+<script>
+(function(){
+  var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
+  if(!maps.length)return;
+  var io=new IntersectionObserver(function(entries,obs){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var f=e.target;
+      f.src=f.getAttribute('data-src');
+      f.removeAttribute('data-src');
+      obs.unobserve(f);
+    });
+  },{rootMargin:'200px'});
+  maps.forEach(function(m){io.observe(m);});
+})();
+</script>
 </body>
 </html>

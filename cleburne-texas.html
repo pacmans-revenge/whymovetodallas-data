@@ -40,13 +40,19 @@ gtag('consent', 'default', {
   'analytics_storage':  'granted'
 });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q"></script>
+<!-- Google tag (gtag.js) — load-deferred for LCP -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KKLBMB6X0Q');
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-KKLBMB6X0Q');
+  });
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -655,8 +661,8 @@ gtag('consent', 'default', {
   </div>
 
   <div style="margin:1.5rem 0 0;border-radius:8px;overflow:hidden;border:1px solid var(--stone);box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-97.4842,32.2499,-97.2842,32.4499&layer=mapnik&marker=32.3499,-97.3842"
+    <iframe class="kc-lazy-map"
+      data-src="https://www.openstreetmap.org/export/embed.html?bbox=-97.4842,32.2499,-97.2842,32.4499&layer=mapnik&marker=32.3499,-97.3842"
       width="100%"
       height="220"
       style="border:0;display:block;"
@@ -1965,5 +1971,22 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 }());
 </script>
 
+<!-- OSM lazy-load -->
+<script>
+(function(){
+  var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
+  if(!maps.length)return;
+  var io=new IntersectionObserver(function(entries,obs){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var f=e.target;
+      f.src=f.getAttribute('data-src');
+      f.removeAttribute('data-src');
+      obs.unobserve(f);
+    });
+  },{rootMargin:'200px'});
+  maps.forEach(function(m){io.observe(m);});
+})();
+</script>
 </body>
 </html>

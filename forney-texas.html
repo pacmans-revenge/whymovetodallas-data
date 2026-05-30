@@ -40,13 +40,19 @@ gtag('consent', 'default', {
   'analytics_storage':  'granted'
 });
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q"></script>
+<!-- Google tag (gtag.js) — load-deferred for LCP -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KKLBMB6X0Q');
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KKLBMB6X0Q';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-KKLBMB6X0Q');
+  });
 </script>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -668,8 +674,8 @@ gtag('consent', 'default', {
       <h3 >Commute Times from Central Forney</h3>
     </div>
 
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-96.5697,32.6474,-96.3697,32.8474&layer=mapnik&marker=32.7474,-96.4697"
+    <iframe class="kc-lazy-map"
+      data-src="https://www.openstreetmap.org/export/embed.html?bbox=-96.5697,32.6474,-96.3697,32.8474&layer=mapnik&marker=32.7474,-96.4697"
       width="100%" height="220" style="border:0;display:block;" loading="lazy" allowfullscreen=""
       title="Forney, Texas — location map"
     ></iframe>
@@ -2138,5 +2144,22 @@ gtag('consent', 'default', {
 }());
 </script>
 
+<!-- OSM lazy-load -->
+<script>
+(function(){
+  var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
+  if(!maps.length)return;
+  var io=new IntersectionObserver(function(entries,obs){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var f=e.target;
+      f.src=f.getAttribute('data-src');
+      f.removeAttribute('data-src');
+      obs.unobserve(f);
+    });
+  },{rootMargin:'200px'});
+  maps.forEach(function(m){io.observe(m);});
+})();
+</script>
 </body>
 </html>
